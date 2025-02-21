@@ -1,0 +1,67 @@
+<div class="dare-to-be-true" loading="lazy" style="background-image: url({{ section.settings.dare-to-be-true-bg | img_url: 'large'}});">    
+    <div class="sec-inner">
+        <div class="container">  
+            <div class="marquee-wrap">
+                <div class="marquee">
+                    <div class="marquee-t">{{ section.settings.marquee-t-1}}</div>
+                </div>          
+                <div class="marquee marquee2">
+                    <div class="marquee-t">{{ section.settings.marquee-t-2}}</div>
+                </div>  
+            </div>        
+            <div class="dare-to-be-true-bx about_background">
+                <img src="{{ section.settings.dare-to-be-true-bx | img_url: 'large'}}" alt="" loading="lazy">
+            </div>           
+        </div>
+    </div>
+</div>
+
+<style>
+
+.dare-to-be-true-bx {
+	width: 432px;
+	height: 503px;
+	position: absolute;
+	top: 175px;
+	right: 528px;
+}
+</style>
+{% schema %}
+  {
+    "name": "About Text Scroller",
+    "settings": [
+	  {
+        "type": "image_picker",
+        "id": "dare-to-be-true-bg",
+        "label": "Background Image"
+      },
+	  {
+        "type": "image_picker",
+        "id": "dare-to-be-true-bx",
+        "label": "Overlay Image"
+      },
+	  {
+        "type": "text",
+        "id": "marquee-t-1",
+        "label": "Scrolling Text 1"
+      },
+
+	  {
+        "type": "text",
+        "id": "marquee-t-2",
+        "label": "Scrolling Text 2"
+      }
+],
+  "presets": [
+    {
+      "name": "About Text Scroller"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

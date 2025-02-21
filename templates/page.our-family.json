@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "3f930cae-45ec-41ae-823b-87bcf72ea01f": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s_Drift_Family_110d5f18-f1e3-482f-a907-c87ad4dac1c9.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 50,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "OUR",
+            "paragarh_p2": "FAMILY",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "Alvi’s Drift Winery. Three generations in the making, for you to enjoy now.",
+            "paragarh_2": "The Alvi’s Drift family is not just us. It’s our entire winemaking team, all our employees, and everyone who enjoys our wines. Our passion for what we do really goes into every bottle of wine we produce.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3f930cae-45ec-41ae-823b-87bcf72ea01f"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvi_s_Drift_Family_110d5f18-f1e3-482f-a907-c87ad4dac1c9.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "",
+        "paragarh_p1": "OUR",
+        "paragarh_p2": "FAMILY",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "Alvi’s Drift Winery. Three generations in the making, for you to enjoy now.",
+        "paragarh_2": "Discover why Alvi’s Drift wines taste so good.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-products",
+        "btn_main_link": ""
+      }
+    },
+    "focus_text_image_right_hPJmNn": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-221-Range-Wines.jpg",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "It Started Almost A Century Ago",
+        "video-sec-content-txt-1": "<p>In 1928, South Africa took note when a young, unknown rugby player, Albertus Viljoen van der Merwe – “Alvi” to his friends – made history by scoring the first try in history against the All Blacks on African soil. </p><p>Today, we make history with award-winning wines recognised by South Africa and the world. Our 221 Range is named after Oupa Alvi, who had a legendary rugby career as the 221st player for the Springboks.</p>",
+        "button-txt": "221 Range",
+        "button_link": "shopify://collections/221-range",
+        "button_type": "alvisBtn"
+      }
+    },
+    "165677734409302630": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Low-Water-Bridge.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "Our Bridge",
+        "video-sec-content-txt-1": "<p>A few years before hanging up his rugby boots, Oupa Alvi acquired a piece of fertile farmland nestled on the banks of the Breede River in the Western Cape’s majestic Breede River Valley. In 1930, to allow locals easier access to the land, a low-water bridge was built across the river running through the property. The locals christened the bridge “Alvi’s Drift” after “Oupa” (Grandad) Alvi as he was instrumental in building it.</p><p>Today, our bridge (also depicted on our Reserve wine labels) stands as a symbol of unity and connection; a metaphor for overcoming obstacles and tasting what is possible, both in the art of winemaking and in life.</p>",
+        "button-txt": "Reserve Range",
+        "button_link": "shopify://collections/reserve-range",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1643882014c5144c19": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Alvi_Junel_van_der_Merwe.jpg",
+        "right_video_url": "https://www.youtube.com/watch?v=NHaK24QOLow",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "PASSION FOR WINEMAKING",
+        "video-sec-content-txt-1": "<p>Oupa Alvi’s grandson, also Alvi, initially studied medicine, pursuing a career as general practitioner. While practicing medicine in Canada, the UK and later in South Africa, Alvi’s dream of creating world-class wines from the family vineyards persisted.</p><p>In 2003, while still in private practice, Alvi returned to his childhood home to assist his father, Bertie, with the running of the family’s orchards, vineyards, and winery. </p><p>While Oom (Uncle) Bertie, as he was affectionately known by all, remained focused on bulk wine production, Alvi, with his father’s blessing, began exploring his passion for winemaking.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639685206e6643b66": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "“One year, after my dad had picked his grapes, I was allowed to pick and use what was left. I really put in a lot of effort and made just a little bit of Chardonnay and Muscat de Frontignan. I had to buy my own bottles, and barrels for maturation, but I was fortunate to win quite a few awards with my first wine.”",
+        "subtitle-2": "<p><em>- Alvi van der Merwe -</em></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "1656778017d0e6be67": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Cellar-08.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "OUR FAMILY LEGACY",
+        "video-sec-content-txt-1": "<p>A Chenin Blanc and a Cape Fusion red wine blend soon followed, and when the time came to choose a name for his wine-making enterprise, Alvi decided to name his wines for the low-water bridge built by his grandfather back in 1930.</p><p>Widely known for his perfectionism, dedication, and passion for his craft, Alvi has turned both the farm and the family legacy for creating exceptional wine, into a vision that has surpassed all expectations.</p><p><strong>And so, Alvi’s Drift Winery was born.</strong></p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "focus_text_image_right_a8Pikb": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Alvi_s_Drift_Vineyards_508c2c67-88ae-424b-b737-eef114cb8684.jpg",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "A FORMIDABLE PARTNERSHIP",
+        "video-sec-content-txt-1": "<p>Today, Alvi and wife Junel, a Cape Wine Master and well-known lecturer, speaker, and wine expert, form a formidable partnership.</p><p>Together with their winemaking team, they have built a reputation for creating exceptional wines of singular character and complexity, with the end goal always the same: nothing less than excellence in every outcome.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639685778f5f5e362": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "“When creating our wines here at Alvi’s Drift, we’re not trying to compete with anyone. We simply try to do what’s right for us, and we try to do it to the very best of our ability.”",
+        "subtitle-2": "<p><em>- Alvi van der Merwe -</em></p>",
+        "button_text": "MORE ABOUT OUR FARM",
+        "button_link": "shopify://pages/farm",
+        "new_tab": true
+      }
+    },
+    "16437945500d42fec3": {
+      "type": "Blog-External",
+      "blocks": {
+        "6d536574-940e-4968-87d7-0ee0907d10fe": {
+          "type": "article",
+          "settings": {
+            "image": "shopify://shop_images/Buying_Wine_Online.jpg",
+            "title": "Your Complete Guide to Buying Wine Online in South Africa",
+            "content": "<p>Buying wine online saves you time and money. We asked Fiona Rossiter, founder of Inspired Living, to share tips on all the points you need to consider.</p>",
+            "link": ""
+          }
+        },
+        "4afe7823-4ba7-4a8b-8f04-fce164f53a0a": {
+          "type": "article",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_1751876834.png",
+            "title": "",
+            "content": "<p>Learn more about international wine trends, read our interesting wine-related articles and get top tips from wine experts from around the globe.</p>",
+            "link": "https://blog.alvisdrift.co.za"
+          }
+        }
+      },
+      "block_order": [
+        "6d536574-940e-4968-87d7-0ee0907d10fe",
+        "4afe7823-4ba7-4a8b-8f04-fce164f53a0a"
+      ],
+      "disabled": true,
+      "settings": {
+        "external_link": "https://blog.alvisdrift.co.za",
+        "hs_form_id": "",
+        "hs_form_portal_id": ""
+      }
+    },
+    "1639603063787a43d2": {
+      "type": "Newsletter-Subscription",
+      "settings": {
+        "section_heading": "<p>TH<em>E</em><br/>DRIFT</p>",
+        "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
+        "Heading_color": "#c65336",
+        "hs_form_portal_id": "25422535"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "focus_text_image_right_hPJmNn",
+    "165677734409302630",
+    "1643882014c5144c19",
+    "1639685206e6643b66",
+    "1656778017d0e6be67",
+    "focus_text_image_right_a8Pikb",
+    "1639685778f5f5e362",
+    "16437945500d42fec3",
+    "1639603063787a43d2"
+  ]
+}

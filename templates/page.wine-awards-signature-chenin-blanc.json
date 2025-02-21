@@ -1,0 +1,708 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "d1fc1db5-32ca-4b97-a8ae-6e3d56b9a37a": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+            "image_overlay": "#000000",
+            "overlay_opacity": 60,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "SIGNATURE",
+            "paragarh_p2": "CHENIN BLANC",
+            "paragarh_p3": "AWARDS",
+            "paragarh_p4": "",
+            "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+            "paragarh_2": "View the awards for our Chenin Blanc vintages, in our Signature Range, below.",
+            "side_btn_text": "Buy Our Signature Chenin Blanc",
+            "side_btn_link": "shopify://products/signature-chenin-blanc"
+          }
+        }
+      },
+      "block_order": [
+        "d1fc1db5-32ca-4b97-a8ae-6e3d56b9a37a"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "",
+        "paragarh_p1": "SIGNATURE",
+        "paragarh_p2": "CHENIN BLANC",
+        "paragarh_p3": "AWARDS",
+        "paragarh_p4": "",
+        "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+        "paragarh_2": "View the awards for our Chenin Blanc vintages, in our Signature Range, below.",
+        "btn_text": "Buy Our Signature Chenin Blanc",
+        "btn_link": "shopify://pages/signature-awards-chenin-blanc",
+        "btn_main_link": ""
+      }
+    },
+    "tabled_information_hWDiNe": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "row_Gt76J6": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2024",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "row_QKziJA": {
+          "type": "row",
+          "settings": {
+            "award": "Lumo Awards",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_XkDFEH": {
+          "type": "row",
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_JegYCt": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "row_Gt76J6",
+        "row_QKziJA",
+        "row_XkDFEH",
+        "row_JegYCt"
+      ],
+      "settings": {
+        "main_heading": "CHENIN BLANC:  2024"
+      }
+    },
+    "6b512894-fe71-429f-ac93-1317f8b679cb": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "43dbe121-0832-4d2b-8d9a-3970a7125f86": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2021",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "0c3cffeb-6428-4680-bd3e-3e0dbe601d6e": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2022",
+            "arward_level": "Double Gold"
+          }
+        },
+        "30b104d7-02d1-47e2-a73e-2e761aedc0f1": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "8c73e293-6179-43a0-b4b0-83260719a731": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2022",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "fe372d67-9992-4613-b6c5-5a68dff11413": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2023",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        }
+      },
+      "block_order": [
+        "43dbe121-0832-4d2b-8d9a-3970a7125f86",
+        "0c3cffeb-6428-4680-bd3e-3e0dbe601d6e",
+        "30b104d7-02d1-47e2-a73e-2e761aedc0f1",
+        "8c73e293-6179-43a0-b4b0-83260719a731",
+        "fe372d67-9992-4613-b6c5-5a68dff11413"
+      ],
+      "settings": {
+        "main_heading": "CHENIN BLANC:  2022"
+      }
+    },
+    "1643138288076d596f": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "52cffaa4-b2d9-4ca4-87af-44fc2888b749": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2021",
+            "arward_level": "Grand Gold"
+          }
+        }
+      },
+      "block_order": [
+        "52cffaa4-b2d9-4ca4-87af-44fc2888b749"
+      ],
+      "settings": {
+        "main_heading": "Chenin Blanc:  2021"
+      }
+    },
+    "1643138027e1373c5e": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "1e03adef-7a71-4da8-9c73-fafe71611da6": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2020",
+            "arward_level": "Double Gold"
+          }
+        },
+        "3dab05e6-7707-49ba-b61d-cfc5caff901f": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2020",
+            "arward_level": "Top 10 Producer"
+          }
+        },
+        "ed1c021f-5eb5-400d-8b07-a3c883745004": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        },
+        "e16f4177-3083-47c9-8b1e-d3db9f4d137d": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2020",
+            "arward_level": "Silver Outstanding"
+          }
+        },
+        "0b12b260-7921-40a3-9f4d-2efbba51a95d": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2020",
+            "arward_level": "Top 10 Producer"
+          }
+        },
+        "a8aadce6-f9ae-4d3c-aca2-fbe71bd74c21": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        },
+        "2753498e-5a30-4f5d-83d1-5f1650d75013": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2020",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "f815cb7c-8f1e-42a9-8513-d22d59ebe101": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2020 / 2021",
+            "arward_level": "Double Gold"
+          }
+        },
+        "261b5c97-fdda-4972-afa2-fe3f6e649157": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "397fad4c-02f1-4a52-83d0-ebbcef41b8ee": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Sommeliers Choice Awards",
+            "year": "2021",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "1e03adef-7a71-4da8-9c73-fafe71611da6",
+        "3dab05e6-7707-49ba-b61d-cfc5caff901f",
+        "ed1c021f-5eb5-400d-8b07-a3c883745004",
+        "e16f4177-3083-47c9-8b1e-d3db9f4d137d",
+        "0b12b260-7921-40a3-9f4d-2efbba51a95d",
+        "a8aadce6-f9ae-4d3c-aca2-fbe71bd74c21",
+        "2753498e-5a30-4f5d-83d1-5f1650d75013",
+        "f815cb7c-8f1e-42a9-8513-d22d59ebe101",
+        "261b5c97-fdda-4972-afa2-fe3f6e649157",
+        "397fad4c-02f1-4a52-83d0-ebbcef41b8ee"
+      ],
+      "settings": {
+        "main_heading": "Chenin Blanc:  2020"
+      }
+    },
+    "1643137926643efb69": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "97cd6c38-a8d9-4715-833c-6d020f76ecb1": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2019",
+            "arward_level": "Gold"
+          }
+        },
+        "9031365e-2322-4230-b40f-12de9c98f8de": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2019",
+            "arward_level": "Top 10 Producer"
+          }
+        },
+        "711d35b7-e01b-4347-bee3-5b3903900e78": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2019",
+            "arward_level": "Gold"
+          }
+        },
+        "a506e25a-11df-415e-8149-4b5cc28305d8": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2019",
+            "arward_level": "Silver"
+          }
+        },
+        "4869e8e9-2c35-431f-9a02-089352927515": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2019",
+            "arward_level": "Silver Outstanding"
+          }
+        },
+        "c94df1eb-620f-47d1-ab63-f31ebae76ee2": {
+          "type": "row",
+          "settings": {
+            "award": "WineMag",
+            "year": "2019",
+            "arward_level": "Best Value"
+          }
+        },
+        "46659b15-f27f-46ed-b056-4abc1edbfe11": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2019",
+            "arward_level": "Grand Gold"
+          }
+        },
+        "474cabeb-ba50-4e00-9ccb-fe286be1e758": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2019 / 2020",
+            "arward_level": "Gold"
+          }
+        },
+        "64dc9566-f380-4ed4-bf5f-93349246eb48": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2020",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "97cd6c38-a8d9-4715-833c-6d020f76ecb1",
+        "9031365e-2322-4230-b40f-12de9c98f8de",
+        "711d35b7-e01b-4347-bee3-5b3903900e78",
+        "a506e25a-11df-415e-8149-4b5cc28305d8",
+        "4869e8e9-2c35-431f-9a02-089352927515",
+        "c94df1eb-620f-47d1-ab63-f31ebae76ee2",
+        "46659b15-f27f-46ed-b056-4abc1edbfe11",
+        "474cabeb-ba50-4e00-9ccb-fe286be1e758",
+        "64dc9566-f380-4ed4-bf5f-93349246eb48"
+      ],
+      "settings": {
+        "main_heading": "Chenin Blanc:  2019"
+      }
+    },
+    "1643137857abd5fcfa": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "90d4f643-8454-4acd-93ba-95ef3df54c3d": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2018 / 2019",
+            "arward_level": "Silver"
+          }
+        },
+        "1c9f30a6-5f3c-457f-b99d-26ef6be10541": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2018",
+            "arward_level": "Silver"
+          }
+        },
+        "f814d572-6351-44ff-811d-93b23d42b1d7": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2018",
+            "arward_level": "Gold"
+          }
+        },
+        "f36985c1-b993-44c4-af73-35a52f4f3dbe": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2019",
+            "arward_level": "Top 100"
+          }
+        },
+        "db255d10-6063-426a-ab46-c5499fc82870": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2019",
+            "arward_level": "Double Platinum"
+          }
+        },
+        "1e480935-f433-4213-9b49-84a504f34c20": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2019",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "90d4f643-8454-4acd-93ba-95ef3df54c3d",
+        "1c9f30a6-5f3c-457f-b99d-26ef6be10541",
+        "f814d572-6351-44ff-811d-93b23d42b1d7",
+        "f36985c1-b993-44c4-af73-35a52f4f3dbe",
+        "db255d10-6063-426a-ab46-c5499fc82870",
+        "1e480935-f433-4213-9b49-84a504f34c20"
+      ],
+      "settings": {
+        "main_heading": "Chenin Blanc:  2018"
+      }
+    },
+    "1643137802a4237a88": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "c2b67ddb-10d0-41c4-9afe-83cbaa3aaf25": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2017",
+            "arward_level": "Gold"
+          }
+        },
+        "b146f5d8-12a3-4876-9de8-b277b654ddf3": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2017 / 2018",
+            "arward_level": "Gold"
+          }
+        },
+        "9056fe9f-a8a1-4953-b732-7a6fc8ac41ad": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2018",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "c2b67ddb-10d0-41c4-9afe-83cbaa3aaf25",
+        "b146f5d8-12a3-4876-9de8-b277b654ddf3",
+        "9056fe9f-a8a1-4953-b732-7a6fc8ac41ad"
+      ],
+      "settings": {
+        "main_heading": "Chenin Blanc:  2017"
+      }
+    },
+    "16423667519a6836be": {
+      "type": "Logos",
+      "blocks": {
+        "1642366751d2473fd1-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Platinum.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "7d4b5236-fdfc-4187-a662-8646c63ed76b": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards-Top-10.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "816919e6-8689-4675-a4fa-29b06c6886af": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Vitis-Vinifera-Awards-Gold-2.png",
+            "logo_link": "https://www.vitisawards.com/"
+          }
+        },
+        "43178b72-1624-4cfc-a64d-f2b134df1544": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Award-Double-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "740598a2-4186-482b-9e95-f81f9a319419": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points-Gold.png",
+            "logo_link": "https://iwsc.net/"
+          }
+        },
+        "ca05ba96-e2c6-475d-9788-4b7a4dd08b21": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "cfd9adcd-453d-47c3-9aeb-59fcee6eb39d": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Catavinum-Awards-Gold.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        }
+      },
+      "block_order": [
+        "1642366751d2473fd1-0",
+        "7d4b5236-fdfc-4187-a662-8646c63ed76b",
+        "816919e6-8689-4675-a4fa-29b06c6886af",
+        "43178b72-1624-4cfc-a64d-f2b134df1544",
+        "740598a2-4186-482b-9e95-f81f9a319419",
+        "ca05ba96-e2c6-475d-9788-4b7a4dd08b21",
+        "cfd9adcd-453d-47c3-9aeb-59fcee6eb39d"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16430340119e659e4c": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "56ea5e51-174b-4d9e-8910-364f7176c576": {
+          "type": "column",
+          "settings": {
+            "title": "FLAGSHIP RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">Verreaux Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-0": {
+          "type": "column",
+          "settings": {
+            "title": "ICON RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chenin Blanc</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chardonnay</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Bismarck Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-1": {
+          "type": "column",
+          "settings": {
+            "title": "RESERVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/wine-awards-reserve-viognier\" target=\"_blank\" title=\"Wine Awards Reserve Viognier\">Viognier</a></p><p><a href=\"/pages/reserve-awards-cvc\" target=\"_blank\" title=\"Wine Awards Reserve CVC Blend\">CVC Blend</a></p><p><a href=\"/pages/reserve-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Reserve Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/reserve-awards-drift-fusion\" target=\"_blank\" title=\"Wine Awards Reserve Drift Fusion Blend\">Drift Fusion Blend</a></p><p><a href=\"/pages/awards-reserve-chardonnay\" target=\"_blank\" title=\"Wine Awards Reserve Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat Nectarinia</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat de Frontignan</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-2": {
+          "type": "column",
+          "settings": {
+            "title": "221 RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Chenin Blanc</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Pinotage</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Special Cuvée Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "05dd72a3-069d-4b39-989e-de08931892e1": {
+          "type": "column",
+          "settings": {
+            "title": "SIGNATURE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/signature-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Signature Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/signature-awards-viognier\" target=\"_blank\" title=\"Wine Awards Signature Viognier\">Viognier</a></p><p><a href=\"/pages/signature-awards-chardonnay\" target=\"_blank\" title=\"Wine Awards Signature Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage Rosé</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage</a></p><p><a href=\"/pages/signature-awards-cabernet-sauvignon\" target=\"_blank\" title=\"Wine Awards Signature Cabernet Sauvignon\">Cabernet Sauvignon</a></p><p><a href=\"/pages/signature-awards-shiraz\" target=\"_blank\" title=\"Wine Awards Signature Shiraz\">Shiraz</a></p><p><a href=\"/pages/signature-awards-merlot\" target=\"_blank\" title=\"Wine Awards Signature Merlot\">Merlot</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925": {
+          "type": "column",
+          "settings": {
+            "title": "SPARKLING RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Rosé</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Blanc de Blanc</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Nature Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Thornlands MCC</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "af0d031d-5b54-45c0-8cb4-fac652753af9": {
+          "type": "column",
+          "settings": {
+            "title": "EXCLUSIVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Chenin Blanc</a></p><p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "508a02e8-b134-4e1e-8411-719f23834cb0": {
+          "type": "column",
+          "settings": {
+            "title": "EXPORT WINES",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Rondebosch Wines</a></p><p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Cape Pride Wines</a></p>",
+            "Text_color": "#2d5980"
+          }
+        }
+      },
+      "block_order": [
+        "56ea5e51-174b-4d9e-8910-364f7176c576",
+        "1643034010691e68fe-0",
+        "1643034010691e68fe-1",
+        "1643034010691e68fe-2",
+        "05dd72a3-069d-4b39-989e-de08931892e1",
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925",
+        "af0d031d-5b54-45c0-8cb4-fac652753af9",
+        "508a02e8-b134-4e1e-8411-719f23834cb0"
+      ],
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "OUR AWARDS BY RANGE",
+        "Heading_color": "#f8f2e6",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "BUY OUR AWARD-WINNING SIGNATURE RANGE WINES",
+        "button_link": "shopify://collections/signature-range",
+        "swipe_on_mobile": false
+      }
+    },
+    "16423669557e20a789": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "1711996303aa45462f": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_RxcmfL": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "89937",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#c65336",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 60,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_RxcmfL"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "tabled_information_hWDiNe",
+    "6b512894-fe71-429f-ac93-1317f8b679cb",
+    "1643138288076d596f",
+    "1643138027e1373c5e",
+    "1643137926643efb69",
+    "1643137857abd5fcfa",
+    "1643137802a4237a88",
+    "16423667519a6836be",
+    "16430340119e659e4c",
+    "16423669557e20a789",
+    "1711996303aa45462f"
+  ]
+}

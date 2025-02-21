@@ -1,0 +1,112 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#2e112d"
+      }
+    },
+    "banner": {
+      "type": "Range-Header",
+      "blocks": {
+        "3f3c051f-68fe-48bc-bf8a-58871c755c90": {
+          "type": "slider",
+          "settings": {
+            "slider_link": ""
+          }
+        },
+        "4b213a1a-e32c-4af1-917d-4d410febf63d": {
+          "type": "slider",
+          "settings": {
+            "slider_link": ""
+          }
+        },
+        "c5648291-9f96-4fce-8ec1-ac4f4589cfa8": {
+          "type": "slider",
+          "settings": {
+            "slider_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "3f3c051f-68fe-48bc-bf8a-58871c755c90",
+        "4b213a1a-e32c-4af1-917d-4d410febf63d",
+        "c5648291-9f96-4fce-8ec1-ac4f4589cfa8"
+      ],
+      "settings": {
+        "show_collection_description": true,
+        "show_collection_image": false,
+        "title": "<p>GREAT FOR THE PRICE OF GOOD</p>",
+        "description": "<p>sdfsdfsdf</p>",
+        "sub_title": "sdfsdfsd"
+      }
+    },
+    "1639247430b11975b9": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/the-wine-side.png",
+        "video_url": "",
+        "Heading_size": "h1",
+        "Heading_color": "#f8f2e6",
+        "title": "221 RANGE",
+        "video-sec-content-txt-1": "<p>Our range is the best</p>",
+        "button-txt": "",
+        "button_link": ""
+      }
+    },
+    "product-grid": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "221-range"
+          }
+        }
+      },
+      "block_order": [
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
+      ],
+      "settings": {
+        "topheading": "",
+        "subtitle-1": "Add Text",
+        "active_collection": ""
+      }
+    },
+    "1639247728bb3b5028": {
+      "type": "Logos",
+      "blocks": {
+        "1639247728c24078eb-0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1639247728c24078eb-0"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "banner",
+    "1639247430b11975b9",
+    "product-grid",
+    "1639247728bb3b5028"
+  ]
+}

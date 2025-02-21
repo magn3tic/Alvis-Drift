@@ -1,0 +1,19 @@
+<div class="page-width page-width--narrow">
+  <div class="grid grid--1-col grid--2-col-tablet">
+    <div class="grid__item">
+      {%- if block.settings.title -%}
+        <h2 class="h2 color-foreground-accent-2">{{ block.settings.title }}</h2>
+      {%- endif -%}
+      {%- if block.settings.copy -%}
+        {{ block.settings.copy | replace: '<p>', '<p class="body-copy-1">' }}
+      {%- endif -%}
+    </div>
+    <div class="grid__item">
+      <div class="form">
+        {%- if block.settings.hs_form_id != blank and block.settings.hs_form_portal_id != blank -%}
+          {%- render 'hsform-script', id: block.settings.hs_form_id, portal_id: block.settings.hs_form_portal_id -%}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</div>

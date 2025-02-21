@@ -1,0 +1,321 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+<noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="page-width page-width--narrow">
+  <h2 class="page-title">
+	{{ page.title }}
+  </h2>
+  
+
+  <div class="sort-section">
+  
+    <button id="alphBnt">Product Name A-Z</button>
+    
+    
+    
+	<button id="numBnt">Price Low to High</button>
+  
+    
+  
+  </div>
+  
+
+
+
+  <div class="container-price-list wrap">
+    
+    
+
+    
+{% for product in collections[section.settings.collection].products  %}
+
+    
+      
+    
+    <div class="price-list box">
+    
+      <div class="product-image">
+      	
+        <a target="_blank" href="{{ product.url }}"> <img src="{{ product.featured_image | img_url:'master' }}"></a>
+        
+      </div>
+      
+      <div class="product-name">
+      	
+        <a target="_blank" href="{{ product.url }}">  <h1>{{ product.title }}</h1></a>
+      
+      </div>
+      
+      <div class="product-price">
+      	
+        <a target="_blank" href="{{ product.url }}"><h3>{{ product.price | money | remove:'.00' | replace: ",", " "  }}</h3>
+        
+           <h2 style="display:none;">{{ product.price }}</h2>
+        
+        </a>
+        
+      </div>
+    
+    </div>
+    
+    
+{% endfor %}
+    
+    
+    
+  
+  </div>
+  
+  <div  id="DivIdToPrint" style="display:none;">  
+        <table class="price-table-list" border="0" style="width: 100%;">
+   
+        
+{% for product in collections[section.settings.collection].products  %}
+
+     <tr style="margin-bottom:35px;">  	
+      <td> <img style="height:100px;" src="{{ product.featured_image | img_url:'master' }}"></td>
+      <td><h1>{{ product.title }}</h1></td>
+      <td> <h2>{{ product.price | money | remove:'.00' }}</h2></td>
+      
+      </tr>
+          
+{% endfor %} 
+          
+       </table>
+ </div>     
+  <div class="product-print-btn">
+  	
+    <button  id='btn'  onclick='printDiv();'>Print This Page</button>
+    
+  </div>
+  
+</div>
+
+
+<script>
+
+  function printDiv() 
+{
+
+  var divToPrint=document.getElementById('DivIdToPrint');
+
+  var newWin=window.open('','Print-Window');
+
+  newWin.document.open();
+
+  newWin.document.write('<html><body onload="window.print()">'+divToPrint.innerHTML+'</body></html>');
+
+  newWin.document.close();
+
+
+}
+
+</script>
+
+<script>
+
+	  $(function(){
+	    
+	    var alpha = [];
+        var alpha_rev = [];
+	    var number = [];
+        var number_rev = [];
+	    
+	    $('.box').each(function(){
+	      
+	      var alphaArr = [];
+          var alphaArr_reverse_order = [];
+	      var numArr = [];
+          var reverse_order = [];
+	      
+	      alphaArr_reverse_order.push($('h1', this).text());
+	      alphaArr_reverse_order.push($(this));
+	      alpha_rev.push(alphaArr_reverse_order);
+	      alpha_rev.reverse();
+          
+          alphaArr.push($('h1', this).text());
+	      alphaArr.push($(this));
+	      alpha.push(alphaArr);
+	      alpha.sort();
+	      
+	      numArr.push($('h2', this).text());
+	      numArr.push($(this));
+	      number.push(numArr);
+	      number.sort();
+          
+          reverse_order.push($('h2', this).text());
+	      reverse_order.push($(this));
+	      number_rev.push(reverse_order);
+	      number_rev.reverse();
+          
+	    })
+	    
+	    $('#alphBnt').on('click', function(){
+	      $('.box').remove();
+	      for(var i=0; i<alpha.length; i++){
+	        $('.wrap').append(alpha[i][1]);
+	      }
+	    })
+        
+        
+        $('#alphBnt_desc').on('click', function(){
+	      $('.box').remove();
+	      for(var i=0; i<alpha_rev.length; i++){
+	        $('.wrap').append(alpha_rev[i][1]);
+	      }
+	    })
+
+        
+        //
+        
+	    $('#numBnt').on('click', function(){
+	      $('.box').remove();
+	      for(var i=0; i<number.length; i++){
+            
+            console.log(i);
+            
+	        $('.wrap').append(number[i][1]);
+	      }
+	    })
+        
+      	 $('#numBnt_desc').on('click', function(){
+	      $('.box').remove();
+	      for(var i=0; i<number_rev.length; i++){
+            
+            console.log(i);
+            
+	        $('.wrap').append(number_rev[i][1]);
+	      }
+	    })
+        
+	    
+	  })
+
+
+</script>
+
+
+<style>
+  
+  .price-list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.product-image img {
+    height: 110px;
+}
+
+  .price-list {
+    margin-bottom: 20px;
+}
+ button#btn {
+      cursor: pointer;
+    color: var(--headingColor);
+    font: bold 14px/100% var(--metropolis);
+    letter-spacing: .7px;
+    text-align: center;
+    padding: 12px 40px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: all 50ms linear;
+    background-color: transparent;
+    border: 1px solid var(--headingColor);
+    padding: 11px 32px;
+      }
+  
+  
+  .product-print-btn {
+    text-align: center;
+    margin-bottom: 50px;
+}
+  
+  .price-list .product-image {
+    width: 12%;
+}
+  
+  .price-list .product-name {
+    width: 63%;
+    padding-left: 280px;
+}
+  
+  .page-width--narrow {
+    max-width: 100rem !important;
+    padding: 0;
+}
+  
+  .product-price {
+    width: 11%;
+    text-align: right;
+}
+  
+  @media only screen and (max-width: 767px) {
+  
+    
+      
+  .price-list .product-image {
+    width: auto;
+}
+  
+  .price-list .product-name {
+    width: auto;
+}
+  
+  
+  .product-price {
+    width: auto;
+    text-align: left;
+}
+  
+    
+}
+  
+  
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Price List",
+    "settings": [
+	  {
+        "type": "collection",
+        "id": "collection",
+        "label": "Collection"
+      },
+	 
+		{
+            "type": "select",
+            "id": "sort",
+            "label": "Sort",
+            "options": [
+				{
+                "value": "ProductName",
+                "label": "Product Name"
+              }, 
+              {
+                "value": "ProductPrice",
+                "label": "Product Price"
+              }			 
+            ],
+            "default": "ProductName"
+          }
+		
+      
+	  
+],
+  "presets": [
+    {
+      "name": "Price List"
+    }
+  ]
+  }
+{% endschema %}

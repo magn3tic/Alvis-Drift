@@ -1,0 +1,190 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#6b7231"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "b802da46-4cc3-435e-b205-9c811c1cb55f": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Sustainability.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "DARE",
+            "paragarh_p2": "TO DO",
+            "paragarh_p3": "RIGHT",
+            "paragarh_p4": "",
+            "paragarh_1": "A passion for our people, planet and future",
+            "paragarh_2": "Learn more about empowerment & sustainability at Alvi’s Drift.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b802da46-4cc3-435e-b205-9c811c1cb55f"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Vineyards-10.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "https://youtu.be/NHaK24QOLow",
+        "paragarh_p1": "ABOUT",
+        "paragarh_p2": "US",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "Learn more about our family, our farm, the Alvi’s Drift vineyards, our cellar, and our wine region.",
+        "paragarh_2": "Nestled in South Africa’s fertile Breede River Valley region, Alvi’s Drift winery boasts a long and storied history. Meet our family and get to know our farm, our vineyards, our cellar, and our award-winning wines.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-products",
+        "btn_main_link": "https://alvisdrift.co.za/"
+      }
+    },
+    "43862169-67fc-4c42-9248-07e58b704a20": {
+      "type": "Spacer",
+      "settings": {
+        "spacer_size": "100px"
+      }
+    },
+    "2990fb12-527e-4e3f-8a27-0c11c3e16d61": {
+      "type": "Text-Only",
+      "blocks": {
+        "template--16777506914560__2990fb12-527e-4e3f-8a27-0c11c3e16d61-16855156568148a6c6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "SUSTAINABILITY & UPLIFTMENT"
+          }
+        },
+        "template--16777506914560__2990fb12-527e-4e3f-8a27-0c11c3e16d61-16855156568148a6c6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At our core lies a deep commitment to crafting products that champion our workers and respect the earth, all while shaping a better tomorrow. Join us on our journey towards a more sustainable and mindful future. For our people, for our business, for our greater community and for our planet.</p><h4><strong>Alvi’s Drift. Dare To Do Right</strong></h4>",
+            "size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "template--16777506914560__2990fb12-527e-4e3f-8a27-0c11c3e16d61-16855156568148a6c6-0",
+        "template--16777506914560__2990fb12-527e-4e3f-8a27-0c11c3e16d61-16855156568148a6c6-1"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "text_alignment": "center"
+      }
+    },
+    "focus_text_image_right_GLeLTK": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Our_People.png",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "People",
+        "video-sec-content-txt-1": "<p>The wellbeing of our people and our greater community is close to our hearts, and supporting our employees and their families in a tangible manner is a priority. We’re always exploring new methods to assist and empower our valued workforce and the greater community.</p><p>That’s why we’re so excited about our soon-to-be-launched partnership with the <a href=\"https://www.indaba-foundation.org/\" target=\"_blank\" title=\"Indaba Foundation\"><span style=\"text-decoration:underline\"><strong>Indaba Foundation for Early Childhood Development</strong></span></a>.</p>",
+        "button-txt": "MORE",
+        "button_link": "shopify://pages/sustainability-people",
+        "button_type": "alvisBtnOpposite"
+      }
+    },
+    "focus_text_image_left_8yMENh": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Sustainability.png",
+        "image_size": "100%",
+        "video_url": "https://www.youtube.com/watch?v=1MJNc-AQCKY&t=2s",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "Planet",
+        "video-sec-content-txt-1": "<p>We are deeply committed to conserving our planet and its precious resources.</p><p>This commitment is evident in various initiatives across our farm, including our goal to restore 50% of our land to its original fauna and flora.</p>",
+        "button-txt": "MORE",
+        "button_link": "shopify://pages/sustainability-planet",
+        "button_type": "alvisBtnOpposite"
+      }
+    },
+    "focus_text_image_right_3tYq8p": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Economy.png",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "Future",
+        "video-sec-content-txt-1": "<p>We're always striving to improve our efficiencies, as doing so enables us to pass savings on to our loyal customers. </p><p>As a socially responsible and environmentally conscious winery, we recognise the pivotal importance of economic viability and supply chain optimisation.</p>",
+        "button-txt": "MORE",
+        "button_link": "shopify://pages/sustainability-future",
+        "button_type": "alvisBtnOpposite"
+      }
+    },
+    "33f3a2d5-5355-46f5-8ab8-dc2f0a55375b": {
+      "type": "Text-Only",
+      "blocks": {
+        "template--16777506914560__33f3a2d5-5355-46f5-8ab8-dc2f0a55375b-16855156568148a6c6-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "More than just a business"
+          }
+        },
+        "template--16777506914560__33f3a2d5-5355-46f5-8ab8-dc2f0a55375b-16855156568148a6c6-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At Alvi’s Drift, we’re more than just winemakers. We’re a proud part of the greater community and committed to shaping a better future for our people, our industry and our planet.</p><p><strong>Alvi’s Drift. Dare To Be True.</strong></p>",
+            "size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "template--16777506914560__33f3a2d5-5355-46f5-8ab8-dc2f0a55375b-16855156568148a6c6-0",
+        "template--16777506914560__33f3a2d5-5355-46f5-8ab8-dc2f0a55375b-16855156568148a6c6-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "color_scheme": "none",
+        "text_alignment": "center"
+      }
+    },
+    "2ac3530f-08c6-4e75-9a11-fd1313986b78": {
+      "type": "Text-Scroller",
+      "settings": {
+        "dare-to-be-true-bg": "shopify://shop_images/Dare_To_Be_True.png",
+        "marquee-t-1": "D<i>A</i>RE TO BE TR<i>U</i>E",
+        "marquee-font-size": "128",
+        "marquee-t-2": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "43862169-67fc-4c42-9248-07e58b704a20",
+    "2990fb12-527e-4e3f-8a27-0c11c3e16d61",
+    "focus_text_image_right_GLeLTK",
+    "focus_text_image_left_8yMENh",
+    "focus_text_image_right_3tYq8p",
+    "33f3a2d5-5355-46f5-8ab8-dc2f0a55375b",
+    "2ac3530f-08c6-4e75-9a11-fd1313986b78"
+  ]
+}

@@ -1,0 +1,100 @@
+<section class="newsletter-sec">
+    <div class="container">
+        <div class="newsletter-wrap">
+            <div class="newsletter-content">
+                <h2 style="color:{{ section.settings.Heading_color }}" class="animate-reveal-h2">{{ section.settings.section_heading }}</h2>
+                <p class="animate-reveal">{{ section.settings.section_content }}</p>
+            </div>
+            <div class="newsletter-frm">
+                <div class="newsletter-frm-inner">
+     {% form 'contact' %}
+  {{ form.errors | default_errors }}
+  <div class=" form-row first-name">
+    <label for="first-name">FIRST NAME</label>
+    <input type="text" name="contact[first_name]" id="first-name" />
+  </div>
+  <div class=" form-row last-name">
+    <label for="last-name">SURNAME</label>
+    <input type="text" name="contact[surname]" id="last-name" />
+  </div>
+  <div class=" form-row email">
+    <label for="email">EMAIL ADDRESS</label>
+    <input type="email" name="contact[email]" id="email" />
+  </div>
+  <div class="submit">
+    <input type="submit" value="SUBMIT" />
+  </div>
+{% endform %}      
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+{
+  "name": "Newsletter Subscription",
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "section_heading",
+      "label": "Heading",
+      "default": "<p>TH<em>E<\/em>  <br\/>DRIFT<\/p>"
+    },
+    {
+      "type": "richtext",
+      "id": "section_content",
+      "label": "Intro Text",
+      "default": "<p><strong>Get the very best when it comes to wine promotions.<\/strong><\/p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.<\/p>"
+
+    },
+ 	{
+            "type": "select",
+            "id": "Heading_color",
+            "label": "Heading Colour",
+            "options": [
+			  
+			  {
+                "value": "#fedcc6",
+                "label": "Light Orange"
+              },
+{
+                "value": "#c65336",
+                "label": "Dark Orange"
+              }, 
+
+			  {
+                "value": "#f8f2e6",
+                "label": "Light Beige"
+              }, 
+             
+			  {
+                "value": "#c0ccbe",
+                "label": "Light Olive"
+              },
+              {
+                "value": "#aac4d3",
+                "label": "Light Blue"
+              }
+              
+            ],
+            "default": "#c65336"
+          },
+	
+	{
+      "type": "text",
+      "id": "hs_form_portal_id",
+      "label": "Newsletter Form ID"
+    }
+    
+  ],
+  "presets": [
+    {
+      "name":"Newsletter Subscription",
+      "category": {  
+        "en": "Newsletter"
+      }
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,115 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1642148343714cf8ce": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    },
+    "cart-items": {
+      "type": "main-cart-items",
+      "settings": {
+        "show_vendor": false
+      }
+    },
+    "focus_text_image_left_w8pkHq": {
+      "type": "Focus-Text-Image-Left",
+      "disabled": true,
+      "settings": {
+        "background_colour": "#5c6e67",
+        "our-story-vid": "shopify://shop_images/Alvis-drift-Dare-to-be-right_stick.png",
+        "image_size": "150",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "THANK YOU FOR SUPPORTING OUR PEOPLE, OUR PLANET, AND OUR FUTURE.",
+        "video-sec-content-txt-1": "",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "image_with_overlay_text_Fyafwr": {
+      "type": "Image-With-Overlay-Text",
+      "blocks": {
+        "heading_caddJ3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Thank you for supporting our People, our Planet, and our Future.",
+            "heading_size": "medium"
+          }
+        },
+        "text_R3xExa": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "buttons_DKPTWN": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_caddJ3",
+        "text_R3xExa",
+        "buttons_DKPTWN"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Website_banner_sustainability_00c60d8b-a6d1-4a64-8a6f-3b534904e9c1.jpg",
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "cart-footer": {
+      "type": "main-cart-footer",
+      "blocks": {
+        "subtotal": {
+          "type": "subtotal",
+          "settings": {}
+        },
+        "buttons": {
+          "type": "buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "subtotal",
+        "buttons"
+      ],
+      "settings": {
+        "show_cart_note": true
+      }
+    }
+  },
+  "order": [
+    "1642148343714cf8ce",
+    "cart-items",
+    "focus_text_image_left_w8pkHq",
+    "image_with_overlay_text_Fyafwr",
+    "cart-footer"
+  ]
+}

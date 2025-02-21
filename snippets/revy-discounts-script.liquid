@@ -1,0 +1,7 @@
+<script> 
+  window.revyDiscountsThemeSettings = { 
+  	cart: {{ cart | json }},
+    locale: '{{ request.locale.iso_code }}'
+  }; 
+</script>
+<script defer src="https://api.revy.io/discounts.js?shop=alvis-drift.myshopify.com&v=1" type="text/javascript"></script>

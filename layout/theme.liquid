@@ -1,0 +1,213 @@
+
+<!doctype html>
+<html class="no-js" lang="{{ request.locale.iso_code }}">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="">
+    <meta name="description" content = "{{ page_description }}">
+    <link rel="canonical" href="{{ canonical_url }}">
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  {% comment %}  {{ 'venobox.css' | asset_url | stylesheet_tag }}{% endcomment %}
+    {{ 'venobox.css' | asset_url | stylesheet_tag: preload: true }}
+    
+    <!-- Google Tag Manager 
+    <script async=true >(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5GK8LLK');</script>
+    <!-- End Google Tag Manager -->   
+    
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
+    {%- endif -%}
+    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+    <title>
+      {{ page_title }}
+      {%- if current_tags %} &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
+      {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
+      {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+    </title>  
+    {{ 'custom_css.css' | asset_url | stylesheet_tag }}
+    
+    {{ 'common_pages_animation.css' | asset_url | stylesheet_tag }}
+    {% render 'meta-tags' %}
+    <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
+    {{ content_for_header }}
+    {%- liquid
+      assign body_font_bold = settings.type_body_font | font_modify: 'weight', 'bold'
+      assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
+      assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
+    %}
+    {% style %}
+      {{ settings.type_body_font | font_face: font_display: 'swap' }}
+      :root {--font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};--font-body-style: {{ settings.type_body_font.style }};--font-body-weight: {{ settings.type_body_font.weight }};--font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};--font-heading-style: {{ settings.type_header_font.style }};--font-heading-weight: {{ settings.type_header_font.weight }};--font-body-scale: {{ settings.body_scale | divided_by: 100.0 }};--font-heading-scale: {{ settings.heading_scale | times: 1.0 | divided_by: settings.body_scale }};--color-base-text: {{ settings.colors_text.red }}, {{ settings.colors_text.green }}, {{ settings.colors_text.blue }};--color-base-background-1: {{ settings.colors_background_1.red }}, {{ settings.colors_background_1.green }}, {{ settings.colors_background_1.blue }};--color-base-background-2: {{ settings.colors_background_2.red }}, {{ settings.colors_background_2.green }}, {{ settings.colors_background_2.blue }};--color-base-solid-button-labels: {{ settings.colors_solid_button_labels.red }}, {{ settings.colors_solid_button_labels.green }}, {{ settings.colors_solid_button_labels.blue }};--color-base-outline-button-labels: {{ settings.colors_outline_button_labels.red }}, {{ settings.colors_outline_button_labels.green }}, {{ settings.colors_outline_button_labels.blue }};--color-base-accent-1: {{ settings.colors_accent_1.red }}, {{ settings.colors_accent_1.green }}, {{ settings.colors_accent_1.blue }};--color-base-accent-2: {{ settings.colors_accent_2.red }}, {{ settings.colors_accent_2.green }}, {{ settings.colors_accent_2.blue }};--payment-terms-background-color: {{ settings.colors_background_1 }};--gradient-base-background-1: {% if settings.gradient_background_1 != blank %}{{ settings.gradient_background_1 }}{% else %}{{ settings.colors_background_1 }}{% endif %};--gradient-base-background-2: {% if settings.gradient_background_2 != blank %}{{ settings.gradient_background_2 }}{% else %}{{ settings.colors_background_2 }}{% endif %};--gradient-base-accent-1: {% if settings.gradient_accent_1 != blank %}{{ settings.gradient_accent_1 }}{% else %}{{ settings.colors_accent_1 }}{% endif %};--gradient-base-accent-2: {% if settings.gradient_accent_2 != blank %}{{ settings.gradient_accent_2 }}{% else %}{{ settings.colors_accent_2 }}{% endif %};--page-width: {{ settings.page_width | divided_by: 10 }}rem;--page-width-margin: {% if settings.page_width == '1600' %}2{% else %}0{% endif %}rem;}
+      *,
+      *::before,
+      *::after {box-sizing: inherit;}html {box-sizing: border-box;font-size: calc(var(--font-body-scale) * 62.5%);height: 100%;}body {display: grid;grid-template-rows: auto auto 1fr auto;grid-template-columns: 100%;min-height: 100%;margin: 0;font-size: 1.5rem;letter-spacing: 1.2rem;line-height: calc(1 + 0.8 / var(--font-body-scale));font-family: var(--font-body-family);font-style: var(--font-body-style);font-weight: var(--font-body-weight);}@media screen and (min-width: 750px) {body {font-size: 1.6rem;}}
+    {% endstyle %}  
+    <link rel="stylesheet" href="{{ 'base.mini.css' | asset_url }}"  type ="text/css" media="all" defer="defer">
+    {%- unless settings.type_body_font.system? -%}      
+      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless -%}
+    {%- unless settings.type_header_font.system? -%}
+      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
+    {%- endunless -%}
+    {%- if settings.predictive_search_enabled -%}
+      <link rel="stylesheet" href="{{ 'component-predictive-search.css' | asset_url }}" media="print" onload="this.media='all'">
+    {%- endif -%}  
+    {% style %}
+      /* font embedded */
+      @font-face {font-family: 'Metropolis';src: url({{ 'metropolis-bold.woff2' | asset_url }}) format('woff2'),url({{ 'metropolis-bold.woff' | asset_url }}) format('woff');font-weight: 700;font-style: normal;font-display: swap;}    
+      @font-face {font-family: 'Metropolis';src: url({{ 'metropolis-regular.woff2' | asset_url }}) format('woff2'),url({{ 'metropolis-regular.woff' | asset_url }}) format('woff');font-weight: normal;font-style: normal;font-display: swap;}    
+      @font-face {font-family: 'Metropolis';src: url({{ 'metropolis-regularitalic.woff2' | asset_url }}) format('woff2'),url({{ 'metropolis-regularitalic.woff' | asset_url }}) format('woff');font-weight: normal;font-style: italic;font-display: swap;}  
+      @font-face {font-family: 'Metropolis';src: url({{ 'metropolis-semibold.woff2' | asset_url }}) format('woff2'),url({{ 'metropolis-semibold.woff' | asset_url }}) format('woff');font-weight: 600;font-style: normal;font-display: swap;}    
+      @font-face {font-family: 'Moriarty';src: url({{ 'moriarty.woff2' | asset_url }}) format('woff2'),url({{ 'moriarty.woff' | asset_url }}) format('woff');font-weight: 400;font-style: normal;font-display: swap;}   
+      /* slider prev/next icons*/.slick-prev:before { background-image: url("{{ 'prev.svg' | asset_url }}");}
+      .slick-next:before {background-image: url("{{ 'next.svg' | asset_url }}"); }.input-num-wrap .num-up {background-image: url("{{ 'angle-up.svg' | asset_url }}"); }
+      .input-num-wrap .num-down { background-image: url("{{ 'angle-down.svg' | asset_url }}");}.prd-t-angle {
+        background-image: url("{{ 'angle-down.svg' | asset_url }}");} .blp-container {
+       display:none !important; }
+      {% endstyle %}
+    <!--<link rel="stylesheet" defer type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.mini.css"/>-->
+   {{ 'slick-theme.min.css' | asset_url | stylesheet_tag }}   
+
+    {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
+    
+    {{ 'custom_css_updates.css' | asset_url | stylesheet_tag }} 
+    
+    <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script> 
+<!-- VWO SmartCode -->
+  <!-- Start VWO Async SmartCode -->
+    <script type='text/javascript'>
+    window._vwo_code = window._vwo_code || (function(){
+    var account_id=628287,
+    settings_tolerance=2000,
+    library_tolerance=2500,
+    use_existing_jquery=false,
+    is_spa=1,
+    hide_element='body',
+    /* DO NOT EDIT BELOW THIS LINE */
+    f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.fetchPriority='high';b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){window.settings_timer=setTimeout(function () {_vwo_code.finish() },settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
+    </script>
+<!-- End VWO Async SmartCode -->   
+
+        <script>
+  // Check if the page is homepage, product, or collection
+  function shouldShowAgeGate() {
+    var ageVerified = localStorage.getItem('ageVerified');
+    
+    // Check if age has already been verified
+    if (ageVerified === 'true') {
+      return false; // Do not show popup if already verified
+    }
+
+    // Check if the current page is the homepage, product page, or collection page
+    var isHomePage = {{ template.name == 'index' | json }};
+    var isProductPage = {{ template.name == 'product' | json }};
+    var isCollectionPage = {{ template.name == 'collection' | json }};
+
+    return isHomePage || isProductPage || isCollectionPage;
+  }
+
+  // Show the popup if required
+  function checkAgeGate() {
+    if (shouldShowAgeGate()) {
+      document.getElementById('age-gate').style.display = 'block';
+    }
+  }
+
+  // Set age verification in localStorage
+  function verifyAge() {
+    localStorage.setItem('ageVerified', 'true');
+    document.getElementById('age-gate').style.display = 'none';
+  }
+
+  // Deny access for underage users
+  function denyAccess() {
+    window.location.href = 'https://www.gov.za/sites/default/files/gcis_document/201503/act-27-1989.pdf'; // Redirect underage users
+  }
+
+  window.onload = function() {
+    checkAgeGate();
+  };
+</script>
+  </head>
+  <!--Sticky Banner-->
+  <body class="template-{{ template | replace: '.', '-' | replace: '/', '-' }}">
+  {% include 'agechecker' %}
+    <a class="skip-to-content-link button visually-hidden" href="#MainContent">
+      {{ "accessibility.skip_to_text" | t }}
+    </a>
+    {% section 'announcement-bar' %}
+    {% section 'header' %}
+    <main id="MainContent" class="content-for-layout" role="main" tabindex="-1">
+      {{ content_for_layout }}{{ locksmith_content_for_layout_addenda }}
+    </main>
+    {% section 'footer' %}
+    <ul hidden>
+      <li id="a11y-refresh-page-message">{{ 'accessibility.refresh_page' | t }}</li>
+    </ul>
+    <!-- Google Tag Manager (noscript) 
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5GK8LLK"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <script>
+      window.routes = {
+        cart_add_url: '{{ routes.cart_add_url }}',
+        cart_change_url: '{{ routes.cart_change_url }}',
+        cart_update_url: '{{ routes.cart_update_url }}',
+        predictive_search_url: '{{ routes.predictive_search_url }}'
+      };
+      window.cartStrings = {
+        error: `{{ 'sections.cart.cart_error' | t }}`,
+        quantityError: `{{ 'sections.cart.cart_quantity_error_html' | t }}`
+      }
+      window.variantStrings = {
+        addToCart: `{{ 'products.product.add_to_cart' | t }}`,
+        soldOut: `{{ 'products.product.sold_out' | t }}`,
+        unavailable: `{{ 'products.product.unavailable' | t }}`,
+      }
+      window.accessibilityStrings = {
+        shareSuccess: `{{ 'general.share.success_message' | t }}`,
+      }
+    </script>
+    {%- if settings.predictive_search_enabled -%}
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
+    {%- endif -%} 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="crossorigin="anonymous" defer = "defer"></script>      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js" defer = "defer"></script>
+      <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js" defer = "defer"></script>    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/venobox/1.9.3/venobox.min.js" defer = "defer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous" referrerpolicy="no-referrer" defer = "defer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js" defer = "defer"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js" defer = "defer"></script>  
+      
+      <script src="{{ 'custom.min.js' | asset_url }}" defer ></script>
+   
+    <style>
+    div#shopify-section-template--15579529183488__product-grid {padding-top: 100px;}div#shopify-section-template--15579529183488__1642113859b1f1945f {padding-top: 100px;
+}
+    </style>
+<script>
+  $(document).ready(function(){    
+    $("#MORE").click(function(){     
+      $('.icon-hamberger').click();    
+    });
+  });
+</script>   
+  {% comment %} {% render 'back-to-the-top' %}{% endcomment %}
+   {% include 'revy-discounts-script' %}
+    <style>
+      .blp-container {
+        display: flex !important;
+      }
+    </style>
+</body>  
+</html>

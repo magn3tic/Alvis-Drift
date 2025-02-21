@@ -1,0 +1,32 @@
+{% assign vertical_offset_for_trigger = 300 %}
+{% assign position_from_bottom = '6em' %}
+<a id="BackToTop" href="#" title="Back to the top" class="back-to-top hide">
+  <span></span> <i class="fa fa-arrow-circle-o-up fa-2x"></i>
+</a>
+{{ '//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css' | stylesheet_tag }}
+<style>
+  .back-to-top {position: fixed;bottom: 0%;right: 0px;text-decoration: none;color: #ffffff;background-color: transparent;font-size: 20px;padding: 0.3em;-webkit-border-top-left-radius: 3px;-webkit-border-bottom-left-radius: 3px;-moz-border-radius-topleft: 3px;-moz-border-radius-bottomleft: 3px;border-top-left-radius: 3px;border-bottom-left-radius: 3px;z-index: 1;}.back-to-top i {vertical-align: middle;}.back-to-top span {padding-left: 0.5em;}.back-to-top i + span {padding-left: 0;}.back-to-top:hover {text-decoration: none;color: #ffffff;}.hide {display: none!important;}
+</style>
+<script>
+    (function() {
+    function trackScroll() {
+        var scrolled = window.pageYOffset;
+        var coords = {{ vertical_offset_for_trigger }};
+        if (scrolled > coords) {
+        goTopBtn.classList.remove('hide');
+        }
+        if (scrolled < coords) {
+        goTopBtn.classList.add('hide');
+        }
+    }
+    function backToTop() {
+        if (window.pageYOffset > 0) {
+        window.scrollBy(0, -80);
+        setTimeout(backToTop, 0);
+        }
+    }
+    var goTopBtn = document.querySelector('.back-to-top');
+    window.addEventListener('scroll', trackScroll);
+    goTopBtn.addEventListener('click', backToTop);
+    })();
+</script>

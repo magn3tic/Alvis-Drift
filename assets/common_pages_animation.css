@@ -1,0 +1,72 @@
+
+.template-page-our-farm .from-right-sec div.detail-box-txt,
+.template-page-our-farm .from-left-sec div.detail-box-txt,
+.template-page-our-vineyards .from-left-sec div.detail-box-txt,
+.template-page-our-cellar .from-left-sec div.detail-box-txt{
+  margin-right: auto;
+  height: 500px;
+  padding-bottom: 15px;
+}
+.template-page-our-farm .splash-sec .detail-box {
+  top: calc(49.5% + 0px);
+}
+.template-page-our-farm .detail-box-txt::-webkit-scrollbar,
+.template-page-our-vineyards .detail-box-txt::-webkit-scrollbar,
+.template-page-our-cellar .detail-box-txt::-webkit-scrollbar{
+  width: 5px;
+}
+.template-page-our-farm .detail-box-txt::-webkit-scrollbar-thumb,
+.template-page-our-vineyards .detail-box-txt::-webkit-scrollbar-thumb,
+.template-page-our-cellar .detail-box-txt::-webkit-scrollbar-thumb{
+  background: #350210;
+  border-radius: 23px;
+}
+.template-page-our-farm.parallax-h .splash-sec .detail-box-txt p,
+.template-page-our-vineyards.parallax-h .splash-sec .detail-box-txt p,
+.template-page-our-cellar.parallax-h .splash-sec .detail-box-txt p{
+  -webkit-animation: toTop .7s cubic-bezier(0,1,1,1) .15s forwards !important;
+}
+@media screen and (max-width: 1199px){
+  .splash-sec .detail-box-txt {
+    max-width: 370px;
+    margin-left: auto;
+  }
+  .template-page-our-farm .from-right-sec div.detail-box-txt, 
+  .template-page-our-farm .from-left-sec div.detail-box-txt,
+  .template-page-our-cellar .from-left-sec div.detail-box-txt{
+    height: auto;
+  }
+  .template-page-our-vineyards .from-left-sec div.block-sec-img img,.template-page-our-cellar .from-left-sec div.block-sec-img img {
+    width: 100%;
+    height: 400px;
+    margin-left: 0px;
+  }
+  .template-page-our-farm .splash-bx .detail-box {
+    margin-top: 150px;
+  } 
+  /*
+  
+  .template-page-our-farm .from-left-sec div.block-sec-img img,
+  .template-page-our-farm .from-right-sec div.block-sec-img img,
+  .template-page-our-cellar .from-right-sec div.block-sec-img img{
+    width: 100%;
+    height: 800px;
+  }  
+  
+  */
+  
+  .template-page-our-farm .newsletter-frm {
+    width: 100%;
+  }  
+}
+@media screen and (max-width:767px){
+.contact .form-container {
+    width: 100%;
+    padding: 0 15px;
+}
+.template-page-wine-awards table.table {
+    overflow: scroll;
+    max-width: 375px;
+    display: block;
+  }
+}

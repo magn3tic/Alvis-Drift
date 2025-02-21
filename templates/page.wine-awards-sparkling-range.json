@@ -1,0 +1,1165 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "28594a1c-9749-4279-93e5-a33508ab5ad7": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Drinking-Wine-01.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "SPARKLING",
+            "paragarh_p2": "RANGE",
+            "paragarh_p3": "AWARDS",
+            "paragarh_p4": "",
+            "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+            "paragarh_2": "View the awards for our Cap Classique & Sparkling Range wines below.",
+            "side_btn_text": "Buy Our Sparkling Wines",
+            "side_btn_link": "shopify://collections/sparkling-range"
+          }
+        }
+      },
+      "block_order": [
+        "28594a1c-9749-4279-93e5-a33508ab5ad7"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "",
+        "paragarh_p1": "SPARKLING",
+        "paragarh_p2": "RANGE",
+        "paragarh_p3": "AWARDS",
+        "paragarh_p4": "",
+        "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+        "paragarh_2": "View the awards for our Sparkling Range wines below.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-wines",
+        "btn_main_link": ""
+      }
+    },
+    "1643048634296155e5": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "row_ycjqHh": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2024",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "row_4xLhN4": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_nyiJmB": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2024",
+            "arward_level": "Double Gold"
+          }
+        },
+        "row_EGnUFM": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "9c3c4bb2-a882-457e-8d17-d0e738a0a41a": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2023",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "04a40123-51ef-4018-a093-72d135bfd959": {
+          "type": "row",
+          "settings": {
+            "award": "Rosé Wine & Spirits Challenge",
+            "year": "2022",
+            "arward_level": "Double Gold"
+          }
+        },
+        "47d7a1ff-62b8-4146-8b4f-d0fd4a04b870": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "0cff495e-6b6f-424f-9903-b8875202c383": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "3d44dfc2-0037-46c5-a306-25297d41d882": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2021",
+            "arward_level": "Wine Of The Year"
+          }
+        },
+        "e5726964-19b3-4895-ac47-946948dabe0b": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "958a85db-e7f6-4f32-b095-fb361e373a67": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "884350c4-3c0b-4a65-a3ab-e869089de014": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "09f0661e-294d-457d-9a3d-b870470e0d4e": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2021",
+            "arward_level": "Double Gold"
+          }
+        },
+        "403f4d6d-cda8-4e0c-aaf7-73da3bb6a47e": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "3aa33b8c-fd64-4952-8b7f-856262a68a79": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        },
+        "75c6d4e2-8fe8-424b-936a-45f528557c8a": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Platters Wine Awards Competition",
+            "year": "2021",
+            "arward_level": "3½ Stars"
+          }
+        },
+        "38a58388-1897-4fde-82bf-7bd928529ca8": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2019",
+            "arward_level": "Gold"
+          }
+        },
+        "8f4fdd74-1746-4568-be99-6b12d115ecc4": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Platters Wine Awards Competition",
+            "year": "2020",
+            "arward_level": "81 Points"
+          }
+        },
+        "9ae32a38-8485-4bf3-bf2e-5c46ae3756df": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2020",
+            "arward_level": "Silver"
+          }
+        },
+        "c20fdb8f-8ad4-4ae1-bfe8-a149bbbb7ed8": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2020 / 2021",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "row_ycjqHh",
+        "row_4xLhN4",
+        "row_nyiJmB",
+        "row_EGnUFM",
+        "9c3c4bb2-a882-457e-8d17-d0e738a0a41a",
+        "04a40123-51ef-4018-a093-72d135bfd959",
+        "47d7a1ff-62b8-4146-8b4f-d0fd4a04b870",
+        "0cff495e-6b6f-424f-9903-b8875202c383",
+        "3d44dfc2-0037-46c5-a306-25297d41d882",
+        "e5726964-19b3-4895-ac47-946948dabe0b",
+        "958a85db-e7f6-4f32-b095-fb361e373a67",
+        "884350c4-3c0b-4a65-a3ab-e869089de014",
+        "09f0661e-294d-457d-9a3d-b870470e0d4e",
+        "403f4d6d-cda8-4e0c-aaf7-73da3bb6a47e",
+        "3aa33b8c-fd64-4952-8b7f-856262a68a79",
+        "75c6d4e2-8fe8-424b-936a-45f528557c8a",
+        "38a58388-1897-4fde-82bf-7bd928529ca8",
+        "8f4fdd74-1746-4568-be99-6b12d115ecc4",
+        "9ae32a38-8485-4bf3-bf2e-5c46ae3756df",
+        "c20fdb8f-8ad4-4ae1-bfe8-a149bbbb7ed8"
+      ],
+      "settings": {
+        "main_heading": "BRUT ROSÉ"
+      }
+    },
+    "164304949108da5229": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "row_ndTYz8": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_UfRhcT": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_Fwh9dN": {
+          "type": "row",
+          "settings": {
+            "award": "Lumo Awards",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "57091433-08e7-4bb7-986e-997777384de2": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "7dbff898-12b4-4d16-afee-71086e24c845": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "d76ab478-cc69-4a3e-bcd2-8562fd381de1": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "245ef91e-690d-43af-8dad-334dcf0277b9": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2020 / 2021",
+            "arward_level": "Silver"
+          }
+        },
+        "7bd3ca0a-1a9e-430d-8a5d-bc601ddf6bf1": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2020",
+            "arward_level": "Silver"
+          }
+        },
+        "0909a3b4-d297-4706-bd63-fdcbc9eda948": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2020",
+            "arward_level": "Wine Of The Year"
+          }
+        },
+        "263c27f8-a37d-4174-be83-fa17d3c0947b": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "row_ndTYz8",
+        "row_UfRhcT",
+        "row_Fwh9dN",
+        "57091433-08e7-4bb7-986e-997777384de2",
+        "7dbff898-12b4-4d16-afee-71086e24c845",
+        "d76ab478-cc69-4a3e-bcd2-8562fd381de1",
+        "245ef91e-690d-43af-8dad-334dcf0277b9",
+        "7bd3ca0a-1a9e-430d-8a5d-bc601ddf6bf1",
+        "0909a3b4-d297-4706-bd63-fdcbc9eda948",
+        "263c27f8-a37d-4174-be83-fa17d3c0947b"
+      ],
+      "settings": {
+        "main_heading": "BRUT BLANC DE BLANC"
+      }
+    },
+    "164304980857031d0b": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "3de2f02c-9739-46b0-8ce8-1f08df0ba0fe": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2021",
+            "arward_level": "Silver"
+          }
+        },
+        "ceb6b1ea-60f5-4c91-a09d-7866c4f63ae1": {
+          "type": "row",
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2021",
+            "arward_level": "Bronze"
+          }
+        }
+      },
+      "block_order": [
+        "3de2f02c-9739-46b0-8ce8-1f08df0ba0fe",
+        "ceb6b1ea-60f5-4c91-a09d-7866c4f63ae1"
+      ],
+      "disabled": true,
+      "settings": {
+        "main_heading": "BRUT BLANC DE BLANC:  2021"
+      }
+    },
+    "1643048020c9dcd3c5": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "row_K6EJ9A": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_d4jHti": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2024",
+            "arward_level": "Platinum Certificate Of Excellence"
+          }
+        },
+        "row_Qc64pT": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2024",
+            "arward_level": "Top 100"
+          }
+        },
+        "row_iHyD7i": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2024",
+            "arward_level": "Double Platinum"
+          }
+        },
+        "row_4AAtnV": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2024",
+            "arward_level": "Great Gold"
+          }
+        },
+        "row_Km7mp6": {
+          "type": "row",
+          "settings": {
+            "award": "Concours Mondial Bruxelles",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_pVntg4": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2024",
+            "arward_level": "Double Gold"
+          }
+        },
+        "row_6TrrTz": {
+          "type": "row",
+          "settings": {
+            "award": "Lumo Awards",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_MVAEEn": {
+          "type": "row",
+          "settings": {
+            "award": "Amorim Cap Classique Challenge",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "1eae5713-7cd1-4160-8382-fb3d585a2785": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2023",
+            "arward_level": "Gold"
+          }
+        },
+        "820949e8-86a3-4e3a-8900-c3c16248e91c": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2023",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "0b7287f3-b66e-4167-8893-c69f35179605": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "4ff808e0-68e3-497f-8c48-a5a6b29984b5": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2022",
+            "arward_level": "Double Gold"
+          }
+        },
+        "7f62a254-53b3-424b-bff6-c4c4be897a71": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2022",
+            "arward_level": "Double Gold"
+          }
+        },
+        "86ff765d-6f4d-4a1f-8cff-e6d30a2b1891": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "5c8d8fc0-4855-4d83-b584-ef3f6c1be545": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "2bd80c09-4936-4494-93d3-5be6fe5c0734": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Amorim Cap Classique",
+            "year": "2021",
+            "arward_level": "Bronze"
+          }
+        },
+        "309add65-067a-41e9-ae03-52b9ba0be1a8": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "779067d5-d986-4943-912f-0f0bcbec16cf": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "bfc55285-6aed-4496-a0fe-d24f54f5958d": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2021",
+            "arward_level": "Bronze"
+          }
+        }
+      },
+      "block_order": [
+        "row_K6EJ9A",
+        "row_d4jHti",
+        "row_Qc64pT",
+        "row_iHyD7i",
+        "row_4AAtnV",
+        "row_Km7mp6",
+        "row_pVntg4",
+        "row_6TrrTz",
+        "row_MVAEEn",
+        "1eae5713-7cd1-4160-8382-fb3d585a2785",
+        "820949e8-86a3-4e3a-8900-c3c16248e91c",
+        "0b7287f3-b66e-4167-8893-c69f35179605",
+        "4ff808e0-68e3-497f-8c48-a5a6b29984b5",
+        "7f62a254-53b3-424b-bff6-c4c4be897a71",
+        "86ff765d-6f4d-4a1f-8cff-e6d30a2b1891",
+        "5c8d8fc0-4855-4d83-b584-ef3f6c1be545",
+        "2bd80c09-4936-4494-93d3-5be6fe5c0734",
+        "309add65-067a-41e9-ae03-52b9ba0be1a8",
+        "779067d5-d986-4943-912f-0f0bcbec16cf",
+        "bfc55285-6aed-4496-a0fe-d24f54f5958d"
+      ],
+      "settings": {
+        "main_heading": "BRUT CAP CLASSIQUE"
+      }
+    },
+    "16430485175278b57e": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "row_agAHUw": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2024",
+            "arward_level": "Great Gold"
+          }
+        },
+        "row_zi4rkr": {
+          "type": "row",
+          "settings": {
+            "award": "Platters Wine Awards Competition",
+            "year": "2024",
+            "arward_level": "93 Points"
+          }
+        },
+        "row_7TXYgp": {
+          "type": "row",
+          "settings": {
+            "award": "Concours Mondial Bruxelles",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_MagDrg": {
+          "type": "row",
+          "settings": {
+            "award": "Tim Atkins Tasting Report",
+            "year": "2024",
+            "arward_level": "93 Points"
+          }
+        },
+        "row_LNdVHT": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2023",
+            "arward_level": "Great Gold"
+          }
+        },
+        "f1c6cc21-2db6-4160-b7f3-edf98ec9294a": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2023",
+            "arward_level": "Double Gold"
+          }
+        },
+        "05c5a5aa-8fe9-4637-88b6-a953fe571429": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2023",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "d3139923-2e6e-4b14-b72e-90aed2ae181e": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2023",
+            "arward_level": "Great Gold"
+          }
+        },
+        "f8e177ff-cd85-4607-90f8-895b00267ffc": {
+          "type": "row",
+          "settings": {
+            "award": "Tim Atkins Tasting Report",
+            "year": "2022",
+            "arward_level": "92 Points"
+          }
+        },
+        "37c27a43-61b5-461f-9e58-10cb3c3a06a4": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "4ac5fb2e-c9af-4fbd-a48b-ef1d0bce8027": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2022",
+            "arward_level": "Great Gold"
+          }
+        },
+        "e16936c7-79dc-4fef-ba86-57181228f237": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2022",
+            "arward_level": "Double Gold"
+          }
+        },
+        "a56fd397-c440-4fdc-b84a-53cdd6d2cfd2": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2022",
+            "arward_level": "Great Gold"
+          }
+        },
+        "4a9a313f-9e89-4824-be38-55e004b70680": {
+          "type": "row",
+          "settings": {
+            "award": "SA Women's Wine & Spirits Award",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "19ee5509-fd13-4315-8ee1-88d0d0d2b7a9": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2021",
+            "arward_level": "Double Gold"
+          }
+        },
+        "dbc41e41-ba7e-475e-8161-28b71aa2a8dc": {
+          "type": "row",
+          "settings": {
+            "award": "Platters Wine Awards Competition",
+            "year": "2021",
+            "arward_level": "4½ Stars"
+          }
+        },
+        "3452db90-b4ed-48d4-b461-c1c80f5c3fd5": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        },
+        "cf9a3e53-03ca-4c12-9286-1e91f06fa075": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2020",
+            "arward_level": "Double Silver"
+          }
+        },
+        "8bb971dd-3273-46ad-821e-40b78e7deb41": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        },
+        "7560b167-82de-4acd-ad49-3d3cdf6d01f6": {
+          "type": "row",
+          "settings": {
+            "award": "Tim Atkins Tasting Report",
+            "year": "2020",
+            "arward_level": "90 Points"
+          }
+        },
+        "12dea45e-68cc-48ce-929b-784d9eecab55": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Amorim Cap Classique",
+            "year": "2020",
+            "arward_level": "Bronze"
+          }
+        },
+        "ef9b1b74-76a1-4d92-82ea-f7f4fc5980a0": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2020",
+            "arward_level": "Silver Outstanding"
+          }
+        },
+        "d9f58c58-c148-45f9-a4d0-1ce08b2a815d": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2021",
+            "arward_level": "Double Silver"
+          }
+        },
+        "e85c8650-76de-4077-b214-d5e0b91b3266": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Sommeliers Choice Awards",
+            "year": "2021",
+            "arward_level": "Silver"
+          }
+        },
+        "eccaf748-49ce-48d0-a9a0-2e046ce8eaeb": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2021",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "row_agAHUw",
+        "row_zi4rkr",
+        "row_7TXYgp",
+        "row_MagDrg",
+        "row_LNdVHT",
+        "f1c6cc21-2db6-4160-b7f3-edf98ec9294a",
+        "05c5a5aa-8fe9-4637-88b6-a953fe571429",
+        "d3139923-2e6e-4b14-b72e-90aed2ae181e",
+        "f8e177ff-cd85-4607-90f8-895b00267ffc",
+        "37c27a43-61b5-461f-9e58-10cb3c3a06a4",
+        "4ac5fb2e-c9af-4fbd-a48b-ef1d0bce8027",
+        "e16936c7-79dc-4fef-ba86-57181228f237",
+        "a56fd397-c440-4fdc-b84a-53cdd6d2cfd2",
+        "4a9a313f-9e89-4824-be38-55e004b70680",
+        "19ee5509-fd13-4315-8ee1-88d0d0d2b7a9",
+        "dbc41e41-ba7e-475e-8161-28b71aa2a8dc",
+        "3452db90-b4ed-48d4-b461-c1c80f5c3fd5",
+        "cf9a3e53-03ca-4c12-9286-1e91f06fa075",
+        "8bb971dd-3273-46ad-821e-40b78e7deb41",
+        "7560b167-82de-4acd-ad49-3d3cdf6d01f6",
+        "12dea45e-68cc-48ce-929b-784d9eecab55",
+        "ef9b1b74-76a1-4d92-82ea-f7f4fc5980a0",
+        "d9f58c58-c148-45f9-a4d0-1ce08b2a815d",
+        "e85c8650-76de-4077-b214-d5e0b91b3266",
+        "eccaf748-49ce-48d0-a9a0-2e046ce8eaeb"
+      ],
+      "settings": {
+        "main_heading": "BRUT NATURE CAP CLASSIQUE"
+      }
+    },
+    "16423635443e0fe290": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "15a6454f-abc9-4d6c-92ff-e15796279629": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2016",
+            "arward_level": "Silver"
+          }
+        },
+        "0f384119-7d84-443f-bb81-dfe802756752": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2016",
+            "arward_level": "Silver"
+          }
+        },
+        "4ad3231c-f299-44e9-9609-116adce6a8f1": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2016",
+            "arward_level": "Double Gold"
+          }
+        },
+        "732aa8dc-3ea8-41c5-988d-14a2852a4944": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2017",
+            "arward_level": "Silver"
+          }
+        },
+        "f8788c86-75f0-45bd-86db-addabba679f4": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2017",
+            "arward_level": "Double Silver"
+          }
+        },
+        "9cf4a74c-133c-43dd-8fee-495c565bcebc": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2018",
+            "arward_level": "Double Gold"
+          }
+        },
+        "fb1f7562-a9e9-4648-8a61-aaf6355f794f": {
+          "type": "row",
+          "settings": {
+            "award": "Gilbert & Gaillard International Challenge",
+            "year": "2018",
+            "arward_level": "90 Points"
+          }
+        },
+        "71b8b304-73d8-4ae3-9871-c71f9c578b65": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2019",
+            "arward_level": "Platinum Certificate Of Excellence"
+          }
+        },
+        "f41579ba-3144-4737-98fa-94556bc0771e": {
+          "type": "row",
+          "settings": {
+            "award": "Platters Wine Awards Competition",
+            "year": "2020",
+            "arward_level": "Good Value"
+          }
+        },
+        "53895cfe-f7f9-4293-95bf-feb7b32c596f": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        },
+        "79ff000d-7b9b-4777-9283-da9c43ed1f13": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2020",
+            "arward_level": "Grand Gold"
+          }
+        },
+        "58dbf8cd-d462-4048-a226-ae78f27bef39": {
+          "type": "row",
+          "settings": {
+            "award": "Platters Wine Awards Competition",
+            "year": "2021",
+            "arward_level": "4 Stars"
+          }
+        }
+      },
+      "block_order": [
+        "15a6454f-abc9-4d6c-92ff-e15796279629",
+        "0f384119-7d84-443f-bb81-dfe802756752",
+        "4ad3231c-f299-44e9-9609-116adce6a8f1",
+        "732aa8dc-3ea8-41c5-988d-14a2852a4944",
+        "f8788c86-75f0-45bd-86db-addabba679f4",
+        "9cf4a74c-133c-43dd-8fee-495c565bcebc",
+        "fb1f7562-a9e9-4648-8a61-aaf6355f794f",
+        "71b8b304-73d8-4ae3-9871-c71f9c578b65",
+        "f41579ba-3144-4737-98fa-94556bc0771e",
+        "53895cfe-f7f9-4293-95bf-feb7b32c596f",
+        "79ff000d-7b9b-4777-9283-da9c43ed1f13",
+        "58dbf8cd-d462-4048-a226-ae78f27bef39"
+      ],
+      "settings": {
+        "main_heading": "MCC Thornlands (Discontinued)"
+      }
+    },
+    "16423667519a6836be": {
+      "type": "Logos",
+      "blocks": {
+        "43178b72-1624-4cfc-a64d-f2b134df1544": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Women_s-Wine-_-Spirits-Awards-Gold.png",
+            "logo_link": "https://lumoawards.com/"
+          }
+        },
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Gold_e1d7658b-67c9-4a95-b51b-9d455c7d3bb5.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "816919e6-8689-4675-a4fa-29b06c6886af": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gilbert-_-Gaillard-Best-Value.png",
+            "logo_link": "https://en.gilbertgaillard.com/"
+          }
+        },
+        "1642366751d2473fd1-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Platters-4.png",
+            "logo_link": "https://www.wineonaplatter.com/"
+          }
+        },
+        "b977d7da-4f8a-41ce-945a-cbbcc690afbd": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points-Gold.png",
+            "logo_link": "https://iwsc.net/"
+          }
+        },
+        "653746f0-e8f3-4afe-8b7e-afac4ebd87f5": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "a469ac34-8569-4210-9322-9ff58a863470": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/SA-Wine-Index-Platinum.png",
+            "logo_link": "https://www.sawineindex.com/"
+          }
+        },
+        "dc87209a-40fb-41dc-9c53-128c2d4ba2ff": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Catavinum-Awards-Gold.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        }
+      },
+      "block_order": [
+        "43178b72-1624-4cfc-a64d-f2b134df1544",
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845",
+        "816919e6-8689-4675-a4fa-29b06c6886af",
+        "1642366751d2473fd1-0",
+        "b977d7da-4f8a-41ce-945a-cbbcc690afbd",
+        "653746f0-e8f3-4afe-8b7e-afac4ebd87f5",
+        "a469ac34-8569-4210-9322-9ff58a863470",
+        "dc87209a-40fb-41dc-9c53-128c2d4ba2ff"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16430340119e659e4c": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925": {
+          "type": "column",
+          "settings": {
+            "title": "FLAGSHIP RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">Verreaux Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-0": {
+          "type": "column",
+          "settings": {
+            "title": "ICON RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chenin Blanc</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chardonnay</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Bismarck Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-1": {
+          "type": "column",
+          "settings": {
+            "title": "RESERVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/reserve-awards-cvc\" target=\"_blank\" title=\"Wine Awards Reserve CVC Blend\">CVC Blend</a></p><p><a href=\"/pages/reserve-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Reserve Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/reserve-awards-drift-fusion\" target=\"_blank\" title=\"Wine Awards Reserve Drift Fusion Blend\">Drift Fusion Blend</a></p><p><a href=\"/pages/awards-reserve-chardonnay\" target=\"_blank\" title=\"Wine Awards Reserve Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat Nectarinia</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat de Frontignan</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-2": {
+          "type": "column",
+          "settings": {
+            "title": "221 RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Chenin Blanc</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Pinotage</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Special Cuvée Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "56ea5e51-174b-4d9e-8910-364f7176c576": {
+          "type": "column",
+          "settings": {
+            "title": "SIGNATURE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/signature-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Signature Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/signature-awards-chenin-blanc\" target=\"_blank\" title=\"Wine Awards Signature Chenin Blanc\">Chenin Blanc</a></p><p><a href=\"/pages/signature-awards-viognier\" target=\"_blank\" title=\"Wine Awards Signature Viognier\">Viognier</a></p><p><a href=\"/pages/signature-awards-chardonnay\" target=\"_blank\" title=\"Wine Awards Signature Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage Rosé</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage</a></p><p><a href=\"/pages/signature-awards-cabernet-sauvignon\" target=\"_blank\" title=\"Wine Awards Signature Cabernet Sauvignon\">Cabernet Sauvignon</a></p><p><a href=\"/pages/signature-awards-shiraz\" target=\"_blank\" title=\"Wine Awards Signature Shiraz\">Shiraz</a></p><p><a href=\"/pages/signature-awards-merlot\" target=\"_blank\" title=\"Wine Awards Signature Merlot\">Merlot</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "af0d031d-5b54-45c0-8cb4-fac652753af9": {
+          "type": "column",
+          "settings": {
+            "title": "EXCLUSIVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Chenin Blanc</a></p><p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "2490fa7b-db75-408a-bedc-51f8856776e9": {
+          "type": "column",
+          "settings": {
+            "title": "EXPORT WINES",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Rondebosch Wines</a></p><p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Cape Pride Wines</a></p>",
+            "Text_color": "#2d5980"
+          }
+        }
+      },
+      "block_order": [
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925",
+        "1643034010691e68fe-0",
+        "1643034010691e68fe-1",
+        "1643034010691e68fe-2",
+        "56ea5e51-174b-4d9e-8910-364f7176c576",
+        "af0d031d-5b54-45c0-8cb4-fac652753af9",
+        "2490fa7b-db75-408a-bedc-51f8856776e9"
+      ],
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "OUR AWARDS BY RANGE",
+        "Heading_color": "#f8f2e6",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "BUY OUR AWARD-WINNING SPARKLING RANGE WINES",
+        "button_link": "shopify://collections/sparkling-range",
+        "swipe_on_mobile": false
+      }
+    },
+    "16423669557e20a789": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "1711997477304e3910": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_TpJ3WV": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "89937",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#c65336",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 60,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_TpJ3WV"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "1643048634296155e5",
+    "164304949108da5229",
+    "164304980857031d0b",
+    "1643048020c9dcd3c5",
+    "16430485175278b57e",
+    "16423635443e0fe290",
+    "16423667519a6836be",
+    "16430340119e659e4c",
+    "16423669557e20a789",
+    "1711997477304e3910"
+  ]
+}

@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    },
+    "main": {
+      "type": "gift-information",
+      "blocks": {
+        "f101ada7-306f-4286-ac49-7fe9bff60c73": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/awards\" target=\"_blank\" title=\"Wine Awards\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "42458232-d991-48a5-ba37-37b307fc3a80": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets & Tasting Tips",
+            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Icon_Box_Chocolate_Wine_Tasting_Tips.pdf?v=1649195103\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Icon_Box_Chocolate_Wine_Tasting_Tips.pdf?v=1649195103\">TASTING TIPS<br/></a><br/><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Icon_Box_Tasting_Sheet.pdf?v=1649195103\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Icon_Box_Tasting_Sheet.pdf?v=1649195103\">TASTING SHEET</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        }
+      },
+      "block_order": [
+        "f101ada7-306f-4286-ac49-7fe9bff60c73",
+        "42458232-d991-48a5-ba37-37b307fc3a80"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "163949428877599353": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "163949428839bac508-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "gifts"
+          }
+        }
+      },
+      "block_order": [
+        "163949428839bac508-0"
+      ],
+      "settings": {
+        "topheading": "OUR GIFTING COLLECTION"
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "163949428877599353"
+  ]
+}

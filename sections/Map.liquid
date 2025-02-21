@@ -1,0 +1,120 @@
+{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+
+<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.Heading == blank %} no-heading{% endif %}">
+  <div class="page-width map_section">
+    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.Heading == blank %} title-wrapper-with-link--no-heading{% endif %}">
+      <h2 class="title" style="color:{{ section.settings.Heading_color }}">
+        {{ section.settings.Heading | escape }}
+      </h2>
+      
+    </div>
+    {{section.settings.map_url}}
+    
+    
+    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+      {%- if section.settings.button-txt != blank -%}
+        <a class="btn btn-overlay"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
+          {{ section.settings.button-txt | escape }}
+        </a>
+      {%- endif-%}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Map",
+    "settings": [
+     
+	 {
+        "type": "header",
+        "content": "Heading"
+      },
+	  {
+        "type": "text",
+        "id": "Heading",
+        "label": "Heading"
+      },
+		{
+		"type":"textarea",
+		"id":"map_url",
+		"label":"Map Embed"
+		},
+    	{
+            "type": "select",
+            "id": "Heading_color",
+            "label": "Heading Colour",
+            "options": [
+				{
+                "value": "#ffffff",
+                "label": "White"
+              }, 
+              {
+                "value": "#2e112d",
+                "label": "Dark Plum"
+              },
+			  {
+                "value": "#f8f2e6",
+                "label": "Light Beige"
+              },
+              {
+                "value": "#c0ccbe",
+                "label": "Light Olive "
+              },
+              {
+                "value": "#aac4d3",
+                "label": "Light Blue"
+              },
+              {
+                "value": "#fedcc6",
+                "label": "Light Orange"
+              }
+              
+            ],
+            "default": "#ffffff"
+          },
+
+
+	  {
+        "type": "header",
+        "content": "Button"
+      },
+	  {
+        "type": "text",
+        "id": "button-txt",
+        "label": "Button Text"
+
+      },
+	  {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      }
+],
+  "presets": [
+    {
+      "name": "Map"
+    }
+  ]
+  }
+{% endschema %}
+
+
+<style>
+  .map_section iframe{
+    width: 100% !important;
+  }
+  .title-wrapper-with-link.title-wrapper--self-padded-mobile {
+    justify-content: center;
+}
+  
+</style>
+      
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
