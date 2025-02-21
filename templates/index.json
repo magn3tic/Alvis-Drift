@@ -25,8 +25,27 @@
     "1639717679a92fb59c": {
       "type": "Hero-Main",
       "blocks": {
+        "slider_TgUF3x": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Website_banner_flash_sale.png",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "",
+            "paragarh_p2": "",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "",
+            "paragarh_2": "",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
         "slider_MQBTbV": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Website_banner_sustainability.png",
             "sec_banner": "shopify://shop_images/Main_sustainability.png",
@@ -408,6 +427,7 @@
         }
       },
       "block_order": [
+        "slider_TgUF3x",
         "slider_MQBTbV",
         "slider_3t3cqR",
         "slider_9rWmfX",
