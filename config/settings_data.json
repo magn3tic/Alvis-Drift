@@ -228,16 +228,24 @@
               "collection_heading": "",
               "collectionCarasoul": "all-wine-club-member-wines"
             }
+          },
+          "item_yB9N36": {
+            "type": "item",
+            "settings": {
+              "collection_heading": "",
+              "collectionCarasoul": ""
+            }
           }
         },
         "block_order": [
-          "item_HwGbcz"
+          "item_HwGbcz",
+          "item_yB9N36"
         ],
         "custom_css": [
           ".product-bx-outer {justify-content: center;}"
         ],
         "settings": {
-          "topheading": "",
+          "topheading": "15% Flash sale Discount",
           "subtitle-1": "",
           "active_collection": "all-wine-club-member-wines"
         }
