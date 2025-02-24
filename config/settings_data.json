@@ -64,7 +64,7 @@
           "announcement_7TbFxm": {
             "type": "announcement",
             "settings": {
-              "text": "Log in or join our Wine Club for members' discount: Buy  one and get 15% off the next case. Discount calculated at checkout.",
+              "text": "Log in or join our Wine Club for members' discount. Discount calculated at checkout.",
               "color_scheme": "background-1",
               "link": ""
             }
