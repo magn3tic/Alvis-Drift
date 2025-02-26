@@ -27,6 +27,7 @@
       "blocks": {
         "slider_TgUF3x": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Website_banner_flash_sale.png",
             "image_overlay": "",
@@ -45,7 +46,6 @@
         },
         "slider_MQBTbV": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Website_banner_sustainability.png",
             "sec_banner": "shopify://shop_images/Main_sustainability.png",
