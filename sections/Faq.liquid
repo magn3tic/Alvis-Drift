@@ -1,0 +1,286 @@
+<div class="form-01-faq" style = "background:{{ section.settings.background_color }}">
+
+{%- if request.design_mode -%}
+  {%- comment %}
+  	The css and js neded for this section will be called once in the layout file if this section is on the page.
+    What we are doing here is just making sure that this section gets the css needed in the editor when it is first added to a template.
+  {% endcomment -%}
+  {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+  {{ 'section-faq.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+<div class="page-width page-width--small">
+  <div class="grid grid--1-col grid--2-col-tablet">
+    <div class="col-5 color-{{ section.settings.color }}">
+      {%- if section.settings.title -%}
+        <h2 class="h2">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      {%- if section.settings.content -%}
+        {{ section.settings.content | replace: '<p>', '<p class="body-copy-large inherit-foreground-color">' }}
+      {%- endif -%}
+      {%- if section.settings.btn_text and section.settings.btn_link -%}
+        <a href="{{ section.settings.btn_link }}" class="button">{{ section.settings.btn_text }}</a>
+      {%- endif -%}
+    </div>
+    {%- if section.blocks.size > 0 -%}
+      <div class="grid__item faq-accordions">
+        {%- for block in section.blocks -%}
+          <div class="accordion">
+            <details>
+              <summary><h4 class="accordion__title">{{ block.settings.title | escape }}</h4>{% render 'emoyo-icons', icon: 'plus', color: 'var(--color-3)' %}</summary>
+              <div class="answer">
+                {{ block.settings.content }}
+              </div>
+            </details>
+          </div>
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</div>
+
+  </div>
+  
+{%- comment %}
+	JS below just makes sure that when you open a FAQ, all others close
+{% endcomment -%}
+
+{% javascript %}
+  var faqEl = document.querySelectorAll(".accordion details");
+  for (var i=0; i < faqEl.length; i++) {
+    faqEl[i].addEventListener("click", function(event) {
+      for (var i=0; i < faqEl.length; i++) {
+        faqEl[i].removeAttribute('open');
+      }
+    });
+  }
+{% endjavascript %}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for block in section.blocks -%}
+    {
+      "@type": "Question",
+      "name": "{{ block.settings.title | escape }}",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "{{ block.settings.content | escape }}"
+      }
+    }{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ]
+}
+</script>
+
+<style>
+  
+  svg line {
+    stroke: #fff;
+}
+
+summary {
+    display: flex;
+    position: relative;
+    line-height: 1;
+    padding: 0rem 0;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+  
+  .summary svg line {
+    stroke: #fff;
+}
+  
+  a.button {
+    background-color: transparent;
+    border: 3px solid #ffffff;
+    padding: 11px 32px;
+    color: #e26552;
+    font-weight:700;
+}
+  a.button:hover {
+	background-color: transparent;
+    color: #ffffff;
+    border: 3px solid #e26552;
+    
+}
+  
+  .form-01-faq h4.accordion__title {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+summary {
+    padding-right: 50px;
+}
+  
+  .grid__item.faq-accordions {
+    padding-left: 6rem;
+}
+  
+  
+.accordion:hover h3.accordion__title {
+    color: #e26552 !important;
+}
+  
+.accordion:hover svg line {
+    stroke: #e26552 !important;
+}
+  
+</style>
+
+{% schema %}
+  {
+    "name": "FAQ",
+    "class": "section-faq",
+    "settings": [
+  	{
+        "type": "color",
+        "id": "background_color",
+        "label": "Background color"
+      },	
+	 {
+        "type": "color",
+        "id": "title_color",
+        "label": "Title color"
+      },
+	  {
+        "type": "color",
+        "id": "question_color",
+        "label": "Questions Colour"
+      },
+	   {
+        "type": "color",
+        "id": "Answer_color",
+        "label": "Answer color"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+        "default": "Got questions?"
+      },
+      {
+        "type": "richtext",
+        "id": "content",
+        "label": "Content",
+        "default": "<p>Have a look in our useful FAQ section to find the answers to often-asked questions that may help you too.</p>"
+      },
+      {
+        "type": "select",
+        "id": "color",
+        "label": "Text color",
+        "options": [
+          {
+            "value": "foreground-accent-2",
+            "label": "Color 2"
+          },
+          {
+            "value": "foreground-accent-3",
+            "label": "Color 3"
+          },
+          {
+            "value": "foreground-accent-4",
+            "label": "Color 4"
+          },
+          {
+            "value": "foreground-accent-5",
+            "label": "Color 5"
+          },
+          {
+            "value": "foreground-accent-6",
+            "label": "Color 6"
+          }
+        ],
+        "default": "foreground-accent-2"
+      },
+      {
+        "type": "text",
+        "id": "btn_text",
+        "label": "Button text",
+        "default": "MORE"
+      },
+      {
+        "type": "url",
+        "id": "btn_link",
+        "label": "Button link"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "faq",
+        "name": "FAQ",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title",
+            "label": "Question",
+            "default": "Question?"
+          },
+          {
+            "type": "richtext",
+            "id": "content",
+            "label": "Answer",
+            "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "FAQ"
+      }
+    ]
+  }
+{% endschema %}
+
+<style>
+  
+.form-01-faq h2 {
+    font-size: 20px;
+    line-height: 40px;
+}
+  
+.form-01-faq h2 {
+  color: {{ section.settings.title_color }} !important;
+}
+  
+.form-01-faq h2.accordion__title {
+    color: {{ section.settings.question_color }} !important;
+}
+  
+  .form-01-faq .answer p {
+    color: {{ section.settings.Answer_color }};
+}
+  
+  
+.form-01-faq .answer p a {
+    color: {{ section.settings.Answer_color }};
+}
+
+.form-01-faq h3.accordion__title {
+    font-size: 18px;
+    line-height: 28px;
+}
+  
+  
+.form-01-faq {
+    padding: 50px 0 0 0;
+}
+  
+  @media only screen and (max-width: 767px) {
+  .grid__item.faq-accordions {
+	padding-left: 0rem;
+}
+    summary svg {
+	width: 25px;
+}
+    summary {
+	padding-right: 0px;
+}
+  }
+</style>

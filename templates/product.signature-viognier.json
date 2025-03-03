@@ -1,0 +1,459 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#4A5B52"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "e7e1836d-8936-4124-bebc-480222c8a2fd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/signature-awards-viognier\" target=\"_blank\" title=\"Wine Awards Signature Viognier\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "d7e69a39-3cb8-4c21-b058-1402f4a5efbe": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "e112e191-0591-48c7-90c2-19f0f2407398": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share This Page"
+          }
+        }
+      },
+      "block_order": [
+        "e7e1836d-8936-4124-bebc-480222c8a2fd",
+        "d7e69a39-3cb8-4c21-b058-1402f4a5efbe",
+        "e112e191-0591-48c7-90c2-19f0f2407398",
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639223856bcb87c3a": {
+      "type": "Logos",
+      "blocks": {
+        "163922385675455466-0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163922385675455466-0",
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16392371564aec5ac1": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "163923715616dacea7-0": {
+          "type": "column",
+          "settings": {
+            "title": "ALCOHOL",
+            "Title_color": "#c0ccbe",
+            "text": "<p><strong>2022:  </strong>13,5%</p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "163923715616dacea7-1": {
+          "type": "column",
+          "settings": {
+            "title": "RESIDUAL SUGAR",
+            "Title_color": "#c0ccbe",
+            "text": "<p><strong>2022:  </strong>4,5 g/l</p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "163923715616dacea7-2": {
+          "type": "column",
+          "settings": {
+            "title": "ACIDITY",
+            "Title_color": "#c0ccbe",
+            "text": "<p><strong>2022:</strong>  6,6 g/l</p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79": {
+          "type": "column",
+          "settings": {
+            "title": "pH",
+            "Title_color": "#c0ccbe",
+            "text": "<p><strong>2022: </strong> 3</p>",
+            "Text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "163923715616dacea7-0",
+        "163923715616dacea7-1",
+        "163923715616dacea7-2",
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
+      ],
+      "disabled": true,
+      "settings": {
+        "Background_Colour": "#867065",
+        "title": "ANALYSIS",
+        "Heading_color": "#c0ccbe",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "faq_HcQWne": {
+      "type": "Faq",
+      "blocks": {
+        "faq_DUNJwN": {
+          "type": "faq",
+          "settings": {
+            "title": "Why Is Viognier So Popular?",
+            "content": "<p>Why is Viognier so popular? We take a closer look at this white varietal’s rise in popularity...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/why-is-viognier-so-popular\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/why-is-viognier-so-popular\">Read More</a></p>"
+          }
+        },
+        "faq_RqnpDB": {
+          "type": "faq",
+          "settings": {
+            "title": "When to Drink Viognier: The Best Times to Enjoy This Wine",
+            "content": "<p>When should you drink Viognier? Discover the best times and occasions to enjoy this aromatic white wine, from dinner pairings to casual gatherings...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/when-is-the-best-time-to-drink-viognier\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/when-is-the-best-time-to-drink-viognier\">Read More</a></p>"
+          }
+        },
+        "faq_ny6R79": {
+          "type": "faq",
+          "settings": {
+            "title": "What Does Viognier Mean? A Brief History of the Name",
+            "content": "<p>What does Viognier mean in English? Discover the history and meaning behind the name of this beloved white wine grape...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/what-does-viognier-mean\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/what-does-viognier-mean\">Read More</a></p>"
+          }
+        },
+        "faq_Lz8y6T": {
+          "type": "faq",
+          "settings": {
+            "title": "Viognier vs Chenin Blanc vs Sauvignon Blanc: Which Is Right for You?",
+            "content": "<p>Is Viognier similar to Chenin Blanc or Sauvignon Blanc? Learn about the similarities and differences between these three white wines to find out which is right for you...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-vs-chenin-vs-sauvignon-blanc\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-vs-chenin-vs-sauvignon-blanc\">Read More</a></p>"
+          }
+        },
+        "faq_RUFLGy": {
+          "type": "faq",
+          "settings": {
+            "title": "Viognier Taste: What Makes It Stand Out?",
+            "content": "<p>Viognier wine stands out for its rich, fruit-forward flavours and aromatic intensity. Discover what makes Viognier unique and the best food pairings...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-taste-what-makes-it-stand-out\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-taste-what-makes-it-stand-out\">Read More</a></p>"
+          }
+        },
+        "faq_rH8r8Y": {
+          "type": "faq",
+          "settings": {
+            "title": "Viognier Sweet or Dry: Understanding the Taste Profile",
+            "content": "<p>Is Viognier sweet or dry? Discover whether this aromatic white wine is typically dry or sweet, and learn about its unique taste profile and food pairings...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-sweet-or-dry-taste-profile\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-sweet-or-dry-taste-profile\">Read More</a></p>"
+          }
+        },
+        "faq_9xjpPh": {
+          "type": "faq",
+          "settings": {
+            "title": "Viognier Pronunciation: How to Say It Right",
+            "content": "<p>How do you say Viognier? Discover how to pronounce the name of the fragrant white wine correctly...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-pronunciation-how-to-say-it-right\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-pronunciation-how-to-say-it-right\">Read More</a></p>"
+          }
+        },
+        "faq_M3ngpg": {
+          "type": "faq",
+          "settings": {
+            "title": "Viognier Origin: Where It Comes From and Its Global Influence?",
+            "content": "<p>Viognier, also called Bergeron or Picotin Blanc, has a rich history in France and has spread globally. Learn about its origins and influence in this blog...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-origin-and-its-global-influence\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-origin-and-its-global-influence\">Read More</a></p>"
+          }
+        },
+        "faq_wJtGme": {
+          "type": "faq",
+          "settings": {
+            "title": "Viognier Food Pairing Guide: What Dishes Go Best with Viognier?",
+            "content": "<p>What is Viognier good with? Discover the best dishes to pair with Viognier, from spicy Asian cuisine to creamy pastas, roasted meats...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-food-pairing\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-food-pairing\">Read More</a></p>"
+          }
+        },
+        "faq_FtFxRp": {
+          "type": "faq",
+          "settings": {
+            "title": "Viognier and Shiraz: Why These Grapes Make a Perfect Blend?",
+            "content": "<p>Why is Viognier added to Shiraz? Learn how this classic Rhône Valley blend enhances aromas, softens tannins, and adds complexity to Shiraz wines...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-and-shiraz-grapes-make-a-perfect-blend\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/viognier-and-shiraz-grapes-make-a-perfect-blend\">Read More</a></p>"
+          }
+        },
+        "faq_V8AYH8": {
+          "type": "faq",
+          "settings": {
+            "title": "Should Viognier Be Chilled? Serving Temperature Guide",
+            "content": "<p>Should Viognier be chilled? Learn how to chill Viognier properly and discover the ideal serving temperature for this aromatic white wine..<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/should-viognier-be-chilled\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/should-viognier-be-chilled\">.Read More</a></p>"
+          }
+        },
+        "faq_B8VWej": {
+          "type": "faq",
+          "settings": {
+            "title": "Is Viognier Sweeter Than Chardonnay? A Taste Comparison",
+            "content": "<p>Is Viognier sweeter than Chardonnay? Discover the key differences between these two popular white wines and find out which one suits your taste...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/is-viognier-sweeter-than-chardonnay\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/is-viognier-sweeter-than-chardonnay\">Read More</a></p>"
+          }
+        },
+        "faq_jDCbLN": {
+          "type": "faq",
+          "settings": {
+            "title": "Is Viognier Like Sauvignon Blanc?",
+            "content": "<p>Is Viognier the same as Sauvignon Blanc? Discover the differences in body, flavour, and aroma between these two popular white wines and find out which one suits your palate...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/is-viognier-like-sauvignon-blanc\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/is-viognier-like-sauvignon-blanc\">Read More</a></p>"
+          }
+        },
+        "faq_gKnDPW": {
+          "type": "faq",
+          "settings": {
+            "title": "Is Viognier a Good Wine? Taste, Quality, and Popularity",
+            "content": "<p>Is Viognier a good wine? Discover why Viognier is beloved for its bold flavours, rich texture, and versatility in food pairings...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/is-viognier-a-good-wine\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/is-viognier-a-good-wine\">Read More</a></p>"
+          }
+        },
+        "faq_xjyyNw": {
+          "type": "faq",
+          "settings": {
+            "title": "Is Viognier a Full-Bodied Wine? Exploring Its Body and Structure",
+            "content": "<p>Is Viognier a full-bodied wine? Discover what makes Viognier a full-bodied white wine and explore its rich flavours and pairing options...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/is-viognier-a-full-bodied-wine\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/is-viognier-a-full-bodied-wine\">Read More</a></p>"
+          }
+        },
+        "faq_mbBPdG": {
+          "type": "faq",
+          "settings": {
+            "title": "How Long Does Viognier Keep? A Guide to Storing White Wine",
+            "content": "<p>How long does Viognier keep? Learn how long you can store an unopened bottle of Viognier and how to keep it fresh once opened with this wine storage guide...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/how-long-does-viognier-keep\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/how-long-does-viognier-keep\">Read More</a></p>"
+          }
+        },
+        "faq_A7JChU": {
+          "type": "faq",
+          "settings": {
+            "title": "Can Viognier Be Aged? Understanding the Ageing Potential of Viognier",
+            "content": "<p>Can Viognier be aged? Discover the ageing potential of Viognier, how it evolves over time, and what to expect from an aged bottle...<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/can-viognier-be-aged\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/can-viognier-be-aged\">Read More</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_DUNJwN",
+        "faq_RqnpDB",
+        "faq_ny6R79",
+        "faq_Lz8y6T",
+        "faq_RUFLGy",
+        "faq_rH8r8Y",
+        "faq_9xjpPh",
+        "faq_M3ngpg",
+        "faq_wJtGme",
+        "faq_FtFxRp",
+        "faq_V8AYH8",
+        "faq_B8VWej",
+        "faq_jDCbLN",
+        "faq_gKnDPW",
+        "faq_xjyyNw",
+        "faq_mbBPdG",
+        "faq_A7JChU"
+      ],
+      "settings": {
+        "background_color": "#2e112d",
+        "title_color": "",
+        "question_color": "",
+        "Answer_color": "",
+        "title": "Got questions?",
+        "content": "<p>Have a look in our useful FAQ section to find the answers to often-asked questions that may help you too.</p>",
+        "color": "foreground-accent-2",
+        "btn_text": "MORE",
+        "btn_link": ""
+      }
+    },
+    "image_with_overlay_text_zEd4pM": {
+      "type": "Image-With-Overlay-Text",
+      "blocks": {
+        "heading_4DBQ6w": {
+          "type": "heading",
+          "settings": {
+            "heading": "future-forward wines",
+            "heading_size": "medium"
+          }
+        },
+        "text_qyY8GL": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "buttons_DRbbwU": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Descover more",
+            "button_link_1": "shopify://pages/sustainability",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_4DBQ6w",
+        "text_qyY8GL",
+        "buttons_DRbbwU"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Website_banner_sustainability_00c60d8b-a6d1-4a64-8a6f-3b534904e9c1.jpg",
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Seafood_Pairing_18.jpg",
+        "image_overlay": true,
+        "Heading_color": "#721326",
+        "title": "SERVING SUGGESTION",
+        "detail-box-txt": "This wine will complement spicy food such as Thai-style green curries, or Indian kormas. It will also pair well with sushi and sashimi as well as pasta served with a carbonara or a puttanesca sauce.",
+        "btn-txt": "",
+        "btn-url": ""
+      }
+    },
+    "1639224916778fd50c": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Cellar-10.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#fedcc6",
+        "title": "HERITAGE",
+        "video-sec-content-txt-1": "<p>Alvi's Drift winery takes its name from the low-water bridge over the Breede River which cuts through the family farm. Albertus Viljoen \"Oupa Alvi\" van der Merwe was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p><p>The wines in our Signature range are true to our winery’s trademark, fruit-driven style. These outstanding wines offer wine lovers exceptional value – in the words of Alvi’s Drift winemaker, Alvi van der Merwe, “think ‘great’, for the price of good!”.</p>",
+        "button-txt": "SIGNATURE RANGE",
+        "button_link": "shopify://collections/signature-range",
+        "button_type": "alvisBtn"
+      }
+    },
+    "164390393509a8cadf": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Alvi_s_Drift_Vineyards_508c2c67-88ae-424b-b737-eef114cb8684.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#fedcc6",
+        "title": "ON THE VINES",
+        "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1643904463ddbe473e": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Cellar-14_3773dad7-b9bf-4ab0-accf-b9de761ff2e3.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#fedcc6",
+        "title": "IN THE CELLAR",
+        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Only premium free-run juice was used to create this unwooded, fruit-driven wine. To ensure maximum flavour retention, depth of palate and a beautiful mouthfeel, clarified juice was cold fermented and left on lees for several months before fining and stabilisation.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639226365ec4bf8dd": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "<p>\"Viogniers are a tricky varietal and I’ve been bitterly disappointed in the past by the more reasonably priced wines in this varietal. I honestly bought the wine to cook with and decided to have a taste before throwing it into a chicken dish I was preparing. Needless to say, not much of the wine was shared with the chicken! I am not a connoisseur by any stretch of the imagination, but I definitely picked up cashew nut on the palate.\"</p>",
+        "subtitle-2": "<p><em>- Lindi -</em></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "16392534101a01b24e": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "16392534108f7600fd-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "white-wines"
+          }
+        }
+      },
+      "block_order": [
+        "16392534108f7600fd-0"
+      ],
+      "settings": {
+        "topheading": "OUR WHITE WINES",
+        "subtitle-1": "",
+        "active_collection": "white-wines"
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639223856bcb87c3a",
+    "16392371564aec5ac1",
+    "faq_HcQWne",
+    "image_with_overlay_text_zEd4pM",
+    "1639224403b97d22e1",
+    "1639224916778fd50c",
+    "164390393509a8cadf",
+    "1643904463ddbe473e",
+    "1639226365ec4bf8dd",
+    "16392534101a01b24e"
+  ]
+}

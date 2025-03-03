@@ -1,0 +1,197 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#6b7231"
+      }
+    },
+    "hero_main_HQgbp6": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_xXCFcF": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis-Drift-Verreaux-Flagship-Range.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Verreaux",
+            "paragarh_p2": "Flagship",
+            "paragarh_p3": "Range",
+            "paragarh_p4": "",
+            "paragarh_1": "Be Bold",
+            "paragarh_2": "As rare and bold as the mighty Verreaux’s eagle soaring above the Alvi's Drift skies, our ultra-premium Flagship Verreaux Pinotage is crafted for the ultimate, uncompromising flavour experience.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_xXCFcF"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvis-Drift-Verreaux-Flagship-Range.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 0,
+        "Heading_color": "#ffffff",
+        "video_banner": "",
+        "paragarh_p1": "",
+        "paragarh_p2": "",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "",
+        "paragarh_2": "",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_main_link": ""
+      }
+    },
+    "focus_text_text_only_dy4cpD": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "",
+        "subtitle-2": "<p>Made in small volumes and blended from individually selected barrels, this exceptional 100% Pinotage pays homage to South Africa’s unique grape, proudly embodying the highest quality of this varietal. The pinnacle of the Alvi’s Drift winemaking portfolio, our Verreaux Pinotage is perfect for savouring on the most special occasions or for ageing to be enjoyed in years to come.</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "product-grid": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "flagship-range"
+          }
+        }
+      },
+      "block_order": [
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
+      ],
+      "settings": {
+        "topheading": "",
+        "subtitle-1": "",
+        "active_collection": "flagship-range"
+      }
+    },
+    "164210896940931286": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "1639247728bb3b5028": {
+      "type": "Logos",
+      "blocks": {
+        "8a07061c-5f22-43c0-9b9b-dfc3bae0c6c7": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Platinum.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "1639247728c24078eb-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Platters_4_34e7c8b9-b724-4ff9-85b7-ba667495493d.png",
+            "logo_link": "https://www.wineonaplatter.com/"
+          }
+        },
+        "46f7ff33-3fd4-4a1d-87f2-27113eb4bbb8": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Gold_e1d7658b-67c9-4a95-b51b-9d455c7d3bb5.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "95b526b4-7654-4357-86e4-a6f84bb72e3b": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Award-Double-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "cde40303-b322-480f-94e5-60894f8503c1": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Veritas-Awards_825e96e8-eea9-44e7-b436-8a94381d7377.png",
+            "logo_link": "https://veritas.co.za/"
+          }
+        },
+        "f7f21f20-6df5-4bed-95f1-4718f50b5a53": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Catavinum-Awards-Great-Gold_5c78f88c-a309-4a54-8e3e-2371638231db.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        },
+        "072d1cb4-b01b-44c6-a547-94196a9daa77": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/SA-Wine-Index-Platinum.png",
+            "logo_link": "https://www.sawineindex.com/"
+          }
+        },
+        "6e4f22b3-89e1-45fd-811a-b43ad9b36b03": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Absa-Top-10-Pinotage-Award.png",
+            "logo_link": "https://www.pinotage.co.za/"
+          }
+        },
+        "2174bd8c-ee64-4499-8528-6d0fe343425f": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Champion.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        }
+      },
+      "block_order": [
+        "8a07061c-5f22-43c0-9b9b-dfc3bae0c6c7",
+        "1639247728c24078eb-0",
+        "46f7ff33-3fd4-4a1d-87f2-27113eb4bbb8",
+        "95b526b4-7654-4357-86e4-a6f84bb72e3b",
+        "cde40303-b322-480f-94e5-60894f8503c1",
+        "f7f21f20-6df5-4bed-95f1-4718f50b5a53",
+        "072d1cb4-b01b-44c6-a547-94196a9daa77",
+        "6e4f22b3-89e1-45fd-811a-b43ad9b36b03",
+        "2174bd8c-ee64-4499-8528-6d0fe343425f"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "hero_main_HQgbp6",
+    "focus_text_text_only_dy4cpD",
+    "product-grid",
+    "164210896940931286",
+    "1639247728bb3b5028"
+  ]
+}

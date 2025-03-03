@@ -1,0 +1,39 @@
+{% assign memberTag = 'Member' %}
+{% assign tierOneProducts = 'signature-cabernet-sauvignon, signature-chardonnay, signature-chenin-blanc, signature-merlot, signature-pinotage, signature-pinotage-rose, signature-sauvignon-blanc, signature-shiraz, signature-viognier, 221-chenin-blanc, 221-pinotage, 221-sauvignon-blanc, 221-special-cuvee, sparkling-brut-blanc-de-blanc, sparkling-brut-rose' | split: ', ' %}
+{% assign tierTwoProducts = 'sparkling-brut-cap-classique, sparkling-brut-nature-cap-classique, reserve-chardonnay, reserve-cvc, reserve-drift-fusion, reserve-muscat-de-frontignan, reserve-muscat-nectarinia, reserve-sauvignon-blanc, icon-bismarck, icon-chardonnay, icon-chenin-blanc, flagship-verreaux-pinotage' | split: ', ' %}
+
+{% if customer %}
+  <!-- Customer is logged in -->
+  {% if customer.tags contains memberTag %}
+    {% if tierOneProducts contains product.handle %}
+      <p style="margin-bottom:5px">Members get 20% *discount when you order 2 or more</p>
+      <p class="small" style="font-size:0.8em; margin-top:0; line-height:1.2em">
+        *Additional discount is applied at checkout.<br>
+        *Additional percentages off, applied to original price.
+      </p>
+    {% endif %}
+    {% if tierTwoProducts contains product.handle %}
+      <p style="margin-bottom:5px">Members get 25% *discount when you order 2 or more</p>
+      <p class="small" style="font-size:0.8em; margin-top:0; line-height:1.2em">
+        *Additional discount is applied at checkout.<br>
+        *Additional percentages off, applied to original price.
+      </p>
+    {% endif %}
+  {% endif %}
+{% else %}
+  <!-- Customer is logged out -->
+  {% if tierOneProducts contains product.handle %}
+    <p style="margin-bottom:5px">Members, <a href="/account/login?return_url={{ product.url | url_encode }}">login</a> for additional discount.</p>
+      <p class="small" style="font-size:0.8em; margin-top:0; line-height:1.2em">
+        *Additional discount is applied at checkout.<br>
+        *Additional percentages off, applied to original price.
+      </p>
+  {% endif %}
+  {% if tierTwoProducts contains product.handle %}
+    <p style="margin-bottom:5px">Members, <a href="/account/login?return_url={{ product.url | url_encode }}">login</a> for additional discount.</p>
+      <p class="small" style="font-size:0.8em; margin-top:0; line-height:1.2em">
+        *Additional discount is applied at checkout.<br>
+        *Additional percentages off, applied to original price.
+      </p>
+  {% endif %}
+{% endif %}

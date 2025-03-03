@@ -1,0 +1,220 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#4A5B52"
+      }
+    },
+    "hero_main_PkLEzE": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_KVxqKk": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis-Drift-Signature-Range.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Signature",
+            "paragarh_p2": "Range",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "Spontaneous Connections",
+            "paragarh_2": "Whether you’re just starting out on your wine journey or prefer unpretentious, fruit-driven flavours, our Signature range offers exceptional quality at incredible value.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_KVxqKk"
+      ],
+      "settings": {
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#ffffff",
+        "video_banner": "",
+        "paragarh_p1": "",
+        "paragarh_p2": "",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "",
+        "paragarh_2": "",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_main_link": ""
+      }
+    },
+    "focus_text_text_only_3qzFnW": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "",
+        "subtitle-2": "<p>Award-winning, superb value single-variety wines that are ready to be enjoyed immediately, these fruit-driven wines showcase the flavours of popular South African varieties. This range offers uncomplicated yet high-quality wines with accessible flavours to suit all palates.</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "product-grid": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "signature-range"
+          }
+        }
+      },
+      "block_order": [
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
+      ],
+      "settings": {
+        "topheading": "",
+        "subtitle-1": "",
+        "active_collection": "signature-range"
+      }
+    },
+    "16421090351c47438f": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "1639247728bb3b5028": {
+      "type": "Logos",
+      "blocks": {
+        "1639247728c24078eb-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gilbert-_-Gaillard-Best-Value_e6052faf-bd44-486c-92cd-c36835e3ab8a.png",
+            "logo_link": "https://en.gilbertgaillard.com/"
+          }
+        },
+        "3e02f9f5-a073-4906-ba3e-28154e36a819": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Champion.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "eee3ce0f-6b0d-4485-a724-5848777f5a85": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Viognier-Challenge_ccae4ea6-db73-4d53-b817-a6b6be15835e.png",
+            "logo_link": ""
+          }
+        },
+        "bcd491a1-68dc-4d1b-bafe-74645cdc507e": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Sauvignon-Blanc-Top-10.png",
+            "logo_link": "https://sauvignonblanc.com/"
+          }
+        },
+        "683e5692-f51c-4b69-abc5-78dd84c09077": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Vitis-Vinifera-Awards-Gold-2.png",
+            "logo_link": "https://www.vitisawards.com/"
+          }
+        },
+        "68ee58e6-6cd7-4f3f-9125-97b85cc1050a": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Perold-Absa-Cape-Blend-Award.png",
+            "logo_link": ""
+          }
+        },
+        "34bd7d4c-7851-4e26-8dea-09b050cee175": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Concours-Mondial-Sauvignon-Awards-Gold.png",
+            "logo_link": "https://cmsauvignon.com/en/"
+          }
+        },
+        "53ce121d-39f1-446d-8395-c1f2af63342a": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Award-Double-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "9a02df11-e4c5-4dca-881a-64f125a33556": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Platinum.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "7e42e6b7-b5bc-4053-9a13-e98c183cb40b": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points-Gold.png",
+            "logo_link": "https://iwsc.net/"
+          }
+        },
+        "0ebc65ee-eb59-4752-acea-8a8ef5cdf50c": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards-Top-10.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "e3b13697-1c50-443d-a30d-519a7daaaabd": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Catavinum-Awards-Gold.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        }
+      },
+      "block_order": [
+        "1639247728c24078eb-0",
+        "3e02f9f5-a073-4906-ba3e-28154e36a819",
+        "eee3ce0f-6b0d-4485-a724-5848777f5a85",
+        "bcd491a1-68dc-4d1b-bafe-74645cdc507e",
+        "683e5692-f51c-4b69-abc5-78dd84c09077",
+        "68ee58e6-6cd7-4f3f-9125-97b85cc1050a",
+        "34bd7d4c-7851-4e26-8dea-09b050cee175",
+        "53ce121d-39f1-446d-8395-c1f2af63342a",
+        "9a02df11-e4c5-4dca-881a-64f125a33556",
+        "7e42e6b7-b5bc-4053-9a13-e98c183cb40b",
+        "0ebc65ee-eb59-4752-acea-8a8ef5cdf50c",
+        "e3b13697-1c50-443d-a30d-519a7daaaabd"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "hero_main_PkLEzE",
+    "focus_text_text_only_3qzFnW",
+    "product-grid",
+    "16421090351c47438f",
+    "1639247728bb3b5028"
+  ]
+}

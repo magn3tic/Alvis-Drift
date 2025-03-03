@@ -1,0 +1,329 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s-Drift-Vineyards.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "OUR",
+            "paragarh_p2": "VINEYARDS",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "Scherpenheuvel is at the southernmost tip of the Breede River Valley’s Worcester wine district",
+            "paragarh_2": "With 410 hectares of vineyards blessed with some of the greatest soil diversity in the region, we consistently produce internationally recognised, award-winning white, red, rosé, Cap Classique and sparkling wines.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/DJI_0018-2_1.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "",
+        "paragarh_p1": "OUR",
+        "paragarh_p2": "VINEYARDS",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "The Alvi’s Drift vineyards are cool, pleasant and inspirational. Just like our wines",
+        "paragarh_2": "Discover the conditions that make the Alvi’s Drift vineyards so unique.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-products",
+        "btn_main_link": ""
+      }
+    },
+    "1643804444cae23036": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "<p><strong>\"Our vineyards, situated in the cool-climate wine ward of Scherpenheuvel, are incredibly diverse. We have so many different soil types – and so many rootstocks – to choose from. Rootstocks for clay, for limestone, for shale, for sandy soils, all of them resulting in different flavours. Over the years, we’ve spent a lot of time finding out what works for us.”</strong></p>",
+        "subtitle-2": "<p><em>- Alvi van der Merwe -</em></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "1639686778727cf64f": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Landscape.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "An Ideal Location",
+        "video-sec-content-txt-1": "<p>Although the fertile Breede River Valley is known for its high summer temperatures, the Scherpenheuvel wine ward in the region’s southern reaches contains cooler pockets – the result of unique microclimates caused by the area’s topography.</p><p>Here, the diurnal swing (the difference between night-time and daytime temperatures) places it in Winkler Summation II, the same category as some of France’s Bordeaux region.</p><p>Our cooler microclimate is ideal for the production of Chenin Blanc, Viognier, and Pinotage – the wines which form the cornerstone of our winery’s award-winning portfolio.</p>",
+        "button-txt": "MORE ABOUT OUR FARM",
+        "button_link": "shopify://pages/farm",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639685778f5f5e362": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "<p><strong>“We have sandy soils from the ancient riverbanks, granite, shale, red Karoo soils, even black slate. On the southern slopes across the river, you’ll find the hard, red calcareous soil, also known as dorbank, that the Breede River Valley is so famous for. Dotted around, you'll also encounter ancient limestone banks, brought to the surface by termites during the Jurassic period. These limestone banks are where we cultivate our Sauvignon Blanc. The Chardonnay and Pinot Noir vineyards are planted on a combination of south-facing ancient shale and black slate slopes and are the birthplace of our internationally acclaimed Cap Classique sparkling wines.\"</strong></p>",
+        "subtitle-2": "<p>- Junel van der Merwe -</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "164388456995a70c72": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Wine-Farm_2da4f31d-0010-4750-bedd-ff67420eb79c.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "UNIQUE TERROIR",
+        "video-sec-content-txt-1": "<p>It is to this remarkable combination of climate, soils, and topography, together with an abundance of water from the Breede River, that Alvi’s Drift wines owe their distinctive, fruit-driven character and complexity. Elegantly expressing the extraordinary terroir of their vineyards, Alvi’s Drift wines are infused with a true sense of place, along with the passion of all who brought them into being.</p>",
+        "button-txt": "MORE ABOUT OUR CELLAR",
+        "button_link": "shopify://pages/cellar",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639685206e6643b66": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "<p><strong>“Years ago, we conducted a climate study and learnt that, on average, this region is about one-and-a-half degrees cooler than Stellenbosch. This got me excited. I knew our microclimate meant that great wines could be produced right here.”</strong></p>",
+        "subtitle-2": "<p><em>- Alvi van der Merwe -</em></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "1643794595b4d301ff": {
+      "type": "Blog-External",
+      "blocks": {
+        "4dc1d180-e058-4d4d-a575-cfad5d5f5445": {
+          "type": "article",
+          "settings": {
+            "image": "shopify://shop_images/Buying_Wine_Online.jpg",
+            "title": "Your Complete Guide to Buying Wine Online",
+            "content": "<p>Buying wine online saves you time and money. We asked Fiona Rossiter, founder of Inspired Living, to share tips on all the points you need to consider.</p>",
+            "link": ""
+          }
+        },
+        "8a45375e-3a0a-4c28-90e4-aedafa06d63e": {
+          "type": "article",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_1751876834.png",
+            "title": "",
+            "content": "<p>Learn more about international wine trends, read our interesting wine-related articles and get top tips from wine experts from around the globe.</p>",
+            "link": "https://blog.alvisdrift.co.za"
+          }
+        }
+      },
+      "block_order": [
+        "4dc1d180-e058-4d4d-a575-cfad5d5f5445",
+        "8a45375e-3a0a-4c28-90e4-aedafa06d63e"
+      ],
+      "disabled": true,
+      "settings": {
+        "external_link": "https://blog.alvisdrift.co.za",
+        "hs_form_id": "",
+        "hs_form_portal_id": ""
+      }
+    },
+    "1639603063787a43d2": {
+      "type": "Newsletter-Subscription",
+      "settings": {
+        "section_heading": "<p>TH<em>E</em><br/>DRIFT</p>",
+        "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
+        "Heading_color": "#c65336",
+        "hs_form_portal_id": "25422535"
+      }
+    },
+    "164180587911600050": {
+      "type": "Logos",
+      "blocks": {
+        "164180587917957b9f-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Absa-Top-10-Pinotage-Award.png",
+            "logo_link": "https://www.pinotage.co.za/"
+          }
+        },
+        "4453d783-1d51-4934-a0fe-6810db607805": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Catavinum-Awards-Great-Gold_5c78f88c-a309-4a54-8e3e-2371638231db.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        },
+        "9a9f1578-27c8-49c1-949c-749c19fca228": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Award-Double-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "bc394650-9e6e-46b0-bb50-504537929aa3": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points-Gold.png",
+            "logo_link": "https://iwsc.net/"
+          }
+        },
+        "d4e46df0-8838-47bf-8c9c-0522c7c9170a": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards-Double-Gold.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "b62d6626-f9b2-4c23-aba4-9a8b730199e7": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Platinum.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "7a8f2643-e1fb-4a00-b69f-2a4e617e9f9d": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Champion.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "39166d38-5799-4431-aa61-0f62742e75e9": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-1st-Place.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "17c9ba05-0647-4e47-b038-c11703b48fb7": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/S_hiraz-SA-Challenge-Top-3.png",
+            "logo_link": "https://shirazsa.co.za/challenge/"
+          }
+        },
+        "fe5e6e4d-f10c-472e-92f7-db07936bf8fe": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Veritas-Awards_825e96e8-eea9-44e7-b436-8a94381d7377.png",
+            "logo_link": "https://veritas.co.za/"
+          }
+        },
+        "fa380793-0a48-4e90-9d0c-848911bf84ef": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Vitis-Vinifera-Awards-Gold-2.png",
+            "logo_link": "https://www.vitisawards.com/"
+          }
+        },
+        "c27eab78-caa6-461a-bb9b-2bf17bed78c6": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Women_s-Wine-_-Spirits-Awards-Gold.png",
+            "logo_link": "https://lumoawards.com/"
+          }
+        },
+        "fec28835-c725-4433-a6a1-e37335abf279": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Sauvignon-Blanc-Top-10.png",
+            "logo_link": "https://sauvignonblanc.com/"
+          }
+        },
+        "f1b0a366-333f-4f43-871e-0de6b7d233d2": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Sommeliers-Choice-Awards-Double-Gold.png",
+            "logo_link": "https://sommelierschoiceawards.com/"
+          }
+        },
+        "475cead3-609a-4299-8511-c6d176219f56": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gilbert-_-Gaillard-Best-Value_e6052faf-bd44-486c-92cd-c36835e3ab8a.png",
+            "logo_link": "https://en.gilbertgaillard.com/"
+          }
+        },
+        "1996515e-144d-47ba-af1c-7d9a818df323": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/SA-Wine-Index-Platinum.png",
+            "logo_link": "https://www.sawineindex.com/"
+          }
+        }
+      },
+      "block_order": [
+        "164180587917957b9f-0",
+        "4453d783-1d51-4934-a0fe-6810db607805",
+        "9a9f1578-27c8-49c1-949c-749c19fca228",
+        "bc394650-9e6e-46b0-bb50-504537929aa3",
+        "d4e46df0-8838-47bf-8c9c-0522c7c9170a",
+        "b62d6626-f9b2-4c23-aba4-9a8b730199e7",
+        "7a8f2643-e1fb-4a00-b69f-2a4e617e9f9d",
+        "39166d38-5799-4431-aa61-0f62742e75e9",
+        "17c9ba05-0647-4e47-b038-c11703b48fb7",
+        "fe5e6e4d-f10c-472e-92f7-db07936bf8fe",
+        "fa380793-0a48-4e90-9d0c-848911bf84ef",
+        "c27eab78-caa6-461a-bb9b-2bf17bed78c6",
+        "fec28835-c725-4433-a6a1-e37335abf279",
+        "f1b0a366-333f-4f43-871e-0de6b7d233d2",
+        "475cead3-609a-4299-8511-c6d176219f56",
+        "1996515e-144d-47ba-af1c-7d9a818df323"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "1643804444cae23036",
+    "1639686778727cf64f",
+    "1639685778f5f5e362",
+    "164388456995a70c72",
+    "1639685206e6643b66",
+    "1643794595b4d301ff",
+    "1639603063787a43d2",
+    "164180587911600050"
+  ]
+}

@@ -1,0 +1,84 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    },
+    "16396708752d4c299f": {
+      "type": "Hero-Main",
+      "blocks": {
+        "36fa7c43-c962-4845-856d-c3ef85daadc8": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis-Drift-Festive-Gifts.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 50,
+            "Heading_color": "#f8f2e6",
+            "video_banner": "",
+            "paragarh_p1": "WINE",
+            "paragarh_p2": "GIFTS",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "Gifts for the wine enthusiast",
+            "paragarh_2": "Shop our assortment of beautifully packaged, limited-edition Alvi’s Drift wines and stylish, wine-related gifts.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "36fa7c43-c962-4845-856d-c3ef85daadc8"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/DSC_4399.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#ffffff",
+        "video_banner": "",
+        "paragarh_p1": "SHOP",
+        "paragarh_p2": "OUR",
+        "paragarh_p3": "GIFTS",
+        "paragarh_p4": "",
+        "paragarh_1": "BUY ALVI’S DRIFT-BRANDED GIFTING ONLINE",
+        "paragarh_2": "Browse our assortment of beautifully packaged, limited-edition Alvi’s Drift wines and stylish, Alvi’s Drift-branded gifts for wine enthusiasts.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-wines",
+        "btn_main_link": ""
+      }
+    },
+    "16394887186124ed9d": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "1639488718813dca96-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "gifts"
+          }
+        }
+      },
+      "block_order": [
+        "1639488718813dca96-0"
+      ],
+      "settings": {
+        "topheading": ""
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "16396708752d4c299f",
+    "16394887186124ed9d"
+  ]
+}

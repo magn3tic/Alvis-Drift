@@ -1,0 +1,618 @@
+
+
+<script>
+  /* important javascript script to add background entire to product list page */
+  /*********** DON'T REMOVE THIS CODE FORM THIS PAGE */
+  var body = document.body;
+  body.classList.add("bg-olive");
+</script>
+
+
+<section class="home-product-items product-items-sec bg-olive">    
+  <div class="sec-inner">   
+
+    <div class="container">       
+      <h2>SIGNATURE WINES</h2>
+      <div class="product-tabs">
+          <ul>
+              <li class="tabs-btn current" data-tab="tab1">SIGNATURE RANGE</li>
+              <li class="tabs-btn" data-tab="tab2">221 RANGE</li>
+              <li class="tabs-btn" data-tab="tab3">RESERVE RANGE</li>
+              <li class="tabs-btn" data-tab="tab4">ICON RANGE</li>
+              <li class="tabs-btn" data-tab="tab5">FLAGSHIP RANGE</li>
+              <li class="tabs-btn" data-tab="tab6">SPARKLING WINE RANGE</li>
+              <li class="tabs-btn" data-tab="tab7">EXCLUSIVE RANGE</li>
+          </ul>
+      </div>
+    </div>
+    <div class="tabs-content product-list-bg-wrap">
+
+    <div class="product-list-bg" style="background-image: url({{'product-list-bg.png' | asset_url}});"></div>
+
+    <div class="container">
+      <div id="tab1" class="product-items-wrap current">
+        <div class="product-bx-outer product-bx-desktop">
+          <!-- End Main Collection product loop -->
+          {% for product in collection.products %}
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url:'master' }}" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">{{ product.title }}</div>
+            </div>
+            <div class="product-price">{{ product.price | money | replace: ",", " "  }}</div>
+            <div class="product-size">{{ product.metafields.my_fields.cost_per_item }} x {{ product.metafields.my_fields.per_ml }} ml</div>              
+            <!-- Start Add to cart button -->
+            <product-form class="product-form">
+              <div class="product-form__error-message-wrapper" role="alert" hidden>
+                <span class="product-form__error-message"></span>
+              </div>
+              {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              <input class="quantity__input" type="hidden" name="quantity" id="Quantity-template--15114413473959__main" min="1" value="1" form="product-form-template--15114413473959__main">                  
+              <div class="product-form__buttons">
+                <button type="submit" name="add" class="btn btn-overlay" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                  <span>
+                    {%- if product.selected_or_first_available_variant.available -%}
+                    ADD TO CART
+                    {%- else -%}
+                    {{ 'products.product.sold_out' | t }}
+                    {%- endif -%}
+                  </span>
+                  <b>{{ product_item.price | money | replace: ",", " "  }}</b>
+                  <div class="loading-overlay__spinner hidden">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              {%- endform -%}
+            </product-form>
+            <!-- End Add to cart button -->
+          </div>
+          {% endfor %}
+<!-- End Main Collection product loop -->
+{% comment %}          
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt="" loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">CHARDONNAY</div>
+            </div>
+            <div class="product-price">R414.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a>
+          </div>
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt="" loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">CHENIN BLANC</div>
+            </div>
+            <div class="product-price">R390.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">VIOGNIER</div>
+            </div>
+            <div class="product-price">R414.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">SAUVIGNON BLANC</div>
+            </div>
+            <div class="product-price">R414.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img02.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">PINOTAGE ROSE</div>
+            </div>
+            <div class="product-price">R390.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">CABERNET SAUVIGNON</div>
+            </div>
+            <div class="product-price">R438.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">MERLOT</div>
+            </div>
+            <div class="product-price">R438.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">PINOTAGE</div>
+            </div>
+            <div class="product-price">R438.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+        </div>
+        <div class="product-bx-outer product-bx-mobile">
+          <div class="slider product-slider">
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">CHARDONNAY</div>
+              </div>
+              <div class="product-price">R414.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img02.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE ROSE</div>
+              </div>
+              <div class="product-price">R390.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE</div>
+              </div>
+              <div class="product-price">R438.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          </div>
+        </div>
+      </div>
+      <div id="tab2" class="product-items-wrap">
+        <div class="product-bx-outer product-bx-desktop">
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">CHARDONNAY</div>
+            </div>
+            <div class="product-price">R414.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+        </div>
+        <div class="product-bx-outer product-bx-mobile">
+          <div class="slider product-slider">
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">CHARDONNAY</div>
+              </div>
+              <div class="product-price">R414.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img02.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE ROSE</div>
+              </div>
+              <div class="product-price">R390.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE</div>
+              </div>
+              <div class="product-price">R438.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a>
+            </div>
+{% endcomment %}                      
+          </div>
+        </div>
+      </div>
+      <div id="tab3" class="product-items-wrap">
+        <div class="product-bx-outer product-bx-desktop">
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">CHARDONNAY</div>
+            </div>
+            <div class="product-price">R414.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+        </div>
+        <div class="product-bx-outer product-bx-mobile">
+          <div class="slider product-slider">
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">CHARDONNAY</div>
+              </div>
+              <div class="product-price">R414.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img02.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE ROSE</div>
+              </div>
+              <div class="product-price">R390.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE</div>
+              </div>
+              <div class="product-price">R438.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          </div>
+        </div>
+      </div>
+      <div id="tab4" class="product-items-wrap">
+        <div class="product-bx-outer product-bx-desktop">
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">CHARDONNAY</div>
+            </div>
+            <div class="product-price">R414.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+        </div>
+        <div class="product-bx-outer product-bx-mobile">
+          <div class="slider product-slider">
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">CHARDONNAY</div>
+              </div>
+              <div class="product-price">R414.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img02.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE ROSE</div>
+              </div>
+              <div class="product-price">R390.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE</div>
+              </div>
+              <div class="product-price">R438.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          </div>
+        </div>
+      </div>
+      <div id="tab5" class="product-items-wrap">
+        <div class="product-bx-outer product-bx-desktop">
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">CHARDONNAY</div>
+            </div>
+            <div class="product-price">R414.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+        </div>
+        <div class="product-bx-outer product-bx-mobile">
+          <div class="slider product-slider">
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">CHARDONNAY</div>
+              </div>
+              <div class="product-price">R414.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img02.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE ROSE</div>
+              </div>
+              <div class="product-price">R390.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE</div>
+              </div>
+              <div class="product-price">R438.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          </div>
+        </div>
+      </div>
+      <div id="tab6" class="product-items-wrap">
+        <div class="product-bx-outer product-bx-desktop">
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">CHARDONNAY</div>
+            </div>
+            <div class="product-price">R414.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+        </div>
+        <div class="product-bx-outer product-bx-mobile">
+          <div class="slider product-slider">
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">CHARDONNAY</div>
+              </div>
+              <div class="product-price">R414.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img02.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE ROSE</div>
+              </div>
+              <div class="product-price">R390.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE</div>
+              </div>
+              <div class="product-price">R438.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          </div>
+        </div>
+      </div>
+      <div id="tab7" class="product-items-wrap">
+        <div class="product-bx-outer product-bx-desktop">
+          <div class="product-bx">
+            <div class="product-img">
+              <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+            </div>
+            <div class="product-title">
+              <div class="sp-t">CHARDONNAY</div>
+            </div>
+            <div class="product-price">R414.00</div>
+            <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+        </div>
+        <div class="product-bx-outer product-bx-mobile">
+          <div class="slider product-slider">
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img01.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">CHARDONNAY</div>
+              </div>
+              <div class="product-price">R414.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img02.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE ROSE</div>
+              </div>
+              <div class="product-price">R390.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+            <div class="product-bx">
+              <div class="product-img">
+                <a href="#"><img src="{{ 'product-img03.png' | asset_url }};" alt=""loading="lazy"></a>
+              </div>
+              <div class="product-title">
+                <div class="sp-t">PINOTAGE</div>
+              </div>
+              <div class="product-price">R438.00</div>
+              <div class="product-size">6 x 750 ml</div><a href="#" class="btn btn-overlay">ADD TO CART</a></div>
+          </div>
+        </div>
+      </div>
+    </div>  
+</section>
+
+{%- comment -%}
+
+{{ 'template-collection.css' | asset_url | stylesheet_tag }}
+{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{{ 'component-card.css' | asset_url | stylesheet_tag }}
+{{ 'component-price.css' | asset_url | stylesheet_tag }}
+{{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
+
+<link rel="preload" href="{{ 'component-rte.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+  {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+
+  <div class="page-width" id="main-collection-filters" data-id="{{ section.id }}">
+    {% render 'facets', results: collection, enable_filtering: section.settings.enable_filtering, enable_sorting: section.settings.enable_sorting, collapse_on_larger_devices: section.settings.collapse_on_larger_devices %}
+  </div>
+{%- endif -%}
+
+<div id="ProductGridContainer">
+  {%- paginate collection.products by section.settings.products_per_page -%}
+    {%- if collection.products.size == 0 -%}
+      <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
+        <div class="loading-overlay gradient"></div>
+        <div class="title-wrapper center">
+          <h2 class="title title--primary">
+            {{ 'sections.collection_template.empty' | t }}<br>
+            {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
+          </h2>
+        </div>
+      </div>
+    {%- else -%}
+      <div class="collection page-width">
+        <div class="loading-overlay gradient"></div>
+
+        <ul id="product-grid" data-id="{{ section.id }}" class="
+          grid grid--2-col negative-margin product-grid
+          {% if collection.products_count < 4 %} grid--{{ collection.products_count }}-col-tablet{% else %}
+            {% if collection.products_count == 4 %} grid--4-col-desktop{% else %} grid--3-col-tablet grid--one-third-max grid--4-col-desktop grid--quarter-max{% endif %}
+          {% endif %}">
+          {%- for product in collection.products -%}
+            <li class="grid__item">
+              {% render 'product-card',
+                product_card_product: product,
+                media_size: section.settings.image_ratio,
+                show_secondary_image: section.settings.show_secondary_image,
+                add_image_padding: section.settings.add_image_padding,
+                show_vendor: section.settings.show_vendor,
+                show_image_outline: section.settings.show_image_outline,
+                show_rating: section.settings.show_rating
+              %}
+            </li>
+          {%- endfor -%}
+        </ul>
+
+        {%- if paginate.pages > 1 -%}
+          {% render 'pagination', paginate: paginate, anchor: '' %}
+        {%- endif -%}
+      </div>
+    {%- endif -%}
+  {%- endpaginate -%}
+</div>
+{%- endcomment -%}
+    
+    <style>
+      div#shopify-section-template--15579529183488__product-grid {
+    padding-top: 100px;
+}
+    </style>
+    
+{% schema %}
+{
+  "name": "t:sections.main-collection-product-grid.name",
+  "class": "spaced-section collection-grid-section",
+  "settings": [
+    {
+      "type": "range",
+      "id": "products_per_page",
+      "min": 8,
+      "max": 24,
+      "step": 4,
+      "default": 16,
+      "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-collection-product-grid.settings.header__3.content"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
+        },
+        {
+          "value": "portrait",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
+        },
+        {
+          "value": "square",
+          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
+        }
+      ],
+      "default": "adapt",
+      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_secondary_image",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "add_image_padding",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.add_image_padding.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_image_outline",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.show_image_outline.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_vendor",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_rating",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
+      "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+    },
+    {
+      "type": "header",
+      "content": "t:sections.main-collection-product-grid.settings.header__1.content"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_filtering",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.enable_filtering.label",
+      "info": "t:sections.main-collection-product-grid.settings.enable_filtering.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_sorting",
+      "default": true,
+      "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+    },
+    {
+      "type": "checkbox",
+      "id": "collapse_on_larger_devices",
+      "default": false,
+      "label": "t:sections.main-collection-product-grid.settings.collapse_on_larger_devices.label"
+    }
+  ]
+}
+{% endschema %}

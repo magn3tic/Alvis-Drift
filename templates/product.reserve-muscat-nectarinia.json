@@ -1,0 +1,286 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#867065"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "c0b52f8b-0407-4f34-a011-de93ce967ccd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "25366be7-6354-4d54-b0cd-c712d5e1c136": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "4ac49e5c-2f1c-4f84-91f9-38c73dabc502": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share This Page"
+          }
+        }
+      },
+      "block_order": [
+        "c0b52f8b-0407-4f34-a011-de93ce967ccd",
+        "25366be7-6354-4d54-b0cd-c712d5e1c136",
+        "4ac49e5c-2f1c-4f84-91f9-38c73dabc502",
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639223856bcb87c3a": {
+      "type": "Logos",
+      "blocks": {
+        "163922385675455466-0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163922385675455466-0",
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16392371564aec5ac1": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "163923715616dacea7-0": {
+          "type": "column",
+          "settings": {
+            "title": "ALCOHOL",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>2017:</strong>  15,7%<strong><br/>2016:</strong>  14,2%</p>",
+            "Text_color": "#867065"
+          }
+        },
+        "163923715616dacea7-1": {
+          "type": "column",
+          "settings": {
+            "title": "RESIDUAL SUGAR",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>2017:</strong>  357,6 g/l<strong><br/>2016:</strong>  355,5 g/l</p>",
+            "Text_color": "#867065"
+          }
+        },
+        "163923715616dacea7-2": {
+          "type": "column",
+          "settings": {
+            "title": "ACIDITY",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>2017:</strong>  6,3 g/l<strong><br/>2016:</strong>  6,3 g/l</p>",
+            "Text_color": "#867065"
+          }
+        },
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79": {
+          "type": "column",
+          "settings": {
+            "title": "pH",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>2017:</strong>  3,2<strong><br/>2016:</strong>  3,2</p>",
+            "Text_color": "#867065"
+          }
+        }
+      },
+      "block_order": [
+        "163923715616dacea7-0",
+        "163923715616dacea7-1",
+        "163923715616dacea7-2",
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
+      ],
+      "disabled": true,
+      "settings": {
+        "Background_Colour": "#aac4d3",
+        "title": "ANALYSIS",
+        "Heading_color": "#f8f2e6",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "image_with_overlay_text_kBpKda": {
+      "type": "Image-With-Overlay-Text",
+      "blocks": {
+        "heading_RqFaNz": {
+          "type": "heading",
+          "settings": {
+            "heading": "future-forward wines",
+            "heading_size": "medium"
+          }
+        },
+        "text_Vmgain": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "buttons_NUD8YT": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "discover more",
+            "button_link_1": "shopify://pages/sustainability",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_RqFaNz",
+        "text_Vmgain",
+        "buttons_NUD8YT"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Website_banner_sustainability_00c60d8b-a6d1-4a64-8a6f-3b534904e9c1.jpg",
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Pudding_Pairing_01.jpg",
+        "image_overlay": true,
+        "Heading_color": "#2d5980",
+        "title": "SERVING SUGGESTION",
+        "detail-box-txt": "Served between 4-8 ˚C, this wine will complement any citrus-based dessert, as well as Crème brûlée, fresh fruit salad or rich cheeses such as Munster, Epoisses de Bourgogne or Reblochon.",
+        "btn-txt": "",
+        "btn-url": ""
+      }
+    },
+    "1639224916778fd50c": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/DSC_5742.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#aac4d3",
+        "title": "HERITAGE",
+        "video-sec-content-txt-1": "<p>The wine labels on bottles from our Reserve range feature an illustration of Alvi’s Drift, the low-water bridge over the Breede River cutting through the family farm. Our patriarch, Albertus Viljoen “Oupa Alvi” van der Merwe, was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p><p>Our Alvi’s Drift Reserve range is the culmination of our pursuit of excellence in producing outstanding wines of unrivalled complexity.</p>",
+        "button-txt": "RESERVE RANGE",
+        "button_link": "shopify://collections/reserve-range"
+      }
+    },
+    "1643894802c6c7e07a": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/DSC_5267.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#aac4d3",
+        "title": "ON THE VINES",
+        "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Made in very limited quantities from old blocks of Muscat de Frontignan (Muscat Blanc à Petits Grains), this wine takes its name from the iridescent green Nectarinia Famosa (also known as the Malachite sunbird) which frolics in our vineyards during harvest time.</p>",
+        "button-txt": "",
+        "button_link": ""
+      }
+    },
+    "1643894809ed098fcd": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Cellar-02.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#aac4d3",
+        "title": "IN THE CELLAR",
+        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>For this wine, optimally ripe grapes with a balling of 40° are hand-picked in the cool early morning hours from vineyards aged between 25-40 years, specially selected for their ability to yield high sugar while still maintaining quality and vibrancy of flavour.</p><p>After crushing, prior to fortification, grapes are left on skinsto allow for the full extraction of crystallised sugar in dried berries. Thereafter, wine is matured in old oak barrels for 48 months.</p>",
+        "button-txt": "",
+        "button_link": ""
+      }
+    },
+    "16392534101a01b24e": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "16392534108f7600fd-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "reserve-range"
+          }
+        }
+      },
+      "block_order": [
+        "16392534108f7600fd-0"
+      ],
+      "settings": {
+        "topheading": "OUR RESERVE RANGE WINES",
+        "subtitle-1": "",
+        "active_collection": "reserve-range"
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639223856bcb87c3a",
+    "16392371564aec5ac1",
+    "image_with_overlay_text_kBpKda",
+    "1639224403b97d22e1",
+    "1639224916778fd50c",
+    "1643894802c6c7e07a",
+    "1643894809ed098fcd",
+    "16392534101a01b24e"
+  ]
+}

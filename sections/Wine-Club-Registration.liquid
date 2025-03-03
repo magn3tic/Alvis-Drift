@@ -1,0 +1,105 @@
+<section class="newsletter-sec">
+    <div class="container">
+        <div class="newsletter-wrap">
+            <div class="newsletter-content">
+                <h2 style="color:{{ section.settings.Heading_color }}" class="animate-reveal">{{ section.settings.section_heading }}</h2>
+                <blockquote class="animate-reveal">{{ section.settings.section_content }}</blockquote>
+            </div>
+            <div class="newsletter-frm">
+                <div class="newsletter-frm-inner">
+                  
+                       {%- render 'hsform-script', id: section.settings.hs_form_id, portal_id: section.settings.hs_form_portal_id -%}
+  
+                  
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+{% schema %}
+{
+  "name": {
+   
+    "en": "Wine Club Registration"
+  },
+  "class": "index-section",
+  "settings": [
+
+    {
+      "type": "richtext",
+      "id": "section_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "section_content",
+      "label": "Intro Text"
+    },
+ 	{
+            "type": "select",
+            "id": "Heading_color",
+            "label": "Heading Colour",
+            "options": [
+			  {
+                "value": "#ffffff",
+                "label": "White"
+				},
+			  {
+                "value": "#2e112d",
+                "label": "Dark Plum"
+				},
+				{
+				"value": "#fedcc6",
+                "label": "Light Orange"
+              },
+			  {
+                "value": "#f8f2e6",
+                "label": "Light Beige"
+              }, 
+             
+			  {
+                "value": "#c0ccbe",
+                "label": "Light Olive"
+              },
+              {
+                "value": "#aac4d3",
+                "label": "Light Blue"
+              }
+              
+            ],
+            "default": "#fedcc6"
+          },
+	{
+      "type": "header",
+      "content": "Hubspot form"
+    },
+	{
+      "type": "text",
+      "id": "hs_form_id",
+      "label": "Hubspot form id"
+    },
+	{
+      "type": "text",
+      "id": "hs_form_portal_id",
+      "label": "Hubspot form portal id"
+    }
+    
+  ],
+  "presets": [
+    {
+      "name": {
+        
+        "en": "Wine Club Registration"
+      },
+      "category": {
+       
+        "en": "Newsletter"
+      }
+    }
+  ]
+}
+{% endschema %}
+
