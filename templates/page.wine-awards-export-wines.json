@@ -1,0 +1,581 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "6708655a-735a-47e4-ad5c-216020111ec6": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+            "image_overlay": "#000000",
+            "overlay_opacity": 40,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "EXPORT",
+            "paragarh_p2": "WINES",
+            "paragarh_p3": "AWARDS",
+            "paragarh_p4": "",
+            "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+            "paragarh_2": "View the awards for our Export Range wines below.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "6708655a-735a-47e4-ad5c-216020111ec6"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "",
+        "paragarh_p1": "EXPORT",
+        "paragarh_p2": "WINES",
+        "paragarh_p3": "AWARDS",
+        "paragarh_p4": "",
+        "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+        "paragarh_2": "View the awards for our Export Range wines below.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-wines",
+        "btn_main_link": ""
+      }
+    },
+    "1643151254174e4c25": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "f818d876-ef5e-4a2a-bb7e-8ad849a9e6c4": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2018 / 2019",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "f818d876-ef5e-4a2a-bb7e-8ad849a9e6c4"
+      ],
+      "disabled": true,
+      "settings": {
+        "main_heading": "Cape Pride Range > Cabernet Sauvignon / Shiraz:  2016"
+      }
+    },
+    "16431513741bdd85cf": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "fa75e883-4c54-4b26-a793-b2a71926964e": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "fa75e883-4c54-4b26-a793-b2a71926964e"
+      ],
+      "settings": {
+        "main_heading": "Cape Pride Range > Cabernet Sauvignon / Shiraz:  2019"
+      }
+    },
+    "16431512826a3d0e92": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "94499012-6ff9-45a4-8252-fa846f2bcf01": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2019 / 2020",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "94499012-6ff9-45a4-8252-fa846f2bcf01"
+      ],
+      "settings": {
+        "main_heading": "Cape Pride Range > Cabernet Sauvignon / Shiraz:  2018"
+      }
+    },
+    "16431514331634a84b": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "c89c0ed9-921b-439e-a503-0cc116dd6410": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2018 / 2019",
+            "arward_level": "Silver"
+          }
+        },
+        "7c4f3bd3-f92f-4af7-a0c8-9324c34a21fd": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2019 / 2020",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "c89c0ed9-921b-439e-a503-0cc116dd6410",
+        "7c4f3bd3-f92f-4af7-a0c8-9324c34a21fd"
+      ],
+      "disabled": true,
+      "settings": {
+        "main_heading": "Cape Pride Range > Chenin Blanc / Chardonnay:  2018"
+      }
+    },
+    "16431515277b1bf1ff": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "c4e28271-1af4-4a4a-a787-5451bcf29566": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "c4e28271-1af4-4a4a-a787-5451bcf29566"
+      ],
+      "settings": {
+        "main_heading": "Cape Pride Range > Chenin Blanc / Chardonnay:  2020"
+      }
+    },
+    "1643151468e32cf0ee": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "d6aed166-a8a6-46f8-a6cc-12948449b1db": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "d6aed166-a8a6-46f8-a6cc-12948449b1db"
+      ],
+      "settings": {
+        "main_heading": "Cape Pride Range > Chenin Blanc / Chardonnay:  2019"
+      }
+    },
+    "16431516609b7b27c7": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "0f46adbc-4cb2-4455-95b3-d53b561a626a": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2021",
+            "arward_level": "Double Gold"
+          }
+        }
+      },
+      "block_order": [
+        "0f46adbc-4cb2-4455-95b3-d53b561a626a"
+      ],
+      "settings": {
+        "main_heading": "Rondebosch Range > Chenin Blanc:  2020"
+      }
+    },
+    "1643151607694c8428": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "e66759a2-008d-4e48-abf3-81272ae7f893": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2019 / 2020",
+            "arward_level": "Gold"
+          }
+        },
+        "b2d52171-a952-46d0-b0e7-0cfc27ad066c": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2020",
+            "arward_level": "Double Gold"
+          }
+        },
+        "f0be6df0-2de2-4993-811f-0d82746b4518": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2021",
+            "arward_level": "Double Gold"
+          }
+        }
+      },
+      "block_order": [
+        "e66759a2-008d-4e48-abf3-81272ae7f893",
+        "b2d52171-a952-46d0-b0e7-0cfc27ad066c",
+        "f0be6df0-2de2-4993-811f-0d82746b4518"
+      ],
+      "settings": {
+        "main_heading": "Rondebosch Range > Chenin Blanc:  2019"
+      }
+    },
+    "16431515582e47476d": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "fa9a4cde-29fd-44e1-bf85-fc53ee2ff410": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2018",
+            "arward_level": "Gold"
+          }
+        },
+        "f5e2c56b-53ca-4dd5-a4d6-cbef81ae44c0": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2018 / 2019",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "fa9a4cde-29fd-44e1-bf85-fc53ee2ff410",
+        "f5e2c56b-53ca-4dd5-a4d6-cbef81ae44c0"
+      ],
+      "settings": {
+        "main_heading": "Rondebosch Range > Chenin Blanc:  2018"
+      }
+    },
+    "1643151942888dcf22": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "0f2fb6b7-82c3-4d42-881b-257d5fa32ad1": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "2a9abf1a-6617-43b7-8441-6d5f5754d97c": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "0f2fb6b7-82c3-4d42-881b-257d5fa32ad1",
+        "2a9abf1a-6617-43b7-8441-6d5f5754d97c"
+      ],
+      "settings": {
+        "main_heading": "Rondebosch Range > Chardonnay:  2020"
+      }
+    },
+    "16431517724d2e5fec": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "252db6eb-38b1-4812-bf31-29554d00c616": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "252db6eb-38b1-4812-bf31-29554d00c616"
+      ],
+      "settings": {
+        "main_heading": "Rondebosch Range > Chardonnay:  2019"
+      }
+    },
+    "1643151735332fa7d4": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "f03862e7-49c9-4a99-8734-b35a7e698486": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2018",
+            "arward_level": "Gold"
+          }
+        },
+        "a7e9beb4-35cd-4ac3-b25e-a3ee50ec8b78": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2018 / 2019",
+            "arward_level": "Gold"
+          }
+        },
+        "2d96d30c-b149-432b-82f7-211c24b7a5c9": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2019 / 2020",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "f03862e7-49c9-4a99-8734-b35a7e698486",
+        "a7e9beb4-35cd-4ac3-b25e-a3ee50ec8b78",
+        "2d96d30c-b149-432b-82f7-211c24b7a5c9"
+      ],
+      "settings": {
+        "main_heading": "Rondebosch Range > Chardonnay:  2018"
+      }
+    },
+    "1643152142ca4b2e17": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "0af46cd3-9a09-41db-876d-b63f5c8efe16": {
+          "type": "row",
+          "settings": {
+            "award": "Gilbert & Gaillard International Challenge",
+            "year": "2021",
+            "arward_level": "Best Value"
+          }
+        }
+      },
+      "block_order": [
+        "0af46cd3-9a09-41db-876d-b63f5c8efe16"
+      ],
+      "settings": {
+        "main_heading": "Rondebosch Range > Cabernet Sauvignon / Shiraz:  2020"
+      }
+    },
+    "1643152066f2b4bbc0": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "abbccab0-b82c-48f0-be20-1202c0b5145e": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2019",
+            "arward_level": "Double Gold"
+          }
+        },
+        "874a82fa-5260-462b-9179-e1f570641412": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2019 / 2020",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "abbccab0-b82c-48f0-be20-1202c0b5145e",
+        "874a82fa-5260-462b-9179-e1f570641412"
+      ],
+      "settings": {
+        "main_heading": "Rondebosch Range > Cabernet Sauvignon / Shiraz:  2018"
+      }
+    },
+    "16431520278e1c8159": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "7ddce62d-c43e-4d75-bfdd-e2b1e1528de8": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2018",
+            "arward_level": "Gold"
+          }
+        },
+        "f44fedb7-dd8e-4199-81d8-f702ddc3808f": {
+          "type": "row",
+          "settings": {
+            "award": "Gilbert & Gaillard International Challenge",
+            "year": "2018",
+            "arward_level": "Best Value"
+          }
+        },
+        "7837fddb-73fe-45b6-ab2a-4f5a72e2d5a3": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2018 / 2019",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "7ddce62d-c43e-4d75-bfdd-e2b1e1528de8",
+        "f44fedb7-dd8e-4199-81d8-f702ddc3808f",
+        "7837fddb-73fe-45b6-ab2a-4f5a72e2d5a3"
+      ],
+      "settings": {
+        "main_heading": "Rondebosch Range > Cabernet Sauvignon / Shiraz:  2017"
+      }
+    },
+    "16423667519a6836be": {
+      "type": "Logos",
+      "blocks": {
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Vitis-Vinifera-Awards-Gold-2.png",
+            "logo_link": "https://www.vitisawards.com/"
+          }
+        },
+        "1642366751d2473fd1-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gilbert-_-Gaillard-Best-Value_e6052faf-bd44-486c-92cd-c36835e3ab8a.png",
+            "logo_link": "https://en.gilbertgaillard.com/"
+          }
+        }
+      },
+      "block_order": [
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845",
+        "1642366751d2473fd1-0"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16430340119e659e4c": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "02e9e2b3-c02d-47e8-9ed2-2fb0eb09a8df": {
+          "type": "column",
+          "settings": {
+            "title": "FLAGSHIP RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">Verreaux Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-0": {
+          "type": "column",
+          "settings": {
+            "title": "ICON RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chenin Blanc</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chardonnay</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Bismarck Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "ed53470a-aec9-4cdb-a85b-1b6ad68a9b2f": {
+          "type": "column",
+          "settings": {
+            "title": "RESERVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/wine-awards-reserve-viognier\" target=\"_blank\" title=\"Wine Awards Reserve Viognier\">Viognier</a></p><p><a href=\"/pages/reserve-awards-cvc\" target=\"_blank\" title=\"Wine Awards Reserve CVC Blend\">CVC Blend</a></p><p><a href=\"/pages/reserve-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Reserve Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/reserve-awards-drift-fusion\" target=\"_blank\" title=\"Wine Awards Reserve Drift Fusion Blend\">Drift Fusion Blend</a></p><p><a href=\"/pages/awards-reserve-chardonnay\" target=\"_blank\" title=\"Wine Awards Reserve Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat Nectarinia</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat de Frontignan</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-2": {
+          "type": "column",
+          "settings": {
+            "title": "221 RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Chenin Blanc</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Pinotage</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Special Cuvée Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "56ea5e51-174b-4d9e-8910-364f7176c576": {
+          "type": "column",
+          "settings": {
+            "title": "SIGNATURE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/signature-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Signature Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/signature-awards-chenin-blanc\" target=\"_blank\" title=\"Wine Awards Signature Chenin Blanc\">Chenin Blanc</a></p><p><a href=\"/pages/signature-awards-viognier\" target=\"_blank\" title=\"Wine Awards Signature Viognier\">Viognier</a></p><p><a href=\"/pages/signature-awards-chardonnay\" target=\"_blank\" title=\"Wine Awards Signature Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage Rosé</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage</a></p><p><a href=\"/pages/signature-awards-cabernet-sauvignon\" target=\"_blank\" title=\"Wine Awards Signature Cabernet Sauvignon\">Cabernet Sauvignon</a></p><p><a href=\"/pages/signature-awards-shiraz\" target=\"_blank\" title=\"Wine Awards Signature Shiraz\">Shiraz</a></p><p><a href=\"/pages/signature-awards-merlot\" target=\"_blank\" title=\"Wine Awards Signature Merlot\">Merlot</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925": {
+          "type": "column",
+          "settings": {
+            "title": "SPARKLING RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Rosé</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Blanc de Blanc</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Nature Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Thornlands MCC</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "af0d031d-5b54-45c0-8cb4-fac652753af9": {
+          "type": "column",
+          "settings": {
+            "title": "EXCLUSIVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Chenin Blanc</a></p><p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        }
+      },
+      "block_order": [
+        "02e9e2b3-c02d-47e8-9ed2-2fb0eb09a8df",
+        "1643034010691e68fe-0",
+        "ed53470a-aec9-4cdb-a85b-1b6ad68a9b2f",
+        "1643034010691e68fe-2",
+        "56ea5e51-174b-4d9e-8910-364f7176c576",
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925",
+        "af0d031d-5b54-45c0-8cb4-fac652753af9"
+      ],
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "OUR AWARDS BY RANGE",
+        "Heading_color": "#f8f2e6",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "1643151254174e4c25",
+    "16431513741bdd85cf",
+    "16431512826a3d0e92",
+    "16431514331634a84b",
+    "16431515277b1bf1ff",
+    "1643151468e32cf0ee",
+    "16431516609b7b27c7",
+    "1643151607694c8428",
+    "16431515582e47476d",
+    "1643151942888dcf22",
+    "16431517724d2e5fec",
+    "1643151735332fa7d4",
+    "1643152142ca4b2e17",
+    "1643152066f2b4bbc0",
+    "16431520278e1c8159",
+    "16423667519a6836be",
+    "16430340119e659e4c"
+  ]
+}

@@ -1,0 +1,119 @@
+<section class="home-aboutus focusTextSection bg-darkPurple text-center">       
+    <div class="sec-inner">
+        <div class="container">        
+            <div>
+              <h1 style="color:{{ section.settings.Heading_color }};text-transform:{{ section.settings.text_transform }}">{{ section.settings.title }}</h1>
+            </div>
+            <p class="sub-title" >{{ section.settings.subtitle-1 }}</p>
+            <p>{{ section.settings.subtitle-2 }}</p>
+            {% if section.settings.button_text!=blank%}
+              <a class="alvisBtn" href="{{ section.settings.button_link }}" {% if section.settings.new_tab %} target="_blank" {% endif %} >{{ section.settings.button_text }}</a>
+            {% endif %}
+        </div>
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "Focus Text (Text Only)",
+    "settings": [
+		 {
+        "type": "header",
+        "content": "Heading"
+      },
+      {
+            "type": "select",
+            "id": "text_transform",
+            "label": "Text Transform",
+            "options": [
+				{
+                "value": "capitalize",
+                "label": "Capitalize"
+              }, 
+              {
+                "value": "uppercase",
+                "label": "UPPERCASE"
+              }			 
+            ],
+            "default": "uppercase"
+          },
+		{
+            "type": "select",
+            "id": "Heading_color",
+            "label": "Heading Colour",
+            "options": [
+				{
+                "value": "#f8f2e6",
+                "label": "Light Beige"
+              }, 
+              {
+                "value": "#ffffff",
+                "label": "White"
+              },
+			  {
+                "value": "#c0ccbe",
+                "label": "Light Olive"
+              },
+              {
+                "value": "#aac4d3",
+                "label": "Light Blue"
+              },
+              {
+                "value": "#fedcc6",
+                "label": "Light Orange"
+              }
+            ],
+            "default": "#ffffff"
+          },
+	  {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+		"default":"Add heading"
+      },
+
+	  {
+        "type": "text",
+        "id": "subtitle-1",
+        "label": "Orange Text",
+          "default":"Add Sub-Heading"
+      },
+{
+        "type": "richtext",
+        "id": "subtitle-2",
+        "label": "White Text",
+          "default":"<p>Text</p>"
+      },
+	  {
+        "type": "header",
+        "content": "Button"
+      },
+	  {
+        "type": "text",
+        "id": "button_text",
+        "label": "Button Text"
+      },
+	  {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      },
+       {
+              "type": "checkbox",
+              "id": "new_tab",
+              "label": "Open in a new tab",
+              "default": true
+        }
+],
+  "presets": [
+    {
+      "name": "Focus Text (Text Only)"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

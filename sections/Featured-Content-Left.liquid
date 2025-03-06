@@ -1,0 +1,101 @@
+<section class="our-vineyards bg-darkPurple splash-sec from-left-sec dfd {% if section.settings.add_class != blank %} {{ section.settings.add_class }} {% endif %}" style="margin-top: -280px;">
+    <div class="sec-inner">
+        <div class="container">
+            <div class="splash-bx">
+                <div class="sec-side-img">                
+                  <img src="{{ section.settings.our-vineyards-side | img_url: 'master'}}" alt="Our Vineyards Side" loading="lazy">           
+                </div>
+                <div class="block-sec">
+                    <div class="img-igw">
+                        <div class="block-sec-img parallex_div  {% if section.settings.left_image_contain == true %} image_size_contain{% endif %}">
+                          <img class="br-cut3" src="{{ section.settings.our-vineyards-main | img_url: 'master' }}" alt="our-vineyards-main" loading="lazy">
+                        </div>        
+                    </div>        
+                    <h2><span class="fword">{{ section.settings.main_heading }}</span> </h2>
+                    <div class="detail-box">
+                        <div class="detail-box-txt">
+                          <p>{{ section.settings.detail-box-txt }}</p>
+                        </div>
+                      {% if section.settings.btn-url !="" %}
+                        <a href="{{ section.settings.btn-url }}" class="readmore">{{ section.settings.btn-txt }}</a>
+                      {% endif %}  
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "Featured Content (Left)",
+    "settings": [
+	  {
+        "type": "richtext",
+        "id": "main_heading",
+        "label": "Heading",
+        "info": "Some letters italic!"
+      },
+		{
+        "type": "image_picker",
+        "id": "our-vineyards-main",
+        "label": "Main Image (Left)",
+        "info": "Perfect size for Portrait image:- 418X627 and perfect size for landscape image:- 600X375"
+      },
+	  {
+        "type": "checkbox",
+        "id": "left_image_contain",
+        "label": "Left image landscape mode",
+        "default": false
+      },	 
+		{
+        "type": "image_picker",
+        "id": "our-vineyards-side",
+        "label": "Secondary Image (Right)"
+      },
+	  {
+        "type": "richtext",
+        "id": "detail-box-txt",
+        "label": "Text"
+
+      },
+	  {
+        "type": "text",
+        "id": "btn-txt",
+        "label": "Link Text",
+		"default": "Read More"
+      },
+	  {
+        "type": "url",
+        "id": "btn-url",
+        "label": "Link URL"
+      },
+	  {
+        "type": "text",
+        "id": "add_class",
+        "label": "Add class"
+      }
+],
+  "presets": [
+    {
+      "name": "Featured Content (Left)"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<style>
+@media only screen and (max-width: 767px) {
+.from-right-sec div.block-sec-img img {
+	width: 100%;
+	object-fit: contain;
+}  	
+  
+  }
+
+</style>

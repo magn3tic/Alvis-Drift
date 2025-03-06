@@ -1,0 +1,182 @@
+{% if customer.has_account %}
+{% assign lowertags = customer.tags | downcase %}
+{% assign excluded_product_ids = settings.product_list | map: "id" %}
+{% assign included_product_ids_second = settings.product_list_included | map: "id" %}
+{% assign included_product_ids = settings.product_list_included-second  | map: "id" %}
+{% assign included_product_ids_third = settings.product_list_included-third  | map: "id" %}
+
+  
+<script src="{{ 'cart-limit.js' | asset_url }}" defer="defer"></script>
+  {% endif%}
+<section class="cart-mini">  
+  <div class="cart-min-header">
+    <div class="mini-cart-close">{%- render 'icon-close' -%}</div>
+  </div>
+  <div class="mini-cart" id="mini-cart_popup">    
+    <div id="mini-cart_popup_load">
+      <div class="cart-mini-content">
+        {% if cart.item_count > 0 %}
+        {%- for item in cart.items -%}
+
+        <div class="cart-mini-item" data-qty="{{ item.quantity }}" data-price="{{ item.price }}">
+          <div class="cart-item-img">
+            <div class="cart-item-img-wrap">
+              <img src="{{ item.product.featured_image | img_url:'master' }}" alt="" >
+            </div>
+          </div>
+          <div class="cart-item-dt">
+            <div class="cart-item-title">
+              <div class="cart-item-name">{{ item.product.title | escape }}</div>
+              <div class="cart-item-size"></div>
+            </div>
+            <div class="cart-item-price-qty">
+              <div class="cart-item-qty">
+
+                    <label class="visually-hidden" for="Quantity-{{ item.index | plus: 1 }}">
+                      {{ 'products.product.quantity.label' | t }}
+                    </label>
+                    <quantity-input class="quantity" style="align-items:center; margin-left:-30px">
+                      <button class="quantity__button change_item_qty no-js-hidden" name="minus" type="button" style="color:white; height:30px; width:30px;  border: 2px solid #333; margin-right:3px"  data-index="{{ item.index | plus: 1 }}" data-pid="{{ item.id }}">
+                        <span class="visually-hidden">{{ 'products.product.quantity.decrease' | t: product: item.product.title | escape }}</span>
+                        {% render 'icon-minus' %}
+                      </button>
+                      <div> &nbsp;Qty. </div>
+                      <input class="quantity__input quantity__input-field"
+                        type="number"
+                        name="updates[]"
+                        value="{{ item.quantity }}"
+                        min="0"
+                        aria-label="{{ 'products.product.quantity.input_label' | t: product: item.product.title | escape }}"
+                        id="MiniQuantity-{{ item.index | plus: 1 }}"
+                        style="min-width: 25px; text-align:left"
+                      >
+                      <button class="quantity__button change_item_qty no-js-hidden" name="plus" type="button" style="color:white; height:30px; width:30px;  border: 2px solid #333" data-index="{{ item.index | plus: 1 }}" data-pid="{{ item.id }}">
+                        <span class="visually-hidden">{{ 'products.product.quantity.increase' | t: product: item.product.title | escape }}</span>
+                        {% render 'icon-plus' %}
+                      </button>
+                    </quantity-input>
+                
+              </div>
+              {% assign compare_price = item.variant.compare_at_price %}
+             
+              <div class="cart-item-price">
+                <div class="cart-item-price-t">
+                  
+              {% if settings.member-discount == "enable" %}
+                {% if lowertags contains 'silver' %}
+                  
+              {% if excluded_product_ids contains item.product.id %}
+                    {{ item.original_line_price | money | replace: ",", " " }}
+              {% else %}
+          {% if compare_price %}
+          {% if compare_price > item.original_line_price %}
+            <span class="comparred">{{ item.original_line_price | money | replace: ",", " " }}</span>
+          {% else %}
+            {% assign discounted_price = item.original_line_price | times: 0.95 | round %}
+            <span>{{ discounted_price | money | replace: ",", " " }}</span>
+          {% endif %}
+
+       {% elsif included_product_ids contains item.product.id %}
+          <span class="included-discount">
+            {{ item.original_line_price | times: 0.95 | money | replace: ",", " " }}
+          </span>
+        {% elsif included_product_ids_second contains item.product.id %}
+          <span class="included-discount-556">
+            {{ item.original_line_price | times: 0.95 | money | replace: ",", " " }}
+          </span>
+        {% elsif included_product_ids_third contains item.product.id %}
+          <span class="included-discount-625">
+            {{ item.original_line_price | times: 0.95 | money | replace: ",", " " }}
+          </span>
+        {% else %}    
+            {% assign discounted_price = item.original_line_price | times: 0.95 | round %}
+              <span>{{ discounted_price | money | replace: ",", " " }}</span>
+        
+          {% endif %}
+   
+    {% endif %}
+      
+    {% elsif lowertags contains 'gold' %}
+      {% if excluded_product_ids contains item.product.id %}
+                    {{ item.original_line_price | money | replace: ",", " " }}
+              {% else %}
+          {% if compare_price %}
+          {% if compare_price > item.original_line_price %}
+            <span class="comparred">{{ item.original_line_price | money | replace: ",", " " }}</span>
+          {% else %}
+            {% assign discounted_price = item.original_line_price | times: 0.90 | round %}
+            <span>{{ discounted_price | money | replace: ",", " " }}</span>
+          {% endif %}
+
+       {% elsif included_product_ids contains item.product.id %}
+          <span class="included-discount">
+            {{ item.original_line_price | times: 0.90 | money | replace: ",", " " }}
+          </span>
+        {% elsif included_product_ids_second contains item.product.id %}
+          <span class="included-discount-556">
+            {{ item.original_line_price | times: 0.90 | money | replace: ",", " " }}
+          </span>
+        {% elsif included_product_ids_third contains item.product.id %}
+          <span class="included-discount-625">
+            {{ item.original_line_price | times: 0.90 | money | replace: ",", " " }}
+          </span>
+        {% else %}    
+            {% assign discounted_price = item.original_line_price | times: 0.90 | round %}
+              <span>{{ discounted_price | money | replace: ",", " " }}</span>
+        
+          {% endif %}
+   
+    {% endif %}
+    {% else %}
+      {{ item.original_line_price | money | replace: ",", " " }}
+    {% endif %}
+  {% elsif settings.member-included-discount == "enable" %}
+    {% if lowertags contains 'bronze' or lowertags contains 'silver' or lowertags contains 'gold' %}
+      {% if included_product_ids contains item.product.id %}
+        {% assign discounted_first_price = item.original_line_price | times: 0.85 | round %}
+        <span>{{ discounted_first_price | money | replace: ",", " " }}</span>
+      {% elsif included_product_ids_second contains item.product.id %}
+        {% assign discounted_first_price = item.original_line_price | times: 0.80 | round %}
+        <span>{{ discounted_first_price | money | replace: ",", " " }}</span>
+      {% elsif included_product_ids_third contains item.product.id %}
+        {% assign discounted_first_price = item.original_line_price | times: 0.75 | round %}
+        <span>{{ discounted_first_price | money | replace: ",", " " }}</span>
+      {% else %}
+        {{ item.original_line_price | money | replace: ",", " " }}
+      {% endif %}
+    {% else %}
+      <span class="tags-not-included">{{ item.original_line_price | money | replace: ",", " " }}</span>
+    {% endif %}
+  {% else %}
+    <span class="member-disabled">{{ item.original_line_price | money | replace: ",", " " }}</span>
+  {% endif %}
+</div>
+
+                <cart-remove-button class="remove_item" id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
+                  <a href="{{ item.url_to_remove }}" class="button button--tertiary" aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}">
+                    {% render 'icon-remove' %}
+                  </a>
+                </cart-remove-button>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+        {% else %}
+        <h3 style="color:white">Your cart is empty</h3>
+        {% endif %}
+      </div>
+     
+      <div class="cart-min-footer">
+        <div class="cart-mini-total">TOTAL:  <p class="totals__subtotal-value"><span id='revy-cart-subtotal-price'>{{ cart.total_price | money | remove: '.00' | replace: ",", " "  }}</span></p></div>
+        <!--<div class="cart-mini-total">TOTAL: {*{cart.total_price | money | replace: ",", " " }}</div>-->
+        <div class="cart-mini-btn">          
+      	  <a href="https://alvisdrift.co.za/collections/all-wines" class="btn btn-overlay close-cart-button">Continue Shopping</a>
+          <a href="{{ routes.cart_url }}" class="btn btn-overlay">Go to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+

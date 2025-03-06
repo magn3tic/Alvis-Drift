@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    },
+    "16394887186124ed9d": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "1639488718813dca96-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "events"
+          }
+        }
+      },
+      "block_order": [
+        "1639488718813dca96-0"
+      ],
+      "settings": {
+        "topheading": "Our Events"
+      }
+    },
+    "1639247544080331f4": {
+      "type": "Newsletter-Subscription",
+      "settings": {
+        "section_heading": "<p>TH<em>E</em><br/>DRIFT</p>",
+        "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
+        "Heading_color": "#c65336",
+        "hs_form_portal_id": "25422535"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "16394887186124ed9d",
+    "1639247544080331f4"
+  ]
+}

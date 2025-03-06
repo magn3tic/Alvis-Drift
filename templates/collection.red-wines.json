@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "16421087169fe104d9": {
+      "type": "Hero-Main",
+      "disabled": true,
+      "settings": {
+        "background_image": "shopify://shop_images/Drinking-Wine-08.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#ffffff",
+        "video_banner": "",
+        "paragarh_p1": "RED",
+        "paragarh_p2": "WINES",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "OUR SELECTION OF RED WINES INCLUDE PINOTAGE, MERLOT, CABERNET SAUVIGNON, SHIRAZ AND RED WINE BLENDS",
+        "paragarh_2": "True to our winery’s trademark style, Alvi’s Drift’s internationally acclaimed, award-winning red wines are known for their unique, fruit-driven character and full-bodied complexity.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-wines"
+      }
+    },
+    "product-grid": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "red-wines"
+          }
+        }
+      },
+      "block_order": [
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
+      ],
+      "settings": {
+        "topheading": "OUR RED WINES",
+        "subtitle-1": "",
+        "active_collection": "red-wines"
+      }
+    },
+    "164210934350db4240": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "16421087169fe104d9",
+    "product-grid",
+    "164210934350db4240"
+  ]
+}

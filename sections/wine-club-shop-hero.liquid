@@ -1,0 +1,83 @@
+
+
+<section style = "background:#b59a88"> 
+{% if customer.has_account %}
+  {% comment %} logged in view {% endcomment %}
+  {% assign lowertags = customer.tags | downcase %}
+  {% capture customer_tier_name %}
+    {% if lowertags contains 'gold' %}
+      Gold
+    {% elsif lowertags contains 'silver' %}
+      Silver
+    {% elsif lowertags contains 'bronze' %}
+      Bronze
+    {% endif %}
+  {% endcapture %}
+  
+  {% assign customer_tier = customer_tier_name | strip %}
+  {% capture tier_badge_name %}{{ customer_tier }}_large.webp{% endcapture %}
+  
+  {% if customer %}
+  <section class="awc-hero">
+    <div class="container">
+      <div class="awc-hero--content">
+        <h1 class="h1">Alvi's Drift Wine Club</h1>  
+          <p>{{ customer_tier }} Tier Members Portal</p>
+        <div class="awc-promo--btn">
+          {% if customer_tier == 'Bronze' %}
+          <a class="alvisBtn" href="/collections/club">SHOP NOW</a>
+          {% elsif customer_tier == 'Silver' %}
+          <a class="alvisBtn" href="/collections/club-silver">SHOP NOW</a>
+          {% elsif customer_tier == 'Gold' %}
+          <a class="alvisBtn" href="/collections/club-gold">SHOP NOW</a>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="awc-bg" style="background-image:url({{ 'alvis-hero-alt-bg.jpg' | file_url }});"></div>
+  </section>
+  
+  <section class = "home-aboutus focusTextSection bg-darkPurple text-center" style = "background:#b59a88;max-width:100%; display:none">
+      <div class = "sec-inner" style = "margin:0; padding-top:90px ">
+        <div class = "container">
+        <div>
+          <h1 style = "color:#ffffff">The Best Viognier</h1>
+        </div>
+          <p class = "textAnimate">Renowned for our vast Viognier plantings, we are South Africa's top bottled wine producer of this exceptional wine.</p>
+          <p class = "textAnimate">We've won Best Viognier in South Africa.<br><strong>And now we've made it even better.</strong></p>
+        </div>
+      </div>
+  </section>
+  
+{% else %}
+
+  <section class="awc-hero">
+    <div class="container">
+      <div class="awc-hero--content">
+        <h1 class="h1">Alvi's Drift Wine Club</h1> 
+        <p>Not a member of the Wine Club yet?</p>
+        <div class="awc-promo--btn">
+          <a class="alvisBtn" href="https://alvisdrift.co.za/account/register/" target="_blank">JOIN NOW</a>
+        </div> 
+      </div>
+    </div>
+    <div class="awc-bg" style="background-image:url({{ 'alvis-hero-alt-bg.jpg' | file_url }});"></div>
+  </section>
+  
+{% endif %}
+{% endif %}
+</section>
+{% schema %}
+{
+  "name": "Wine Club Hero",
+  "settings": [
+
+  ],
+  "presets": [
+    {
+      "name": "Wine Club Hero",
+      "category": "Custom Sections"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,350 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#4A5B52"
+      }
+    },
+    "16581829761a48d9f8": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_cxcMwG": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s-Drift-End-of-Year-Sale-2024.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Cheers",
+            "paragarh_p2": "To",
+            "paragarh_p3": "2024",
+            "paragarh_p4": "",
+            "paragarh_1": "14 November - 5 December",
+            "paragarh_2": "YEAR END SALE: Members save up to 25%. Login for members discounts.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
+        "slider_bmyNi6": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s-Drift-Spring-Sale.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 40,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Wine",
+            "paragarh_p2": "Sale",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "Our public wine sale has ended.",
+            "paragarh_2": "Please check back again soon.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
+        "991a7f45-d24a-49e9-855a-c733f0931368": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Sale-November-2022.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "WINE",
+            "paragarh_p2": "ON SALE",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "DISCOUNT OFFERS",
+            "paragarh_2": "Our sale ended. Please check back again soon!",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
+        "slider_AybmVD": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "WINTER",
+            "paragarh_p2": "WARMER",
+            "paragarh_p3": "SALE",
+            "paragarh_p4": "",
+            "paragarh_1": "LIMITED OFFER",
+            "paragarh_2": "Enjoy discounts on our award-winning red wines!<br>Valid:  25 June - 9 July 2024",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
+        "b5e164c6-eac6-4431-bf65-734f9d405a6e": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis-Drift-2023-Year-End-Sale.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "2023 Year-End Sale:",
+            "paragarh_p2": "CHEERS TO YOUR",
+            "paragarh_p3": "EXTRA WEEK OF SAVING",
+            "paragarh_p4": "",
+            "paragarh_1": "7-14 DECEMBER (MEMBERS ONLY)",
+            "paragarh_2": "Buy two cases or more of the same wine in our massive Year-End Sale to save up to 25%! Please note that all discounts will be at checkout, so make sure that you log in before you start shopping!",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
+        "64368c70-fd18-4b8c-86d7-23e5ad61b691": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Sale-April-2023.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 0,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "GET UP TO",
+            "paragarh_p2": "15% OFF",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "END OF HARVEST SALE",
+            "paragarh_2": "17 - 26 April 2023(Excluding Gifts)",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
+        "556bfaed-25eb-4976-8bd8-05643735edec": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Spring_Sale.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 0,
+            "Heading_color": "#2e112d",
+            "video_banner": "",
+            "paragarh_p1": "SPRING",
+            "paragarh_p2": "SALE",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "5 - 26 SEPTEMBER",
+            "paragarh_2": "10% off Sparkling & Cap Classique Wines10% off Signature Range White & Rosé Wines",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
+        "8ce84c74-9bd5-40b1-8b45-94fac118b938": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s_Drift_Sale.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 0,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "SHOP OUR ANNUAL",
+            "paragarh_p2": "WINTER WARMER",
+            "paragarh_p3": "SALE NOW",
+            "paragarh_p4": "",
+            "paragarh_1": "OUR WINTER WARMER SALE IS LIVE25 JULY - 7 AUGUST",
+            "paragarh_2": "Enjoy a Mixed Box of 3 Award-Winning Alvi’s Drift Reds (Case of 6) & Great Savings on Selected Red Wines!",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
+        "17e7e647-5c75-4aeb-9389-ddafd862dc93": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/AD_Spring_Sale_Landing_Page_2024_5.png",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "SHOP OUR",
+            "paragarh_p2": "SPRING SALE",
+            "paragarh_p3": "NOW",
+            "paragarh_p4": "",
+            "paragarh_1": "26 SEPTEMBER - 6 OCTOBER",
+            "paragarh_2": "Stock up on our internationally acclaimed, multi-award-winning Cap Classique, Sparkling and selected White and Rosé wines while stocks last!",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_cxcMwG",
+        "slider_bmyNi6",
+        "991a7f45-d24a-49e9-855a-c733f0931368",
+        "slider_AybmVD",
+        "b5e164c6-eac6-4431-bf65-734f9d405a6e",
+        "64368c70-fd18-4b8c-86d7-23e5ad61b691",
+        "556bfaed-25eb-4976-8bd8-05643735edec",
+        "8ce84c74-9bd5-40b1-8b45-94fac118b938",
+        "17e7e647-5c75-4aeb-9389-ddafd862dc93"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Spring_Sale.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 0,
+        "Heading_color": "#ffffff",
+        "video_banner": "",
+        "paragarh_p1": "",
+        "paragarh_p2": "",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "",
+        "paragarh_2": "",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_main_link": ""
+      }
+    },
+    "076540c7-5ddf-4c76-98f7-931bb9661ebf": {
+      "type": "Focus-Text-Text-Only",
+      "disabled": true,
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#f8f2e6",
+        "title": "Be The First To Know",
+        "subtitle-1": "",
+        "subtitle-2": "<p><strong>Follow us on social media or subscribe to our newsletter for promotions and flash sales.</strong></p><p><a href=\"https://alvisdrift.co.za/pages/club\" title=\"https://alvisdrift.co.za/pages/club\"><strong>WINE CLUB MEMBERS:  Log in to enjoy overall discounts and access to exclusive offers.</strong></a></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "focus_text_text_only_WnNKBW": {
+      "type": "Focus-Text-Text-Only",
+      "disabled": true,
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "Attention Wine Club Members",
+        "subtitle-2": "<p>While public prices are displayed on our website, wine club members enjoy an additional 5% discount (applied automatically at checkout). Simply log in before shopping to unlock your extra savings.</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "ddd91e69-51f0-4b75-ae66-fd07f922fdfb": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "93a0e0dc-86fc-477b-a8bc-08fd8d4118ba": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "sale"
+          }
+        },
+        "item_N8kC3W": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "flash-sale"
+          }
+        },
+        "item_AKMNCW": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "all-wines"
+          }
+        }
+      },
+      "block_order": [
+        "93a0e0dc-86fc-477b-a8bc-08fd8d4118ba",
+        "item_N8kC3W",
+        "item_AKMNCW"
+      ],
+      "settings": {
+        "topheading": "",
+        "subtitle-1": "",
+        "active_collection": "all-wines"
+      }
+    },
+    "gifts_grid_CdkATe": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "item_jHcxpW": {
+          "type": "item",
+          "disabled": true,
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "limited-offers"
+          }
+        },
+        "item_pjffpX": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "gifts"
+          }
+        }
+      },
+      "block_order": [
+        "item_jHcxpW",
+        "item_pjffpX"
+      ],
+      "settings": {
+        "topheading": "END OF YEAR GIFTS"
+      }
+    },
+    "784f5bd9-5299-43a5-9cb0-0b71daea0b68": {
+      "type": "Focus-Text-Text-Only",
+      "disabled": true,
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "Discounts Applied At Checkout",
+        "subtitle-1": "",
+        "subtitle-2": "<h3><strong>10% OFF:</strong></h3><p>ONE CASE of Signature, 221 or Sparkling range wines</p><h3><strong>15% OFF:</strong></h3><p>ONE CASE of Verreaux Pinotage or Cap Classique, Reserve or Albertus Viljoen range wines</p><h3><strong>DOUBLE UP & SAVE!</strong></h3><h3><strong>20% OFF:</strong></h3><p>TWO OR MORE CASES of the same Signature, 221 or Sparkling range wines</p><h3><strong>25% OFF:</strong></h3><p>TWO OR MORE CASES of the same Verreaux Pinotage, Cap Classique, Reserve or Albertus Viljoen range wines</p>",
+        "button_text": "Wine Club members: Log in before shopping to enjoy members’ discount at checkout",
+        "button_link": "https://alvisdrift.co.za/account/login?return_url=%2Fcollections%2Fsale",
+        "new_tab": false
+      }
+    },
+    "e75c739c-1801-4437-953b-56e12f611ac2": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "16581829761a48d9f8",
+    "076540c7-5ddf-4c76-98f7-931bb9661ebf",
+    "focus_text_text_only_WnNKBW",
+    "ddd91e69-51f0-4b75-ae66-fd07f922fdfb",
+    "gifts_grid_CdkATe",
+    "784f5bd9-5299-43a5-9cb0-0b71daea0b68",
+    "e75c739c-1801-4437-953b-56e12f611ac2"
+  ]
+}

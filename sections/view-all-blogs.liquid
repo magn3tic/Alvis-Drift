@@ -1,0 +1,54 @@
+  <section class = "news-selction" style ="background-color:{{ section.settings.bg-color }}">
+     <div class = "blog-header-view"><h2>RELATED NEWS</h2></div>  
+<div class='relatedArticles'><ul class = "more-blogs-row">
+  {% for tag in article.tags %}
+  {% assign counter = 0 %}
+  {% assign skip_articles = article.handle | split: '.....' %}
+  {% for related_article in blog.articles %}
+    {% if related_article.tags contains tag and counter < 6 %}
+      {% unless skip_articles contains related_article.handle %}
+        {% assign counter = counter | plus: 1 %}
+        {% assign temp = related_article.handle | split: '.....' %}
+        {% assign skip_articles = skip_articles | concat: temp %}
+            <li class ="related-blogs-column">  
+                  {% if related_article.image %}
+                   <img src ="{{ related_article.image | image_url}}" width="353" height="230" loading="lazy" class="motion-reduce" sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)" alt="{{ related_article.alt }}">
+                {% endif %}  
+              <p clas ="article-date" style = "margin:10px 0 -20px !important">{{ related_article.published_at | time_tag: '%d %b %Y'}}</p>
+                <h3><a href = "{{ related_article.url }}">{{ related_article.title }}</a></h3>
+             </li>
+      {% endunless %}
+    {% endif %}
+  {% endfor %}
+  {% endfor %}</ul>
+</div> 
+ </section>
+{% schema %}
+  {
+    "name": "Related Blog listing",
+    "settings": [
+      {
+        "type":"color",
+        "id":"bg-color",
+        "label": "Background-color",
+        "default": "#f8f2e6"
+      },
+      
+      {
+      "type": "range",
+      "id": "post_limit",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "default": 3,
+      "label": "t:sections.featured-blog.settings.post_limit.label"
+    }
+    ],
+     "presets": [
+      {
+        "name": "View all Blogs",
+      	"category": "Blog"
+      }
+    ]
+  }
+{% endschema %}

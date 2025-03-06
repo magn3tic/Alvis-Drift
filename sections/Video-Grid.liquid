@@ -1,0 +1,361 @@
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+{%- if request.design_mode -%}
+  {%- comment %}
+  	The css and js neded for this section will be called once in the layout file if this section is on the page.
+    What we are doing here is just making sure that this section gets the css needed in the editor when it is first added to a template.
+  {% endcomment -%}
+  {{ 'collage.css' | asset_url | stylesheet_tag }}
+  {{ 'component-card.css' | asset_url | stylesheet_tag }}
+  {{ 'component-emoyo-modal.css' | asset_url | stylesheet_tag }}
+  <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- endif -%}
+
+<div class="collage-wrapper page-width" style ="background-color:{{ section.settings.background-colour }};">
+<div class="video-grid"  >
+  <div class= "col-4">
+    <div class ="video-header">
+      <h1>{{ section.settings.heading }}</h1>
+    </div>
+  </div>
+  <div class = "col-8">
+    <div class="video-grid-inner ">
+      {%- for block in section.blocks -%}
+    	{%- assign b_i = block.settings -%}
+  <div class = "video-columns ">
+    
+    <div class="video-grid-item" >
+      <iframe width="100%" height="300" src="https://www.youtube.com/embed/{{ b_i.video_url.id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+ </iframe>
+      <div class="video-grid-content1">
+        <p class = "video-grid-subtitle">{{ b_i.subheader }}</p>
+        <h4 class="video-grid-title">{{  b_i.description }}</h4>
+      </div>
+      
+    </div>
+  </div>
+        
+			
+		<!-- The Modal -->
+<div id="myModal_{{ forloop.index }}" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <iframe width="100%" height="597" src="https://www.youtube.com/embed/{{ b_i.video_url.id }}" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+
+</div>
+		
+	 {%- endfor -%}	
+				 
+  </div>
+
+</div>
+
+</div>
+
+<script>
+  
+$(document).ready(function(){
+  
+  $(".myBtn").click(function(){
+    
+    var video_modal = $(this).attr('attr_video');
+    
+    $("#"+video_modal).css('display', 'block');
+    
+  });
+  
+
+  
+    $(".close").click(function(){
+    
+    $(".modal").css('display', 'none');
+    
+  });
+  
+});
+</script>
+
+
+{% comment %}
+
+<script>
+  
+  
+  
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+{% endcomment %}
+<style>
+  
+  
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 9; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+background-color: transparent;
+    margin: auto;
+    padding: 20px;
+    border: 0px solid #888;
+    width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+  
+.video-grid-video-icon span svg {
+    height: 38px;
+}
+  
+  .video-grid-item {
+    background-size: cover;
+}
+  
+  .video-grid-item {
+    min-height: 30rem;
+    background-position: center;
+}
+
+ .video-grid-inner {
+    grid-template-columns: repeat(2,1fr);
+    display: grid;
+    gap:60px 30px;
+}
+  
+  .video-grid-content {
+    padding: 1em 1em 1em 0em;
+}
+  
+  h4.video-grid-title {
+    padding: 0px;
+    margin: 0px;
+    color: #2e112d !important;
+    font-size:2.2rem !important;
+    font-weight:900 !important
+  }
+  
+.video-grid-content {
+    position: relative;
+    top: 30rem;
+  
+}
+ /* span#myBtn {
+  background-color: #fff;
+    border: 0.1rem solid #fff;
+    border-radius: 50%;
+    color: var(--color-foreground);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6.2rem;
+    width: 6.2rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform var(--duration-short) ease,color var(--duration-short) ease;
+    z-index: 1;
+  } 
+  
+  .video-grid-video-icon {
+    text-align: center;
+    position: relative;
+    top: 12rem;
+}
+  
+span#myBtn svg path {
+    fill: #480115;
+}
+  span#myBtn svg {
+    font-size: 10px;
+    height: 26px;
+    cursor: pointer;
+}
+  span#myBtn  {
+  
+    cursor: pointer;
+}
+  
+.video-grid-video-icon {
+    text-align: center;
+}
+  
+  span.close {
+    background-color: #fff;
+    border: 0px solid #fff;
+    border-radius: 50%;
+    color: #2b010d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    transform: translate(-50%,-50%) scale(1);
+    transition: transform var(--duration-short) ease,color var(--duration-short) ease;
+    z-index: 1;
+}*/
+ 
+@media only screen and (max-width: 767px) {
+ 
+   .video-grid-inner {
+    grid-template-columns: repeat(3,1fr);
+    display: block;
+    gap: 30px;
+}
+  .contact .form-container {
+    width: 100%;
+}
+  
+  .video-grid-item {
+
+    margin-bottom: 30px;
+}
+  .video-grid-content {
+ 
+    top: 22rem;
+}
+  
+  .modal-content {
+    width: 100%;
+  }
+  
+  .modal-content {
+    background-color: transparent;
+    margin: auto;
+    padding: 6px;
+    border: 0px solid #888;
+    width: 65%;
+    float: left;
+}
+  
+  iframe {
+    height: 204px !important;
+    width: 100% !important;
+}
+  
+} 
+
+  
+  @media only screen and (min-width:2400px){
+    iframe {
+      height:500px !important;
+    }
+  }
+
+</style>
+{% schema %}
+{
+  "name": "Video Grid",
+  "tag": "section",
+  "class": "section-spacing-sm collage-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "default": "Videos",
+      "label": "Video Heading"
+    },
+    {
+      "type": "color",
+      "id": "background-colour",
+      "default": "#f6efe4",
+      "label": "Background-color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "video",
+      "name": "t:sections.collage.blocks.video.name",
+      "settings": [
+        {
+          "type": "video_url",
+          "id": "video_url",
+          "accept": [
+            "youtube",
+            "vimeo"
+          ],
+          "default": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+          "label": "t:sections.collage.blocks.video.settings.video_url.label",
+          "placeholder": "t:sections.collage.blocks.video.settings.video_url.placeholder",
+          "info": "Video Link"
+        },
+        {
+          "type": "text",
+          "id": "description",
+          "default": "Describe the video for customers using screen readers",
+          "label": "Video Alt Text"
+        },
+        {
+          "type": "text",
+          "id": "subheader",
+          "default": "Episode No",
+          "label": "Video's Episode"
+        },
+        {
+          "type": "checkbox",
+          "id": "image_padding",
+          "default": false,
+          "label": "t:sections.collage.blocks.video.settings.image_padding.label",
+          "info": "t:sections.collage.blocks.video.settings.image_padding.info"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Video Grid"
+    }
+  ]
+}
+{% endschema %}

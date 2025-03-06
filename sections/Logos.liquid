@@ -1,0 +1,141 @@
+<section class="rewards-marquee-sec hm-marquee-wrap">
+  
+  <h3 style="color:{{ section.settings.Heading_color }}">{{ section.settings.title_text }}</h3>
+    <div class="rewards-marquee">
+        <div class="rewards-img hm-marquee">
+          
+          {%- for block in section.blocks -%}
+			
+			{%- assign b_i = block.settings -%}
+          
+          <div style="display: inline-block"><img src="{{b_i.logo_slider | img_url:'master'}}" width="150" height = "150" loading="lazy" alt=""></div>
+          
+          {%- endfor -%}        
+        </div>
+    </div> 
+</section>
+
+
+<style>
+  <!--
+   .js-marquee-wrapper{
+    width: 100000px;
+    transform: translateX(1280px);
+    animation: 77.3266s linear 0s infinite normal none running marqueeAnimation-8937272;
+  }
+  -->
+  
+  @media only screen and (min-width:1610px) {
+	.hm-marquee .js-marquee img {
+      min-width: 164px;
+      height: 125px;
+    }
+  }
+  @media only screen and (max-width:1500px) {
+	.hm-marquee .js-marquee img {
+      min-width: 100px;
+      height: 85px;
+    }
+    .rewards-marquee-sec{
+      height:200px
+    }
+  }
+  section.rewards-marquee-sec.hm-marquee-wrap h2 {
+    font: normal 80px/100px var(--moriarty);
+    letter-spacing: .8px;
+    text-align: center;
+    margin-bottom: 60px !important;
+    float: left;
+    width: 100%;
+}
+.rewards-marquee-sec {
+	text-align: center;
+}
+  
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+    .rewards-marquee-sec {
+      text-align: center;
+      padding: 30px;
+  }
+}
+ 
+</style>
+
+{% schema %}
+  {
+    "name": "Logos",
+    "settings":[
+	{
+	"type":"text",
+	"id":"title_text",
+	"label":"Heading"
+	}, 
+	 {
+            "type": "select",
+            "id": "Heading_color",
+            "label": "Heading Colour",
+            "options": [
+				{
+                "value": "#f8f2e6",
+                "label": "Light Beige"
+              }, 
+              {
+                "value": "#ffffff",
+                "label": "White"
+              },
+			  {
+                "value": "#c0ccbe",
+                "label": "Light Olive"
+              },
+              {
+                "value": "#aac4d3",
+                "label": "Light Blue"
+              },
+              {
+                "value": "#fedcc6",
+                "label": "Light Orange"
+              }
+            ],
+            "default": "#f8f2e6"
+          }
+	],
+    "blocks": [
+      {
+        "type": "item",
+		"limit": 16,
+        "name": "Logo",
+        "settings": [
+		  
+          {
+            "type": "image_picker",
+            "id": "logo_slider",
+            "label": "Upload Logo"
+			
+          },
+		  {
+            "type": "url",
+            "id": "logo_link",
+            "label": "Logo Link URL"
+			
+          }
+
+
+
+		]
+	  }
+      
+	],
+    "presets": [
+      {
+        "name": "Logos",
+      	"category": "Logo",
+        "blocks": [
+          {
+            "type": "item"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

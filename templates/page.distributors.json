@@ -1,0 +1,624 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "2c644140-f65c-4a14-82d9-97f61854c729": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Main_2.png",
+            "image_overlay": "#000000",
+            "overlay_opacity": 35,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "FIND",
+            "paragarh_p2": "OUR WINES",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "ALVI'S DRIFT DISTRIBUTION NETWORK",
+            "paragarh_2": "Our wines are available in all leading South African supermarkets and liquor outlets.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "2c644140-f65c-4a14-82d9-97f61854c729"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/DSC_5267.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#ffffff",
+        "video_banner": "",
+        "paragarh_p1": "FIND",
+        "paragarh_p2": "OUR WINES",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "ALVI'S DRIFT DISTRIBUTION NETWORK",
+        "paragarh_2": "Our wines are available in all leading South African supermarkets and liquor outlets.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-wines",
+        "btn_main_link": ""
+      }
+    },
+    "164390650014af140d": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "",
+        "subtitle-2": "<p><strong>Our wines are available in all leading South African supermarkets and liquor outlets.</strong></p><p><strong>Internationally, our wines are available in countries across Africa, North America, Europe, Eurasia, Central Asia and the Far East.</strong></p><p><strong>Should you require further country-specific reseller or distribution information for any of our wines, please do not hesitate to get in touch.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "16396031315c4c1f82": {
+      "type": "Logos",
+      "blocks": {
+        "8885b8fb-0d3f-4d91-b031-22b4ab82337a": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Makro.png",
+            "logo_link": "https://www.makro.co.za/beverages-liquor/wines/c/JF"
+          }
+        },
+        "103d9300-d0f7-4ff2-ad49-e3f6cacfa87a": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Spar.png",
+            "logo_link": "https://www.spar.co.za/SPAR-Online-Ordering"
+          }
+        },
+        "fcbbb50a-bd8f-45b7-aebe-fbe34c5de7af": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Pick-n-Pay.png",
+            "logo_link": "https://www.pnp.co.za/pnpstorefront/pnp/en/All-Products/Wine/c/wine-423144840"
+          }
+        },
+        "5b086a45-c52a-44a4-aaad-c8021d9b735c": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Checkers.png",
+            "logo_link": "https://www.checkers.co.za/liquorshop"
+          }
+        },
+        "6c28191a-5f13-4645-987c-cde1c3e7af93": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Food-Lovers-Market.png",
+            "logo_link": "https://foodloversmarket.co.za/"
+          }
+        },
+        "df0b16bb-1901-4286-81c2-9ab106ad5566": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Picardi-Bell.png",
+            "logo_link": "https://www.picardirebel.co.za/"
+          }
+        },
+        "370e6270-7785-4eb5-a644-6fc92c48c6ed": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Ultra-Liquors.png",
+            "logo_link": "https://ultraliquors.co.za/"
+          }
+        },
+        "d1902943-19d7-445f-8822-91c171559b6b": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Blue-Bottle-Liquors.png",
+            "logo_link": "https://www.bluebottleliquors.co.za/"
+          }
+        },
+        "3d293ffc-b3c1-4ba4-b887-ea957ad5d62b": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Liquor-City.png",
+            "logo_link": "https://shop.liquorcity.co.za/en/"
+          }
+        },
+        "f2825f49-6ca4-444c-8edc-4d6a751d734f": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Overland-Liquors.png",
+            "logo_link": "https://www.overlandliquors.co.za/"
+          }
+        },
+        "e062091d-336e-41b9-8ee6-a4730090e58f": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Model-Liquors.png",
+            "logo_link": "https://modelliquor.co.za/"
+          }
+        },
+        "b397a35b-f761-4279-a61b-a47e7528489f": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Preston-Liquors.png",
+            "logo_link": "https://prestonsliquors.co.za/"
+          }
+        },
+        "4f27c7d8-1bb3-46cd-9a02-f98c08a6a062": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Agrimark.png",
+            "logo_link": "https://www.agrimark.co.za/category/beverages-liquor"
+          }
+        },
+        "7841044a-b8a1-4352-82bf-38f5c2fd3638": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/SSK.png",
+            "logo_link": "https://www.ssk.co.za/"
+          }
+        }
+      },
+      "block_order": [
+        "8885b8fb-0d3f-4d91-b031-22b4ab82337a",
+        "103d9300-d0f7-4ff2-ad49-e3f6cacfa87a",
+        "fcbbb50a-bd8f-45b7-aebe-fbe34c5de7af",
+        "5b086a45-c52a-44a4-aaad-c8021d9b735c",
+        "6c28191a-5f13-4645-987c-cde1c3e7af93",
+        "df0b16bb-1901-4286-81c2-9ab106ad5566",
+        "370e6270-7785-4eb5-a644-6fc92c48c6ed",
+        "d1902943-19d7-445f-8822-91c171559b6b",
+        "3d293ffc-b3c1-4ba4-b887-ea957ad5d62b",
+        "f2825f49-6ca4-444c-8edc-4d6a751d734f",
+        "e062091d-336e-41b9-8ee6-a4730090e58f",
+        "b397a35b-f761-4279-a61b-a47e7528489f",
+        "4f27c7d8-1bb3-46cd-9a02-f98c08a6a062",
+        "7841044a-b8a1-4352-82bf-38f5c2fd3638"
+      ],
+      "settings": {
+        "title_text": "South African Stockists",
+        "Heading_color": "#ffffff"
+      }
+    },
+    "163968008729148d8c": {
+      "type": "Map",
+      "disabled": true,
+      "settings": {
+        "Heading": "Our Wines Are Available In-Store Across South Africa",
+        "map_url": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.5151442652127!2d19.530228315207694!3d-33.77319298068268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcd87b05e2eea91%3A0x6c640f79cf372224!2sAlvi's%20Drift%20-%20No%20farm%20visits%20until%20further%20notice.!5e0!3m2!1sen!2sza!4v1639680134120!5m2!1sen!2sza\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+        "Heading_color": "#ffffff",
+        "button-txt": "",
+        "button_link": ""
+      }
+    },
+    "1639727235616c1014": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "1639727235ecbd2080-0": {
+          "type": "column",
+          "settings": {
+            "title": "BOTSWANA",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Lengau Wine Company</strong><a href=\"https://www.lengau.co.bw\" target=\"_blank\" title=\"https://www.lengau.co.bw\"><strong><br/>www.lengau.co.bw</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "1639727235ecbd2080-2": {
+          "type": "column",
+          "settings": {
+            "title": "NAMIBIA",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Komnick & Franck<br/></strong><a href=\"https://www.kfcc.com.na\" target=\"_blank\" title=\"https://www.kfcc.com.na\"><strong>www.kfcc.com.na</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "dbbe4851-5614-4ff1-adad-3a2854eae315": {
+          "type": "column",
+          "settings": {
+            "title": "ZIMBABWE",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Craft Society</strong></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "113deffd-49c4-49ae-9225-b47179678c9b": {
+          "type": "column",
+          "settings": {
+            "title": "MOZAMBIQUE",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Socimpex Ida</strong><br/><a href=\"https://www.instagram.com/socimpexlda/?hl=en\" target=\"_blank\" title=\"https://www.instagram.com/socimpexlda/?hl=en\"><strong>Instagram</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "cd7ea3e8-7aa6-477e-8d9a-55e8e3a08fbe": {
+          "type": "column",
+          "settings": {
+            "title": "ZAMBIA",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Rebecca Skeels Imports Ltd.</strong></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "73f83e2d-b47c-4655-9137-279b4695644b": {
+          "type": "column",
+          "settings": {
+            "title": "GHANA",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Vee Vino's Wines</strong><a href=\"mailto:contactus@veevinos.com\" target=\"_blank\" title=\"mailto:contactus@veevinos.com\"><strong><br/></strong></a><a href=\"https://www.veevinos.com\" target=\"_blank\" title=\"https://www.veevinos.com\"><strong>www.veevinos.com</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "d6080976-0098-48af-ace0-9f6350381c61": {
+          "type": "column",
+          "settings": {
+            "title": "UGANDA",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Uganda Duty Free<br/></strong><a href=\"https://www.facebook.com/UgandaDutyFree/\" target=\"_blank\" title=\"https://www.facebook.com/UgandaDutyFree/\"><strong>Facebook</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "85056fe5-96fd-4bcf-9597-486b064144d0": {
+          "type": "column",
+          "settings": {
+            "title": "KENYA / TANZANIA / NIGERIA",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Under The Influence<br/></strong><a href=\"https://www.undertheinfluence.co.za/\" target=\"_blank\" title=\"https://www.undertheinfluence.co.za/\"><strong>www.undertheinfluence.co.za</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "column_4t4XQf": {
+          "type": "column",
+          "settings": {
+            "title": "RWANDA",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>ABG (Akagera Business Group)</strong></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "column_fLCHkr": {
+          "type": "column",
+          "settings": {
+            "title": "MAURITIUS",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>Wine Sorcerer<br/></strong><a href=\"https://thewinesorcerer.com/\" target=\"_blank\" title=\"https://thewinesorcerer.com/\"><strong>www.thewinesorcerer.com</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "1639727235ecbd2080-0",
+        "1639727235ecbd2080-2",
+        "dbbe4851-5614-4ff1-adad-3a2854eae315",
+        "113deffd-49c4-49ae-9225-b47179678c9b",
+        "cd7ea3e8-7aa6-477e-8d9a-55e8e3a08fbe",
+        "73f83e2d-b47c-4655-9137-279b4695644b",
+        "d6080976-0098-48af-ace0-9f6350381c61",
+        "85056fe5-96fd-4bcf-9597-486b064144d0",
+        "column_4t4XQf",
+        "column_fLCHkr"
+      ],
+      "settings": {
+        "Background_Colour": "#aac4d3",
+        "title": "DISTRIBUTING AGENTS – AFRICA",
+        "Heading_color": "#ffffff",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "164237037324dbea47": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "16423703736fd5d8f5-0": {
+          "type": "column",
+          "settings": {
+            "title": "NETHERLANDS",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>De Monnik Dranken<br/></strong><a href=\"https://www.monnik-dranken.nl/english/home/\" target=\"_blank\" title=\"https://www.monnik-dranken.nl/english/home/\"><strong>www.monnik-dranken.nl</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "16423703736fd5d8f5-2": {
+          "type": "column",
+          "settings": {
+            "title": "BELGIUM",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Global Wines<br/></strong><a href=\"https://www.globalwineries.com\" target=\"_blank\" title=\"https://www.globalwineries.com\"><strong>www.globalwineries.com</strong></a></p><p><strong>Elvama BVBA<br/></strong><a href=\"https://www.elvama.be\" target=\"_blank\" title=\"https://www.elvama.be\"><strong>www.elvama.be</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "1766fe56-7aea-4349-bee9-2b0995ab4bfe": {
+          "type": "column",
+          "settings": {
+            "title": "GERMANY",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>HEB - Heinz Egghert</strong><br/><a href=\"https://www.schwechower.com/\" target=\"_blank\" title=\"https://www.schwechower.com/\"><strong>www.schwechower.com/</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "b7731ec5-1f6d-47f2-85bb-b675c05b5e03": {
+          "type": "column",
+          "settings": {
+            "title": "ITALY",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Afriwines<br/></strong><a href=\"https://www.afriwines.com\" target=\"_blank\" title=\"https://www.afriwines.com\"><strong>www.afriwines.com</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "3bedaa3c-d75f-4206-8c3f-b1acc512121d": {
+          "type": "column",
+          "settings": {
+            "title": "POLAND",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Kaap Vino<br/></strong><a href=\"https://www.kaapvino.pl/\" target=\"_blank\" title=\"https://www.kaapvino.pl/\"><strong>https://www.kaapvino.pl/</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "0ae6ac04-9f93-470d-afc8-ab20cb5f87da": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "SWEDEN",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Vinunic<br/></strong><a href=\"https://www.vinunic.se\" target=\"_blank\" title=\"https://www.vinunic.se\"><strong>www.vinunic.se</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "15dee8f2-501e-4203-8ad1-b2a158692627": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "NORWAY",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>House Of Wine</strong><br/><a href=\"https://www.houseofwine.no\" target=\"_blank\" title=\"https://www.houseofwine.no\"><strong>www.houseofwine.no</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "column_M4NnHx": {
+          "type": "column",
+          "settings": {
+            "title": "SWITZERLAND",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>My Vino<br/></strong><a href=\"https://www.myvino.ch\" target=\"_blank\" title=\"https://www.myvino.ch\"><strong>www.myvino.ch</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "column_xneAhX": {
+          "type": "column",
+          "settings": {
+            "title": "UK",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>Ellis Wines<br/></strong><a href=\"https://www.elliswines.co.uk/\" target=\"_blank\" title=\"https://www.elliswines.co.uk/\"><strong>www.elliswines.co.uk</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "16423703736fd5d8f5-0",
+        "16423703736fd5d8f5-2",
+        "1766fe56-7aea-4349-bee9-2b0995ab4bfe",
+        "b7731ec5-1f6d-47f2-85bb-b675c05b5e03",
+        "3bedaa3c-d75f-4206-8c3f-b1acc512121d",
+        "0ae6ac04-9f93-470d-afc8-ab20cb5f87da",
+        "15dee8f2-501e-4203-8ad1-b2a158692627",
+        "column_M4NnHx",
+        "column_xneAhX"
+      ],
+      "settings": {
+        "Background_Colour": "#aac4d3",
+        "title": "DISTRIBUTING AGENTS – EUROPE",
+        "Heading_color": "#ffffff",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "1642372015d45da58b": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "16423720152276b03f-0": {
+          "type": "column",
+          "settings": {
+            "title": "RUSSIA",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Premier Wines<br/>www.premierwine.store</strong></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "16423720152276b03f-1": {
+          "type": "column",
+          "settings": {
+            "title": "CHINA / HONGKONG",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Smart Wines Limited<br/></strong>Vincent Poon<br/><a href=\"https://www.smartwine.hk/?lang=en\" target=\"_blank\" title=\"https://www.smartwine.hk/?lang=en\"><strong>www.smartwine.hk</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "16423720152276b03f-2": {
+          "type": "column",
+          "settings": {
+            "title": "SINGAPORE / THAILAND",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Bays Connections<br/></strong><a href=\"https://www.thewinecompanyonline.com.sg/\" target=\"_blank\" title=\"https://www.thewinecompanyonline.com.sg/\"><strong>www.thewinecompanyonline.com.sg</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "f4a1c07d-add0-4456-94ff-43ef0051b47b": {
+          "type": "column",
+          "disabled": true,
+          "settings": {
+            "title": "TAIWAN",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Joychoice<br/></strong>Vita Sun</p>",
+            "Text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "16423720152276b03f-0",
+        "16423720152276b03f-1",
+        "16423720152276b03f-2",
+        "f4a1c07d-add0-4456-94ff-43ef0051b47b"
+      ],
+      "settings": {
+        "Background_Colour": "#aac4d3",
+        "title": "DISTRIBUTING AGENTS – EURASIA & THE FAR EAST",
+        "Heading_color": "#ffffff",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "1642372599ffd35d71": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "16423725998e02e8cc-0": {
+          "type": "column",
+          "settings": {
+            "title": "NOVA SCOTIA, NEWFOUNDLAND & LABRADOR",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Eisenhauer Agencies<br/></strong><a href=\"https://www.eisenhaueragencies.com\" target=\"_blank\" title=\"https://www.eisenhaueragencies.com\"><strong>www.eisenhaueragencies.com</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "16423725998e02e8cc-1": {
+          "type": "column",
+          "settings": {
+            "title": "ONTARIO",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Churchill Cellars</strong><br/><a href=\"https://www.churchillcellars.com\" target=\"_blank\" title=\"https://www.churchillcellars.com\"><strong>www.churchillcellars.com</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "d6c183a6-ede7-4d19-8dc3-5757eb0f760e": {
+          "type": "column",
+          "settings": {
+            "title": "SOUTH CAROLINA, COLORADO, VIRGINIA, ILLINOIS",
+            "Title_color": "#2d5980",
+            "text": "<p><strong>Spartina Imports<br/></strong><a href=\"https://www.spartinaimports.com\" target=\"_blank\" title=\"https://www.spartinaimports.com\"><strong>www.spartinaimports.com</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "column_ibgaEW": {
+          "type": "column",
+          "settings": {
+            "title": "PERU",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>Panuts<br/></strong><a href=\"https://panuts.com/\" target=\"_blank\" title=\"https://panuts.com/\"><strong>www.panuts.com</strong></a></p>",
+            "Text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "16423725998e02e8cc-0",
+        "16423725998e02e8cc-1",
+        "d6c183a6-ede7-4d19-8dc3-5757eb0f760e",
+        "column_ibgaEW"
+      ],
+      "settings": {
+        "Background_Colour": "#aac4d3",
+        "title": "DISTRIBUTING AGENTS – AMERICA",
+        "Heading_color": "#ffffff",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "1643829993bf7da0ab": {
+      "type": "Image-With-Text",
+      "blocks": {
+        "ed215c28-f399-4b41-a05f-09efa334d6f2": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Alvi’s Drift Wines – <br/>International Agent & Retailer Footprint</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "ed215c28-f399-4b41-a05f-09efa334d6f2"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Agents_Map.png",
+        "height": "adapt",
+        "color_scheme": "background-1",
+        "layout": "image_first"
+      }
+    },
+    "1711900239c335a406": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_Mi8zBP": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "89937",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#c65336",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_Mi8zBP"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "164390650014af140d",
+    "16396031315c4c1f82",
+    "163968008729148d8c",
+    "1639727235616c1014",
+    "164237037324dbea47",
+    "1642372015d45da58b",
+    "1642372599ffd35d71",
+    "1643829993bf7da0ab",
+    "1711900239c335a406"
+  ]
+}

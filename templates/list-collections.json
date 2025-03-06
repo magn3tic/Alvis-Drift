@@ -1,0 +1,226 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-list-collections",
+      "disabled": true,
+      "settings": {
+        "title": "Collections",
+        "sort": "alphabetical",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "image_padding": false
+      }
+    },
+    "hero_main_P8B7te": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_hUMqFz": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s-Drift-End-of-Year-Sale-2024.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 50,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Cheers",
+            "paragarh_p2": "To 2024",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "14 November - 15 December",
+            "paragarh_2": "YEAR-END SALE | 14 NOV – 15 DEC        Wine Club Members Enjoy Savings of Up To 25%        Log in before shopping for members' discount to be applied at Checkout",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_hUMqFz"
+      ],
+      "settings": {
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#ffffff",
+        "video_banner": "",
+        "paragarh_p1": "",
+        "paragarh_p2": "",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "",
+        "paragarh_2": "",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_main_link": ""
+      }
+    },
+    "collections_grid_Fjqz4c": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "item_WyJzhw": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Whites",
+            "collectionCarasoul": "white-wines"
+          }
+        },
+        "item_fLT96V": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Reds",
+            "collectionCarasoul": "red-wines"
+          }
+        },
+        "item_JRmYe7": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Blends",
+            "collectionCarasoul": "blends"
+          }
+        },
+        "item_Uxw4yW": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Rosés",
+            "collectionCarasoul": "rose-wines"
+          }
+        },
+        "item_NTAexp": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Sparkling Wines",
+            "collectionCarasoul": "sparkling-range"
+          }
+        },
+        "item_NNpHx4": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Cap Classique Wines",
+            "collectionCarasoul": "cap-classique-range"
+          }
+        },
+        "item_qhUmfY": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Best Sellers",
+            "collectionCarasoul": "best-sellers"
+          }
+        },
+        "item_cYtnLR": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Signature Range",
+            "collectionCarasoul": "signature-range"
+          }
+        },
+        "item_aiKRBq": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "221 Range",
+            "collectionCarasoul": "221-range"
+          }
+        },
+        "item_EQRqGH": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Reserve Range",
+            "collectionCarasoul": "reserve-range"
+          }
+        },
+        "item_dCKGWQ": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Icon Range",
+            "collectionCarasoul": "icon-range"
+          }
+        },
+        "item_eC6PTF": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Flagship Range",
+            "collectionCarasoul": "flagship-range"
+          }
+        },
+        "item_qtRi7e": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Premium Wines",
+            "collectionCarasoul": "premium-wines"
+          }
+        },
+        "item_P8g8xz": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "All Wines",
+            "collectionCarasoul": "all-wines"
+          }
+        }
+      },
+      "block_order": [
+        "item_WyJzhw",
+        "item_fLT96V",
+        "item_JRmYe7",
+        "item_Uxw4yW",
+        "item_NTAexp",
+        "item_NNpHx4",
+        "item_qhUmfY",
+        "item_cYtnLR",
+        "item_aiKRBq",
+        "item_EQRqGH",
+        "item_dCKGWQ",
+        "item_eC6PTF",
+        "item_qtRi7e",
+        "item_P8g8xz"
+      ],
+      "settings": {
+        "topheading": "",
+        "subtitle-1": "",
+        "active_collection": "all-wines"
+      }
+    },
+    "gifts_grid_gXUbWq": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "item_GmVHKa": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "gifts"
+          }
+        }
+      },
+      "block_order": [
+        "item_GmVHKa"
+      ],
+      "settings": {
+        "topheading": "END OF YEAR GIFTS"
+      }
+    },
+    "call_to_action_CFyzDe": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "hero_main_P8B7te",
+    "collections_grid_Fjqz4c",
+    "gifts_grid_gXUbWq",
+    "call_to_action_CFyzDe"
+  ]
+}

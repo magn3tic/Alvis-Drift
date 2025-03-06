@@ -1,0 +1,309 @@
+
+  {% comment %} logged in view {% endcomment %}
+  {% assign lowertags = customer.tags | downcase %}
+  {% if lowertags contains 'gold' %}
+      {% assign collection_handle = 'club-gold' %}
+      {% assign headline = 'TO GOLD CLUB MEMBERS' %}
+  {% elsif lowertags contains 'silver' %}
+      {% assign collection_handle = 'club-silver' %}
+      {% assign headline = 'TO SILVER CLUB MEMBERS' %}
+  {% elsif lowertags contains 'bronze' %}
+      {% assign collection_handle = 'club' %}
+      {% assign headline = 'TO BRONZE CLUB MEMBERS' %}
+  {% endif %}
+{% assign excluded_product_ids = settings.product_list | map: "id" %}
+  {% assign lowertags = customer.tags | downcase %}
+  {% assign excluded_product_ids = settings.product_list | map: "id" %}
+  {% assign included_product_ids = settings.product_list_included | map: "id" %}
+  {% assign discounted_price_silver = product.price |times:0.95 %}
+  {% assign discounted_price_gold = product.price |times:0.90 %}
+  {% assign discounted_percentages = settings.discount_options %}
+    {% assign included_product_ids_second = settings.product_list_included-second  | map: "id" %}
+  {% assign included_product_ids_third = settings.product_list_included-third  | map: "id" %}
+
+<section class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
+  <div class="sec-inner">
+    <div class="container">
+      
+      <h1>EXCLUSIVE WINES</h1>
+      <p class="sub-title">{{ headline }}</p>
+      <div class="tabs-content">
+        <div id="tab-1" class="product-items-wrap current">
+          <div class="product-bx-outer">
+            {% for product in collections[collection_handle].products %}
+              <div class="product-bx" style="padding-bottom: 50px;">
+                <div class="product-img">
+                  <a href="{{ product.url }}">
+                    <img
+                      src="{{ product.featured_image | img_url:'master' }}"
+                      loading="lazy"
+                      width="133"
+                      height="399"
+                      alt=""
+                    >
+                  </a>
+                </div>
+                <div class="product-title" style="color: #c65336; font-size: 14px;">
+                  <div class="sp-t">
+                    <a href="{{ product.url }}">{{ product.title }}</a>
+                  </div>
+                </div>
+                
+                {% if settings.member-discount == "enable" %}
+              {% if lowertags contains 'silver'%}
+            {% if excluded_product_ids contains product.id %}
+              
+              {% if product.compare_at_price > product.price %}
+                 <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> 
+                   {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
+                {% else %}
+                  <div class="product-price excluded-disount">
+                  {{ product.price | money | remove: '.00' | replace: ",", " " }}
+                  </div>
+              {% endif %}
+              {% else %}
+                {% if product.compare_at_price > product.price %}
+                  <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.95 | money | remove: '.00' | replace: ",", " " }}</div>
+                  {% else %}
+                  <div class="product-price "><span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.95 | money | remove: '.00' | replace: ",", " " }}</div>
+                  <div class = "silver-{{ settings.discount-badge }}"> 
+                    {% if settings.discount-badge == 'tier-text'%}Silver Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                  {% endif %}
+             {% endif %}
+                
+              {% elsif lowertags contains 'gold'%}
+            {% if excluded_product_ids contains product.id %}
+                 {% if product.compare_at_price > product.price %}
+                 <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> 
+                   {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
+                {% else %}
+                  <div class="product-price excluded-disount">
+                  {{ product.price | money | remove: '.00' | replace: ",", " " }}
+                  </div>
+              {% endif %}
+              {% elsif included_product_ids contains product.id %}
+              {% if product.compare_at_price > product.price  %}
+                <div class="product-price included-disount_10">
+               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
+                  {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}
+              </div>
+                {% else %}
+              <div class="product-price included-disount_10">
+               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
+                  {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}
+              </div>
+              {% endif %}
+              {% elsif included_product_ids_second contains product.id %}
+              {% if product.compare_at_price > product.price  %}
+                <div class="product-price included-disount_5">
+               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
+                  {{ product.price |times:0.9444 | money | remove: '.00' | replace: ",", " " }}
+              </div>
+                
+                {% else %}
+              <div class="product-price included-disount_5">
+               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
+                  {{ product.price |times:0.9444 | money | remove: '.00' | replace: ",", " " }}
+              </div>
+              {% endif %}
+              {% elsif included_product_ids_third contains product.id %}
+              {% if product.compare_at_price > product.price  %}
+                <div class="product-price included-disount_8">
+               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
+                  {{ product.price |times:0.9375 | money | remove: '.00' | replace: ",", " " }}
+              </div>
+                
+                {% else %}
+              <div class="product-price included-disount_8">
+               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
+                  {{ product.price |times:0.9375 | money | remove: '.00' | replace: ",", " " }}
+              </div>
+              {% endif %}
+
+              {% else %}
+              {% if product.compare_at_price > product.price %}
+                  <div class="product-price"><span class="compare-price ">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}</div>
+                  {% else %}
+                  <div class="product-price "><span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}</div>
+                  <div class = "silver-{{ settings.discount-badge }}"> 
+                    {% if settings.discount-badge == 'tier-text'%}Gold Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                  {% endif %}
+              {% endif %} 
+                
+                {% else %}
+            {% if product.compare_at_price > product.price %}
+              <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
+             {% else %} 
+              <div class="product-price ">{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
+            {% endif %}
+                {% endif %}
+          
+          {% else %}
+              
+          {% if settings.member-included-discount == "enable" %}
+            {% if lowertags contains 'bronze' or lowertags contains 'silver' or lowertags contains 'gold' %}
+              {% if included_product_ids contains product.id %}
+                <div class="product-price included-disount_25">
+                   <span class = "compare_and_include_25 compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
+                  {{ product.price |times:0.85 | money | remove: '.00' | replace: ",", " " }}
+              </div>
+
+                {% elsif included_product_ids_second contains product.id %}
+                  <div class="product-price included-disount_20">
+                   <span class = "compare_and_include_20 compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
+                  {{ product.price |times:0.80 | money | remove: '.00' | replace: ",", " " }}
+                  </div>
+                 
+                {% elsif included_product_ids_third contains product.id %}
+                  <div class="product-price included-disount_15">
+                   <span class = "compare_and_include_15 compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
+                    {{ product.price |times:0.75 | money | remove: '.00' | replace: ",", " " }}
+                  </div>
+                {% else %}
+                {% if product.compare_at_price > product.price %}
+              <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
+             {% else %} <div class="product-price ">{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>{% endif %}
+                {% endif %}
+              {% else %}
+              
+              {% if product.compare_at_price > product.price %}
+              <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
+             {% else %} <div class="product-price ">{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>{% endif %}
+              {% endif %}
+
+            {% else %}
+          {% if product.compare_at_price > product.price %}
+              <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
+             {% else %} <div class="product-price ">{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>{% endif %}
+          {% endif %}
+          {% endif %}       
+                
+                <!-- Price per bottle -->
+          
+
+                
+                {% assign price_v = product.selected_or_first_available_variant.price %}
+                  {% assign price_discount_gold = product.price | times:0.90 %}
+                  {% assign price_discount_silver = product.price | times:0.95 %}
+                  {% assign discounted_unit_gold = price_discount_gold | divided_by:product.metafields.my_fields.cost_per_item  %}
+                  {% assign discounted_unit_silver = price_discount_silver | divided_by:product.metafields.my_fields.cost_per_item  %}
+                  {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %} 
+              
+              {% if lowertags contains 'silver'%}
+                 <div class="product-price-per"> R{{ discounted_unit_silver | divided_by:100 | round }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/>  </div>      
+              {% elsif lowertags contains 'gold' %}
+                <div class="product-price-per"> R{{ discounted_unit_gold | divided_by:100 | round  }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/>  </div>
+                {% else %}
+                <div class="product-price-per"> R{{ assigned_price | divided_by:100 | round  }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/>  </div>
+                {% endif %}
+                <!-- Start Add to cart button -->
+                <product-form class="product-form">
+                  <div class="product-form__error-message-wrapper" role="alert" hidden>
+                    <span class="product-form__error-message"></span>
+                  </div>
+                  {%- form 'product',
+                    product,
+                    id: product.id,
+                    class: 'form',
+                    novalidate: 'novalidate',
+                    data-type: 'add-to-cart-form'
+                  -%}
+                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+                    <div class="qty__wrapper">
+                      QTY:
+                      <input
+                        class="quantity__input"
+                        type="number"
+                        name="quantity"
+                        id="quantity"
+                        min="1"
+                        value="1"
+                        aria-label="quantity"
+                        {%- if product.selected_or_first_available_variant.available -%}
+                        {%- else -%}
+                          disabled
+                        {%- endif -%}
+                      >
+                    </div>
+                    <div class="product-form__buttons">
+                      <button
+                        type="submit"
+                        name="add"
+                        class="btn btn-overlay"
+                        {% if product.selected_or_first_available_variant.available == false %}
+                          disabled
+                        {% endif %}
+                      >
+                        <span>
+                          {%- if product.selected_or_first_available_variant.available -%}
+                            BUY
+                          {%- else -%}
+                            {{ 'products.product.sold_out' | t }}
+                          {%- endif -%}
+                        </span>
+                        <b>{{ product_item.price | money | remove: '.00' | replace: ',', ' ' }}</b>
+                        <div class="loading-overlay__spinner hidden">
+                          <svg
+                            aria-hidden="true"
+                            focusable="false"
+                            role="presentation"
+                            class="spinner"
+                            viewBox="0 0 66 66"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                          </svg>
+                        </div>
+                      </button>
+                    </div>
+                  {%- endform -%}
+                </product-form>
+                <!-- End Add to cart button -->
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+{% schema %}
+  {
+    "name": "Collections Grid",
+    "presets": [
+      {
+        "name": "Collections Grid",
+        "category": "Collection"
+      }
+    ]
+  }
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+
+<script>
+  Shopify.queryParams = {};
+
+  // Preserve existing query parameters
+  if (location.search.length) {
+    var params = location.search.substr(1).split('&');
+
+    for (var i = 0; i < params.length; i++) {
+      var keyValue = params[i].split('=');
+
+      if (keyValue.length) {
+        Shopify.queryParams[decodeURIComponent(keyValue[0])] = decodeURIComponent(keyValue[1]);
+      }
+    }
+  }
+
+  // Update sort_by query parameter on select change
+  document.querySelector('#sort-by').addEventListener('change', function (e) {
+    var value = e.target.value;
+
+    Shopify.queryParams.sort_by = value;
+    location.search = new URLSearchParams(Shopify.queryParams).toString();
+  });
+</script>

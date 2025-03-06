@@ -1,0 +1,573 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "dd6f5bc1-ff7a-4a50-be24-f2637f1a3727": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+            "image_overlay": "#000000",
+            "overlay_opacity": 60,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "SIGNATURE",
+            "paragarh_p2": "SAUVIGNON BLANC",
+            "paragarh_p3": "AWARDS",
+            "paragarh_p4": "",
+            "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+            "paragarh_2": "View the awards for our Sauvignon Blanc vintages, in our Signature Range, below.",
+            "side_btn_text": "Buy Our Signature Sauvignon Blanc",
+            "side_btn_link": "shopify://products/signature-sauvignon-blanc"
+          }
+        }
+      },
+      "block_order": [
+        "dd6f5bc1-ff7a-4a50-be24-f2637f1a3727"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "",
+        "paragarh_p1": "SIGNATURE",
+        "paragarh_p2": "SAUVIGNON BLANC",
+        "paragarh_p3": "AWARDS",
+        "paragarh_p4": "",
+        "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+        "paragarh_2": "View the awards for our Sauvignon Blanc vintages, in our Signature Range, below.",
+        "btn_text": "Buy Our Signature Sauvignon Blanc",
+        "btn_link": "shopify://products/signature-sauvignon-blanc",
+        "btn_main_link": ""
+      }
+    },
+    "tabled_information_NdyQnJ": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "row_DpbgFV": {
+          "type": "row",
+          "settings": {
+            "award": "Gilbert & Gaillard International Challenge",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_P6Kbcc": {
+          "type": "row",
+          "settings": {
+            "award": "Lumo Awards",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        },
+        "row_wYJALm": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2024",
+            "arward_level": "Double Gold"
+          }
+        },
+        "row_JggbBN": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2024",
+            "arward_level": "White Wine Of The Year"
+          }
+        },
+        "row_8cnTew": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2024",
+            "arward_level": "Double Gold"
+          }
+        }
+      },
+      "block_order": [
+        "row_DpbgFV",
+        "row_P6Kbcc",
+        "row_wYJALm",
+        "row_JggbBN",
+        "row_8cnTew"
+      ],
+      "settings": {
+        "main_heading": "SAUVIGNON BLANC:  2024"
+      }
+    },
+    "2a0f7a74-52c8-4918-93cc-c5bb3ed2bbbd": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "eaa4bac1-af08-4fe6-af98-4f82321533bc": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        },
+        "4ad31213-bde9-490f-8c47-4aec5f77aaee": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2022",
+            "arward_level": "Double Gold"
+          }
+        }
+      },
+      "block_order": [
+        "eaa4bac1-af08-4fe6-af98-4f82321533bc",
+        "4ad31213-bde9-490f-8c47-4aec5f77aaee"
+      ],
+      "settings": {
+        "main_heading": "SAUVIGNON BLANC:  2022"
+      }
+    },
+    "1643136871af0777a9": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "9a59aad6-2980-46f3-acbe-532026fed64c": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "fff20186-78ef-49e1-bb32-6c31da099795": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "4da91039-fb67-4965-a3df-129e4a347790": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2021",
+            "arward_level": "Bronze"
+          }
+        }
+      },
+      "block_order": [
+        "9a59aad6-2980-46f3-acbe-532026fed64c",
+        "fff20186-78ef-49e1-bb32-6c31da099795",
+        "4da91039-fb67-4965-a3df-129e4a347790"
+      ],
+      "settings": {
+        "main_heading": "Sauvignon Blanc:  2021"
+      }
+    },
+    "1643136744ef94218b": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "566c61b4-c087-4abb-a486-f8c5449b7408": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2020",
+            "arward_level": "Top 10 Producer"
+          }
+        },
+        "11aae19b-c6b2-4701-b6ad-edcebce991c3": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        },
+        "316f2c4c-96a9-4e08-a3b3-679f7507a898": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2020",
+            "arward_level": "Bronze"
+          }
+        },
+        "f50f517d-da75-41fb-aa33-c66eb56da877": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2020",
+            "arward_level": "Top 10 Producer"
+          }
+        },
+        "3c019034-494a-4f72-a56e-3e8000e935aa": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        },
+        "880c553d-4699-408d-b30f-4f9de3badb19": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2020 / 2021",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "566c61b4-c087-4abb-a486-f8c5449b7408",
+        "11aae19b-c6b2-4701-b6ad-edcebce991c3",
+        "316f2c4c-96a9-4e08-a3b3-679f7507a898",
+        "f50f517d-da75-41fb-aa33-c66eb56da877",
+        "3c019034-494a-4f72-a56e-3e8000e935aa",
+        "880c553d-4699-408d-b30f-4f9de3badb19"
+      ],
+      "settings": {
+        "main_heading": "Sauvignon Blanc:  2020"
+      }
+    },
+    "164313646660c44517": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "30b22b25-4476-42e3-bb5f-d92a2e4b81fe": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2019",
+            "arward_level": "Gold"
+          }
+        },
+        "ab569d90-007c-485d-b8a7-59959820cf52": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2019",
+            "arward_level": "Top 10 Producer"
+          }
+        },
+        "c79cced7-f1b0-472f-84ae-d7c5e34c3324": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2019",
+            "arward_level": "Gold"
+          }
+        },
+        "ff1a57b0-fd82-41a5-8337-8e764ab590b0": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2019",
+            "arward_level": "Gold"
+          }
+        },
+        "908c1a2e-e094-479d-9160-9064d5f9c466": {
+          "type": "row",
+          "settings": {
+            "award": "FNB Top 10 Sauvignon Blanc",
+            "year": "2019",
+            "arward_level": "Top 20 Finalist"
+          }
+        },
+        "1fa4277f-52a3-4bda-b2e9-5e6c5b19791c": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2019",
+            "arward_level": "Bronze"
+          }
+        },
+        "697333ef-f967-4edf-a78b-0fbce185f4b9": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2019 / 2020",
+            "arward_level": "Silver"
+          }
+        },
+        "d2b4a9fa-b9f6-4dac-b78d-58b379ccd615": {
+          "type": "row",
+          "settings": {
+            "award": "Concours Mondial du Sauvignon",
+            "year": "2020",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "30b22b25-4476-42e3-bb5f-d92a2e4b81fe",
+        "ab569d90-007c-485d-b8a7-59959820cf52",
+        "c79cced7-f1b0-472f-84ae-d7c5e34c3324",
+        "ff1a57b0-fd82-41a5-8337-8e764ab590b0",
+        "908c1a2e-e094-479d-9160-9064d5f9c466",
+        "1fa4277f-52a3-4bda-b2e9-5e6c5b19791c",
+        "697333ef-f967-4edf-a78b-0fbce185f4b9",
+        "d2b4a9fa-b9f6-4dac-b78d-58b379ccd615"
+      ],
+      "settings": {
+        "main_heading": "Sauvignon Blanc:  2019"
+      }
+    },
+    "16423635443e0fe290": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "15a6454f-abc9-4d6c-92ff-e15796279629": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2018",
+            "arward_level": "Gold"
+          }
+        },
+        "51ee25ab-bff0-4b0e-a4ca-efff26899e94": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2018",
+            "arward_level": "Bronze"
+          }
+        },
+        "b46ea98b-68ea-45fe-93f1-f345f74d8ac7": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2018 / 2019",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "15a6454f-abc9-4d6c-92ff-e15796279629",
+        "51ee25ab-bff0-4b0e-a4ca-efff26899e94",
+        "b46ea98b-68ea-45fe-93f1-f345f74d8ac7"
+      ],
+      "settings": {
+        "main_heading": "Sauvignon Blanc:  2018"
+      }
+    },
+    "16423667519a6836be": {
+      "type": "Logos",
+      "blocks": {
+        "7d4b5236-fdfc-4187-a662-8646c63ed76b": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards-Top-10.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "816919e6-8689-4675-a4fa-29b06c6886af": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Vitis-Vinifera-Awards-Gold-2.png",
+            "logo_link": "https://www.vitisawards.com/"
+          }
+        },
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Sauvignon-Blanc-Top-10.png",
+            "logo_link": "https://sauvignonblanc.com/"
+          }
+        },
+        "ca05ba96-e2c6-475d-9788-4b7a4dd08b21": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        }
+      },
+      "block_order": [
+        "7d4b5236-fdfc-4187-a662-8646c63ed76b",
+        "816919e6-8689-4675-a4fa-29b06c6886af",
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845",
+        "ca05ba96-e2c6-475d-9788-4b7a4dd08b21"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16430340119e659e4c": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "56ea5e51-174b-4d9e-8910-364f7176c576": {
+          "type": "column",
+          "settings": {
+            "title": "FLAGSHIP RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">Verreaux Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-0": {
+          "type": "column",
+          "settings": {
+            "title": "ICON RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chenin Blanc</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chardonnay</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Bismarck Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-1": {
+          "type": "column",
+          "settings": {
+            "title": "RESERVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/wine-awards-reserve-viognier\" target=\"_blank\" title=\"Wine Awards Reserve Viognier\">Viognier</a></p><p><a href=\"/pages/reserve-awards-cvc\" target=\"_blank\" title=\"Wine Awards Reserve CVC Blend\">CVC Blend</a></p><p><a href=\"/pages/reserve-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Reserve Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/reserve-awards-drift-fusion\" target=\"_blank\" title=\"Wine Awards Reserve Drift Fusion Blend\">Drift Fusion Blend</a></p><p><a href=\"/pages/awards-reserve-chardonnay\" target=\"_blank\" title=\"Wine Awards Reserve Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat Nectarinia</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat de Frontignan</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-2": {
+          "type": "column",
+          "settings": {
+            "title": "221 RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Chenin Blanc</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Pinotage</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Special Cuvée Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "05dd72a3-069d-4b39-989e-de08931892e1": {
+          "type": "column",
+          "settings": {
+            "title": "SIGNATURE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/signature-awards-chenin-blanc\" target=\"_blank\" title=\"Wine Awards Signature Chenin Blanc\">Chenin Blanc</a></p><p><a href=\"/pages/signature-awards-viognier\" target=\"_blank\" title=\"Wine Awards Signature Viognier\">Viognier</a></p><p><a href=\"/pages/signature-awards-chardonnay\" target=\"_blank\" title=\"Wine Awards Signature Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage Rosé</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage</a></p><p><a href=\"/pages/signature-awards-cabernet-sauvignon\" target=\"_blank\" title=\"Wine Awards Signature Cabernet Sauvignon\">Cabernet Sauvignon</a></p><p><a href=\"/pages/signature-awards-shiraz\" target=\"_blank\" title=\"Wine Awards Signature Shiraz\">Shiraz</a></p><p><a href=\"/pages/signature-awards-merlot\" target=\"_blank\" title=\"Wine Awards Signature Merlot\">Merlot</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925": {
+          "type": "column",
+          "settings": {
+            "title": "SPARKLING RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Rosé</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Blanc de Blanc</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Nature Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Thornlands MCC</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "af0d031d-5b54-45c0-8cb4-fac652753af9": {
+          "type": "column",
+          "settings": {
+            "title": "EXCLUSIVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Chenin Blanc</a></p><p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "508a02e8-b134-4e1e-8411-719f23834cb0": {
+          "type": "column",
+          "settings": {
+            "title": "EXPORT WINES",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Rondebosch Wines</a></p><p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Cape Pride Wines</a></p>",
+            "Text_color": "#2d5980"
+          }
+        }
+      },
+      "block_order": [
+        "56ea5e51-174b-4d9e-8910-364f7176c576",
+        "1643034010691e68fe-0",
+        "1643034010691e68fe-1",
+        "1643034010691e68fe-2",
+        "05dd72a3-069d-4b39-989e-de08931892e1",
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925",
+        "af0d031d-5b54-45c0-8cb4-fac652753af9",
+        "508a02e8-b134-4e1e-8411-719f23834cb0"
+      ],
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "OUR AWARDS BY RANGE",
+        "Heading_color": "#f8f2e6",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "BUY OUR AWARD-WINNING SIGNATURE RANGE WINES",
+        "button_link": "shopify://collections/signature-range",
+        "swipe_on_mobile": false
+      }
+    },
+    "16423669557e20a789": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "1711996789bb33269f": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_JQkp4p": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "89937",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#c65336",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 60,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_JQkp4p"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "tabled_information_NdyQnJ",
+    "2a0f7a74-52c8-4918-93cc-c5bb3ed2bbbd",
+    "1643136871af0777a9",
+    "1643136744ef94218b",
+    "164313646660c44517",
+    "16423635443e0fe290",
+    "16423667519a6836be",
+    "16430340119e659e4c",
+    "16423669557e20a789",
+    "1711996789bb33269f"
+  ]
+}

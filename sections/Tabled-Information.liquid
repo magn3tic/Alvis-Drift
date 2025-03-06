@@ -1,0 +1,708 @@
+<div class="award_list">
+  <div class="container">
+    <div class="main_heading"><h2>{{section.settings.main_heading}}</h2></div>
+    <table class="table">
+      <tr>
+        <th>AWARD:</th>
+        <th>YEAR AWARDED:</th>
+        <th>LEVEL AWARDED:</th>
+      </tr>
+      {% for block in section.blocks %}
+      <tr>
+        <td class = "awards">{{block.settings.award}}</td>
+        <td class = "award-year">{{block.settings.year}}</td>
+        <td class = "award-level">{{block.settings.arward_level}}</td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+<style>
+.table {
+    width: 100%;
+    text-align: left;
+}
+  
+@media only screen and (max-width:1550px) {
+  /* For mobile phones: */
+ .table {
+    text-align: left;
+   	font-size: 12px;
+   	border-spacing: 0px;
+}
+}
+  
+@media only screen and (max-width:1350px) {
+  /* For micro-laptops: */
+ .table {
+    text-align: left;
+   	font-size: 12px;
+   	border-spacing: 0px;
+}
+}
+  
+  @media only screen and (max-width:1285px) {
+  /* For Mini-micro laptopd: */
+ .table {
+    text-align: left;
+   	font-size: 12px;
+   	border-spacing: 0px;
+}
+}
+  
+  @media only screen and (max-width:850px) {
+  /* For tablets: */
+ .table {
+    text-align: left;
+   	font-size: 12px;
+   	border-spacing: 0px;
+}
+
+}
+  
+  /*table settings and sizes*/
+  
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+ .table {
+    text-align: left;
+   	font-size: 9px;
+   	max-height: 740px;
+   	border-spacing: 0px;
+}
+}
+  .award_list{
+  	margin-bottom:60px !important;
+    margin-top:80px !important;
+  }
+  
+.award_list table tr {
+    display: grid;
+  	padding: 0px;
+    grid-template-columns: repeat(3,1fr);
+}
+  
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+ .award_list table tr {
+    display: grid;
+    margin-left: 0px;
+    grid-template-columns: repeat(3,2fr);
+}
+}
+  
+</style>
+{% schema %}
+{
+"name": "Awards Information",
+"settings": [
+{
+"type":"text",
+"id":"main_heading",
+"label":"Main Heading"
+}
+],
+"blocks":[
+{
+"type":"row",
+"name":"Awarded Wine",
+"settings":[
+{
+"type":"select",
+"id":"award",
+"label":"Award Name",
+      "options": [
+{
+          "value": "Michelangelo International Wine & Spirits Awards",
+          "label": "Michelangelo International Wine & Spirits Awards"
+        }, 
+{
+          "value": "Catavinum World Wine & Spirits Competition: Spain",
+          "label": "Catavinum World Wine & Spirits Competition: Spain"
+        },
+{
+          "value": "International Wine & Spirits Awards:  Spain",
+          "label": "International Wine & Spirits Awards:  Spain"
+        },
+{
+          "value": "NWC & Top 100",
+          "label": "NWC & Top 100"
+        },
+{
+          "value": "Gold Wine Awards",
+          "label": "Gold Wine Awards"
+        },
+{
+          "value": "Standard Bank Top 10 Chenin Blanc Challenge",
+          "label": "Standard Bank Top 10 Chenin Blanc Challenge"
+        },
+{
+          "value": "FNB Top 10 Sauvignon Blanc",
+          "label": "FNB Top 10 Sauvignon Blanc"
+        },
+{
+          "value": "Top 10 SA Fortified Dessert Wines",
+          "label": "Top 10 SA Fortified Dessert Wines"
+        },
+{
+          "value": "Top SA White Wines Under R120",
+          "label": "Top SA White Wines Under R120"
+        },
+ {
+          "value": "Ultra Value Wine Challenge",
+          "label": "Ultra Value Wine Challenge"
+        },
+ {
+          "value": "Amorim Cap Classique",
+          "label": "Amorim Cap Classique"
+        },
+ {
+          "value": "Absa Top 10 Pinotage",
+          "label": "Absa Top 10 Pinotage"
+        },
+{
+          "value": "Perold Absa Cape Blend",
+          "label": "Perold Absa Cape Blend"
+        },
+{
+          "value": "SA Women's Wine & Spirits Award",
+          "label": "SA Women's Wine & Spirits Award"
+        },
+ {
+          "value": "Sommeliers Choice Awards",
+          "label": "Sommeliers Choice Awards"
+        },
+{
+          "value": "Vitis Vinifera Awards",
+          "label": "Vitis Vinifera Awards"
+        },
+{
+          "value": "Concours Mondial du Sauvignon",
+          "label": "Concours Mondial du Sauvignon"
+        },
+{
+          "value": "Platters Wine Awards Competition",
+          "label": "Platters Wine Awards Competition"
+        },
+{
+          "value": "Tim Atkins Tasting Report",
+          "label": "Tim Atkins Tasting Report"
+        },
+ {
+          "value": "Veritas Awards",
+          "label": "Veritas Awards"
+        },
+{
+          "value": "Shiraz SA Challenge",
+          "label": "Shiraz SA Challenge"
+        },
+{
+          "value": "Viognier Challenge",
+          "label": "Viognier Challenge"
+        },
+{
+          "value": "International Wine & Spirits Competition",
+          "label": "International Wine & Spirits Competition"
+        },
+{
+          "value": "International Wine & Spirits Competition: HK",
+          "label": "International Wine & Spirits Competition: HK"
+        },
+{
+          "value": "Gilbert & Gaillard International Challenge",
+          "label": "Gilbert & Gaillard International Challenge"
+        },
+{
+          "value": "Wine Of The Month Club",
+          "label": "Wine of the Month Club"
+        },
+{
+          "value": "Muskadel SA",
+          "label": "Muskadel SA"
+        },
+{
+          "value": "Top Wine SA",
+          "label": "Top Wine SA"
+        },
+{
+          "value": "South African Wine Index",
+          "label": "South African Wine Index"
+        },
+{
+          "value": "WineMag",
+          "label": "WineMag"
+        },
+{
+          "value": "Diners Club Winemaker Of The Year",
+          "label": "Diners Club Winemaker Of The Year"
+        },
+{
+          "value": "Brenn-O-Kem Worcester / Breedekloof Winemaker",
+          "label": "Brenn-O-Kem Worcester / Breedekloof Winemaker"
+        },
+{
+          "value": "Brenn-O-Kem Worcester / Breedekloof Wine",
+          "label": "Brenn-O-Kem Worcester / Breedekloof Wine"
+        },
+        {
+          "value": "Rosé Wine & Spirits Challenge",
+          "label": "Rosé Wine & Spirits Challenge"
+        },
+                {
+          "value": "Lumo Awards",
+          "label": "Lumo Awards"
+        },
+        {
+          "value": "Intercontinental Wine Challenge",
+          "label": "Intercontinental Wine Challenge"
+        },
+          {
+          "value": "Concours Mondial de Bruxelles Sauvignon Blanc",
+          "label": "Concours Mondial de Bruxelles Sauvignon Blanc"
+        },
+            {
+          "value": "Concours Mondial Bruxelles",
+          "label": "Concours Mondial Bruxelles"
+        },
+            {
+          "value": "Fine Wine Awards",
+          "label": "Fine Wine Awards"
+        },
+            {
+          "value": "Amorim Cap Classique Challenge",
+          "label": "Amorim Cap Classique Challenge"
+        }
+      ],
+      "default": "NWC & Top 100"
+},
+
+{
+"type":"select",
+"id":"year",
+"label":"Awarded Year",
+      "options": [
+{
+          "value": "2014",
+          "label": "2014"
+        },
+{
+          "value": "2015",
+          "label": "2015"
+        },
+{
+          "value": "2016",
+          "label": "2016"
+        },
+{
+          "value": "2017",
+          "label": "2017"
+        },
+{
+          "value": "2017 / 2018",
+          "label": "2017 / 2018"
+        },
+{
+          "value": "2018",
+          "label": "2018"
+        },
+{
+          "value": "2018 / 2019",
+          "label": "2018 / 2019"
+        },
+{
+          "value": "2019",
+          "label": "2019"
+        },
+{
+          "value": "2019 / 2020",
+          "label": "2019 / 2020"
+        },
+{
+          "value": "2020",
+          "label": "2020"
+        },
+{
+          "value": "2020 / 2021",
+          "label": "2020 / 2021"
+        },
+{
+          "value": "2021",
+          "label": "2021"
+        },
+{
+          "value": "2021 / 2022",
+          "label": "2021 / 2022"
+        },
+{
+          "value": "2022",
+          "label": "2022"
+        },
+{
+          "value": "2023",
+          "label": "2023"
+        },
+        {
+          "value": "2024",
+          "label": "2024"
+        }
+      ],
+      "default": "2024"
+},
+{
+"type":"select",
+"id":"arward_level",
+"label":"Award Level",
+      "options": [
+{
+          "value": " ",
+          "label": "No Level"
+        },
+{
+          "value": "81 Points",
+          "label": "81 Points"
+        },
+{
+          "value": "82 Points",
+          "label": "82 Points"
+        },
+{
+          "value": "83 Points",
+          "label": "83 Points"
+        },
+{
+          "value": "84 Points",
+          "label": "84 Points"
+        },
+{
+          "value": "85 Points",
+          "label": "85 Points"
+        },
+{
+          "value": "86 Points",
+          "label": "86 Points"
+        },
+{
+          "value": "87 Points",
+          "label": "87 Points"
+        },
+{
+          "value": "88 Points",
+          "label": "88 Points"
+        },
+{
+          "value": "89 Points",
+          "label": "89 Points"
+        },
+{
+          "value": "90 Points",
+          "label": "90 Points"
+        },
+{
+          "value": "91 Points",
+          "label": "91 Points"
+        },
+{
+          "value": "92 Points",
+          "label": "92 Points"
+        },
+{
+          "value": "93 Points",
+          "label": "93 Points"
+        },
+{
+          "value": "94 Points",
+          "label": "94 Points"
+        },
+{
+          "value": "95 Points",
+          "label": "95 Points"
+        },
+        {
+          "value": "96 Points",
+          "label": "96 Points"
+        },
+        {
+          "value": "97 Points",
+          "label": "97 Points"
+        },
+{
+          "value": "Wine Of The Year",
+          "label": "Wine of the Year"
+        },
+{
+          "value": "Top Red Wine",
+          "label": "Top Red Wine"
+        },
+{
+          "value": "Top White Wine",
+          "label": "Top White Wine"
+        },
+{
+          "value": "Dry Red Blends",
+          "label": "Dry Red Blends"
+        },
+{
+          "value": "Dry White Blends",
+          "label": "Dry White Blends"
+        },
+{
+          "value": "Best Pinotage in SA",
+          "label": "Best Pinotage in SA"
+        },
+{
+          "value": "Best Sparkling Wine In SA",
+          "label": "Best Sparkling Wine in SA"
+        },
+{
+          "value": "Best Chenin Blanc In SA",
+          "label": "Best Chenin Blanc in SA"
+        },
+{
+          "value": "Best Chardonnay In SA",
+          "label": "Best Chardonnay in SA"
+        },
+{
+          "value": "Best Sweet Wine",
+          "label": "Best Sweet Wine"
+        },
+{
+          "value": "1st In Grand Cru National Champion",
+          "label": "1st in Grand Cru National Champion"
+        },
+{
+          "value": "2nd In Grand Cru National Champion",
+          "label": "2nd in Grand Cru National Champion"
+        },
+{
+          "value": "3rd In Grand Cru National Champion",
+          "label": "3rd in Grand Cru National Champion"
+        },
+{
+          "value": "Top 3 Shiraz Blends",
+          "label": "Top 3 Shiraz Blends"
+        },
+{
+          "value": "Top 6 Shiraz Blends",
+          "label": "Top 6 Shiraz Blends"
+        },
+{
+          "value": "Top 12 Shiraz Blends",
+          "label": "Top 12 Shiraz Blends"
+        },
+{
+          "value": "Best Value",
+          "label": "Best Value"
+        },
+{
+          "value": "Good Value",
+          "label": "Good Value"
+        },
+{
+          "value": "Smart Buy",
+          "label": "Smart Buy"
+        },
+{
+          "value": "Highly Recommended",
+          "label": "Highly Recommended"
+        },
+{
+          "value": "Tops",
+          "label": "Tops"
+        },
+{
+          "value": "3 Stars",
+          "label": "3 Stars"
+        },
+ {
+          "value": "3½ Stars",
+          "label": "3½ Stars"
+        },
+{
+          "value": "4 Stars",
+          "label": "4 Stars"
+        },
+{
+          "value": "4½ Stars",
+          "label": "4½ Stars"
+        },
+{
+          "value": "5 Stars",
+          "label": "5 Stars"
+        },
+{
+          "value": "Highest Scoring",
+          "label": "Highest Scoring"
+        },
+{
+          "value": "First Place",
+          "label": "First Place"
+        },
+{
+          "value": "Best In Class",
+          "label": "Best in Class"
+        },
+{
+          "value": "Top 10 Producer",
+          "label": "Top 10 Producer"
+        },
+        {
+          "value": "Top 10 Red Wine Producer",
+          "label": "Top 10 Red Wine Producer"
+        },
+        {
+          "value": "Top 10 White Wine Producer",
+          "label": "Top 10 White Wine Producer"
+        },
+        {
+          "value": "Top 20 Producer",
+          "label": "Top 20 Producer"
+        },
+        {
+          "value": "Top 20 Red Wine Producer",
+          "label": "Top 20 Red Wine Producer"
+        },
+{
+          "value": "Top 10 Finalist",
+          "label": "Top 10 Finalist"
+        },
+{
+          "value": "Top 20 Finalist",
+          "label": "Top 20 Finalist"
+        },
+{
+          "value": "Winemaker Of The Year",
+          "label": "Winemaker Of The Year"
+        },
+{
+          "value": "Winemaker Of The Year Top 5",
+          "label": "Winemaker Of The Year Top 5"
+        },
+{
+          "value": "Finalist",
+          "label": "Finalist"
+        },
+{
+          "value": "Top SA",
+          "label": "Top SA"
+        },
+{
+          "value": "Top 10",
+          "label": "Top 10"
+        },
+{
+          "value": "Top 20",
+          "label": "Top 20"
+        },
+{
+          "value": "Top 100",
+          "label": "Top 100"
+        },
+ {
+          "value": "Bronze",
+          "label": "Bronze"
+        },
+ {
+          "value": "Silver",
+          "label": "Silver"
+        },
+{
+          "value": "Double Silver",
+          "label": "Double Silver"
+        },
+{
+          "value": "Silver Outstanding",
+          "label": "Silver Outstanding"
+        },
+ {
+          "value": "Gold",
+          "label": "Gold"
+        },
+        {
+          "value": "Double Gold",
+          "label": "Double Gold"
+        },
+{
+          "value": "Great Gold",
+          "label": "Great Gold"
+        },
+{
+          "value": "Grand Gold",
+          "label": "Grand Gold"
+        },
+{
+          "value": "Grand Gold Certificate Of Excellence",
+          "label": "Grand Gold Certificate of Excellence"
+        },
+        {
+          "value": "Platinum",
+          "label": "Platinum"
+        },
+{
+          "value": "Double Platinum",
+          "label": "Double Platinum"
+        },
+{
+          "value": "Platinum Certificate Of Excellence",
+          "label": "Platinum Certificate of Excellence"
+        },
+            {
+          "value": "Vineyard Consistency Award:  1st Place",
+          "label": "Vineyard Consistency Award:  1st Place"
+        },
+            {
+          "value": "Vineyard Consistency Award:  2nd Place",
+          "label": "Vineyard Consistency Award:  2nd Place"
+        },
+                    {
+          "value": "Red Wine Of The Year",
+          "label": "Red Wine Of The Year"
+        },
+                {
+          "value": "White Wine Of The Year",
+          "label": "White Wine Of The Year"
+        },
+                {
+          "value": "Red Blend Of The Year",
+          "label": "Red Blend Of The Year"
+        },
+                {
+          "value": "White Blend Of The Year",
+          "label": "White Blend Of The Year"
+        },
+                {
+          "value": "Blend Of The Year",
+          "label": "Blend Of The Year"
+        },
+                {
+          "value": "Dessert Wine Of The Year",
+          "label": "Dessert Wine Of The Year"
+        },
+                {
+          "value": "Sparkling Wine Of The Year",
+          "label": "Sparkling Wine Of The Year"
+        }
+      ],
+      "default": "Gold"
+}
+]
+}
+],
+"presets": [
+    {
+      "name": "Award List"
+    }
+ ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<style>
+td {
+	padding-right: 20px;
+}
+</style>

@@ -1,0 +1,41 @@
+{% comment %}
+    Renders an article card for a manual content
+{% endcomment %}
+
+<article class="article-card article-card-small{% if article.image == blank or show_image == false %} article-card--no-image{% endif %}" aria-labelledby="Article-{{ article.id }}">
+  <div class="article-content motion-reduce">
+    {%- if image -%}
+      <div class="article-card__image-wrapper">
+        <div class="article-card__image media media--rounded-small">
+          <img srcset="
+            {%- if image.src.width >= 165 -%}{{ image.src | img_url: '165x' }} 165w,{%- endif -%}
+            {%- if image.src.width >= 360 -%}{{ image.src | img_url: '360x' }} 360w,{%- endif -%}
+            {%- if image.src.width >= 533 -%}{{ image.src | img_url: '533x' }} 533w,{%- endif -%}
+            {%- if image.src.width >= 720 -%}{{ image.src | img_url: '720x' }} 720w,{%- endif -%}
+            {%- if image.src.width >= 940 -%}{{ image.src | img_url: '940x' }} 940w,{%- endif -%}
+            {%- if image.src.width >= 1066 -%}{{ image.src | img_url: '1066x' }} 1066w{%- endif -%}"
+            src="{{ image.src | img_url: '533x' }}"
+            sizes="(min-width: 1100px) 535px, (min-width: 769px) calc((100vw - 130px) / 2), calc((100vw - 50px) / 2)"
+            alt="{{ image.src.alt | escape }}"
+            width="{{ image.width }}"
+            height="{{ image.height }}"
+            loading="lazy"
+            class="motion-reduce"
+          >
+        </div>
+      </div>
+    {%- endif -%}
+    <div class="article-card__info color-foreground-accent-1">
+      {%- if title != blank -%}
+        <header class="article-card__header">
+          <h4 class="article-card__title" id="Article-{{ article.id }}">
+            {{ title | escape }}
+          </h4>
+        </header>
+      {%- endif -%}
+      {%- if content != blank -%}
+        {{ content | strip_html | truncatewords: 15 }}
+      {%- endif -%}
+    </div>
+  </div>
+</article>

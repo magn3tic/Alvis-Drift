@@ -1,0 +1,303 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "1adfeeda-377a-4ac8-9e5c-1548773d681a": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Contact_Us.png",
+            "image_overlay": "#000000",
+            "overlay_opacity": 20,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "GET IN",
+            "paragarh_p2": "TOUCH",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "WE LOVE HEARING FROM YOU",
+            "paragarh_2": "We welcome feedback and enquiries from our customers and visitors to our website. Whether you require specific information about our winery, our wines or have an online sales enquiry, please don’t hesitate to get in touch using the information below, or filling out the relevant enquiry form.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1adfeeda-377a-4ac8-9e5c-1548773d681a"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvi_s_Drift_Contact.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "https://youtu.be/NHaK24QOLow",
+        "paragarh_p1": "GET IN",
+        "paragarh_p2": "TOUCH",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "WE LOVE HEARING FROM YOU",
+        "paragarh_2": "Herewith our personal contact details to reach us directly.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-products",
+        "btn_main_link": ""
+      }
+    },
+    "1639677536f2892eaa": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Cork.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "+27 (0)21 905 0653<br>wine@alvisdrift.co.za",
+        "video-sec-content-txt-1": "<h5></h5><p><br/><strong>Alvi's Drift Private Cellar</strong><br/>Alfalfa Farm<br/>Scherpenheuwel Road<br/>Worcester  6850<br/>Western Cape  |  South Africa</p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Corporate-Profile.pdf?v=1738918023\" target=\"_blank\" title=\"Alvi's Drift Corporate Profile\"><strong>CORPORATE PROFILE</strong></a></p><p><strong><br/>Banking Details:<br/></strong>Standard Bank  (050407)<br/>Account:  202026191<br/>Please use order number as reference:  <a href=\"mailto:marketing@alvisdrift.co.za\" target=\"_blank\">marketing@alvisdrift.co.za</a></p>",
+        "button-txt": "BULK PURCHASE ENQUIRY",
+        "button_link": "shopify://pages/bulk",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1711806339a48fec37": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_NBQbkT": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "88649",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#c65336",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_NBQbkT"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "163968008729148d8c": {
+      "type": "Map",
+      "settings": {
+        "Heading": "ALVI'S DRIFT WINERY IS SITUATED IN SCHERPENHEUVEL, ABOUT 20 KILOMETERS SOUTH OF WORCESTER, SOUTH AFRICA",
+        "map_url": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.5151442652127!2d19.530228315207694!3d-33.77319298068268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcd87b05e2eea91%3A0x6c640f79cf372224!2sAlvi's%20Drift%20-%20No%20farm%20visits%20until%20further%20notice.!5e0!3m2!1sen!2sza!4v1639680134120!5m2!1sen!2sza\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+        "Heading_color": "#ffffff",
+        "button-txt": "",
+        "button_link": ""
+      }
+    },
+    "focus_text_text_only_BfryVm": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "FIND / SELL OUR WINES",
+        "subtitle-1": "Our wines are available from most leading South African retailers and liquor outlets.",
+        "subtitle-2": "<p>Alvi’s Drift wines are also for sale in several countries around the globe.</p><p>For specific South African and international distributor information, please click on the button below. </p><p>If you would like information about selling our wines, please get in touch with us via the contact form below.</p>",
+        "button_text": "FIND OUR WINES",
+        "button_link": "shopify://pages/distributors",
+        "new_tab": true
+      }
+    },
+    "1642344433cd8f2875": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "1639603063787a43d2": {
+      "type": "Newsletter-Subscription",
+      "settings": {
+        "section_heading": "<p>TH<em>E</em><br/>DRIFT</p>",
+        "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
+        "Heading_color": "#c65336",
+        "hs_form_portal_id": "25422535"
+      }
+    },
+    "16396031315c4c1f82": {
+      "type": "Logos",
+      "blocks": {
+        "1639603131a0cab8b7-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Absa-Top-10-Pinotage-Award.png",
+            "logo_link": "https://www.pinotage.co.za/"
+          }
+        },
+        "996b9d51-9dd6-464e-83c7-38fe6e79f278": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Catavinum-Awards-Great-Gold_5c78f88c-a309-4a54-8e3e-2371638231db.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        },
+        "bf85ff2b-a1e8-4a90-840e-57b0ae9ba01f": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Award-Double-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "ec919cb8-de59-431b-aff4-0a4b2e15cd7e": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points-Gold.png",
+            "logo_link": "https://iwsc.net/"
+          }
+        },
+        "cd14b935-7d60-49f2-9c3e-de1faf53df06": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards-Double-Gold.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "d1b18753-2d3e-4fa8-9bdd-75870fb0cf1c": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Platinum.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "058285cd-57ae-4177-94c6-747b7e9f1788": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Champion.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "985dc779-a14f-4eeb-a7a1-66906566270f": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-1st-Place.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "d6b3a1dd-9a1a-4beb-aaf1-7dace079e316": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/S_hiraz-SA-Challenge-Top-3.png",
+            "logo_link": "https://shirazsa.co.za/challenge/"
+          }
+        },
+        "ec688973-0e78-4399-bb64-3256e21de661": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Veritas-Awards_825e96e8-eea9-44e7-b436-8a94381d7377.png",
+            "logo_link": "https://veritas.co.za/"
+          }
+        },
+        "8e6f6dfa-7ec0-40e3-8c7e-ff0f9cee5163": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Vitis-Vinifera-Awards-Gold-2.png",
+            "logo_link": "https://www.vitisawards.com/"
+          }
+        },
+        "ebd1376d-2ea3-4c4c-9b74-51cb5d695782": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Women_s-Wine-_-Spirits-Awards-Gold.png",
+            "logo_link": "https://lumoawards.com/"
+          }
+        },
+        "399992c5-b2b6-49b5-ad58-eae67f82624e": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Sauvignon-Blanc-Top-10.png",
+            "logo_link": "https://sauvignonblanc.com/"
+          }
+        },
+        "51e5f74e-5089-4532-8821-798e4109a91f": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Sommeliers-Choice-Awards-Double-Gold.png",
+            "logo_link": "https://sommelierschoiceawards.com/"
+          }
+        },
+        "84410764-c60f-4fd7-bb3f-e2b5e2c18839": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gilbert-_-Gaillard-Best-Value_e6052faf-bd44-486c-92cd-c36835e3ab8a.png",
+            "logo_link": "https://en.gilbertgaillard.com/"
+          }
+        },
+        "1ce9951d-fd3b-4c88-9be9-3b0aa9daeda6": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/SA-Wine-Index-Platinum.png",
+            "logo_link": "https://www.sawineindex.com/"
+          }
+        }
+      },
+      "block_order": [
+        "1639603131a0cab8b7-0",
+        "996b9d51-9dd6-464e-83c7-38fe6e79f278",
+        "bf85ff2b-a1e8-4a90-840e-57b0ae9ba01f",
+        "ec919cb8-de59-431b-aff4-0a4b2e15cd7e",
+        "cd14b935-7d60-49f2-9c3e-de1faf53df06",
+        "d1b18753-2d3e-4fa8-9bdd-75870fb0cf1c",
+        "058285cd-57ae-4177-94c6-747b7e9f1788",
+        "985dc779-a14f-4eeb-a7a1-66906566270f",
+        "d6b3a1dd-9a1a-4beb-aaf1-7dace079e316",
+        "ec688973-0e78-4399-bb64-3256e21de661",
+        "8e6f6dfa-7ec0-40e3-8c7e-ff0f9cee5163",
+        "ebd1376d-2ea3-4c4c-9b74-51cb5d695782",
+        "399992c5-b2b6-49b5-ad58-eae67f82624e",
+        "51e5f74e-5089-4532-8821-798e4109a91f",
+        "84410764-c60f-4fd7-bb3f-e2b5e2c18839",
+        "1ce9951d-fd3b-4c88-9be9-3b0aa9daeda6"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "1639677536f2892eaa",
+    "1711806339a48fec37",
+    "163968008729148d8c",
+    "focus_text_text_only_BfryVm",
+    "1642344433cd8f2875",
+    "1639603063787a43d2",
+    "16396031315c4c1f82"
+  ]
+}
