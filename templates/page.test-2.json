@@ -81,7 +81,8 @@
         ".titleClass {font-family: 4rem;}",
         ".spaced-section {background-color: #2e112d; margin-top: -10px;}",
         ".tw-my-10 {margin-top: 0rem;}",
-        "#customertier {max-width: 1200px; margin: 0 auto;}"
+        "#customertier {max-width: 1200px; margin: 0 auto;}",
+        "#customertier path,#earningrules path {fill: white;}"
       ],
       "settings": {
         "include_margins": true
