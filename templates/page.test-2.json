@@ -34,8 +34,8 @@
           "settings": {
             "title": "Customer Profile",
             "description": "",
-            "bgcolour": "#d5c7bf",
-            "bordercolour": "#d5c7bf",
+            "bgcolour": "#2e112d",
+            "bordercolour": "rgba(0,0,0,0)",
             "width": 100,
             "borderradius": 0,
             "alignment": "center",
@@ -62,8 +62,8 @@
           "settings": {
             "title": "",
             "description": "",
-            "bgcolour": "{{ page.metafields.custom.purple.value }}",
-            "bordercolour": "{{ page.metafields.custom.purple.value }}",
+            "bgcolour": "#2e112d",
+            "bordercolour": "rgba(0,0,0,0)",
             "borderradius": 0,
             "icons": "default",
             "preview": "off"
@@ -76,10 +76,10 @@
         "sc_loyalty_rewards_customer_tier_Yg7tCP"
       ],
       "custom_css": [
-        "#pointsbalance {background-color: #d5c7bf;}",
-        "#pointsbalance h1,p {color: #2e112d;}",
+        "#pointsbalance {padding-top:20px; background-color: #2e112d;}",
+        "#pointsbalance h1,p {color: white;}",
         ".titleClass {font-family: 4rem;}",
-        ".spaced-section {margin-top: -10px;}",
+        ".spaced-section {background-color: #2e112d; margin-top: -10px;}",
         ".tw-my-10 {margin-top: 0rem;}"
       ],
       "settings": {
