@@ -80,7 +80,8 @@
         "#pointsbalance h1,p {color: white;}",
         ".titleClass {font-family: 4rem;}",
         ".spaced-section {background-color: #2e112d; margin-top: -10px;}",
-        ".tw-my-10 {margin-top: 0rem;}"
+        ".tw-my-10 {margin-top: 0rem;}",
+        "#customertier {max-width: 1200px; margin: 0 auto;}"
       ],
       "settings": {
         "include_margins": true
