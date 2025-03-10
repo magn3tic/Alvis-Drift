@@ -45,7 +45,7 @@
         "sc_loyalty_rewards_earning_rules_nD4jAV": {
           "type": "shopify://apps/sc-loyalty-rewards/blocks/earning_rules/21842f98-987a-4ad6-91bf-a00b77123261",
           "settings": {
-            "title": "Earning Rules",
+            "title": "",
             "description": "",
             "bgcolour": "#2e112d",
             "bordercolour": "",
@@ -60,7 +60,7 @@
         "sc_loyalty_rewards_customer_tier_Yg7tCP": {
           "type": "shopify://apps/sc-loyalty-rewards/blocks/customer_tier/21842f98-987a-4ad6-91bf-a00b77123261",
           "settings": {
-            "title": "Customer Tier",
+            "title": "",
             "description": "",
             "bgcolour": "#2e112d",
             "bordercolour": "",
