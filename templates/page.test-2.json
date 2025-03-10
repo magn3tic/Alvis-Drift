@@ -32,7 +32,7 @@
         "sc_loyalty_rewards_points_balance_z6FKE9": {
           "type": "shopify://apps/sc-loyalty-rewards/blocks/points_balance/21842f98-987a-4ad6-91bf-a00b77123261",
           "settings": {
-            "title": "Points Balance",
+            "title": "Customer Profile",
             "description": "",
             "bgcolour": "#d5c7bf",
             "bordercolour": "#d5c7bf",
@@ -48,7 +48,7 @@
             "title": "",
             "description": "",
             "bgcolour": "#2e112d",
-            "bordercolour": "",
+            "bordercolour": "#ffffff",
             "width": 20,
             "height": 30,
             "borderradius": 0,
@@ -62,8 +62,8 @@
           "settings": {
             "title": "",
             "description": "",
-            "bgcolour": "#2e112d",
-            "bordercolour": "",
+            "bgcolour": "{{ page.metafields.custom.purple.value }}",
+            "bordercolour": "{{ page.metafields.custom.purple.value }}",
             "borderradius": 0,
             "icons": "default",
             "preview": "off"
