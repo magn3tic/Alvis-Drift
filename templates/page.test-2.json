@@ -41,17 +41,46 @@
             "alignment": "center",
             "preview": "on"
           }
+        },
+        "sc_loyalty_rewards_earning_rules_nD4jAV": {
+          "type": "shopify://apps/sc-loyalty-rewards/blocks/earning_rules/21842f98-987a-4ad6-91bf-a00b77123261",
+          "settings": {
+            "title": "Earning Rules",
+            "description": "",
+            "bgcolour": "#2e112d",
+            "bordercolour": "",
+            "width": 20,
+            "height": 30,
+            "borderradius": 0,
+            "alignment": "center",
+            "icons": "default",
+            "preview": "off"
+          }
+        },
+        "sc_loyalty_rewards_customer_tier_Yg7tCP": {
+          "type": "shopify://apps/sc-loyalty-rewards/blocks/customer_tier/21842f98-987a-4ad6-91bf-a00b77123261",
+          "settings": {
+            "title": "Customer Tier",
+            "description": "",
+            "bgcolour": "#2e112d",
+            "bordercolour": "",
+            "borderradius": 0,
+            "icons": "default",
+            "preview": "off"
+          }
         }
       },
       "block_order": [
-        "sc_loyalty_rewards_points_balance_z6FKE9"
+        "sc_loyalty_rewards_points_balance_z6FKE9",
+        "sc_loyalty_rewards_earning_rules_nD4jAV",
+        "sc_loyalty_rewards_customer_tier_Yg7tCP"
       ],
-       "custom_css": [
+      "custom_css": [
         "#pointsbalance {background-color: #d5c7bf;}",
         "#pointsbalance h1,p {color: #2e112d;}",
         ".titleClass {font-family: 4rem;}",
-         ".spaced-section {margin-top: -10px;}",
-        ".tw-my-10 { margin-top: 0rem;}"
+        ".spaced-section {margin-top: -10px;}",
+        ".tw-my-10 {margin-top: 0rem;}"
       ],
       "settings": {
         "include_margins": false
