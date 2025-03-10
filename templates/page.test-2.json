@@ -75,13 +75,7 @@
         "sc_loyalty_rewards_earning_rules_nD4jAV",
         "sc_loyalty_rewards_customer_tier_Yg7tCP"
       ],
-      "custom_css": [
-        "#pointsbalance {padding-top:20px; background-color: #2e112d;}",
-        "#pointsbalance h1,p {color: white;}",
-        ".titleClass {font-family: 4rem;}",
-        ".spaced-section {background-color: #2e112d; margin-top: -10px;}",
-        ".tw-my-10 {margin-top: 0rem;}"
-      ],
+      "custom_css": [],
       "settings": {
         "include_margins": false
       }
