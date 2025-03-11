@@ -1,4 +1,4 @@
-{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'section-blog-post.css' | asset_url | stylesheet_tag:preload:true }}
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" style = "background-color:#f8f2e6;padding-top:50px">
    {%- for block in section.blocks -%} 
     {%- case block.type -%}
