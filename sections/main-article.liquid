@@ -103,7 +103,7 @@
       </div>
         <p class = "article-button"><a href = "{{ blog.url }}">VIEW ALL ARTICLES</a></p>
 {%- endpaginate -%}        
-  {%- if blog.comments_enabled? -%}
+  {%- if blog.comments_enabled -%}
     <div class="article-template__comment-wrapper comment-background">
       <div id="comments" class="page-width page-width--narrow">
         {%- if article.comments_count > 0 -%}
