@@ -142,9 +142,7 @@
           <h2>{{ 'blogs.article.comment_form_title' | t }}</h2>
           {%- if form.errors -%}
             <div class="form__message" role="alert">
-              <h3 class="form-status form-status-color caption-large" tabindex="-1" autofocus>
-                {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}
-              </h3>
+              <h3 class="form-status form-status-color caption-large" tabindex="-1" autofocus> {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }} </h3>
             </div>
             <ul class="form-status-list caption-large">
               {%- for field in form.errors -%}
@@ -164,9 +162,7 @@
                 <input type="text" name="comment[author]" id="CommentForm-author" class="field__input" autocomplete="name" value="{{ form.author }}" aria-required="true" {% if form.errors contains 'author' %} aria-invalid="true" aria-describedby="CommentForm-author-error" {% endif %} placeholder="{{ 'blogs.article.name' | t }}" >
                 <label class="field__label" for="CommentForm-author">{{ 'blogs.article.name' | t }} <span aria-hidden="true">*</span></label>
                 {%- if form.errors contains 'author' -%}
-                  <small id="CommentForm-author-error">
-                    <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.name' | t }} {{ form.errors.messages['author'] }}.</span>
-                  </small>
+                  <small id="CommentForm-author-error"> <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.name' | t }} {{ form.errors.messages['author'] }}.</span> </small>
                 {%- endif -%}
               </div>
               <div class="field field--with-error">
@@ -174,9 +170,7 @@
                   {% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="CommentForm-email-error" {% endif %} placeholder="{{ 'blogs.article.email' | t }}">
                 <label class="field__label" for="CommentForm-email">{{ 'blogs.article.email' | t }} <span aria-hidden="true">*</span></label>
                 {%- if form.errors contains 'email' -%}
-                  <small id="CommentForm-email-error">
-                    <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.email' | t }} {{ form.errors.messages['email'] }}.</span>
-                  </small>
+                  <small id="CommentForm-email-error"> <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.email' | t }} {{ form.errors.messages['email'] }}.</span> </small>
                 {%- endif -%}
               </div>
             </div>
@@ -185,9 +179,7 @@
                 <label class="form__label field__label" for="CommentForm-body">{{ 'blogs.article.message' | t }} <span aria-hidden="true">*</span></label>
             </div>
             {%- if form.errors contains 'body' -%}
-              <small id="CommentForm-body-error">
-                <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.message' | t }} {{ form.errors.messages['body'] }}.</span>
-              </small>
+              <small id="CommentForm-body-error"> <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.message' | t }} {{ form.errors.messages['body'] }}.</span> </small>
             {%- endif -%}
           </div>
           {%- if blog.moderated? -%}
