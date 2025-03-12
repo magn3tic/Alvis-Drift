@@ -660,11 +660,7 @@
 
 </script>
 
-      window.mobileNavLinks = [
-    {% for link in linklists.main-menu.links %}
-      { url: "{{ link.url }}", title: "{{ link.title }}" },
-    {% endfor %}
-  ];
+    
 
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = shop.url | append: routes.search_url | append: "?q={search_term_string}" %}
