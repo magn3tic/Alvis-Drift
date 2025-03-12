@@ -1,15 +1,13 @@
 document.addEventListener("DOMContentLoaded", function () {
+  // Check if it's a mobile device
   if (window.innerWidth <= 767) {
     // Ensure we only append the nav if it doesn't already exist
     var existingNav = document.querySelector('.mobile-nav');
     if (!existingNav) {
       var nav = document.createElement('nav');
-      nav.className = 'mobile-nav'; // Give the created nav the correct class
+      nav.className = 'mobile-nav'; // Assign the class for styling
 
-      // Log to confirm nav is created
-      console.log('Creating mobile nav:', nav);
-
-      // Add the mobile navigation items (links)
+      // Add mobile navigation links dynamically
       if (window.mobileNavLinks && window.mobileNavLinks.length > 0) {
         window.mobileNavLinks.forEach(function(link) {
           var a = document.createElement('a');
@@ -18,10 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
           nav.appendChild(a);
         });
 
-        // Log to confirm links are added
-        console.log('Nav links added:', nav);
-
-        // Append the new navigation to the body or a specific location
+        // Prepend the new navigation to the body
         document.body.prepend(nav);
       }
     }
