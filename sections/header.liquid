@@ -11,7 +11,7 @@
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}" id="HeaderRight">
 
 
-    
+  <nav class="mobile-nav">
     <div class="top-left-navbar">
       <a href="#" class="icon-hamberger" >{% render 'icon-hamburger' %} </a> 
     </div>
@@ -74,7 +74,7 @@
         </div>
       </div>
     </section>
-
+  </nav>
 
 
     
@@ -652,7 +652,27 @@
       {{ settings.social_vimeo_link | json }}
     ],
     "url": {{ shop.url | append: page.url | json }}
+  },
+
+  document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth <= 767) {
+    var nav = document.createElement("nav");
+    nav.className = "mobile-nav";
+
+    // Fetch menu links from a global Shopify variable (you need to define it in Liquid)
+    if (window.mobileNavLinks) {
+      window.mobileNavLinks.forEach(function (link) {
+        var a = document.createElement("a");
+        a.href = link.url;
+        a.textContent = link.title;
+        nav.appendChild(a);
+      });
+
+      document.body.prepend(nav); // Insert at the top of the body
+    }
   }
+});
+
 </script>
 
 {%- if request.page_type == 'index' -%}
