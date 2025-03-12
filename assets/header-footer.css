@@ -1438,7 +1438,7 @@ noscript .localization-selector.link {
     padding-top: 0;
   }
 }
-
+/*
 @media screen and (max-width: 749px) {
   .footer-block-image {
     text-align: center;
@@ -1457,7 +1457,7 @@ noscript .localization-selector.link {
   color: currentColor;
   text-decoration: none;
 }
-
+*/
 @keyframes animateLocalization {
   0% {
     opacity: 0;
@@ -1469,7 +1469,7 @@ noscript .localization-selector.link {
     transform: translateY(-1rem);
   }
 }
-
+/*
 .footer .disclosure__link {
   padding: 0.95rem 3.5rem 0.95rem 2rem;
   color: rgba(var(--color-foreground), 0.75);
@@ -1482,3 +1482,4 @@ noscript .localization-selector.link {
 .footer .disclosure__link--active {
   text-decoration: underline;
 }
+*/
