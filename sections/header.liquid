@@ -6,6 +6,7 @@
 {{ 'details-disclosure.js' | asset_url | preload_tag: as: 'script' }}
 {{ 'details-modal.js' | asset_url | preload_tag: as: 'script' }}
 {{ 'cart-notification.js' | asset_url | preload_tag: as: 'script' }}
+{{ 'mobile-nav.js' | asset_url | preload_tag: as: 'script' }}
 
 <div class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}" id="HeaderRight">
@@ -632,25 +633,6 @@
 {% endjavascript %}
 
 <script type="application/ld+json">
-  
-  document.addEventListener("DOMContentLoaded", function () {
-  if (window.innerWidth <= 767) {
-    var nav = document.createElement("nav");
-    nav.className = "mobile-nav";
-
-    // Fetch menu links from a global Shopify variable (you need to define it in Liquid)
-    if (window.mobileNavLinks) {
-      window.mobileNavLinks.forEach(function (link) {
-        var a = document.createElement("a");
-        a.href = link.url;
-        a.textContent = link.title;
-        nav.appendChild(a);
-      });
-
-      document.body.prepend(nav); // Insert at the top of the body
-    }
-  }
-});
   
   {
     "@context": "http://schema.org",
