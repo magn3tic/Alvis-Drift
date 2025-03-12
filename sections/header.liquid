@@ -5,11 +5,9 @@
 {{ 'details-disclosure.js' | asset_url | preload_tag: as: 'script' }}
 {{ 'details-modal.js' | asset_url | preload_tag: as: 'script' }}
 {{ 'cart-notification.js' | asset_url | preload_tag: as: 'script' }}
-{{ 'mobile-nav.js' | asset_url | preload_tag: as: 'script' }}
 
 <div class="header-wrapper color-{{ section.settings.color_scheme }} gradient{% if section.settings.show_line_separator %} header-wrapper--border-bottom{% endif %}">
   <header class="header header--{{ section.settings.logo_position }} page-width{% if section.settings.menu != blank %} header--has-menu{% endif %}" id="HeaderRight">
-  <nav class = "mobile-nav">
     <div class="top-left-navbar">
       <a href="#" class="icon-hamberger" >{% render 'icon-hamburger' %} </a> 
     </div>
@@ -72,7 +70,7 @@
         </div>
       </div>
     </section>
-</nav>
+
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
       <details-modal class="header__search">
         <details>
