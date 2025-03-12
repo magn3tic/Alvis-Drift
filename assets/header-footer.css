@@ -1057,6 +1057,7 @@ summary.list-menu__item{
     padding-top: 1.5rem;
   }
 }
+/*
 .footer__column {
   width: 100%;
   align-items: flex-end;
@@ -1070,7 +1071,7 @@ summary.list-menu__item{
   padding-left: 2rem;
   padding-right: 2rem;
 }
-
+*/
 @media screen and (min-width: 750px) {
   .footer__column--info {
     padding-left: 0;
