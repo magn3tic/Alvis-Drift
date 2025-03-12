@@ -723,3 +723,11 @@ header-drawer{justify-self:start;margin-left:-1.2rem}@media screen and (min-widt
     z-index: 9999; /* Make sure it's on top */
     padding: 10px;
   }
+
+  .mobile-nav a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: #333; /* Or your preferred link color */
+  }
+}
