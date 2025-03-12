@@ -1,4 +1,4 @@
-{{ 'section-blog-post.css' | asset_url | stylesheet_tag }}
+{{ 'section-blog-post.css' | asset_url | stylesheet_tag:preload:true }}
 <article class="article-template" itemscope itemtype="http://schema.org/BlogPosting" style = "background-color:#f8f2e6;padding-top:50px">
    {%- for block in section.blocks -%} 
     {%- case block.type -%}
@@ -9,11 +9,8 @@
       {%- when 'featured_image'-%}
         {%- if article.image -%}
           <div class="article-template__hero-container" {{ block.shopify_attributes }}>
-            <div class="article-template__hero-{{ block.settings.image_height }} media"
-              itemprop="image"
-              {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}>
-              <img itemprop = "image" 
-                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw" src="{{ article.image | img_url: '1100x' }}" width="{{ article.image.width }}" height="{{ article.image.height }}" alt="{{ article.image.alt | escape }}">
+            <div class="article-template__hero-{{ block.settings.image_height }} media" itemprop="image" {% if block.settings.image_height == 'adapt' and article.image %} style="padding-bottom: {{ 1 | divided_by: article.image.aspect_ratio | times: 100 }}%;"{% endif %}>
+              <img itemprop = "image" sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 }}px, (min-width: 750px) calc(100vw - 10rem), 100vw" src="{{ article.image | img_url: '1100x' }}" width="{{ article.image.width }}" height="{{ article.image.height }}" alt="{{ article.image.alt | escape }}">
             </div></div>      
           {%- else -%}
           {{ 'lifestyle-1' | placeholder_svg_tag: 'post-placeholder 450X450' }}
@@ -22,19 +19,14 @@
           <header class="page-width page-width--narrow article-post" {{ block.shopify_attributes }} >
             <h1 class="article-template__title" style ="text-transform:{{ block.settings.header_transform }} !important" itemprop="headline">{{ article.title | escape }}</h1>
             <div class ="top-col">
-           
-              {% if article.metafields.custom.author_image  %}
-                <img src ="{{ article.metafields.custom.author_image }}" width="30" height = "30" style = "border-radius:100%" > 
-                {% else %}
-                <img src ="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvisdrift_icon_8dc3db4c-44ad-41a2-8e72-cbd10511fcf2.png?v=1712042942" width="30" height = "30">
+              {% if article.metafields.custom.author_image  %} <img src ="{{ article.metafields.custom.author_image }}" width="30" height = "30" style = "border-radius:100%" > 
+                {% else %} <img src ="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvisdrift_icon_8dc3db4c-44ad-41a2-8e72-cbd10511fcf2.png?v=1712042942" width="30" height = "30">
                 {% endif %} 
-                
                  {%- if article.metafields.custom.date_remove == true -%}
                 <span class = "uppercase replaced-date"> {{ article.author | link_to:article.author.url }}</span>
                    {%- else -%}
                     {%- if article.published_at != blank -%}
-                <span class="circle-divider caption-with-letter-spacing article-date" >{{ article.published_at | date: "%d %B %Y" }}</span>
-               {%- else -%}
+                <span class="circle-divider caption-with-letter-spacing article-date" >{{ article.published_at | date: "%d %B %Y" }}</span> {%- else -%}
               <span class = "uppercase"> {{ article.author | link_to:article.author.url }}</span>
             {%- endif -%}
               {%- endif -%}
@@ -42,8 +34,7 @@
             <h3 class = "article-met-desctription">{{ article.excerpt | strip_html | truncatewords: 30 }}</h3>
           </header>
         {%- when 'content'-%}
-      <span itemprop="author" itemscope itemtype="https://schema.org/Person">
-      <p itemprop= "name"><a href = "https://magneticcreative.com/" style = "color:#00000000" itemprop= "url"  >{{ article.author}}</a></p>
+      <span itemprop="author" itemscope itemtype="https://schema.org/Person"> <p itemprop= "name"><a href = "https://magneticcreative.com/" style = "color:#00000000" itemprop= "url"  >{{ article.author}}</a></p>
       </span>
           <div class="article-template__content page-width page-width--narrow rte" itemprop="articleBody" {{ block.shopify_attributes }}>
               {{ article.content }}
@@ -112,7 +103,7 @@
       </div>
         <p class = "article-button"><a href = "{{ blog.url }}">VIEW ALL ARTICLES</a></p>
 {%- endpaginate -%}        
-  {%- if blog.comments_enabled? -%}
+  {%- if blog.comments_enabled -%}
     <div class="article-template__comment-wrapper comment-background">
       <div id="comments" class="page-width page-width--narrow">
         {%- if article.comments_count > 0 -%}
@@ -140,7 +131,6 @@
             </div>
           {% endpaginate %}
         {%- endif -%}
-
         {% assign blog.moderated = true %}
         {% form 'new_comment', article %}
           {%- liquid
@@ -152,9 +142,7 @@
           <h2>{{ 'blogs.article.comment_form_title' | t }}</h2>
           {%- if form.errors -%}
             <div class="form__message" role="alert">
-              <h3 class="form-status form-status-color caption-large" tabindex="-1" autofocus>
-                {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }}
-              </h3>
+              <h3 class="form-status form-status-color caption-large" tabindex="-1" autofocus> {% render 'icon-error' %} {{ 'templates.contact.form.error_heading' | t }} </h3>
             </div>
             <ul class="form-status-list caption-large">
               {%- for field in form.errors -%}
@@ -174,9 +162,7 @@
                 <input type="text" name="comment[author]" id="CommentForm-author" class="field__input" autocomplete="name" value="{{ form.author }}" aria-required="true" {% if form.errors contains 'author' %} aria-invalid="true" aria-describedby="CommentForm-author-error" {% endif %} placeholder="{{ 'blogs.article.name' | t }}" >
                 <label class="field__label" for="CommentForm-author">{{ 'blogs.article.name' | t }} <span aria-hidden="true">*</span></label>
                 {%- if form.errors contains 'author' -%}
-                  <small id="CommentForm-author-error">
-                    <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.name' | t }} {{ form.errors.messages['author'] }}.</span>
-                  </small>
+                  <small id="CommentForm-author-error"> <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.name' | t }} {{ form.errors.messages['author'] }}.</span> </small>
                 {%- endif -%}
               </div>
               <div class="field field--with-error">
@@ -184,9 +170,7 @@
                   {% if form.errors contains 'email' %} aria-invalid="true" aria-describedby="CommentForm-email-error" {% endif %} placeholder="{{ 'blogs.article.email' | t }}">
                 <label class="field__label" for="CommentForm-email">{{ 'blogs.article.email' | t }} <span aria-hidden="true">*</span></label>
                 {%- if form.errors contains 'email' -%}
-                  <small id="CommentForm-email-error">
-                    <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.email' | t }} {{ form.errors.messages['email'] }}.</span>
-                  </small>
+                  <small id="CommentForm-email-error"> <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.email' | t }} {{ form.errors.messages['email'] }}.</span> </small>
                 {%- endif -%}
               </div>
             </div>
@@ -195,9 +179,7 @@
                 <label class="form__label field__label" for="CommentForm-body">{{ 'blogs.article.message' | t }} <span aria-hidden="true">*</span></label>
             </div>
             {%- if form.errors contains 'body' -%}
-              <small id="CommentForm-body-error">
-                <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.message' | t }} {{ form.errors.messages['body'] }}.</span>
-              </small>
+              <small id="CommentForm-body-error"> <span class="form__message">{% render 'icon-error' %}{{ 'blogs.article.message' | t }} {{ form.errors.messages['body'] }}.</span> </small>
             {%- endif -%}
           </div>
           {%- if blog.moderated? -%}
