@@ -70,7 +70,7 @@
         </div>
       </div>
     </section>
-
+{% comment %}
     {%- if section.settings.logo_position == 'top-center' or section.settings.menu == blank -%}
       <details-modal class="header__search">
         <details>
@@ -141,6 +141,9 @@
         </details>
       </details-modal>
     {%- endif -%}
+
+    {% endcomment %}
+    
     <h1 class="header__heading">
       <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
         <img src="{{ 'Navbar_logo.svg' | asset_url }}" loading="lazy" class="header__heading-logo" alt="{{ shop.name }}">
