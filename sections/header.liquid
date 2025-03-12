@@ -1,7 +1,6 @@
-<link rel="stylesheet" href="{{ 'header.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'header.css' | asset_url | stylesheet_tag: preload: true }}
 {%- if settings.predictive_search_enabled -%}
-  <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
-  <link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
+  <link rel="stylesheet" href="{{ 'search-bar.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 <noscript>{{ 'header.css' | asset_url | stylesheet_tag }}</noscript>
 <style>
