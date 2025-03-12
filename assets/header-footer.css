@@ -537,7 +537,7 @@ cart-remove-button .icon-remove {
 .cart-item__error-text:empty + svg {
   display: none;
 }
-
+/*
 .product-option {
   color: rgba(var(--color-foreground), 0.7);
 }
@@ -554,7 +554,7 @@ cart-remove-button .icon-remove {
 .cart-items thead th {
   text-transform: uppercase;
 }
-
+*/
 @media screen and (max-width: 749px) {
   .cart-items,
   .cart-items thead,
@@ -731,6 +731,7 @@ summary.list-menu__item{
 .header__inline-submenu .list-menu .main-link-login:last-of-type{
   margin-right:32px
 }
+/*
 .newsletter-form {
   display: flex;
   flex-direction: column;
@@ -821,7 +822,7 @@ summary.list-menu__item{
   padding-top: 1rem;
   padding-left: 0;
 }
-
+*/
 @media screen and (min-width: 750px) {
   .list-payment {
     justify-content: flex-end;
