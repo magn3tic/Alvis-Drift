@@ -133,9 +133,9 @@
               {%- if settings.predictive_search_enabled -%}
                 </predictive-search>
               {%- endif -%} 
-              <button type="button" class="modal__close-button link link--text focus-inset" aria-label="{{ 'accessibility.close' | t }}">
-                {% render icon-close.liquid %}
-              </button>
+              
+                {% render 'icon-close' %}
+            
             </div>
           </div>
         </details>
