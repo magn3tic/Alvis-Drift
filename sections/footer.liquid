@@ -2,7 +2,6 @@
 
 {{ 'footer.css' | asset_url | stylesheet_tag:preload:true }}
 
-
 <footer class="footer color-{{ section.settings.color_scheme }} gradient">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
   <div class="footer__content-top">
