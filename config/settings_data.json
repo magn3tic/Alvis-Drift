@@ -26,7 +26,7 @@
     "social_youtube_link": "https://www.youtube.com/c/AlvisdriftCoZa",
     "predictive_search_enabled": true,
     "favicon": "shopify://shop_images/Alvis_Fabicon.png",
-    "member-discount": "enable",
+    "member-discount": "disable",
     "product_list": [
       "voucher",
       "exclusive-butter-tree-viognier-2023",
