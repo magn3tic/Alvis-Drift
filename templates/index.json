@@ -27,7 +27,6 @@
       "blocks": {
         "slider_MQBTbV": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Website_banner_sustainability.png",
             "sec_banner": "shopify://shop_images/Main_sustainability.png",
@@ -67,6 +66,7 @@
         },
         "slider_6hLWbw": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis-Drift-Harvest-Sale-March.jpg",
             "image_overlay": "",
