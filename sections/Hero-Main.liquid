@@ -9,7 +9,9 @@
 
 {% for block in section.blocks %}
  <div class="hero-section">
-  <img class="hero-section-bg" src="{{ block.settings.background_image | img_url:'master' | image_tag: preload: true }}" sizes="(max-width: 768px) 100vw, 80vw"  width="{{ block.settings.background_image.width }}" height = "{{ block.settings.background_image.height }}" alt ="{{ block.settings.background_image.image.alt }}">
+
+
+  <img class="hero-section-bg" src="{{ block.settings.background_image | img_url:'master' }}" loading="eager" sizes="(max-width: 768px) 100vw, 80vw"  width="{{ block.settings.background_image.width }}" height = "{{ block.settings.background_image.height }}" alt ="{{ block.settings.background_image.image.alt }}">
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
     {% assign opacity = block.settings.overlay_opacity %}       
