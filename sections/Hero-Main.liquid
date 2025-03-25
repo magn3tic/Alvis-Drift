@@ -9,22 +9,27 @@
 
 {% for block in section.blocks %}
  <div class="hero-section">
-   {%- if block.settings.background_image and block.settings.mobile_background_image -%}
+  {% if block.settings.background_image and block.settings.mobile_background_image %}
   <picture>
-    <source media="(max-width:768px)" srcset="{{ block.settings.mobile_background_image | image_url: width: 800 }} }}">
    <img class="hero-section-bg mobile"
     src="{{ block.settings.background_image | img_url:'master' }}"
+    srcset="
+     {{ block.settings.mobile_background_image | img_url: width: 480 }} 480w,
+     {{ block.settings.mobile_background_image | image_url: width: 786 }} 768w,
+     {{ block.settings.mobile_background_image | img_url: width:900 }} 900w,
+     {{ block.settings.background_image | img_url: width:1920 }} 1920w" 
+    sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 900px) 100vw, auto"
     width="{{ block.settings.background_image.width }}" 
     height = "{{ block.settings.background_image.height }}" 
     alt ="{{ block.settings.background_image.image.alt }}">
   </picture>
-     {%- elsif block.settings.background_image -%}
-   <img class="hero-section-bg"
+   {% elsif block.settings.background_image %}
+  <img class="hero-section-bg"
     src="{{ block.settings.background_image | img_url:'master' }}"
     width="{{ block.settings.background_image.width }}" 
     height = "{{ block.settings.background_image.height }}" 
     alt ="{{ block.settings.background_image.image.alt }}">
-  {%- endif -%}
+   {% endif %}
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
     {% assign opacity = block.settings.overlay_opacity %}       
@@ -113,6 +118,11 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_background_image",
+      "label": "Background Image for Mobile Screens"
     },
     {
       "type": "color",
@@ -220,11 +230,6 @@
           "type": "image_picker",
           "id": "background_image",
           "label": "Background Image"
-        },
-        {
-          "type": "image_picker",
-          "id": "mobile_background_image",
-          "label": "Mobile Background Image"
         },
         {
         "type": "image_picker",
