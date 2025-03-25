@@ -34,7 +34,7 @@
               </div>
               <div class="product-title"><div class="sp-t"><a href="{{ product.url }}">{{ product.title }}</a></div></div>              
         {% if settings.member-discount == "enable" %}
-              {% if lowertags contains 'silver'%}
+              {% if lowertags contains 'silver1'%}
             {% if excluded_product_ids contains product.id %}
                  <div class="product-price excluded-disount">
                   {{ product.price | money | remove: '.00' | replace: ",", " " }}
@@ -92,7 +92,7 @@
                   {% endif %}
              {% endif %}
                 
-              {% elsif lowertags contains 'gold'%}
+              {% elsif lowertags contains 'gold1'%}
             {% if excluded_product_ids contains product.id %}
               {% if product.compare_at_price > product.price  %}
                   <div class="product-price">
@@ -127,7 +127,7 @@
                 
                 {% else %}
               <div class="product-price included-disount_5">
-               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
+               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}.</span>
                   {{ product.price |times:0.9444 | money | remove: '.00' | replace: ",", " " }}
               </div>
               {% endif %}
