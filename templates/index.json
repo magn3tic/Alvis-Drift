@@ -27,6 +27,7 @@
       "blocks": {
         "slider_MQBTbV": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Website_banner_sustainability.png",
             "sec_banner": "shopify://shop_images/Main_sustainability.png",
@@ -47,21 +48,20 @@
         },
         "slider_DGjHhf": {
           "type": "slider",
-          "disabled": true,
           "settings": {
-            "background_image": "shopify://shop_images/Alvis-Drift-Harvest-Sale-March-2025.jpg",
+            "background_image": "shopify://shop_images/Website_banner_Harvest_sale_1.png",
             "image_overlay": "",
             "overlay_opacity": 0,
             "Heading_color": "#ffffff",
             "video_banner": "",
-            "paragarh_p1": "",
-            "paragarh_p2": "",
-            "paragarh_p3": "",
+            "paragarh_p1": "SHOP THE",
+            "paragarh_p2": "HARVEST",
+            "paragarh_p3": "SALE",
             "paragarh_p4": "",
             "paragarh_1": "",
             "paragarh_2": "",
-            "side_btn_text": "",
-            "side_btn_link": ""
+            "side_btn_text": "Shop Now",
+            "side_btn_link": "shopify://collections/all-products"
           }
         },
         "slider_6hLWbw": {
