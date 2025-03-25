@@ -31,6 +31,7 @@
     {{ block.settings.mobile_background_image | asset_url | img_url: 'master'}} 900w,
      {{ block.settings.background_image | asset_url | img_url: 'master' }} 1920w"
     loading="eager" 
+      sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 900px) 100vw, auto"
     width="{{ block.settings.background_image.width }}" 
     height = "{{ block.settings.background_image.height }}" 
     alt ="{{ block.settings.background_image.image.alt }}">
