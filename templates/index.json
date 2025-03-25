@@ -33,13 +33,13 @@
             "overlay_opacity": 30,
             "Heading_color": "#ffffff",
             "video_banner": "",
-            "paragarh_p1": "",
-            "paragarh_p2": "",
+            "paragarh_p1": "SHOP THE",
+            "paragarh_p2": "HARVEST SALE",
             "paragarh_p3": "",
             "paragarh_p4": "",
             "paragarh_1": "",
             "paragarh_2": "",
-            "side_btn_text": "",
+            "side_btn_text": "Shop Now",
             "side_btn_link": "shopify://pages/club"
           }
         },
