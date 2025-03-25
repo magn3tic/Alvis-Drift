@@ -25,7 +25,6 @@
     "1639717679a92fb59c": {
       "type": "Hero-Main",
       "blocks": {
-<<<<<<< HEAD
         "slider_TgUF3x": {
           "type": "slider",
           "settings": {
@@ -41,11 +40,9 @@
             "paragarh_1": "",
             "paragarh_2": "",
             "side_btn_text": "Shop Now",
-            "side_btn_link": "shopify://pages/club"
+            "side_btn_link": "https://alvisdrift.co.za/collections/all-wines"
           }
         },
-=======
->>>>>>> main
         "slider_MQBTbV": {
           "type": "slider",
           "disabled": true,
@@ -67,65 +64,6 @@
             "side_btn_link": "shopify://pages/sustainability"
           }
         },
-<<<<<<< HEAD
-=======
-        "slider_DGjHhf": {
-          "type": "slider",
-          "settings": {
-            "background_image": "shopify://shop_images/Website_banner_Harvest_sale_1.png",
-            "image_overlay": "",
-            "overlay_opacity": 0,
-            "Heading_color": "#ffffff",
-            "video_banner": "",
-            "paragarh_p1": "SHOP THE",
-            "paragarh_p2": "HARVEST",
-            "paragarh_p3": "SALE",
-            "paragarh_p4": "",
-            "paragarh_1": "",
-            "paragarh_2": "",
-            "side_btn_text": "Shop Now",
-            "side_btn_link": "https://alvisdrift.co.za/collections/all-wines"
-          }
-        },
-        "slider_6hLWbw": {
-          "type": "slider",
-          "disabled": true,
-          "settings": {
-            "background_image": "shopify://shop_images/Alvis-Drift-Harvest-Sale-March.jpg",
-            "image_overlay": "",
-            "overlay_opacity": 0,
-            "Heading_color": "#ffffff",
-            "video_banner": "",
-            "paragarh_p1": "",
-            "paragarh_p2": "",
-            "paragarh_p3": "",
-            "paragarh_p4": "",
-            "paragarh_1": "",
-            "paragarh_2": "",
-            "side_btn_text": "",
-            "side_btn_link": ""
-          }
-        },
-        "slider_TgUF3x": {
-          "type": "slider",
-          "disabled": true,
-          "settings": {
-            "background_image": "shopify://shop_images/Website_banner_flash_sale.png",
-            "image_overlay": "",
-            "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
-            "video_banner": "",
-            "paragarh_p1": "",
-            "paragarh_p2": "",
-            "paragarh_p3": "",
-            "paragarh_p4": "",
-            "paragarh_1": "",
-            "paragarh_2": "",
-            "side_btn_text": "Join the club",
-            "side_btn_link": "shopify://pages/club"
-          }
-        },
->>>>>>> main
         "slider_3t3cqR": {
           "type": "slider",
           "disabled": true,
@@ -489,15 +427,8 @@
         }
       },
       "block_order": [
-<<<<<<< HEAD
         "slider_TgUF3x",
         "slider_MQBTbV",
-=======
-        "slider_MQBTbV",
-        "slider_DGjHhf",
-        "slider_6hLWbw",
-        "slider_TgUF3x",
->>>>>>> main
         "slider_3t3cqR",
         "slider_9rWmfX",
         "slider_Jwh6Cn",
@@ -521,11 +452,7 @@
       "settings": {
         "background_image": "shopify://shop_images/hero-secton-bg.png",
         "image_overlay": "#ffffff",
-<<<<<<< HEAD
         "overlay_opacity": 30,
-=======
-        "overlay_opacity": 0,
->>>>>>> main
         "Heading_color": "#2e112d",
         "video_banner": "",
         "paragarh_p1": "TASTE",
@@ -535,11 +462,7 @@
         "paragarh_1": "Welcome to Alvi’s Drift – Home of Award-Winning South African wines",
         "paragarh_2": "Since 1928 Alvi’s Drift has dared to pursue its true passion for exceptional quality South African wines that express the story of this unique, temperate wine farm nestled in the mountains just outside of Cape Town.",
         "btn_text": "Shop now",
-<<<<<<< HEAD
         "btn_link": "shopify://collections/all-products",
-=======
-        "btn_link": "https://alvisdrift.co.za/collections/all-wines",
->>>>>>> main
         "btn_main_link": ""
       }
     },
