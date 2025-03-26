@@ -21,9 +21,6 @@
      {{ block.settings.background_image | img_url: 'master' }} 1920w" 
     sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 900px) 100vw, (max-width: 1300px) 100vw, auto"
     fetchpriority="high"
-    width="1521" 
-    height = "{{ block.settings.background_image.height }}" 
- 
     alt ="{{ block.settings.background_image.image.alt }}">
   </picture>
    {% elsif block.settings.background_image %}
