@@ -15,7 +15,7 @@
     src="{{ block.settings.background_image | img_url:'master' }}"
     srcset="
      {{ block.settings.mobile_background_image | img_url: 'master' }} 480w,
-     {{ block.settings.mobile_background_image | image_url: 'master' }} 768w,
+     {{ block.settings.mobile_background_image | img_url: 'master' }} 768w,
      {{ block.settings.mobile_background_image | img_url: 'master' }} 900w,
      {{ block.settings.background_image | img_url: 'master' }} 1920w" 
     sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 900px) 100vw, auto"
