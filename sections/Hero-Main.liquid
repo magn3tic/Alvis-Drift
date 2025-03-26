@@ -21,13 +21,9 @@
      {{ block.settings.background_image | img_url: 'master' }} 1920w" 
     sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 900px) 100vw, (max-width: 1300px) 100vw, auto"
     fetchpriority="high"
-     {% if block.settings.background_image and block.settings.mobile_background_image %}
-    width="400" 
-    height = "500" 
-     {% else %}
-       width="{{ block.settings.background_image.width }}" 
-    height = "{{ block.settings.background_image.height }}" 
-     {% endif %}
+    width="1521" 
+    height = "376" 
+ 
     alt ="{{ block.settings.background_image.image.alt }}">
   </picture>
    {% elsif block.settings.background_image %}
