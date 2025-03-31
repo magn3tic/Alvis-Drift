@@ -223,11 +223,11 @@
     "multiple_posts_bEX3QG": {
       "type": "Multiple-Posts",
       "settings": {
-        "heading": "sdf",
+        "heading": "",
         "text_transform": "uppercase",
         "blog_show_tags": true,
         "blog": "alvis-drift",
-        "post_limit": 3,
+        "post_limit": 9,
         "show_image": true,
         "show_date": false,
         "show_author": false,
