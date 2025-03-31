@@ -75,6 +75,36 @@
         "new_tab": true
       }
     },
+    "164388456995a70c72": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Wine-Farm_2da4f31d-0010-4750-bedd-ff67420eb79c.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "Forgotten Vineyard",
+        "video-sec-content-txt-1": "<p>It is to this remarkable combination of climate, soils, and topography, together with an abundance of water from the Breede River, that Alvi’s Drift wines owe their distinctive, fruit-driven character and complexity. Elegantly expressing the extraordinary terroir of their vineyards, Alvi’s Drift wines are infused with a true sense of place, along with the passion of all who brought them into being.</p>",
+        "button-txt": "MORE ABOUT OUR CELLAR",
+        "button_link": "shopify://pages/cellar",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639686778727cf64f": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Landscape.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "Remarkable Legacy",
+        "video-sec-content-txt-1": "<p>Although the fertile Breede River Valley is known for its high summer temperatures, the Scherpenheuvel wine ward in the region’s southern reaches contains cooler pockets – the result of unique microclimates caused by the area’s topography.</p><p>Here, the diurnal swing (the difference between night-time and daytime temperatures) places it in Winkler Summation II, the same category as some of France’s Bordeaux region.</p><p>Our cooler microclimate is ideal for the production of Chenin Blanc, Viognier, and Pinotage – the wines which form the cornerstone of our winery’s award-winning portfolio.</p>",
+        "button-txt": "MORE ABOUT OUR FARM",
+        "button_link": "shopify://pages/farm",
+        "button_type": "alvisBtn"
+      }
+    },
     "collections_grid_7dMhcr": {
       "type": "Collections-Grid",
       "blocks": {
@@ -95,60 +125,14 @@
         "active_collection": "icon-range"
       }
     },
-    "1639686778727cf64f": {
-      "type": "Focus-Text-Image-Left",
+    "range_intro_gGEgh3": {
+      "type": "Range-Intro",
       "settings": {
-        "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Landscape.jpg",
-        "image_size": "100%",
-        "video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#f8f2e6",
-        "title": "An Ideal Location",
-        "video-sec-content-txt-1": "<p>Although the fertile Breede River Valley is known for its high summer temperatures, the Scherpenheuvel wine ward in the region’s southern reaches contains cooler pockets – the result of unique microclimates caused by the area’s topography.</p><p>Here, the diurnal swing (the difference between night-time and daytime temperatures) places it in Winkler Summation II, the same category as some of France’s Bordeaux region.</p><p>Our cooler microclimate is ideal for the production of Chenin Blanc, Viognier, and Pinotage – the wines which form the cornerstone of our winery’s award-winning portfolio.</p>",
-        "button-txt": "MORE ABOUT OUR FARM",
-        "button_link": "shopify://pages/farm",
-        "button_type": "alvisBtn"
-      }
-    },
-    "1639685778f5f5e362": {
-      "type": "Focus-Text-Text-Only",
-      "settings": {
-        "text_transform": "uppercase",
-        "Heading_color": "#ffffff",
-        "title": "",
-        "subtitle-1": "<p><strong>“We have sandy soils from the ancient riverbanks, granite, shale, red Karoo soils, even black slate. On the southern slopes across the river, you’ll find the hard, red calcareous soil, also known as dorbank, that the Breede River Valley is so famous for. Dotted around, you'll also encounter ancient limestone banks, brought to the surface by termites during the Jurassic period. These limestone banks are where we cultivate our Sauvignon Blanc. The Chardonnay and Pinot Noir vineyards are planted on a combination of south-facing ancient shale and black slate slopes and are the birthplace of our internationally acclaimed Cap Classique sparkling wines.\"</strong></p>",
-        "subtitle-2": "<p>- Junel van der Merwe -</p>",
-        "button_text": "",
-        "button_link": "",
-        "new_tab": true
-      }
-    },
-    "164388456995a70c72": {
-      "type": "Focus-Text-Image-Right",
-      "settings": {
-        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Wine-Farm_2da4f31d-0010-4750-bedd-ff67420eb79c.jpg",
-        "right_video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#f8f2e6",
-        "title": "UNIQUE TERROIR",
-        "video-sec-content-txt-1": "<p>It is to this remarkable combination of climate, soils, and topography, together with an abundance of water from the Breede River, that Alvi’s Drift wines owe their distinctive, fruit-driven character and complexity. Elegantly expressing the extraordinary terroir of their vineyards, Alvi’s Drift wines are infused with a true sense of place, along with the passion of all who brought them into being.</p>",
-        "button-txt": "MORE ABOUT OUR CELLAR",
-        "button_link": "shopify://pages/cellar",
-        "button_type": "alvisBtn"
-      }
-    },
-    "1639685206e6643b66": {
-      "type": "Focus-Text-Text-Only",
-      "settings": {
-        "text_transform": "uppercase",
-        "Heading_color": "#ffffff",
-        "title": "",
-        "subtitle-1": "<p><strong>“Years ago, we conducted a climate study and learnt that, on average, this region is about one-and-a-half degrees cooler than Stellenbosch. This got me excited. I knew our microclimate meant that great wines could be produced right here.”</strong></p>",
-        "subtitle-2": "<p><em>- Alvi van der Merwe -</em></p>",
-        "button_text": "",
-        "button_link": "",
-        "new_tab": true
+        "bg_image": "shopify://shop_images/Alvis_Drift_19_meatl_awards_Wines.png",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "Sub_title": "Pre-Heading",
+        "title": "sf",
+        "description": "sf"
       }
     },
     "call_to_action_iaXjc6": {
@@ -211,15 +195,6 @@
       "settings": {
         "heading": "Videos",
         "background-colour": "#f6efe4"
-      }
-    },
-    "range_intro_gGEgh3": {
-      "type": "Range-Intro",
-      "settings": {
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "Sub_title": "Pre-Heading",
-        "title": "",
-        "description": ""
       }
     },
     "faq_YKyn3Y": {
@@ -381,17 +356,15 @@
     "1639603079ac59d760",
     "1639602940145c735b",
     "1643804444cae23036",
-    "collections_grid_7dMhcr",
-    "1639686778727cf64f",
-    "1639685778f5f5e362",
     "164388456995a70c72",
-    "1639685206e6643b66",
+    "1639686778727cf64f",
+    "collections_grid_7dMhcr",
+    "range_intro_gGEgh3",
     "call_to_action_iaXjc6",
     "blog_internal_AebLCE",
     "1639603063787a43d2",
     "multiple_posts_grXLp4",
     "video_grid_ynFH8Q",
-    "range_intro_gGEgh3",
     "faq_YKyn3Y",
     "164180587911600050"
   ]
