@@ -381,6 +381,89 @@
         "title_text": "",
         "Heading_color": "#f8f2e6"
       }
+    },
+    "blog_external_bazwtY": {
+      "type": "Blog-External",
+      "blocks": {
+        "article_rjE7NK": {
+          "type": "article",
+          "settings": {
+            "image": "shopify://shop_images/Alvis_Drift_wine_technology_used.png",
+            "title": "Title",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+            "link": ""
+          }
+        },
+        "article_MdrFnt": {
+          "type": "article",
+          "settings": {
+            "image": "shopify://shop_images/Alvis_Drift_wine_making_Tech.png",
+            "title": "Title",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "article_rjE7NK",
+        "article_MdrFnt"
+      ],
+      "settings": {
+        "external_link": "",
+        "hs_form_id": "",
+        "hs_form_portal_id": ""
+      }
+    },
+    "blog_internal_kc8UTE": {
+      "type": "Blog-Internal",
+      "blocks": {
+        "item_KPFeBi": {
+          "type": "item",
+          "settings": {
+            "article_image_1": "shopify://shop_images/Alvid_DRift_221_Chenin_Blanc_Top_wines.png",
+            "article_text_1": "sdfsdf",
+            "article_content": "<p>sdfsdf</p>",
+            "artilce_link": ""
+          }
+        },
+        "item_xz7L9C": {
+          "type": "item",
+          "settings": {
+            "article_image_1": "shopify://shop_images/Alvis_Drift_e-commerce_shopping.png",
+            "article_text_1": "dfsdf",
+            "article_content": "<p>sdfsdgsdgsd</p>",
+            "artilce_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_KPFeBi",
+        "item_xz7L9C"
+      ],
+      "settings": {
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "multiple_posts_piqiwa": {
+      "type": "Multiple-Posts",
+      "settings": {
+        "heading": "Blog Posts",
+        "text_transform": "none",
+        "blog_show_tags": false,
+        "blog": "alvis-drift",
+        "post_limit": 6,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
+    "spacer_3HKNPp": {
+      "type": "Spacer",
+      "settings": {
+        "spacer_size": "25px"
+      }
     }
   },
   "order": [
@@ -388,6 +471,7 @@
     "1639603079ac59d760",
     "1639602940145c735b",
     "1643804444cae23036",
+    "spacer_3HKNPp",
     "164388456995a70c72",
     "1639686778727cf64f",
     "collections_grid_7dMhcr",
@@ -397,6 +481,9 @@
     "call_to_action_iaXjc6",
     "multiple_posts_bEX3QG",
     "1639603063787a43d2",
-    "164180587911600050"
+    "164180587911600050",
+    "blog_external_bazwtY",
+    "blog_internal_kc8UTE",
+    "multiple_posts_piqiwa"
   ]
 }
