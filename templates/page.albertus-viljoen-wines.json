@@ -17,7 +17,27 @@
     "1639603079ac59d760": {
       "type": "Page-Background-Colour",
       "settings": {
-        "page_bg": "#480115"
+        "page_bg": "#712f1f"
+      }
+    },
+    "collections_grid_7dMhcr": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "item_KMq8ih": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "icon-range"
+          }
+        }
+      },
+      "block_order": [
+        "item_KMq8ih"
+      ],
+      "settings": {
+        "topheading": "",
+        "subtitle-1": "",
+        "active_collection": "icon-range"
       }
     },
     "1639602940145c735b": {
@@ -131,6 +151,18 @@
         "new_tab": true
       }
     },
+    "call_to_action_iaXjc6": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
     "blog_internal_AebLCE": {
       "type": "Blog-Internal",
       "blocks": {
@@ -158,6 +190,50 @@
         "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
         "Heading_color": "#c65336",
         "hs_form_portal_id": "25422535"
+      }
+    },
+    "multiple_posts_grXLp4": {
+      "type": "Multiple-Posts",
+      "settings": {
+        "heading": "Blog Posts",
+        "text_transform": "uppercase",
+        "blog_show_tags": true,
+        "blog": "alvis-drift",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
+    "video_grid_ynFH8Q": {
+      "type": "Video-Grid",
+      "settings": {
+        "heading": "Videos",
+        "background-colour": "#f6efe4"
+      }
+    },
+    "range_intro_gGEgh3": {
+      "type": "Range-Intro",
+      "settings": {
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "Sub_title": "Pre-Heading",
+        "title": "",
+        "description": ""
+      }
+    },
+    "faq_YKyn3Y": {
+      "type": "Faq",
+      "settings": {
+        "background_color": "",
+        "title_color": "",
+        "question_color": "",
+        "Answer_color": "",
+        "title": "Got questions?",
+        "content": "<p>Have a look in our useful FAQ section to find the answers to often-asked questions that may help you too.</p>",
+        "color": "foreground-accent-2",
+        "btn_text": "MORE",
+        "btn_link": ""
       }
     },
     "164180587911600050": {
@@ -298,20 +374,6 @@
         "title_text": "",
         "Heading_color": "#f8f2e6"
       }
-    },
-    "multiple_posts_grXLp4": {
-      "type": "Multiple-Posts",
-      "settings": {
-        "heading": "Blog Posts",
-        "text_transform": "uppercase",
-        "blog_show_tags": true,
-        "blog": "alvis-drift",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false
-      }
     }
   },
   "order": [
@@ -319,13 +381,18 @@
     "1639603079ac59d760",
     "1639602940145c735b",
     "1643804444cae23036",
+    "collections_grid_7dMhcr",
     "1639686778727cf64f",
     "1639685778f5f5e362",
     "164388456995a70c72",
     "1639685206e6643b66",
+    "call_to_action_iaXjc6",
     "blog_internal_AebLCE",
     "1639603063787a43d2",
-    "164180587911600050",
-    "multiple_posts_grXLp4"
+    "multiple_posts_grXLp4",
+    "video_grid_ynFH8Q",
+    "range_intro_gGEgh3",
+    "faq_YKyn3Y",
+    "164180587911600050"
   ]
 }
