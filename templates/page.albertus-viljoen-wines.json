@@ -26,17 +26,17 @@
         "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Alvi_s-Drift-Vineyards.jpg",
+            "background_image": "shopify://shop_images/Alvis-Drift-Albertus-Viljoen-Icon-Range.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
             "Heading_color": "#ffffff",
             "video_banner": "",
-            "paragarh_p1": "OUR",
-            "paragarh_p2": "VINEYARDS",
+            "paragarh_p1": "ICON",
+            "paragarh_p2": "RANGE",
             "paragarh_p3": "",
             "paragarh_p4": "",
-            "paragarh_1": "Scherpenheuvel is at the southernmost tip of the Breede River Valley’s Worcester wine district",
-            "paragarh_2": "With 410 hectares of vineyards blessed with some of the greatest soil diversity in the region, we consistently produce internationally recognised, award-winning white, red, rosé, Cap Classique and sparkling wines.",
+            "paragarh_1": "Albertus Viljoen Wines",
+            "paragarh_2": "Named after our family patriarch, our Icon range Albertus Viljoen wines showcase the best of our harvest: full-bodied, barrel-fermented wines of remarkable character and complexity.",
             "side_btn_text": "",
             "side_btn_link": ""
           }
@@ -131,37 +131,24 @@
         "new_tab": true
       }
     },
-    "1643794595b4d301ff": {
-      "type": "Blog-External",
+    "blog_internal_AebLCE": {
+      "type": "Blog-Internal",
       "blocks": {
-        "4dc1d180-e058-4d4d-a575-cfad5d5f5445": {
-          "type": "article",
+        "item_TTrE7m": {
+          "type": "item",
           "settings": {
-            "image": "shopify://shop_images/Buying_Wine_Online.jpg",
-            "title": "Your Complete Guide to Buying Wine Online",
-            "content": "<p>Buying wine online saves you time and money. We asked Fiona Rossiter, founder of Inspired Living, to share tips on all the points you need to consider.</p>",
-            "link": ""
-          }
-        },
-        "8a45375e-3a0a-4c28-90e4-aedafa06d63e": {
-          "type": "article",
-          "settings": {
-            "image": "shopify://shop_images/shutterstock_1751876834.png",
-            "title": "",
-            "content": "<p>Learn more about international wine trends, read our interesting wine-related articles and get top tips from wine experts from around the globe.</p>",
-            "link": "https://blog.alvisdrift.co.za"
+            "article_text_1": "",
+            "article_content": "",
+            "artilce_link": ""
           }
         }
       },
       "block_order": [
-        "4dc1d180-e058-4d4d-a575-cfad5d5f5445",
-        "8a45375e-3a0a-4c28-90e4-aedafa06d63e"
+        "item_TTrE7m"
       ],
-      "disabled": true,
       "settings": {
-        "external_link": "https://blog.alvisdrift.co.za",
-        "hs_form_id": "",
-        "hs_form_portal_id": ""
+        "button_text": "",
+        "button_link": ""
       }
     },
     "1639603063787a43d2": {
@@ -311,6 +298,20 @@
         "title_text": "",
         "Heading_color": "#f8f2e6"
       }
+    },
+    "multiple_posts_grXLp4": {
+      "type": "Multiple-Posts",
+      "settings": {
+        "heading": "Blog Posts",
+        "text_transform": "uppercase",
+        "blog_show_tags": true,
+        "blog": "alvis-drift",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false
+      }
     }
   },
   "order": [
@@ -322,8 +323,9 @@
     "1639685778f5f5e362",
     "164388456995a70c72",
     "1639685206e6643b66",
-    "1643794595b4d301ff",
+    "blog_internal_AebLCE",
     "1639603063787a43d2",
-    "164180587911600050"
+    "164180587911600050",
+    "multiple_posts_grXLp4"
   ]
 }
