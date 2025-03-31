@@ -147,24 +147,18 @@
         "btn-url": "shopify://pages/club"
       }
     },
-    "blog_internal_AebLCE": {
-      "type": "Blog-Internal",
-      "blocks": {
-        "item_TTrE7m": {
-          "type": "item",
-          "settings": {
-            "article_text_1": "",
-            "article_content": "",
-            "artilce_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_TTrE7m"
-      ],
+    "multiple_posts_grXLp4": {
+      "type": "Multiple-Posts",
       "settings": {
-        "button_text": "",
-        "button_link": ""
+        "heading": "Blog Posts",
+        "text_transform": "uppercase",
+        "blog_show_tags": false,
+        "blog": "alvis-drift",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
       }
     },
     "1639603063787a43d2": {
@@ -174,20 +168,6 @@
         "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
         "Heading_color": "#c65336",
         "hs_form_portal_id": "25422535"
-      }
-    },
-    "multiple_posts_grXLp4": {
-      "type": "Multiple-Posts",
-      "settings": {
-        "heading": "Blog Posts",
-        "text_transform": "uppercase",
-        "blog_show_tags": true,
-        "blog": "alvis-drift",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false
       }
     },
     "video_grid_ynFH8Q": {
@@ -361,9 +341,8 @@
     "collections_grid_7dMhcr",
     "range_intro_gGEgh3",
     "call_to_action_iaXjc6",
-    "blog_internal_AebLCE",
-    "1639603063787a43d2",
     "multiple_posts_grXLp4",
+    "1639603063787a43d2",
     "video_grid_ynFH8Q",
     "faq_YKyn3Y",
     "164180587911600050"
