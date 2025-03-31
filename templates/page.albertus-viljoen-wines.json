@@ -84,8 +84,8 @@
         "Heading_color": "#f8f2e6",
         "title": "Forgotten Vineyard",
         "video-sec-content-txt-1": "<p>It is to this remarkable combination of climate, soils, and topography, together with an abundance of water from the Breede River, that Alvi’s Drift wines owe their distinctive, fruit-driven character and complexity. Elegantly expressing the extraordinary terroir of their vineyards, Alvi’s Drift wines are infused with a true sense of place, along with the passion of all who brought them into being.</p>",
-        "button-txt": "MORE ABOUT OUR CELLAR",
-        "button_link": "shopify://pages/cellar",
+        "button-txt": "MORE ABOUT OUR VINEYARDS",
+        "button_link": "shopify://pages/vineyards",
         "button_type": "alvisBtn"
       }
     },
