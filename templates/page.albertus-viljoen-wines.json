@@ -458,12 +458,6 @@
         "show_author": false,
         "soft_background": false
       }
-    },
-    "spacer_3HKNPp": {
-      "type": "Spacer",
-      "settings": {
-        "spacer_size": "25px"
-      }
     }
   },
   "order": [
@@ -471,7 +465,6 @@
     "1639603079ac59d760",
     "1639602940145c735b",
     "1643804444cae23036",
-    "spacer_3HKNPp",
     "164388456995a70c72",
     "1639686778727cf64f",
     "collections_grid_7dMhcr",
