@@ -125,6 +125,37 @@
         "active_collection": "icon-range"
       }
     },
+    "video_grid_ynFH8Q": {
+      "type": "Video-Grid",
+      "blocks": {
+        "video_HNT34g": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "subheader": "Video 1",
+            "image_padding": false
+          }
+        },
+        "video_jFRYJL": {
+          "type": "video",
+          "settings": {
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "Describe the video for customers using screen readers",
+            "subheader": "Video 2",
+            "image_padding": false
+          }
+        }
+      },
+      "block_order": [
+        "video_HNT34g",
+        "video_jFRYJL"
+      ],
+      "settings": {
+        "heading": "Videos",
+        "background-colour": "#f6efe4"
+      }
+    },
     "range_intro_gGEgh3": {
       "type": "Range-Intro",
       "settings": {
@@ -168,13 +199,6 @@
         "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
         "Heading_color": "#c65336",
         "hs_form_portal_id": "25422535"
-      }
-    },
-    "video_grid_ynFH8Q": {
-      "type": "Video-Grid",
-      "settings": {
-        "heading": "Videos",
-        "background-colour": "#f6efe4"
       }
     },
     "faq_YKyn3Y": {
@@ -339,11 +363,11 @@
     "164388456995a70c72",
     "1639686778727cf64f",
     "collections_grid_7dMhcr",
+    "video_grid_ynFH8Q",
     "range_intro_gGEgh3",
     "call_to_action_iaXjc6",
     "multiple_posts_grXLp4",
     "1639603063787a43d2",
-    "video_grid_ynFH8Q",
     "faq_YKyn3Y",
     "164180587911600050"
   ]
