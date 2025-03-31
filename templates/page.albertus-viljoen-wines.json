@@ -20,26 +20,6 @@
         "page_bg": "#712f1f"
       }
     },
-    "collections_grid_7dMhcr": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "item_KMq8ih": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "icon-range"
-          }
-        }
-      },
-      "block_order": [
-        "item_KMq8ih"
-      ],
-      "settings": {
-        "topheading": "",
-        "subtitle-1": "",
-        "active_collection": "icon-range"
-      }
-    },
     "1639602940145c735b": {
       "type": "Hero-Main",
       "blocks": {
@@ -88,11 +68,31 @@
         "text_transform": "uppercase",
         "Heading_color": "#ffffff",
         "title": "",
-        "subtitle-1": "<p><strong>\"Our vineyards, situated in the cool-climate wine ward of Scherpenheuvel, are incredibly diverse. We have so many different soil types – and so many rootstocks – to choose from. Rootstocks for clay, for limestone, for shale, for sandy soils, all of them resulting in different flavours. Over the years, we’ve spent a lot of time finding out what works for us.”</strong></p>",
+        "subtitle-1": "\"Crafted for the discerning palate, our multi-award-winning Icon range wines stand shoulder-to-shoulder with the best in the world and exemplify our pursuit of excellence in all we do.”",
         "subtitle-2": "<p><em>- Alvi van der Merwe -</em></p>",
         "button_text": "",
         "button_link": "",
         "new_tab": true
+      }
+    },
+    "collections_grid_7dMhcr": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "item_KMq8ih": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "icon-range"
+          }
+        }
+      },
+      "block_order": [
+        "item_KMq8ih"
+      ],
+      "settings": {
+        "topheading": "",
+        "subtitle-1": "",
+        "active_collection": "icon-range"
       }
     },
     "1639686778727cf64f": {
