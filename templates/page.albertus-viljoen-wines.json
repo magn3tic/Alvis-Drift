@@ -65,7 +65,7 @@
     "1643804444cae23036": {
       "type": "Focus-Text-Text-Only",
       "settings": {
-        "text_transform": "uppercase",
+        "text_transform": "capitalize",
         "Heading_color": "#ffffff",
         "title": "",
         "subtitle-1": "\"Crafted for the discerning palate, our multi-award-winning Icon range wines stand shoulder-to-shoulder with the best in the world and exemplify our pursuit of excellence in all we do.”",
