@@ -166,6 +166,48 @@
         "description": "sfdklfj sdlkfj sdlfkj s;dlkfj d;lskfj dslkfj sdlkfj sdl;kfj sdlkfj dsl;kfj sdlkfj sdlkfjsfdklfj sdlkfj sdlfkj s;dlkfj d;lskfj dslkfj sdlkfj sdl;kfj sdlkfj dsl;kfj sdlkfj sdlkfjsfdklfj sdlkfj sdlfkj s;dlkfj d;lskfj dslkfj sdlkfj sdl;kfj sdlkfj dsl;kfj sdlkfj sdlkfj"
       }
     },
+    "faq_YKyn3Y": {
+      "type": "Faq",
+      "blocks": {
+        "faq_a83G6i": {
+          "type": "faq",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+          }
+        },
+        "faq_LaR3Y9": {
+          "type": "faq",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+          }
+        },
+        "faq_BNxpRY": {
+          "type": "faq",
+          "settings": {
+            "title": "Question",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_a83G6i",
+        "faq_LaR3Y9",
+        "faq_BNxpRY"
+      ],
+      "settings": {
+        "background_color": "",
+        "title_color": "",
+        "question_color": "",
+        "Answer_color": "",
+        "title": "Frequent Questions",
+        "content": "<p>More about our Icon range Albertus Viljoen wines.</p>",
+        "color": "foreground-accent-2",
+        "btn_text": "",
+        "btn_link": ""
+      }
+    },
     "call_to_action_iaXjc6": {
       "type": "Call-To-Action",
       "settings": {
@@ -199,20 +241,6 @@
         "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
         "Heading_color": "#c65336",
         "hs_form_portal_id": "25422535"
-      }
-    },
-    "faq_YKyn3Y": {
-      "type": "Faq",
-      "settings": {
-        "background_color": "",
-        "title_color": "",
-        "question_color": "",
-        "Answer_color": "",
-        "title": "Got questions?",
-        "content": "<p>Have a look in our useful FAQ section to find the answers to often-asked questions that may help you too.</p>",
-        "color": "foreground-accent-2",
-        "btn_text": "MORE",
-        "btn_link": ""
       }
     },
     "164180587911600050": {
@@ -365,10 +393,10 @@
     "collections_grid_7dMhcr",
     "video_grid_ynFH8Q",
     "range_intro_gGEgh3",
+    "faq_YKyn3Y",
     "call_to_action_iaXjc6",
     "multiple_posts_grXLp4",
     "1639603063787a43d2",
-    "faq_YKyn3Y",
     "164180587911600050"
   ]
 }
