@@ -220,12 +220,12 @@
         "btn-url": "shopify://pages/club"
       }
     },
-    "multiple_posts_grXLp4": {
+    "multiple_posts_bEX3QG": {
       "type": "Multiple-Posts",
       "settings": {
-        "heading": "Blog Posts",
+        "heading": "",
         "text_transform": "uppercase",
-        "blog_show_tags": false,
+        "blog_show_tags": true,
         "blog": "alvis-drift",
         "post_limit": 3,
         "show_image": true,
@@ -395,7 +395,7 @@
     "range_intro_gGEgh3",
     "faq_YKyn3Y",
     "call_to_action_iaXjc6",
-    "multiple_posts_grXLp4",
+    "multiple_posts_bEX3QG",
     "1639603063787a43d2",
     "164180587911600050"
   ]
