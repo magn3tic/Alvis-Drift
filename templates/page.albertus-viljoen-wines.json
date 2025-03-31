@@ -130,9 +130,9 @@
       "settings": {
         "bg_image": "shopify://shop_images/Alvis_Drift_19_meatl_awards_Wines.png",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "Sub_title": "Pre-Heading",
-        "title": "sf",
-        "description": "sf"
+        "Sub_title": "Indaba Foundation",
+        "title": "Supporting Communities",
+        "description": "sfdklfj sdlkfj sdlfkj s;dlkfj d;lskfj dslkfj sdlkfj sdl;kfj sdlkfj dsl;kfj sdlkfj sdlkfjsfdklfj sdlkfj sdlfkj s;dlkfj d;lskfj dslkfj sdlkfj sdl;kfj sdlkfj dsl;kfj sdlkfj sdlkfjsfdklfj sdlkfj sdlfkj s;dlkfj d;lskfj dslkfj sdlkfj sdl;kfj sdlkfj dsl;kfj sdlkfj sdlkfj"
       }
     },
     "call_to_action_iaXjc6": {
@@ -141,9 +141,9 @@
         "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
         "image_overlay": false,
         "Heading_color": "#c65336",
-        "title": "WINE CLUB",
-        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
-        "btn-txt": "FIND OUT MORE",
+        "title": "Competition",
+        "detail-box-txt": "Competition Details (or Wine Club Registration?)",
+        "btn-txt": "Enter Competition",
         "btn-url": "shopify://pages/club"
       }
     },
