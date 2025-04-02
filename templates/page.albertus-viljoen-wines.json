@@ -78,19 +78,6 @@
         "full_width": true
       }
     },
-    "1643804444cae23036": {
-      "type": "Focus-Text-Text-Only",
-      "settings": {
-        "text_transform": "capitalize",
-        "Heading_color": "#ffffff",
-        "title": "",
-        "subtitle-1": "Pursuit of Excellence",
-        "subtitle-2": "<p>Crafted for the discerning palate, our multi-award-winning Icon range wines stand shoulder-to-shoulder with the best in the world and exemplify our pursuit of excellence in all we do.</p>",
-        "button_text": "",
-        "button_link": "",
-        "new_tab": true
-      }
-    },
     "164388456995a70c72": {
       "type": "Focus-Text-Image-Right",
       "settings": {
@@ -395,7 +382,6 @@
     "1639602940145c735b",
     "spacer_QAEnEh",
     "video_single_BDwAAp",
-    "1643804444cae23036",
     "164388456995a70c72",
     "1639686778727cf64f",
     "collections_grid_7dMhcr",
