@@ -62,10 +62,16 @@
         "btn_main_link": ""
       }
     },
+    "spacer_QAEnEh": {
+      "type": "Spacer",
+      "settings": {
+        "spacer_size": "25px"
+      }
+    },
     "video_single_BDwAAp": {
       "type": "Video-Single",
       "settings": {
-        "heading": "A Man With A Vision, A Wine With Purpose",
+        "heading": "A Man With A Vision. A Wine With Purpose.",
         "cover_image": "shopify://shop_images/Alvis_DRift_Catavinum_World_Wine_Spirites_Competiton.png",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
@@ -380,12 +386,6 @@
       "settings": {
         "title_text": "",
         "Heading_color": "#f8f2e6"
-      }
-    },
-    "spacer_QAEnEh": {
-      "type": "Spacer",
-      "settings": {
-        "spacer_size": "25px"
       }
     }
   },
