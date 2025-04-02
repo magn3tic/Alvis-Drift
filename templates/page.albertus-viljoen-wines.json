@@ -108,6 +108,18 @@
         "button_type": "alvisBtn"
       }
     },
+    "call_to_action_iaXjc6": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "",
+        "detail-box-txt": "A quote from Alvi around the fact that every time you buy a bottle of ALbertus Viljoen you are making a choice to change peoples lives.",
+        "btn-txt": "SUPPORT",
+        "btn-url": "shopify://collections/icon-range"
+      }
+    },
     "collections_grid_7dMhcr": {
       "type": "Collections-Grid",
       "blocks": {
@@ -213,18 +225,6 @@
         "color": "foreground-accent-2",
         "btn_text": "",
         "btn_link": ""
-      }
-    },
-    "call_to_action_iaXjc6": {
-      "type": "Call-To-Action",
-      "settings": {
-        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
-        "image_overlay": false,
-        "Heading_color": "#c65336",
-        "title": "Competition",
-        "detail-box-txt": "Competition Details (or Wine Club Registration?)",
-        "btn-txt": "Enter Competition",
-        "btn-url": "shopify://pages/club"
       }
     },
     "1639603063787a43d2": {
@@ -384,11 +384,11 @@
     "video_single_BDwAAp",
     "164388456995a70c72",
     "1639686778727cf64f",
+    "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
     "video_grid_ynFH8Q",
     "multiple_posts_bEX3QG",
     "faq_YKyn3Y",
-    "call_to_action_iaXjc6",
     "1639603063787a43d2",
     "164180587911600050"
   ]
