@@ -64,7 +64,6 @@
     },
     "spacer_QAEnEh": {
       "type": "Spacer",
-      "disabled": true,
       "settings": {
         "spacer_size": "50px"
       }
