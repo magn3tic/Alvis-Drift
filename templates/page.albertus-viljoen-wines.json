@@ -64,9 +64,8 @@
     },
     "spacer_QAEnEh": {
       "type": "Spacer",
-      "disabled": true,
       "settings": {
-        "spacer_size": "25px"
+        "spacer_size": "50px"
       }
     },
     "video_single_BDwAAp": {
