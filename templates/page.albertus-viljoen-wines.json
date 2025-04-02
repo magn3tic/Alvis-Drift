@@ -140,6 +140,20 @@
         "active_collection": "icon-range"
       }
     },
+    "multiple_posts_bEX3QG": {
+      "type": "Multiple-Posts",
+      "settings": {
+        "heading": "",
+        "text_transform": "uppercase",
+        "blog_show_tags": true,
+        "blog": "alvis-drift",
+        "post_limit": 9,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
     "video_grid_ynFH8Q": {
       "type": "Video-Grid",
       "blocks": {
@@ -169,20 +183,6 @@
       "settings": {
         "heading": "The Story",
         "background-colour": "#f6efe4"
-      }
-    },
-    "multiple_posts_bEX3QG": {
-      "type": "Multiple-Posts",
-      "settings": {
-        "heading": "",
-        "text_transform": "uppercase",
-        "blog_show_tags": true,
-        "blog": "alvis-drift",
-        "post_limit": 9,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "soft_background": false
       }
     },
     "faq_YKyn3Y": {
@@ -386,8 +386,8 @@
     "1639686778727cf64f",
     "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
-    "video_grid_ynFH8Q",
     "multiple_posts_bEX3QG",
+    "video_grid_ynFH8Q",
     "faq_YKyn3Y",
     "1639603063787a43d2",
     "164180587911600050"
