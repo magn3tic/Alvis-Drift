@@ -104,16 +104,7 @@
           class="blog__posts articles-wrapper grid grid--peek grid--3-col-desktop slider {% if posts_displayed > 2 %}slider--tablet{% else %}slider--mobile{% endif %}"
           role="list"
         >
-          {%- paginate blog.articles by 9 -%}
-          {%- for article in blog.articles -%}
-            <li class="blog__post grid__item article " >
-              {% render 'article-card', blog: section.settings.blog, article: article, show_image: section.settings.show_image, show_date: section.settings.show_date, show_author: section.settings.show_author %}
-            </li>
-          {%- endfor -%}
-            <div class = "blog-pag">
-             {{ paginate | default_pagination: next: ' Next >', previous: '< Previous' }} 
-            </div>
-            {% endpaginate %}
+         
         </ul>
       </slider-component>
       {%- if section.settings.show_view_all and section.settings.post_limit < section.settings.blog.articles_count -%}
