@@ -62,6 +62,16 @@
         "btn_main_link": ""
       }
     },
+    "video_single_BDwAAp": {
+      "type": "Video-Single",
+      "settings": {
+        "heading": "A Man With A Vision, A Wine With Purpose",
+        "cover_image": "shopify://shop_images/Alvis_DRift_Catavinum_World_Wine_Spirites_Competiton.png",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "full_width": true
+      }
+    },
     "1643804444cae23036": {
       "type": "Focus-Text-Text-Only",
       "settings": {
@@ -154,16 +164,6 @@
       "settings": {
         "heading": "The Story",
         "background-colour": "#f6efe4"
-      }
-    },
-    "range_intro_gGEgh3": {
-      "type": "Range-Intro",
-      "settings": {
-        "bg_image": "shopify://shop_images/Alvis_Drift_19_meatl_awards_Wines.png",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "Sub_title": "Indaba Foundation",
-        "title": "Supporting Communities",
-        "description": "sfdklfj sdlkfj sdlfkj s;dlkfj d;lskfj dslkfj sdlkfj sdl;kfj sdlkfj dsl;kfj sdlkfj sdlkfjsfdklfj sdlkfj sdlfkj s;dlkfj d;lskfj dslkfj sdlkfj sdl;kfj sdlkfj dsl;kfj sdlkfj sdlkfjsfdklfj sdlkfj sdlfkj s;dlkfj d;lskfj dslkfj sdlkfj sdl;kfj sdlkfj dsl;kfj sdlkfj sdlkfj"
       }
     },
     "multiple_posts_bEX3QG": {
@@ -381,18 +381,25 @@
         "title_text": "",
         "Heading_color": "#f8f2e6"
       }
+    },
+    "spacer_QAEnEh": {
+      "type": "Spacer",
+      "settings": {
+        "spacer_size": "25px"
+      }
     }
   },
   "order": [
     "main",
     "1639603079ac59d760",
     "1639602940145c735b",
+    "spacer_QAEnEh",
+    "video_single_BDwAAp",
     "1643804444cae23036",
     "164388456995a70c72",
     "1639686778727cf64f",
     "collections_grid_7dMhcr",
     "video_grid_ynFH8Q",
-    "range_intro_gGEgh3",
     "multiple_posts_bEX3QG",
     "faq_YKyn3Y",
     "call_to_action_iaXjc6",
