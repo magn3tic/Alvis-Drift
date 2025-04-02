@@ -154,35 +154,18 @@
         "soft_background": false
       }
     },
-    "blog_internal_BWUUc8": {
-      "type": "Blog-Internal",
-      "blocks": {
-        "item_wj8ffW": {
-          "type": "item",
-          "settings": {
-            "article_image_1": "shopify://shop_images/Alvis_Drift_wine_making_Tech.png",
-            "article_text_1": "",
-            "article_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum lacinia accumsan. Mauris rhoncus mi a lorem tristique, sed tincidunt sem porta. Fusce pellentesque leo nec velit porta, eu hendrerit justo pellentesque. Pellentesque eget velit ipsum. Sed a nunc a tellus cursus eleifend eu eu tortor. Duis interdum lobortis sem lacinia ornare. Etiam risus ex, hendrerit mollis augue eu, tempor lacinia risus. In placerat euismod interdum. Proin dictum turpis et lacinia mollis. Nunc nec lacus odio.</p>",
-            "artilce_link": ""
-          }
-        },
-        "item_YjrWcz": {
-          "type": "item",
-          "settings": {
-            "article_image_1": "shopify://shop_images/Alvis_Drift_e-commerce_shopping.png",
-            "article_text_1": "",
-            "article_content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fermentum lacinia accumsan. Mauris rhoncus mi a lorem tristique, sed tincidunt sem porta. Fusce pellentesque leo nec velit porta, eu hendrerit justo pellentesque. Pellentesque eget velit ipsum. Sed a nunc a tellus cursus eleifend eu eu tortor. Duis interdum lobortis sem lacinia ornare. Etiam risus ex, hendrerit mollis augue eu, tempor lacinia risus. In placerat euismod interdum. Proin dictum turpis et lacinia mollis. Nunc nec lacus odio.</p>",
-            "artilce_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "item_wj8ffW",
-        "item_YjrWcz"
-      ],
+    "multiple_posts_R4rTgY": {
+      "type": "Multiple-Posts",
       "settings": {
-        "button_text": "",
-        "button_link": ""
+        "heading": "Blog Posts",
+        "text_transform": "uppercase",
+        "blog_show_tags": true,
+        "blog": "albertus-viljoen",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "soft_background": false
       }
     }
   },
@@ -197,6 +180,6 @@
     "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
     "multiple_posts_bEX3QG",
-    "blog_internal_BWUUc8"
+    "multiple_posts_R4rTgY"
   ]
 }
