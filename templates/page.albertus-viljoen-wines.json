@@ -101,9 +101,9 @@
         "video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
-        "title": "Remarkable Legacy",
-        "video-sec-content-txt-1": "<p>Although the fertile Breede River Valley is known for its high summer temperatures, the Scherpenheuvel wine ward in the region’s southern reaches contains cooler pockets – the result of unique microclimates caused by the area’s topography.</p><p>Here, the diurnal swing (the difference between night-time and daytime temperatures) places it in Winkler Summation II, the same category as some of France’s Bordeaux region.</p><p>Our cooler microclimate is ideal for the production of Chenin Blanc, Viognier, and Pinotage – the wines which form the cornerstone of our winery’s award-winning portfolio.</p>",
-        "button-txt": "MORE ABOUT OUR FAMILY",
+        "title": "(Heading: Supporting / Empowering)",
+        "video-sec-content-txt-1": "<p>Short snippet about the Indaba Institute collaboration and how the wine gives back.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla non odio non luctus. Proin a enim non sem maximus lobortis. In eu eleifend metus. Donec posuere congue nunc, non tempor ex molestie at. Nulla mattis velit sit amet ipsum auctor, non scelerisque velit vestibulum. Nulla feugiat auctor ipsum, vitae pretium nunc laoreet aliquet. Curabitur urna diam, fringilla nec mauris non, tempus faucibus neque. Nunc venenatis mi sem. Maecenas in pharetra felis, ut varius u.</p>",
+        "button-txt": "(BUTTON INDABA?)",
         "button_link": "shopify://pages/family",
         "button_type": "alvisBtn"
       }
