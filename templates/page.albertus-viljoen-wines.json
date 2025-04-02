@@ -153,20 +153,6 @@
         "show_author": false,
         "soft_background": false
       }
-    },
-    "multiple_posts_R4rTgY": {
-      "type": "Multiple-Posts",
-      "settings": {
-        "heading": "Blog Posts",
-        "text_transform": "uppercase",
-        "blog_show_tags": true,
-        "blog": "albertus-viljoen",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": true,
-        "show_author": false,
-        "soft_background": false
-      }
     }
   },
   "order": [
@@ -179,7 +165,6 @@
     "1639686778727cf64f",
     "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
-    "multiple_posts_bEX3QG",
-    "multiple_posts_R4rTgY"
+    "multiple_posts_bEX3QG"
   ]
 }
