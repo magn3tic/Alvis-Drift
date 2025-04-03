@@ -31,6 +31,7 @@
           "type": "slider",
           "settings": {
             "background_image": "shopify://shop_images/Website_banner_Harvest_sale_1.png",
+            "mobile_background_image": "shopify://shop_images/Website_banner_Harvest_sale_mobile.png",
             "image_overlay": "",
             "overlay_opacity": 30,
             "Heading_color": "#ffffff",
