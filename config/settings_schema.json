@@ -395,26 +395,7 @@
         "label": "Included Product Discount 25%",
         "limit": 24
       },
-      {
-        "type": "select",
-        "id": "discount-badge",
-        "label": "Discount Badge",
-        "default":"tier-icon",
-        "options": [
-          {
-            "label": "Icon",
-            "value": "tier-icon"
-          },
-          {
-            "label": "Text",
-            "value": "tier-text"
-          },
-          {
-            "label": "Badge",
-            "value": "tier-badge"
-          }
-        ]
-      }
+      
     ]
   },
   {
