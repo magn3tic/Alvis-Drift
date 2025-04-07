@@ -4,7 +4,7 @@
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
 {{ 'component-discounts.css' | asset_url | stylesheet_tag }}
 {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
-
+{% comment %}
 {% if customer.has_account %}
   {% assign lowertags = customer.tags | downcase %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
@@ -13,7 +13,7 @@
   {% assign included_product_ids_third = settings.product_list_included-third  | map: "id" %}
  
 {% endif%}
-
+{% endcomment %}
 <script src="{{ 'cart.js' | asset_url }}" defer="defer"></script>
 
 <cart-items class="page-width{% if cart == empty %} is-empty{% endif %}">
@@ -219,7 +219,7 @@
 
                     <div class="cart-item__price-wrapper">
                          
-                    {%- if item.original_line_price != item.final_line_price -%}
+        {%- if item.original_line_price != item.final_line_price -%}
   <dl class="cart-item__discounted-prices">
     <dt class="visually-hidden">
       {{ 'products.product.price.regular_price' | t }}
@@ -237,6 +237,7 @@
     </dd>
   </dl>
 {%- else -%}
+          {% comment %}
   {%- if settings.member-discount == "enable" -%}
     {% assign compare_price = item.variant.compare_at_price %}
 {% assign original_price = item.original_line_price %}
@@ -328,6 +329,7 @@
             {{ item.original_line_price | money | replace: ",", " " }}
           </span>
         {%- endif -%}
+
           {%- elsif settings.member-included-discount == "enable" -%}
             {% if lowertags contains 'bronze' or lowertags contains 'silver' or lowertags contains 'gold' %}
               {% if included_product_ids contains item.product.id %}
@@ -362,12 +364,18 @@
               </span>
             {% endif %}
           {%- else -%}
-            <span class="price price--end no-excl-discount">
+            <span class="price price--end">
               {{ item.original_line_price | money | replace: ",", " " }}
             </span>
             
           {%- endif -%}
+          {% endcomment %}
+          <span class="price price--end">
+              {{ item.original_line_price | money | replace: ",", " " }}
+            </span>
         {%- endif -%}
+            
+                      
                       {%- if item.variant.available and item.unit_price_measurement -%}
                         <div class="unit-price caption">
                           <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
