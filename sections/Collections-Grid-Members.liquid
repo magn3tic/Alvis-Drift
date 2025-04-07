@@ -192,7 +192,7 @@
               {% if lowertags contains 'silver'%}
                  <div class="product-price-per"> R{{ discounted_unit_silver | divided_by:100 | round }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/>  </div>      
               {% elsif lowertags contains 'gold' %}
-                <div class="product-price-per"> R{{ discounted_unit_gold | divided_by:100 | round  }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/>  </div>
+                <div class="product-price-per"> R{{ discounted_unit_gold | divided_by:100 | round  }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}. <br/>  </div>
                 {% else %}
                 <div class="product-price-per"> R{{ assigned_price | divided_by:100 | round  }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/>  </div>
                 {% endif %}
