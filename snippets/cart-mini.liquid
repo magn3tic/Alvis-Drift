@@ -171,7 +171,7 @@
       </div>
      
       <div class="cart-min-footer">
-        <div class="cart-mini-total">TOTAL:  <p class="totals__subtotal-value"><span id='revy-cart-subtotal-price'>{{ cart.total_price | money | remove: '.00' | replace: ",", " "  }}</span></p></div>
+        <div class="cart-mini-total">TOTAL:  <p class="totals__subtotal-value">{{ cart.total_price | money | remove: '.00' | replace: ",", " "  }}</p></div>
         <!--<div class="cart-mini-total">TOTAL: {*{cart.total_price | money | replace: ",", " " }}</div>-->
         <div class="cart-mini-btn">          
       	  <a href="https://alvisdrift.co.za/collections/all-wines" class="btn btn-overlay close-cart-button">Continue Shopping</a>
