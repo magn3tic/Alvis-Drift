@@ -1,7 +1,9 @@
+
 {% if customer.has_account %}
   {% assign lowertags = customer.tags | downcase %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
 {% endif%}
+
 <section class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
   <div class="sec-inner">
     <div class="container">
