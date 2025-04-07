@@ -230,8 +230,7 @@
           {% comment %}
   {%- if settings.member-discount == "enable" -%}
     {% assign compare_price = item.variant.compare_at_price %}
-{% assign original_price = item.original_line_price %}
-        
+{% assign original_price = item.original_line_price %}   
     {%- if lowertags contains 'silver' -%}
         {% if excluded_product_ids contains item.product.id %}
           {% if compare_price %}
