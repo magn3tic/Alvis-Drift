@@ -103,7 +103,7 @@
             {% endif %}
                 {% endif %}
 
-                {% assign price_v = product.selected_or_first_available_variant.price %}
+                
                   {% assign price_discount_gold = product.price | times:0.90 %}
                   {% assign price_discount_silver = product.price | times:0.95 %}
                   {% assign discounted_unit_gold = price_discount_gold | divided_by:product.metafields.my_fields.cost_per_item  %}
@@ -120,6 +120,7 @@
           {% endcomment %}
    
                 <!-- Price per bottle -->
+                {% assign price_v = product.selected_or_first_available_variant.price %}
                 {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %} 
 
                 {% if product.compare_at_price > product.price %}
