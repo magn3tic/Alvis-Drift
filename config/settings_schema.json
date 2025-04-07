@@ -337,33 +337,6 @@
     ]
   },
   {
-    "name": "Collection Section",
-    "settings": [
-      {
-        "type": "select",
-        "id": "member-discount",
-        "label": "Enable/Disable Discounts",
-        "default":"enable",
-        "options": [
-          {
-            "label": "Enable",
-            "value": "enable"
-          },
-          {
-            "label": "Disable",
-            "value": "disable"
-          }
-        ]
-      },
-      {
-        "type": "product_list",
-        "id": "product_list",
-        "label": "Excluded Product Discount",
-        "limit": 24
-      }
-    ]
-  },
-  {
     "name": "t:settings_schema.currency_format.name",
     "settings": [
       {
