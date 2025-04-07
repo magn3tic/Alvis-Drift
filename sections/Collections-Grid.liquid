@@ -85,8 +85,6 @@
              {% else %} 
               <div class=" normal-price product-price" {% if  settings.discount-badge == "tier-text" %}style = "margin-bottom:15px" {% endif %}>{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
             {% endif %}
-               
-          
           {% endif %}     
               
               <!-- Price per bottle -->
