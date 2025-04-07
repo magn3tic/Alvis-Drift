@@ -78,7 +78,7 @@
                    {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
                 {% else %}
                   <div class="product-price excluded-disount">
-                  {{ product.price | money | remove: '.00' | replace: ",", " " }}.
+                  {{ product.price | money | remove: '.00' | replace: ",", " " }}
                   </div>
               {% endif %}
               {% elsif included_product_ids contains product.id %}
