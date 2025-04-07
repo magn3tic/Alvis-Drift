@@ -1,11 +1,11 @@
 {% if customer.has_account %}
 {% assign lowertags = customer.tags | downcase %}
-{% assign excluded_product_ids = settings.product_list | map: "id" %}
-{% assign included_product_ids_second = settings.product_list_included | map: "id" %}
-{% assign included_product_ids = settings.product_list_included-second  | map: "id" %}
-{% assign included_product_ids_third = settings.product_list_included-third  | map: "id" %}
-
-  
+  {% comment %}
+    {% assign excluded_product_ids = settings.product_list | map: "id" %}
+    {% assign included_product_ids_second = settings.product_list_included | map: "id" %}
+    {% assign included_product_ids = settings.product_list_included-second  | map: "id" %}
+    {% assign included_product_ids_third = settings.product_list_included-third  | map: "id" %}
+  {% endcomment %}
 <script src="{{ 'cart-limit.js' | asset_url }}" defer="defer"></script>
   {% endif%}
 <section class="cart-mini">  
@@ -61,7 +61,7 @@
              
               <div class="cart-item-price">
                 <div class="cart-item-price-t">
-                  
+              {% comment %}
               {% if settings.member-discount == "enable" %}
                 {% if lowertags contains 'silver' %}
                   
@@ -150,6 +150,8 @@
   {% else %}
     <span class="member-disabled">{{ item.original_line_price | money | replace: ",", " " }}</span>
   {% endif %}
+  {% endcomment %}     
+   <span class="member-disabled">{{ item.original_line_price | money | replace: ",", " " }}</span>
 </div>
 
                 <cart-remove-button class="remove_item" id="Remove-{{ item.index | plus: 1 }}" data-index="{{ item.index | plus: 1 }}">
