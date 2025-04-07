@@ -11,6 +11,7 @@
       {% assign collection_handle = 'club' %}
       {% assign headline = 'TO BRONZE CLUB MEMBERS' %}
   {% endif %}
+
   {% assign lowertags = customer.tags | downcase %}
   {% comment %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
@@ -20,7 +21,7 @@
   {% assign discounted_percentages = settings.discount_options %}
     {% assign included_product_ids_second = settings.product_list_included-second  | map: "id" %}
   {% assign included_product_ids_third = settings.product_list_included-third  | map: "id" %}
-  {% endcomment %}
+{% endcomment %}
 <section class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
   <div class="sec-inner">
     <div class="container">
