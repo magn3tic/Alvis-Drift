@@ -26,7 +26,7 @@
     "social_youtube_link": "https://www.youtube.com/c/AlvisdriftCoZa",
     "predictive_search_enabled": true,
     "favicon": "shopify://shop_images/Alvis_Fabicon.png",
-    "member-discount": "disable",
+    "member-discount": "enable",
     "product_list": [
       "voucher",
       "exclusive-butter-tree-viognier-2023",
@@ -49,7 +49,7 @@
       "icon-pinot-noir-2021",
       "icon-chardonnay-2020"
     ],
-    "member-included-discount": "disable",
+    "member-included-discount": "enable",
     "product_list_included": [],
     "product_list_included-second": [],
     "product_list_included-third": [],
