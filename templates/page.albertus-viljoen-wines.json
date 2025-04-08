@@ -87,8 +87,8 @@
         "Heading_color": "#f8f2e6",
         "title": "The Pursuit of Excellence",
         "video-sec-content-txt-1": "<p>Overarching campaign idea - can use rational from campaign deck if it is relevant.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla non odio non luctus. Proin a enim non sem maximus lobortis. In eu eleifend metus. Donec posuere congue nunc, non tempor ex molestie at.</p>",
-        "button-txt": "(BUTTON?)",
-        "button_link": "shopify://pages/vineyards",
+        "button-txt": "",
+        "button_link": "",
         "button_type": "alvisBtn"
       }
     },
