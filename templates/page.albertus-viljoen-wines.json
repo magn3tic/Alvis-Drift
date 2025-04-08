@@ -153,6 +153,15 @@
         "show_author": false,
         "soft_background": false
       }
+    },
+    "newsletter_subscription_Nq4r4T": {
+      "type": "Newsletter-Subscription",
+      "settings": {
+        "section_heading": "<p>TH<em>E</em>  <br/>DRIFT</p>",
+        "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
+        "Heading_color": "#c65336",
+        "hs_form_portal_id": ""
+      }
     }
   },
   "order": [
@@ -165,6 +174,7 @@
     "1639686778727cf64f",
     "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
-    "multiple_posts_bEX3QG"
+    "multiple_posts_bEX3QG",
+    "newsletter_subscription_Nq4r4T"
   ]
 }
