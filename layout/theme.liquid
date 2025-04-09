@@ -32,11 +32,12 @@
       {%- if current_page != 1 %} &ndash; Page {{ current_page }}{% endif -%}
       {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
     </title>  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     {{ 'custom_css.css' | asset_url | stylesheet_tag }}
+    
     {{ 'common_pages_animation.css' | asset_url | stylesheet_tag }}
     {% render 'meta-tags' %}
     <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
     {%- liquid
