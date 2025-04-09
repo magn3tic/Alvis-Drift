@@ -11,8 +11,6 @@
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
   {% comment %}  {{ 'venobox.css' | asset_url | stylesheet_tag }}{% endcomment %}
     {{ 'venobox.css' | asset_url | stylesheet_tag: preload: true }}
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     
     <!-- Google Tag Manager -->
     <script async=true >(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -39,7 +37,7 @@
     {{ 'common_pages_animation.css' | asset_url | stylesheet_tag }}
     {% render 'meta-tags' %}
     <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
     {%- liquid
