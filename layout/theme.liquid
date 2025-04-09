@@ -36,8 +36,8 @@
     
     {{ 'common_pages_animation.css' | asset_url | stylesheet_tag }}
     {% render 'meta-tags' %}
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" defer></script>
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
     {%- liquid
@@ -52,7 +52,7 @@
       *::before,
       *::after {box-sizing: inherit;}html {box-sizing: border-box;font-size: calc(var(--font-body-scale) * 62.5%);height: 100%;}body {display: grid;grid-template-rows: auto auto 1fr auto;grid-template-columns: 100%;min-height: 100%;margin: 0;font-size: 1.5rem;letter-spacing: 1.2rem;line-height: calc(1 + 0.8 / var(--font-body-scale));font-family: var(--font-body-family);font-style: var(--font-body-style);font-weight: var(--font-body-weight);}@media screen and (min-width: 750px) {body {font-size: 1.6rem;}}
     {% endstyle %}  
-    <link rel="stylesheet" href="{{ 'base.mini.css' | asset_url }}" type="text/css" media="all">
+    <link rel="stylesheet" href="{{ 'base.mini.css' | asset_url }}"  type ="text/css" media="all" defer="defer">
     {%- unless settings.type_body_font.system? -%}      
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     {%- endunless -%}
