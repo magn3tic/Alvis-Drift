@@ -264,16 +264,6 @@
         "disabled": false,
         "settings": {}
       },
-      "16178409538858199964": {
-        "type": "shopify://apps/powr-popup/blocks/app-embed/c42eddd7-7bc0-47cc-aa8a-df388049f012",
-        "disabled": false,
-        "settings": {}
-      },
-      "11068332061543699368": {
-        "type": "shopify://apps/booster-page-speed-optimizer/blocks/app-embed/d920faf3-7c60-423a-9636-22618b5561b5",
-        "disabled": false,
-        "settings": {}
-      },
       "13768625480086291342": {
         "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
         "disabled": false,
@@ -297,6 +287,11 @@
           "button_vertical_position": "lowest",
           "greeting_message": "Any questions? We'd love to help."
         }
+      },
+      "16178409538858199964": {
+        "type": "shopify://apps/powr-popup/blocks/app-embed/c42eddd7-7bc0-47cc-aa8a-df388049f012",
+        "disabled": true,
+        "settings": {}
       }
     }
   },
