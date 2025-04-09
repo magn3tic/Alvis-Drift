@@ -10,7 +10,7 @@
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
   {% comment %}  {{ 'venobox.css' | asset_url | stylesheet_tag }}{% endcomment %}
-    {{ 'venobox.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'venobox.css' | asset_url | stylesheet_tag }}
     
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
@@ -70,8 +70,8 @@
     <!--<link rel="stylesheet" defer type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.mini.css"/>-->
    {{ 'slick-theme.min.css' | asset_url | stylesheet_tag }}   
 
-    {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
-    {{ 'header-footer.css' | asset_url | stylesheet_tag:preload:true }}
+    {{ 'styles.css' | asset_url | stylesheet_tag }}
+    {{ 'header-footer.css' | asset_url | stylesheet_tag }}
     {{ 'custom_css_updates.css' | asset_url | stylesheet_tag }} 
     
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script> 
