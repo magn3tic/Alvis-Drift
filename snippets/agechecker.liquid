@@ -1,4 +1,4 @@
-<div id="age-gate">
+<div id="age-gate {% if settings.display_popup == "disable" %} disable {% endif %}">
   <div style="position:relative; top:50%; transform:translateY(-50%);" class = "age-container">
     <h1>{{ settings.age_header }}</h1>
     <p>{{ settings.age_content }}</p>
