@@ -231,8 +231,29 @@
      "name": "Age Checker",
     "settings": [
       {
+        "type": "select",
+        "default": "enable",
+        "id": "display",
+        "label": "Enable/Disable",
+        "options": [
+          {
+            "label": "Enable",
+            "value": "enable"
+          },
+          {
+            "label": "Disable",
+            "value": "disable"
+          } 
+        ]
+      },
+      {
         "type": "header",
         "content": "Age Checker"
+      },
+      {
+        "type":"text",
+        "id": "age_header",
+        "label": "Header"
       },
       {
         "type":"text",
