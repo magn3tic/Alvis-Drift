@@ -228,7 +228,7 @@
     ]
   },
   {
-     "name": "t:settings_schema.age-checker.name",
+     "name": "Age Checker",
     "settings": [
       {
         "type": "header",
