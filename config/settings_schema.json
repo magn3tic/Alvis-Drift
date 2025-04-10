@@ -233,7 +233,7 @@
       {
         "type": "select",
         "default": "enable",
-        "id": "display",
+        "id": "display_popup",
         "label": "Enable/Disable",
         "options": [
           {
