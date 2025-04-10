@@ -228,6 +228,20 @@
     ]
   },
   {
+     "name": "t:settings_schema.age-checker.name",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Age Checker"
+      },
+      {
+        "type":"text",
+        "id": "age_content",
+        "label": "Content"
+      }
+    ]
+  },
+  {
     "name": "t:settings_schema.social-media.name",
     "settings": [
       {
