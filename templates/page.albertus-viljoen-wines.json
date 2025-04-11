@@ -108,6 +108,20 @@
         "button_type": "alvisBtn"
       }
     },
+    "multiple_posts_kB46er": {
+      "type": "Multiple-Posts",
+      "settings": {
+        "heading": "(Influencers)",
+        "text_transform": "uppercase",
+        "blog_show_tags": false,
+        "blog": "",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
     "call_to_action_iaXjc6": {
       "type": "Call-To-Action",
       "settings": {
@@ -147,7 +161,7 @@
         "text_transform": "none",
         "blog_show_tags": true,
         "blog": "albertus-viljoen",
-        "post_limit": 9,
+        "post_limit": 3,
         "show_image": true,
         "show_date": false,
         "show_author": false,
@@ -172,6 +186,7 @@
     "video_single_BDwAAp",
     "164388456995a70c72",
     "1639686778727cf64f",
+    "multiple_posts_kB46er",
     "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
     "multiple_posts_bEX3QG",
