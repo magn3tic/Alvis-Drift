@@ -99,7 +99,7 @@
           "settings": {
             "title": "LARGER ORDER VOLUMES ENQUIRY",
             "Title_color": "#2e112d",
-            "text": "<p><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Click here to enquire about ordering larger volumes than available on this site for special events.</strong></a></p>",
+            "text": "<p><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Enquire about ordering larger volumes than available on this site for special events.</strong></a></p>",
             "Text_color": "#2e112d"
           }
         },
