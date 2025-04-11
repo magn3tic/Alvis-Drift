@@ -111,10 +111,10 @@
     "multiple_posts_kB46er": {
       "type": "Multiple-Posts",
       "settings": {
-        "heading": "(Influencers)",
-        "text_transform": "uppercase",
+        "heading": "Meet Our Local Icons",
+        "text_transform": "none",
         "blog_show_tags": false,
-        "blog": "",
+        "blog": "local-icons",
         "post_limit": 3,
         "show_image": true,
         "show_date": false,
