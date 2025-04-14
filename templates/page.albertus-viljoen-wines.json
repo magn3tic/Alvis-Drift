@@ -176,6 +176,12 @@
         "Heading_color": "#c65336",
         "hs_form_portal_id": ""
       }
+    },
+    "custom_liquid_qeFFwa": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"klaviyo-form-T5NyiZ\"></div>"
+      }
     }
   },
   "order": [
@@ -190,6 +196,7 @@
     "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
     "multiple_posts_bEX3QG",
-    "newsletter_subscription_Nq4r4T"
+    "newsletter_subscription_Nq4r4T",
+    "custom_liquid_qeFFwa"
   ]
 }
