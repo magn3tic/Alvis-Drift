@@ -191,7 +191,7 @@
     "custom_liquid_AycFc4": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "FORM\n<div class=\"klaviyo-form-T5NyiZ\">here</div>"
+        "custom_liquid": "<div class=\"klaviyo-form-T5NyiZ\"></div>"
       }
     },
     "newsletter_subscription_Nq4r4T": {
@@ -201,6 +201,32 @@
         "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
         "Heading_color": "#c65336",
         "hs_form_portal_id": ""
+      }
+    },
+    "rich_text_JhexPC": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_P6Jyha": {
+          "type": "heading",
+          "settings": {
+            "heading": "Talk about your brand",
+            "heading_size": "h1"
+          }
+        },
+        "text_gYXip8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>FORM<br/>&lt;div&gt;123&lt;/div&gt;</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_P6Jyha",
+        "text_gYXip8"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "full_width": true
       }
     }
   },
@@ -218,6 +244,7 @@
     "collections_grid_fnGcA4",
     "multiple_posts_bEX3QG",
     "custom_liquid_AycFc4",
-    "newsletter_subscription_Nq4r4T"
+    "newsletter_subscription_Nq4r4T",
+    "rich_text_JhexPC"
   ]
 }
