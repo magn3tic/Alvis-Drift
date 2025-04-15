@@ -48,10 +48,29 @@
         "hide_variants": false,
         "enable_video_looping": false
       }
+    },
+    "rich_text_bD6mE7": {
+      "type": "rich-text",
+      "blocks": {
+        "text_ypnQT4": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Each bottle tells a story of heritage, of craftsmanship, and of real impact. Every purchase helps support Early Childhood Development in our local community through the Indaba Foundation.</p><p><strong>Rare. Refined. Remarkably Personal.</strong><br/><strong>This is Albertus Viljoen – as it’s never been seen (or tasted) before.</strong></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_ypnQT4"
+      ],
+      "settings": {
+        "color_scheme": "accent-2",
+        "full_width": true
+      }
     }
   },
   "order": [
     "1639248182bc55fb26",
-    "main"
+    "main",
+    "rich_text_bD6mE7"
   ]
 }
