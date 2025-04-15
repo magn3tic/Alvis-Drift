@@ -12,7 +12,7 @@
     "1639248182bc55fb26": {
       "type": "Page-Background-Colour",
       "settings": {
-        "page_bg": "#C2AB9B"
+        "page_bg": "#712f1f"
       }
     },
     "main": {
@@ -21,7 +21,7 @@
         "f101ada7-306f-4286-ac49-7fe9bff60c73": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Awards",
+            "heading": "AWARDS",
             "content": "<p><a href=\"/pages/awards\" target=\"_blank\" title=\"Wine Awards\">View our full list of awards here.</a></p>",
             "page": "",
             "icon": "none",
@@ -31,8 +31,8 @@
         "42458232-d991-48a5-ba37-37b307fc3a80": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Wine Fact Sheets & Tasting Tips",
-            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Icon_Box_Chocolate_Wine_Tasting_Tips.pdf?v=1649195103\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Icon_Box_Chocolate_Wine_Tasting_Tips.pdf?v=1649195103\">TASTING TIPS<br/></a><br/><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Icon_Box_Tasting_Sheet.pdf?v=1649195103\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Icon_Box_Tasting_Sheet.pdf?v=1649195103\">TASTING SHEET</a></p>",
+            "heading": "FACT SHEETS",
+            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Icon-Range-Chenin-Blanc-2023.pdf\" target=\"_blank\" title=\"Fact Sheet:  Icon Albertus Viljoen Chenin Blanc\">Icon Albertus Viljoen Chenin Blanc</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Icon-Range-Chardonnay-2022.pdf\" target=\"_blank\" title=\"Fact Sheet:  Icon Albertus Viljoen Chardonnay\">Icon Albertus Viljoen Chardonnay</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Icon-Range-Bismarck-Red-Blend-2020.pdf\" target=\"_blank\" title=\"Icon Albertus Viljoen Bismarck Red Blend\">Icon Albertus Viljoen Bismarck Red Blend</a></p>",
             "page": "",
             "icon": "none",
             "border": false
@@ -48,29 +48,10 @@
         "hide_variants": false,
         "enable_video_looping": false
       }
-    },
-    "163949428877599353": {
-      "type": "Gifts-Grid",
-      "blocks": {
-        "163949428839bac508-0": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "gifts"
-          }
-        }
-      },
-      "block_order": [
-        "163949428839bac508-0"
-      ],
-      "settings": {
-        "topheading": "OUR GIFTING COLLECTION"
-      }
     }
   },
   "order": [
     "1639248182bc55fb26",
-    "main",
-    "163949428877599353"
+    "main"
   ]
 }
