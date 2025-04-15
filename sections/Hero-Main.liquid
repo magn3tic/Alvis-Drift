@@ -11,8 +11,7 @@
  <div class="hero-section">
   {% if block.settings.background_image and block.settings.mobile_background_image %}
   <picture>
-   <img class="hero-section-bg mobile"
-    src="{{ block.settings.background_image | img_url:'master' }}"
+   <img class="hero-section-bg mobile" src="{{ block.settings.background_image | img_url:'master' }}"
     srcset="
      {{ block.settings.mobile_background_image | img_url: 'master' }} 480w,
      {{ block.settings.mobile_background_image | img_url: 'master' }} 768w,
@@ -20,15 +19,10 @@
      {{ block.settings.mobile_background_image | img_url: 'master' }} 1300w,
      {{ block.settings.background_image | img_url: 'master' }} 1920w" 
     sizes="(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 900px) 100vw, (max-width: 1300px) 100vw, auto"
-    fetchpriority="high"
-    alt ="{{ block.settings.background_image.image.alt }}">
+    fetchpriority="high"  alt ="{{ block.settings.background_image.image.alt }}">
   </picture>
    {% elsif block.settings.background_image %}
-  <img class="hero-section-bg"
-    src="{{ block.settings.background_image | img_url:'master' }}"
-    width="{{ block.settings.background_image.width }}" 
-    height = "{{ block.settings.background_image.height }}" 
-    alt ="{{ block.settings.background_image.image.alt }}">
+  <img class="hero-section-bg" src="{{ block.settings.background_image | img_url:'master' }}" width="{{ block.settings.background_image.width }}"  height = "{{ block.settings.background_image.height }}"  alt ="{{ block.settings.background_image.image.alt }}">
    {% endif %}
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
@@ -53,9 +47,7 @@
           </span> 
         </h2> 
       </div>
-      <div class = "main_btn">
-        <a href="{{ block.settings.btn_link }}" class="btn">{{ block.settings.btn_text }}</a>
-      </div>
+      <div class = "main_btn">  <a href="{{ block.settings.btn_link }}" class="btn">{{ block.settings.btn_text }}</a> </div>
       </div>
       <div class="hero-txt col-sm"> 
         {% if block.settings.paragarh_1 != blank or block.settings.paragarh_2 != blank %}
@@ -103,10 +95,6 @@
 {% endfor %}
 
 </section>
-<style>
-.animate-reveal {color: {{ section.settings.Heading_color }};font-size: 70px;}@media (min-width:250px) and (max-width:900px) { .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 25px;line-height: 1.5;}
-}
-</style>
 {% schema %}
 {
   "name": {
