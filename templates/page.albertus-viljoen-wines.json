@@ -202,32 +202,6 @@
         "Heading_color": "#c65336",
         "hs_form_portal_id": ""
       }
-    },
-    "rich_text_JhexPC": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_P6Jyha": {
-          "type": "heading",
-          "settings": {
-            "heading": "Talk about your brand",
-            "heading_size": "h1"
-          }
-        },
-        "text_gYXip8": {
-          "type": "text",
-          "settings": {
-            "text": "<p>FORM<br/>&lt;div&gt;123&lt;/div&gt;</p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_P6Jyha",
-        "text_gYXip8"
-      ],
-      "settings": {
-        "color_scheme": "background-1",
-        "full_width": true
-      }
     }
   },
   "order": [
@@ -244,7 +218,6 @@
     "collections_grid_fnGcA4",
     "multiple_posts_bEX3QG",
     "custom_liquid_AycFc4",
-    "newsletter_subscription_Nq4r4T",
-    "rich_text_JhexPC"
+    "newsletter_subscription_Nq4r4T"
   ]
 }
