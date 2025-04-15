@@ -191,7 +191,7 @@
     "custom_liquid_AycFc4": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"klaviyo-form-T5NyiZ\"></div>"
+        "custom_liquid": "FORM\n<div class=\"klaviyo-form-T5NyiZ\"></div>"
       }
     },
     "newsletter_subscription_Nq4r4T": {
