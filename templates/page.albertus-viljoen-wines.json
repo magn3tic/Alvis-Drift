@@ -188,12 +188,6 @@
         "soft_background": false
       }
     },
-    "custom_liquid_AycFc4": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<div class=\"klaviyo-form-T5NyiZ\"></div>"
-      }
-    },
     "newsletter_subscription_Nq4r4T": {
       "type": "Newsletter-Subscription",
       "settings": {
@@ -217,7 +211,6 @@
     "collections_grid_7dMhcr",
     "collections_grid_fnGcA4",
     "multiple_posts_bEX3QG",
-    "custom_liquid_AycFc4",
     "newsletter_subscription_Nq4r4T"
   ]
 }
