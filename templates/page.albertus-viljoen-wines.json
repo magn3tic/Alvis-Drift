@@ -26,7 +26,7 @@
         "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Alvis-Drift-Albertus-Viljoen-Icon-Range.jpg",
+            "background_image": "shopify://shop_images/Albertus-Viljoen-Campaign-Header.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
             "Heading_color": "#ffffff",
@@ -154,6 +154,26 @@
         "active_collection": "icon-range"
       }
     },
+    "collections_grid_fnGcA4": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "item_bBAyag": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "launch"
+          }
+        }
+      },
+      "block_order": [
+        "item_bBAyag"
+      ],
+      "settings": {
+        "topheading": "",
+        "subtitle-1": "",
+        "active_collection": ""
+      }
+    },
     "multiple_posts_bEX3QG": {
       "type": "Multiple-Posts",
       "settings": {
@@ -195,6 +215,7 @@
     "multiple_posts_kB46er",
     "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
+    "collections_grid_fnGcA4",
     "multiple_posts_bEX3QG",
     "custom_liquid_AycFc4",
     "newsletter_subscription_Nq4r4T"
