@@ -1,6 +1,72 @@
-{% schema %}
-  {
-    "name": "Section name",
-    "settings": []
+<section>
+<!-- sections/countdown-product.liquid -->
+{% if section.settings.product != blank %}
+  {% assign product = all_products[section.settings.product] %}
+  {% assign variant = product.variants.first %}
+
+  {% if variant.inventory_management == "shopify" %}
+    {% assign quantity = variant.inventory_quantity %}
+    <div class="countdown-box">
+      {% if quantity > 0 %}
+        <p>🔥 Hurry! Only <strong>{{ quantity }}</strong> left in stock for <strong>{{ product.title }}</strong>!</p>
+      {% else %}
+        <p>❌ {{ product.title }} is out of stock!</p>
+      {% endif %}
+    </div>
+  {% else %}
+    <p>⚠️ Inventory not tracked for {{ product.title }}</p>
+  {% endif %}
+{% else %}
+  <p>🛍️ No product selected</p>
+{% endif %}
+</section>
+
+<style>
+  .countdown-box {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #856404;
+    margin: 10px 0;
   }
+</style>
+
+<script>
+  {% assign quantity = product.variants.first.inventory_quantity %}
+
+<div id="countdown-stock">
+  Hurry! Only <span id="stock-count">{{ quantity }}</span> left!
+</div>
+
+<script>
+  let stock = {{ quantity }};
+  let display = document.getElementById("stock-count");
+
+  // OPTIONAL: Reduce fake stock every 10 seconds
+  setInterval(function () {
+    if (stock > 1) {
+      stock--;
+      display.innerText = stock;
+    }
+  }, 10000);
+</script>
+
+{% schema %}
+{
+  "name": "Product Countdown",
+  "settings": [
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Select Product"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Countdown"
+    }
+  ]
+}
 {% endschema %}
