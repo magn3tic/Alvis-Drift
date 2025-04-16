@@ -257,6 +257,12 @@
       "Collections-Grid-Members": {
         "type": "Collections-Grid-Members",
         "settings": {}
+      },
+      "Product-Counter": {
+        "type": "Product-Counter",
+        "settings": {
+          "product": "221-chenin-blanc"
+        }
       }
     },
     "content_for_index": [],
