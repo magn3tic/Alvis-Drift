@@ -69,7 +69,7 @@
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
-        "title": "+27 (0)21 905 0653wine@alvisdrift.co.za",
+        "title": "+27 (0)21 905 0653<br>wine@alvisdrift.co.za",
         "video-sec-content-txt-1": "<h5></h5><p><br/><strong>Alvi's Drift Private Cellar</strong><br/>Alfalfa Farm<br/>Scherpenheuwel Road<br/>Worcester  6850<br/>Western Cape  |  South Africa</p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Corporate-Profile.pdf?v=1738918023\" target=\"_blank\" title=\"Alvi's Drift Corporate Profile\"><strong>CORPORATE PROFILE</strong></a></p><p><strong><br/>Banking Details:<br/></strong>Standard Bank  (050407)<br/>Account:  202026191<br/>Please use order number as reference:  <a href=\"mailto:marketing@alvisdrift.co.za\" target=\"_blank\">marketing@alvisdrift.co.za</a></p>",
         "button-txt": "LARGER ORDER ENQUIRY",
         "button_link": "shopify://pages/bulk",
@@ -134,7 +134,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "WINE CLUB",
-        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "detail-box-txt": "<p>Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.</p>",
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }
