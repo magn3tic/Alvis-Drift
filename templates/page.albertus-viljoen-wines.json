@@ -71,7 +71,7 @@
     "video_single_BDwAAp": {
       "type": "Video-Single",
       "settings": {
-        "heading": "A Man With A Vision. A Wine With Purpose.",
+        "heading": "",
         "cover_image": "shopify://shop_images/Alvis_DRift_Catavinum_World_Wine_Spirites_Competiton.png",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
@@ -157,7 +157,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "",
-        "detail-box-txt": "A quote from Alvi around the fact that every time you buy a bottle of ALbertus Viljoen you are making a choice to change peoples lives.",
+        "detail-box-txt": "<p>A quote from Alvi around the fact that every time you buy a bottle of ALbertus Viljoen you are making a choice to change peoples lives.</p>",
         "btn-txt": "SUPPORT",
         "btn-url": "shopify://collections/icon-range"
       }
