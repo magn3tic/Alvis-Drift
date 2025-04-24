@@ -71,7 +71,7 @@
     "video_single_BDwAAp": {
       "type": "Video-Single",
       "custom_css": [
-        ".video-section__media {position:relative!important;}"
+        ".video-section__media {position: relative !important;}"
       ],
       "settings": {
         "heading": "A Man With A Vision. A Wine With Purpose.",
@@ -211,7 +211,7 @@
         "heading": "",
         "text_transform": "none",
         "blog_show_tags": true,
-        "blog": "albertus-viljoen",
+        "blog": "icon-albertus-viljoen",
         "post_limit": 3,
         "show_image": true,
         "show_date": false,
