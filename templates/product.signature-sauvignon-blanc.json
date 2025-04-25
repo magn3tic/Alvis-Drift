@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#721326",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "Serve this wine as an aperitif, or with seafood and salads. It will also complement fresh, young goats’ milk cheeses, grilled chicken or fish dishes and is ideal for enjoyment at summer picnics.",
+        "detail-box-txt": "<p>Serve this wine as an aperitif, or with seafood and salads. It will also complement fresh, young goats’ milk cheeses, grilled chicken or fish dishes and is ideal for enjoyment at summer picnics.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
