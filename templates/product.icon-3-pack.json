@@ -74,7 +74,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "Exclusive Invitation",
-        "detail-box-txt": "<p><strong>Join Us For An Intimate Virtual Albertus Viljoen Wine Tasting</strong></p><p>Keep an eye on your inbox – as a valued Silver, Gold or Platinum member of our Wine Club, you’ll receive a personal invitation to join us for an intimate virtual tasting of the full Albertus Viljoen range of wines.</p><p><strong>Date:  Wednesday, 7 May 2025<br/>Time:  19:00 – 20:00<br/>Location:  Online </strong>(Link will be e-mailed to you)</p><p>We hope you will join us for this rare opportunity to taste alongside our brand ambassador and renowned wine expert, Junel van der Merwe. You will have the chance to ask questions and discover what makes these remarkable wines so extraordinary.</p><p><em><strong>Please note that spots are limited. Keep an eye on your inbox for your exclusive invitation link.</strong></em></p>",
+        "detail_box_txt": "<p><strong>Join Us For An Intimate Virtual Albertus Viljoen Wine Tasting</strong></p><p><strong>Keep an eye on your inbox – as a valued Silver, Gold or Platinum member of our Wine Club, you’ll receive a personal invitation to join us for an intimate virtual tasting of the full Albertus Viljoen range of wines.</strong></p>",
         "btn-txt": "ENQUIRE",
         "btn-url": "shopify://pages/contact"
       }
