@@ -18,13 +18,7 @@
   height: 100%;
   background-size: cover;
 }
-.awc-bg-picture img{
-  height: 100%;
-  width: 100%;
-  @media (max-width:1023px) {
-    height: 60dvh;
-  }
-}
+
 .awc-member .container,
 .awc-intro .container,
 .awc-tiers .container,
@@ -158,3 +152,25 @@
     margin-left: 0 !important;
   }
 } */
+
+
+.awc-hero-v2{
+  position: relative;
+  height: 600px;
+}
+.awc-hero--content-v2{
+  position: absolute;
+  z-index: 10;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+}
+.awc-bg-picture img{
+  height: 100%;
+  width: 100%;
+
+}
