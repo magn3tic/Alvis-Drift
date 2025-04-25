@@ -9,6 +9,15 @@
  */
 {
   "sections": {
+    "wine_club_hero_v2_y96K78": {
+      "type": "wine-club-hero-v2",
+      "name": "Wine Club Hero V2",
+      "settings": {
+        "image_connected_desktop": "shopify://shop_images/Website_banner_icon_mobile.png",
+        "image_connected_mobile": "shopify://shop_images/Website_banner_Icon_139d053b-b7ba-46c5-bdeb-b3a7aa3d3c59.png",
+        "image_disconnected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -98,6 +107,7 @@
     }
   },
   "order": [
+    "wine_club_hero_v2_y96K78",
     "main",
     "wine_club_shop_hero_tDw9PQ",
     "collections_grid_members_QMWn4i",
