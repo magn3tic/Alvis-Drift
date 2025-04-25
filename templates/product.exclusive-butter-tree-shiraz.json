@@ -207,7 +207,7 @@
         "image_overlay": true,
         "Heading_color": "#721326",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "Ideal for enjoying with any red meat, this wine pairs well with mushroom risotto, or pasta dishes served with ham-and-mushroom sauce. It will also complement hard cheeses such as Huguenot, or mature gouda and cheddar cheese.",
+        "detail_box_txt": "<p>Ideal for enjoying with any red meat, this wine pairs well with mushroom risotto, or pasta dishes served with ham-and-mushroom sauce. It will also complement hard cheeses such as Huguenot, or mature gouda and cheddar cheese.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -222,12 +222,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>Alvi's Drift winery takes its name from the low-water bridge over the Breede River which cuts through the family farm. Albertus Viljoen \"Oupa Alvi\" van der Merwe was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "164390393509a8cadf": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/Alvi_s_Drift_Vineyards_508c2c67-88ae-424b-b737-eef114cb8684.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -236,7 +238,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1643904463ddbe473e": {
@@ -249,7 +252,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16392534101a01b24e": {

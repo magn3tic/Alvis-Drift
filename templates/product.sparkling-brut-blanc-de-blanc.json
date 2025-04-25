@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#5c6e67",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "Serve this wine as a welcoming drink with fish pâté, fresh oysters, or sushi. It will also complement grilled fish, prawns or chicken dishes.",
+        "detail_box_txt": "Serve this wine as a welcoming drink with fish pâté, fresh oysters, or sushi. It will also complement grilled fish, prawns or chicken dishes.",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -220,12 +220,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>Alvi's Drift winery takes its name from the low-water bridge over the Breede River which cuts through the family farm. Our family patriarch, Albertus Viljoen \"Oupa Alvi\" van der Merwe was instrumental in having this bridge built back in 1930. </p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines.</p><p>Alvi’s Drift Blanc de Blanc sparkling wine is made entirely from Chardonnay grapes – a green-skinned grape variety that is one of the most-planted white grapes in the world. Widely used in the production of white sparkling wines, Chardonnay is a varietal widely used in Champagne, France, the region where Blanc de Blanc sparkling wine originates from.</p>",
         "button-txt": "SPARKLING RANGE",
-        "button_link": "shopify://collections/sparkling-range"
+        "button_link": "shopify://collections/sparkling-range",
+        "button_type": "alvisBtn"
       }
     },
     "1643891613d67efac5": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/DJI_0001.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -234,7 +236,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift winery vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. </p><p>The Chardonnay grapes used for the production of this Blanc de Blanc sparkling wine are sourced predominantly from two Alvi’s Drift vineyards:  Thornlands, with its south-facing slopes is dominated by ancient shale and black slate soils, while Moordkuilsdrift is known for its characteristic, limestone-rich soils. The combination is delicious, fun and surprisingly complex little wine.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1643891627d12c65dd": {
@@ -247,7 +250,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>The Chardonnay grapes used to create this Blanc de Blanc sparkling wine are carefully hand harvested in the early morning hours to ensure they arrive cool at our winery, thus preserving both flavour and acidity. Grapes are whole-bunch pressed after which free-run juice is separated before cold fermentation commences in a stainless steel tank. After alcoholic fermentation is completed, wine is left on lees to develop complexity prior to bottling.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16392534101a01b24e": {

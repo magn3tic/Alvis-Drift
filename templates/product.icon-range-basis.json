@@ -217,7 +217,7 @@
         "image_overlay": false,
         "Heading_color": "#5c6e67",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.",
+        "detail_box_txt": "This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -232,12 +232,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>In 1928, our family patriarch, Albertus Viljoen van der Merwe – “Alvi” to his friends – established a farm south of the town of Worcester, South Africa. Alvi’s son, Bertie, started wine production on the family farm and today the award-winning Alvi’s Drift wines are created by winemaker Alvi van der Merwe, Oupa Alvi’s grandson and namesake.</p><p>Our Albertus Viljoen Icon range showcases full-bodied, barrel-fermented wines of outstanding character and complexity. </p>",
         "button-txt": "VIEW ALL OUR ICON RANGE WINES",
-        "button_link": "shopify://collections/icon-range"
+        "button_link": "shopify://collections/icon-range",
+        "button_type": "alvisBtn"
       }
     },
     "1643898577cbfe915f": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/Vineyards-10.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -246,7 +248,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. </p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16438985887500d414": {
@@ -259,7 +262,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16392534101a01b24e": {

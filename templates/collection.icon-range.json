@@ -56,6 +56,19 @@
         "btn_main_link": ""
       }
     },
+    "focus_text_text_only_CaFzqn": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "",
+        "subtitle-2": "<p>Full-bodied and barrel-fermented, these wines boast remarkable character and complexity, offering a rich elegance and a lingering finish. Our Albertus Viljoen Icon range embodies our winery’s unwavering commitment to perfection, showcasing excellence in every bottle.</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
     "product-grid": {
       "type": "Collections-Grid",
       "blocks": {
@@ -76,19 +89,6 @@
         "active_collection": "icon-range"
       }
     },
-    "focus_text_text_only_CaFzqn": {
-      "type": "Focus-Text-Text-Only",
-      "settings": {
-        "text_transform": "uppercase",
-        "Heading_color": "#ffffff",
-        "title": "",
-        "subtitle-1": "",
-        "subtitle-2": "<p>Full-bodied and barrel-fermented, these wines boast remarkable character and complexity, offering a rich elegance and a lingering finish. Our Albertus Viljoen Icon range embodies our winery’s unwavering commitment to perfection, showcasing excellence in every bottle.</p>",
-        "button_text": "",
-        "button_link": "",
-        "new_tab": true
-      }
-    },
     "16421089918c15802d": {
       "type": "Call-To-Action",
       "settings": {
@@ -96,7 +96,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "WINE CLUB",
-        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }

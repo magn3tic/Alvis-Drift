@@ -12,7 +12,7 @@
     "1639248035a16a435a": {
       "type": "Page-Background-Colour",
       "settings": {
-        "page_bg": "#2d5980"
+        "page_bg": "#2e112d"
       }
     },
     "banner": {
@@ -30,13 +30,7 @@
             "slider_link": ""
           }
         },
-        "d64fc404-0b74-475f-a4e3-6ca0fd3bae9e": {
-          "type": "slider",
-          "settings": {
-            "slider_link": ""
-          }
-        },
-        "163cc00c-c6b6-4d2f-ae30-51120c804ecd": {
+        "c5648291-9f96-4fce-8ec1-ac4f4589cfa8": {
           "type": "slider",
           "settings": {
             "slider_link": ""
@@ -46,16 +40,27 @@
       "block_order": [
         "3f3c051f-68fe-48bc-bf8a-58871c755c90",
         "4b213a1a-e32c-4af1-917d-4d410febf63d",
-        "d64fc404-0b74-475f-a4e3-6ca0fd3bae9e",
-        "163cc00c-c6b6-4d2f-ae30-51120c804ecd"
+        "c5648291-9f96-4fce-8ec1-ac4f4589cfa8"
       ],
-      "disabled": true,
       "settings": {
         "show_collection_description": true,
         "show_collection_image": false,
-        "title": "<p>EXCLUSIVE<br/>R<em>A</em>NGE</p>",
-        "description": "",
-        "sub_title": "BROWSE ALL EXCLUSIVE WINES"
+        "title": "<p>GREAT FOR THE PRICE OF GOOD</p>",
+        "description": "<p>sdfsdfsdf</p>",
+        "sub_title": "sdfsdfsd"
+      }
+    },
+    "1639247430b11975b9": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/the-wine-side.png",
+        "video_url": "",
+        "Heading_size": "h1",
+        "Heading_color": "#f8f2e6",
+        "title": "221 RANGE",
+        "video-sec-content-txt-1": "<p>Our range is the best</p>",
+        "button-txt": "",
+        "button_link": ""
       }
     },
     "product-grid": {
@@ -65,7 +70,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
-            "collectionCarasoul": "exclusive-range"
+            "collectionCarasoul": "221-range"
           }
         }
       },
@@ -73,28 +78,35 @@
         "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
       ],
       "settings": {
-        "topheading": "OUR EXCLUSIVE RANGE",
-        "subtitle-1": "",
-        "active_collection": "exclusive-range"
+        "topheading": "",
+        "subtitle-1": "Add Text",
+        "active_collection": ""
       }
     },
-    "164210907172e102d4": {
-      "type": "Call-To-Action",
+    "1639247728bb3b5028": {
+      "type": "Logos",
+      "blocks": {
+        "1639247728c24078eb-0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "1639247728c24078eb-0"
+      ],
       "settings": {
-        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
-        "image_overlay": false,
-        "Heading_color": "#c65336",
-        "title": "WINE CLUB",
-        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
-        "btn-txt": "FIND OUT MORE",
-        "btn-url": "shopify://pages/club"
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
       }
     }
   },
   "order": [
     "1639248035a16a435a",
     "banner",
+    "1639247430b11975b9",
     "product-grid",
-    "164210907172e102d4"
+    "1639247728bb3b5028"
   ]
 }

@@ -28,7 +28,7 @@
     "social_youtube_link": "https://www.youtube.com/c/AlvisdriftCoZa",
     "predictive_search_enabled": true,
     "favicon": "shopify://shop_images/Alvis_Fabicon.png",
-    "member-discount": "disable",
+    "member-discount": "enable",
     "product_list": [
       "voucher",
       "exclusive-butter-tree-viognier-2023",
@@ -51,7 +51,7 @@
       "icon-pinot-noir-2021",
       "icon-chardonnay-2020"
     ],
-    "member-included-discount": "disable",
+    "member-included-discount": "enable",
     "product_list_included": [],
     "product_list_included-second": [],
     "product_list_included-third": [],
@@ -194,7 +194,7 @@
         ],
         "settings": {
           "color_scheme": "background-1",
-          "top_footer_title": "Alvi’s Drift wines contain up to 13.5% ABV, except our dessert wine at 15.5%. Not for sale to under 18s. Drink responsibly.",
+          "top_footer_title": "Alvi's Drift wines' maximum ABV is 15,5% . Alcohol not for sale to under 18s. Drink responsibly.",
           "footer_logo": "https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvi_s-Drift-Logo-Blue.png?v=1645089435",
           "newsletter_enable": false,
           "newsletter_heading": "Subscribe to our emails",
@@ -267,9 +267,24 @@
     },
     "content_for_index": [],
     "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "3574802870912500141": {
+        "type": "shopify://apps/sc-loyalty-rewards/blocks/enable_storefront_widget/21842f98-987a-4ad6-91bf-a00b77123261",
+        "disabled": false,
+        "settings": {}
+      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
-        "disabled": false,
+        "disabled": true,
         "settings": {
           "button_color": "#9f9f9f",
           "secondary_color": "#ffffff",
@@ -281,13 +296,13 @@
           "greeting_message": "Any questions? We'd love to help."
         }
       },
-      "855628211100114053": {
-        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+      "16178409538858199964": {
+        "type": "shopify://apps/powr-popup/blocks/app-embed/c42eddd7-7bc0-47cc-aa8a-df388049f012",
         "disabled": false,
         "settings": {}
       },
-      "16178409538858199964": {
-        "type": "shopify://apps/powr-popup/blocks/app-embed/c42eddd7-7bc0-47cc-aa8a-df388049f012",
+      "11068332061543699368": {
+        "type": "shopify://apps/booster-page-speed-optimizer/blocks/app-embed/d920faf3-7c60-423a-9636-22618b5561b5",
         "disabled": false,
         "settings": {}
       },

@@ -49,7 +49,7 @@
                   </div>
                 </div>
                 
-                {% comment %}
+                {% if settings.member-discount == "enable" %}
               {% if lowertags contains 'silver'%}
             {% if excluded_product_ids contains product.id %}
               

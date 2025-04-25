@@ -217,7 +217,7 @@
         "image_overlay": true,
         "Heading_color": "#5c6e67",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "Serve chilled (4-8ºC) as an aperitif for any occasion. perfect for fresh, fun, unpretentious enjoyment wherever good friends meet.",
+        "detail_box_txt": "Serve chilled (4-8ºC) as an aperitif for any occasion. perfect for fresh, fun, unpretentious enjoyment wherever good friends meet.",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -232,12 +232,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>Alvi's Drift winery takes its name from the low-water bridge over the Breede River which cuts through the family farm. Our family patriarch, Albertus Viljoen \"Oupa Alvi\" van der Merwe was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines.</p>",
         "button-txt": "SPARKLING RANGE",
-        "button_link": "shopify://collections/sparkling-range"
+        "button_link": "shopify://collections/sparkling-range",
+        "button_type": "alvisBtn"
       }
     },
     "16438917125306fef1": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/DJI_0001.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -246,7 +248,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift winery vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. </p><p>The ancient shale soils on the cool, south-facing slopes of Alvi’s Drift’s Thornlands vineyards produce outstanding Pinot Noir and Chardonnay – the distinct grape varietals made famous by the great Champagne houses of France. These varietals also comprise the cornerstone of the Alvi’s Drift sparkling wine portfolio.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1643891720690e2d36": {
@@ -259,7 +262,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>With Pinot Noir grapes bringing forth its gorgeous pink hue, only the highest-quality free-run juice from both Chardonnay and Pinot Noir grapes is used in the production of this beautiful, vibrant sparkling wine. </p><p>Left on lees for several months to develop a fuller mouthfeel, this award-winning dry South African sparkling wine is created with a focus on showcasing the fresh, clean apple and strawberry flavours from each grape varietal.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1639226365ec4bf8dd": {

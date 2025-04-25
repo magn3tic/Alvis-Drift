@@ -219,7 +219,7 @@
         "image_overlay": true,
         "Heading_color": "#2d5980",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine can be enjoyed with most red meats. It will also complement duck pâté and hard cheeses.",
+        "detail_box_txt": "<p>This wine can be enjoyed with most red meats. It will also complement duck pâté and hard cheeses.</p>",
         "btn-txt": "",
         "btn-url": ""
       }

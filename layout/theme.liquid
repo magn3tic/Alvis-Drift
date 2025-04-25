@@ -8,7 +8,17 @@
     <meta name="description" content = "{{ page_description }}">
     <link rel="canonical" href="{{ canonical_url }}">
     <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    {{ 'venobox.css' | asset_url | stylesheet_tag }}
+  {% comment %}  {{ 'venobox.css' | asset_url | stylesheet_tag }}{% endcomment %}
+    {{ 'venobox.css' | asset_url | stylesheet_tag: preload: true }}
+    
+    <!-- Google Tag Manager 
+    <script async=true >(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-5GK8LLK');</script>
+    <!-- End Google Tag Manager -->   
+    
     {%- if settings.favicon != blank -%}
       <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
     {%- endif -%}
@@ -64,8 +74,9 @@
        display:none !important; }
       {% endstyle %}
    {{ 'slick-theme.min.css' | asset_url | stylesheet_tag }}   
-    {{ 'styles.css' | asset_url | stylesheet_tag }}
-    {{ 'header-footer.css' | asset_url | stylesheet_tag }}
+
+    {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'header-footer.css' | asset_url | stylesheet_tag:preload:true }}
     {{ 'custom_css_updates.css' | asset_url | stylesheet_tag }} 
     <script>document.documentElement.className = document.documentElement.className.replace('no-js', 'js');</script> 
 <!-- VWO SmartCode -->
