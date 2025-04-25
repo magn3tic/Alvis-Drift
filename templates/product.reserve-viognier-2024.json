@@ -68,91 +68,6 @@
         "enable_video_looping": false
       }
     },
-    "1639223856bcb87c3a": {
-      "type": "Logos",
-      "blocks": {
-        "163922385675455466-0": {
-          "type": "item",
-          "settings": {
-            "logo_link": ""
-          }
-        },
-        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0": {
-          "type": "item",
-          "settings": {
-            "logo_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "163922385675455466-0",
-        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"
-      ],
-      "disabled": true,
-      "settings": {
-        "title_text": "",
-        "Heading_color": "#f8f2e6"
-      }
-    },
-    "16392371564aec5ac1": {
-      "type": "Multi-Column-Content",
-      "blocks": {
-        "163923715616dacea7-0": {
-          "type": "column",
-          "settings": {
-            "title": "ALCOHOL",
-            "Title_color": "#ffffff",
-            "text": "<p><strong>2023:</strong>  13,3%</p>",
-            "Text_color": "#867065"
-          }
-        },
-        "163923715616dacea7-1": {
-          "type": "column",
-          "settings": {
-            "title": "RESIDUAL SUGAR",
-            "Title_color": "#ffffff",
-            "text": "<p><strong>2023:  </strong>5,2 g/l</p>",
-            "Text_color": "#867065"
-          }
-        },
-        "163923715616dacea7-2": {
-          "type": "column",
-          "settings": {
-            "title": "ACIDITY",
-            "Title_color": "#ffffff",
-            "text": "<p><strong>2023:  </strong>6,7 g/l</p>",
-            "Text_color": "#867065"
-          }
-        },
-        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79": {
-          "type": "column",
-          "settings": {
-            "title": "pH",
-            "Title_color": "#ffffff",
-            "text": "<p><strong>2023:</strong>  3,1</p>",
-            "Text_color": "#867065"
-          }
-        }
-      },
-      "block_order": [
-        "163923715616dacea7-0",
-        "163923715616dacea7-1",
-        "163923715616dacea7-2",
-        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
-      ],
-      "settings": {
-        "Background_Colour": "#aac4d3",
-        "title": "ANALYSIS",
-        "Heading_color": "#f8f2e6",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
     "faq_DTb4m9": {
       "type": "Faq",
       "blocks": {
@@ -352,18 +267,6 @@
         "show_text_below": true
       }
     },
-    "1639224403b97d22e1": {
-      "type": "Call-To-Action",
-      "settings": {
-        "wine-club-bg": "shopify://shop_images/White_Meat_Pairing_07.jpg",
-        "image_overlay": true,
-        "Heading_color": "#2d5980",
-        "title": "SERVING SUGGESTION",
-        "detail_box_txt": "<p>Perfect for pairing with creamy seafood, risottos, or aromatic Thai curries. Serve between 10-12°C. </p>",
-        "btn-txt": "",
-        "btn-url": ""
-      }
-    },
     "1639224916778fd50c": {
       "type": "Focus-Text-Image-Right",
       "settings": {
@@ -433,11 +336,8 @@
   "order": [
     "1639248182bc55fb26",
     "main",
-    "1639223856bcb87c3a",
-    "16392371564aec5ac1",
     "faq_DTb4m9",
     "image_with_overlay_text_xLBAW3",
-    "1639224403b97d22e1",
     "1639224916778fd50c",
     "16438973046b12caf0",
     "1643897314ca40fa3b",
