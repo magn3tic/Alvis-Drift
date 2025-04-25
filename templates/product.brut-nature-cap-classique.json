@@ -217,7 +217,7 @@
         "image_overlay": true,
         "Heading_color": "#5c6e67",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "Serve this sparkling wine with fresh oysters and grilled prawns, or enjoy with a pear, goats’ cheese and walnut salad, or a mushroom quiche.",
+        "detail_box_txt": "<p>Serve this sparkling wine with fresh oysters and grilled prawns, or enjoy with a pear, goats’ cheese and walnut salad, or a mushroom quiche.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -232,12 +232,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>Alvi's Drift winery takes its name from the low-water bridge over the Breede River which cuts through the family farm. Our family patriarch, Albertus Viljoen \"Oupa Alvi\" van der Merwe was instrumental in having this bridge built back in 1930. </p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines.</p><p>Alvi’s Drift Brut Nature Cap Classique is made in the traditional bottle fermented method made famous in the Champagne region of France.</p><p>This Cap Classique has been patiently riddled for 36 months and is made without dosage to be the most pure expression of the Cap Classique as interpreted from the grapes of Alvi’s Drift.</p>",
         "button-txt": "SPARKLING RANGE",
-        "button_link": "shopify://collections/sparkling-range"
+        "button_link": "shopify://collections/sparkling-range",
+        "button_type": "alvisBtn"
       }
     },
     "1643891693b4dbdf10": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/DJI_0001.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -246,7 +248,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>Growing in the ancient limestone soils the Breede River Valley is so famous for, our mature Chardonnay vineyard is ideally situated for yielding grapes of the quality, character and complexity required for an outstanding MCC wine. Our Pinot Noir vineyards are situated on north-facing slopes, with grapes grown in black slate soil.</p><p>At Alvi’s Drift, it remains our philosophy that fruit should be phenolically ripe to ensure wines with an excellent, fruit-driven character and perfect mouthfeel. The Chardonnay and Pinot Noir grapes for this wine are specifically harvested at optimal ripeness in the cool, early morning hours to protect the acidity so crucial to producing a superb Brut Nature sparkling wine.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16438917023a1c45b3": {
@@ -259,7 +262,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Once delivered to our cellar, cool Chardonnay and Pinot Noir grapes are whole-bunch pressed to ensure a soft, elegant base wine. Only the highest-quality free-run juice is drawn off skins, then fermented at cool temperatures and aged on lees for 36 months before secondary fermentation.</p><p>No dosage is used on this wine – making it the most pure expression of the South African Cap Classique as written in the language of the grapes of Alvi’s Drift.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16392534101a01b24e": {
