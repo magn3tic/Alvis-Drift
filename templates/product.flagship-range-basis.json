@@ -217,7 +217,7 @@
         "image_overlay": false,
         "Heading_color": "#2d5980",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.",
+        "detail_box_txt": "<p>This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -232,12 +232,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>The mighty Verreaux eagle (<em>Polemaetus bellicosus</em>) is a large predatory bird with a wingspan of up to 2.3 m, native to sub-Saharan Africa.</p><p>A common sight in the skies above Alvi’s Drift, this rare and magnificent eagle with its unmistakable jet-black colouration and distinct white “V” on its back has a unique hunting technique, hunting primarily from a high soar by stooping on its quarry. Perceived as a threat to livestock, this spectacular bird has become one of the most persecuted bird species in the world.</p><p>At Alvi’s Drift, we are actively taking steps to create an environment that will encourage and protect the Verreaux eagle and other eagle species on our farm. Alvi’s Drift honours this legendary South African bird with a unique South African wine that soars above all others.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16438984791a015a9c": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/DJI_0013.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -246,7 +248,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. </p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16438984875ab0bdab": {
@@ -259,7 +262,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1639226365ec4bf8dd": {
