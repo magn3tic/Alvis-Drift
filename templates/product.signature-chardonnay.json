@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#721326",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "An excellent companion to chicken, turkey and most white meats; this wine will also complement soft cheeses such as Brie or Camembert.",
+        "detail-box-txt": "<p>An excellent companion to chicken, turkey and most white meats; this wine will also complement soft cheeses such as Brie or Camembert.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
