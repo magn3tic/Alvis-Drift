@@ -229,7 +229,7 @@
         "image_overlay": false,
         "Heading_color": "#721326",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "<p>This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.</p>",
+        "detail_box_txt": "This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -244,12 +244,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>Alvi's Drift winery takes its name from the low-water bridge over the Breede River which cuts through the family farm. Albertus Viljoen \"Oupa Alvi\" van der Merwe was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p><p>The wines in our Signature range are true to our winery’s trademark, fruit-driven style. These outstanding wines offer wine lovers exceptional value – in the words of Alvi’s Drift winemaker, Alvi van der Merwe, “think ‘great’, for the price of good!”.</p>",
         "button-txt": "VIEW ALL OUR SIGNATURE RANGE WINES",
-        "button_link": "shopify://collections/signature-range"
+        "button_link": "shopify://collections/signature-range",
+        "button_type": "alvisBtn"
       }
     },
     "164390385000f179f6": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/Alvi_s_Drift_Vineyards_508c2c67-88ae-424b-b737-eef114cb8684.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -258,7 +260,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. </p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16439044474a1457cd": {
@@ -271,7 +274,8 @@
         "title": "ON THE CELLAR",
         "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1639226365ec4bf8dd": {
