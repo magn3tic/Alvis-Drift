@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="bg-overlay-content br-cut">
                     <h2 style="color:{{ section.settings.Heading_color }};">{{ section.settings.title }}</h2>
-                    <div class = "detail-box-text">{{ section.settings.detail_box_txt }}</div>
+                    <div class = "detail-box-text" style = "color: var(--your-color-variable);font-size: 16px;">{{ section.settings.detail_box_txt }}</div>
                   <br>
                   {% if section.settings.btn-txt != blank%}
                     <a href="{{ section.settings.btn-url }}" class="alvisBtn alvisBtn--orange">{{ section.settings.btn-txt }}</a>
@@ -19,12 +19,6 @@
     </div>
 </div>
 
-<style>
-  .detail-box-text p{
-  color: var(--your-color-variable);
-  font-size: 16px;
-}
-</style>
 {% schema %}
   {
     "name": "Call To Action",
