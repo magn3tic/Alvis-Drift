@@ -205,7 +205,7 @@
         "image_overlay": false,
         "Heading_color": "#2e112d",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine is ideal for enjoying with fish terrines and fresh, young goats’ milk cheese at a light picnic lunch. It will also complement salads, grilled white fish or prawns, and pairs well with mussels in a creamy garlic sauce.",
+        "detail_box_txt": "This wine is ideal for enjoying with fish terrines and fresh, young goats’ milk cheese at a light picnic lunch. It will also complement salads, grilled white fish or prawns, and pairs well with mussels in a creamy garlic sauce.",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -220,12 +220,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>The endangered martial eagle (<em>Polemaetus bellicosus</em>) is a large predatory bird with a wingspan of up to 2.3m, native to sub-Saharan Africa. Perceived as a threat to livestock, this spectacular bird has become one of the most persecuted bird species in the world.</p><p>At Alvi’s Drift, we are actively taking steps to create an environment that will encourage and protect the martial eagle and other eagle species on our farm. Our winery honours this great eagle with a unique range of wines which showcases the boldness and elegance of this magnificent bird.</p>",
         "button-txt": "VIEW ALL OUR EXCLUSIVE RANGE WINES",
-        "button_link": "shopify://collections/exclusive-range"
+        "button_link": "shopify://collections/exclusive-range",
+        "button_type": "alvisBtn"
       }
     },
     "16438903413451194b": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/Alvi_s_Drift_Vineyards_1.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -234,7 +236,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. </p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "164389034910a16890": {
@@ -247,7 +250,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Only premium free-run juice of the highest quality is used to create this unwooded, fruit-driven wine. To ensure maximum flavour retention, clarified juice was cold fermented after which the wine spent several months on lees, before fining and stabilisation.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1639226365ec4bf8dd": {
