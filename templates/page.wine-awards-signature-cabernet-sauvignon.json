@@ -438,7 +438,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "WINE CLUB",
-        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "detail_box_txt": "<p>This wine is ideal for enjoying with red meats such as beef sirloin, venison pie, fillet with a creamy pepper sauce; or a hearty oxtail or lamb stew. It will also complement any mature cheese; as well as dark chocolate (70-85% cacao).</p>",
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }
