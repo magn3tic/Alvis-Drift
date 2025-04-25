@@ -18,6 +18,13 @@
   height: 100%;
   background-size: cover;
 }
+.awc-bg-picture{
+  height: 100%;
+  width: 100%;
+  @media (max-width:1023px) {
+    height: 60dvh;
+  }
+}
 .awc-member .container,
 .awc-intro .container,
 .awc-tiers .container,
