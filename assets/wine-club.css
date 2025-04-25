@@ -169,6 +169,10 @@
   text-align: center;
 
 }
+.awc-bg-picture--disconnected img{
+  object-fit: cover;
+  object-position: top;
+}
 .awc-bg-picture img{
   height: 100%;
   width: 100%;
