@@ -23,14 +23,6 @@
       "disabled": true,
       "settings": {}
     },
-    "wine_club_shop_hero_tDw9PQ": {
-      "type": "wine-club-shop-hero",
-      "settings": {
-        "image_connected_desktop": "shopify://shop_images/Website_banner_Icon_139d053b-b7ba-46c5-bdeb-b3a7aa3d3c59.png",
-        "image_connected_mobile": "shopify://shop_images/Website_banner_icon_mobile.png",
-        "image_disconnected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg"
-      }
-    },
     "collections_grid_members_QMWn4i": {
       "type": "Collections-Grid-Members",
       "settings": {}
@@ -109,7 +101,6 @@
   "order": [
     "wine_club_hero_v2_y96K78",
     "main",
-    "wine_club_shop_hero_tDw9PQ",
     "collections_grid_members_QMWn4i",
     "wine_club_shop_CnAr3T",
     "1738176045b8ca5c13",
