@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#721326",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "Perfect for serving as a welcoming drink with snacks or sushi, this wine makes an excellent companion to margarita pizza, pork belly, as well as baked fish pie.",
+        "detail-box-txt": "<p>Perfect for serving as a welcoming drink with snacks or sushi, this wine makes an excellent companion to margarita pizza, pork belly, as well as baked fish pie.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
