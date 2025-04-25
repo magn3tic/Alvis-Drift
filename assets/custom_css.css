@@ -205,7 +205,7 @@
     display: inline-block;
   }
   .bg-overlay-content-wrapper .br-cut p {
-    opacity: 0;
+    opacity: 1;
     -webkit-animation: reveal 1s ease 1 normal forwards;
     -moz-animation: reveal 1s ease-in 1 normal forwards;
     -o-animation: reveal 1s ease 1 normal forwards;
@@ -635,7 +635,4 @@
   .input-num-wrap {
     margin-right:10px!important;
   }
-}
-.detail-box-text p {
-  opacity: 1
 }
