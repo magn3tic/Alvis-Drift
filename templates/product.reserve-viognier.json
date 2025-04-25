@@ -140,7 +140,6 @@
         "163923715616dacea7-2",
         "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
       ],
-      "disabled": true,
       "settings": {
         "Background_Colour": "#aac4d3",
         "title": "ANALYSIS",
@@ -360,7 +359,7 @@
         "image_overlay": true,
         "Heading_color": "#2d5980",
         "title": "SERVING SUGGESTION",
-        "detail_box_txt": "",
+        "detail_box_txt": "<p>Perfect for pairing with creamy seafood, risottos, or aromatic Thai curries. Serve between 10-12°C. </p>",
         "btn-txt": "",
         "btn-url": ""
       }
