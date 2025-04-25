@@ -18,7 +18,7 @@
   height: 100%;
   background-size: cover;
 }
-.awc-bg-picture{
+.awc-bg-picture img{
   height: 100%;
   width: 100%;
   @media (max-width:1023px) {
