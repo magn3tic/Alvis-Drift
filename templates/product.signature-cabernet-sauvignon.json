@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#721326",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine is ideal for enjoying with red meats such as beef sirloin, venison pie, fillet with a creamy pepper sauce; or a hearty oxtail or lamb stew. It will also complement any mature cheese; as well as dark chocolate (70-85% cacao).",
+        "detail-box-txt": "<p>This wine is ideal for enjoying with red meats such as beef sirloin, venison pie, fillet with a creamy pepper sauce; or a hearty oxtail or lamb stew. It will also complement any mature cheese; as well as dark chocolate (70-85% cacao).</p>",
         "btn-txt": "",
         "btn-url": ""
       }
