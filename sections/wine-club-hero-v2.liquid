@@ -1,6 +1,6 @@
 <section class="awc-hero-v2">
-  {% if customer.has_account %}
-    {% comment %} logged in view {% endcomment %}
+  {% if customer %}
+    {%- comment -%} Vista para clientes logueados {%- endcomment -%}
     {% assign lowertags = customer.tags | downcase %}
     {% capture customer_tier_name %}
       {% if lowertags contains 'gold' %}
@@ -9,58 +9,59 @@
         Silver
       {% elsif lowertags contains 'bronze' %}
         Bronze
-     {%  else %}
+      {% else %}
         Platinum 
       {% endif %}
     {% endcapture %}
-
     {% assign customer_tier = customer_tier_name | strip %}
     {% capture tier_badge_name %}{{ customer_tier }}_large.webp{% endcapture %}
-    {% if customer %}
-      <div class="awc-hero--content-v2">
-        <h1 class="h1">Alvi's Drift Wine Club</h1>
-        <p>{{ customer_tier }} Tier Members Portall</p>
-        <div class="awc-promo--btn">
-          <a class="btn" href="/collections/club-{{customer_tier}}">SHOP NOW</a>
-        </div>
+
+    <div class="awc-hero--content-v2">
+      <h1 class="h1">Alvi's Drift Wine Club</h1>
+      <p>{{ customer_tier }} Tier Members Portall</p>
+      <div class="awc-promo--btn">
+        <a class="btn" href="/collections/club-{{ customer_tier }}">SHOP NOW</a>
       </div>
-      <div class="awc-bg awc-bg-picture">
-        <picture>
-          <source
-            media="(max-width: 1023px)"
-            srcset="{{ section.settings.image_connected_mobile |  image_url: width: 450 }}"
-            alt="Alvi's Drift Wine Club"
-          >
-          <img
-            src="{{ section.settings.image_connected_desktop |  image_url: width: 2000 }}"
-            alt="Alvi's Drift Wine Club"
-          >
-        </picture>
+    </div>
+    <div class="awc-bg awc-bg-picture">
+      <picture>
+        <source
+          media="(max-width: 1023px)"
+          srcset="{{ section.settings.image_connected_mobile | image_url: width: 450 }}"
+          alt="Alvi's Drift Wine Club"
+        >
+        <img
+          src="{{ section.settings.image_connected_desktop | image_url: width: 2000 }}"
+          alt="Alvi's Drift Wine Club"
+        >
+      </picture>
+    </div>
+
+  {% else %}
+    {%- comment -%} User not logged {%- endcomment -%}
+    <div class="awc-hero--content-v2">
+      <h1 class="h1">Alvi's Drift Wine Club</h1>
+      <p>Not a member of the Wine Club yet?</p>
+      <div class="awc-promo--btn">
+        <a class="alvisBtn" href="https://alvisdrift.co.za/account/register/" target="_blank">JOIN NOW</a>
       </div>
-    {% else %}
-      <div class="awc-hero--content-v2">
-        <h1 class="h1">Alvi's Drift Wine Club</h1>
-        <p>Not a member of the Wine Club yet?</p>
-        <div class="awc-promo--btn">
-          <a class="alvisBtn" href="https://alvisdrift.co.za/account/register/" target="_blank">JOIN NOW</a>
-        </div>
-      </div>
-      <div class="awc-bg awc-bg-picture">
-        <picture>
-          <source
-            media="(max-width: 1023px)"
-            srcset="{{ section.settings.image_disconnected_mobile |  image_url: width: 450 }}"
-            alt="Alvi's Drift Wine Club"
-          >
-          <img
-            src="{{ section.settings.image_disconnected_desktop |  image_url: width: 2000 }}"
-            alt="Alvi's Drift Wine Club"
-          >
-        </picture>
-      </div>
-    {% endif %}
+    </div>
+    <div class="awc-bg awc-bg-picture">
+      <picture>
+        <source
+          media="(max-width: 1023px)"
+          srcset="{{ section.settings.image_disconnected_mobile | image_url: width: 450 }}"
+          alt="Alvi's Drift Wine Club"
+        >
+        <img
+          src="{{ section.settings.image_disconnected_desktop | image_url: width: 2000 }}"
+          alt="Alvi's Drift Wine Club"
+        >
+      </picture>
+    </div>
   {% endif %}
 </section>
+
 
 {% schema %}
 {
