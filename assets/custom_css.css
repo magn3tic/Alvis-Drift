@@ -636,3 +636,6 @@
     margin-right:10px!important;
   }
 }
+.detail-box-text p {
+  opacity: 1
+}
