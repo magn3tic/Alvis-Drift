@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#721326",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine is ideal for enjoying with fish terrines and fresh, young goats’ milk cheese at a light picnic lunch. It will also complement grilled white fish or prawns, and pairs well with mussels in a creamy garlic sauce.",
+        "detail-box-txt": "<p>This wine is ideal for enjoying with fish terrines and fresh, young goats’ milk cheese at a light picnic lunch. It will also complement grilled white fish or prawns, and pairs well with mussels in a creamy garlic sauce.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
