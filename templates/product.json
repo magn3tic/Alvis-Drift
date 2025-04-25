@@ -161,7 +161,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "Pair this wine with creamy seafood, risotto, or aromatic Thai curries.",
+        "detail_box_txt": "<p>Pair this wine with creamy seafood, risotto, or aromatic Thai curries.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
