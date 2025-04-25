@@ -61,7 +61,12 @@
         </div> 
       </div>
     </div>
-    <div class="awc-bg" style="background-image:url({{ 'alvis-hero-alt-bg.jpg' | file_url }});"></div>
+    <div class="awc-bg">
+      <picture>
+        <source media="(max-width: 767px)" srcset="{{ image_disconnected_mobile | img_url: '2048x' }}" alt="Alvi's Drift Wine Club">
+        <img src="{{ image_disconnected_desktop | img_url: '2048x' }}" alt="Alvi's Drift Wine Club">
+      </picture>
+    </div>
   </section>
   
 {% endif %}
@@ -70,8 +75,27 @@
 {% schema %}
 {
   "name": "Wine Club Hero",
-  "settings": [
-
+  "settings":  [
+    {
+      "type": "image_picker",
+      "id": "image_connected_desktop",
+      "label": "Image (Logged-in - Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_connected_mobile",
+      "label": "Image (Logged-in - Mobile)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_disconnected_desktop",
+      "label": "Image (Logged-out - Desktop)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_disconnected_mobile",
+      "label": "Image (Logged-out - Mobile)"
+    }
   ],
   "presets": [
     {
