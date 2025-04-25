@@ -241,7 +241,7 @@
         "image_overlay": true,
         "Heading_color": "#2d5980",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This red wine is best enjoyed with red meats like roast lamb, beef steak and venison pie. It also pairs well with strong cheeses such as Roquefort, Gruyère or Comté.",
+        "detail_box_txt": "<p>This red wine is best enjoyed with red meats like roast lamb, beef steak and venison pie. It also pairs well with strong cheeses such as Roquefort, Gruyère or Comté.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -256,12 +256,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>The wine labels on bottles from our Reserve range feature an illustration of Alvi’s Drift, the low-water bridge over the Breede River cutting through the family farm. Our patriarch, Albertus Viljoen “Oupa Alvi” van der Merwe, was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p><p>Our Alvi’s Drift Reserve range is the culmination of our pursuit of excellence in producing outstanding wines of unrivalled complexity.</p>",
         "button-txt": "RESERVE RANGE",
-        "button_link": "shopify://collections/reserve-range"
+        "button_link": "shopify://collections/reserve-range",
+        "button_type": "alvisBtn"
       }
     },
     "16438963100f531ef1": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/DSC_5267.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -270,7 +272,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Our Reserve range showcases the best of our harvest; a fusion of our trademark fresh, primary-fruit style – with just a hint of the luscious and opulent barrel-fermented style of our Albertus Viljoen Icon range.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "164389632145048776": {
@@ -283,7 +286,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>A true Cape blend led by Pinotage and backed by Cabernet Sauvignon, this wine is literally a fusion of old and new. Not only of grapes and styles of wine, but also of winemaking techniques, with each variety vinified separately to showcase specific characters of each varietal.</p><p>After juice is macerated on skins, each variety follows its own path through the cellar, enjoying pumping-over and open-tank fermentation in some cases, while other varieties enjoy partial tank fermentation, completing fermentation in barrel. The wine is matured for 18 months in a combination of French and American oak barrels, of which approximately a third are new. Thereafter, wines from individual barrels are carefully selected to make up the final blend.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1639226365ec4bf8dd": {
