@@ -8,7 +8,7 @@
             <div class="container">
                 <div class="bg-overlay-content br-cut">
                     <h2 style="color:{{ section.settings.Heading_color }};">{{ section.settings.title }}</h2>
-                    <div class = "detail-box-text">{{ section.settings.detail_box_txt }}</div>
+                    <div class = "detail-box-text">{{ section.settings.detail-box-txt }}</div>
                   <br>
                   {% if section.settings.btn-txt != blank%}
                     <a href="{{ section.settings.btn-url }}" class="alvisBtn alvisBtn--orange">{{ section.settings.btn-txt }}</a>
@@ -92,8 +92,8 @@
 		"default": "Wine Club"
       },
 	  {
-        "type": "richtext",
-        "id": "detail_box_txt",
+        "type": "text",
+        "id": "detail-box-txt",
         "label": "Text"
       },
       {
