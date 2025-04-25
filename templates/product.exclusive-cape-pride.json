@@ -221,7 +221,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
-            "collectionCarasoul": "club"
+            "collectionCarasoul": "club-bronze"
           }
         }
       },
@@ -231,7 +231,7 @@
       "settings": {
         "topheading": "EXCLUSIVE WINE CLUB MEMBERS WINES",
         "subtitle-1": "",
-        "active_collection": "club"
+        "active_collection": "club-bronze"
       }
     }
   },
