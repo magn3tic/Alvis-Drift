@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#721326",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine can be enjoyed with most red meats, as well as mature gouda or cheddar cheese. It will also complement sushi and seared tuna and pairs well with any creamy coconut curry.",
+        "detail-box-txt": "<p>This wine can be enjoyed with most red meats, as well as mature gouda or cheddar cheese. It will also complement sushi and seared tuna and pairs well with any creamy coconut curry.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
