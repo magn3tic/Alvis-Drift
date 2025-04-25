@@ -359,7 +359,7 @@
         "image_overlay": true,
         "Heading_color": "#721326",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine will complement spicy food such as Thai-style green curries, or Indian kormas. It will also pair well with sushi and sashimi as well as pasta served with a carbonara or a puttanesca sauce.",
+        "detail-box-txt": "<p>This wine will complement spicy food such as Thai-style green curries, or Indian kormas. It will also pair well with sushi and sashimi as well as pasta served with a carbonara or a puttanesca sauce.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
