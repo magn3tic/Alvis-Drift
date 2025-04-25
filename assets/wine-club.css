@@ -156,7 +156,10 @@
 
 .awc-hero-v2{
   position: relative;
-  height: 600px;
+  height: 425px;
+  @media (min-width: 767px) {
+    height: 600px;
+  }
 }
 .awc-hero--content-v2{
   position: absolute;
@@ -171,7 +174,7 @@
 }
 .awc-bg-picture--disconnected img{
   object-fit: cover;
-  object-position: top;
+  object-position: right top
 }
 .awc-bg-picture img{
   height: 100%;
