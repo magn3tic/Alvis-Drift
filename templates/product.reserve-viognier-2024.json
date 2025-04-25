@@ -156,11 +156,13 @@
     },
     "1639224403b97d22e1": {
       "type": "Call-To-Action",
+      "disabled": true,
       "settings": {
         "wine-club-bg": "shopify://shop_images/serving-suggestion-bg.png",
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "SERVING SUGGESTION",
+        "detail_box_txt": "",
         "btn-txt": "",
         "btn-url": ""
       }
