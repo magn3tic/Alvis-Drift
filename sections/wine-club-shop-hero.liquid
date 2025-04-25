@@ -34,7 +34,12 @@
         </div>
       </div>
     </div>
-    <div class="awc-bg" style="background-image:url({{ 'alvis-hero-alt-bg.jpg' | file_url }});background-position: center;"></div>
+    <div class="awc-bg">
+      <picture>
+        <source media="(max-width: 767px)" srcset="{{ image_connected_desktop | img_url: '2048x' }}" alt="Alvi's Drift Wine Club">
+        <img src="{{ image_connected_desktop | img_url: '2048x' }}" alt="Alvi's Drift Wine Club">
+      </picture>
+    </div>
   </section>
   
   <section class = "home-aboutus focusTextSection bg-darkPurple text-center" style = "background:#b59a88;max-width:100%; display:none">
