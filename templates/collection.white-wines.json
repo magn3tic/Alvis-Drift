@@ -31,7 +31,8 @@
         "paragarh_1": "OUR SELECTION OF WHITE WINES INCLUDE SAUVIGNON BLANC, CHENIN BLANC, CHARDONNAY, VIOGNIER, AND WHITE WINE BLENDS",
         "paragarh_2": "Alvi’s Drift winery has gained an international reputation for producing superb, fruit-driven white wines of singular character and complexity, including cooler-climate varietals such as Chardonnay.",
         "btn_text": "",
-        "btn_link": "shopify://collections/all-wines"
+        "btn_link": "shopify://collections/all-wines",
+        "btn_main_link": ""
       }
     },
     "product-grid": {
@@ -61,7 +62,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "WINE CLUB",
-        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }
