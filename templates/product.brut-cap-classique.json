@@ -217,7 +217,7 @@
         "image_overlay": true,
         "Heading_color": "#5c6e67",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "An excellent companion to grilled fish or chicken, this dry sparkling wine is best served as a welcoming drink alongside canapés filled with smoked salmon or raspberry-baked Brie.",
+        "detail_box_txt": "<p>An excellent companion to grilled fish or chicken, this dry sparkling wine is best served as a welcoming drink alongside canapés filled with smoked salmon or raspberry-baked Brie.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -232,12 +232,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>Alvi's Drift winery takes its name from the low-water bridge over the Breede River which cuts through the family farm. Our family patriarch, Albertus Viljoen \"Oupa Alvi\" van der Merwe was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines.</p>",
         "button-txt": "SPARKLING RANGE",
-        "button_link": "shopify://collections/sparkling-range"
+        "button_link": "shopify://collections/sparkling-range",
+        "button_type": "alvisBtn"
       }
     },
     "164389167233af3082": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/DJI_0001.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -246,7 +248,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>Growing in the ancient limestone soils so characteristic of the Breede River Valley region, our mature Chardonnay vineyards are ideally situated for yielding grapes of the quality, character and complexity required for an outstanding Cap Classique sparkling wine. Our Pinot Noir vineyards are situated on north-facing slopes, with many vines grown in black slate soil.</p><p>The Chardonnay and Pinot Noir grapes for this wine are selectively hand-harvested early in the season in the cool, morning hours to ensure the crisp, fresh acidity so crucial to producing a superb Cap Classique wine.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1643891681b50e1638": {
@@ -259,7 +262,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Once delivered to our cellar, cool Chardonnay and Pinot Noir grapes are whole-bunch pressed to ensure a soft, elegant base wine before dry fermentation commences.</p><p>For its secondary fermentation, this Cap Classique sparkling wine is bottle-fermented according to the traditional method, then aged on lees for 24 months before disgorgement and dosage.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16392534101a01b24e": {
