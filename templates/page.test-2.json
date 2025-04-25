@@ -18,6 +18,16 @@
         "image_disconnected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg"
       }
     },
+    "wine_club_products_events_grid_zDj4fc": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "bronze_collection": "club-bronze",
+        "silver_collection": "club-silver",
+        "gold_collection": "club-silver",
+        "platinum_collection": "blends"
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -100,6 +110,7 @@
   },
   "order": [
     "wine_club_hero_v2_y96K78",
+    "wine_club_products_events_grid_zDj4fc",
     "main",
     "collections_grid_members_QMWn4i",
     "wine_club_shop_CnAr3T",
