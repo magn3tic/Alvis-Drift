@@ -219,7 +219,7 @@
         "image_overlay": true,
         "Heading_color": "#2d5980",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "Enjoy this wine with roast venison, grilled steak or duck dishes.",
+        "detail_box_txt": "<p>Enjoy this wine with roast venison, grilled steak or duck dishes.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -234,12 +234,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>The mighty Verreaux’s eagle (Aquila verreauxii) is a large predatory bird with a wingspan of up to 2.3 m, native to sub-Saharan Africa.</p><p>A common sight in the skies above Alvi’s Drift, this rare and magnificent eagle with its unmistakable jet-black colouration and distinct white “V” on its back has a unique hunting technique, hunting primarily from a high soar by stooping on its quarry. Perceived as a threat to livestock, this spectacular bird has become one of the most persecuted bird species in the world.</p><p>At Alvi’s Drift, we are actively taking steps to create an environment that will encourage and protect the Verreaux’s eagle and other eagle species on our farm. Alvi’s Drift honours this legendary South African bird with a unique South African wine that soars above all others.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16438984573d504dfb": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/DJI_0013.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -248,7 +250,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift winery vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Created entirely from estate-grown fruit, the grapes for our flagship Verreaux Pinotage are cultivated from limestone soil in a 30-year old vineyard. Once perfect ripeness is established, grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1643898647d98a625c": {
@@ -261,7 +264,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>To create this wine, crushed Pinotage grapes are transferred to our winery’s traditional, open-top concrete fermentation tanks, built by our family patriarch almost a century ago. During fermentation, to increase skin-to-juice contact, the labour-intensive punch-down method (French: pigéage) is applied by hand, up to eight times daily.</p><p>Juice is left to soak for a few days to extract optimum flavour and colour from the skins. After fermentation, the wine matures in a combination of new French and American oak barrels for 22 months.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16392534101a01b24e": {
