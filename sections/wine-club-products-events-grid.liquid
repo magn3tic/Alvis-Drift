@@ -16,15 +16,20 @@
 
     {% comment %} Assign the collection based on the customer tier {% endcomment %}
     {% assign selected_collection = '' %}
-    {% if customer_tier == 'Gold' %}
-      {% assign selected_collection = section.settings.gold_collection %}
-    {% elsif customer_tier == 'Silver' %}
-      {% assign selected_collection = section.settings.silver_collection %}
-    {% elsif customer_tier == 'Bronze' %}
-      {% assign selected_collection = section.settings.bronze_collection %}
-    {% elsif customer_tier == 'Platinum' %}
-      {% assign selected_collection = section.settings.platinum_collection %}
+     {% if section.settings.exclusive.collection %}
+      {% assign selected_collection = section.settings.exclusive.collection %}
+     {% elsif section.settings.exclusive_wines %}
+      {% if customer_tier == 'Gold' %}
+        {% assign selected_collection = section.settings.gold_collection %}
+      {% elsif customer_tier == 'Silver' %}
+        {% assign selected_collection = section.settings.silver_collection %}
+      {% elsif customer_tier == 'Bronze' %}
+        {% assign selected_collection = section.settings.bronze_collection %}
+      {% elsif customer_tier == 'Platinum' %}
+        {% assign selected_collection = section.settings.platinum_collection %}
+      {% endif %}
     {% endif %}
+
 
     {% if selected_collection != blank %}
       <div class="awc-hero--content-v2">
@@ -134,7 +139,7 @@
         <p>No products found in the assigned collection.</p>
       {% endif %}
     {% endif %}
-    {%  if  section.settings.show_events %}  
+    {%  if  section.settings.exclusive_events %}  
       {% assign events = shop.metaobjects.events.values %}
       <div class="awc-events">
         {% for event in events %}
@@ -208,6 +213,26 @@
     "name": "Wine Club Products Events",
     "settings": [
       {
+  "type": "radio",
+  "id": "show",
+  "label": "Show ",
+  "options": [
+    {
+      "value": "exclusive_wines",
+      "label": "Exclusive Wines"
+    },
+    {
+      "value": "Exclusive Collection",
+      "label": "exclusive_collection"
+    },
+    {
+      "value": "exclusive_events",
+      "label": "Exclusive Events"
+    }
+  ],
+  "default": "exclusive_wines"
+},
+      {
         "type": "header",
         "content": "Exclusive wine Grid"
       },
@@ -240,13 +265,8 @@
       {
       "type": "header",
       "content": "Exclusive Events"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_events",
-      "label": "Show Events"
-    
     }
+
   ],
   
     "presets": [
