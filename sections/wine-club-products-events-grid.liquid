@@ -38,7 +38,7 @@
         <div class="awc-collection-grid">
               {% for product in collection_object.products %}
                 <div class="product-bx-v2">
-                  <div class="product-img">
+                  <div class="product-img product-img-v2">
                     <a href="{{ product.url }}">
                       <img
                         src="{{ product.featured_image | img_url: 'master' }}"
@@ -60,7 +60,7 @@
                   {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
 
                   {% if product.compare_at_price > product.price %}
-                    <div class="product-price" style="margin-bottom: 15px">
+                    <div class="product-price">
                       <span class="compare-price">
                         {{ product.compare_at_price | money | remove: '.00' | replace: ',', ' ' }}
                       </span> 

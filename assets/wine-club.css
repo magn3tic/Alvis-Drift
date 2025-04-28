@@ -175,9 +175,30 @@
   text-align: center;
 
 }
+.awc-collection-grid{
+  display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      text-align: center;
+  
+}
+.product-bx-v2{
+  display: flex ;
+      flex-direction: column;
+      gap: 3px;
+}
+.sp-t-v2{
+  max-width: 170px;
+    margin: 0 auto;
+}
 .product-title-v2{
   color: #c65336;
   font-size: 14px;
+}
+.product-img-v2{
+  margin: 0 auto;
 }
 .awc-bg-picture--disconnected img{
   object-fit: cover;
