@@ -2,19 +2,19 @@
   {% if customer %}
     {% assign lowertags = customer.tags | downcase %}
     {% capture customer_tier_name %}
-          {% if lowertags contains 'gold' %}
-            Gold
-          {% elsif lowertags contains 'silver' %}
-            Silver
-          {% elsif lowertags contains 'bronze' %}
-            Bronze
-          {% else %}
-            Platinum
-          {% endif %}
-        {% endcapture %}
-  {% assign customer_tier = customer_tier_name | strip %}
+      {% if lowertags contains 'gold' %}
+        Gold
+      {% elsif lowertags contains 'silver' %}
+        Silver
+      {% elsif lowertags contains 'bronze' %}
+        Bronze
+      {% else %}
+        Platinum
+      {% endif %}
+    {% endcapture %}
+    {% assign customer_tier = customer_tier_name | strip %}
 
-    {% comment %} Obtener la colección asignada a ese tier {% endcomment %}
+    {% comment %} Assign the collection based on the customer tier {% endcomment %}
     {% assign selected_collection = '' %}
     {% if customer_tier == 'Gold' %}
       {% assign selected_collection = section.settings.gold_collection %}
@@ -36,34 +36,111 @@
 
       {% if collection_object != blank and collection_object.products_count > 0 %}
         <div class="awc-collection-grid">
-          <div class="grid grid--2-col tablet:grid--3-col">
-
-            <!-- {% for product in collection_object.products limit: 8 %}
-  <div class="grid__item">
+          <div id="tab-1" class="product-items-wrap current">
+            <div class="product-bx-outer">
+              {% for product in collection_object.products %}
+                <div class="product-bx" style="padding-bottom: 50px;">
+                  <div class="product-img">
                     <a href="{{ product.url }}">
-          <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}">
-          <h3>{{ product.title }}</h3>
-          <p>
-            {% if product.compare_at_price > product.price %}
-              <span class="old-price">{{ product.compare_at_price | money }}</span>
-              <span class="sale-price">{{ product.price | money }}</span>
-            {% else %}
-              {{ product.price | money }}
-            {% endif %}
-          </p>
+                      <img
+                        src="{{ product.featured_image | img_url: 'master' }}"
+                        loading="lazy"
+                        width="133"
+                        height="399"
+                        alt="{{ product.title }}">
                     </a>
                   </div>
-                {% endfor %}
-          -->
-          </div>
-        </div>
+
+                  <div class="product-title" style="color: #c65336; font-size: 14px;">
+                    <div class="sp-t">
+                      <a href="{{ product.url }}">{{ product.title }}</a>
+                    </div>
+                  </div>
+
+                  {% comment %} Pricing and Discounts Logic {% endcomment %}
+                  {% assign price_v = product.selected_or_first_available_variant.price %}
+                  {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
+
+                  {% if product.compare_at_price > product.price %}
+                    <div class="product-price" style="margin-bottom: 15px">
+                      <span class="compare-price">
+                        {{ product.compare_at_price | money | remove: '.00' | replace: ',', ' ' }}
+                      </span> 
+                      {{ product.price | money | remove: '.00' | replace: ',', ' ' }}
+                    </div>
+                  {% else %}
+                    <div class="product-price" style="margin-bottom: 15px">
+                      {{ product.price | money | remove: '.00' | replace: ',', ' ' }}
+                    </div>
+                  {% endif %}
+
+                  <div class="product-price-per">
+                    R{{ assigned_price | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
+                  </div>
+
+                  {% comment %} Add to Cart Button {% endcomment %}
+                  <product-form class="product-form">
+                    <div class="product-form__error-message-wrapper" role="alert" hidden>
+                      <span class="product-form__error-message"></span>
+                    </div>
+                    {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+                      <div class="qty__wrapper">
+                        QTY:
+                        <input
+                          class="quantity__input"
+                          type="number"
+                          name="quantity"
+                          id="quantity"
+                          min="1"
+                          value="1"
+                          aria-label="quantity"
+                          {%- if product.selected_or_first_available_variant.available == false -%}
+                            disabled
+                          {%- endif -%}
+                        >
+                      </div>
+
+                      <div class="product-form__buttons">
+                        <button
+                          type="submit"
+                          name="add"
+                          class="btn btn-overlay"
+                          {% if product.selected_or_first_available_variant.available == false %}
+                            disabled
+                          {% endif %}
+                        >
+                          <span>
+                            {%- if product.selected_or_first_available_variant.available -%}
+                              BUY
+                            {%- else -%}
+                              {{ 'products.product.sold_out' | t }}
+                            {%- endif -%}
+                          </span>
+                          <b>{{ price_v | money | remove: '.00' | replace: ',', ' ' }}</b>
+                          <div class="loading-overlay__spinner hidden">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    {%- endform -%}
+                  </product-form>
+
+                </div> {# Close product box #}
+              {% endfor %}
+            </div> {# Close product-bx-outer #}
+          </div> {# Close tab-1 #}
+        </div> {# Close awc-collection-grid #}
       {% else %}
         <p>No products found in the assigned collection.</p>
       {% endif %}
     {% endif %}
   {% endif %}
-
 </section>
+
 
 {% schema %}
   {
