@@ -37,6 +37,7 @@
     },
     "collections_grid_members_QMWn4i": {
       "type": "Collections-Grid-Members",
+      "disabled": true,
       "settings": {}
     },
     "wine_club_shop_CnAr3T": {
