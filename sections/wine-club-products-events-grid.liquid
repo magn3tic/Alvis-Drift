@@ -163,7 +163,8 @@
               <p>{{ event.wines.value }}</p>
             {% endif %}
             {% if event.members.value %}
-                 {% for member in event.members.value %}
+              {% assign members_list = event.members.value | split: ',' %}
+              {% for member in members_list %}
                 <span>{{ member | strip }}</span>
               {% endfor %}
             {% endif %}
