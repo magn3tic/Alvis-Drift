@@ -16,7 +16,7 @@
 
     {% comment %} Assign the collection based on the customer tier {% endcomment %}
     {% assign selected_collection = '' %}
-     {% if section.settings.exclusive.collection %}
+     {% if section.settings.exclusive_collection %}
       {% assign selected_collection = section.settings.exclusive_collection %}
      {% elsif section.settings.exclusive_wines %}
       {% if customer_tier == 'Gold' %}
@@ -31,7 +31,7 @@
     {% endif %}
 
 
-    {% if selected_collection != blank %}
+    {% if section.settings.exclusive_collection or section.settings.exclusive_wines  %}
       <div class="awc-hero--content-v2">
         <h1 class="h1">EXCLUSIVE WINES</h1>
         <p class="sub-title">TO {{customer_tier}} CLUB MEMBERS</p>
