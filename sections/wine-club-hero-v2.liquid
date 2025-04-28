@@ -19,15 +19,13 @@
     <div class="awc-hero--content-v2">
       <h1 class="h1">Alvi's Drift Wine Club</h1>
       <p>{{ customer_tier }} Tier Members Portall</p>
-      {% assign discount_global_reference = shop.metafields.discount_global %}
-      {% assign discount_data = discount_global_reference.resource %}
+      {% assign discount_global = shop.metafields.discount_global %}
+      {% assign discount = discount_global.discount %}
 
-      {% if discount_data %}
-        <span>Bronze Discount: {{ discount_data.bronze }}%</span><br>
-        <span>Silver Discount: {{ discount_data.silver }}%</span><br>
-        <span>Gold Discount: {{ discount_data.gold }}%</span><br>
-        <span>Platinum Discount: {{ discount_data.platinum }}%</span><br>
-      {% endif %}
+      <span>Bronze Discount: {{ discount.bronze }}%</span><br>
+      <span>Silver Discount: {{ discount.silver }}%</span><br>
+      <span>Gold Discount: {{ discount.gold }}%</span><br>
+      <span>Platinum Discount: {{ discount.platinum }}%</span><br>
       <div class="awc-promo--btn">
         <a class="btn" href="/collections/club-{{ customer_tier }}">SHOP NOW</a>
       </div>
