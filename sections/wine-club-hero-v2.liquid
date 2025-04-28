@@ -22,10 +22,10 @@
       {% assign discount_global = shop.metafields.discount_global %}
       {% assign discount = discount_global.discount %}
 
-      <span>Bronze Discount: {{ discount.bronze }}%</span><br>
-      <span>Silver Discount: {{ discount.silver }}%</span><br>
-      <span>Gold Discount: {{ discount.gold }}%</span><br>
-      <span>Platinum Discount: {{ discount.platinum }}%</span><br>
+      <span>Bronze Discount: {{ discount.tier.bronze }}%</span><br>
+      <span>Silver Discount: {{ discount.tier.silver }}%</span><br>
+      <span>Gold Discount: {{ discount.tier.gold }}%</span><br>
+      <span>Platinum Discount: {{ discount.tier.platinum }}%</span><br>
       <div class="awc-promo--btn">
         <a class="btn" href="/collections/club-{{ customer_tier }}">SHOP NOW</a>
       </div>
