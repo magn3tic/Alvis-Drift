@@ -161,8 +161,11 @@
     height: 600px;
   }
 }
+.awc-products-events-grid{
+  position: relative;
+}
 .awc-hero--content-v2{
-  position: absolute;
+  position: relative;
   z-index: 10;
   display: grid;
   align-content: center;
