@@ -145,13 +145,13 @@
     {% endif %}
     {% assign events = shop.metaobjects.events.values %}
 
-    {% if events.size > 0 %}
+   
       <div>
         {% for event in events %}
           <div>
-            <h2>{{ event.title }}</h2>
-            {% if event.host %}
-              <p>{{ event.host }}</p>
+            <h2>{{ event.title.value }}</h2>
+            {% if event.host.value %}
+              <p>{{ event.host.value }}</p>
             {% endif %}
             {% if event.image %}
               <img src="{{ event.image | image_url }}" alt="{{ event.title.value }}">
@@ -161,7 +161,7 @@
       </div>
     {% else %}
       <p>No hay eventos disponibles.</p>
-    {% endif %}
+    
   {% endif %}
 </section>
 
