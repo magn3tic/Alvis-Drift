@@ -127,6 +127,21 @@
     checkAgeGate();
   };
 </script>
+{% if customer %}
+{%- comment -%} Vista para clientes logueados {%- endcomment -%}
+{% assign lowertags = customer.tags | downcase %}
+{% capture customer_tier_name %}
+  {% if lowertags contains 'gold' %}
+    Gold
+  {% elsif lowertags contains 'silver' %}
+    Silver
+  {% elsif lowertags contains 'bronze' %}
+    Bronze
+  {% else %}
+    Platinum 
+  {% endif %}
+{% endcapture %}
+{% assign customer_tier = customer_tier_name | strip %}
   </head>
   <!--Sticky Banner-->
   <body class="template-{{ template | replace: '.', '-' | replace: '/', '-' }}">
