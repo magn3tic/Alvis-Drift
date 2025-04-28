@@ -16,9 +16,9 @@
 
     {% comment %} Assign the collection based on the customer tier {% endcomment %}
     {% assign selected_collection = '' %}
-     {% if section.settings.exclusive_collection %}
+     {% if section.settings.show == 'exclusive_collection' %}
       {% assign selected_collection = section.settings.exclusive_collection %}
-     {% elsif section.settings.exclusive_wines %}
+     {% elsif section.settings.show == 'exclusive_wines' %}
       {% if customer_tier == 'Gold' %}
         {% assign selected_collection = section.settings.gold_collection %}
       {% elsif customer_tier == 'Silver' %}
@@ -31,7 +31,7 @@
     {% endif %}
 
 
-    {% if section.settings.exclusive_collection or section.settings.exclusive_wines  %}
+    {% if section.settings.show == 'exclusive_collection' or section.settings.show == 'exclusive_wines'  %}
       <div class="awc-hero--content-v2">
         <h1 class="h1">EXCLUSIVE WINES</h1>
         <p class="sub-title">TO {{customer_tier}} CLUB MEMBERS</p>
@@ -139,7 +139,7 @@
         <p>No products found in the assigned collection.</p>
       {% endif %}
     {% endif %}
-    {%  if  section.settings.exclusive_events %}  
+    {%  if  section.settings.show == 'exclusive_events' %}  
       {% assign events = shop.metaobjects.events.values %}
       <div class="awc-events">
         {% for event in events %}
