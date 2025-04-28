@@ -156,6 +156,7 @@
 
 .awc-hero-v2{
   position: relative;
+  z-index: 2;
   height: 425px;
   @media (min-width: 767px) {
     height: 600px;
@@ -163,10 +164,11 @@
 }
 .awc-products-events-grid{
   position: relative;
+  z-index: 2;
 }
 .awc-hero--content-v2{
   position: relative;
-  z-index: 10;
+  z-index: 2;
   display: grid;
   align-content: center;
   justify-items: center;
