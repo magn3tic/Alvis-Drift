@@ -36,10 +36,8 @@
 
       {% if collection_object != blank and collection_object.products_count > 0 %}
         <div class="awc-collection-grid">
-          <div id="tab-1" class="product-items-wrap current">
-            <div class="product-bx-outer">
               {% for product in collection_object.products %}
-                <div class="product-bx" style="padding-bottom: 50px;">
+                <div class="product-bx-v2">
                   <div class="product-img">
                     <a href="{{ product.url }}">
                       <img
@@ -51,8 +49,8 @@
                     </a>
                   </div>
 
-                  <div class="product-title" style="color: #c65336; font-size: 14px;">
-                    <div class="sp-t">
+                  <div class="product-title-v2">
+                    <div class="sp-t-v2">
                       <a href="{{ product.url }}">{{ product.title }}</a>
                     </div>
                   </div>
@@ -131,8 +129,7 @@
                 </div> 
               {% endfor %}
             </div> 
-          </div> 
-        </div> 
+       
       {% else %}
         <p>No products found in the assigned collection.</p>
       {% endif %}

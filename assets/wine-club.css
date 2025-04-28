@@ -175,6 +175,10 @@
   text-align: center;
 
 }
+.product-title-v2{
+  color: #c65336;
+  font-size: 14px;
+}
 .awc-bg-picture--disconnected img{
   object-fit: cover;
   object-position: right top
