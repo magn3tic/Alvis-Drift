@@ -134,6 +134,15 @@
         <p>No products found in the assigned collection.</p>
       {% endif %}
     {% endif %}
+    {% if section.blocks.size > 0 %}
+      <div>
+        {% for block in section.blocks %}
+          <div>
+            <span>{{ block.settings.event.title }}</span>
+          </div>
+        {% endfor %}
+      </div>
+    {% endif %}
   {% endif %}
 </section>
 
@@ -166,9 +175,30 @@
         "label": "Platinum Tier Collection"
       }, {
         "type": "header",
-        "content": "Exclusive Events Grid"
-      }
-    ],
+        "content": "Exclusive Collection"
+      },{
+        "type": "collection",
+        "id": "Exclusive_collection",
+        "label": "Exclusive Collection"
+      },
+      {
+      "type": "header",
+      "content": "Exclusive Events"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "event",
+      "name": "Event",
+      "settings": [
+        {
+          "type": "metaobject",
+          "id": "event",
+          "label": "Event"
+        }
+      ]
+    }
+  ],
     "presets": [
       {
         "name": "Wine Club Products & Events Grid",
