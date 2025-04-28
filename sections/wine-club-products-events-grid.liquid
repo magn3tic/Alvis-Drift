@@ -149,9 +149,9 @@
       <div>
         {% for event in events %}
           <div>
-            <h2>{{ event.title.value }}</h2>
-            {% if event.description %}
-              <p>{{ event.description.value }}</p>
+            <h2>{{ event.title }}</h2>
+            {% if event.host %}
+              <p>{{ event.host }}</p>
             {% endif %}
             {% if event.image %}
               <img src="{{ event.image | image_url }}" alt="{{ event.title.value }}">
