@@ -135,40 +135,52 @@
       {% endif %}
     {% endif %}
     {%  if  section.settings.show_events %}  
-    {% assign events = shop.metaobjects.events.values %}
-        <div class="awc-events">
+      {% assign events = shop.metaobjects.events.values %}
+      <div class="awc-events">
         {% for event in events %}
-          {% if event.image %}
-            <div class="awc-event-image"> 
-             <img src="{{ event.image | image_url }}" alt="{{ event.title.value }}" width="133"
-            height="399">
+          {% assign event_members = event.members.value | join: ',' | downcase %}
+      
+          {% if event_members contains customer_tier | downcase %}
+            <div class="awc-event">
+              {% if event.image %}
+                <div class="awc-event-image"> 
+                  <img src="{{ event.image | image_url }}" alt="{{ event.title.value }}" width="133" height="399">
+                </div>
+              {% endif %}
+      
+              <div class="awc-event-content">
+                <h5>{{ event.title.value }}</h5>
+      
+                {% if event.start_date.value %}
+                  <p>{{ event.start_date.value | date: '%d %B %Y' }}</p>
+                {% endif %}
+      
+                {% if event.description.value %}
+                  <p>{{ event.description.value }}</p>
+                {% endif %}
+      
+                {% if event.host.value %}
+                  <p>{{ event.host.value }}</p>
+                {% endif %}
+      
+                {% if event.location.value %}
+                  <p>{{ event.location.value }}</p>
+                {% endif %}
+      
+                {% if event.wines.value %}
+                  <p>{{ event.wines.value }}</p>
+                {% endif %}
+      
+                {% if event.members.value %}
+                  <div class="awc-event-members">
+                    {% for member in event.members.value %}
+                      <span>{{ member | strip }}</span>
+                    {% endfor %}
+                  </div>
+                {% endif %}
+              </div>
             </div>
           {% endif %}
-         
-          <div class="awc-event-content ">
-            <h5>{{ event.title.value }}</h5>
-            {% if event.start_date.value %}
-              <p>{{ event.start_date.value | date: '%d %B %Y' }}</p>
-            {% endif %}
-              {% if event.description.value %}       
-              <p>{{ event.description.value }}</p>
-            {% endif %}
-            {% if event.host.value %}
-              <p>{{ event.host.value }}</p>
-            {% endif %}
-            {% if event.location.value %}
-              <p>{{ event.location.value }}</p>
-            {% endif %}
-            {% if event.wines.value %}
-              <p>{{ event.wines.value }}</p>
-            {% endif %}
-            {% if event.members.value %}
-                 {% for member in event.members.value  %}
-                <span>{{ member | strip }}</span>
-              {% endfor %}
-            {% endif %}
-            
-          </div>
         {% endfor %}
       </div>
     {% else %}
