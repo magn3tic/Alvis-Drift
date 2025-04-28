@@ -22,12 +22,12 @@
       "type": "wine-club-products-events-grid",
       "name": "Wine Club Products & Events Grid",
       "settings": {
+        "show": "exclusive_events",
         "bronze_collection": "club-bronze",
         "silver_collection": "club-silver",
         "gold_collection": "club-silver",
         "platinum_collection": "blends",
-        "Exclusive_collection": "",
-        "show_events": true
+        "Exclusive_collection": ""
       }
     },
     "main": {
