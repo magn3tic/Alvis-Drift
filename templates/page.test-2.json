@@ -20,38 +20,14 @@
     },
     "wine_club_products_events_grid_zDj4fc": {
       "type": "wine-club-products-events-grid",
-      "blocks": {
-        "event_CcHgAH": {
-          "type": "event",
-          "settings": {
-            "event": "test-3"
-          }
-        },
-        "event_9TFpNT": {
-          "type": "event",
-          "settings": {
-            "event": "virtual-tasting"
-          }
-        },
-        "event_MJFKkY": {
-          "type": "event",
-          "settings": {
-            "event": "test-2"
-          }
-        }
-      },
-      "block_order": [
-        "event_CcHgAH",
-        "event_9TFpNT",
-        "event_MJFKkY"
-      ],
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "bronze_collection": "club-bronze",
         "silver_collection": "club-silver",
         "gold_collection": "club-silver",
         "platinum_collection": "blends",
-        "Exclusive_collection": ""
+        "Exclusive_collection": "",
+        "show_events": true
       }
     },
     "main": {
