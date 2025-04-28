@@ -162,8 +162,8 @@
               <div class="awc-event-content">
                 <h5>{{ event.title.value }}</h5>
       
-                {% if event.start_date.value %}
-                  <p>{{ event.start_date.value | date: '%d %B %Y' }}</p>
+                {% if event.date.value %}
+                  <p>{{ event.date.value | date: '%d %B %Y' }}</p>
                 {% endif %}
       
                 {% if event.description.value %}
