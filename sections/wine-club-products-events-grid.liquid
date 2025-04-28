@@ -134,19 +134,9 @@
         <p>No products found in the assigned collection.</p>
       {% endif %}
     {% endif %}
-    {% if section.blocks.size > 0 %}
-      <div>
-        {% for block in section.blocks %}
-          <div>
-            <span>{{ block.settings.event.title }}</span>
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
+    {%  if  section.settings.show_events %}  
     {% assign events = shop.metaobjects.events.values %}
-
-   
-      <div>
+        <div>
         {% for event in events %}
           <div>
             <h2>{{ event.title.value }}</h2>
@@ -160,8 +150,8 @@
         {% endfor %}
       </div>
     {% else %}
-      <p>No hay eventos disponibles.</p>
-    
+      <p>No events available</p>
+    {% endif %}
   {% endif %}
 </section>
 
@@ -203,22 +193,15 @@
       {
       "type": "header",
       "content": "Exclusive Events"
-    }
-  ],
-  "blocks": [
+    },
     {
-      "type": "event",
-      "name": "Event",
-      "settings": [
-        {
-          "type": "metaobject",
-          "id": "event",
-          "label": "Event",
-          "metaobject_type": "events"
-        }
-      ]
+      "type": "checkbox",
+      "id": "show_events",
+      "label": "Show Events"
+    
     }
   ],
+  
     "presets": [
       {
         "name": "Wine Club Products & Events Grid",
