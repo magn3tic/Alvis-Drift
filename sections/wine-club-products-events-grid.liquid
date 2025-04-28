@@ -138,12 +138,13 @@
     {% assign events = shop.metaobjects.events.values %}
         <div class="awc-events">
         {% for event in events %}
-          <div class="awc-event-image">  {% if event.image %}
-            <img src="{{ event.image | image_url }}" alt="{{ event.title.value }}" width="133"
+          {% if event.image %}
+            <div class="awc-event-image"> 
+             <img src="{{ event.image | image_url }}" alt="{{ event.title.value }}" width="133"
             height="399">
+            </div>
           {% endif %}
-          
-          </div>
+         
           <div class="awc-event-content ">
             <h5>{{ event.title.value }}</h5>
             {% if event.start_date.value %}
@@ -163,7 +164,7 @@
             {% endif %}
             {% if event.members.value %}
               {% for member in event.members %}
-                <span>{{member}}</span>
+                <span>{{member.value}}</span>
               {% endfor %}
             {% endif %}
           </div>
