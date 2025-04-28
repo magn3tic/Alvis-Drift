@@ -1,50 +1,65 @@
 <section>
+  {% if customer %}
+    {% assign lowertags = customer.tags | downcase %}
+    {% capture customer_tier_name %}
+          {% if lowertags contains 'gold' %}
+            Gold
+          {% elsif lowertags contains 'silver' %}
+            Silver
+          {% elsif lowertags contains 'bronze' %}
+            Bronze
+          {% else %}
+            Platinum
+          {% endif %}
+        {% endcapture %}
+  {% assign customer_tier = customer_tier_name | strip %}
 
-  {% comment %} Obtener la colección asignada a ese tier {% endcomment %}
-  {% assign selected_collection = '' %}
-  {% if customer_tier == 'Gold' %}
-    {% assign selected_collection = section.settings.gold_collection %}
-  {% elsif customer_tier == 'Silver' %}
-    {% assign selected_collection = section.settings.silver_collection %}
-  {% elsif customer_tier == 'Bronze' %}
-    {% assign selected_collection = section.settings.bronze_collection %}
-  {% elsif customer_tier == 'Platinum' %}
-    {% assign selected_collection = section.settings.platinum_collection %}
-  {% endif %}
+    {% comment %} Obtener la colección asignada a ese tier {% endcomment %}
+    {% assign selected_collection = '' %}
+    {% if customer_tier == 'Gold' %}
+      {% assign selected_collection = section.settings.gold_collection %}
+    {% elsif customer_tier == 'Silver' %}
+      {% assign selected_collection = section.settings.silver_collection %}
+    {% elsif customer_tier == 'Bronze' %}
+      {% assign selected_collection = section.settings.bronze_collection %}
+    {% elsif customer_tier == 'Platinum' %}
+      {% assign selected_collection = section.settings.platinum_collection %}
+    {% endif %}
 
-  {% if selected_collection != blank %}
-    <div class="awc-hero--content-v2">
-      <h1 class="h1">Alvi's Drift Wine Club</h1>
-      <p>{{ customer_tier }} Tier Member Portal</p>
-    </div>
-
-    {% assign collection_object = collections[selected_collection] %}
-
-    {% if collection_object != blank and collection_object.products_count > 0 %}
-      <div class="awc-collection-grid">
-        <div class="grid grid--2-col tablet:grid--3-col">
-
-          {% for product in collection_object.products limit: 8 %}
-            <div class="grid__item">
-              <a href="{{ product.url }}">
-                <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}">
-                <h3>{{ product.title }}</h3>
-                <p>
-                  {% if product.compare_at_price > product.price %}
-                    <span class="old-price">{{ product.compare_at_price | money }}</span>
-                    <span class="sale-price">{{ product.price | money }}</span>
-                  {% else %}
-                    {{ product.price | money }}
-                  {% endif %}
-                </p>
-              </a>
-            </div>
-          {% endfor %}
-
-        </div>
+    {% if selected_collection != blank %}
+      <div class="awc-hero--content-v2">
+        <h1 class="h1">Alvi's Drift Wine Club</h1>
+        <p>{{ customer_tier }} Tier Member Portal</p>
       </div>
-    {% else %}
-      <p>No products found in the assigned collection.</p>
+
+      {% assign collection_object = collections[selected_collection] %}
+
+      {% if collection_object != blank and collection_object.products_count > 0 %}
+        <div class="awc-collection-grid">
+          <div class="grid grid--2-col tablet:grid--3-col">
+
+            <!-- {% for product in collection_object.products limit: 8 %}
+  <div class="grid__item">
+                    <a href="{{ product.url }}">
+          <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}">
+          <h3>{{ product.title }}</h3>
+          <p>
+            {% if product.compare_at_price > product.price %}
+              <span class="old-price">{{ product.compare_at_price | money }}</span>
+              <span class="sale-price">{{ product.price | money }}</span>
+            {% else %}
+              {{ product.price | money }}
+            {% endif %}
+          </p>
+                    </a>
+                  </div>
+                {% endfor %}
+          -->
+          </div>
+        </div>
+      {% else %}
+        <p>No products found in the assigned collection.</p>
+      {% endif %}
     {% endif %}
   {% endif %}
 

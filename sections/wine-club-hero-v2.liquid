@@ -1,15 +1,24 @@
 <section class="awc-hero-v2">
   {% if customer %}
+    {%- comment -%} Vista para clientes logueados {%- endcomment -%}
+    {% assign lowertags = customer.tags | downcase %}
+    {% capture customer_tier_name %}
+      {% if lowertags contains 'gold' %}
+        Gold
+      {% elsif lowertags contains 'silver' %}
+        Silver
+      {% elsif lowertags contains 'bronze' %}
+        Bronze
+      {% else %}
+        Platinum 
+      {% endif %}
+    {% endcapture %}
+    {% assign customer_tier = customer_tier_name | strip %}
+    {% capture tier_badge_name %}{{ customer_tier }}_large.webp{% endcapture %}
+
     <div class="awc-hero--content-v2">
       <h1 class="h1">Alvi's Drift Wine Club</h1>
       <p>{{ customer_tier }} Tier Members Portall</p>
-      {% assign discount_global = shop.metafields.discount_global %}
-      {% assign discount = discount_global.discount %}
-
-      <span>Bronze Discount: {{ discount.tier.bronze }}%</span><br>
-      <span>Silver Discount: {{ discount.tier.silver }}%</span><br>
-      <span>Gold Discount: {{ discount.tier.gold }}%</span><br>
-      <span>Platinum Discount: {{ discount.tier.platinum }}%</span><br>
       <div class="awc-promo--btn">
         <a class="btn" href="/collections/club-{{ customer_tier }}">SHOP NOW</a>
       </div>
