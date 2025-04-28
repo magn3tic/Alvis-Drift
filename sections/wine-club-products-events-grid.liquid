@@ -138,9 +138,20 @@
       {% assign events = shop.metaobjects.events.values %}
       <div class="awc-events">
         {% for event in events %}
-          {% assign event_members = event.members.value | join: ',' | downcase %}
+          {% assign show_event = false %}
       
-          {% if event_members contains customer_tier | downcase %}
+          {% if event.members.value %}
+            {% for member in event.members.value %}
+              {% assign member_clean = member | strip | downcase %}
+              {% assign customer_tier_clean = customer_tier | strip | downcase %}
+      
+              {% if member_clean == customer_tier_clean %}
+                {% assign show_event = true %}
+              {% endif %}
+            {% endfor %}
+          {% endif %}
+      
+          {% if show_event %}
             <div class="awc-event">
               {% if event.image %}
                 <div class="awc-event-image"> 
@@ -181,8 +192,10 @@
               </div>
             </div>
           {% endif %}
+      
         {% endfor %}
       </div>
+      
     {% else %}
       <p>No events available</p>
     {% endif %}
