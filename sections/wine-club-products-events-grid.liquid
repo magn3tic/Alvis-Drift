@@ -37,11 +37,8 @@
       {% if collection_object != blank and collection_object.products_count > 0 %}
         <div class="awc-collection-grid">
           <div class="grid grid--2-col tablet:grid--3-col">
-            <span>{{ product.metafields.discount.tier.bronze }}</span>
-            <span>{{ product.metafields.discount.tier.silver }}</span>
-            <span>{{ product.metafields.discount.tier.gold }}</span>
-            <span>{{ product.metafields.discount.tier.platinum }}</span>
-          <!-- {% for product in collection_object.products limit: 8 %}
+
+            <!-- {% for product in collection_object.products limit: 8 %}
   <div class="grid__item">
             <a href="{{ product.url }}">
               <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}">
