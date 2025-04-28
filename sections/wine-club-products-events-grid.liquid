@@ -37,22 +37,27 @@
       {% if collection_object != blank and collection_object.products_count > 0 %}
         <div class="awc-collection-grid">
           <div class="grid grid--2-col tablet:grid--3-col">
-            {% for product in collection_object.products limit: 8 %}
-              <div class="grid__item">
-                <a href="{{ product.url }}">
-                  <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}">
-                  <h3>{{ product.title }}</h3>
-                  <p>
-                    {% if product.compare_at_price > product.price %}
-                      <span class="old-price">{{ product.compare_at_price | money }}</span>
-                      <span class="sale-price">{{ product.price | money }}</span>
-                    {% else %}
-                      {{ product.price | money }}
-                    {% endif %}
-                  </p>
-                </a>
-              </div>
-            {% endfor %}
+            <span>{{ product.metafields.discount.bronze }}</span>
+            <span>{{ product.metafields.discount.silver }}</span>
+            <span>{{ product.metafields.discount.gold }}</span>
+            <span>{{ product.metafields.discount.platinum }}</span>
+          <!-- {% for product in collection_object.products limit: 8 %}
+  <div class="grid__item">
+            <a href="{{ product.url }}">
+              <img src="{{ product.featured_image | image_url: width: 600 }}" alt="{{ product.title }}">
+              <h3>{{ product.title }}</h3>
+              <p>
+                {% if product.compare_at_price > product.price %}
+                  <span class="old-price">{{ product.compare_at_price | money }}</span>
+                  <span class="sale-price">{{ product.price | money }}</span>
+                {% else %}
+                  {{ product.price | money }}
+                {% endif %}
+              </p>
+            </a>
+          </div>
+                    {% endfor %}
+          -->
           </div>
         </div>
       {% else %}
