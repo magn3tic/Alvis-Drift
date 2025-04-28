@@ -17,7 +17,7 @@
     {% comment %} Assign the collection based on the customer tier {% endcomment %}
     {% assign selected_collection = '' %}
      {% if section.settings.exclusive.collection %}
-      {% assign selected_collection = section.settings.exclusive.collection %}
+      {% assign selected_collection = section.settings.exclusive_collection %}
      {% elsif section.settings.exclusive_wines %}
       {% if customer_tier == 'Gold' %}
         {% assign selected_collection = section.settings.gold_collection %}
