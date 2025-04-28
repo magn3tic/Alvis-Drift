@@ -178,11 +178,14 @@
 .awc-collection-grid{
   display: flex;
       flex-wrap: wrap;
-      align-items: center;
+      align-items: stretch;
       justify-content: center;
       gap: 20px;
       text-align: center;
-  
+  @media (min-width: 767px) {
+    gap: 30px;
+    
+  }
 }
 .product-bx-v2{
   display: flex ;
@@ -192,6 +195,10 @@
 .sp-t-v2{
   max-width: 170px;
     margin: 0 auto;
+    @media (min-width: 767px) {
+      max-width: 250px;
+      
+    }
 }
 .product-title-v2{
   color: #c65336;
