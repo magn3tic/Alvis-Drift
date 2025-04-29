@@ -123,6 +123,33 @@
         "btn-url": "shopify://collections/icon-range"
       }
     },
+    "rich_text_bDYdVH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3iQJT3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Albertus Viljoen Icon of the Year 2025 Award ",
+            "heading_size": "h1"
+          }
+        },
+        "text_VKBhPF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entries are open for our very first Albertus Viljoen Icon of the Year Award! </p><p>This is your chance to nominate someone whose vision and courage embodies the pursuit of excellence. Someone who stands as a force for good and positive change in their community.</p><p><strong>Enter Here</strong><br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3iQJT3",
+        "text_VKBhPF"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": true
+      }
+    },
     "17447361233ed5c64f": {
       "type": "apps",
       "blocks": {
@@ -209,6 +236,7 @@
     "164388456995a70c72",
     "1639686778727cf64f",
     "call_to_action_iaXjc6",
+    "rich_text_bDYdVH",
     "17447361233ed5c64f",
     "multiple_posts_kB46er",
     "collections_grid_7dMhcr",
