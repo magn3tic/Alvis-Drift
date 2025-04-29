@@ -194,10 +194,11 @@
                 </div>
               {% endif %}
       
-              <div class="awc-event-content-grid">
+              <div class="awc-event-content-container">
                 <div class="awc-content awc-content-title">
                    <h5 style="color:white">{{ event.title.value }}</h5>
                 </div>
+                <div class="awc-event-content-grid">
                 {% if event.date.value %}
                   <div class="awc-content awc-content-date">
                      <p>{{ event.date.value | date: '%d %B %Y' }}</p>
@@ -235,6 +236,7 @@
                     {% endfor %}
                   </div>
                 {% endif %}
+                </div>
               </div>
             </div>
         {% endfor %}

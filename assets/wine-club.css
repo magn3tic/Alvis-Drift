@@ -248,6 +248,9 @@
   text-transform: capitalize;
 
 }
+.awc-event{
+  display: flex;
+}
 .awc-event-image img{
   width: 100%;
 }
@@ -261,11 +264,10 @@
   
 }
 .awc-content{
-  font-family: 10px;
+  font-size: 10px;
 }
-.awc-content-members{
+.awc-content-members, .awc-content-title{
   grid-column: span 2 / span 2;
-  grid-row-start: 4;
 }
 @media (min-width: 1023px) {
   .product-img img {
