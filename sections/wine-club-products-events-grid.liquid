@@ -194,42 +194,42 @@
                 </div>
               {% endif %}
       
-              <div class="awc-event-content">
-                <div class="awc-content-1 awc-content-title">
+              <div class="awc-event-content-grid">
+                <div class="awc-content awc-content-title">
                    <h5 style="color:white">{{ event.title.value }}</h5>
                 </div>
                 {% if event.date.value %}
-                  <div class="awc-content-2 awc-content-date">
+                  <div class="awc-content awc-content-date">
                      <p>{{ event.date.value | date: '%d %B %Y' }}</p>
                   </div>
                 {% endif %}
       
                 {% if event.description.value %}
-                  <div class="awc-content-3 awc-content-description">
+                  <div class="awc-content awc-content-description">
                     <p>{{ event.description.value }}</p>
                   </div>
                 {% endif %}
       
                 {% if event.host.value %}
-                  <div class="awc-content-4 awc-content-host">
+                  <div class="awc-content awc-content-host">
                    <p>{{ event.host.value }}</p>
                   </div>
                 {% endif %}
       
                 {% if event.location.value %}
-                  <div class="awc-content-5 awc-content-location">
+                  <div class="awc-content awc-content-location">
                    <p>{{ event.location.value }}</p>
                   </div>
                 {% endif %}
       
                 {% if event.wines.value %}
-                  <div class="awc-content-6 awc-content-wines">
+                  <div class="awc-content awc-content-wines">
                     <p>{{ event.wines.value }}</p>
                   </div>
                 {% endif %}
       
                 {% if event.members.value %}
-                  <div class="awc-content-7 awc-content-members">
+                  <div class="awc-content awc-content-members">
                     {% for member in event.members.value %}
                       <span>{{ member | strip }}</span>
                     {% endfor %}
