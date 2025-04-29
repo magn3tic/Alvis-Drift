@@ -220,7 +220,7 @@
 
 }
 
-.awc-counter span{
+#counter-number{
   display: inline-block;
   transition: transform 0.3s ease, opacity 0.3s ease;
   border: solid #E36653 2px;
