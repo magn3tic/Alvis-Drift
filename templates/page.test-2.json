@@ -27,7 +27,7 @@
         "silver_collection": "club-silver",
         "gold_collection": "club-silver",
         "platinum_collection": "blends",
-        "Exclusive_collection": "all-products"
+        "collection_exclusive": "all-products"
       }
     },
     "main": {
@@ -37,6 +37,7 @@
     },
     "collections_grid_members_QMWn4i": {
       "type": "Collections-Grid-Members",
+      "disabled": true,
       "settings": {}
     },
     "wine_club_shop_CnAr3T": {
