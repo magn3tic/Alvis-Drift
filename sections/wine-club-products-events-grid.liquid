@@ -64,18 +64,37 @@
                   {% assign price_v = product.selected_or_first_available_variant.price %}
                   {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
 
-                  {% if product.compare_at_price > product.price %}
-                    <div class="product-price">
+                  {% assign price = product.price %}
+                  {% assign discounted_price = price %}
+                  {% assign discount_applicable = false %}
+                  
+                  {% case customer_tier %}
+                    {% when 'Silver' %}
+                      {% assign discounted_price = price | times: 0.95 | round %}
+                      {% assign discount_applicable = true %}
+                    {% when 'Gold' %}
+                      {% assign discounted_price = price | times: 0.90 | round %}
+                      {% assign discount_applicable = true %}
+                    {% when 'Platinum' %}
+                      {% assign discounted_price = price | times: 0.90 | round %}
+                      {% assign discount_applicable = true %}
+                    {% else %}
+                      {% assign discount_applicable = false %}
+                  {% endcase %}
+                  
+                  <div class="product-price" style="margin-bottom: 15px">
+                    {% if discount_applicable %}
                       <span class="compare-price">
-                        {{ product.compare_at_price | money | remove: '.00' | replace: ',', ' ' }}
-                      </span> 
-                      {{ product.price | money | remove: '.00' | replace: ',', ' ' }}
-                    </div>
-                  {% else %}
-                    <div class="product-price" style="margin-bottom: 15px">
-                      {{ product.price | money | remove: '.00' | replace: ',', ' ' }}
-                    </div>
-                  {% endif %}
+                        {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                      </span>
+                      <span class="discounted-price" style="color: red;">
+                        {{ discounted_price | money | remove: '.00' | replace: ',', ' ' }}
+                      </span>
+                    {% else %}
+                      {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                    {% endif %}
+                  </div>
+                  
 
                   <div class="product-price-per">
                     R{{ assigned_price | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
