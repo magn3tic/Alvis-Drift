@@ -178,16 +178,12 @@
 
 }
 .awc-collection-grid{
-  display: flex;
-      flex-wrap: wrap;
-      align-items: stretch;
-      justify-content: center;
-      gap: 20px;
-      text-align: center;
-  @media (min-width: 767px) {
-    gap: 30px;
-    
-  }
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 240px);
+  grid-template-columns: repeat(4, auto);
+  gap: 8px;
+  justify-content: space-around;
+
 }
 .product-bx-v2{
   display: flex ;

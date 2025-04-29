@@ -571,7 +571,6 @@
     position:relative;
   }
   .discounted-price{
-      text-decoration: line-through;
       opacity: .6;
   }
   
