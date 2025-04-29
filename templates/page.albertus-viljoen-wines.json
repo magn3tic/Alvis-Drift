@@ -144,10 +144,13 @@
         "heading_3iQJT3",
         "text_VKBhPF"
       ],
+      "custom_css": [
+        ".rich-text {margin: auto; text-align: center; background-color: #712f1f;}"
+      ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
         "color_scheme": "accent-1",
-        "full_width": true
+        "full_width": false
       }
     },
     "17447361233ed5c64f": {
