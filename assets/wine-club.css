@@ -219,15 +219,14 @@
   width: 100%;
 
 }
-.awc-counter{
+
+.awc-counter span{
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
   border: solid #E36653 2px;
   padding: 5px;
   border-radius: 10px;
   min-width: 65px;
-}
-.awc-counter span{
-  display: inline-block;
-  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .awc-counter span.animate {
