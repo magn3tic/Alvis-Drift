@@ -2,6 +2,8 @@
 
 <div class="awc-counter" data-start="{{ start_value }}">
   <span id="counter-number">{{ start_value }}</span>
+  <span class="awc-counter-text">boxes left</span>
+
 </div>
 
 <script>
@@ -24,7 +26,7 @@
             clearInterval(interval);
           }
         }, 150);
-      }, 1000);
+      }, 5000);
     }
   });
 </script>
