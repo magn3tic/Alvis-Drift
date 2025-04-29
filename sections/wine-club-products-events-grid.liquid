@@ -35,6 +35,10 @@
       <div class="awc-hero--content-v2">
         <h1 class="h1">EXCLUSIVE WINES</h1>
         <p class="sub-title">TO {{customer_tier}} CLUB MEMBERS</p>
+        {% if section.settings.show_counter %}
+          {% render 'counter', start: section.settings.start_point %}
+        {% endif %}
+        
       </div>
 
       {% assign collection_object = collections[selected_collection] %}
@@ -285,8 +289,20 @@
       },
       {
       "type": "header",
-      "content": "Exclusive Events"
+      "content": "Count down"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_counter",
+      "label": "Show Counter",  
+      "default": false
+    },{
+      "type": "number",
+      "id": "start_point",
+      "label": "Counter start point",
+      "default": 0
     }
+
 
   ],
   

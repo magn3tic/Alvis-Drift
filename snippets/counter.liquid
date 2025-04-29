@@ -1,0 +1,23 @@
+{% assign start_value = start | default: 500 %}
+
+<div class="counter" data-start="{{ start_value }}">
+  <span id="counter-number">{{ start_value }}</span>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const counter = document.querySelector(".counter");
+    if (counter) {
+      let number = parseInt(counter.dataset.start);
+      const span = counter.querySelector("#counter-number");
+  
+      const interval = setInterval(() => {
+        number--;
+        span.textContent = number;
+        if (number = 0) { // sample stop condition
+          clearInterval(interval);
+        }
+      }, 1000);
+    }
+  });
+</script>
