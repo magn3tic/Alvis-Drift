@@ -1,7 +1,7 @@
 {% assign start_value = start | default: 500 %}
 
 <div class="awc-counter" data-start="{{ start_value }}">
-  <span id="awc-counter-number">{{ start_value }}</span>
+  <span id="counter-number">{{ start_value }}</span>
 </div>
 
 <script>
@@ -12,11 +12,18 @@
       const span = counter.querySelector("#counter-number");
   
       const interval = setInterval(() => {
-        number--;
-        span.textContent = number;
-        if (number === 0) { // sample stop condition
-          clearInterval(interval);
-        }
+        span.classList.add("animate");
+  
+        // Wait before updating the number to sync with the animation
+        setTimeout(() => {
+          number--;
+          span.textContent = number;
+          span.classList.remove("animate");
+  
+          if (number === 0) {
+            clearInterval(interval);
+          }
+        }, 150);
       }, 1000);
     }
   });
