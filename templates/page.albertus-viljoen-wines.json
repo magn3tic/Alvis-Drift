@@ -89,7 +89,7 @@
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
         "title": "The Pursuit of Excellence",
-        "video-sec-content-txt-1": "<p>Overarching campaign idea - can use rational from campaign deck if it is relevant.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla non odio non luctus. Proin a enim non sem maximus lobortis. In eu eleifend metus. Donec posuere congue nunc, non tempor ex molestie at.</p>",
+        "video-sec-content-txt-1": "<p>In 1928, our founder, Albertus Viljoen ‘Oupa Alvi’ van der Merwe, acquired a fertile piece of farmland on the banks of the Breede River. His work ethic, love for people, and deep respect for the land, shaped our winery’s legacy.</p><p>Nearly a century later, Oupa Alvi’s unyielding pursuit of excellence continues to guide us. His passion and legacy lives on in our Albertus Viljoen range, and we honour his vision with every bottle we craft.<br/></p>",
         "button-txt": "",
         "button_link": "",
         "button_type": "alvisBtn"
@@ -160,7 +160,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "",
-        "detail-box-txt": "<p>A quote from Alvi around the fact that every time you buy a bottle of ALbertus Viljoen you are making a choice to change peoples lives.</p>",
+        "detail_box_txt": "",
         "btn-txt": "SUPPORT",
         "btn-url": "shopify://collections/icon-range"
       }
