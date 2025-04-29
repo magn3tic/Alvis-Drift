@@ -1,7 +1,7 @@
 {% assign start_value = start | default: 500 %}
 
-<div class="counter" data-start="{{ start_value }}">
-  <span id="counter-number">{{ start_value }}</span>
+<div class="awc-counter" data-start="{{ start_value }}">
+  <span id="awc-counter-number">{{ start_value }}</span>
 </div>
 
 <script>
@@ -17,7 +17,7 @@
         if (number === 0) { // sample stop condition
           clearInterval(interval);
         }
-      }, 1000);
+      }, 5000);
     }
   });
 </script>
