@@ -36,7 +36,7 @@
         <h1 class="h1">EXCLUSIVE WINES</h1>
         <p class="sub-title">TO {{customer_tier}} CLUB MEMBERS</p>
         {% if section.settings.show_counter %}
-          {% render 'counter', start: section.settings.start_point %}
+          {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
         {% endif %}
         
       </div>
@@ -301,6 +301,12 @@
       "id": "start_point",
       "label": "Counter start point",
       "default": 0
+    },
+    {
+      "type": "text",
+      "id": "counter_text",
+      "label": "Counter start value",
+      "default": "Stock Quantity"	
     }
 
 
