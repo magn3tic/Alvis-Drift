@@ -195,30 +195,41 @@
               {% endif %}
       
               <div class="awc-event-content">
-                <h5 style="color:white">{{ event.title.value }}</h5>
-      
+                <div class="awc-content-1 awc-content-title">
+                   <h5 style="color:white">{{ event.title.value }}</h5>
+                </div>
                 {% if event.date.value %}
-                  <p>{{ event.date.value | date: '%d %B %Y' }}</p>
+                  <div class="awc-content-2 awc-content-date">
+                     <p>{{ event.date.value | date: '%d %B %Y' }}</p>
+                  </div>
                 {% endif %}
       
                 {% if event.description.value %}
-                  <p>{{ event.description.value }}</p>
+                  <div class="awc-content-3 awc-content-description">
+                    <p>{{ event.description.value }}</p>
+                  </div>
                 {% endif %}
       
                 {% if event.host.value %}
-                  <p>{{ event.host.value }}</p>
+                  <div class="awc-content-4 awc-content-host">
+                   <p>{{ event.host.value }}</p>
+                  </div>
                 {% endif %}
       
                 {% if event.location.value %}
-                  <p>{{ event.location.value }}</p>
+                  <div class="awc-content-5 awc-content-location">
+                   <p>{{ event.location.value }}</p>
+                  </div>
                 {% endif %}
       
                 {% if event.wines.value %}
-                  <p>{{ event.wines.value }}</p>
+                  <div class="awc-content-6 awc-content-wines">
+                    <p>{{ event.wines.value }}</p>
+                  </div>
                 {% endif %}
       
                 {% if event.members.value %}
-                  <div class="awc-event-members">
+                  <div class="awc-content-7 awc-content-members">
                     {% for member in event.members.value %}
                       <span>{{ member | strip }}</span>
                     {% endfor %}
