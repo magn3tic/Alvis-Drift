@@ -111,6 +111,18 @@
         "button_type": "alvisBtn"
       }
     },
+    "call_to_action_iaXjc6": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "",
+        "detail_box_txt": "“This is more than just a wine. With every bottle of Albertus Viljoen you open, you help open a door to a brighter future. A portion of proceeds from every bottle sold goes towards supporting the life-changing work of the Indaba Institute.” – Alvi van der Merwe",
+        "btn-txt": "SHOP",
+        "btn-url": "shopify://collections/icon-range"
+      }
+    },
     "17447361233ed5c64f": {
       "type": "apps",
       "blocks": {
@@ -151,18 +163,6 @@
         "show_date": false,
         "show_author": false,
         "soft_background": false
-      }
-    },
-    "call_to_action_iaXjc6": {
-      "type": "Call-To-Action",
-      "settings": {
-        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
-        "image_overlay": false,
-        "Heading_color": "#c65336",
-        "title": "",
-        "detail_box_txt": "",
-        "btn-txt": "SUPPORT",
-        "btn-url": "shopify://collections/icon-range"
       }
     },
     "collections_grid_7dMhcr": {
@@ -237,9 +237,9 @@
     "video_single_BDwAAp",
     "164388456995a70c72",
     "1639686778727cf64f",
+    "call_to_action_iaXjc6",
     "17447361233ed5c64f",
     "multiple_posts_kB46er",
-    "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
     "collections_grid_fnGcA4",
     "multiple_posts_bEX3QG",
