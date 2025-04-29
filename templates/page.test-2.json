@@ -30,7 +30,7 @@
         "collection_exclusive": "all-products",
         "show_counter": true,
         "start_point": 10000,
-        "counter_text": "Stock Quantity test"
+        "counter_text": ""
       }
     },
     "main": {
