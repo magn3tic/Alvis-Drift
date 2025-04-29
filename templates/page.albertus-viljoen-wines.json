@@ -130,7 +130,7 @@
           "type": "heading",
           "settings": {
             "heading": "Albertus Viljoen Icon of the Year 2025 Award ",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_VKBhPF": {
@@ -145,7 +145,7 @@
         "text_VKBhPF"
       ],
       "custom_css": [
-        ".rich-text {margin: auto; text-align: center; background-color: #712f1f;}"
+        ".rich-text {margin: auto; text-align: center; background-color: #712f1f; padding-bottom: 10px;}"
       ],
       "name": "t:sections.rich-text.presets.name",
       "settings": {
