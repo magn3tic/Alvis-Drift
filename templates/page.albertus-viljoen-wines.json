@@ -104,10 +104,10 @@
         "video_url": "https://www.youtube.com/watch?v=1MJNc-AQCKY&t=11s",
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
-        "title": "(Heading: Supporting / Empowering)",
-        "video-sec-content-txt-1": "<p>Short snippet about the Indaba Institute collaboration and how the wine gives back.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla non odio non luctus. Proin a enim non sem maximus lobortis. In eu eleifend metus. Donec posuere congue nunc, non tempor ex molestie at. Nulla mattis velit sit amet ipsum auctor, non scelerisque velit vestibulum. Nulla feugiat auctor ipsum, vitae pretium nunc laoreet aliquet. Curabitur urna diam, fringilla nec mauris non, tempus faucibus neque. Nunc venenatis mi sem. Maecenas in pharetra felis, ut varius u.</p>",
-        "button-txt": "(BUTTON INDABA?)",
-        "button_link": "shopify://pages/family",
+        "title": "Empowering Our Communities, Transforming Our Future",
+        "video-sec-content-txt-1": "<p>A brighter future begins with a strong foundation. That’s why we’ve partnered with the Indaba Institute to empower teachers and create opportunities for the next generation.</p><p>Inspired by Oupa Alvi’s legacy, our partnership with the Indaba Institute supports Early Childhood Development on our farm and beyond.</p><p>Every bottle of Albertus Viljoen wine sold helps to fund this work – training teachers, nurturing young minds, and creating lasting change.</p>",
+        "button-txt": "",
+        "button_link": "",
         "button_type": "alvisBtn"
       }
     },
