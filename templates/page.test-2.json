@@ -29,7 +29,8 @@
         "platinum_collection": "blends",
         "collection_exclusive": "all-products",
         "show_counter": true,
-        "start_point": 10000
+        "start_point": 10000,
+        "counter_text": ""
       }
     },
     "main": {
