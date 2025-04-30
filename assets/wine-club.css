@@ -316,6 +316,11 @@
 
 .awc-intro--col-v2{
   color: var(--awc-color-dark);
+  @media (min-width: 767px) {
+    width: 50%;
+    max-width: 600px;
+    
+  }
 }
 
 /* End of Join Club */
