@@ -36,7 +36,16 @@
     "wine_club_join_club_nkriVx": {
       "type": "wine-club-join-club",
       "name": "Wine Club join club",
-      "settings": {}
+      "settings": {
+        "bronze_image": "shopify://shop_images/Bronze.webp",
+        "bronze_richtext": "<p>Welcome to our portal for Bronze tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Bronze tier members</li></ul>",
+        "silver_image": "shopify://shop_images/Silver.webp",
+        "silver_richtext": "<p>Welcome to our portal for Silver tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Silver tier members</li></ul><p>As a Silver member, you also qualify for a fantastic 5% discount* on all wine purchases from our online shop.</p>",
+        "gold_image": "shopify://shop_images/Gold.webp",
+        "gold_richtext": "<p>Welcome to our portal for Gold tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Gold tier members</li></ul><p>As a Gold member, you also qualify for a fantastic 10% discount* on all wine purchases from our online shop.</p><p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p>",
+        "platinum_image": "shopify://shop_images/Platinum.png",
+        "platinum_richtext": "<p>Welcome to our portal for Platinum tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Platinum tier members</li></ul><p>As a Platinum member, you also qualify for a fantastic 10% discount* on all wine purchases from our online shop.</p><p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p>"
+      }
     },
     "main": {
       "type": "main-page",
