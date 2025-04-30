@@ -188,7 +188,7 @@
       
          
             <div class="awc-event">
-              {% if event.image %}
+           
                 <div class="awc-event-image"> 
                   {% if event.image and event.image.value %}
                     {% assign event_img_src = event.image | image_url %}
@@ -197,7 +197,7 @@
                   {% endif %}
                   <img src="{{ event_img_src }}" alt="{{ event.title.value | escape }}" width="133" height="399">
                 </div>
-              {% endif %}
+       
       
               <div class="awc-event-content-container">
                 <div class="awc-content awc-content-title">
