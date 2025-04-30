@@ -319,12 +319,7 @@
     flex-direction: row;
   }
 }
-.awc-join-club-logged{
 
-  @media (min-width: 767px) {
-    flex-direction: column;
-  }
-}
 .awc-intro--col-v2{
   color: var(--awc-color-dark);
   @media (min-width: 767px) {
@@ -332,6 +327,10 @@
     max-width: 570px;
     
   }
+}
+.awc-points-balance{
+  text-align: center;
+  color: var(--awc-color-dark);
 }
 
 /* End of Join Club */
