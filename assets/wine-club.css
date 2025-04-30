@@ -332,5 +332,8 @@
   text-align: center;
   color: var(--awc-color-dark);
 }
-
+.awc-points{
+  display: inline-flex;
+  gap: 2px;
+}
 /* End of Join Club */
