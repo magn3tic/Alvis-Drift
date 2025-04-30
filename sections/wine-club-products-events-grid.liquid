@@ -170,6 +170,13 @@
       {% endif %}
     {% endif %}
     {%  if  section.settings.show == 'exclusive_events' %}  
+       <div class="awc-hero--content-v2">
+        <h1 class="h1">EXCLUSIVE EVENTS</h1>
+        <p class="sub-title">FOR {{customer_tier}} CLUB MEMBERS</p>
+        {% if section.settings.show_counter %}
+          {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
+        {% endif %}
+       </div>
       {% assign events = shop.metaobjects.events.values %}
       <div class="awc-events awc-collection-grid">
         {% for event in events %}
