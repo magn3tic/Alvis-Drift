@@ -1,7 +1,24 @@
 <section class="awc-join-club container">
   {% if customer %}
-    <div id="points-container">Loading your points...</div>
 
+    <div class="awc-intro--col-v2">
+      <h5 class="awc-heading-xs">You Are {{ customer_tier }}</h5>
+    </div>
+    <div class="awc-intro--col-v2"></div>
+    <div class="awc-point-balance">
+      <h3 class="h1">Your Balance</h3>
+
+      <p>
+        <strong>Point Balance:</strong>
+        <div id="points-container">Loading your points...</div>
+      </p>
+      <p>
+        <small>
+          <em>*Please note that Membership point and tier updates can take up to 24 hours to update.</em>
+        </small>
+      </p>
+    </div>
+    <script src="{{ 'points-balance.js' | asset_url }}" async></script>
   {% else %}
     <div class="awc-intro--col-v2">
       <h4>Join our Alvi's Drift wine club to enjoy:</h4>
@@ -23,36 +40,55 @@
 
 </section>
 
-{% javascript %}
-
-  const shopDomain = 'alvis-drift.myshopify.com';
-
-  function getCustomerIdAndFetchPoints() {
-    const customerId = window.BOLD ?. common ?. Shopify ?. customer ?. id;
-
-    if (customerId) {
-      const url = `/apps/loyalties-widget/v2/${shopDomain}/frontend/customer-tiers-list?shopifyCustomerId=${customerId}`;
-      fetch(url).then(res => res.json()).then(data => {
-        const points = data.customerFormatted ?. balance;
-        document.getElementById("points-container").innerText = `${points}`;
-      }).catch(err => {
-        document.getElementById("points-container").innerText = "Error loading points.";
-        console.error("❌ Error fetching points:", err);
-      });
-    } else {
-      console.warn("🕒 Waiting for BOLD to load or customer to be authenticated...");
-      setTimeout(getCustomerIdAndFetchPoints, 500);
-    }
-  }
-
-  getCustomerIdAndFetchPoints();
-{% endjavascript %}
 
 {% schema %}
   {
-    "name": "Wine Club join club",
+    "name": "Wine Club Join Club",
     "settings": [
       {
+        "type": "header",
+        "content": "Bronze Tier"
+      },
+      {
+        "type": "image_picker",
+        "id": "Bronze_image",
+        "label": "Bronze Tier Image"
+      },
+      {
+        "type": "richtext",
+        "id": "richtext",
+        "label": "Rich Text"
+      },
+      {
+        "type": "header",
+        "content": "Silver Tier"
+      }, {
+        "type": "image_picker",
+        "id": "Silver_image",
+        "label": "Silver Tier Image"
+      }, {
+        "type": "richtext",
+        "id": "richtext",
+        "label": "Rich Text"
+      }, {
+        "type": "header",
+        "content": "Gold Tier"
+      }, {
+        "type": "image_picker",
+        "id": "Gold_image",
+        "label": "Gold Tier Image"
+      }, {
+        "type": "richtext",
+        "id": "richtext",
+        "label": "Rich Text"
+      }, {
+        "type": "header",
+        "content": "Platinum Tier"
+      }, {
+        "type": "image_picker",
+        "id": "Platinum_image",
+        "label": "Platinum Tier Image"
+      }, {
         "type": "richtext",
         "id": "richtext",
         "label": "Rich Text"
