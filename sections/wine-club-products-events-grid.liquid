@@ -231,9 +231,11 @@
       
                 {% if event.members.value %}
                   <div class="awc-content awc-content-members">
+                    <p>Only for: 
                     {% for member in event.members.value %}
-                      <span>Only for: {{ member | strip }} members</span>
+                      <span>{{ member | strip }}</span>
                     {% endfor %}
+                    members</p>
                   </div>
                 {% endif %}
                 </div>
