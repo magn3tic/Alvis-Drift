@@ -38,15 +38,6 @@
       "disabled": true,
       "settings": {}
     },
-    "collections_grid_members_QMWn4i": {
-      "type": "Collections-Grid-Members",
-      "disabled": true,
-      "settings": {}
-    },
-    "wine_club_shop_CnAr3T": {
-      "type": "wine-club-shop",
-      "settings": {}
-    },
     "1738176045b8ca5c13": {
       "type": "apps",
       "blocks": {
@@ -118,8 +109,6 @@
     "wine_club_hero_v2_y96K78",
     "wine_club_products_events_grid_zDj4fc",
     "main",
-    "collections_grid_members_QMWn4i",
-    "wine_club_shop_CnAr3T",
     "1738176045b8ca5c13",
     "wine_club_shop_content_tnnnnr"
   ]
