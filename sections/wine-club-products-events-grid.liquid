@@ -201,7 +201,7 @@
               
                 {% if event.date.value %}
                   <div class="awc-content awc-content-date">
-                     <p>Date: {{ event.date.value | date: '%d %B %Y' }}</p>
+                     <p><strong>Date:</strong> {{ event.date.value | date: '%d %B %Y' }}</p>
                   </div>
                 {% endif %}
       
@@ -213,25 +213,25 @@
       
                 {% if event.host.value %}
                   <div class="awc-content awc-content-host">
-                   <p>Host: {{ event.host.value }}</p>
+                   <p><strong>Host:</strong> {{ event.host.value }}</p>
                   </div>
                 {% endif %}
       
                 {% if event.location.value %}
                   <div class="awc-content awc-content-location">
-                   <p>Location: {{ event.location.value }}</p>
+                   <p><strong>Location:</strong> {{ event.location.value }}</p>
                   </div>
                 {% endif %}
       
                 {% if event.wines.value %}
                   <div class="awc-content awc-content-wines">
-                    <p>Wines: {{ event.wines.value }}</p>
+                    <p><strong>Wines:</strong> {{ event.wines.value }}</p>
                   </div>
                 {% endif %}
       
                 {% if event.members.value %}
                   <div class="awc-content awc-content-members">
-                    <p>Exclusive for: 
+                    <p><strong>Exclusive for:</strong> 
                     {% for member in event.members.value %}
                       <span>{{ member | strip }}</span>
                     {% endfor %}
