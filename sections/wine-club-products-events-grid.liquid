@@ -190,12 +190,12 @@
             <div class="awc-event">
               {% if event.image %}
                 <div class="awc-event-image"> 
-                  {% if event.image.value %}
-                {% assign event_img_src = event.image | image_url  %}      
-            {% else %}
-            {% assign event_img_src = 'default_wine.webp' |  asset_img_url  %}      
-                      {% endif %}
-                  <img src="{{ event_img_src  }}" alt="{{ event.title.value }}" width="133" height="399">
+                  {% if event.image and event.image.value %}
+                    {% assign event_img_src = event.image | image_url %}
+                  {% else %}
+                    {% assign event_img_src = 'default-wine.webp' | asset_url %}
+                  {% endif %}
+                  <img src="{{ event_img_src }}" alt="{{ event.title.value | escape }}" width="133" height="399">
                 </div>
               {% endif %}
       
