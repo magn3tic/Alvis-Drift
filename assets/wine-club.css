@@ -309,7 +309,7 @@
     padding-bottom: 60px;
   }
 }
-.awc-join-club-not-logged-in{
+.awc-join-club-not-logged-in, .awc-join-club-logged{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -320,13 +320,9 @@
   }
 }
 .awc-join-club-logged{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+
   @media (min-width: 767px) {
-    flex-direction: row;
+    flex-direction: column;
   }
 }
 .awc-intro--col-v2{
