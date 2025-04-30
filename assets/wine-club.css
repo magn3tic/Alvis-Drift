@@ -264,11 +264,11 @@
   align-items: center;
   
 }
-.awc-content{
+
+.awc-content p{
   font-size: 10px;
-  p{
+
     margin: 0;
-  }
 }
 .awc-content-members, .awc-content-title{
   grid-column: span 2 / span 2;
