@@ -1,3 +1,5 @@
+{{ 'wine-club.css' | asset_url | stylesheet_tag }}
+
 <section class="awc-hero-v2">
   {% if customer %}
     {%- comment -%} Vista para clientes logueados {%- endcomment -%}
@@ -14,7 +16,6 @@
       {% endif %}
     {% endcapture %}
     {% assign customer_tier = customer_tier_name | strip %}
-    {% capture tier_badge_name %}{{ customer_tier }}_large.webp{% endcapture %}
 
     <div class="awc-hero--content-v2">
       <h1 class="h1">Alvi's Drift Wine Club</h1>
