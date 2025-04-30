@@ -318,7 +318,7 @@
   color: var(--awc-color-dark);
   @media (min-width: 767px) {
     width: 50%;
-    max-width: 600px;
+    max-width: 570px;
     
   }
 }
