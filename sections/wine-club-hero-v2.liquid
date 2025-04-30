@@ -2,7 +2,7 @@
 
 <section class="awc-hero-v2">
   {% if customer %}
-    {%- comment -%} Vista para clientes logueados {%- endcomment -%}
+    {%- comment -%} View for logged users {%- endcomment -%}
     {% assign lowertags = customer.tags | downcase %}
     {% capture customer_tier_name %}
       {% if lowertags contains 'gold' %}

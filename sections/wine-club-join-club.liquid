@@ -1,10 +1,44 @@
 <section class="awc-join-club container">
   {% if customer %}
+    {% assign lowertags = customer.tags | downcase %}
+    {% assign tier_image = '' %}
+    {% assign tier_richtext = '' %}
+    {% capture customer_tier_name %}
+      {% if lowertags contains 'gold' %}
+        Gold
+        {% assign tier_image = section.settings.gold_image %}
+        {% assign tier_richtext = section.settings.gold_richtext %}
+      {% elsif lowertags contains 'silver' %}
+        Silver
+        {% assign tier_image = section.settings.silver_image %}
+        {% assign tier_richtext = section.settings.silver_richtext %}
+      {% elsif lowertags contains 'bronze' %}
+        Bronze
+        {% assign tier_image = section.settings.bronze_image %}
+        {% assign tier_richtext = section.settings.bronze_richtext %}
+      {% else %}
+        Platinum 
+        {% assign tier_image = section.settings.platinum_image %}
+        {% assign tier_richtext = section.settings.platinum_richtext %}
+      {% endif %}
+    {% endcapture %}
+    {% assign customer_tier = customer_tier_name | strip %}
 
     <div class="awc-intro--col-v2">
-      <h5 class="awc-heading-xs">You Are {{ customer_tier }}</h5>
+      <h5 class="awc-heading-xs">You Are</h5>
+      <h3 class="h1">{{ customer_tier }} Tier</h3>
+      <figure>
+        <img
+          src="{{ tier_image |  asset_url }} "
+          alt="{{customer_tier}}"
+          width="200"
+          height="200"
+          class="awc-tier-badge" />
+      </figure>
     </div>
-    <div class="awc-intro--col-v2"></div>
+    <div class="awc-intro--col-v2">
+      {{ tier_richtext }}
+    </div>
     <div class="awc-point-balance">
       <h3 class="h1">Your Balance</h3>
 
@@ -51,7 +85,7 @@
       },
       {
         "type": "image_picker",
-        "id": "Bronze_image",
+        "id": "bronze_image",
         "label": "Bronze Tier Image"
       },
       {
@@ -64,7 +98,7 @@
         "content": "Silver Tier"
       }, {
         "type": "image_picker",
-        "id": "Silver_image",
+        "id": "silver_image",
         "label": "Silver Tier Image"
       }, {
         "type": "richtext",
@@ -75,7 +109,7 @@
         "content": "Gold Tier"
       }, {
         "type": "image_picker",
-        "id": "Gold_image",
+        "id": "gold_image",
         "label": "Gold Tier Image"
       }, {
         "type": "richtext",
@@ -86,7 +120,7 @@
         "content": "Platinum Tier"
       }, {
         "type": "image_picker",
-        "id": "Platinum_image",
+        "id": "platinum_image",
         "label": "Platinum Tier Image"
       }, {
         "type": "richtext",
