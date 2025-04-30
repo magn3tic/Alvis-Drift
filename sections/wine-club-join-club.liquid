@@ -1,35 +1,53 @@
-<section class="container">
-  <div id="puntos-container">Cargando puntos...</div>
+<section class="awc-join-club container">
+  {% if customer %}
+    <div id="points-container">Loading your points...</div>
 
-  <script>
-      const shopDomain = 'alvis-drift.myshopify.com';
-    
-      function getCustomerIdAndFetchPoints() {
-        const customerId = window.BOLD?.common?.Shopify?.customer?.id;
-    
-        if (customerId) {
-          const url = `/apps/loyalties-widget/v2/${shopDomain}/frontend/customer-tiers-list?shopifyCustomerId=${customerId}`;
-          fetch(url)
-            .then(res => res.json())
-            .then(data => {
-              const puntos = data.customerFormatted?.balance;
-              document.getElementById("puntos-container").innerText = `Tienes ${puntos} puntos 🎉`;
-            })
-            .catch(err => {
-              document.getElementById("puntos-container").innerText = "Error al cargar los puntos.";
-              console.error("❌ Error al obtener los puntos:", err);
-            });
-        } else {
-          console.warn("🕒 Esperando a que BOLD esté disponible o el cliente se autentique...");
-          setTimeout(getCustomerIdAndFetchPoints, 500);
-        }
-      }
-    
-      getCustomerIdAndFetchPoints();
-  </script>
-
+  {% else %}
+    <div class="awc-intro--col">
+      <h4>Join our Alvi's Drift wine club to enjoy:</h4>
+      <ul>
+        <li>Members-Only Offers</li>
+        <li>Exclusive Discounts</li>
+        <li>Invites to One-of-a-Kind Events & Wine Tastings</li>
+        <li>Exclusive Content About All Things Wine</li>
+      </ul>
+    </div>
+    <div class="awc-intro--col">
+      <p>What’s more, should you progress through our Wine Club’s three tiers to become a Platinum member, you’ll enjoy 10% discount* on purchases from our online wine shop.</p>
+      <p>Best of all? Our Alvi’s Drift Wine Club requires no recurring membership fees.</p>
+      <small>
+        <em>*Excluding selected sales and promotions. Discount is automatically deducted at check-out.</em>
+      </small>
+    </div>
+  {% endif %}
 
 </section>
+
+{% javascript %}
+
+  const shopDomain = 'alvis-drift.myshopify.com';
+
+  function getCustomerIdAndFetchPoints() {
+    const customerId = window.BOLD ?. common ?. Shopify ?. customer ?. id;
+
+    if (customerId) {
+      const url = `/apps/loyalties-widget/v2/${shopDomain}/frontend/customer-tiers-list?shopifyCustomerId=${customerId}`;
+      fetch(url).then(res => res.json()).then(data => {
+        const points = data.customerFormatted ?. balance;
+        document.getElementById("points-container").innerText = `${points}`;
+      }).catch(err => {
+        document.getElementById("points-container").innerText = "Error loading points.";
+        console.error("❌ Error fetching points:", err);
+      });
+    } else {
+      console.warn("🕒 Waiting for BOLD to load or customer to be authenticated...");
+      setTimeout(getCustomerIdAndFetchPoints, 500);
+    }
+  }
+
+  getCustomerIdAndFetchPoints();
+{% endjavascript %}
+
 {% schema %}
   {
     "name": "Wine Club join club",

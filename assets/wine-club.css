@@ -153,6 +153,7 @@
   }
 } */
 
+/* Start of hero-v2 */
 
 .awc-hero-v2{
   position: relative;
@@ -178,6 +179,9 @@
   text-align: center;
 
 }
+/* End of hero-v2 */
+
+/* Start of products evendts grid */
 .awc-collection-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -224,6 +228,7 @@
   width: 100%;
 
 }
+/* Start of Counter */
 
 #counter-number{
   display: inline-block;
@@ -248,6 +253,8 @@
   text-transform: capitalize;
 
 }
+/* end of Counter */
+
 .awc-event{
   display: flex;
   justify-content: center;
@@ -288,3 +295,17 @@
     max-height: 350px;
   }
 }
+/* End of products evendts grid */
+
+/* Start of Join Club */
+.awc-join-club{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+}
+
+
+
+/* End of Join Club */
