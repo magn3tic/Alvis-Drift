@@ -1,18 +1,24 @@
 <section class="container">
   <script>
-      const customerId = window.BOLD?.common?.Shopify?.customer?.id;
-      const shopDomain = 'alvis-drift.myshopify.com';
-    
-      if (customerId) {
-    fetch(`/apps/loyalties-widget/v2/${shopDomain}/frontend/customer-tiers-list?shopifyCustomerId=${customerId}`)
-      .then(r => r.json())
-      .then(data => {
-        console.log("Puntos actuales del cliente:", data.points_balance);
-      })
-      .catch(err => console.error("Error al obtener los puntos:", err));
-      } else {
-    console.warn("Cliente no autenticado o BOLD no disponible.");
-      }
+        const shopDomain = 'alvis-drift.myshopify.com';
+      
+        function getCustomerIdAndFetchPoints() {
+          const customerId = window.BOLD?.common?.Shopify?.customer?.id;
+      
+          if (customerId) {
+            fetch(`/apps/loyalties-widget/v2/${shopDomain}/frontend/customer-tiers-list?shopifyCustomerId=${customerId}`)
+              .then(r => r.json())
+              .then(data => {
+                console.log("✅ Puntos actuales del cliente:", data.points_balance);
+              })
+              .catch(err => console.error("❌ Error al obtener los puntos:", err));
+          } else {
+            console.warn("🕒 Esperando a que BOLD cargue o el cliente se autentique...");
+            setTimeout(getCustomerIdAndFetchPoints, 500); // Reintenta en 0.5s
+          }
+        }
+      
+        getCustomerIdAndFetchPoints();
   </script>
 
 </section>
