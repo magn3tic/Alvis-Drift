@@ -33,6 +33,11 @@
         "counter_text": "Live stock"
       }
     },
+    "wine_club_join_club_nkriVx": {
+      "type": "wine-club-join-club",
+      "name": "Wine Club join club",
+      "settings": {}
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -108,6 +113,7 @@
   "order": [
     "wine_club_hero_v2_y96K78",
     "wine_club_products_events_grid_zDj4fc",
+    "wine_club_join_club_nkriVx",
     "main",
     "1738176045b8ca5c13",
     "wine_club_shop_content_tnnnnr"
