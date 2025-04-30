@@ -186,7 +186,7 @@
             {% endfor %}
           {% endif %}
       
-         
+         {% if show_event %}
             <div class="awc-event">
            
                 <div class="awc-event-image"> 
@@ -246,6 +246,7 @@
                 </div>
              
             </div>
+          {% endif %}
         {% endfor %}
       </div>
     {% endif %}
