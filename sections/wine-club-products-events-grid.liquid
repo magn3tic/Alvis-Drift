@@ -190,7 +190,12 @@
             <div class="awc-event">
               {% if event.image %}
                 <div class="awc-event-image"> 
-                  <img src="{{ event.image | image_url |  default: 'https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Reserver-Range-Viognier.png?v=1729498852' }}" alt="{{ event.title.value }}" width="133" height="399">
+                  {% if event.image.value %}
+                {% assign event_img_src = event.image | image_url  %}      
+            {% else %}
+            {% assign event_img_src = 'default_wine.webp' |  asset_img_url  %}      
+                      {% endif %}
+                  <img src="{{ event_img_src  }}" alt="{{ event.title.value }}" width="133" height="399">
                 </div>
               {% endif %}
       
