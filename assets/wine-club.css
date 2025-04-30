@@ -304,9 +304,12 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-  background:#b59a88
+  background:#b59a88;
+  padding-bottom: 20px;
 }
 
-
+.awc-intro--col{
+  color: var(--awc-color-dark);
+}
 
 /* End of Join Club */
