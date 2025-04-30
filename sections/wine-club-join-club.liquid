@@ -1,4 +1,4 @@
-<section class="awc-join-club container">
+<section class="awc-join-club container {% if customer %} awc-join-club-logged {% else %} awc-join-club-logout {% endif %}">
   {% if customer %}
     {% assign lowertags = customer.tags | downcase %}
     {% assign tier_image = '' %}

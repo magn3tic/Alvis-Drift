@@ -319,6 +319,16 @@
     flex-direction: row;
   }
 }
+.awc-join-club-logged{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  @media (min-width: 767px) {
+    flex-direction: row;
+  }
+}
 .awc-intro--col-v2{
   color: var(--awc-color-dark);
   @media (min-width: 767px) {
