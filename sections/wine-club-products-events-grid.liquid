@@ -1,6 +1,5 @@
-{% if customer %}
 <section class="awc-products-events-grid container">
-  
+  {% if customer %}
     {% assign lowertags = customer.tags | downcase %}
     {% capture customer_tier_name %}
       {% if lowertags contains 'gold' %}
@@ -253,9 +252,8 @@
          {% endfor %}
        </div>
     {% endif %}
-
+  {% endif %}
 </section>
-{% endif %}
 
 
 {% schema %}
