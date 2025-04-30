@@ -6,20 +6,29 @@
           const customerId = window.BOLD?.common?.Shopify?.customer?.id;
       
           if (customerId) {
-            fetch(`/apps/loyalties-widget/v2/${shopDomain}/frontend/customer-tiers-list?shopifyCustomerId=${customerId}`)
-              .then(r => r.json())
-              .then(data => {
-                console.log("✅ Puntos actuales del cliente:", data.points_balance);
+            const url = `/apps/loyalties-widget/v2/${shopDomain}/frontend/customer-tiers-list?shopifyCustomerId=${customerId}`;
+            console.log("🔍 Solicitando datos desde:", url);
+      
+            fetch(url)
+              .then(response => {
+                console.log("📥 Respuesta cruda (status):", response.status);
+                return response.json();
               })
-              .catch(err => console.error("❌ Error al obtener los puntos:", err));
+              .then(data => {
+                console.log("📦 Datos recibidos (raw JSON):", data);
+              })
+              .catch(err => {
+                console.error("❌ Error al obtener la respuesta:", err);
+              });
           } else {
-            console.warn("🕒 Esperando a que BOLD cargue o el cliente se autentique...");
-            setTimeout(getCustomerIdAndFetchPoints, 500); // Reintenta en 0.5s
+            console.warn("🕒 Esperando a que BOLD esté disponible o el cliente se autentique...");
+            setTimeout(getCustomerIdAndFetchPoints, 500);
           }
         }
       
         getCustomerIdAndFetchPoints();
   </script>
+
 
 </section>
 {% schema %}
