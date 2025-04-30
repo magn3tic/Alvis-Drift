@@ -308,6 +308,7 @@
   padding-bottom: 20px;
   position: relative;
   @media (min-width: 767px) {
+    flex-direction: row;
     padding-top: 60px;
     padding-bottom: 60px;
   }
