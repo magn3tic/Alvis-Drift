@@ -1,32 +1,31 @@
 <section class="container">
+  <div id="puntos-container">Cargando puntos...</div>
+
   <script>
-        const shopDomain = 'alvis-drift.myshopify.com';
-      
-        function getCustomerIdAndFetchPoints() {
-          const customerId = window.BOLD?.common?.Shopify?.customer?.id;
-      
-          if (customerId) {
-            const url = `/apps/loyalties-widget/v2/${shopDomain}/frontend/customer-tiers-list?shopifyCustomerId=${customerId}`;
-            console.log("🔍 Solicitando datos desde:", url);
-      
-            fetch(url)
-              .then(response => {
-                console.log("📥 Respuesta cruda (status):", response.status);
-                return response.json();
-              })
-              .then(data => {
-                console.log("📦 Datos recibidos (raw JSON):", data);
-              })
-              .catch(err => {
-                console.error("❌ Error al obtener la respuesta:", err);
-              });
-          } else {
-            console.warn("🕒 Esperando a que BOLD esté disponible o el cliente se autentique...");
-            setTimeout(getCustomerIdAndFetchPoints, 500);
-          }
+      const shopDomain = 'alvis-drift.myshopify.com';
+    
+      function getCustomerIdAndFetchPoints() {
+        const customerId = window.BOLD?.common?.Shopify?.customer?.id;
+    
+        if (customerId) {
+          const url = `/apps/loyalties-widget/v2/${shopDomain}/frontend/customer-tiers-list?shopifyCustomerId=${customerId}`;
+          fetch(url)
+            .then(res => res.json())
+            .then(data => {
+              const puntos = data.customerFormatted?.balance;
+              document.getElementById("puntos-container").innerText = `Tienes ${puntos} puntos 🎉`;
+            })
+            .catch(err => {
+              document.getElementById("puntos-container").innerText = "Error al cargar los puntos.";
+              console.error("❌ Error al obtener los puntos:", err);
+            });
+        } else {
+          console.warn("🕒 Esperando a que BOLD esté disponible o el cliente se autentique...");
+          setTimeout(getCustomerIdAndFetchPoints, 500);
         }
-      
-        getCustomerIdAndFetchPoints();
+      }
+    
+      getCustomerIdAndFetchPoints();
   </script>
 
 
