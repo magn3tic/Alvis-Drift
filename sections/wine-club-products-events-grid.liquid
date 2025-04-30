@@ -183,8 +183,7 @@
               {% if member_clean == customer_tier_clean %}
                 {% assign show_event = true %}
               {% endif %}
-            {% endfor %}
-          {% endif %}
+            
       
          {% if show_event %}
             <div class="awc-event">
@@ -247,6 +246,8 @@
              
             </div>
           {% endif %}
+          {% endfor %}
+        {% endif %}
         {% endfor %}
       </div>
     {% endif %}
