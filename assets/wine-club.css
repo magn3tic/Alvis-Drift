@@ -299,11 +299,7 @@
 
 /* Start of Join Club */
 .awc-join-club{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+ 
   background:#b59a88;
   padding-bottom: 20px;
   position: relative;
@@ -313,7 +309,16 @@
     padding-bottom: 60px;
   }
 }
-
+.awc-join-club-not-logged-in{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  @media (min-width: 767px) {
+    flex-direction: row;
+  }
+}
 .awc-intro--col-v2{
   color: var(--awc-color-dark);
   @media (min-width: 767px) {

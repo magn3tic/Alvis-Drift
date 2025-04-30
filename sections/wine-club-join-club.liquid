@@ -23,21 +23,22 @@
       {% endif %}
     {% endcapture %}
     {% assign customer_tier = customer_tier_name | strip %}
-
-    <div class="awc-intro--col-v2">
-      <h5 class="awc-heading-xs">You Are</h5>
-      <h3 class="h1">{{ customer_tier }} Tier</h3>
-      <figure>
-        <img
-          src="{{ tier_image |  image_url }} "
-          alt="{{customer_tier}}"
-          width="200"
-          height="200"
-          class="awc-tier-badge" />
-      </figure>
-    </div>
-    <div class="awc-intro--col-v2">
-      {{ tier_richtext }}
+    <div class="awc-join-club-logged">
+      <div class="awc-intro--col-v2">
+        <h5 class="awc-heading-xs">You Are</h5>
+        <h3 class="h1">{{ customer_tier }} Tier</h3>
+        <figure>
+          <img
+            src="{{ tier_image |  image_url }} "
+            alt="{{customer_tier}}"
+            width="200"
+            height="200"
+            class="awc-tier-badge" />
+        </figure>
+      </div>
+      <div class="awc-intro--col-v2">
+        {{ tier_richtext }}
+      </div>
     </div>
     <div class="awc-point-balance">
       <h3 class="h1">Your Balance</h3>
@@ -54,21 +55,24 @@
     </div>
     <script src="{{ 'points-balance.js' | asset_url }}" async></script>
   {% else %}
-    <div class="awc-intro--col-v2">
-      <h4>Join our Alvi's Drift wine club to enjoy:</h4>
-      <ul>
-        <li>Members-Only Offers</li>
-        <li>Exclusive Discounts</li>
-        <li>Invites to One-of-a-Kind Events & Wine Tastings</li>
-        <li>Exclusive Content About All Things Wine</li>
-      </ul>
-    </div>
-    <div class="awc-intro--col-v2">
-      <p>What’s more, should you progress through our Wine Club’s three tiers to become a Platinum member, you’ll enjoy 10% discount* on purchases from our online wine shop.</p>
-      <p>Best of all? Our Alvi’s Drift Wine Club requires no recurring membership fees.</p>
-      <small>
-        <em>*Excluding selected sales and promotions. Discount is automatically deducted at check-out.</em>
-      </small>
+    <div class="awc-join-club-not-logged-in">
+
+      <div class="awc-intro--col-v2">
+        <h4>Join our Alvi's Drift wine club to enjoy:</h4>
+        <ul>
+          <li>Members-Only Offers</li>
+          <li>Exclusive Discounts</li>
+          <li>Invites to One-of-a-Kind Events & Wine Tastings</li>
+          <li>Exclusive Content About All Things Wine</li>
+        </ul>
+      </div>
+      <div class="awc-intro--col-v2">
+        <p>What’s more, should you progress through our Wine Club’s three tiers to become a Platinum member, you’ll enjoy 10% discount* on purchases from our online wine shop.</p>
+        <p>Best of all? Our Alvi’s Drift Wine Club requires no recurring membership fees.</p>
+        <small>
+          <em>*Excluding selected sales and promotions. Discount is automatically deducted at check-out.</em>
+        </small>
+      </div>
     </div>
   {% endif %}
 
