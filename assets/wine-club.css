@@ -306,6 +306,11 @@
   gap: 20px;
   background:#b59a88;
   padding-bottom: 20px;
+  position: relative;
+  @media (min-width: 767px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .awc-intro--col{
