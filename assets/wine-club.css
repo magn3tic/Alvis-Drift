@@ -184,7 +184,7 @@
   justify-content: center;
   gap: 20px 10px;
   justify-items: center;
-  @media (min-width: 1023px) {
+  @media (min-width: 767px) {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
@@ -252,6 +252,9 @@
   display: flex;
   justify-content: center;
   gap: 20px;
+  background: #00000075;
+  border-radius: 6px;
+  box-shadow: 0px 5px 65px black;
 }
 .awc-event-image{
   width: 100%;
