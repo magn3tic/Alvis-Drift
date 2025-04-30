@@ -183,7 +183,7 @@
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   gap: 20px 10px;
-
+  justify-items: center;
   @media (min-width: 1023px) {
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
@@ -253,6 +253,7 @@
 }
 .awc-event-image img{
   width: 100%;
+  filter: drop-shadow(3px 5px 13px #E36653);
 }
 .awc-event-content-grid{
   display: grid;
@@ -265,6 +266,9 @@
 }
 .awc-content{
   font-size: 10px;
+  p{
+    margin: 0;
+  }
 }
 .awc-content-members, .awc-content-title{
   grid-column: span 2 / span 2;
