@@ -300,10 +300,11 @@
 /* Start of Join Club */
 .awc-join-club{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 20px;
-
+  background:#b59a88
 }
 
 
