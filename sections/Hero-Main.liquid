@@ -23,7 +23,9 @@
      sizes="100vw"
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.background_image.height}}"
-     width="{{block.settings.background_image.width}}">
+     width="{{block.settings.background_image.width}}"
+     loading="eager"
+     fetchpriority="high">
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
     {% assign opacity = block.settings.overlay_opacity %}       
