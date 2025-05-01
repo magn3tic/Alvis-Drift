@@ -33,7 +33,9 @@
      data-aspectratio="{{ block.settings.background_image.aspect_ratio }}"
      data-sizes="auto"
      data-parent-fit="cover"
-     alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}">
+     alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
+    height="{{block.settings.background_image.height}}"
+     width="{{block.settings.background_imagee.width}}">
     
    {% endif %}
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
