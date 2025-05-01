@@ -10,7 +10,7 @@
 {% for block in section.blocks %}
  <div class="hero-section">
   <img class="hero-section-bg"
-    src="{{ block.settings.background_image | img_url: 'master' }}"
+    src="{{ block.settings.background_image | img_url: '2048x' }}"
      srcset="
       		{{ block.settings.background_image | img_url: '720x' }} 720w,
       		{{ block.settings.background_image | img_url: '900x' }} 900w,
@@ -18,7 +18,8 @@
             {{ block.settings.background_image | img_url: '1296x' }} 1296w,
             {{ block.settings.background_image | img_url: '1512x' }} 1512w,
             {{ block.settings.background_image | img_url: '1728x' }} 1728w,
-            {{ block.settings.background_image | img_url: '1944x' }} 1944w"   
+            {{ block.settings.background_image | img_url: '1944x' }} 1944w,
+            {{ block.settings.background_image | img_url: '2048x' }} 2048w"
      sizes="100vw"
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.background_image.height}}"
