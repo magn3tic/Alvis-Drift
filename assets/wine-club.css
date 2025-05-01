@@ -332,8 +332,24 @@
   }
 }
 .awc-points-balance{
-  text-align: center;
+margin-right: 20px;
   color: var(--awc-color-dark);
+}
+.awc-points-balance p{
+  max-width: 400px;
+}
+.awc-go-for{
+  display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+}
+.awc-go-for figure{
+  margin: 0;
+}
+.awc-tier-badge{
+  width: 100%;
+  height: auto;
 }
 .awc-points{
   display: inline-flex;
