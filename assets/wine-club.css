@@ -303,7 +303,7 @@
 /* Start of Join Club */
 .awc-join-club{
  
-  background:#b59a88;
+  background-color: var(--awc-color-brown);
   padding-bottom: 20px;
   position: relative;
   @media (min-width: 767px) {
