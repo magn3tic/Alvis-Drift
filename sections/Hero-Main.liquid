@@ -27,7 +27,7 @@
     
    
 <img class="hero-section-bg mobile"
-     src="{{ block.settings.background_image | img_url: '1944' }}"
+     src="{{ block.settings.background_image | img_url: 'master' }}"
      srcset="
       		{{ block.settings.background_image | img_url: '720' }} 720w,
       		{{ block.settings.background_image | img_url: '900' }} 900w,
@@ -37,7 +37,7 @@
             {{ block.settings.background_image | img_url: '1728' }} 1728w,
             {{ block.settings.background_image | img_url: '1944' }} 1944w"
             
-     sizes="(max-width: 768px) 720px, 1944px"
+     sizes="100vw"
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.background_image.height}}"
      width="{{block.settings.background_image.width}}">
