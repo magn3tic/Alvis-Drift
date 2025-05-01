@@ -74,7 +74,7 @@
       {% if go_for %}
         <div class="awc-intro--col-v2">
           <h3 class="h1">Go for {{ go_for_text }}</h3>
-          <p>{{ go_for_benefits }}</p>
+
           <figure>
             <img
               src="{{ go_for_image | image_url }}"
@@ -83,6 +83,7 @@
               height="160"
               class="awc-tier-badge" />
           </figure>
+          <p>{{ go_for_benefits }}</p>
         </div>
       {% endif %}
     </div>
