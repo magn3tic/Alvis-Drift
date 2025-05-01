@@ -35,13 +35,11 @@
             {{ block.settings.background_image | img_url: '1296x' }} 1296w,
             {{ block.settings.background_image | img_url: '1512x' }} 1512w,
             {{ block.settings.background_image | img_url: '1728x' }} 1728w,
-            {{ block.settings.background_image | img_url: '1944x' }} 1944w"
-            
+            {{ block.settings.background_image | img_url: '1944x' }} 1944w"   
      sizes="100vw"
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.background_image.height}}"
-     width="{{block.settings.background_image.width}}"
-    style="width: 100%; height: auto; object-fit: cover;">
+     width="{{block.settings.background_image.width}}">
     
    {% endif %}
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
