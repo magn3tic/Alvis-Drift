@@ -338,13 +338,15 @@
 
 /* Start how it works */
 .awc-how-it-works{
-  padding-bottom: 60px;
-  padding-top: 60px;
-  max-width: 1600px !important;
+ 
   background: var(--awc-color-darkest);
 
 }
-
+.container{
+  padding-bottom: 60px;
+  padding-top: 60px;
+  max-width: 1600px !important;
+}
 .awc-how-it-works-benefits{
   display: flex;
       flex-direction: column;
