@@ -346,3 +346,6 @@
       flex-direction: column;
       align-items: center;
 }
+.benefits ul{
+  max-width: 275px;
+}
