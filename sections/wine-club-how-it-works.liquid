@@ -1,0 +1,119 @@
+<section></section>
+{% schema %}
+  {
+    "name": "Wine Club How it Works",
+    "settings": [
+      {
+        "type": "text",
+        "id": "how_it_works_title",
+        "label": "How it Works Title",
+        "default": "How it Works"
+      },
+      {
+        "type": "richtext",
+        "id": "how_it_works_text",
+        "label": "How it Works Text"
+      },
+      {
+        "type": "header",
+        "content": "Bronze Tier"
+      },
+      {
+        "type": "text",
+        "id": "bronze_tier_title",
+        "label": "Bronze Tier Title",
+        "default": "Bronze"
+      }, {
+        "type": "image_picker",
+        "id": "bronze_image",
+        "label": "Bronze Tier Image"
+      }, {
+        "type": "header",
+        "content": "Silver Tier"
+      }, {
+        "type": "text",
+        "id": "silver_tier_title",
+        "label": "Silver Tier Title",
+        "default": "Silver"
+      }, {
+        "type": "image_picker",
+        "id": "silver_image",
+        "label": "Silver Tier Image"
+      }, {
+        "type": "header",
+        "content": "Gold Tier"
+      }, {
+        "type": "text",
+        "id": "gold_tier_title",
+        "label": "Gold Tier Title",
+        "default": "Gold"
+      }, {
+        "type": "image_picker",
+        "id": "gold_image",
+        "label": "Gold Tier Image"
+      }, {
+        "type": "header",
+        "content": "Platinum Tier"
+      }, {
+        "type": "text",
+        "id": "platinum_tier_title",
+        "label": "Platinum Tier Title",
+        "default": "Platinum"
+      }, {
+        "type": "image_picker",
+        "id": "platinum_image",
+        "label": "Platinum Tier Image"
+      }
+    ],
+    "blocks": [
+      {
+        "type": "bronze_benefit",
+        "name": "Bronze Benefit",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Benefit Text"
+          }
+        ]
+      }, {
+        "type": "silver_benefit",
+        "name": "Silver Benefit",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Benefit Text"
+          }
+        ]
+      }, {
+        "type": "gold_benefit",
+        "name": "Gold Benefit",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Benefit Text"
+          }
+        ]
+      }, {
+        "type": "platinum_benefit",
+        "name": "Platinum Benefit",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Benefit Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Wine Club How it Works",
+        "category": "Wine Club",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}
