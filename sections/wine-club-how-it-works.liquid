@@ -1,13 +1,13 @@
 {% if customer %}
   <section class="awc-how-it-works container">
     <div class="how-it-works-title">
-      <h4>{{ section.settings.how_it_works_title }}</h4>
+      <h4 class="h1">{{ section.settings.how_it_works_title }}</h4>
       <p>{{ section.settings.how_it_works_text }}</p>
     </div>
-    <div class="how-it-works-benefits">
+    <div class="awc-how-it-works-benefits">
       <div class="benefits bronze-tier">
-        <span>WINE CLUB</span>
-        <h5>Bronze</h5>
+        <span class="awc-heading-xs">WINE CLUB</span>
+        <h5 class="h1 whiteTitle">Bronze</h5>
         <figure>
           <img
             src="{{ section.settings.bronze_image | image_url }}"
@@ -16,7 +16,7 @@
             height="200"
             class="awc-tier-badge" />
         </figure>
-        <span>{{ section.settings.bronze_text }}</span>
+        <span>{{ section.settings.bronze_text }} Points</span>
         <ul>
           {% for block in section.blocks %}
             {% if block.type == 'bronze_benefit' %}
@@ -26,8 +26,8 @@
         </ul>
       </div>
       <div class="benefits silver-tier">
-        <span>WINE CLUB</span>
-        <h5>SILVER</h5>
+        <span class="awc-heading-xs">WINE CLUB</span>
+        <h5 class="h1 whiteTitle">SILVER</h5>
         <figure>
           <img
             src="{{ section.settings.silver_image | image_url }}"
@@ -36,7 +36,7 @@
             height="200"
             class="awc-tier-badge" />
         </figure>
-        <span>{{ section.settings.silver_text }}</span>
+        <span>{{ section.settings.silver_text }} Points</span>
         <ul>
           {% for block in section.blocks %}
             {% if block.type == 'silver_benefit' %}
@@ -46,8 +46,8 @@
         </ul>
       </div>
       <div class="benefits gold-tier">
-        <span>WINE CLUB</span>
-        <h5>GOLD</h5>
+        <span class="awc-heading-xs">WINE CLUB</span>
+        <h5 class="h1 whiteTitle">GOLD</h5>
         <figure>
           <img
             src="{{ section.settings.gold_image | image_url }}"
@@ -56,7 +56,7 @@
             height="200"
             class="awc-tier-badge" />
         </figure>
-        <span>{{ section.settings.gold_text }}</span>
+        <span>{{ section.settings.gold_text }} Points</span>
         <ul>
           {% for block in section.blocks %}
             {% if block.type == 'gold_benefit' %}
@@ -66,8 +66,8 @@
         </ul>
       </div>
       <div class="benefits platinum-tier">
-        <span>WINE CLUB</span>
-        <h5>Platinum</h5>
+        <span class="awc-heading-xs">WINE CLUB</span>
+        <h5 class="h1 whiteTitle">Platinum</h5>
         <figure>
           <img
             src="{{ section.settings.platinum_image | image_url }}"
@@ -76,7 +76,7 @@
             height="200"
             class="awc-tier-badge" />
         </figure>
-        <span>{{ section.settings.platinum_text_text }}</span>
+        <span>{{ section.settings.platinum_text_text }} Points</span>
         <ul>
           {% for block in section.blocks %}
             {% if block.type == 'platinum_benefit' %}

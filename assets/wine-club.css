@@ -335,3 +335,14 @@
   gap: 2px;
 }
 /* End of Join Club */
+
+/* Start how it works */
+.awc-how-it-works{
+  padding-bottom: 60px;
+}
+
+.awc-how-it-works-benefits{
+  display: flex;
+      flex-direction: column;
+      align-items: center;
+}
