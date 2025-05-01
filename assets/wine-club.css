@@ -339,13 +339,29 @@
 /* Start how it works */
 .awc-how-it-works{
   padding-bottom: 60px;
+  padding-top: 60px;
+  max-width: 1600px !important;
+  background: var(--awc-color-darkest);
+
 }
 
 .awc-how-it-works-benefits{
   display: flex;
       flex-direction: column;
       align-items: center;
+      @media (min-width: 767px) {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 20px;
+        
+      }
 }
 .benefits ul{
   max-width: 275px;
+  @media (min-width: 1339px) {
+    max-width: 350px;
+    
+  }
 }
