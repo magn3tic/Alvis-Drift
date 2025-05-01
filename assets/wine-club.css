@@ -305,7 +305,7 @@
   }
   50% {
   
-    filter: drop-shadow(0px 10px 20px #E36653);
+    filter: drop-shadow(0px 10px 30px #E36653);
   }
 }
 @media (min-width: 1023px) {
