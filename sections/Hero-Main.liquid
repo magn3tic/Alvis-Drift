@@ -24,12 +24,19 @@
     
 
    {% elsif block.settings.background_image %}
-    {% assign img_url = block.settings.background_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+    
    
 <img class="hero-section-bg mobile"
      src="{{ block.settings.background_image | img_url: 'master' }}"
-     data-src="{{ img_url }}"
-     data-srcset="{{ img_url }}"
+     data-srcset="{{ block.settings.background_image | img_url: '540' }} 540w,
+      		{{ block.settings.background_image | img_url: '720' }} 720w,
+      		{{ block.settings.background_image | img_url: '900' }} 900w,
+            {{ block.settings.background_image | img_url: '1080' }} 1080w,
+            {{ block.settings.background_image | img_url: '1296' }} 1296w,
+            {{ block.settings.background_image | img_url: '1512' }} 1512w,
+            {{ block.settings.background_image | img_url: '1728' }} 1728w,
+            {{ block.settings.background_image | img_url: '1944' }} 1944w,
+            {{ block.settings.background_image | img_url: '2048' }} 2048w"
      data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
      data-aspectratio="{{ block.settings.background_image.aspect_ratio }}"
      data-sizes="auto"
