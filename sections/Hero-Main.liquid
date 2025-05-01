@@ -6,7 +6,7 @@
 		body.classList.add("parallax-h");
 	</script>   
   <!-- Slider/overlay-->  
-{% assign img_url = block.settings.background_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+
 {% for block in section.blocks %}
  <div class="hero-section">
   {% if block.settings.background_image and block.settings.mobile_background_image %}
@@ -24,6 +24,7 @@
     
 
    {% elsif block.settings.background_image %}
+    {% assign img_url = block.settings.background_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
 <img class="hero-section-bg mobile"
      src="{{ block.settings.background_image | img_url: 'master' }}"
      data-src="{{ img_url }}"
