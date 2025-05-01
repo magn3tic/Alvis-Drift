@@ -203,13 +203,18 @@
 .sp-t-v2{
   max-width: 170px;
     margin: 0 auto;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 600;
     letter-spacing: 2px;
+    text-align: center;
     @media (min-width: 767px) {
       max-width: 250px;
       
     }
+}
+.discounted-price{
+  margin-left: 5px;
+  font-size: 2rem;
 }
 .product-title-v2{
   color: #c65336;

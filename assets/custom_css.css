@@ -570,9 +570,7 @@
   .position-relative{
     position:relative;
   }
-  .discounted-price{
-      opacity: .6;
-  }
+
   
   .silver-tier-badge{
     width: 50px;
