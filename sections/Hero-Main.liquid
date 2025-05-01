@@ -11,12 +11,17 @@
  <div class="hero-section">
   <img class="hero-section-bg"
     src="{{ block.settings.background_image | img_url: 'master' }}"
-     data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
-     data-aspectratio="{{ block.settings.background_image.aspect_ratio }}"
-     data-sizes="auto"
-     data-parent-fit="cover"
+     srcset="
+      		{{ block.settings.background_image | img_url: '720x' }} 720w,
+      		{{ block.settings.background_image | img_url: '900x' }} 900w,
+            {{ block.settings.background_image | img_url: '1080x' }} 1080w,
+            {{ block.settings.background_image | img_url: '1296x' }} 1296w,
+            {{ block.settings.background_image | img_url: '1512x' }} 1512w,
+            {{ block.settings.background_image | img_url: '1728x' }} 1728w,
+            {{ block.settings.background_image | img_url: '1944x' }} 1944w"   
+     sizes="100vw"
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
-    height="{{block.settings.background_image.height}}"
+     height="{{block.settings.background_image.height}}"
      width="{{block.settings.background_image.width}}">
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
