@@ -24,7 +24,8 @@
     
 
    {% elsif block.settings.background_image %}
-    {% assign img_url = block.settings.background_image | img_url: '1x1' | replace: '_1x1.', '_{width}x.' %}
+    {% assign img_url = block.settings.background_image | img_url: '1x1' | replace: '_1x1.', '_{d-width}x.' %}
+   {% assign d-width = block.settings.background_image.width %}
 <img class="hero-section-bg mobile"
      src="{{ block.settings.background_image | img_url: 'master' }}"
      data-src="{{ img_url }}"
