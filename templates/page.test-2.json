@@ -28,7 +28,7 @@
         "gold_collection": "club-silver",
         "platinum_collection": "blends",
         "collection_exclusive": "all-products",
-        "show_counter": false,
+        "show_counter": true,
         "start_point": 500,
         "counter_text": "Live stock"
       }
