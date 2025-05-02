@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (number <= 0) {
           clearInterval(interval);
+          span.textContent = "0";
+          span.classList.remove("animate");
         }
       }, 150);
     }, 3000);
