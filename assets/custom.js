@@ -505,9 +505,7 @@ function iOS() {
   window.addEventListener('scroll',function(){
     scrollValue = window.scrollY;
      width = $(window).width();
-    console.log("width_size==>",width);
-    console.log((-scrollValue/4 + 1400));
-    var family_pge = document.querySelector('.template-page-our-family .parallex_div');
+     var family_pge = document.querySelector('.template-page-our-family .parallex_div');
     var farm_pge = document.querySelector('.template-page-our-farm .parallex_div');
     var vineyards_pge = document.querySelector('.template-page-our-vineyards .parallex_div');
     var cellar = document.querySelector('.template-page-our-cellar .parallex_div');
