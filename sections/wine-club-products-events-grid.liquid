@@ -1,5 +1,9 @@
 {% if customer %}
-<section class="awc-products-events-grid container">
+<section class="awc-products-events-grid container {%  if  section.settings.show == 'exclusive_events' %}  awc-events-grid {% endif %}">
+    {% comment %} Check if the customer is logged in {% endcomment %}
+    {% assign lowertags = customer.tags | downcase %}
+    {% assign customer_tier = '' %}
+    {% comment %} Determine the customer tier based on tags {% endcomment %}
   
     {% assign lowertags = customer.tags | downcase %}
     {% capture customer_tier_name %}
