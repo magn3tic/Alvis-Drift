@@ -31,7 +31,7 @@
         "platinum_collection": "blends",
         "collection_exclusive": "all-products",
         "show_counter": true,
-        "start_point": 10,
+        "start_point": 200,
         "counter_text": "Live stock"
       }
     },
