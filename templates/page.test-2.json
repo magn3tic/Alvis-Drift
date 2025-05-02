@@ -23,13 +23,15 @@
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
+        "show_title": true,
+        "title": "Exclusive Wines",
         "bronze_collection": "club-bronze",
         "silver_collection": "club-silver",
         "gold_collection": "club-silver",
         "platinum_collection": "blends",
         "collection_exclusive": "all-products",
         "show_counter": true,
-        "start_point": 500,
+        "start_point": 10,
         "counter_text": "Live stock"
       }
     },
@@ -38,6 +40,8 @@
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_events",
+        "show_title": true,
+        "title": "Exclusive Events",
         "bronze_collection": "",
         "silver_collection": "",
         "gold_collection": "",
@@ -53,6 +57,8 @@
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_collection",
+        "show_title": false,
+        "title": "Exclusive Wines",
         "bronze_collection": "",
         "silver_collection": "",
         "gold_collection": "",
