@@ -232,6 +232,9 @@
   height: 100%;
   width: 100%;
 
+  @media (min-width: 1023px) {
+    object-fit: cover;
+  }
 }
 /* Start of Counter */
 
@@ -250,7 +253,7 @@
 }
 .awc-counter{
   display: flex;
-    flex-direction: column;
+  flex-direction: row-reverse;
     align-items: center;
     gap: 10px;
 }
@@ -391,15 +394,17 @@ margin-right: 20px;
 
 
 .awc-how-it-works-benefits{
-  display: flex;
-      flex-direction: column;
-      align-items: center;
-      @media (min-width: 767px) {
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        gap: 20px;
+ 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-items: center;
+  justify-content: center;
+  gap: 20px;
+      @media (min-width: 1439px) {
+        grid-template-columns: repeat(auto-fill, 450px);
+      }
+      @media (min-width: 1800px) {
+        grid-template-columns: repeat(auto-fill, 330px);
         
       }
 }

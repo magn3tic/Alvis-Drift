@@ -70,10 +70,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const interval = setInterval(() => {
       span.classList.add("animate");
+      const randomNumber = Math.floor(Math.random() * 10) + 1;
 
       // Wait before updating the number to sync with the animation
       setTimeout(() => {
-        number--;
+        number= number - randomNumber;
         span.textContent = number;
         span.classList.remove("animate");
 
@@ -81,7 +82,7 @@ document.addEventListener("DOMContentLoaded", function() {
           clearInterval(interval);
         }
       }, 150);
-    }, 5000);
+    }, 3000);
   }
 });
 
