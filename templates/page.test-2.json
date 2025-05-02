@@ -22,7 +22,7 @@
       "type": "wine-club-products-events-grid",
       "name": "Wine Club Products & Events Grid",
       "settings": {
-        "show": "exclusive_events",
+        "show": "exclusive_wines",
         "bronze_collection": "club-bronze",
         "silver_collection": "club-silver",
         "gold_collection": "club-silver",
@@ -31,6 +31,21 @@
         "show_counter": false,
         "start_point": 500,
         "counter_text": "Live stock"
+      }
+    },
+    "wine_club_products_events_grid_eJrVXy": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_collection",
+        "bronze_collection": "",
+        "silver_collection": "",
+        "gold_collection": "",
+        "platinum_collection": "",
+        "collection_exclusive": "flagship-range",
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
       }
     },
     "wine_club_join_club_nkriVx": {
@@ -276,6 +291,7 @@
   "order": [
     "wine_club_hero_v2_y96K78",
     "wine_club_products_events_grid_zDj4fc",
+    "wine_club_products_events_grid_eJrVXy",
     "wine_club_join_club_nkriVx",
     "wine_club_how_it_works_Pi4r66",
     "wine_club_reserve_EriiN7",
