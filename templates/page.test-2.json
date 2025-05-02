@@ -57,8 +57,8 @@
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_collection",
-        "show_title": false,
-        "title": "Exclusive Wines",
+        "show_title": true,
+        "title": "Exclusive Wines for you",
         "bronze_collection": "",
         "silver_collection": "",
         "gold_collection": "",
