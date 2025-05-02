@@ -291,11 +291,11 @@
         "bronze_image": "shopify://shop_images/Bronze.webp",
         "bronze_text": "350",
         "silver_image": "shopify://shop_images/Silver.webp",
-        "silver_text": "5000",
+        "silver_text": "5.000",
         "gold_image": "shopify://shop_images/Gold.webp",
-        "gold_text": "10000",
+        "gold_text": "10.000",
         "platinum_image": "shopify://shop_images/Platinum.png",
-        "platinum_text": "40000"
+        "platinum_text": "40.000"
       }
     },
     "wine_club_reserve_EriiN7": {
