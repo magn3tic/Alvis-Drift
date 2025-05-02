@@ -180,78 +180,80 @@
        </div>
        {% assign events = shop.metaobjects.events.values %}
        <div class="awc-events awc-collection-grid">
-         {% for event in events %}
-           {% assign show_event = false %}
-           {% if event.members.value %}
-             {% assign customer_tier_clean = customer_tier | strip | downcase %}
-             {% for member in event.members.value %}
-               {% assign member_clean = member | strip | downcase %}
-               {% if member_clean == customer_tier_clean %}
-                 {% assign show_event = true %}
-               {% endif %}
-             {% endfor %}
-           {% endif %}
-       
-           {% if show_event %}
-             <div class="awc-event">
-               <div class="awc-event-image"> 
-                 {% if event.image and event.image.value %}
-                   {% assign event_img_src = event.image | image_url %}
-                 {% else %}
-                   {% assign event_img_src = 'default-wine.webp' | asset_url %}
-                 {% endif %}
-                 <img src="{{ event_img_src }}" alt="{{ event.title.value | escape }}" width="133" height="399">
-               </div>
-       
-               <div class="awc-event-content-container">
-                 <div class="awc-content awc-content-title">
-                   <h5 style="color:white">{{ event.title.value }}</h5>
-                 </div>
-       
-                 {% if event.date.value %}
-                   <div class="awc-content awc-content-date">
-                     <p><strong>Date:</strong> {{ event.date.value | date: '%d %B %Y' }}</p>
-                   </div>
-                 {% endif %}
-       
-                 {% if event.description.value %}
-                   <div class="awc-content awc-content-description">
-                     <p>{{ event.description.value }}</p>
-                   </div>
-                 {% endif %}
-       
-                 {% if event.host.value %}
-                   <div class="awc-content awc-content-host">
-                     <p><strong>Host:</strong> {{ event.host.value }}</p>
-                   </div>
-                 {% endif %}
-       
-                 {% if event.location.value %}
-                   <div class="awc-content awc-content-location">
-                     <p><strong>Location:</strong> {{ event.location.value }}</p>
-                   </div>
-                 {% endif %}
-       
-                 {% if event.wines.value %}
-                   <div class="awc-content awc-content-wines">
-                     <p><strong>Wines:</strong> {{ event.wines.value }}</p>
-                   </div>
-                 {% endif %}
-       
-                 {% if event.members.value %}
-                   <div class="awc-content awc-content-members">
-                     <p><strong>Exclusive for:</strong> 
-                     {% for member in event.members.value %}
-                       <span>{{ member | strip }}</span>
-                     {% endfor %}
-                     </p>
-                   </div>
-                 {% endif %}
-               </div>
-             </div>
-           {% endif %}
-         {% endfor %}
-       </div>
+  {% assign sorted_events = events | sort: "date.value" %}
+  {% for event in sorted_events %}
+    {% assign show_event = false %}
+    {% if event.members.value %}
+      {% assign customer_tier_clean = customer_tier | strip | downcase %}
+      {% for member in event.members.value %}
+        {% assign member_clean = member | strip | downcase %}
+        {% if member_clean == customer_tier_clean %}
+          {% assign show_event = true %}
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+
+    {% if show_event %}
+      <div class="awc-event">
+        <div class="awc-event-image"> 
+          {% if event.image and event.image.value %}
+            {% assign event_img_src = event.image | image_url %}
+          {% else %}
+            {% assign event_img_src = 'default-wine.webp' | asset_url %}
+          {% endif %}
+          <img src="{{ event_img_src }}" alt="{{ event.title.value | escape }}" width="133" height="399">
+        </div>
+
+        <div class="awc-event-content-container">
+          <div class="awc-content awc-content-title">
+            <h5 style="color:white">{{ event.title.value }}</h5>
+          </div>
+
+          {% if event.date.value %}
+            <div class="awc-content awc-content-date">
+              <p><strong>Date:</strong> {{ event.date.value | date: '%d %B %Y' }}</p>
+            </div>
+          {% endif %}
+
+          {% if event.description.value %}
+            <div class="awc-content awc-content-description">
+              <p>{{ event.description.value }}</p>
+            </div>
+          {% endif %}
+
+          {% if event.host.value %}
+            <div class="awc-content awc-content-host">
+              <p><strong>Host:</strong> {{ event.host.value }}</p>
+            </div>
+          {% endif %}
+
+          {% if event.location.value %}
+            <div class="awc-content awc-content-location">
+              <p><strong>Location:</strong> {{ event.location.value }}</p>
+            </div>
+          {% endif %}
+
+          {% if event.wines.value %}
+            <div class="awc-content awc-content-wines">
+              <p><strong>Wines:</strong> {{ event.wines.value }}</p>
+            </div>
+          {% endif %}
+
+          {% if event.members.value %}
+            <div class="awc-content awc-content-members">
+              <p><strong>Exclusive for:</strong> 
+              {% for member in event.members.value %}
+                <span>{{ member | strip }}</span>
+              {% endfor %}
+              </p>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>
+
     {% endif %}
 
 </section>
