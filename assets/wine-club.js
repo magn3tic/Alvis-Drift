@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function() {
         span.textContent = number;
         span.classList.remove("animate");
 
-        if (number === 0) {
+        if (number <= 0) {
           clearInterval(interval);
         }
       }, 150);
