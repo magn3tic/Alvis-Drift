@@ -179,10 +179,12 @@
         {% endif %}
        </div>
        {% assign events = shop.metaobjects.events.values %}
-       <div class="awc-events awc-collection-grid">
-  {% assign sorted_events = events | sort: "date.value" %}
+       {% assign sorted_events = events | sort: "date.value" %}
+
+<div class="awc-events awc-collection-grid">
   {% for event in sorted_events %}
     {% assign show_event = false %}
+
     {% if event.members.value %}
       {% assign customer_tier_clean = customer_tier | strip | downcase %}
       {% for member in event.members.value %}
