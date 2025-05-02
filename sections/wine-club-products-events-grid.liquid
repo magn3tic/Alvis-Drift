@@ -220,42 +220,10 @@
         <div id="awc-events-data" style="display:none;" data-events='{{ events_json | strip_newlines }}'></div>
         <div class="awc-events awc-collection-grid" id="awc-events-rendered"></div>
         
-        <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const container = document.getElementById('awc-events-rendered');
-    const rawData = document.getElementById('awc-events-data').dataset.events;
-
-    let events = JSON.parse(rawData);
-
-    events.sort((a, b) => new Date(a.date) - new Date(b.date));
-
-    events.forEach(event => {
-      const html = `
-        <div class="awc-event">
-          <div class="awc-event-image">
-            <img src="${event.image}" alt="${event.title}" width="133" height="399">
-          </div>
-          <div class="awc-event-content-container">
-            <div class="awc-content awc-content-title">
-              <h5 style="color:white">${event.title}</h5>
-            </div>
-            ${event.date ? `<div class="awc-content awc-content-date"><p><strong>Date:</strong> ${new Date(event.date).toLocaleDateString('en-GB', { day: '2-digit', month: 'long', year: 'numeric' })}</p></div>` : ''}
-            ${event.description ? `<div class="awc-content awc-content-description"><p>${event.description}</p></div>` : ''}
-            ${event.host ? `<div class="awc-content awc-content-host"><p><strong>Host:</strong> ${event.host}</p></div>` : ''}
-            ${event.location ? `<div class="awc-content awc-content-location"><p><strong>Location:</strong> ${event.location}</p></div>` : ''}
-            ${event.wines ? `<div class="awc-content awc-content-wines"><p><strong>Wines:</strong> ${event.wines}</p></div>` : ''}
-            ${event.members.length ? `<div class="awc-content awc-content-members"><p><strong>Exclusive for:</strong> ${event.members.join(', ')}</p></div>` : ''}
-          </div>
-        </div>
-      `;
-      container.insertAdjacentHTML('beforeend', html);
-    });
-  });
-</script>
-
-    {% endif %}
+     {% endif %}
 
 </section>
+
 {% endif %}
 
 

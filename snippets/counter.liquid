@@ -5,28 +5,3 @@
   <span id="counter-number">{{ start_value }}</span>
   <span class="awc-counter-text">{{ text_value }}</span>
 </div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    const counter = document.querySelector(".awc-counter");
-    if (counter) {
-      let number = parseInt(counter.dataset.start);
-      const span = counter.querySelector("#counter-number");
-  
-      const interval = setInterval(() => {
-        span.classList.add("animate");
-  
-        // Wait before updating the number to sync with the animation
-        setTimeout(() => {
-          number--;
-          span.textContent = number;
-          span.classList.remove("animate");
-  
-          if (number === 0) {
-            clearInterval(interval);
-          }
-        }, 150);
-      }, 5000);
-    }
-  });
-</script>
