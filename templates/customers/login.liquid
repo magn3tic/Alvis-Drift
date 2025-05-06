@@ -152,11 +152,11 @@ passwordFields[i].type = 'password';
         <a href="{{ routes.account_register_url }}" data-dest="{{ routes.account_register_url }}" id="catchClick" class="create-account">
           CREATE ACCOUNT
         </a>
-        <input type="hidden" name="return_url" value="/pages/club" />
-      
+       
     {%- endform -%}
   
-  
+    <input type="hidden" name="return_url" value="/pages/club" />
+      
   {%- if shop.checkout.guest_login -%}
     <div>
       <hr>
