@@ -24,7 +24,7 @@
       "settings": {
         "show": "exclusive_wines",
         "show_title": true,
-        "title": "Exclusive Collections",
+        "title": "Exclusive Products",
         "bronze_collection": "club-bronze",
         "silver_collection": "club-silver",
         "gold_collection": "club-silver",
