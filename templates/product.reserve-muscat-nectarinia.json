@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#2d5980",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "Served between 4-8 ˚C, this wine will complement any citrus-based dessert, as well as Crème brûlée, fresh fruit salad or rich cheeses such as Munster, Epoisses de Bourgogne or Reblochon.",
+        "detail_box_txt": "<p>Served between 4-8 ˚C, this wine will complement any citrus-based dessert, as well as Crème brûlée, fresh fruit salad or rich cheeses such as Munster, Epoisses de Bourgogne or Reblochon.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -220,12 +220,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>The wine labels on bottles from our Reserve range feature an illustration of Alvi’s Drift, the low-water bridge over the Breede River cutting through the family farm. Our patriarch, Albertus Viljoen “Oupa Alvi” van der Merwe, was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p><p>Our Alvi’s Drift Reserve range is the culmination of our pursuit of excellence in producing outstanding wines of unrivalled complexity.</p>",
         "button-txt": "RESERVE RANGE",
-        "button_link": "shopify://collections/reserve-range"
+        "button_link": "shopify://collections/reserve-range",
+        "button_type": "alvisBtn"
       }
     },
     "1643894802c6c7e07a": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/DSC_5267.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -234,7 +236,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Made in very limited quantities from old blocks of Muscat de Frontignan (Muscat Blanc à Petits Grains), this wine takes its name from the iridescent green Nectarinia Famosa (also known as the Malachite sunbird) which frolics in our vineyards during harvest time.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1643894809ed098fcd": {
@@ -247,7 +250,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>For this wine, optimally ripe grapes with a balling of 40° are hand-picked in the cool early morning hours from vineyards aged between 25-40 years, specially selected for their ability to yield high sugar while still maintaining quality and vibrancy of flavour.</p><p>After crushing, prior to fortification, grapes are left on skinsto allow for the full extraction of crystallised sugar in dried berries. Thereafter, wine is matured in old oak barrels for 48 months.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16392534101a01b24e": {

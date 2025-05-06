@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#5c6e67",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine is a wonderful companion to roast duck, fish terrine as well as duck or fish pâté. It will also complement a pork rillette, roasted quail with a herb-butter sauce and creamy, mature Brie served with fresh baguette.",
+        "detail_box_txt": "<p>This wine is a wonderful companion to roast duck, fish terrine as well as duck or fish pâté. It will also complement a pork rillette, roasted quail with a herb-butter sauce and creamy, mature Brie served with fresh baguette.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -220,12 +220,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>In 1928, our family patriarch, Albertus Viljoen van der Merwe – “Alvi” to his friends – established a farm south of the town of Worcester, South Africa. Alvi’s son, Bertie, started wine production on the family farm and today the award-winning Alvi’s Drift wines are created by winemaker Alvi van der Merwe, Oupa Alvi’s grandson and namesake.</p><p>Our Albertus Viljoen Icon range showcases full-bodied, barrel-fermented wines of outstanding character and complexity.</p>",
         "button-txt": "ICON RANGE",
-        "button_link": "shopify://collections/icon-range"
+        "button_link": "shopify://collections/icon-range",
+        "button_type": "alvisBtn"
       }
     },
     "164389934288761c56": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/Vineyards-10.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -234,7 +236,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift winery vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Harvested from our prime, older Alvi’s Drift vineyards, the Chardonnay grapes for this wine were grown in the limestone-rich soils found on the banks of the Breede River.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16438985330d14f5d8": {
@@ -247,7 +250,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>To create this wine, Chardonnay grapes were carefully selected for their unique characteristics from diverse, well-established Alvi’s Drift vineyards. After pressing, grape juice was 100% barrel fermented in both new and used French and Burgundian oak, with only wild yeast fermentation applied.</p><p>After fermentation, the wine was barrel-matured for no less than 11 months with regular bâtonnage applied. After maturation, wine from each barrel was individually tasted before blending to showcase the character and complexity of both terroir and vintage. This wine will improve with cellar maturation of two to five years.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16392534101a01b24e": {

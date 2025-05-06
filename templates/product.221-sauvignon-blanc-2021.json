@@ -205,7 +205,7 @@
         "image_overlay": false,
         "Heading_color": "#2d5980",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "An excellent companion to roast pork or chicken, fresh oysters or grilled calamari, this wine will also complement caprese salad, zucchini or green beans. Best served between 7 ˚C and 12 ˚C, this wine will mature for at least another 3-5 years.",
+        "detail_box_txt": "<p>The wines in our 221 range were specifically created with fun food pairing in mind. Serve this wine with freshly steamed asparagus, ceviche or goats’ cheese-and-tomato quiche. Ideally served between 7 ˚C and 12 ˚C, our 221 Sauvignon Blanc will mature well for another 3-5 years.</p>",
         "btn-txt": "",
         "btn-url": ""
       }

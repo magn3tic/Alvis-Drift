@@ -31,7 +31,8 @@
         "paragarh_1": "OUR SELECTION OF RED WINES INCLUDE PINOTAGE, MERLOT, CABERNET SAUVIGNON, SHIRAZ AND RED WINE BLENDS",
         "paragarh_2": "True to our winery’s trademark style, Alvi’s Drift’s internationally acclaimed, award-winning red wines are known for their unique, fruit-driven character and full-bodied complexity.",
         "btn_text": "",
-        "btn_link": "shopify://collections/all-wines"
+        "btn_link": "shopify://collections/all-wines",
+        "btn_main_link": ""
       }
     },
     "product-grid": {
@@ -61,7 +62,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "WINE CLUB",
-        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }

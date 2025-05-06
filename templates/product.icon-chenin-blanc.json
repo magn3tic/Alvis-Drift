@@ -205,7 +205,7 @@
         "image_overlay": true,
         "Heading_color": "#2d5980",
         "title": "SERVING SUGGESTION",
-        "detail-box-txt": "This wine brilliantly complements grilled fish drizzled with lemon-butter sauce, grilled chicken or a fresh Caesar salad. Perfect to serve with soft cheeses like Brie, Camembert or Chevre.",
+        "detail_box_txt": "<p>This wine brilliantly complements grilled fish drizzled with lemon-butter sauce, grilled chicken or a fresh Caesar salad. Perfect to serve with soft cheeses like Brie, Camembert or Chevre.</p>",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -220,12 +220,14 @@
         "title": "HERITAGE",
         "video-sec-content-txt-1": "<p>In 1928, our family patriarch, Albertus Viljoen van der Merwe – “Alvi” to his friends – established a farm south of the town of Worcester, South Africa. Alvi’s son, Bertie, started wine production on the family farm and today the award-winning Alvi’s Drift wines are created by winemaker Alvi van der Merwe, Oupa Alvi’s grandson and namesake.</p><p>Our Albertus Viljoen Icon range showcases full-bodied, barrel-fermented wines of outstanding character and complexity.</p>",
         "button-txt": "ICON RANGE",
-        "button_link": "shopify://collections/icon-range"
+        "button_link": "shopify://collections/icon-range",
+        "button_type": "alvisBtn"
       }
     },
     "1643898556097fe02e": {
       "type": "Focus-Text-Image-Left",
       "settings": {
+        "background_colour": "#00000000",
         "our-story-vid": "shopify://shop_images/Vineyards-10.jpg",
         "image_size": "100%",
         "video_url": "",
@@ -234,7 +236,8 @@
         "title": "ON THE VINES",
         "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift winery vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>The pinnacle of all Alvi’s Drift Chenin Blanc wines, the grapes for our Albertus Viljoen Chenin Blanc are hand-selected from our established, 25- to 40-year old Chenin Blanc vineyards in the cool, early morning hours; then whole-bunch pressed to ensure the preservation of natural fruit flavours.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "1643899586df75769d": {
@@ -247,7 +250,8 @@
         "title": "IN THE CELLAR",
         "video-sec-content-txt-1": "<p>To make this wine, a variety of Chenin Blanc grapes were carefully selected for their unique characteristics from well-established Alvi’s Drift vineyards. After pressing, grape juice was 100% barrel fermented utilising a combination of wild yeast and cultured yeast fermentation.</p><p>After fermentation, the wine was kept on lees to improve mouthfeel and complexity, then barrel-matured in oak for at least 11 months, with regular bâtonnage applied. After maturation, wine from each barrel was individually tasted before blending. This wine boasts superior structure and will improve with maturation of at least five years.</p>",
         "button-txt": "",
-        "button_link": ""
+        "button_link": "",
+        "button_type": "alvisBtn"
       }
     },
     "16392534101a01b24e": {
