@@ -51,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
           ${event.location ? `<div class="awc-content awc-content-location"><p><strong>Location:</strong> ${event.location}</p></div>` : ''}
           ${event.wines ? `<div class="awc-content awc-content-wines"><p><strong>Wines:</strong> ${event.wines}</p></div>` : ''}
           ${event.members.length ? `<div class="awc-content awc-content-members"><p><strong>Exclusive for:</strong> ${event.members.join(', ')}</p></div>` : ''}
-          ${event.link_url ? `<div class="awc-content T awc-content-CTA awc-promo--btn"><a class="btn" href="${event.link_url}">${event.link_title}</a></div>` : ''}
+          ${event.linkUrl ? `<div class="awc-content T awc-content-CTA awc-promo--btn"><a class="btn" href="${event.linkUrl}">${event.linkText}</a></div>` : ''}
         </div>
       </div>
     `;
