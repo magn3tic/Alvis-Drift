@@ -68,7 +68,7 @@
       </h3>
     {%- endif -%}
     {%- form 'customer_login', novalidate: 'novalidate' -%}
-      <input type="hidden" name="return_to" value="/pages/club" />
+  
 
       {%- if form.errors -%}
         <h2 class="form__message" tabindex="-1" autofocus>
@@ -142,7 +142,7 @@ passwordFields[i].type = 'password';
           FORGOT YOUR PASSWORD?
         </a>
       {%- endif -%}
-
+      <input type="hidden" name="return_to" value="/pages/club" />
       <button>
         {{ 'customer.login_page.sign_in' | t }}
       </button>
