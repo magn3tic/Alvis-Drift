@@ -89,7 +89,7 @@
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
         "title": "The Pursuit of Excellence",
-        "video-sec-content-txt-1": "<p>Overarching campaign idea - can use rational from campaign deck if it is relevant.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla non odio non luctus. Proin a enim non sem maximus lobortis. In eu eleifend metus. Donec posuere congue nunc, non tempor ex molestie at.</p>",
+        "video-sec-content-txt-1": "<p>In 1928, our founder, Albertus Viljoen ‘Oupa Alvi’ van der Merwe, acquired a fertile piece of farmland on the banks of the Breede River. His work ethic, love for people, and deep respect for the land, shaped our winery’s legacy.</p><p>Nearly a century later, Oupa Alvi’s unyielding pursuit of excellence continues to guide us. His passion and legacy lives on in our Albertus Viljoen range, and we honour his vision with every bottle we craft.<br/></p>",
         "button-txt": "",
         "button_link": "",
         "button_type": "alvisBtn"
@@ -104,11 +104,53 @@
         "video_url": "https://www.youtube.com/watch?v=1MJNc-AQCKY&t=11s",
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
-        "title": "(Heading: Supporting / Empowering)",
-        "video-sec-content-txt-1": "<p>Short snippet about the Indaba Institute collaboration and how the wine gives back.</p><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus fringilla non odio non luctus. Proin a enim non sem maximus lobortis. In eu eleifend metus. Donec posuere congue nunc, non tempor ex molestie at. Nulla mattis velit sit amet ipsum auctor, non scelerisque velit vestibulum. Nulla feugiat auctor ipsum, vitae pretium nunc laoreet aliquet. Curabitur urna diam, fringilla nec mauris non, tempus faucibus neque. Nunc venenatis mi sem. Maecenas in pharetra felis, ut varius u.</p>",
-        "button-txt": "(BUTTON INDABA?)",
-        "button_link": "shopify://pages/family",
+        "title": "Empowering Our Communities, Transforming Our Future",
+        "video-sec-content-txt-1": "<p>A brighter future begins with a strong foundation. That’s why we’ve partnered with the Indaba Institute to empower teachers and create opportunities for the next generation.</p><p>Inspired by Oupa Alvi’s legacy, our partnership with the Indaba Institute supports Early Childhood Development on our farm and beyond.</p><p>Every bottle of Albertus Viljoen wine sold helps to fund this work – training teachers, nurturing young minds, and creating lasting change.</p>",
+        "button-txt": "",
+        "button_link": "",
         "button_type": "alvisBtn"
+      }
+    },
+    "call_to_action_iaXjc6": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "",
+        "detail_box_txt": "“This is more than just a wine. With every bottle of Albertus Viljoen you open, you help open a door to a brighter future. A portion of proceeds from every bottle sold goes towards supporting the life-changing work of the Indaba Institute.” – Alvi van der Merwe",
+        "btn-txt": "SHOP",
+        "btn-url": "shopify://collections/icon-range"
+      }
+    },
+    "rich_text_bDYdVH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3iQJT3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Albertus Viljoen Icon of the Year 2025 Award ",
+            "heading_size": "h1"
+          }
+        },
+        "text_VKBhPF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entries are open for our very first Albertus Viljoen Icon of the Year Award! </p><p>This is your chance to nominate someone whose vision and courage embody the pursuit of excellence. Someone who stands as a force for good and positive change in their community.</p><p><strong>Enter Here</strong><br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3iQJT3",
+        "text_VKBhPF"
+      ],
+      "custom_css": [
+        ".rich-text {margin: auto; text-align: center; background-color: #712f1f; padding-bottom: 10px;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": false
       }
     },
     "17447361233ed5c64f": {
@@ -184,26 +226,6 @@
         "active_collection": "icon-range"
       }
     },
-    "collections_grid_fnGcA4": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "item_bBAyag": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "launch"
-          }
-        }
-      },
-      "block_order": [
-        "item_bBAyag"
-      ],
-      "settings": {
-        "topheading": "",
-        "subtitle-1": "",
-        "active_collection": "launch"
-      }
-    },
     "multiple_posts_bEX3QG": {
       "type": "Multiple-Posts",
       "settings": {
@@ -217,15 +239,6 @@
         "show_author": false,
         "soft_background": false
       }
-    },
-    "newsletter_subscription_Nq4r4T": {
-      "type": "Newsletter-Subscription",
-      "settings": {
-        "section_heading": "<p>TH<em>E</em>  <br/>DRIFT</p>",
-        "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
-        "Heading_color": "#c65336",
-        "hs_form_portal_id": ""
-      }
     }
   },
   "order": [
@@ -236,12 +249,11 @@
     "video_single_BDwAAp",
     "164388456995a70c72",
     "1639686778727cf64f",
+    "call_to_action_iaXjc6",
+    "rich_text_bDYdVH",
     "17447361233ed5c64f",
     "multiple_posts_kB46er",
-    "call_to_action_iaXjc6",
     "collections_grid_7dMhcr",
-    "collections_grid_fnGcA4",
-    "multiple_posts_bEX3QG",
-    "newsletter_subscription_Nq4r4T"
+    "multiple_posts_bEX3QG"
   ]
 }
