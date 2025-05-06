@@ -146,7 +146,7 @@ passwordFields[i].type = 'password';
       <button>
         {{ 'customer.login_page.sign_in' | t }}
       </button>
-      <input type="hidden" name="return_to" value="/pages/club" />
+     
               
 
         <a href="{{ routes.account_register_url }}" data-dest="{{ routes.account_register_url }}" id="catchClick" class="create-account">
@@ -169,4 +169,5 @@ passwordFields[i].type = 'password';
       {%- endform -%}
     </div>
   {%- endif -%}
+  <input type="hidden" name="return_to" value="/pages/club" />
 </div>
