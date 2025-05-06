@@ -213,6 +213,8 @@
                 "location": {{ event.location.value | json }},
                 "wines": {{ event.wines.value | json }},
                 "members": {{ event.members.value | json }},
+                "link.url": {{ event.cta.url | json }},
+                "link.text": {{ event.cta.title | json }},
                 "image": {% if event.image and event.image.value %}{{ event.image | image_url | json }}{% else %}{{ 'default-wine.webp' | asset_url | json }}{% endif %}
               }
               {% assign first = false %}
