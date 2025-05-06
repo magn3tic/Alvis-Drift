@@ -202,7 +202,9 @@
                 {% endif %}
               {% endfor %}
             {% endif %}
-        
+            <div class="test1">{{event.cta.url}}</div>
+            <div class="test2">{{event.cta.url.value}}</div>
+            <div class="test3">{{event.cta}}</div>
             {% if show_event %}
               {% unless first %},{% endunless %}
               {
