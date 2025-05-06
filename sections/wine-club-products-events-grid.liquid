@@ -202,7 +202,7 @@
                 {% endif %}
               {% endfor %}
             {% endif %}
-            {% assign cta_obj = event.cta | json %}
+            {% assign cta_obj = event.cta | parse_json %}
 
             <div class="test1">{{ cta_obj.url }}</div>
             <div class="test2">{{ cta_obj.text }}</div>
