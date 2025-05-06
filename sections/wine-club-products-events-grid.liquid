@@ -202,9 +202,10 @@
                 {% endif %}
               {% endfor %}
             {% endif %}
-            <div class="test1">{{event.cta.url}}</div>
-            <div class="test2">{{event.cta.url.value}}</div>
-            <div class="test3">{{event.cta}}</div>
+            {% assign cta_obj = event.cta | json %}
+
+            <div class="test1">{{ cta_obj.url }}</div>
+            <div class="test2">{{ cta_obj.text }}</div>
             {% if show_event %}
               {% unless first %},{% endunless %}
               {
