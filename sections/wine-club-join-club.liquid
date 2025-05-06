@@ -44,14 +44,16 @@
       <div class="awc-intro--col-v2">
         <h5 class="awc-heading-xs">You Are</h5>
         <h3 class="h1">{{ customer_tier }} Tier</h3>
-        <figure>
-          <img
-            src="{{ tier_image |  image_url }} "
-            alt="{{customer_tier}}"
-            width="200"
-            height="200"
-            class="awc-tier-badge" />
-        </figure>
+        {% if tier_image %}
+          <figure>
+            <img
+              src="{{ tier_image |  image_url }} "
+              alt="{{customer_tier}}"
+              width="200"
+              height="200"
+              class="awc-tier-badge" />
+          </figure>
+        {% endif %}
       </div>
       <div class="awc-intro--col-v2">
         {{ tier_richtext }}
@@ -74,15 +76,16 @@
       {% if go_for %}
         <div class="awc-intro--col-v2 awc-go-for">
           <h3 class="h1">Go for {{ go_for_text }}</h3>
-
-          <figure>
-            <img
-              src="{{ go_for_image | image_url }}"
-              alt="Go for {{go_for_text}}"
-              width="400"
-              height="160"
-              class="awc-go-for-badge" />
-          </figure>
+          {% if go_for_image %}
+            <figure>
+              <img
+                src="{{ go_for_image | image_url }}"
+                alt="Go for {{go_for_text}}"
+                width="400"
+                height="160"
+                class="awc-go-for-badge" />
+            </figure>
+          {% endif %}
           <p>{{ go_for_benefits }}</p>
         </div>
       {% endif %}
