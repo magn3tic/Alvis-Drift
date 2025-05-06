@@ -17,7 +17,7 @@
         "image_connected_mobile": "shopify://shop_images/Website_banner_icon_mobile.png",
         "show_button_connected": true,
         "button_text_connected": "SHOP NOW",
-        "url_connected": "shopify://products/flagship-gift-box",
+        "url_connected": "shopify://collections/best-sellers",
         "image_disconnected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
         "show_button_disconnected": true,
         "button_text_disconnected": "JOIN NOW",
