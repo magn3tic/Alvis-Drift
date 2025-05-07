@@ -635,19 +635,19 @@
 }
   @media only screen and (max-width: 600px){
     .mobile-bg{
-      display:block;
+      display:block !important
     }
     .laptop-bg{
-      display:none
+      display:none !important
     }
   }
                                                                                                                                  
 .mobile-bg{
   display:none;
   position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    object-fit: cover;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  object-fit: cover;
 }
