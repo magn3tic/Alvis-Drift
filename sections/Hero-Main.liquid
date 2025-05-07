@@ -10,22 +10,13 @@
 {% for block in section.blocks %}
  <div class="hero-section">
   {% if block.settings.background_image and block.settings.mobile_background_image %}
-
 <img class="hero-section-bg mobile" 
-     src="{{ block.settings.background_image | img_url:'master' }}"
-     data-src="{{ img_url }}"
-    data-srcset="{{ img_url }}"
-     data-widths="[540, 720, 900, 1080, 1296, 1512, 1728, 1944, 2048]"
-     data-aspectratio="{{ block.settings.background_image.aspect_ratio }}"
-     data-sizes="auto"
-     data-parent-fit="cover"
+     src="{{ block.settings.background_image | img_url: 'master' }}"
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
+     height="{{block.settings.background_image.height}}"
+     width="{{block.settings.background_image.width}}">
   >
-    
-
-   {% elsif block.settings.background_image %}
-    
-   
+   {% elsif block.settings.background_image %} 
 <img class="hero-section-bg mobile"
      src="{{ block.settings.background_image | img_url: 'master' }}"
      srcset="
