@@ -20,7 +20,7 @@
             {% assign colName = c_i.collectionCarasoul %} 
             {% for product in collections[colName].products %}
             <div class="product-bx position-relative">
-              <div class="product-img" style="background-color: #00000000;">
+              <div class="product-img">
                 <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url:'master' }}"
                 srcset="
                  {{ product.featured_image | img_url: '200x' }} 200w,
