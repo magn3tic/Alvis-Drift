@@ -636,3 +636,15 @@
     margin-right:10px!important;
   }
 }
+ @media only screen and (max-width: 600px){
+    .mobile-bg{
+      display:block !important
+    }
+    .laptop-bg{
+      display:none !important
+    }
+  }                                                                                                                               
+.mobile-bg{
+  display:none;
+}
+.hero-overlay-bg{display:block}
