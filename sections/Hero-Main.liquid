@@ -11,10 +11,10 @@
  <div class="hero-section">
   {% if block.settings.background_image and block.settings.mobile_background_image %}
 <img class="hero-section-bg mobile" 
-     src="{{ block.settings.background_image | img_url: 'master' }}"
-     alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
-     height="{{block.settings.background_image.height}}"
-     width="{{block.settings.background_image.width}}">
+     src="{{ block.settings.mobile_background_image | img_url: 'master' }}"
+     alt="{{ block.settings.mobile_background_image.alt | default: 'Hero image' | escape }}"
+     height="{{block.settings.mobile_background_image.height}}"
+     width="{{block.settings.mobile_background_image.width}}">
   >
    {% elsif block.settings.background_image %} 
 <img class="hero-section-bg mobile"
