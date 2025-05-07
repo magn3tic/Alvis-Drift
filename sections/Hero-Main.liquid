@@ -33,7 +33,7 @@
      width="{{block.settings.background_image.width}}"
      loading="eager">
    {% elsif block.settings.background_image %}
-    <img class="hero-section-bg laptop-bg"
+    <img class="hero-section-bg"
      src="{{ block.settings.background_image | img_url: 'master' }}"
      srcset="
       		{{ block.settings.background_image | img_url: '720x' }} 720w,
