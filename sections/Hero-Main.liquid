@@ -10,6 +10,9 @@
   {% if block.settings.background_image and block.settings.mobile_background_image %}
 <img class="hero-section-bg mobile-bg" 
      src="{{ block.settings.mobile_background_image | img_url: 'master' }}"
+     srcset="{{ block.settings.mobile_background_image | img_url: '480x' }}480w,
+             {{ block.settings.mobile_background_image | img_url: '800x' }}800w"
+     sizes="100vw"
      alt="{{ block.settings.mobile_background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.mobile_background_image.height}}"
      width="{{block.settings.mobile_background_image.width}}"
