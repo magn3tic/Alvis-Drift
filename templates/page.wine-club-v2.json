@@ -9,96 +9,319 @@
  */
 {
   "sections": {
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {}
+    "wine_club_hero_v2_y96K78": {
+      "type": "wine-club-hero-v2",
+      "name": "Wine Club Hero V2",
+      "settings": {
+        "image_connected_desktop": "shopify://shop_images/Website_banner_Icon_139d053b-b7ba-46c5-bdeb-b3a7aa3d3c59.png",
+        "image_connected_mobile": "shopify://shop_images/Website_banner_icon_mobile.png",
+        "show_button_connected": true,
+        "button_text_connected": "SHOP NOW",
+        "url_connected": "shopify://collections/best-sellers",
+        "image_disconnected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
+        "show_button_disconnected": true,
+        "button_text_disconnected": "JOIN NOW",
+        "url_disconnected": ""
+      }
     },
-    "wine_club_shop_hero_tDw9PQ": {
-      "type": "wine-club-shop-hero",
-      "settings": {}
+    "wine_club_products_events_grid_zDj4fc": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_wines",
+        "show_title": true,
+        "title": "Exclusive Products",
+        "bronze_collection": "club-bronze",
+        "silver_collection": "club-silver",
+        "gold_collection": "club-silver",
+        "platinum_collection": "blends",
+        "collection_exclusive": "all-products",
+        "show_counter": true,
+        "start_point": 200,
+        "counter_text": "Live stock"
+      }
     },
-    "collections_grid_members_QMWn4i": {
-      "type": "Collections-Grid-Members",
-      "settings": {}
+    "wine_club_products_events_grid_Qkr39W": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_events",
+        "show_title": true,
+        "title": "Exclusive Events",
+        "bronze_collection": "",
+        "silver_collection": "",
+        "gold_collection": "",
+        "platinum_collection": "",
+        "collection_exclusive": "",
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
+      }
     },
-    "wine_club_shop_CnAr3T": {
-      "type": "wine-club-shop",
-      "settings": {}
+    "wine_club_products_events_grid_eJrVXy": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_collection",
+        "show_title": true,
+        "title": "Exclusive COLLECTION",
+        "bronze_collection": "",
+        "silver_collection": "",
+        "gold_collection": "",
+        "platinum_collection": "",
+        "collection_exclusive": "221-range",
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
+      }
     },
-    "1738176045b8ca5c13": {
-      "type": "apps",
+    "wine_club_join_club_nkriVx": {
+      "type": "wine-club-join-club",
+      "name": "Wine Club join club",
+      "settings": {
+        "bronze_image": "shopify://shop_images/Bronze.webp",
+        "bronze_richtext": "<p>Welcome to our portal for Bronze tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Bronze tier members</li></ul>",
+        "bronze_to_silver": "shopify://shop_images/go-for-silver.webp",
+        "bronze_to_silver_text": "<p>As a Silver member, you also qualify for a fantastic 5% discount* on all wine purchases from our online shop.</p><p><em>*Excluding selected sales and promotions.</em></p>",
+        "silver_image": "shopify://shop_images/Silver.webp",
+        "silver_richtext": "<p>Welcome to our portal for Silver tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Silver tier members</li></ul><p>As a Silver member, you also qualify for a fantastic 5% discount* on all wine purchases from our online shop.</p>",
+        "silver_to_gold": "shopify://shop_images/go-for-gold.webp",
+        "silver_to_gold_text": "<p>Should you reach 10 000 points or more and progress to Gold membership, you will receive 10% discount* on purchases from our online shop. </p><p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p><p><em>*Excluding selected sales and promotions.</em></p>",
+        "gold_image": "shopify://shop_images/Gold.webp",
+        "gold_richtext": "<p>Welcome to our portal for Gold tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Gold tier members</li></ul><p>As a Gold member, you also qualify for a fantastic 10% discount* on all wine purchases from our online shop.</p><p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p>",
+        "gold_to_platinum_text": "<p>Should you reach 40 000 points or more and progress to Platinum membership, you will receive 10% discount* on purchases from our online shop. </p><p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p><p><em>*Excluding selected sales and promotions.</em></p>",
+        "platinum_image": "shopify://shop_images/Platinum.png",
+        "platinum_richtext": "<p>Welcome to our portal for Platinum tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Platinum tier members</li></ul><p>As a Platinum member, you also qualify for a fantastic 10% discount* on all wine purchases from our online shop.</p><p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p>"
+      }
+    },
+    "wine_club_how_it_works_Pi4r66": {
+      "type": "wine-club-how-it-works",
       "blocks": {
-        "sc_loyalty_rewards_points_balance_z6FKE9": {
-          "type": "shopify://apps/sc-loyalty-rewards/blocks/points_balance/21842f98-987a-4ad6-91bf-a00b77123261",
+        "bronze_benefit_w6MCcE": {
+          "type": "bronze_benefit",
           "settings": {
-            "title": "Customer Profile",
-            "description": "",
-            "bgcolour": "#2e112d",
-            "bordercolour": "rgba(0,0,0,0)",
-            "width": 100,
-            "borderradius": 0,
-            "alignment": "center",
-            "preview": "on"
+            "text": "Monthly Newsletter"
           }
         },
-        "sc_loyalty_rewards_earning_rules_nD4jAV": {
-          "type": "shopify://apps/sc-loyalty-rewards/blocks/earning_rules/21842f98-987a-4ad6-91bf-a00b77123261",
+        "bronze_benefit_xCfbEx": {
+          "type": "bronze_benefit",
           "settings": {
-            "title": "",
-            "description": "",
-            "bgcolour": "#2e112d",
-            "bordercolour": "#ffffff",
-            "width": 20,
-            "height": 30,
-            "borderradius": 0,
-            "alignment": "center",
-            "icons": "default",
-            "preview": "off"
+            "text": "Exclusive Members-Only Sales"
           }
         },
-        "sc_loyalty_rewards_customer_tier_Yg7tCP": {
-          "type": "shopify://apps/sc-loyalty-rewards/blocks/customer_tier/21842f98-987a-4ad6-91bf-a00b77123261",
+        "bronze_benefit_9bi9DA": {
+          "type": "bronze_benefit",
           "settings": {
-            "title": "",
-            "description": "",
-            "bgcolour": "#2e112d",
-            "bordercolour": "rgba(0,0,0,0)",
-            "borderradius": 0,
-            "icons": "default",
-            "preview": "off"
+            "text": "Early Access to New Releases"
+          }
+        },
+        "silver_benefit_Y4hczk": {
+          "type": "silver_benefit",
+          "settings": {
+            "text": "Monthly Newsletter"
+          }
+        },
+        "silver_benefit_Q9KaQY": {
+          "type": "silver_benefit",
+          "settings": {
+            "text": "Exclusive Members-Only Sales"
+          }
+        },
+        "silver_benefit_LmBxkW": {
+          "type": "silver_benefit",
+          "settings": {
+            "text": "Early Access to New Releases"
+          }
+        },
+        "silver_benefit_4wY7YJ": {
+          "type": "silver_benefit",
+          "settings": {
+            "text": "Invitation to A Virtual Wine Tasting"
+          }
+        },
+        "silver_benefit_H7pecz": {
+          "type": "silver_benefit",
+          "settings": {
+            "text": "5% Off All Non-Sale Cases"
+          }
+        },
+        "gold_benefit_Tb4A6G": {
+          "type": "gold_benefit",
+          "settings": {
+            "text": "Monthly Newsletter"
+          }
+        },
+        "gold_benefit_dkjbbU": {
+          "type": "gold_benefit",
+          "settings": {
+            "text": "Exclusive Members-Only Sales"
+          }
+        },
+        "gold_benefit_LGcLgA": {
+          "type": "gold_benefit",
+          "settings": {
+            "text": "Early Access to New Releases"
+          }
+        },
+        "gold_benefit_Xd3qEG": {
+          "type": "gold_benefit",
+          "settings": {
+            "text": "Invitation to A Virtual Wine Tasting"
+          }
+        },
+        "gold_benefit_VQK6p7": {
+          "type": "gold_benefit",
+          "settings": {
+            "text": "10% Off All Non-Sale Cases"
+          }
+        },
+        "gold_benefit_KW7aqX": {
+          "type": "gold_benefit",
+          "settings": {
+            "text": "Win Tickets to Events & Festivals"
+          }
+        },
+        "gold_benefit_RMT6pE": {
+          "type": "gold_benefit",
+          "settings": {
+            "text": "Access to Exclusive Bespoke Offers"
+          }
+        },
+        "gold_benefit_YKRaat": {
+          "type": "gold_benefit",
+          "settings": {
+            "text": "Invitation to Red Wine Blending Session"
+          }
+        },
+        "platinum_benefit_YUxTJE": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Monthly Newsletter"
+          }
+        },
+        "platinum_benefit_e966h3": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Exclusive Members-Only Sales"
+          }
+        },
+        "platinum_benefit_TUkyTQ": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Early Access to New Releases"
+          }
+        },
+        "platinum_benefit_md8XQa": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Invitation to A Virtual Masterclass"
+          }
+        },
+        "platinum_benefit_CBKXT4": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "10% Off All Non-Sale Cases"
+          }
+        },
+        "platinum_benefit_WJrJiT": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Win Tickets to Events & Festivals"
+          }
+        },
+        "platinum_benefit_UqbmB3": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Access to Exclusive Bespoke Offers"
+          }
+        },
+        "platinum_benefit_wHNE8f": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Invitation to Red Wine Blending Session"
+          }
+        },
+        "platinum_benefit_dTEccK": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Access to Limited-Edition Magnums"
+          }
+        },
+        "platinum_benefit_pnEAdp": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Mystery Box (On Reaching 40 000 Points)"
+          }
+        },
+        "platinum_benefit_wLncN9": {
+          "type": "platinum_benefit",
+          "settings": {
+            "text": "Annual Competition: Win a private overnight stay for two at Alvi's Drift. The prize includes dinner, wine tastings, a cellar tour, and a game drive. The prize does not include travel expenses to and from Alvi’s Drift."
           }
         }
       },
       "block_order": [
-        "sc_loyalty_rewards_points_balance_z6FKE9",
-        "sc_loyalty_rewards_earning_rules_nD4jAV",
-        "sc_loyalty_rewards_customer_tier_Yg7tCP"
+        "bronze_benefit_w6MCcE",
+        "bronze_benefit_xCfbEx",
+        "bronze_benefit_9bi9DA",
+        "silver_benefit_Y4hczk",
+        "silver_benefit_Q9KaQY",
+        "silver_benefit_LmBxkW",
+        "silver_benefit_4wY7YJ",
+        "silver_benefit_H7pecz",
+        "gold_benefit_Tb4A6G",
+        "gold_benefit_dkjbbU",
+        "gold_benefit_LGcLgA",
+        "gold_benefit_Xd3qEG",
+        "gold_benefit_VQK6p7",
+        "gold_benefit_KW7aqX",
+        "gold_benefit_RMT6pE",
+        "gold_benefit_YKRaat",
+        "platinum_benefit_YUxTJE",
+        "platinum_benefit_e966h3",
+        "platinum_benefit_TUkyTQ",
+        "platinum_benefit_md8XQa",
+        "platinum_benefit_CBKXT4",
+        "platinum_benefit_WJrJiT",
+        "platinum_benefit_UqbmB3",
+        "platinum_benefit_wHNE8f",
+        "platinum_benefit_dTEccK",
+        "platinum_benefit_pnEAdp",
+        "platinum_benefit_wLncN9"
       ],
-      "custom_css": [
-        "#pointsbalance {padding-top: 20px; background-color: #2e112d;}",
-        "#pointsbalance h1,p {color: white;}",
-        ".titleClass {font-family: 4rem;}",
-        ".spaced-section {background-color: #2e112d; margin-top: -10px;}",
-        ".tw-my-10 {margin-top: 0rem;}",
-        "#customertier {max-width: 1200px; margin: 0 auto;}",
-        "#customertier path,#earningrules path {fill: white;}"
-      ],
+      "name": "Wine Club How it Works",
       "settings": {
-        "include_margins": true
+        "how_it_works_title": "How it Works",
+        "how_it_works_text": "<p>There are three tiers in the Alvi's Drift Wine Club: Bronze, Silver and Gold. New members start on Bronze and, as you earn points, you'll be able to move up the tiers to receive extra benefits and discounts.</p><p>To move up the tiers, simply shop in our <a href=\"https://alvisdrift.co.za/collections/all-wines\">online wine shop</a>. You earn 1 point* for every R1 spent. As you move up the tiers, you'll be eligible for more discount on our wines.</p><p>* Your tier level is based on the amount spent in the last 12 months. If no purchases are made within a rolling 365-day period, your tier will automatically reset to Bronze. To keep your current tier, make sure to maintain your minimum points by making a purchase before the 12-month period ends.</p>",
+        "bronze_image": "shopify://shop_images/Bronze.webp",
+        "bronze_text": "350",
+        "silver_image": "shopify://shop_images/Silver.webp",
+        "silver_text": "5.000",
+        "gold_image": "shopify://shop_images/Gold.webp",
+        "gold_text": "10.000",
+        "platinum_image": "shopify://shop_images/Platinum.png",
+        "platinum_text": "40.000"
       }
     },
-    "wine_club_shop_content_tnnnnr": {
-      "type": "wine-club-shop-content",
+    "wine_club_reserve_EriiN7": {
+      "type": "wine-club-reserve",
+      "name": "Wine Club Reserve",
+      "settings": {}
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
       "settings": {}
     }
   },
   "order": [
-    "main",
-    "wine_club_shop_hero_tDw9PQ",
-    "collections_grid_members_QMWn4i",
-    "wine_club_shop_CnAr3T",
-    "1738176045b8ca5c13",
-    "wine_club_shop_content_tnnnnr"
+    "wine_club_hero_v2_y96K78",
+    "wine_club_products_events_grid_zDj4fc",
+    "wine_club_products_events_grid_Qkr39W",
+    "wine_club_products_events_grid_eJrVXy",
+    "wine_club_join_club_nkriVx",
+    "wine_club_how_it_works_Pi4r66",
+    "wine_club_reserve_EriiN7",
+    "main"
   ]
 }
