@@ -12,7 +12,8 @@
      src="{{ block.settings.mobile_background_image | img_url: 'master' }}"
      alt="{{ block.settings.mobile_background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.mobile_background_image.height}}"
-     width="{{block.settings.mobile_background_image.width}}">   
+     width="{{block.settings.mobile_background_image.width}}"
+     loading="eager">   
 <img class="hero-section-bg laptop-bg"
      src="{{ block.settings.background_image | img_url: 'master' }}"
      srcset="
@@ -26,10 +27,9 @@
      sizes="100vw"
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.background_image.height}}"
-     width="{{block.settings.background_image.width}}">
-   
+     width="{{block.settings.background_image.width}}"
+     loading="eager">
    {% elsif block.settings.background_image %}
-    
     <img class="hero-section-bg laptop-bg"
      src="{{ block.settings.background_image | img_url: 'master' }}"
      srcset="
@@ -44,9 +44,7 @@
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.background_image.height}}"
      width="{{block.settings.background_image.width}}">
-    
    {% endif %}
-  
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
     {% assign opacity = block.settings.overlay_opacity %}       
