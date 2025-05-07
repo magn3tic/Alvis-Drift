@@ -1,0 +1,339 @@
+{% if customer %}
+<section class="awc-products-events-grid container {%  if  section.settings.show == 'exclusive_events' %}  awc-events-grid {% endif %}">
+    {% comment %} Check if the customer is logged in {% endcomment %}
+    {% assign lowertags = customer.tags | downcase %}
+    {% assign customer_tier = '' %}
+    {% comment %} Determine the customer tier based on tags {% endcomment %}
+  
+    {% assign lowertags = customer.tags | downcase %}
+    {% capture customer_tier_name %}
+      {% if lowertags contains 'gold' %}
+        Gold
+      {% elsif lowertags contains 'silver' %}
+        Silver
+      {% elsif lowertags contains 'bronze' %}
+        Bronze
+      {% else %}
+        Platinum
+      {% endif %}
+    {% endcapture %}
+    {% assign customer_tier = customer_tier_name | strip %}
+
+    {% comment %} Assign the collection based on the customer tier {% endcomment %}
+    {% assign selected_collection = '' %}
+     {% if section.settings.show == 'exclusive_collection' %}
+      {% assign selected_collection = section.settings.collection_exclusive %}
+     {% elsif section.settings.show == 'exclusive_wines' %}
+      {% if customer_tier == 'Gold' %}
+        {% assign selected_collection = section.settings.gold_collection %}
+      {% elsif customer_tier == 'Silver' %}
+        {% assign selected_collection = section.settings.silver_collection %}
+      {% elsif customer_tier == 'Bronze' %}
+        {% assign selected_collection = section.settings.bronze_collection %}
+      {% elsif customer_tier == 'Platinum' %}
+        {% assign selected_collection = section.settings.platinum_collection %}
+      {% endif %}
+    {% endif %}
+
+
+    {% if section.settings.show == 'exclusive_collection' or section.settings.show == 'exclusive_wines'  %}
+      <div class="awc-hero--content-v2">
+        {% if section.settings.show_title %}
+          <h1 class="h1">{{section.settings.title}}</h1>
+          <p class="sub-title">FOR {{customer_tier}} CLUB MEMBERS</p>
+        {% endif %}
+        {% if section.settings.show_counter %}
+          {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
+        {% endif %}
+        
+      </div>
+
+      {% assign collection_object = collections[selected_collection] %}
+
+      {% if collection_object != blank and collection_object.products_count > 0 %}
+        <div class="awc-collection-grid">
+              {% for product in collection_object.products %}
+                <div class="product-bx-v2">
+                  <div class="product-img product-img-v2">
+                    <a href="{{ product.url }}">
+                      <img
+                        src="{{ product.featured_image | img_url: 'master' }}"
+                        loading="lazy"
+                        width="133"
+                        height="399"
+                        alt="{{ product.title }}">
+                    </a>
+                  </div>
+
+                  <div class="product-title-v2">
+                    <div class="sp-t-v2">
+                      <a href="{{ product.url }}">{{ product.title }}</a>
+                    </div>
+                  </div>
+
+                  {% comment %} Pricing and Discounts Logic {% endcomment %}
+                 
+
+                  {% assign price = product.price %}
+                  {% assign discounted_price = price %}
+                  {% assign discount_applicable = false %}
+                  
+                  {% case customer_tier %}
+                    {% when 'Silver' %}
+                      {% assign discounted_price = price | times: 0.95 | round %}
+                      {% assign discount_applicable = true %}
+                    {% when 'Gold' %}
+                      {% assign discounted_price = price | times: 0.90 | round %}
+                      {% assign discount_applicable = true %}
+                    {% when 'Platinum' %}
+                      {% assign discounted_price = price | times: 0.90 | round %}
+                      {% assign discount_applicable = true %}
+                    {% else %}
+                      {% assign discount_applicable = false %}
+                  {% endcase %}
+
+                  {% assign price_v = product.selected_or_first_available_variant.price %}
+                    {% if discount_applicable %}
+                      {% assign price_v = discounted_price %}
+                    {% endif %}
+                  
+                  {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
+                  {% comment %} End of Pricing and Discounts Logic {% endcomment %}
+
+                  <div class="product-price" style="margin-bottom: 15px">
+                    {% if discount_applicable %}
+                      <span class="compare-price">
+                        {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                      </span>
+                      <span class="discounted-price">
+                        {{ discounted_price | money | remove: '.00' | replace: ',', ' ' }}
+                      </span>
+                    {% else %}
+                      {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                    {% endif %}
+                  </div>
+                  
+
+                  <div class="product-price-per">
+                    R{{ assigned_price | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
+                  </div>
+
+                  {% comment %} Add to Cart Button {% endcomment %}
+                  <product-form class="product-form">
+                    <div class="product-form__error-message-wrapper" role="alert" hidden>
+                      <span class="product-form__error-message"></span>
+                    </div>
+                    {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+
+                      <div class="qty__wrapper">
+                        QTY:
+                        <input
+                          class="quantity__input"
+                          type="number"
+                          name="quantity"
+                          id="quantity"
+                          min="1"
+                          value="1"
+                          aria-label="quantity"
+                          {%- if product.selected_or_first_available_variant.available == false -%}
+                            disabled
+                          {%- endif -%}
+                        >
+                      </div>
+
+                      <div class="product-form__buttons">
+                        <button
+                          type="submit"
+                          name="add"
+                          class="btn btn-overlay"
+                          {% if product.selected_or_first_available_variant.available == false %}
+                            disabled
+                          {% endif %}
+                        >
+                          <span>
+                            {%- if product.selected_or_first_available_variant.available -%}
+                              BUY
+                            {%- else -%}
+                              {{ 'products.product.sold_out' | t }}
+                            {%- endif -%}
+                          </span>
+                          <div class="loading-overlay__spinner hidden">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                            </svg>
+                          </div>
+                        </button>
+                      </div>
+                    {%- endform -%}
+                  </product-form>
+
+                </div> 
+              {% endfor %}
+            </div> 
+       
+      {% else %}
+        <p>No products found in the assigned collection.</p>
+      {% endif %}
+    {% endif %}
+    {%  if  section.settings.show == 'exclusive_events' %}  
+      <div class="awc-hero--content-v2">
+        {% if section.settings.show_title %}
+          <h1 class="h1">{{section.settings.title}}</h1>
+          <p class="sub-title">FOR {{customer_tier}} CLUB MEMBERS</p>
+        {% endif %}
+               {% if section.settings.show_counter %}
+          {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
+        {% endif %}
+       </div>
+       {% assign events = shop.metaobjects.events.values %}
+       {% capture events_json %}
+        [
+          {% assign first = true %}
+          {% for event in events %}
+            {% assign show_event = false %}
+        
+            {% if event.members.value %}
+              {% assign customer_tier_clean = customer_tier | strip | downcase %}
+              {% for member in event.members.value %}
+                {% assign member_clean = member | strip | downcase %}
+                {% if member_clean == customer_tier_clean %}
+                  {% assign show_event = true %}
+                {% endif %}
+              {% endfor %}
+            {% endif %}
+      
+            {% if show_event %}
+              {% unless first %},{% endunless %}
+              {
+                "title": {{ event.title.value | json }},
+                "date": {{ event.date.value | json }},
+                "description": {{ event.description.value | json }},
+                "host": {{ event.host.value | json }},
+                "location": {{ event.location.value | json }},
+                "wines": {{ event.wines.value | json }},
+                "members": {{ event.members.value | json }},
+                "linkUrl": {{ event.cta_url.value | json }},
+                "linkText": {{ event.cta_text.value | json }},
+                "image": {% if event.image and event.image.value %}{{ event.image | image_url | json }}{% else %}{{ 'default-wine.webp' | asset_url | json }}{% endif %}
+              }
+              {% assign first = false %}
+            {% endif %}
+          {% endfor %}
+        ]
+        {% endcapture %}
+        
+        <div id="awc-events-data" style="display:none;" data-events='{{ events_json | strip_newlines }}'></div>
+        <div class="awc-events awc-collection-grid" id="awc-events-rendered"></div>
+        
+     {% endif %}
+
+</section>
+
+{% endif %}
+
+
+{% schema %}
+  {
+    "name": "Wine Club Products Events",
+    "settings": [
+      {
+  "type": "radio",
+  "id": "show",
+  "label": "Show ",
+  "options": [
+    {
+      "value": "exclusive_wines",
+      "label": "Exclusive Wines"
+    },
+    {
+      "value": "exclusive_collection",
+      "label": "Exclusive Collection"
+    },
+    {
+      "value": "exclusive_events",
+      "label": "Exclusive Events"
+    }
+  ],
+  "default": "exclusive_wines"
+},
+      {
+        "type": "header",
+        "content": "Title"
+      },
+      {
+    "type": "checkbox",
+    "id": "show_title",
+    "label": "Show Title",
+    "default": true
+      },
+  {
+    "type": "text",
+    "id": "title",
+    "label": "Title",
+    "default": "Exclusive Wines"
+  },
+      {
+        "type": "header",
+        "content": "Exclusive wine Grid"
+      },
+      {
+        "type": "collection",
+        "id": "bronze_collection",
+        "label": "Bronze Tier Collection"
+      },
+      {
+        "type": "collection",
+        "id": "silver_collection",
+        "label": "Silver Tier Collection"
+      },
+      {
+        "type": "collection",
+        "id": "gold_collection",
+        "label": "Gold Tier Collection"
+      }, {
+        "type": "collection",
+        "id": "platinum_collection",
+        "label": "Platinum Tier Collection"
+      }, {
+        "type": "header",
+        "content": "Exclusive Collection"
+      },{
+        "type": "collection",
+        "id": "collection_exclusive",
+        "label": "Exclusive Collection",
+        "info": "This collection will be shown to all tiers"
+      },
+      {
+      "type": "header",
+      "content": "Count down"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_counter",
+      "label": "Show Counter",  
+      "default": false
+    },{
+      "type": "number",
+      "id": "start_point",
+      "label": "Counter start point",
+      "default": 0
+    },
+    {
+      "type": "text",
+      "id": "counter_text",
+      "label": "Counter Text",
+      "default": "Stock Quantity"	
+    }
+
+
+  ],
+  
+    "presets": [
+      {
+        "name": "Wine Club Products & Events Grid",
+        "category": "Wine Club"
+      }
+    ]
+  }
+{% endschema %}
