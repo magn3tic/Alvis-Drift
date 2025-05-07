@@ -375,6 +375,13 @@ margin-right: 20px;
 .awc-points-balance p{
   max-width: 400px;
 }
+.awc-centered-balance{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+}
 .awc-go-for{
   display: flex;
       flex-direction: column;
