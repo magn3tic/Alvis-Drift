@@ -13,8 +13,9 @@
         Silver
       {% elsif lowertags contains 'bronze' %}
         Bronze
-      {% else %}
-        Platinum
+        {% elsif lowertags contains 'platinum' %}
+          Platinum 
+       
       {% endif %}
     {% endcapture %}
     {% assign customer_tier = customer_tier_name | strip %}

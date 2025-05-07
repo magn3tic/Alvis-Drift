@@ -32,8 +32,8 @@
         {% assign go_for_image = section.settings.bronze_to_silver %}
         {% assign go_for_text = 'Silver' %}
         {% assign go_for_benefits = section.settings.bronze_to_silver_text %}
-      {% else %}
-        Platinum 
+        {% elsif lowertags contains 'platinum' %}
+         Platinum 
         {% assign tier_image = section.settings.platinum_image %}
         {% assign tier_richtext = section.settings.platinum_richtext %}
 
