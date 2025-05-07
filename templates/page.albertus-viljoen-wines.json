@@ -181,13 +181,14 @@
         "include_margins": true
       }
     },
-    "multiple_posts_kB46er": {
-      "type": "Multiple-Posts",
+    "multiple_posts_settings_XYHCLd": {
+      "type": "Multiple-Posts-Settings",
+      "name": "Multiple Posts Settings",
       "settings": {
         "heading": "Meet Our Local Icons",
         "text_transform": "none",
         "blog_show_tags": false,
-        "blog": "local-icons",
+        "blog": "icon-albertus-viljoen",
         "post_limit": 3,
         "show_image": true,
         "show_date": false,
@@ -214,20 +215,6 @@
         "subtitle-1": "",
         "active_collection": "icon-range"
       }
-    },
-    "multiple_posts_bEX3QG": {
-      "type": "Multiple-Posts",
-      "settings": {
-        "heading": "",
-        "text_transform": "none",
-        "blog_show_tags": true,
-        "blog": "icon-albertus-viljoen",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "soft_background": false
-      }
     }
   },
   "order": [
@@ -241,8 +228,7 @@
     "call_to_action_iaXjc6",
     "rich_text_bDYdVH",
     "17447361233ed5c64f",
-    "multiple_posts_kB46er",
-    "collections_grid_7dMhcr",
-    "multiple_posts_bEX3QG"
+    "multiple_posts_settings_XYHCLd",
+    "collections_grid_7dMhcr"
   ]
 }
