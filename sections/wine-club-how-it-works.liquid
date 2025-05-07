@@ -1,0 +1,210 @@
+<section class="awc-how-it-works">
+  <div class="container">
+    <div class="how-it-works-title">
+      <h2 class="h1">{{ section.settings.how_it_works_title }}</h2>
+      <p>{{ section.settings.how_it_works_text }}</p>
+    </div>
+    <div class="awc-how-it-works-benefits">
+      <div class="benefits bronze-tier">
+        <span class="awc-heading-xs">WINE CLUB</span>
+        <h5 class="h1 whiteTitle">Bronze</h5>
+        <figure>
+          <img
+            src="{{ section.settings.bronze_image | image_url }}"
+            alt="Bronze Alvi's Drift Wine Club"
+            width="200"
+            height="200"
+            class="awc-tier-badge" />
+        </figure>
+        <span>{{ section.settings.bronze_text }} Points</span>
+        <ul>
+          {% for block in section.blocks %}
+            {% if block.type == 'bronze_benefit' %}
+              <li>{{ block.settings.text }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="benefits silver-tier">
+        <span class="awc-heading-xs">WINE CLUB</span>
+        <h5 class="h1 whiteTitle">SILVER</h5>
+        <figure>
+          <img
+            src="{{ section.settings.silver_image | image_url }}"
+            alt="Silver Alvi's Drift Wine Club"
+            width="200"
+            height="200"
+            class="awc-tier-badge" />
+        </figure>
+        <span>{{ section.settings.silver_text }} Points</span>
+        <ul>
+          {% for block in section.blocks %}
+            {% if block.type == 'silver_benefit' %}
+              <li>{{ block.settings.text }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="benefits gold-tier">
+        <span class="awc-heading-xs">WINE CLUB</span>
+        <h5 class="h1 whiteTitle">GOLD</h5>
+        <figure>
+          <img
+            src="{{ section.settings.gold_image | image_url }}"
+            alt="Gold Alvi's Drift Wine Club"
+            width="200"
+            height="200"
+            class="awc-tier-badge" />
+        </figure>
+        <span>{{ section.settings.gold_text }} Points</span>
+        <ul>
+          {% for block in section.blocks %}
+            {% if block.type == 'gold_benefit' %}
+              <li>{{ block.settings.text }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="benefits platinum-tier">
+        <span class="awc-heading-xs">WINE CLUB</span>
+        <h5 class="h1 whiteTitle">Platinum</h5>
+        <figure>
+          <img
+            src="{{ section.settings.platinum_image | image_url }}"
+            alt="Platinum Alvi's Drift Wine Club"
+            width="200"
+            height="200"
+            class="awc-tier-badge" />
+        </figure>
+        <span>{{ section.settings.platinum_text }} Points</span>
+        <ul>
+          {% for block in section.blocks %}
+            {% if block.type == 'platinum_benefit' %}
+              <li>{{ block.settings.text }}</li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "Wine Club How it Works",
+    "settings": [
+      {
+        "type": "text",
+        "id": "how_it_works_title",
+        "label": "How it Works Title",
+        "default": "How it Works"
+      },
+      {
+        "type": "richtext",
+        "id": "how_it_works_text",
+        "label": "How it Works Text"
+      },
+      {
+        "type": "header",
+        "content": "Bronze Tier"
+      },
+      {
+        "type": "image_picker",
+        "id": "bronze_image",
+        "label": "Bronze Tier Image"
+      }, {
+        "type": "text",
+        "id": "bronze_text",
+        "label": "Point for Bronze",
+        "default": "350"
+      }, {
+        "type": "header",
+        "content": "Silver Tier"
+      }, {
+        "type": "image_picker",
+        "id": "silver_image",
+        "label": "Silver Tier Image"
+      }, {
+        "type": "text",
+        "id": "silver_text",
+        "label": "Point for Silver",
+        "default": "5000"
+      }, {
+        "type": "header",
+        "content": "Gold Tier"
+      }, {
+        "type": "image_picker",
+        "id": "gold_image",
+        "label": "Gold Tier Image"
+      }, {
+        "type": "text",
+        "id": "gold_text",
+        "label": "Point for Gold",
+        "default": "10000"
+      }, {
+        "type": "header",
+        "content": "Platinum Tier"
+      }, {
+        "type": "image_picker",
+        "id": "platinum_image",
+        "label": "Platinum Tier Image"
+      }, {
+        "type": "text",
+        "id": "platinum_text",
+        "label": "Point for Platinum",
+        "default": "40000"
+
+      }
+    ],
+    "blocks": [
+      {
+        "type": "bronze_benefit",
+        "name": "Bronze Benefit",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Benefit Text"
+          }
+        ]
+      }, {
+        "type": "silver_benefit",
+        "name": "Silver Benefit",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Benefit Text"
+          }
+        ]
+      }, {
+        "type": "gold_benefit",
+        "name": "Gold Benefit",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Benefit Text"
+          }
+        ]
+      }, {
+        "type": "platinum_benefit",
+        "name": "Platinum Benefit",
+        "settings": [
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Benefit Text"
+          }
+        ]
+      }
+    ],
+    "presets": [
+      {
+        "name": "Wine Club How it Works",
+        "category": "Wine Club",
+        "blocks": []
+      }
+    ]
+  }
+{% endschema %}
