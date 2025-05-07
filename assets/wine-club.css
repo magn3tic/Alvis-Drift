@@ -18,6 +18,7 @@
   height: 100%;
   background-size: cover;
 }
+
 .awc-member .container,
 .awc-intro .container,
 .awc-tiers .container,
@@ -151,3 +152,279 @@
     margin-left: 0 !important;
   }
 } */
+
+/* Start of hero-v2 */
+
+.awc-hero-v2{
+  position: relative;
+  z-index: 2;
+  height: 425px;
+  @media (min-width: 767px) {
+    height: 600px;
+  }
+}
+.awc-products-events-grid{
+  position: relative;
+  z-index: 2;
+  margin: 75px 0;
+}
+.awc-hero--content-v2{
+  position: relative;
+  z-index: 2;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+
+}
+/* End of hero-v2 */
+
+/* Start of products events grid */
+.awc-collection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  gap: 20px 10px;
+  justify-items: center;
+  @media (min-width: 1023px) {
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  }
+}
+
+.product-bx-v2{
+  display: flex ;
+      flex-direction: column;
+      gap: 3px;
+      justify-content: space-around;
+      align-items: center;
+}
+.sp-t-v2{
+  max-width: 170px;
+    margin: 0 auto;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-align: center;
+    @media (min-width: 767px) {
+      max-width: 250px;
+      
+    }
+}
+.discounted-price{
+  margin-left: 5px;
+  font-size: 2rem;
+}
+.product-title-v2{
+  color: #c65336;
+  font-size: 14px;
+}
+.product-img-v2{
+  margin: 0 auto;
+}
+
+.awc-bg-picture--disconnected img{
+  object-fit: cover;
+  object-position: right top
+}
+.awc-bg-picture img{
+  height: 100%;
+  width: 100%;
+
+  @media (min-width: 1023px) {
+    object-fit: cover;
+  }
+}
+/* Start of Counter */
+
+#counter-number{
+  display: inline-block;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  border: solid #E36653 2px;
+  padding: 5px;
+  border-radius: 10px;
+  min-width: 65px;
+}
+
+.awc-counter span.animate {
+  transform: scale(0.8);
+  opacity: 0.7;
+}
+.awc-counter{
+  display: flex;
+  flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+}
+.awc-counter-text{
+  text-transform: capitalize;
+
+}
+/* end of Counter */
+
+.awc-events-grid{
+  background: #00000075;
+  box-shadow: 0px 5px 65px black;
+}
+.awc-events{
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  @media (min-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
+
+  }
+}
+.awc-event{
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  background: #00000075;
+  border-radius: 6px;
+  box-shadow: 0px 5px 65px black;
+  max-width: 550px;
+}
+.awc-event-image{
+  width: 135px;
+  display: flex;
+      align-items: flex-end;
+}
+.awc-event-image img{
+  filter: drop-shadow(0px 5px 50px #E36653);
+  margin: 0 auto;
+}
+.awc-event-content-container{
+  display: flex;
+      flex-direction: column;
+      margin: 15px 0;
+      justify-content: space-around;
+}
+.awc-content-title h5{
+  font-size: 2.4rem;
+  font-weight: 800;
+  color:white
+}
+.awc-content p{
+  font-size: 16px;
+    margin: 0 !important;
+}
+.awc-content-members, .awc-content-title{
+  grid-column: span 2 / span 2;
+}
+.awc-content-CTA{
+  margin: 10px auto 0;
+}
+.product-img img {
+  filter: drop-shadow(0px 5px 50px #E36653);
+  animation: floatY 4s ease-in-out infinite;
+  transition: filter 0.3s ease;
+}
+@keyframes floatY {
+  0%, 100% {
+ 
+    filter: drop-shadow(0px 5px 50px #E36653);
+  }
+  50% {
+  
+    filter: drop-shadow(0px 10px 40px #E36653);
+  }
+}
+@media (min-width: 1023px) {
+  .product-img img {
+    max-height: 350px;
+  }
+}
+/* End of products evendts grid */
+
+/* Start of Join Club */
+.awc-join-club{
+ 
+  background-color: var(--awc-color-brown);
+  padding-bottom: 20px;
+  position: relative;
+  @media (min-width: 767px) {
+    flex-direction: row;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+.awc-join-club-not-logged-in, .awc-join-club-logged{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  @media (min-width: 767px) {
+    flex-direction: row;
+  }
+}
+
+.awc-intro--col-v2{
+  color: var(--awc-color-dark);
+  @media (min-width: 767px) {
+    width: 50%;
+    max-width: 570px;
+    
+  }
+}
+.awc-points-balance{
+margin-right: 20px;
+  color: var(--awc-color-dark);
+}
+.awc-points-balance p{
+  max-width: 400px;
+}
+.awc-go-for{
+  display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 20px;
+}
+.awc-go-for figure{
+  margin: 0;
+}
+.awc-go-for-badge{
+  width: 100%;
+  height: auto;
+}
+.awc-points{
+  display: inline-flex;
+  gap: 2px;
+}
+/* End of Join Club */
+
+/* Start how it works */
+.awc-how-it-works{
+ 
+  background: var(--awc-color-darkest);
+  .container{
+    padding-bottom: 60px;
+    padding-top: 60px;
+    max-width: 1600px !important;
+  }
+}
+
+
+.awc-how-it-works-benefits{
+ 
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  justify-items: center;
+  justify-content: center;
+  gap: 20px;
+      @media (min-width: 1439px) {
+        grid-template-columns: repeat(auto-fill, 450px);
+      }
+      @media (min-width: 1800px) {
+        grid-template-columns: repeat(auto-fill, 330px);
+        
+      }
+}
+.benefits ul{
+  max-width: 275px;
+  @media (min-width: 1339px) {
+    max-width: 350px;
+    
+  }
+}
