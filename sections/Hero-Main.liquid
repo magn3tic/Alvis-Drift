@@ -17,7 +17,7 @@
      width="{{block.settings.mobile_background_image.width}}">
   >
    {% elsif block.settings.background_image %} 
-<img class="hero-section-bg"
+<img class="hero-section-bg laptop-bg"
      src="{{ block.settings.background_image | img_url: 'master' }}"
      srcset="
       		{{ block.settings.background_image | img_url: '720x' }} 720w,
@@ -105,8 +105,17 @@
 </section>
 <style>
   .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 70px;}@media (min-width:250px) and (max-width:900px) { .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 25px;line-height: 1.5;}
-  
+  @media only screen and (max-width: 900px){
+    .mobile-bg{
+      display:block;
+    }
+    .laptop-bg{
+      display:none
+    }
+  }
                                                                                                                                  
+.mobile-bg{
+  display:none;
 }
   </style>
 {% schema %}
