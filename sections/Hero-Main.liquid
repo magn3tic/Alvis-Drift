@@ -10,7 +10,7 @@
 {% for block in section.blocks %}
  <div class="hero-section">
   {% if block.settings.background_image and block.settings.mobile_background_image %}
-<img class="hero-section-bg mobile" 
+<img class="hero-section-bg mobile-bg" 
      src="{{ block.settings.mobile_background_image | img_url: 'master' }}"
      alt="{{ block.settings.mobile_background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.mobile_background_image.height}}"
@@ -105,6 +105,8 @@
 </section>
 <style>
   .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 70px;}@media (min-width:250px) and (max-width:900px) { .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 25px;line-height: 1.5;}
+  
+                                                                                                                                 
 }
   </style>
 {% schema %}
