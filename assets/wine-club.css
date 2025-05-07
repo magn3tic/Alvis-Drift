@@ -181,7 +181,7 @@
 }
 /* End of hero-v2 */
 
-/* Start of products evendts grid */
+/* Start of products events grid */
 .awc-collection-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -192,7 +192,14 @@
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
   }
 }
+.awc-events{
+  @media (min-width: 1023px) {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1600px;
+    margin: 0 auto;
 
+  }
+}
 .product-bx-v2{
   display: flex ;
       flex-direction: column;
