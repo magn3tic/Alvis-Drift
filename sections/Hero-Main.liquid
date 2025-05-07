@@ -5,12 +5,20 @@
 		var body = document.body;
 		body.classList.add("parallax-h");
 	</script>   
-  <!-- Slider/overlay-->  
-
 {% for block in section.blocks %}
  <div class="hero-section">
-  <img class="hero-section-bg"
-    src="{{ block.settings.background_image | img_url: '2048x' }}"
+  {% if block.settings.background_image and block.settings.mobile_background_image %}
+<img class="hero-section-bg mobile-bg" 
+     src="{{ block.settings.mobile_background_image | img_url: 'master' }}"
+     srcset="{{ block.settings.mobile_background_image | img_url: '480x' }}480w,
+             {{ block.settings.mobile_background_image | img_url: '800x' }}800w"
+     sizes="100vw"
+     alt="{{ block.settings.mobile_background_image.alt | default: 'Hero image' | escape }}"
+     height="{{block.settings.mobile_background_image.height}}"
+     width="{{block.settings.mobile_background_image.width}}"
+     loading="eager">   
+<img class="hero-section-bg laptop-bg"
+     src="{{ block.settings.background_image | img_url: 'master' }}"
      srcset="
       		{{ block.settings.background_image | img_url: '720x' }} 720w,
       		{{ block.settings.background_image | img_url: '900x' }} 900w,
@@ -18,20 +26,34 @@
             {{ block.settings.background_image | img_url: '1296x' }} 1296w,
             {{ block.settings.background_image | img_url: '1512x' }} 1512w,
             {{ block.settings.background_image | img_url: '1728x' }} 1728w,
-            {{ block.settings.background_image | img_url: '1944x' }} 1944w,
-            {{ block.settings.background_image | img_url: '2048x' }} 2048w"
+            {{ block.settings.background_image | img_url: '1944x' }} 1944w"   
      sizes="100vw"
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.background_image.height}}"
      width="{{block.settings.background_image.width}}"
-     loading="eager"
-     fetchpriority="high">
+     loading="eager">
+   {% elsif block.settings.background_image %}
+    <img class="hero-section-bg"
+     src="{{ block.settings.background_image | img_url: 'master' }}"
+     srcset="
+      		{{ block.settings.background_image | img_url: '720x' }} 720w,
+      		{{ block.settings.background_image | img_url: '900x' }} 900w,
+            {{ block.settings.background_image | img_url: '1080x' }} 1080w,
+            {{ block.settings.background_image | img_url: '1296x' }} 1296w,
+            {{ block.settings.background_image | img_url: '1512x' }} 1512w,
+            {{ block.settings.background_image | img_url: '1728x' }} 1728w,
+            {{ block.settings.background_image | img_url: '1944x' }} 1944w"   
+     sizes="100vw"
+     alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
+     height="{{block.settings.background_image.height}}"
+     width="{{block.settings.background_image.width}}">
+   {% endif %}
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
     {% assign opacity = block.settings.overlay_opacity %}       
     {% assign opacityWithEndBracket = ', ' | append: opacity | append: '%)' %}  
     {% assign rgba = bg_color | replace: 'rgb', 'rgba' | replace:')', opacityWithEndBracket %} 
-    <div class="hero-overlay-bg" style="background: {{ rgba }}"></div>
+    <span class="hero-overlay-bg" style="background: {{ rgba }}"></span>
   {% else %}
     <div class="hero-overlay-bg"></div>
   {% endif %}
@@ -49,9 +71,7 @@
           </span> 
         </h2> 
       </div>
-      <div class = "main_btn">
-        <a href="{{ block.settings.btn_link }}" class="btn">{{ block.settings.btn_text }}</a>
-      </div>
+      <div class = "main_btn">  <a href="{{ block.settings.btn_link }}" class="btn">{{ block.settings.btn_text }}</a> </div>
       </div>
       <div class="hero-txt col-sm"> 
         {% if block.settings.paragarh_1 != blank or block.settings.paragarh_2 != blank %}
@@ -97,12 +117,10 @@
      </div>
      {% endif %}
 {% endfor %}
-
 </section>
 <style>
-.animate-reveal {color: {{ section.settings.Heading_color }};font-size: 70px;}@media (min-width:250px) and (max-width:900px) { .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 25px;line-height: 1.5;}
-}
-</style>
+  .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 70px;}@media (min-width:250px) and (max-width:900px) { .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 25px;line-height: 1.5;}
+  </style>
 {% schema %}
 {
   "name": {
@@ -221,6 +239,11 @@
           "type": "image_picker",
           "id": "background_image",
           "label": "Background Image"
+        },
+        {
+        "type": "image_picker",
+        "id": "mobile_background_image",
+        "label": "Background Image for Mobile Screens"
         },
         {
         "type": "image_picker",
