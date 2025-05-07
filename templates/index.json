@@ -31,7 +31,7 @@
             "background_image": "shopify://shop_images/Website_banner_sustainability.png",
             "sec_banner": "shopify://shop_images/Main_sustainability.png",
             "image_overlay": "#000000",
-            "overlay_opacity": 0,
+            "overlay_opacity": 20,
             "img_icon": "shopify://shop_images/Alvis-drift-Dare-to-be-right_stick.png",
             "Heading_color": "#ffffff",
             "video_banner": "",
