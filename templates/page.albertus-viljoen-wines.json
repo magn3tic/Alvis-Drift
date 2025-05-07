@@ -183,6 +183,9 @@
     },
     "multiple_posts_settings_XYHCLd": {
       "type": "Multiple-Posts-Settings",
+      "custom_css": [
+        "h2 {color: #712f1f;}"
+      ],
       "name": "Multiple Posts Settings",
       "settings": {
         "heading": "Meet Our Local Icons",
