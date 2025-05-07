@@ -21,14 +21,14 @@
             {% for product in collections[colName].products %}
             <div class="product-bx position-relative">
               <div class="product-img">
-                <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url:'master' }}"
+                <a href="{{ product.url }}">
+                <img src="{{ product.featured_image | img_url:'master' }}"
                 srcset="
                  {{ product.featured_image | img_url: '200x' }} 200w,
                  {{ product.featured_image | img_url: '400x' }} 400w,
                  {{ product.featured_image | img_url: '600x' }} 600w,
                  {{ product.featured_image | img_url: '800x' }} 800w,
-                 {{ product.featured_image | img_url: 'master' }} 1200w
-                 "
+                 {{ product.featured_image | img_url: 'master' }} 1200w"
                  loading="lazy" 
                 alt="{{ product.featured_image.alt }}"
                 width = "282" height = "323"></a>
