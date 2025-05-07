@@ -5,7 +5,6 @@
 		var body = document.body;
 		body.classList.add("parallax-h");
 	</script>   
-  <!-- Slider/overlay-->  
 
 {% for block in section.blocks %}
  <div class="hero-section">
@@ -55,7 +54,7 @@
     {% assign opacity = block.settings.overlay_opacity %}       
     {% assign opacityWithEndBracket = ', ' | append: opacity | append: '%)' %}  
     {% assign rgba = bg_color | replace: 'rgb', 'rgba' | replace:')', opacityWithEndBracket %} 
-    <div class="hero-overlay-bg" style="background: {{ rgba }}"></div>
+    <span class="hero-overlay-bg" style="background: {{ rgba }}"></span>
   {% else %}
     <div class="hero-overlay-bg"></div>
   {% endif %}
