@@ -320,6 +320,9 @@
   animation: floatY 4s ease-in-out infinite;
   transition: filter 0.3s ease;
 }
+.discounted-price-v2{
+  margin-left: 3px;
+}
 @keyframes floatY {
   0%, 100% {
  
@@ -335,7 +338,7 @@
     max-height: 350px;
   }
 }
-/* End of products evendts grid */
+/* End of products events grid */
 
 /* Start of Join Club */
 .awc-join-club{
