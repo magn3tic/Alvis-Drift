@@ -60,7 +60,7 @@
       </div>
     </div>
     <div class="awc-join-club-logged">
-      <div class=" awc-intro--col-v2 awc-points-balance {%  unless go_for %}awc-centered-balance{% endunless %}">
+      <div class=" awc-intro--col-v2 awc-points-balance ">
         <h3 class="h1">Your Balance</h3>
         <div class="awc-points">
           <strong>Point Balance:
@@ -89,6 +89,9 @@
           <p>{{ go_for_benefits }}</p>
         </div>
       {% endif %}
+      {% unless go_for %}
+        <div class="awc-intro--col-v2"></div>
+      {% endunless %}
     </div>
     <script src="{{ 'wine-club.js' | asset_url }}" async></script>
 

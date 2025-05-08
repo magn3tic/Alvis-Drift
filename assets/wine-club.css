@@ -339,8 +339,7 @@
 
 /* Start of Join Club */
 .awc-join-club{
- 
-  background-color: var(--awc-color-brown);
+  background-color: #F8F5F3;
   padding-bottom: 20px;
   position: relative;
   @media (min-width: 767px) {
@@ -375,13 +374,7 @@ margin-right: 20px;
 .awc-points-balance p{
   max-width: 400px;
 }
-.awc-centered-balance{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
 
-}
 .awc-go-for{
   display: flex;
       flex-direction: column;
