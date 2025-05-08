@@ -645,3 +645,7 @@
   display:none;
 }
 .hero-overlay-bg{display:block}
+.discounted-price{
+    text-decoration: line-through;
+    opacity: .6;
+}
