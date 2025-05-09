@@ -11,6 +11,9 @@
   "sections": {
     "wine_club_hero_v2_y96K78": {
       "type": "wine-club-hero-v2",
+      "custom_css": [
+        ".awc-bg-picture img {object-position: top; }"
+      ],
       "name": "Wine Club Hero V2",
       "settings": {
         "image_connected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
