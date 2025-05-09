@@ -13,8 +13,7 @@
       "type": "wine-club-hero-v2",
       "name": "Wine Club Hero V2",
       "settings": {
-        "image_connected_desktop": "shopify://shop_images/Website_banner_Icon_139d053b-b7ba-46c5-bdeb-b3a7aa3d3c59.png",
-        "image_connected_mobile": "shopify://shop_images/Website_banner_icon_mobile.png",
+        "image_connected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
         "show_button_connected": true,
         "button_text_connected": "SHOP NOW",
         "url_connected": "shopify://collections/best-sellers",
