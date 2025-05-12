@@ -92,7 +92,8 @@
                   {% endif %}
              {% endif %}
                 
-              {% elsif lowertags contains 'gold'%}
+              {% elsif lowertags contains 'gold' or lowertags contains 'platinum' %}
+
             {% if excluded_product_ids contains product.id %}
               {% if product.compare_at_price > product.price  %}
                   <div class="product-price">
@@ -166,7 +167,7 @@
                 {% endif %}
           {% else %}        
           {% if settings.member-included-discount == "enable" %}
-            {% if lowertags contains 'bronze' or lowertags contains 'silver' or lowertags contains 'gold' %}
+            {% if lowertags contains 'bronze' or lowertags contains 'silver' or lowertags contains 'gold' or lowertags contains 'platinum' %}
               {% if included_product_ids contains product.id %}
                 <div class="product-price included-disount_25">
                    <span class = "compare_and_include_25 compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
