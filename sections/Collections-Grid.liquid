@@ -154,8 +154,12 @@
                   <div class="product-price ">
                     <span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}</div>
                    <div class = "silver-{{ settings.discount-badge }}"> 
-                    {% if settings.discount-badge == 'tier-text'%}Gold Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
-                  {% endif %}
+                    {% if lowertags contains 'gold' %}
+                     {% if settings.discount-badge == 'tier-text'%}Gold Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                    {% elsif lowertags contains 'platinum' %}  
+                      {% if settings.discount-badge == 'tier-text'%}Plantinum Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                    {% endif %}
+                {% endif %}
               {% endif %} 
                 
                 {% else %}
