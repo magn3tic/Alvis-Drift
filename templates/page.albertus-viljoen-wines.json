@@ -239,6 +239,21 @@
         "subtitle-1": "",
         "active_collection": "icon-range"
       }
+    },
+    "multiple_posts_settings_a3K4pj": {
+      "type": "Multiple-Posts-Settings",
+      "name": "Multiple Posts Settings",
+      "settings": {
+        "heading": "",
+        "text_transform": "uppercase",
+        "blog_show_tags": true,
+        "blog": "icon-albertus-viljoen",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
     }
   },
   "order": [
@@ -254,6 +269,7 @@
     "rich_text_bDYdVH",
     "17447361233ed5c64f",
     "multiple_posts_settings_XYHCLd",
-    "collections_grid_7dMhcr"
+    "collections_grid_7dMhcr",
+    "multiple_posts_settings_a3K4pj"
   ]
 }
