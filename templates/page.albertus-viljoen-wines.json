@@ -26,7 +26,7 @@
         "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Albertus-Viljoen-Campaign-Header.jpg",
+            "background_image": "shopify://shop_images/Albertus-Viljoen-Icon-Range-Header.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
             "Heading_color": "#ffffff",
@@ -46,7 +46,7 @@
         "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/DJI_0018-2_1.jpg",
+        "background_image": "shopify://shop_images/Albertus-Viljoen-Icon-Range-Header.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
         "Heading_color": "#f8f2e6",
@@ -92,7 +92,7 @@
     "164388456995a70c72": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Wine-Farm_2da4f31d-0010-4750-bedd-ff67420eb79c.jpg",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-River-Landscape.jpg",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
@@ -107,7 +107,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Landscape.jpg",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-Community-Upliftment.jpg",
         "image_size": "100%",
         "video_url": "https://www.youtube.com/watch?v=1MJNc-AQCKY&t=11s",
         "Heading_size": "h2",
