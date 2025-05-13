@@ -144,6 +144,24 @@
         "active_collection": "icon-range"
       }
     },
+    "multiple_posts_settings_XYHCLd": {
+      "type": "Multiple-Posts-Settings",
+      "custom_css": [
+        "h2 {color: #712f1f;}"
+      ],
+      "name": "Multiple Posts Settings",
+      "settings": {
+        "heading": "Meet Our Local Icons",
+        "text_transform": "none",
+        "blog_show_tags": false,
+        "blog": "local-icons",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
     "rich_text_bDYdVH": {
       "type": "rich-text",
       "blocks": {
@@ -202,44 +220,6 @@
         "include_margins": true
       }
     },
-    "multiple_posts_settings_XYHCLd": {
-      "type": "Multiple-Posts-Settings",
-      "custom_css": [
-        "h2 {color: #712f1f;}"
-      ],
-      "name": "Multiple Posts Settings",
-      "settings": {
-        "heading": "Meet Our Local Icons",
-        "text_transform": "none",
-        "blog_show_tags": false,
-        "blog": "local-icons",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "soft_background": false
-      }
-    },
-    "collections_grid_7dMhcr": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "item_KMq8ih": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "icon-range"
-          }
-        }
-      },
-      "block_order": [
-        "item_KMq8ih"
-      ],
-      "settings": {
-        "topheading": "",
-        "subtitle-1": "",
-        "active_collection": "icon-range"
-      }
-    },
     "multiple_posts_settings_a3K4pj": {
       "type": "Multiple-Posts-Settings",
       "name": "Multiple Posts Settings",
@@ -266,10 +246,9 @@
     "1639686778727cf64f",
     "call_to_action_iaXjc6",
     "collections_grid_fbeztG",
+    "multiple_posts_settings_XYHCLd",
     "rich_text_bDYdVH",
     "17447361233ed5c64f",
-    "multiple_posts_settings_XYHCLd",
-    "collections_grid_7dMhcr",
     "multiple_posts_settings_a3K4pj"
   ]
 }
