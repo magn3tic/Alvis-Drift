@@ -123,6 +123,27 @@
         "btn-url": "shopify://collections/icon-range"
       }
     },
+    "collections_grid_fbeztG": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "item_nxK3Y7": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "icon-range"
+          }
+        }
+      },
+      "block_order": [
+        "item_nxK3Y7"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "topheading": "Icon Range",
+        "subtitle-1": "",
+        "active_collection": "icon-range"
+      }
+    },
     "rich_text_bDYdVH": {
       "type": "rich-text",
       "blocks": {
@@ -229,6 +250,7 @@
     "164388456995a70c72",
     "1639686778727cf64f",
     "call_to_action_iaXjc6",
+    "collections_grid_fbeztG",
     "rich_text_bDYdVH",
     "17447361233ed5c64f",
     "multiple_posts_settings_XYHCLd",
