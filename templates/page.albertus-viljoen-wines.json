@@ -68,13 +68,27 @@
         "spacer_size": "50px"
       }
     },
+    "focus_text_text_only_CqmfTq": {
+      "type": "Focus-Text-Text-Only",
+      "name": "Focus Text (Text Only)",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "A Man With A Vision.<br>A Wine With A Purpose.",
+        "subtitle-1": "",
+        "subtitle-2": "",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
     "video_single_BDwAAp": {
       "type": "Video-Single",
       "custom_css": [
         ".video-section__media {position: relative !important;}"
       ],
       "settings": {
-        "heading": "A Man With A Vision. A Wine With Purpose.",
+        "heading": "",
         "cover_image": "shopify://shop_images/Alvis_DRift_Catavinum_World_Wine_Spirites_Competiton.png",
         "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
         "description": "",
@@ -233,20 +247,6 @@
         "show_date": false,
         "show_author": false,
         "soft_background": false
-      }
-    },
-    "focus_text_text_only_CqmfTq": {
-      "type": "Focus-Text-Text-Only",
-      "name": "Focus Text (Text Only)",
-      "settings": {
-        "text_transform": "uppercase",
-        "Heading_color": "#ffffff",
-        "title": "Meet Our Local Icons",
-        "subtitle-1": "",
-        "subtitle-2": "<p>Text</p>",
-        "button_text": "",
-        "button_link": "",
-        "new_tab": true
       }
     }
   },
