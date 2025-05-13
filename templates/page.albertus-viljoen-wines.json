@@ -62,19 +62,13 @@
         "btn_main_link": ""
       }
     },
-    "spacer_QAEnEh": {
-      "type": "Spacer",
-      "settings": {
-        "spacer_size": "50px"
-      }
-    },
     "focus_text_text_only_CqmfTq": {
       "type": "Focus-Text-Text-Only",
       "name": "Focus Text (Text Only)",
       "settings": {
         "text_transform": "uppercase",
         "Heading_color": "#ffffff",
-        "title": "A Man With A Vision.<br>A Wine With A Purpose.",
+        "title": "A Man With A Vision. A Wine With A Purpose.",
         "subtitle-1": "",
         "subtitle-2": "",
         "button_text": "",
@@ -254,7 +248,6 @@
     "main",
     "1639603079ac59d760",
     "1639602940145c735b",
-    "spacer_QAEnEh",
     "focus_text_text_only_CqmfTq",
     "video_single_BDwAAp",
     "164388456995a70c72",
