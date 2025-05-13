@@ -234,6 +234,20 @@
         "show_author": false,
         "soft_background": false
       }
+    },
+    "focus_text_text_only_CqmfTq": {
+      "type": "Focus-Text-Text-Only",
+      "name": "Focus Text (Text Only)",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "Meet Our Local Icons",
+        "subtitle-1": "",
+        "subtitle-2": "<p>Text</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
     }
   },
   "order": [
@@ -241,6 +255,7 @@
     "1639603079ac59d760",
     "1639602940145c735b",
     "spacer_QAEnEh",
+    "focus_text_text_only_CqmfTq",
     "video_single_BDwAAp",
     "164388456995a70c72",
     "1639686778727cf64f",
