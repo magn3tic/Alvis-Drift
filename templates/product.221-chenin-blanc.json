@@ -110,7 +110,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#480115",
-            "text": "<p><strong>2024:</strong>  4,3 g/l</p>",
+            "text": "<p><strong>2024:</strong>  4,3 g/L</p>",
             "Text_color": "#2d5980"
           }
         },
@@ -119,7 +119,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#480115",
-            "text": "<p><strong>2024: </strong> 6,5 g/l</p>",
+            "text": "<p><strong>2024: </strong> 6,5 g/L</p>",
             "Text_color": "#2d5980"
           }
         },
