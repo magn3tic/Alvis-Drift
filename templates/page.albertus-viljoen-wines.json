@@ -62,6 +62,82 @@
         "btn_main_link": ""
       }
     },
+    "rich_text_bDYdVH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3iQJT3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Albertus Viljoen Icon of the Year 2025 Award ",
+            "heading_size": "h1"
+          }
+        },
+        "text_VKBhPF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entries are open for our very first Albertus Viljoen Icon of the Year Award! </p><p>This is your chance to nominate someone whose vision and courage embody the pursuit of excellence. Someone who stands as a force for good and positive change in their community.</p><p><strong>Enter Here</strong><br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3iQJT3",
+        "text_VKBhPF"
+      ],
+      "custom_css": [
+        ".rich-text {margin: auto; text-align: center; background-color: #712f1f; padding-bottom: 10px;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": false
+      }
+    },
+    "17447361233ed5c64f": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_n6ttAG": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "429098",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 64,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_n6ttAG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "multiple_posts_settings_XYHCLd": {
+      "type": "Multiple-Posts-Settings",
+      "custom_css": [
+        "h2 {color: #712f1f;}"
+      ],
+      "name": "Multiple Posts Settings",
+      "settings": {
+        "heading": "Meet Our Local Icons",
+        "text_transform": "none",
+        "blog_show_tags": false,
+        "blog": "local-icons",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
     "focus_text_text_only_CqmfTq": {
       "type": "Focus-Text-Text-Only",
       "name": "Focus Text (Text Only)",
@@ -83,8 +159,8 @@
       ],
       "settings": {
         "heading": "",
-        "cover_image": "shopify://shop_images/Alvis_DRift_Catavinum_World_Wine_Spirites_Competiton.png",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "cover_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
+        "video_url": "https://www.youtube.com/watch?v=WIYA4Btj6uA",
         "description": "",
         "full_width": true
       }
@@ -152,82 +228,6 @@
         "active_collection": "icon-range"
       }
     },
-    "multiple_posts_settings_XYHCLd": {
-      "type": "Multiple-Posts-Settings",
-      "custom_css": [
-        "h2 {color: #712f1f;}"
-      ],
-      "name": "Multiple Posts Settings",
-      "settings": {
-        "heading": "Meet Our Local Icons",
-        "text_transform": "none",
-        "blog_show_tags": false,
-        "blog": "local-icons",
-        "post_limit": 3,
-        "show_image": true,
-        "show_date": false,
-        "show_author": false,
-        "soft_background": false
-      }
-    },
-    "rich_text_bDYdVH": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_3iQJT3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Albertus Viljoen Icon of the Year 2025 Award ",
-            "heading_size": "h1"
-          }
-        },
-        "text_VKBhPF": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Entries are open for our very first Albertus Viljoen Icon of the Year Award! </p><p>This is your chance to nominate someone whose vision and courage embody the pursuit of excellence. Someone who stands as a force for good and positive change in their community.</p><p><strong>Enter Here</strong><br/><br/></p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_3iQJT3",
-        "text_VKBhPF"
-      ],
-      "custom_css": [
-        ".rich-text {margin: auto; text-align: center; background-color: #712f1f; padding-bottom: 10px;}"
-      ],
-      "name": "t:sections.rich-text.presets.name",
-      "settings": {
-        "color_scheme": "accent-1",
-        "full_width": false
-      }
-    },
-    "17447361233ed5c64f": {
-      "type": "apps",
-      "blocks": {
-        "forms_inline_n6ttAG": {
-          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-          "settings": {
-            "form_id": "429098",
-            "text_color": "#ffffff",
-            "button_background_color": "#c65336",
-            "button_label_color": "#ffffff",
-            "links_color": "#1878b9",
-            "errors_color": "#e02229",
-            "text_alignment": "center",
-            "form_alignment": "center",
-            "padding_top": 0,
-            "padding_bottom": 64,
-            "padding_right": 0,
-            "padding_left": 0
-          }
-        }
-      },
-      "block_order": [
-        "forms_inline_n6ttAG"
-      ],
-      "settings": {
-        "include_margins": true
-      }
-    },
     "multiple_posts_settings_a3K4pj": {
       "type": "Multiple-Posts-Settings",
       "name": "Multiple Posts Settings",
@@ -248,15 +248,15 @@
     "main",
     "1639603079ac59d760",
     "1639602940145c735b",
+    "rich_text_bDYdVH",
+    "17447361233ed5c64f",
+    "multiple_posts_settings_XYHCLd",
     "focus_text_text_only_CqmfTq",
     "video_single_BDwAAp",
     "164388456995a70c72",
     "1639686778727cf64f",
     "call_to_action_iaXjc6",
     "collections_grid_fbeztG",
-    "multiple_posts_settings_XYHCLd",
-    "rich_text_bDYdVH",
-    "17447361233ed5c64f",
     "multiple_posts_settings_a3K4pj"
   ]
 }
