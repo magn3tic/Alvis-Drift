@@ -101,7 +101,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#f8f2e6",
-            "text": "<p>12,6%</p>",
+            "text": "<p>12,5%</p>",
             "Text_color": "#c65336"
           }
         },
@@ -110,7 +110,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#f8f2e6",
-            "text": "<p>8,3 g/l</p>",
+            "text": "<p>8,8 g/L</p>",
             "Text_color": "#c65336"
           }
         },
@@ -119,7 +119,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#f8f2e6",
-            "text": "<p>7,3 g/l</p>",
+            "text": "<p>7,1 g/L</p>",
             "Text_color": "#c65336"
           }
         },
@@ -128,7 +128,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#f8f2e6",
-            "text": "<p>2,9</p>",
+            "text": "<p>3,1</p>",
             "Text_color": "#c65336"
           }
         }
@@ -139,7 +139,6 @@
         "163923715616dacea7-2",
         "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
       ],
-      "disabled": true,
       "settings": {
         "Background_Colour": "#2e112d",
         "title": "ANALYSIS",
