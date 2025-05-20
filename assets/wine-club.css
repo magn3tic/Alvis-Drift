@@ -370,6 +370,9 @@
     
   }
 }
+awc-intro--col-v2 h3{
+  color: var(--awc-color-dark)!important;
+}
 .awc-points-balance{
 margin-right: 20px;
   color: var(--awc-color-dark);
