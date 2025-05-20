@@ -139,7 +139,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#f8f2e6",
-            "text": "<p>3</p>",
+            "text": "<p>3,0</p>",
             "Text_color": "#c65336"
           }
         }
