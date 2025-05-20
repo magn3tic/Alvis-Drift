@@ -101,7 +101,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2020:</strong>  13,5%</p>",
+            "text": "<p><strong>2022:</strong>  13,5%</p>",
             "Text_color": "#867065"
           }
         },
@@ -110,7 +110,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2020:</strong>  4,6 g/l</p>",
+            "text": "<p><strong>2022:</strong>  4,9 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -119,7 +119,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2020:</strong>  6,2 g/l</p>",
+            "text": "<p><strong>2022:</strong>  6,4 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -128,7 +128,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2020:</strong>  3,4</p>",
+            "text": "<p><strong>2022:</strong>  3,3</p>",
             "Text_color": "#867065"
           }
         }
@@ -139,7 +139,6 @@
         "163923715616dacea7-2",
         "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
       ],
-      "disabled": true,
       "settings": {
         "Background_Colour": "#aac4d3",
         "title": "ANALYSIS",
