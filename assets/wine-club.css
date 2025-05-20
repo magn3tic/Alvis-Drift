@@ -362,15 +362,13 @@
   }
 }
 
-.awc-intro--col-v2{
+.awc-intro--col-v2 {
+  color: var(--awc-color-dark);
   @media (min-width: 767px) {
     width: 50%;
     max-width: 570px;
     
   }
-}
-.awc-intro--col-v2 h3{
-  color: var(--awc-color-dark)!important;
 }
 .awc-points-balance{
 margin-right: 20px;
