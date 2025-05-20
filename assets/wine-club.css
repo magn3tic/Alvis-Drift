@@ -363,7 +363,7 @@
 }
 
 .awc-intro--col-v2 h3{
-  color: var(--awc-color-dark);
+  color: var(--awc-color-dark)!important;
   @media (min-width: 767px) {
     width: 50%;
     max-width: 570px;
