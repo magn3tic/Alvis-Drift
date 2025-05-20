@@ -230,6 +230,7 @@
     },
     "multiple_posts_settings_a3K4pj": {
       "type": "Multiple-Posts-Settings",
+      "disabled": true,
       "name": "Multiple Posts Settings",
       "settings": {
         "heading": "",
