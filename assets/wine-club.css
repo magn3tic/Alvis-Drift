@@ -362,7 +362,7 @@
   }
 }
 
-.awc-intro--col-v2{
+.awc-intro--col-v2 h3{
   color: var(--awc-color-dark);
   @media (min-width: 767px) {
     width: 50%;
