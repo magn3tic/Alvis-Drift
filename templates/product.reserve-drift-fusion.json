@@ -20,34 +20,11 @@
       "blocks": {
         "841de8aa-1431-4eb4-b91a-fc78212648a0": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Cultivars 2020",
             "content": "<p>36,5%  Pinotage<br/>33%  Cabernet Sauvignon<br/>15%  Shiraz<br/>7%  Durif<br/>5%  Petit Verdot<br/>3,5% Grenache</p>",
             "page": "",
             "icon": "check_mark",
-            "border": true
-          }
-        },
-        "01620f59-fe07-41a9-93cb-3c056a4852a2": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Cultivars 2019",
-            "content": "<p>41%  Pinotage<br/>39%  Cabernet Sauvignon<br/>9%  Shiraz<br/>5,5%  Durif<br/>5,5%  Petit Verdot</p>",
-            "page": "",
-            "icon": "none",
-            "border": true
-          }
-        },
-        "4a9ee308-4258-4003-b827-7d623c44942a": {
-          "type": "collapsible_tab",
-          "disabled": true,
-          "settings": {
-            "heading": "Cultivars 2018",
-            "content": "<p>33%  Cabernet Sauvignon<br/>27%  Pinotage<br/>20%  Shiraz<br/>10%  Durif<br/>7%  Grenache<br/>3%  Petit Verdot</p>",
-            "page": "",
-            "icon": "none",
             "border": true
           }
         },
@@ -90,8 +67,6 @@
       },
       "block_order": [
         "841de8aa-1431-4eb4-b91a-fc78212648a0",
-        "01620f59-fe07-41a9-93cb-3c056a4852a2",
-        "4a9ee308-4258-4003-b827-7d623c44942a",
         "d5c6bad5-2cb5-4fb3-bd46-4e9f0395590a",
         "dbed4094-6ecf-4cdf-b856-ebbbabd8c293",
         "ca5e6948-09ab-4886-8baa-fcd8211ef234",
@@ -137,7 +112,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2020:</strong>  13,5%<strong><br/>2018:</strong>  13,6%</p>",
+            "text": "<p><strong>2020:</strong>  13,5%</p>",
             "Text_color": "#867065"
           }
         },
@@ -146,7 +121,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2020:</strong>  4,6 g/l<strong><br/>2018:</strong>  4,7 g/l</p>",
+            "text": "<p><strong>2020:</strong>  4,6 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -155,7 +130,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2020:</strong>  6,2 g/l<strong><br/>2018:</strong>  5,9 g/l</p>",
+            "text": "<p><strong>2020:</strong>  6,2 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -164,7 +139,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2020:</strong>  3,4<strong><br/>2018:</strong>  3,4</p>",
+            "text": "<p><strong>2020:</strong>  3,4</p>",
             "Text_color": "#867065"
           }
         }
@@ -175,7 +150,6 @@
         "163923715616dacea7-2",
         "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
       ],
-      "disabled": true,
       "settings": {
         "Background_Colour": "#aac4d3",
         "title": "ANALYSIS",
