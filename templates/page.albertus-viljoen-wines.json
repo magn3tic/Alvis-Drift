@@ -225,7 +225,7 @@
       "settings": {
         "topheading": "Icon Range",
         "subtitle-1": "",
-        "active_collection": "icon-range"
+        "active_collection": "launch"
       }
     },
     "multiple_posts_settings_a3K4pj": {
@@ -248,7 +248,7 @@
       "type": "Spacer",
       "name": "Spacer",
       "settings": {
-        "spacer_size": "25px"
+        "spacer_size": "50px"
       }
     }
   },
