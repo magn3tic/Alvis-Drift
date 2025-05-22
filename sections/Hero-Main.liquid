@@ -16,7 +16,8 @@
      alt="{{ block.settings.mobile_background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.mobile_background_image.height}}"
      width="{{block.settings.mobile_background_image.width}}"
-     loading="eager">   
+     loading="eager"
+     fetchpriority="high">   
 <img class="hero-section-bg laptop-bg"
      src="{{ block.settings.background_image | img_url: 'master' }}"
      srcset="
@@ -31,7 +32,8 @@
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.background_image.height}}"
      width="{{block.settings.background_image.width}}"
-     loading="eager">
+     loading="eager"
+     fetchpriority="high">
    {% elsif block.settings.background_image %}
     <img class="hero-section-bg"
      src="{{ block.settings.background_image | img_url: 'master' }}"
