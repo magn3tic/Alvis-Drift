@@ -24,6 +24,27 @@
         "url_disconnected": ""
       }
     },
+    "collections_grid_aj8b9C": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "item_AEfQQV": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "chardonnay-collection"
+          }
+        }
+      },
+      "block_order": [
+        "item_AEfQQV"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "topheading": "One Day Chardonnay Special",
+        "subtitle-1": "Buy 2 or more and get 15% discount",
+        "active_collection": "chardonnay-collection"
+      }
+    },
     "wine_club_products_events_grid_zDj4fc": {
       "type": "wine-club-products-events-grid",
       "name": "Wine Club Products & Events Grid",
@@ -316,6 +337,7 @@
   },
   "order": [
     "wine_club_hero_v2_y96K78",
+    "collections_grid_aj8b9C",
     "wine_club_products_events_grid_zDj4fc",
     "wine_club_products_events_grid_Qkr39W",
     "wine_club_products_events_grid_eJrVXy",
