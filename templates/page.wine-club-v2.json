@@ -24,25 +24,21 @@
         "url_disconnected": ""
       }
     },
-    "collections_grid_aj8b9C": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "item_AEfQQV": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "chardonnay-collection"
-          }
-        }
-      },
-      "block_order": [
-        "item_AEfQQV"
-      ],
-      "name": "Collections Grid",
+    "wine_club_products_events_grid_nxFFpN": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
       "settings": {
-        "topheading": "One Day Chardonnay Special",
-        "subtitle-1": "Buy 2 or more and get 15% discount",
-        "active_collection": "chardonnay-collection"
+        "show": "exclusive_collection",
+        "show_title": true,
+        "title": "Get 15% when you buy more then 1 chardonnary",
+        "bronze_collection": "chardonnay-collection",
+        "silver_collection": "chardonnay-collection",
+        "gold_collection": "chardonnay-collection",
+        "platinum_collection": "chardonnay-collection",
+        "collection_exclusive": "chardonnay-collection",
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
       }
     },
     "wine_club_products_events_grid_zDj4fc": {
@@ -337,7 +333,7 @@
   },
   "order": [
     "wine_club_hero_v2_y96K78",
-    "collections_grid_aj8b9C",
+    "wine_club_products_events_grid_nxFFpN",
     "wine_club_products_events_grid_zDj4fc",
     "wine_club_products_events_grid_Qkr39W",
     "wine_club_products_events_grid_eJrVXy",
