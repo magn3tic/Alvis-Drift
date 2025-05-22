@@ -12,7 +12,7 @@
     "wine_club_hero_v2_y96K78": {
       "type": "wine-club-hero-v2",
       "custom_css": [
-        ".awc-bg-picture img {object-position: top; }"
+        ".awc-bg-picture img {object-position: top;}"
       ],
       "name": "Wine Club Hero V2",
       "settings": {
@@ -33,6 +33,7 @@
         "show": "exclusive_wines",
         "show_title": true,
         "title": "Exclusive Products",
+        "sub-title": "",
         "bronze_collection": "club-bronze",
         "silver_collection": "club-silver",
         "gold_collection": "club-silver",
@@ -281,10 +282,29 @@
       "type": "main-page",
       "disabled": true,
       "settings": {}
+    },
+    "wine_club_products_events_grid_cRYNQa": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_collection",
+        "show_title": true,
+        "title": "24-Hour Chardonnay Flash Sale",
+        "sub-title": "Buy 1 Case & Get 15% Off the 2nd Case Of the Same Wine",
+        "bronze_collection": "",
+        "silver_collection": "",
+        "gold_collection": "",
+        "platinum_collection": "",
+        "collection_exclusive": "chardonnay-collection",
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
+      }
     }
   },
   "order": [
     "wine_club_hero_v2_y96K78",
+    "wine_club_products_events_grid_cRYNQa",
     "wine_club_products_events_grid_zDj4fc",
     "wine_club_join_club_nkriVx",
     "wine_club_how_it_works_Pi4r66",
