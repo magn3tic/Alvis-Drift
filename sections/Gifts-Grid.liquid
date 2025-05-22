@@ -81,7 +81,7 @@
                 {% for product in collections[colName].products %}
                 <div class="product-bx">
                   <div class="product-img">
-                    <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url:'master' }}" alt="{{ product.featured_image.alt }}"></a>
+                    <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url:'master' }}" alt="{{ product.featured_image.alt }}" loading="lazy"></a>
                   </div>
                   <div class="product-title">
                     <div class="sp-t">{{ product.title }}</div>
