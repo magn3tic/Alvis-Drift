@@ -323,6 +323,49 @@
             </span>
           {% endif %}
         {% endif %}
+
+        {%- elsif lowertags contains 'platinum' -%}
+        {% if excluded_product_ids contains item.product.id %}
+          {% if compare_price %}
+            {% if compare_price > original_price %}
+              <span class = "price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
+              {% endif %}
+            <span class="price price--end no-discount">
+              {{ original_price | money | replace: ",", " " }}
+            </span>
+              {% else %}
+            <span class="price price--end no-discount">
+              {{ original_price | money | replace: ",", " " }}
+            </span>
+            {% endif %}
+        {% else %}
+          {% if compare_price %}
+            {% if compare_price > original_price %}
+              <!-- Compare at Price -->
+              <span class="price price--end discounted-price">
+                <s>{{ compare_price | money | replace: ",", " " }}</s>
+              </span>
+              <!-- Discounted Price -->
+              <span class="price price--end ">
+                {{ original_price | money | replace: ",", " " }}
+              </span>
+            {% else %}
+              <!-- No Discount Applied -->
+              <span class="price price--end no-discount">
+                {{ original_price | money | replace: ",", " " }}
+              </span>
+            {% endif %}
+          {% else %}
+            <!-- Default platinum Discount -->
+            <span class="price price--end discounted-price">
+              {{ original_price | money | replace: ",", " " }}
+            </span>
+            <span class="price price--end platinum-discount">
+              {{ original_price | times: 0.90 | money | replace: ",", " " }}
+            </span>
+          {% endif %}
+        {% endif %}
+           
         {%- else -%}
           <span class="price price--end no-discount">
             {{ item.original_line_price | money | replace: ",", " " }}
