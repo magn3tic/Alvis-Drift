@@ -49,7 +49,7 @@
         "show": "exclusive_wines",
         "show_title": true,
         "title": "Exclusive Products",
-        "sub-title": "Text area",
+        "sub-title": "",
         "bronze_collection": "club-bronze",
         "silver_collection": "club-silver",
         "gold_collection": "club-silver",
