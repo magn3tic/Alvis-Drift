@@ -26,6 +26,25 @@
         "url_disconnected": ""
       }
     },
+    "wine_club_products_events_grid_cRYNQa": {
+      "type": "wine-club-products-events-grid",
+      "disabled": true,
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_collection",
+        "show_title": true,
+        "title": "24-Hour Chardonnay Flash Sale",
+        "sub-title": "Buy 1 Case & Get 15% Off the 2nd Case Of the Same Wine",
+        "bronze_collection": "",
+        "silver_collection": "",
+        "gold_collection": "",
+        "platinum_collection": "",
+        "collection_exclusive": "chardonnay-collection",
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
+      }
+    },
     "wine_club_products_events_grid_zDj4fc": {
       "type": "wine-club-products-events-grid",
       "name": "Wine Club Products & Events Grid",
@@ -282,24 +301,6 @@
       "type": "main-page",
       "disabled": true,
       "settings": {}
-    },
-    "wine_club_products_events_grid_cRYNQa": {
-      "type": "wine-club-products-events-grid",
-      "name": "Wine Club Products & Events Grid",
-      "settings": {
-        "show": "exclusive_collection",
-        "show_title": true,
-        "title": "24-Hour Chardonnay Flash Sale",
-        "sub-title": "Buy 1 Case & Get 15% Off the 2nd Case Of the Same Wine",
-        "bronze_collection": "",
-        "silver_collection": "",
-        "gold_collection": "",
-        "platinum_collection": "",
-        "collection_exclusive": "chardonnay-collection",
-        "show_counter": false,
-        "start_point": 0,
-        "counter_text": "Stock Quantity"
-      }
     }
   },
   "order": [
