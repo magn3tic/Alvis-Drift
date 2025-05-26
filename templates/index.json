@@ -65,6 +65,25 @@
             "side_btn_link": "shopify://collections/icon-range"
           }
         },
+        "slider_eiynBD": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Albertus-Viljoen-Icon-Range-Header.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 0,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "NEW",
+            "paragarh_p2": "LABEL",
+            "paragarh_p3": "LAUNCH",
+            "paragarh_p4": "",
+            "paragarh_1": "ICON ALBERTUS VILJOEN",
+            "paragarh_2": "",
+            "side_btn_text": "SHOP NOW",
+            "side_btn_link": "shopify://collections/icon-range"
+          }
+        },
         "slider_6hLWbw": {
           "type": "slider",
           "disabled": true,
@@ -468,6 +487,7 @@
       "block_order": [
         "slider_MQBTbV",
         "slider_DGjHhf",
+        "slider_eiynBD",
         "slider_6hLWbw",
         "slider_TgUF3x",
         "slider_3t3cqR",
