@@ -50,19 +50,19 @@
           "type": "slider",
           "disabled": true,
           "settings": {
-            "background_image": "shopify://shop_images/Website_banner_Harvest_sale_8226c54f-5c19-48d7-b013-bd8f3016cbe5.png",
+            "background_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
             "image_overlay": "",
             "overlay_opacity": 0,
             "Heading_color": "#ffffff",
             "video_banner": "",
-            "paragarh_p1": "SHOP OUR",
-            "paragarh_p2": "HARVEST",
-            "paragarh_p3": "SALE",
+            "paragarh_p1": "NEW",
+            "paragarh_p2": "LABEL",
+            "paragarh_p3": "LAUNCH",
             "paragarh_p4": "",
-            "paragarh_1": "",
+            "paragarh_1": "ICON ALBERTUS VILJOEN",
             "paragarh_2": "",
             "side_btn_text": "Shop Now",
-            "side_btn_link": "https://alvisdrift.co.za/collections/all-wines"
+            "side_btn_link": "shopify://collections/icon-range"
           }
         },
         "slider_6hLWbw": {
