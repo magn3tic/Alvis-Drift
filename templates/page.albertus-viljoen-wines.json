@@ -26,10 +26,11 @@
         "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Albertus-Viljoen-Icon-Range-Header.jpg",
+            "background_image": "shopify://shop_images/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png",
+            "mobile_background_image": "shopify://shop_images/Alvis_drift_mobile_banner.png",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "What's",
             "paragarh_p2": "In A",
@@ -46,10 +47,10 @@
         "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff"
       ],
       "settings": {
-        "background_image": "shopify://shop_images/Albertus-Viljoen-Icon-Range-Header.jpg",
+        "background_image": "shopify://shop_images/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#f8f2e6",
+        "heading_color": "#ffffff",
         "video_banner": "",
         "paragarh_p1": "OUR",
         "paragarh_p2": "VINEYARDS",
