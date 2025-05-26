@@ -98,15 +98,42 @@
             "collection_heading": "",
             "collectionCarasoul": "cap-classique-range"
           }
+        },
+        "item_dMT8LH": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": ""
+          }
         }
       },
       "block_order": [
-        "template--15470254752000__8c6f6d04-e973-4e87-806b-0bc5b3b1249e-168167278796320118-0"
+        "template--15470254752000__8c6f6d04-e973-4e87-806b-0bc5b3b1249e-168167278796320118-0",
+        "item_dMT8LH"
       ],
       "settings": {
         "topheading": "Our Cap Classique Range",
         "subtitle-1": "",
         "active_collection": "cap-classique-range"
+      }
+    },
+    "gifts_grid_gLf4x9": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "item_dAyJQA": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Gifts",
+            "collectionCarasoul": "cap-classique-sparkling-gifts"
+          }
+        }
+      },
+      "block_order": [
+        "item_dAyJQA"
+      ],
+      "name": "Gifts Grid",
+      "settings": {
+        "topheading": ""
       }
     },
     "1642109056cf30ac48": {
@@ -187,6 +214,7 @@
     "focus_text_text_only_pUVjFV",
     "product-grid",
     "8c6f6d04-e973-4e87-806b-0bc5b3b1249e",
+    "gifts_grid_gLf4x9",
     "1642109056cf30ac48",
     "1639247728bb3b5028"
   ]
