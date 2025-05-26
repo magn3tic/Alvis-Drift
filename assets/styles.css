@@ -6945,5 +6945,7 @@ summary.list-menu__item {
   color:#000!important
 }
 .blank-space{
-  margin:20px 0
+  margin-bottom:20px;
+  visibility: hidden;
+  ;
 }
