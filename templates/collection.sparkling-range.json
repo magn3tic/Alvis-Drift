@@ -123,7 +123,7 @@
         "item_dAyJQA": {
           "type": "item",
           "settings": {
-            "collection_heading": "Gifts",
+            "collection_heading": "",
             "collectionCarasoul": "cap-classique-sparkling-gifts"
           }
         }
@@ -133,7 +133,7 @@
       ],
       "name": "Gifts Grid",
       "settings": {
-        "topheading": ""
+        "topheading": "Gifts"
       }
     },
     "1642109056cf30ac48": {

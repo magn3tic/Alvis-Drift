@@ -109,6 +109,25 @@
         "active_collection": "sparkling-range"
       }
     },
+    "gifts_grid_NaR9TB": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "item_YhUd3F": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "cap-classique-sparkling-gifts"
+          }
+        }
+      },
+      "block_order": [
+        "item_YhUd3F"
+      ],
+      "name": "Gifts Grid",
+      "settings": {
+        "topheading": "Gifts"
+      }
+    },
     "1642109056cf30ac48": {
       "type": "Call-To-Action",
       "settings": {
@@ -116,7 +135,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "WINE CLUB",
-        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "detail_box_txt": "",
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }
@@ -187,6 +206,7 @@
     "focus_text_text_only_AB7fzR",
     "product-grid",
     "4c22084d-088c-4244-8877-bf7c968090a1",
+    "gifts_grid_NaR9TB",
     "1642109056cf30ac48",
     "1639247728bb3b5028"
   ]
