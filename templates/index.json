@@ -69,8 +69,8 @@
         "slider_eiynBD": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Alvis_Drift_Desktop_banner_4fa3ef5b-4063-4426-ba3d-4dfc69dcc9e6.png",
-            "mobile_background_image": "shopify://shop_images/Alvis_drift_front-page_banner.png",
+            "background_image": "shopify://shop_images/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png",
+            "mobile_background_image": "shopify://shop_images/Alvis_drift_mobile_banner.png",
             "image_overlay": "",
             "overlay_opacity": 0,
             "heading_color": "#ffffff",
