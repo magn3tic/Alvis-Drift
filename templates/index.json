@@ -71,8 +71,8 @@
           "settings": {
             "background_image": "shopify://shop_images/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png",
             "mobile_background_image": "shopify://shop_images/Alvis_drift_mobile_banner.png",
-            "image_overlay": "",
-            "overlay_opacity": 0,
+            "image_overlay": "#121212",
+            "overlay_opacity": 10,
             "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "WHAT'S",
