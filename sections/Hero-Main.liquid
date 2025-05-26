@@ -63,7 +63,7 @@
       <div class="hero-title">
         <h2>
           <span>
-            <p class="animate-reveal">{{ block.settings.paragarh_p1 }}</p>
+            <p class="animate-reveal" style = "color:{{ section.settings.Heading_color }}">{{ block.settings.paragarh_p1 }}</p>
             <p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p>
             <p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>
             <p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p>
@@ -119,7 +119,7 @@
 {% endfor %}
 </section>
 <style>
-  .animate-reveal {color: {{ section.settings.Heading_color }}!important;font-size: 70px;}
+  .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 70px;}
   @media (min-width:250px) and (max-width:900px) { .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 25px;line-height: 1.5;}
   </style>
 {% schema %}
