@@ -6,6 +6,24 @@
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 
+<script type="text/javascript">
+
+  function printDiv() 
+{
+
+  var divToPrint=document.getElementById('DivIdToPrint');
+
+  var newWin=window.open('','Print-Window');
+
+  newWin.document.open();
+
+  newWin.document.write('<html><body onload="window.print()">'+ divToPrint.innerHTML +'</body></html>');
+
+  newWin.document.close();
+
+};
+
+</script>
 
 <div class="page-width page-width--narrow">
   <h2 class="page-title">
@@ -304,25 +322,7 @@
   
 </style>
 
-<script>
 
-  function printDiv() 
-{
-
-  var divToPrint=document.getElementById('DivIdToPrint');
-
-  var newWin=window.open('','Print-Window');
-
-  newWin.document.open();
-
-  newWin.document.write('<html><body onload="window.print()">'+ divToPrint.innerHTML +'</body></html>');
-
-  newWin.document.close();
-
-
-}
-
-</script>
 
 <script type="text/javascript">
   // Save existing sort parameters
