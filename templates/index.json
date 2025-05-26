@@ -51,8 +51,8 @@
           "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
-            "image_overlay": "",
-            "overlay_opacity": 0,
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
             "Heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "NEW",
