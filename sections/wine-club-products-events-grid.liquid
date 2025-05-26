@@ -1,4 +1,5 @@
 {% if customer %}
+  {% assign excluded_product_ids = settings.product_list | map: "id" %}
 <section class="awc-products-events-grid container {%  if  section.settings.show == 'exclusive_events' %}  awc-events-grid {% endif %}">
     {% comment %} Check if the customer is logged in {% endcomment %}
     {% assign lowertags = customer.tags | downcase %}
@@ -105,18 +106,24 @@
                   {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
                   {% comment %} End of Pricing and Discounts Logic {% endcomment %}
 
-                  <div class="product-price" style="margin-bottom: 15px">
-                
+                  
+                  {% if excluded_product_ids contains product.id %}
+                    <div class="product-price" style="margin-bottom: 15px">
+                      <span class="compare-price">
+                        {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                      </span>     
+                  </div>
+                    {% else %}
+                    <div class="product-price" style="margin-bottom: 15px">
                       <span class="compare-price">
                         {{ price | money | remove: '.00' | replace: ',', ' ' }}
                       </span>
                       <span class="discounted-price-v2">
                         {{ discounted_price | money | remove: '.00' | replace: ',', ' ' }}
-                      </span>
-                 
+                      </span>              
                   </div>
+                    {% endif %}
                   
-
                   <div class="product-price-per">
                     R{{ assigned_price | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
                   </div>
