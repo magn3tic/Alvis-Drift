@@ -18,8 +18,27 @@
     "16396708752d4c299f": {
       "type": "Hero-Main",
       "blocks": {
+        "slider_RmPJnX": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "NEW",
+            "paragarh_p2": "LABEL",
+            "paragarh_p3": "LAUNCH",
+            "paragarh_p4": "",
+            "paragarh_1": "ICON ALBERTUS VILJOEN",
+            "paragarh_2": "",
+            "side_btn_text": "SHOP NOW",
+            "side_btn_link": "shopify://collections/icon-range"
+          }
+        },
         "db5ba68b-9ec8-4dc4-ae52-b88935c1e37e": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
             "image_overlay": "#000000",
@@ -38,6 +57,7 @@
         }
       },
       "block_order": [
+        "slider_RmPJnX",
         "db5ba68b-9ec8-4dc4-ae52-b88935c1e37e"
       ],
       "settings": {
