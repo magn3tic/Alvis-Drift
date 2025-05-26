@@ -49,6 +49,7 @@
         },
         "slider_DGjHhf": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
             "image_overlay": "#000000",
@@ -67,7 +68,6 @@
         },
         "slider_eiynBD": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Albertus-Viljoen-Icon-Range-Header.jpg",
             "image_overlay": "",

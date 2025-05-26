@@ -20,6 +20,7 @@
       "blocks": {
         "slider_RmPJnX": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
             "image_overlay": "#000000",
@@ -38,6 +39,7 @@
         },
         "slider_dFCWrV": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Albertus-Viljoen-Icon-Range-Header.jpg",
             "image_overlay": "",
@@ -56,7 +58,6 @@
         },
         "db5ba68b-9ec8-4dc4-ae52-b88935c1e37e": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
             "image_overlay": "#000000",
