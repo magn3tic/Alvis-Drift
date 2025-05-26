@@ -70,6 +70,7 @@
           "type": "slider",
           "settings": {
             "background_image": "shopify://shop_images/Albertus-Viljoen-Icon-Range-New-Labels-Header.jpg",
+            "mobile_background_image": "shopify://shop_images/Alvis_drift_front-page_banner.png",
             "image_overlay": "",
             "overlay_opacity": 0,
             "Heading_color": "#ffffff",
