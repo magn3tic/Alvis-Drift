@@ -332,8 +332,7 @@ body {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js" defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js" defer="defer"></script>
     
- 
-    {{ 'custom.js' | asset_url | preload_tag: as: 'script' }}
+    <script src="{{ 'custom.js' | asset_url }}"defer></script>
     
     
     <style>
