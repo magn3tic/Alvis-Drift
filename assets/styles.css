@@ -6952,5 +6952,6 @@ summary.list-menu__item {
   padding:10px 20px; 
   font-size:30px;
   letter-spacing: 3px !important; 
-  color: #D5C7BE
+  color: #D5C7BE;
+  line-height: 40px
 }
