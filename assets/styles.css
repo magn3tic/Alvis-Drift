@@ -489,7 +489,7 @@ summary.list-menu__item {
 @media (min-width: 250px) and (max-width:900px) {
     .hero-title h2 span p {
         margin:0!important;
-        line-height: 35px!important
+        line-height: 1.2em !important
     }
 }
 
