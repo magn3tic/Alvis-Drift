@@ -595,4 +595,29 @@ function iOS() {
   $('.main-link-home').mouseenter(function(){
       $('details').removeAttr('open');
   });
-  
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
+
+    if ("IntersectionObserver" in window) {
+      let observer = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            const el = entry.target;
+            el.style.backgroundImage = `url('${el.dataset.bg}')`;
+            observer.unobserve(el);
+          }
+        });
+      });
+
+      lazyBackgrounds.forEach(function (bg) {
+        observer.observe(bg);
+      });
+    } else {
+      // Fallback
+      lazyBackgrounds.forEach(function (el) {
+        el.style.backgroundImage = `url('${el.dataset.bg}')`;
+      });
+    }
+  });
