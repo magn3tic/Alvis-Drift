@@ -598,7 +598,7 @@ function iOS() {
 
 
   document.addEventListener("DOMContentLoaded", function () {
-    const lazyBackgrounds = document.querySelectorAll(".lazy-bg");
+    const lazyBackgrounds = document.querySelectorAll(".bg-overlay-bg");
 
     if ("IntersectionObserver" in window) {
       let observer = new IntersectionObserver(function (entries) {
