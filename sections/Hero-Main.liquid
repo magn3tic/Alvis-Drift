@@ -71,7 +71,7 @@
           </span> 
         </h2> 
       </div>
-      <div class = "main_btn">  <a href="{{ block.settings.btn_link }}" class="btn">{{ block.settings.btn_text }}</a> </div>
+      <div class = "main_btn"><a href="{{ section.settings.right_btn_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
       </div>
       <div class="hero-txt col-sm"> 
         {% if block.settings.paragarh_1 != blank or block.settings.paragarh_2 != blank %}
@@ -148,87 +148,15 @@
       "default": 30,
       "label": "Overlay Opacity"
     },
-	  {
-      "type": "select",
-      "id": "heading_color",
-      "label": "Heading Colour",
-      "default": "#ffffff",
-      "options": [
-        {
-          "value": "#2e112d",
-          "label": "Dark Plum"
-        },
-        {
-          "value": "#ffffff",
-          "label": "White"
-        },
-        {
-          "value": "#f8f2e6",
-          "label": "Light Beige"
-        }, 
-        {
-          "value": "#c0ccbe",
-          "label": "Light Olive"
-        },
-        {
-          "value": "#aac4d3",
-          "label": "Light Blue"
-        },
-        {
-          "value": "#fedcc6",
-          "label": "Light Orange"
-        }
-      ]
-    },
-    {
-      "type": "video_url",
-      "accept": ["youtube"],
-      "id": "video_banner",
-      "label": "Video URL"    },
     {
       "type": "text",
-      "id": "paragarh_p1",
-      "label": "Heading Line 1"
+      "id": "right_btn_text",
+      "label": "Button Text"
     },
     {
-      "type": "text",
-      "id": "paragarh_p2",
-      "label": "Heading Line 2"
-    },
-    {
-      "type": "text",
-      "id": "paragarh_p3",
-      "label": "Heading Line 3"
-    },
-    {
-      "type": "text",
-      "id": "paragarh_p4",
-      "label": "Heading Line 4"
-    },
-    {
-      "type": "text",
-      "id": "paragarh_1",
-      "label": "Paragraph Heading"
-    },
-    {
-      "type": "text",
-      "id": "paragarh_2",
-      "label": "Paragraph Text"
-    },
-    {
-    "type": "text",
-    "id": "btn_text",
-    "label": "Button Text"
-    },
-    {
-    "type": "url",
-    "id": "btn_link",
-    "label": "Button Link"
-    },
-    {
-    "type": "url",
-    "id": "btn_main_link",
-    "label": "Main Button Link"
+      "type": "url",
+      "id": "right_btn_link",
+      "label": "Button Link"
     }
   ],
   "blocks":[
