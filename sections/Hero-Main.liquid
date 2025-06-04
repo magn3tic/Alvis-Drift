@@ -71,6 +71,7 @@
           </span> 
         </h2> 
       </div>
+      <div class = "the_blurb">{{ section.settings.blurb }}</div>
       <div class = "main_btn"><a href="{{ section.settings.right_btn_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
       </div>
       <div class="hero-txt col-sm"> 
@@ -147,6 +148,11 @@
       "step": 5,
       "default": 30,
       "label": "Overlay Opacity"
+    },
+    {
+          "type": "richtext",
+          "id": "blurb",
+          "label": "Blurb"
     },
     {
       "type": "text",
@@ -256,6 +262,7 @@
           "id": "paragarh_p4",
           "label": "Heading Line 4"
         },
+      
         {
           "type": "text",
           "id": "paragarh_1",
