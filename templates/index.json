@@ -515,7 +515,7 @@
         "background_image": "shopify://shop_images/hero-secton-bg.png",
         "image_overlay": "#ffffff",
         "overlay_opacity": 0,
-        "blurb": "<p>It’s where you come from, but also where you’re going. Because the choices you make today shape the legacy you leave tomorrow.</p><p>Albertus Viljoen<br/>Pursuit of Excellence<br/><br/></p>",
+        "blurb": "<p>It’s where you come from, but also where you’re going. Because the choices you make today shape the legacy you leave tomorrow.</p><p><strong>Albertus Viljoen </strong>| Pursuit of Excellence<br/><br/></p>",
         "right_btn_text": "LEARN MORE",
         "right_btn_link": "shopify://pages/icon-albertus-viljoen"
       }
