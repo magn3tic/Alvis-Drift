@@ -2472,7 +2472,10 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
     animation: reveal 4s ease 1 normal forwards;
     animation-delay: .10s;
 }
-
+.the_blurb{
+      animation: reveal 3s ease 1 normal forwards;
+    animation-delay: .10s;
+}
 .second-img {
     width: 100%;
     height: auto
