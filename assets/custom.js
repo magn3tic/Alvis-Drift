@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function() {
 function iOS() {
     return [
       'iPad Simulator',
@@ -622,3 +622,4 @@ function iOS() {
       });
     }
   });
+});
