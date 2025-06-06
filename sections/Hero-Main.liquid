@@ -9,24 +9,11 @@
  <div class="hero-section">
   {% if block.settings.mobile_background_image %}
 <img class="hero-section-bg mobile-bg" 
-      {{ block.settings.mobile_background_image | image_url: width: 600 | image_tag: preload: true }}
-     >   
+      {{ block.settings.mobile_background_image | image_url: width: 600 | image_tag: preload: true }} >   
     {% endif %}
   {% if block.settings.background_image %}
 <img class="hero-section-bg laptop-bg"
-     src="{{ block.settings.background_image | img_url: 'master' }}"
-     srcset="
-      		{{ block.settings.background_image | img_url: '720x' }} 720w,
-      		{{ block.settings.background_image | img_url: '900x' }} 900w,
-            {{ block.settings.background_image | img_url: '1080x' }} 1080w,
-            {{ block.settings.background_image | img_url: '1296x' }} 1296w,
-            {{ block.settings.background_image | img_url: '1512x' }} 1512w,
-            {{ block.settings.background_image | img_url: '1728x' }} 1728w,
-            {{ block.settings.background_image | img_url: '1944x' }} 1944w"   
-     sizes="100vw"
-     alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
-     height="{{block.settings.background_image.height}}"
-     width="{{block.settings.background_image.width}}"
+      {{ block.settings.background_image | image_url: width: 600 | image_tag: preload: true }}
   >
    {% elsif block.settings.background_image %}
     <img class="hero-section-bg"
