@@ -571,7 +571,7 @@ function iOS() {
 
 //Lazy loading background images on thr front page
 
-  document.addEventListener("DOMContentLoaded", function () {
+
     const lazyBackgrounds = document.querySelectorAll(".bg-overlay-bg");
 
     if ("IntersectionObserver" in window) {
@@ -595,4 +595,3 @@ function iOS() {
       });
     }
   });
-});
