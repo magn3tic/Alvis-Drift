@@ -67,7 +67,6 @@ function iOS() {
   });
   
   
-  
   if(window.ontouchstart !== undefined && !iosDevice) {
       var clickedlinks = ''
       $('.dropdown-link').click(function(e) {
@@ -80,27 +79,6 @@ function iOS() {
           }
       })
   }
-  
-  
-  /*
-  $('.main_parent').hover(function(e) {
-      e.preventDefault();
-      var $this = $(this);
-      if ($this.children('.navbar-dropdown').hasClass('show')) {
-          $this.children('.navbar-dropdown').removeClass('show');
-          $this.children('.dropdown-link').removeClass('active')
-          $this.children('.navbar-dropdown').slideUp(800);
-      } else {
-          $('.dropdown-link').removeClass('active')
-          $('.dropdown-link').next().removeClass('show');
-          $('.dropdown-link').next().slideUp(800);
-  
-          $this.children('.dropdown-link').addClass('active')
-          $this.children('.navbar-dropdown').toggleClass('show');
-          $this.children('.navbar-dropdown').slideToggle(800);
-      }
-  });
-  */
   
   $('.mini-cart-btn').on('click', function(e) {
       e.preventDefault();
