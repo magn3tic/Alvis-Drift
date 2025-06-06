@@ -122,7 +122,7 @@ function iOS() {
     autoplay: true,
     autoplaySpeed: 4000
   });
-*/
+
   
   $('.product-slider').slick({
       dots: false,
@@ -155,7 +155,7 @@ function iOS() {
       }
     ]
   });
-  
+  */
   $('.product-list-3d').slick({	
       speed: 500,
       centerPadding: "0",
