@@ -125,8 +125,6 @@ function iOS() {
       $('.mini-cart-btn').removeClass('active')
   });
   
-  
- 
   $('.hero-section-slider').slick({	
     speed: 500,
     centerPadding: "0",
@@ -597,7 +595,7 @@ function iOS() {
   });
 
 //Lazy loading background images on thr front page
-
+});
   document.addEventListener("DOMContentLoaded", function () {
     const lazyBackgrounds = document.querySelectorAll(".bg-overlay-bg");
 
@@ -622,4 +620,3 @@ function iOS() {
       });
     }
   });
-});
