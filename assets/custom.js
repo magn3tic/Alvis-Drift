@@ -124,7 +124,7 @@ function iOS() {
       $('.cart-mini').removeClass('open');
       $('.mini-cart-btn').removeClass('active')
   });
-  
+  /*
   $('.hero-section-slider').slick({	
     speed: 500,
     centerPadding: "0",
@@ -195,7 +195,7 @@ function iOS() {
       }]
   });
   
-  
+  */
   $('.marquee-imgs').marquee({
       direction: 'left',
       duration: 8000,
