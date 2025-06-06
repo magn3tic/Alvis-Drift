@@ -7,16 +7,20 @@
 	</script>   
 {% for block in section.blocks %}
  <div class="hero-section">
-  {% if block.settings.background_image and block.settings.mobile_background_image %}
+  {% if block.settings.mobile_background_image %}
 <img class="hero-section-bg mobile-bg" 
-     src="{{ block.settings.mobile_background_image | img_url: 'master' }}"
-     srcset="{{ block.settings.mobile_background_image | img_url: '480x' }}480w,
+     
+      {{ block.settings.mobile_background_image | image_url: width: 600 | image_tag: preload: true }}
+     srcset="{{ block.settings.mobile_background_image | img_url: '6000x' }}6000w,
              {{ block.settings.mobile_background_image | img_url: '800x' }}800w"
      sizes="100vw"
      alt="{{ block.settings.mobile_background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.mobile_background_image.height}}"
      width="{{block.settings.mobile_background_image.width}}"
-     fetchpriority="high">   
+     fetchpriority="high"
+    loading="eager">   
+    {% endif %}
+  {% if block.settings.background_image %}
 <img class="hero-section-bg laptop-bg"
      src="{{ block.settings.background_image | img_url: 'master' }}"
      srcset="
@@ -31,7 +35,7 @@
      alt="{{ block.settings.background_image.alt | default: 'Hero image' | escape }}"
      height="{{block.settings.background_image.height}}"
      width="{{block.settings.background_image.width}}"
-     fetchpriority="high">
+  >
    {% elsif block.settings.background_image %}
     <img class="hero-section-bg"
      src="{{ block.settings.background_image | img_url: 'master' }}"
