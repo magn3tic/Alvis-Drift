@@ -126,7 +126,7 @@ function iOS() {
   });
   
   
-  
+ /* 
   $('.hero-section-slider').slick({	
     speed: 500,
     centerPadding: "0",
@@ -211,11 +211,11 @@ function iOS() {
       direction: 'left',
       duration: 22000,
       gap: 30,
-      delayBeforeStart: 0,/*
+      delayBeforeStart: 0,
       duplicated: true,
-      startVisible: true */
+      startVisible: true 
   });
-  
+  */
   
   $('.hero-video-btn-link').venobox()
   
