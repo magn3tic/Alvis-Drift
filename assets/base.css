@@ -2501,6 +2501,6 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
     justify-content: flex-end
 }
 
-.article-card__header h2, .article-template__content h2, .article-template__title, h3Specificity: (0,1,1) {
+.article-card__header h2, .article-template__content h2, .article-template__title {
     color: #000 !important;
 }
