@@ -10,11 +10,7 @@
   {% if block.settings.mobile_background_image %}
 <img class="hero-section-bg mobile-bg" 
       {{ block.settings.mobile_background_image | image_url: width: 600 | image_tag: preload: true }}
-     alt="{{ block.settings.mobile_background_image.alt | default: 'Hero image' | escape }}"
-     height="{{block.settings.mobile_background_image.height}}"
-     width="{{block.settings.mobile_background_image.width}}"
-     fetchpriority="high"
-    loading="eager">   
+     >   
     {% endif %}
   {% if block.settings.background_image %}
 <img class="hero-section-bg laptop-bg"
