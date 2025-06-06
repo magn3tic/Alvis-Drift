@@ -38,8 +38,7 @@ function iOS() {
           localStorage.setItem('accUrl', accUrl);
       });
   }
-  
-  
+   
   $('.top-left-navbar').click(function(){
       $('#sideNavbar').fadeIn('100').addClass('open');
   });
@@ -65,7 +64,6 @@ function iOS() {
           $this.next().slideToggle(800);
       }
   });
-  
   
   
   if(window.ontouchstart !== undefined && !iosDevice) {
