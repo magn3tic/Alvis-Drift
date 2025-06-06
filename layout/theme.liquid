@@ -219,10 +219,9 @@ body {
         display: none !important;
       }
     {% endstyle %}
-    {{ 'slick-theme.min.css' | asset_url | stylesheet_tag }}
 
     {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
-    
+    {{ 'slick-theme.min.css' | asset_url | stylesheet_tag }}
     {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'custom_css_updates.css' | asset_url | stylesheet_tag }}
     <script>
