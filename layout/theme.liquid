@@ -68,12 +68,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       assign body_font_italic = settings.type_body_font | font_modify: 'style', 'italic'
       assign body_font_bold_italic = body_font_bold | font_modify: 'style', 'italic'
     %}
-
-   
-    
     {% style %}
-
-       {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
       {{ settings.type_body_font | font_face: font_display: 'swap' }}:root {
         --font-body-family: {{ settings.type_body_font.family }}, 
         {{ settings.type_body_font.fallback_families }};
@@ -226,7 +221,7 @@ body {
     {% endstyle %}
     {{ 'slick-theme.min.css' | asset_url | stylesheet_tag }}
 
-    
+    {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
     
     {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'custom_css_updates.css' | asset_url | stylesheet_tag }}
