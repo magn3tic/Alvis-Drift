@@ -1,4 +1,4 @@
-
+document.addEventListener("DOMContentLoaded", function() {
 function iOS() {
     return [
       'iPad Simulator',
@@ -65,9 +65,6 @@ function iOS() {
           $this.next().slideToggle(800);
       }
   });
-  
-  
-  
   if(window.ontouchstart !== undefined && !iosDevice) {
       var clickedlinks = ''
       $('.dropdown-link').click(function(e) {
@@ -80,7 +77,6 @@ function iOS() {
           }
       })
   }
-
   $('.mini-cart-btn').on('click', function(e) {
       e.preventDefault();
       $('.cart-mini').toggleClass('open');
@@ -103,8 +99,6 @@ function iOS() {
       $('.cart-mini').removeClass('open');
       $('.mini-cart-btn').removeClass('active')
   });
-  
-  
   
  $('.hero-section-slider').slick({	
     speed: 500,
@@ -601,3 +595,4 @@ function iOS() {
       });
     }
   });
+});
