@@ -106,7 +106,7 @@ function iOS() {
   
   
   
- /* $('.hero-section-slider').slick({	
+ $('.hero-section-slider').slick({	
     speed: 500,
     centerPadding: "0",
     slidesToShow: 1,
@@ -194,7 +194,7 @@ function iOS() {
       duplicated: true,
       startVisible: true 
   });
-   */
+  
   
   $('.hero-video-btn-link').venobox()
   
