@@ -67,6 +67,7 @@ function iOS() {
   });
   
   
+  
   if(window.ontouchstart !== undefined && !iosDevice) {
       var clickedlinks = ''
       $('.dropdown-link').click(function(e) {
@@ -79,7 +80,7 @@ function iOS() {
           }
       })
   }
-  
+
   $('.mini-cart-btn').on('click', function(e) {
       e.preventDefault();
       $('.cart-mini').toggleClass('open');
@@ -105,7 +106,7 @@ function iOS() {
   
   
   
-  $('.hero-section-slider').slick({	
+ /* $('.hero-section-slider').slick({	
     speed: 500,
     centerPadding: "0",
     slidesToShow: 1,
@@ -121,7 +122,7 @@ function iOS() {
     autoplay: true,
     autoplaySpeed: 4000
   });
-  
+*/
   
   $('.product-slider').slick({
       dots: false,
