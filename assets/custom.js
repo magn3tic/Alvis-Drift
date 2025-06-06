@@ -155,7 +155,7 @@ function iOS() {
       }
     ]
   });
-  */
+  
   $('.product-list-3d').slick({	
       speed: 500,
       centerPadding: "0",
@@ -176,7 +176,7 @@ function iOS() {
       }]
   });
   
-  
+ 
   $('.marquee-imgs').marquee({
       direction: 'left',
       duration: 8000,
@@ -194,7 +194,7 @@ function iOS() {
       duplicated: true,
       startVisible: true */
   });
-  
+   */
   
   $('.hero-video-btn-link').venobox()
   
