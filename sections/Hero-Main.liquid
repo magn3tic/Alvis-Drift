@@ -9,7 +9,6 @@
  <div class="hero-section">
   {% if block.settings.mobile_background_image %}
 <img class="hero-section-bg mobile-bg" 
-     
       {{ block.settings.mobile_background_image | image_url: width: 600 | image_tag: preload: true }}
      srcset="{{ block.settings.mobile_background_image | img_url: '6000x' }}6000w,
              {{ block.settings.mobile_background_image | img_url: '800x' }}800w"
