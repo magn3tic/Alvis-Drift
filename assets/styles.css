@@ -448,7 +448,8 @@ summary.list-menu__item {
   object-fit: cover;
 }
 .mobile-bg{
-  max-height:548px !important
+  max-height:548px;
+  height:500px;
 }
 
 @media only screen and (max-width: 1200px) {
