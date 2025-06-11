@@ -277,9 +277,11 @@ body {
   <body class="template-{{ template | replace: '.', '-' | replace: '/', '-' }}">
 
     {% include 'agechecker' %}
+    {% comment %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
       {{ "accessibility.skip_to_text" | t }}
     </a>
+    {% endcomment %}
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <main
