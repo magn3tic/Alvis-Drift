@@ -16,7 +16,7 @@
   }
 }
 .article-template__hero-large {
-  height: 58rem;
+  height: 60rem;
   margin: 0 100px
 }
 @media screen and (max-width:900px){
