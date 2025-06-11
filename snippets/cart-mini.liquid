@@ -21,7 +21,7 @@
         <div class="cart-mini-item" data-qty="{{ item.quantity }}" data-price="{{ item.price }}">
           <div class="cart-item-img">
             <div class="cart-item-img-wrap">
-              <img src="{{ item.product.featured_image | img_url:'master' }}" alt="" >
+              <img src="{{ item.product.featured_image | img_url:'master' }}" loading = "lazy" >
             </div>
           </div>
           <div class="cart-item-dt">
