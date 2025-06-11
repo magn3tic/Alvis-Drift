@@ -9,7 +9,7 @@
  <div class="hero-section">
    <picture>
   {% if block.settings.mobile_background_image %}
-    <img src = "{{ block.settings.mobile_background_image | asset_url }}" width = "{{ block.settings.mobile_background_image.width }}" height = "{{ block.settings.mobile_background_image }}" class = "hero-section-bg mobile-bg">
+    <img src = "{{ block.settings.mobile_background_image | asset_img_url }}" width = "{{ block.settings.mobile_background_image.width }}" height = "{{ block.settings.mobile_background_image }}" class = "hero-section-bg mobile-bg">
 
     {% endif %}
   {% if block.settings.background_image %}
