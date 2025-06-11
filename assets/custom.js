@@ -592,7 +592,7 @@ function iOS() {
       $('details').removeAttr('open');
   });
 
-//Lazy loading background images on thr front page
+//Lazy loading background images on Call To Action Sections
 
     const lazyBackgrounds = document.querySelectorAll(".bg-overlay-bg");
 
