@@ -49,17 +49,9 @@
         "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_14.png",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "heading_color": "#ffffff",
-        "video_banner": "https://youtu.be/O0_NtorbyZ0",
-        "paragarh_p1": "WINE",
-        "paragarh_p2": "FACT",
-        "paragarh_p3": "SHEETS",
-        "paragarh_p4": "",
-        "paragarh_1": "GET TO KNOW OUR WINES",
-        "paragarh_2": "Learn more about our wines’ heritage, the winemaking process, the unique characteristics of each wine, and get useful food-and-wine pairing information.Download the printable fact sheet pdf for each wine to host your own Alvi’s Drift wine tasting.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-products",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "163972415394b57885": {
@@ -104,7 +96,7 @@
           "type": "faq",
           "settings": {
             "title": "SPARKLING & CAP CLASSIQUE RANGES",
-            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Sparkling-Range-Brut-Rose.pdf\" target=\"_blank\" title=\"Fact Sheet:  Sparkling Range Brut Rosé\">Brut Rosé</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Sparkling-Range-Brut-Blanc-De-Blanc.pdf?v=1738914636\" target=\"_blank\" title=\"Fact Sheet:  Sparkling Range Brut Blanc de Blanc\">Brut Blanc de Blanc</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Sparkling-Range-Brut-Cap-Classique-2021.pdf?v=1713100755\" target=\"_blank\" title=\"Fact Sheet:  Cap Classique Range Brut Cap Classique\">Brut Cap Classique</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Brut-Nature-Cap-Classique.pdf?v=1713100858\" target=\"_blank\" title=\"Fact Sheet:  Cap Classique Range Brut Nature Cap Classique\">Brut Nature Vintage Cap Classique</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Sparkling-Range-Brut-Thornlands-MCC.pdf?v=1713100836\" target=\"_blank\" title=\"Fact Sheet:  Sparkling & Cap Classique Range Thornlands MCC\">Thornlands MCC</a></p>"
+            "content": "<p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Sparkling-Range-Brut-Rose.pdf\" target=\"_blank\" title=\"Fact Sheet:  Sparkling Range Brut Rosé\">Brut Rosé</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Sparkling-Range-Brut-Blanc-De-Blanc.pdf?v=1738914636\" target=\"_blank\" title=\"Fact Sheet:  Sparkling Range Brut Blanc de Blanc\">Brut Blanc de Blanc</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Sparkling-Range-Brut-Cap-Classique-2021.pdf\" target=\"_blank\" title=\"Fact Sheet:  Cap Classique Range Brut Cap Classique\">Brut Cap Classique</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Brut-Nature-Cap-Classique.pdf?v=1713100858\" target=\"_blank\" title=\"Fact Sheet:  Cap Classique Range Brut Nature Cap Classique\">Brut Nature Vintage Cap Classique</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Sparkling-Range-Brut-Thornlands-MCC.pdf?v=1713100836\" target=\"_blank\" title=\"Fact Sheet:  Sparkling & Cap Classique Range Thornlands MCC\">Thornlands MCC</a></p>"
           }
         },
         "a91b23c4-fc7e-45c9-b2bd-e2ee12c5c5ac": {
