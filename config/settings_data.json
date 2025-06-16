@@ -308,6 +308,11 @@
           "remove_parameter": "powerx_rm_attr",
           "expire_after_hours": 5
         }
+      },
+      "14041968213898805026": {
+        "type": "shopify://apps/aov-free-gift-bxgy/blocks/app-embed-free-gift/de98edfe-90fa-4145-8a57-1055e0058723",
+        "disabled": false,
+        "settings": {}
       }
     }
   },
