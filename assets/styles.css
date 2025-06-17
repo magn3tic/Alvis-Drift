@@ -2070,7 +2070,7 @@ img.icon.icon-search {
 }
 
 .product-gallery {
-    max-width: 484px;
+ 
     display: flex;
     justify-content: space-between
 }
