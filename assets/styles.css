@@ -5237,7 +5237,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .gallery-imgs-wrap {
     margin-top: -20px;
-    width: 178px;
+    width: 100%;
     height: auto
 }
 
