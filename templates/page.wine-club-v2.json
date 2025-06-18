@@ -28,20 +28,19 @@
     },
     "wine_club_products_events_grid_cRYNQa": {
       "type": "wine-club-products-events-grid",
-      "disabled": true,
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_collection",
         "show_title": true,
-        "title": "24-Hour Chardonnay Flash Sale",
-        "sub-title": "Buy 1 Case & Get 15% Off the 2nd Case Of the Same Wine",
+        "title": "Title",
+        "sub-title": "Subtitle",
         "bronze_collection": "",
         "silver_collection": "",
         "gold_collection": "",
         "platinum_collection": "",
-        "collection_exclusive": "chardonnay-collection",
-        "show_counter": false,
-        "start_point": 0,
+        "collection_exclusive": "sauvignon-blanc-2024-sale",
+        "show_counter": true,
+        "start_point": 1000,
         "counter_text": "Stock Quantity"
       }
     },
