@@ -256,7 +256,7 @@
   
   {%- if discount_rate %}
    
-    {% if product.tags contains exclusion_tag %}
+    {% if item.tags contains exclusion_tag %}
       {% if compare_price and compare_price > original_price %}
         <span class="price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
       {% endif %}
