@@ -332,7 +332,7 @@ header-drawer{justify-self:start;margin-left:-1.2rem}@media screen and (min-widt
                 </span>
               </a>                    
             {% endif %}                        
-             <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
+             <a href="/cart" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
               {%- liquid
                 if cart == empty
                   render 'icon-cart-empty'
@@ -347,7 +347,7 @@ header-drawer{justify-self:start;margin-left:-1.2rem}@media screen and (min-widt
                   <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
                 </div>             
             </a>           
-            {% include 'cart-mini' %}                            
+                               
           </div>
         </div>
 
