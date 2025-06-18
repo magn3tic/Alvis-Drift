@@ -236,8 +236,8 @@
       {{ item.final_line_price | money | replace: ",", " " }}
     </dd>
   </dl>
-{%- else -%}{%- assign exclusion_tag = 'buy-2-get-1' -%}
-{%- assign exclusion_tag_2 = 'buy-4-get-2' -%}
+{%- else -%}{%- assign exclusion_tag = 'no-discount' -%}
+
 
 {%- if settings.member-discount == "enable" -%}
   {% assign compare_price = item.variant.compare_at_price %}
@@ -254,7 +254,7 @@
   
   {%- if discount_rate %}
    
-    {% if product.tags contains exclusion_tag or exclusion_tag_2%}
+    {% if product.tags contains exclusion_tag %}
       {% if compare_price and compare_price > original_price %}
         <span class="price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
       {% endif %}
