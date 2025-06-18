@@ -239,6 +239,28 @@
 {%- else -%}
 
 
+  {% assign compare_price = item.variant.compare_at_price %}
+  {% assign original_price = item.original_line_price %}
+ 
+      {% if compare_price and compare_price > original_price %}
+        <span class="price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
+      {% endif %}
+      <span class="price price--end no-discount">{{ original_price | money | replace: ",", " " }}</span>  
+    {% else %}
+      {% if compare_price %}
+        {% if compare_price > original_price %}
+          <span class="price price--end discounted-price"><s>{{ compare_price | money | replace: ",", " " }}</s></span>
+          <span class="price price--end">{{ original_price | money | replace: ",", " " }}</span>
+        {% else %}
+          <span class="price price--end no-discount">{{ original_price | money | replace: ",", " " }}</span>
+        {% endif %}
+      {% else %}
+        <span class="price price--end discounted-price">{{ original_price | money | replace: ",", " " }}</span>
+        
+      
+    {% endif %}
+  
+
 {%- if item.variant.available and item.unit_price_measurement -%}
   <div class="unit-price caption">
     <span class="visually-hidden">{{ 'products.product.price.unit_price' | t }}</span>
