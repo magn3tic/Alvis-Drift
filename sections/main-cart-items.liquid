@@ -291,7 +291,7 @@
     {% assign price = item.original_line_price %}
 
     
-    {% if product.tags contains exclusion_tag %}
+    {% if item.tags contains exclusion_tag %}
       <span class="price price--end">{{ price | money | replace: ",", " " }}</span>
       
     {% else %}
@@ -316,11 +316,8 @@
       {% endif %}
     {% endif %}
 
-  {% elseif product.tags contains exclusion_tag %}
-
-    <span class="price price--end tags-not-included">{{ item.original_line_price | money | replace: ",", " " }}</span>
-  {% else %}
-  
+ 
+    {% else %}
     <span class="price price--end tags-not-included">{{ item.original_line_price | money | replace: ",", " " }}</span>
   {% endif %}
   
