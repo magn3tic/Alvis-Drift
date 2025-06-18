@@ -315,8 +315,12 @@
         <span class="price price--end">{{ price | money | replace: ",", " " }}</span>
       {% endif %}
     {% endif %}
-    
+
+  {% elseif product.tags contains exclusion_tag %}
+
+    <span class="price price--end tags-not-included">{{ item.original_line_price | money | replace: ",", " " }}</span>
   {% else %}
+  
     <span class="price price--end tags-not-included">{{ item.original_line_price | money | replace: ",", " " }}</span>
   {% endif %}
   
