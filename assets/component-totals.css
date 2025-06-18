@@ -1,6 +1,7 @@
 .totals {
   display: flex;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .totals > * {
