@@ -18,8 +18,10 @@
     {% assign customer_tier = customer_tier_name | strip %}
 
     <div class="awc-hero--content-v2">
-      <h1 class="h1">{{ section.settings.title_connected }}</h1>
-      <p>{{ section.settings.subtitle_connected }}</p>
+      <div class="awc-hero-content-v2--text awc-hero-content-v2--text--connected">
+        <h1 class="h1">{{ section.settings.title_connected }}</h1>
+        <p>{{ section.settings.subtitle_connected }}</p>
+      </div>
       {% if section.settings.show_button_connected %}
         {% if section.settings.url_connected %}
           {% assign url_connected = section.settings.url_connected %}
@@ -42,8 +44,11 @@
   {% else %}
     {%- comment -%} User not logged {%- endcomment -%}
     <div class="awc-hero--content-v2">
-      <h1 class="h1">{{ section.settings.title_disconnected }}</h1>
-      <p>{{ section.settings.subtitle_disconnected }}</p>
+      <div class="awc-hero-content-v2--text awc-hero-content-v2--text--disconnected">
+        <h1 class="h1">{{ section.settings.title_disconnected }}</h1>
+        <p>{{ section.settings.subtitle_disconnected }}</p>
+      </div>
+
 
       {% if section.settings.show_button_disconnected %}
         {% if section.settings.url_disconnected %}
