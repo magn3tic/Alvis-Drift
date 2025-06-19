@@ -69,8 +69,8 @@
         "slider_eiynBD": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png",
-            "mobile_background_image": "shopify://shop_images/Alvis_drift_mobile_banner.png",
+            "background_image": "shopify://shop_images/Website_banner_Harvest_sale_92a46d90-d667-4fd0-85ac-a432d8f43c45.png",
+            "mobile_background_image": "shopify://shop_images/Website_banner_Harvest_sale-2.png",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
             "heading_color": "#ffffff",
