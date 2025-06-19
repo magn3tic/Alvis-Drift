@@ -34,7 +34,7 @@
       "custom_css": [
         "@media (min-width: 1023px) {.awc-collection-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 0fr)); }}",
         "p.sub-title {line-height: normal;}",
-        "@media(min-width:1400px){p.sub-title:{width: 50%; }}"
+        "@media (min-width: 1400px) {.awc-hero--content-v2 p{width: 50%; }}"
       ],
       "name": "Wine Club Products & Events Grid",
       "settings": {
