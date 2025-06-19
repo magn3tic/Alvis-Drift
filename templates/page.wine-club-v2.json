@@ -33,8 +33,7 @@
       "type": "wine-club-products-events-grid",
       "custom_css": [
         "@media (min-width: 1023px) {.awc-collection-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 0fr)); }}",
-        "p.sub-title {line-height: normal;}",
-        ".awc-hero--content-v2 h1 {margin: 40px 0 15px;}"
+        "p.sub-title {line-height: normal;}"
       ],
       "name": "Wine Club Products & Events Grid",
       "settings": {
