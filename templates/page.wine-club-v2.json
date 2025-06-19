@@ -12,14 +12,15 @@
     "wine_club_hero_v2_y96K78": {
       "type": "wine-club-hero-v2",
       "custom_css": [
+        ".awc-hero-content-v2--text {text-align: left;}",
         ".awc-hero--content-v2 {justify-items: start; margin-left: 100px;}",
         ".awc-hero--content-v2 h1,p {color: black;}",
         ".awc-bg-picture img {object-position: center;}",
-        "@media (min-width: 765px) {.awc-bg-picture img {opacity: 0.8; object-position: right; }}"
+        "@media (min-width: 765px) {.awc-bg-picture img {opacity: 0.9; object-position: botton right; }}"
       ],
       "name": "Wine Club Hero V2",
       "settings": {
-        "title_connected": "Alvi's Drift\nWine Club",
+        "title_connected": "Alvi's Drift <br>\nWine Club",
         "image_connected_desktop": "shopify://shop_images/Website_banner_Harvest_sale_92a46d90-d667-4fd0-85ac-a432d8f43c45.png",
         "image_connected_mobile": "shopify://shop_images/Website_banner_Harvest_sale-2.png",
         "show_button_connected": true,
