@@ -16,7 +16,7 @@
         ".awc-hero--content-v2 {justify-items: start; margin-left: 100px;}",
         ".awc-hero--content-v2 h1,p {color: black;}",
         ".awc-bg-picture img {object-position: center;}",
-        "@media (min-width: 765px) {.awc-bg-picture img {opacity: 0.9; object-position: botton right; }}"
+        "@media (min-width: 765px) {.awc-bg-picture img {opacity: 0.9; object-position: bottom right; }}"
       ],
       "name": "Wine Club Hero V2",
       "settings": {
