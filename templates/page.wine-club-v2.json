@@ -40,14 +40,15 @@
       "type": "wine-club-products-events-grid",
       "custom_css": [
         "@media (min-width: 1023px) {.awc-collection-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 0fr)); }}",
-        "p.sub-title {line-height: normal;}"
+        "p.sub-title {line-height: normal;}",
+        ".awc-hero--content-v2 h1 {margin: 40px 0 15px;}"
       ],
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_collection",
         "show_title": true,
         "title": "GET A FREE CASE OF SAUVIGNON BLANC",
-        "sub-title": "It's our biggest Signature Sauvignon Blanc sale ever, exclusive to <br> Wine Club members! Buy 2 Get 1 Free. Buy 4 Get 2 Free.",
+        "sub-title": "It's our biggest Signature Sauvignon Blanc sale ever, exclusive to  Wine Club members! Buy 2 Get 1 Free. Buy 4 Get 2 Free.",
         "bronze_collection": "",
         "silver_collection": "",
         "gold_collection": "",
