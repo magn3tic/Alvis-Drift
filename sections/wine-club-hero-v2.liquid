@@ -20,7 +20,7 @@
     <div class="awc-hero--content-v2">
       <div class="awc-hero-content-v2--text awc-hero-content-v2--text--connected">
         <h1 class="h1">{{ section.settings.title_connected }}</h1>
-        <p>{{ section.settings.subtitle_connected }}</p>
+        <p>{{ customer_tier }} Tier Members Portal</p>
       </div>
       {% if section.settings.show_button_connected %}
         {% if section.settings.url_connected %}
@@ -86,17 +86,12 @@
         "default": "Alvi's Drift Wine Club"
       },
       {
-        "type": "inline_richtext",
-        "id": "subtitle_connected",
-        "label": "Subtitle (Logged-in)",
-        "default": "{{ customer_tier }} Tier Members Portal"
-      },
-      {
         "type": "image_picker",
         "id": "image_connected_desktop",
         "label": "Desktop Image (Logged-in)",
         "info": "Recommended resolution 1920x1080 in .webp format"
-      }, {
+      },
+      {
         "type": "image_picker",
         "id": "image_connected_mobile",
         "label": "Mobile Image (Logged-in)",
