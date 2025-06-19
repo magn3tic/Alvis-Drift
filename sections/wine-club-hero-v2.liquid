@@ -18,8 +18,8 @@
     {% assign customer_tier = customer_tier_name | strip %}
 
     <div class="awc-hero--content-v2">
-      <h1 class="h1">Alvi's Drift Wine Club</h1>
-      <p>{{ customer_tier }} Tier Members Portal</p>
+      <h1 class="h1">{{ section.settings.title_connected }}</h1>
+      <p>{{ section.settings.subtitle_connected }}</p>
       {% if section.settings.show_button_connected %}
         {% if section.settings.url_connected %}
           {% assign url_connected = section.settings.url_connected %}
@@ -42,8 +42,8 @@
   {% else %}
     {%- comment -%} User not logged {%- endcomment -%}
     <div class="awc-hero--content-v2">
-      <h1 class="h1">Alvi's Drift Wine Club</h1>
-      <p>Not a member of the Wine Club yet?</p>
+      <h1 class="h1">{{ section.settings.title_disconnected }}</h1>
+      <p>{{ section.settings.subtitle_disconnected }}</p>
 
       {% if section.settings.show_button_disconnected %}
         {% if section.settings.url_disconnected %}
@@ -75,19 +75,28 @@
         "content": "🔐 Logged-in User Images"
       },
       {
+        "type": "text",
+        "id": "title_connected",
+        "label": "Title (Logged-in)",
+        "default": "Alvi's Drift Wine Club"
+      },
+      {
+        "type": "text",
+        "id": "subtitle_connected",
+        "label": "Subtitle (Logged-in)",
+        "default": "{{ customer_tier }} Tier Members Portal"
+      },
+      {
         "type": "image_picker",
         "id": "image_connected_desktop",
         "label": "Desktop Image (Logged-in)",
         "info": "Recommended resolution 1920x1080 in .webp format"
-      },
-      {
+      }, {
         "type": "image_picker",
         "id": "image_connected_mobile",
         "label": "Mobile Image (Logged-in)",
         "info": "Recommended resolution 1024x720 in .webp format"
-      },
-
-      {
+      }, {
         "type": "checkbox",
         "id": "show_button_connected",
         "label": "Show Button (Logged-in)"
@@ -104,6 +113,16 @@
       }, {
         "type": "header",
         "content": "🚫 Logged-out User Images"
+      }, {
+        "type": "text",
+        "id": "title_disconnected",
+        "label": "Title (Logged-out)",
+        "default": "Alvi's Drift Wine Club"
+      }, {
+        "type": "text",
+        "id": "subtitle_disconnected",
+        "label": "Subtitle (Logged-out)",
+        "default": "Not a member of the Wine Club yet?"
       }, {
         "type": "image_picker",
         "id": "image_disconnected_desktop",
