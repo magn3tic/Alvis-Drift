@@ -13,7 +13,7 @@
       "type": "wine-club-hero-v2",
       "custom_css": [
         ".awc-hero-content-v2--text {text-align: left;}",
-        ".awc-hero--content-v2 {justify-items: start; margin-left: 100px;}",
+        ".awc-hero--content-v2 {justify-items: start; padding-left: 100px;}",
         ".awc-hero--content-v2 h1,p {color: black;}",
         ".awc-bg-picture img {object-position: center;}",
         "@media (min-width: 765px) {.awc-bg-picture img {opacity: 0.9; object-position: bottom right; }}"
