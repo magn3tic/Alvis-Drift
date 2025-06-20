@@ -443,6 +443,9 @@ margin-right: 20px;
   font-weight: 600;
   font-size:18px;
 }
+.awc-blurb{
+  width:500px;
+}
 .awc-blurb p{
   color:#210E21;
 }
