@@ -127,7 +127,7 @@
                   <div class="product-price-per">
                
                 {% if product.metafields.my_fields.cost_per_item != blank %}
-                    R{{ price | divided_by: product.metafields.my_fields.cost_per_item | floor}} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
+                    R{{ price | divided_by: product.metafields.my_fields.cost_per_item | ceil }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
                   {% endif %}
                   </div>
 
