@@ -50,6 +50,17 @@
     {%- comment -%} User not logged {%- endcomment -%}
     <div class="awc-hero--content-v2">
       <div class="awc-hero-content-v2--text awc-hero-content-v2--text--disconnected">
+    
+         
+        <span class = "awc-subtitle">{{ section.settings.subtitle_disconnected }}</span>
+        <h1 class="h1">{{ section.settings.title_disconnected }}</h1>
+        {% if section.settings.blurb_connected != blank %}
+        <span>{{ section.settings.blurb_disconnected}}</span>
+        {% else %}
+        <p>{{ customer_tier }} Tier Members Portal</p>
+        {% endif %}
+      </div>
+        
         <h1 class="h1">{{ section.settings.title_disconnected }}</h1>
         <p>{{ section.settings.subtitle_disconnected }}</p>
       </div>
@@ -129,17 +140,25 @@
       }, {
         "type": "header",
         "content": "🚫 Logged-out User Images"
-      }, {
+      }, 
+      {
+        "type": "textarea",
+        "id": "subtitle_disconnected",
+        "label": "Title (Logged-out)",
+        "default": "Alvi's Drift Wine Club"
+      },     
+      {
         "type": "textarea",
         "id": "title_disconnected",
         "label": "Title (Logged-out)",
         "default": "Alvi's Drift Wine Club"
-      }, {
-        "type": "textarea",
-        "id": "subtitle_disconnected",
-        "label": "Subtitle (Logged-out)",
-        "default": "Not a member of the Wine Club yet?"
-      }, {
+      }, 
+      {
+        "type": "richtext",
+        "id": "blurb_disconnected",
+        "label":"Blurb(Logged-out)"
+      },
+      {
         "type": "image_picker",
         "id": "image_disconnected_desktop",
         "label": "Desktop Image (Logged-out)",
