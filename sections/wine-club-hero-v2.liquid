@@ -19,8 +19,9 @@
 
     <div class="awc-hero--content-v2">
       <div class="awc-hero-content-v2--text awc-hero-content-v2--text--connected">
+        <span class = "awc-subheader">{{ section.settings.subtitle_connected }}</span>
         <h1 class="h1">{{ section.settings.title_connected }}</h1>
-        {% if section.settings.subtitle_connected != blank %}
+        {% if section.settings.blurb_connected != blank %}
         <span class = "awc-subtitle">{{ section.settings.subtitle_connected }}</span>
         {% else %}
         <p>{{ customer_tier }} Tier Members Portal</p>
@@ -86,13 +87,19 @@
       {
         "type": "textarea",
         "id": "title_connected",
+        "label": "Sub-Title (Logged-in)",
+        "default": "Alvi's Drift Wine Club"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle_connected",
         "label": "Title (Logged-in)",
         "default": "Alvi's Drift Wine Club"
       },
       {
         "type": "richtext",
-        "id": "subtitle_connected",
-        "label":"Sub title (Logged-in)"
+        "id": "blurb_connected",
+        "label":"Blurb(Logged-in)"
       },
       {
         "type": "image_picker",
