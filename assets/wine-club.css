@@ -460,8 +460,6 @@ margin-right: 20px;
     }
     @media (min-width: 1023px) {
 
-      height: 700px;
-
       .awc-hero--content-v2 h1 {
         font-size: 5.5rem;
       }
