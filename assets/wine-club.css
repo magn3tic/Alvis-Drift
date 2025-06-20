@@ -468,6 +468,9 @@ margin-right: 20px;
       .awc-blurb p, .awc-header {
         color:#210E21 !important;
       }
+      .awc-header{
+        font-size:15px
+      }
     }
     @media (min-width: 1023px) {
 
