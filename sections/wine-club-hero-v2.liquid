@@ -6,6 +6,9 @@
       object-position: center;
       object-fit: cover;
     }
+    awc-subtitle{
+      width:50%;
+    }
     @media (max-width: 1023px) {
       .awc-hero--content-v2 h1 {
         width: 75%;
@@ -69,7 +72,7 @@
       <div class="awc-hero-content-v2--text awc-hero-content-v2--text--connected">
         <h1 class="h1">{{ section.settings.title_connected }}</h1>
         {% if section.settings.subtitle_connected != blank %}
-        <span>{{ section.settings.subtitle_connected }}</span>
+        <span class = "awc-subtitle">{{ section.settings.subtitle_connected }}</span>
         {% else %}
         <p>{{ customer_tier }} Tier Members Portal</p>
         {% endif %}
