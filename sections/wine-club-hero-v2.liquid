@@ -2,8 +2,6 @@
 
 <style>
   .awc-hero-v2 {
-
-
     .awc-bg-picture img {
       object-position: center;
       object-fit: cover;
@@ -70,6 +68,7 @@
     <div class="awc-hero--content-v2">
       <div class="awc-hero-content-v2--text awc-hero-content-v2--text--connected">
         <h1 class="h1">{{ section.settings.title_connected }}</h1>
+        <p></p>
         <p>{{ customer_tier }} Tier Members Portal</p>
       </div>
       {% if section.settings.show_button_connected %}
@@ -134,6 +133,11 @@
         "id": "title_connected",
         "label": "Title (Logged-in)",
         "default": "Alvi's Drift Wine Club"
+      },
+      {
+        "type": "richtext",
+        "id": "subtitle_connected",
+        "label":"Sub title (Logged-in)"
       },
       {
         "type": "image_picker",
