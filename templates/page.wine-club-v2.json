@@ -22,10 +22,10 @@
         "show_button_connected": true,
         "button_text_connected": "",
         "url_connected": "shopify://collections/best-sellers",
+        "subtitle_disconnected": "",
         "title_disconnected": "Alvi's Drift Wine Club",
-        "subtitle_disconnected": "Not a member of the Wine Club yet?",
+        "blurb_disconnected": "<p>Not a member of the Wine Club yet?</p>",
         "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Wine_club_sale_Hero.png",
-        "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Wine_club_Sale_Hero_Mobile.png",
         "show_button_disconnected": true,
         "button_text_disconnected": "Sign in to shop",
         "url_disconnected": "https://alvisdrift.co.za/account/login"
