@@ -465,6 +465,9 @@ margin-right: 20px;
       .awc-hero-content-v2--text{
         width:100% !important
       }
+      .awc-blurb p{
+        color:#210E21;
+      }
     }
     @media (min-width: 1023px) {
 
