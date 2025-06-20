@@ -34,7 +34,6 @@
       "champagne-sabrage-and-sabre-engraving",
       "sparkling-brut-cap-classique-gift-box",
       "sparkling-brut-nature-vintage-cap-classique-single-box",
-      "sparkling-brut-vintage-cap-classique-gift",
       "icon-mixed-gift-box",
       "icon-white-gift-box",
       "nectarinia-gift-box",
@@ -47,7 +46,9 @@
       "best-of-2024-mixed-box",
       "best-of-2024-white-box",
       "icon-pinot-noir-2021",
-      "icon-albertus-viljoen-3-pack"
+      "icon-albertus-viljoen-3-pack",
+      "signature-sauvignon-blanc-buy-2-get-1",
+      "signature-sauvignon-blanc-buy-4-get-2"
     ],
     "member-included-discount": "enable",
     "product_list_included": [],
@@ -308,11 +309,6 @@
           "remove_parameter": "powerx_rm_attr",
           "expire_after_hours": 5
         }
-      },
-      "14041968213898805026": {
-        "type": "shopify://apps/aov-free-gift-bxgy/blocks/app-embed-free-gift/de98edfe-90fa-4145-8a57-1055e0058723",
-        "disabled": false,
-        "settings": {}
       }
     }
   },
