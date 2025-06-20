@@ -438,6 +438,11 @@ margin-right: 20px;
     
   }
 }
+.awc-subtitle{
+  color:#e36653;
+  font-weight: 700;
+  font-size:18px;
+}
  .awc-hero-v2 {
     .awc-bg-picture img {
       object-position: center;
