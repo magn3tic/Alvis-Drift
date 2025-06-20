@@ -1,56 +1,7 @@
 {{ 'wine-club.css' | asset_url | stylesheet_tag }}
 
 <style>
-  .awc-hero-v2 {
-    .awc-bg-picture img {
-      object-position: center;
-      object-fit: cover;
-    }
-  
-    .awc-hero-content-v2--text{
-      width:50%;
-    }
-    @media (max-width: 1023px) {
-      .awc-hero--content-v2 h1 {
-        width: 75%;
-        margin: 0 auto !important;
-      }
-      .awc-hero--content-v2 {
-        height: 45%;
-        padding: 115px 0 0 55px;
-
-      }
-    }
-    @media (min-width: 1023px) {
-
-      height: 700px;
-
-      .awc-hero--content-v2 h1 {
-        font-size: 5.5rem;
-      }
-      .awc-hero-content-v2--text {
-        text-align: left;
-      }
-      .awc-bg-picture img {
-        opacity: 0.8;
-        object-position: bottom right;
-      }
-      .awc-hero--content-v2 {
-        justify-items: start;
-        padding-left: 5%;
-      }
-    }
-    @media (min-width: 1300px) {
-      .awc-hero--content-v2 {
-        padding-left: 15%;
-      }
-    }
-    @media (min-width: 1500px) {
-      .awc-hero--content-v2 {
-        padding-left: 20%;
-      }
-    }
-  }
+ 
 </style>
 <section class="awc-hero-v2">
   {% if customer %}
