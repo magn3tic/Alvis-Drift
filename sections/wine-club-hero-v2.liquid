@@ -68,8 +68,11 @@
     <div class="awc-hero--content-v2">
       <div class="awc-hero-content-v2--text awc-hero-content-v2--text--connected">
         <h1 class="h1">{{ section.settings.title_connected }}</h1>
-        <p></p>
+        {% if section.settings.subtitle_connected != blank %}
+        <span>{{ section.settings.subtitle_connected }}</span>
+        {% else %}
         <p>{{ customer_tier }} Tier Members Portal</p>
+        {% endif %}
       </div>
       {% if section.settings.show_button_connected %}
         {% if section.settings.url_connected %}
