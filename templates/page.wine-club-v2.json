@@ -41,7 +41,7 @@
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_collection",
-        "show_title": true,
+        "show_title": false,
         "title": "",
         "sub-title": "",
         "bronze_collection": "",
