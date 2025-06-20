@@ -20,7 +20,7 @@
         "image_connected_desktop": "shopify://shop_images/Alvis_Drift_Wine_club_sale_Hero.png",
         "image_connected_mobile": "shopify://shop_images/Alvis_Drift_Wine_club_Sale_Hero_Mobile.png",
         "show_button_connected": true,
-        "button_text_connected": "SHOP NOW",
+        "button_text_connected": "",
         "url_connected": "shopify://collections/best-sellers",
         "title_disconnected": "Alvi's Drift Wine Club",
         "subtitle_disconnected": "Not a member of the<br> Wine Club yet?",
