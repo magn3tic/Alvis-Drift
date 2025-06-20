@@ -443,6 +443,9 @@ margin-right: 20px;
   font-weight: 600;
   font-size:18px;
 }
+.awc-blurb p{
+  color:#210E21;
+}
  .awc-hero-v2 {
     .awc-bg-picture img {
       object-position: center;
@@ -465,7 +468,7 @@ margin-right: 20px;
       .awc-hero-content-v2--text{
         width:100% !important
       }
-      .awc-blurb p, .awc-header {
+       .awc-header {
         color:#210E21 !important;
       }
       .awc-header{
