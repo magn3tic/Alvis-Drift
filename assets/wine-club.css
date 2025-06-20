@@ -454,7 +454,7 @@ margin-right: 20px;
     }
     @media (max-width: 1023px) {
       .awc-hero--content-v2 h1 {
-        width: 75%;
+        width: 100%;
         margin: 0 auto !important;
       }
       .awc-hero--content-v2 {
