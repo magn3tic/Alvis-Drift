@@ -444,7 +444,7 @@ margin-right: 20px;
   font-size:18px;
 }
 .awc-blurb{
-  width:500px;
+  
 }
 .awc-blurb p{
   color:#210E21;
@@ -455,9 +455,12 @@ margin-right: 20px;
       object-fit: cover;
     }
   
-    .awc-hero-content-v2--text{
+    .awc-header{
       width:50%;
     }
+   awc-blurb{
+     width:40%
+   }
     @media (max-width: 1023px) {
       .awc-hero--content-v2 h1 {
         width: 100%;
