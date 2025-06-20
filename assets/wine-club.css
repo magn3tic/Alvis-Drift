@@ -455,13 +455,7 @@ margin-right: 20px;
       object-fit: cover;
     }
   
-    .awc-header{
-      width:55%;
-    }
-   .awc-blurb{
-     width:40%;
-     display:block
-   }
+    
     @media (max-width: 1023px) {
       .awc-hero--content-v2 h1 {
         width: 100%;
@@ -500,6 +494,13 @@ margin-right: 20px;
         justify-items: start;
         padding-left: 5%;
       }
+      .awc-header{
+      width:55%;
+    }
+   .awc-blurb{
+     width:40%;
+     display:block
+   }
     }
     @media (min-width: 1300px) {
       .awc-hero--content-v2 {
