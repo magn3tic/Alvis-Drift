@@ -28,7 +28,7 @@
         "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Wine_club_Sale_Hero_Mobile.png",
         "show_button_disconnected": true,
         "button_text_disconnected": "Sign in to shop",
-        "url_disconnected": ""
+        "url_disconnected": "https://alvisdrift.co.za/account/login"
       }
     },
     "wine_club_products_events_grid_cRYNQa": {
