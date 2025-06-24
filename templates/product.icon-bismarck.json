@@ -20,7 +20,6 @@
       "blocks": {
         "2aba390e-dc7a-47ec-be7d-ecd89d46ca1d": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Cultivars 2020",
             "content": "<p>41%  Shiraz<br/>21%  Cabernet Sauvignon<br/>15%  Pinotage<br/>9%  Grenache<br/>6%  Petit Verdot<br/>4%  Allicante Bouchet<br/>4%  Viognier</p>",
@@ -31,6 +30,7 @@
         },
         "01620f59-fe07-41a9-93cb-3c056a4852a2": {
           "type": "collapsible_tab",
+          "disabled": true,
           "settings": {
             "heading": "Cultivars 2019",
             "content": "<p>43%  Shiraz<br/>17%  Pinotage<br/>17%  Cabernet Sauvignon<br/>9%  Durif<br/>6%  Grenache<br/>4,5%  Petit Verdot<br/>2%  Allicante Bouchet<br/>1,5%  Viognier</p>",
@@ -160,7 +160,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#5c6e67",
-            "text": "<p><strong>2019:</strong>  13,7%</p>",
+            "text": "<p><strong>2020:</strong>  13,7%</p>",
             "Text_color": "#2e112d"
           }
         },
