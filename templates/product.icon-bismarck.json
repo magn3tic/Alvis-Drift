@@ -160,7 +160,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#5c6e67",
-            "text": "<p><strong>2020:</strong>  13,7%</p>",
+            "text": "<p><strong>2020:</strong>  13,4%</p>",
             "Text_color": "#2e112d"
           }
         },
@@ -169,7 +169,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#5c6e67",
-            "text": "<p><strong>2019:</strong>  4,6 g/L</p>",
+            "text": "<p><strong>2020:</strong>  4,6 g/L</p>",
             "Text_color": "#2e112d"
           }
         },
