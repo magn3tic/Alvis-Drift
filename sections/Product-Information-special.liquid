@@ -120,7 +120,7 @@
               <div class="product-price">{{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
               {% endif %}
               
-              <div class="product-size">{{ product.metafields.my_fields.cost_per_item }} x {{ product.metafields.my_fields.per_ml }} ml</div>
+              <!--<div class="product-size">{{ product.metafields.my_fields.cost_per_item }} x {{ product.metafields.my_fields.per_ml }} ml</div> -->
              
               {% assign price_v = product.selected_or_first_available_variant.price %}
               
