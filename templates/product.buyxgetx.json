@@ -17,6 +17,50 @@
     },
     "product_information_special_XGyzfV": {
       "type": "Product-Information-special",
+      "blocks": {
+        "collapsible_tab_KYLcEf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/signature-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Signature Sauvignon Blanc\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": true
+          }
+        },
+        "collapsible_tab_LwxB7q": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": true
+          }
+        },
+        "collapsible_tab_gNkRfi": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": true
+          }
+        },
+        "share_34JqFR": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share This Page"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_KYLcEf",
+        "collapsible_tab_LwxB7q",
+        "collapsible_tab_gNkRfi",
+        "share_34JqFR"
+      ],
       "name": "Product Info Special",
       "settings": {
         "enable_sticky_info": true,
