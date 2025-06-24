@@ -125,13 +125,16 @@
               {% assign price_v = product.selected_or_first_available_variant.price %}
               
               
-              
-               {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
+                {% if product.metafields.my_fields.cost_per_item %}
+                  {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
+                  
+               <div class="product-price-per"> R{{ assigned_price | divided_by:100 }} per Bottle <br/>  </div>
+        
+                {% endif %}
+    
               
                
-             
-               <div class="product-price-per"> R{{ assigned_price | divided_by:100 }} per Bottle <br/>  </div>
-          
+               
               
               <div class="product-btn-wrap">
 <!--                 <div class="input-num-wrap">
