@@ -33,7 +33,6 @@
     },
     "wine_club_products_events_grid_cRYNQa": {
       "type": "wine-club-products-events-grid",
-      "disabled": true,
       "custom_css": [
         "@media (min-width: 1023px) {.awc-collection-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 0fr)); }}",
         "p.sub-title {line-height: normal;}",
