@@ -114,6 +114,7 @@
         "40019cdd-7ca6-4996-9443-5d618d475355",
         "a9428cd9-b80c-40ea-88e5-2c83bc1e8990"
       ],
+      "disabled": true,
       "settings": {
         "enable_sticky_info": true,
         "hide_variants": false,
