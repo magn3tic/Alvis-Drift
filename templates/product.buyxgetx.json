@@ -15,6 +15,15 @@
         "page_bg": "#4A5B52"
       }
     },
+    "product_information_special_XGyzfV": {
+      "type": "Product-Information-special",
+      "name": "Product Info Special",
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
     "main": {
       "type": "product-information",
       "blocks": {
@@ -289,6 +298,7 @@
   },
   "order": [
     "1639248182bc55fb26",
+    "product_information_special_XGyzfV",
     "main",
     "1639223856bcb87c3a",
     "16392371564aec5ac1",
