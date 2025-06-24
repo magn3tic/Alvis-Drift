@@ -11,38 +11,45 @@
   "sections": {
     "wine_club_hero_v2_y96K78": {
       "type": "wine-club-hero-v2",
-      "custom_css": [
-        ".awc-bg-picture img {object-position: top;}"
-      ],
+      "custom_css": [],
       "name": "Wine Club Hero V2",
       "settings": {
-        "image_connected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
+        "subtitle_connected": "ALVI'S DRIFT WINE CLUB",
+        "title_connected": "GET A FREE CASE OF SAUVIGNON BLANC 2024",
+        "blurb_connected": "<p>It's our biggest Signature Sauvignon Blanc 2024 sale ever, exclusive to  Wine Club members!<br/><br/></p>",
+        "image_connected_desktop": "shopify://shop_images/Alvis_Drift_Wine_club_sale_Hero.png",
+        "image_connected_mobile": "shopify://shop_images/Alvis_Drift_Wine_club_sale_Mobile.png",
         "show_button_connected": true,
-        "button_text_connected": "SHOP NOW",
+        "button_text_connected": "",
         "url_connected": "shopify://collections/best-sellers",
-        "image_disconnected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
+        "subtitle_disconnected": "ALVI'S DRIFT WINE CLUB",
+        "title_disconnected": "GET A FREE CASE OF SAUVIGNON BLANC 2024",
+        "blurb_disconnected": "<p>It's our biggest Signature Sauvignon Blanc 2024 sale ever, exclusive to  Wine Club members!</p>",
+        "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Wine_club_sale_Hero.png",
         "show_button_disconnected": true,
-        "button_text_disconnected": "JOIN NOW",
-        "url_disconnected": ""
+        "button_text_disconnected": "Sign in to shop",
+        "url_disconnected": "https://alvisdrift.co.za/account/login"
       }
     },
     "wine_club_products_events_grid_cRYNQa": {
       "type": "wine-club-products-events-grid",
       "disabled": true,
       "custom_css": [
-        "@media (min-width: 1023px) {.awc-collection-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 0fr)); }}"
+        "@media (min-width: 1023px) {.awc-collection-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 0fr)); }}",
+        "p.sub-title {line-height: normal;}",
+        "@media (min-width: 1400px) {.awc-hero--content-v2 p {width: 50%; }}"
       ],
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_collection",
-        "show_title": true,
-        "title": "24-Hour Chardonnay Flash Sale",
-        "sub-title": "Buy 1 Case & Get 15% Off the 2nd Case Of the Same Wine",
+        "show_title": false,
+        "title": "",
+        "sub-title": "",
         "bronze_collection": "",
         "silver_collection": "",
         "gold_collection": "",
         "platinum_collection": "",
-        "collection_exclusive": "chardonnay-collection",
+        "collection_exclusive": "signature-sauvignon-blanc-promotion",
         "show_counter": false,
         "start_point": 0,
         "counter_text": "Stock Quantity"

@@ -18,8 +18,15 @@
     {% assign customer_tier = customer_tier_name | strip %}
 
     <div class="awc-hero--content-v2">
-      <h1 class="h1">{{ section.settings.title_connected }}</h1>
-      <p>{{ section.settings.subtitle_connected }}</p>
+      <div class="awc-hero-content-v2--text awc-hero-content-v2--text--connected">
+        <span class="awc-subtitle">{{ section.settings.subtitle_connected }}</span>
+        <h1 class="h1 awc-header">{{ section.settings.title_connected }}</h1>
+        {% if section.settings.blurb_connected != blank %}
+          <span class="awc-blurb">{{ section.settings.blurb_connected }}</span>
+        {% else %}
+          <p>{{ customer_tier }} Tier Members Portal</p>
+        {% endif %}
+      </div>
       {% if section.settings.show_button_connected %}
         {% if section.settings.url_connected %}
           {% assign url_connected = section.settings.url_connected %}
@@ -35,16 +42,24 @@
     <div class="awc-bg awc-bg-picture">
       <picture>
         <source media="(max-width: 1023px)" srcset="{{ section.settings.image_connected_mobile | image_url: width: 450 }}">
-        <img src="{{ section.settings.image_connected_desktop | image_url: width: 2000 }}" alt="Alvi's Drift Wine Club">
+        {{ section.settings.image_connected_desktop | image_url: width: master | image_tag: preload: true, class: "Alvi's Drift Wine Club" }}
       </picture>
     </div>
 
   {% else %}
     {%- comment -%} User not logged {%- endcomment -%}
     <div class="awc-hero--content-v2">
-      <h1 class="h1">{{ section.settings.title_disconnected }}</h1>
-      <p>{{ section.settings.subtitle_disconnected }}</p>
+      <div class="awc-hero-content-v2--text awc-hero-content-v2--text--disconnected">
 
+
+        <span class="awc-subtitle">{{ section.settings.subtitle_disconnected }}</span>
+        <h1 class="h1 awc-header">{{ section.settings.title_disconnected }}</h1>
+        {% if section.settings.blurb_connected != blank %}
+          <span class="awc-blurb">{{ section.settings.blurb_disconnected }}</span>
+        {% else %}
+          <p>{{ customer_tier }} Tier Members Portal</p>
+        {% endif %}
+      </div>
       {% if section.settings.show_button_disconnected %}
         {% if section.settings.url_disconnected %}
           {% assign url_disconnected = section.settings.url_disconnected %}
@@ -59,7 +74,7 @@
     <div class="awc-bg awc-bg-picture awc-bg-picture--disconnected">
       <picture>
         <source media="(max-width: 1023px)" srcset="{{ section.settings.image_disconnected_mobile | image_url: width: 450 }}">
-        <img src="{{ section.settings.image_disconnected_desktop | image_url: width: 2000 }}" alt="Alvi's Drift Wine Club">
+        {{ section.settings.image_disconnected_desktop | image_url: width: 2000 | image_tag: preload: true, class: "Alvi's Drift Wine Club" }}
       </picture>
     </div>
   {% endif %}
@@ -75,27 +90,31 @@
         "content": "🔐 Logged-in User Images"
       },
       {
-        "type": "text",
-        "id": "title_connected",
+        "type": "textarea",
+        "id": "subtitle_connected",
         "label": "Title (Logged-in)",
         "default": "Alvi's Drift Wine Club"
       },
       {
-        "type": "text",
-        "id": "subtitle_connected",
-        "label": "Subtitle (Logged-in)",
-        "default": "{{ customer_tier }} Tier Members Portal"
+        "type": "textarea",
+        "id": "title_connected",
+        "label": "Sub-Title (Logged-in)",
+        "default": "Alvi's Drift Wine Club"
       },
       {
+        "type": "richtext",
+        "id": "blurb_connected",
+        "label": "Blurb(Logged-in)"
+      }, {
         "type": "image_picker",
         "id": "image_connected_desktop",
         "label": "Desktop Image (Logged-in)",
-        "info": "Recommended resolution 1920x1080 in .webp format"
+        "info": "Recommended resolution 1920x720"
       }, {
         "type": "image_picker",
         "id": "image_connected_mobile",
         "label": "Mobile Image (Logged-in)",
-        "info": "Recommended resolution 1024x720 in .webp format"
+        "info": "Recommended resolution 1024x720"
       }, {
         "type": "checkbox",
         "id": "show_button_connected",
@@ -114,15 +133,19 @@
         "type": "header",
         "content": "🚫 Logged-out User Images"
       }, {
-        "type": "text",
+        "type": "textarea",
+        "id": "subtitle_disconnected",
+        "label": "Title (Logged-out)",
+        "default": "Alvi's Drift Wine Club"
+      }, {
+        "type": "textarea",
         "id": "title_disconnected",
         "label": "Title (Logged-out)",
         "default": "Alvi's Drift Wine Club"
       }, {
-        "type": "text",
-        "id": "subtitle_disconnected",
-        "label": "Subtitle (Logged-out)",
-        "default": "Not a member of the Wine Club yet?"
+        "type": "richtext",
+        "id": "blurb_disconnected",
+        "label": "Blurb(Logged-out)"
       }, {
         "type": "image_picker",
         "id": "image_disconnected_desktop",
