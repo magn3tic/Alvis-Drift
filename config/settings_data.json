@@ -48,7 +48,9 @@
       "icon-pinot-noir-2021",
       "icon-albertus-viljoen-3-pack",
       "signature-sauvignon-blanc-buy-2-get-1",
-      "signature-sauvignon-blanc-buy-4-get-2"
+      "signature-sauvignon-blanc-buy-4-get-2",
+      "reserve-drift-fusion",
+      "signature-cabernet-sauvignon"
     ],
     "member-included-discount": "enable",
     "product_list_included": [],
@@ -288,11 +290,6 @@
           "button_vertical_position": "lowest",
           "greeting_message": "Any questions? We'd love to help."
         }
-      },
-      "16178409538858199964": {
-        "type": "shopify://apps/powr-popup/blocks/app-embed/c42eddd7-7bc0-47cc-aa8a-df388049f012",
-        "disabled": true,
-        "settings": {}
       },
       "10605408327587305396": {
         "type": "shopify://apps/eg-auto-add-to-cart/blocks/app-embed/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
