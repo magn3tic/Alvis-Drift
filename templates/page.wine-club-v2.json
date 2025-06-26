@@ -54,7 +54,7 @@
         "show_exclusive_collection_bronze": true,
         "show_exclusive_collection_silver": true,
         "show_exclusive_collection_gold": true,
-        "show_exclusive_collection_platinum": false,
+        "show_exclusive_collection_platinum": true,
         "show_counter": false,
         "start_point": 0,
         "counter_text": "Stock Quantity"
