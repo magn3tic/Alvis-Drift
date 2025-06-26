@@ -42,11 +42,15 @@
       <div class="awc-hero--content-v2">
         {% if section.settings.show_title %}
           <h1 class="h1">{{section.settings.title}}</h1>
+          {% unless section.settings.no-subtitle %}
+            
+
           {% if section.settings.sub-title == blank  %}
           <p class="sub-title">FOR {{customer_tier}} CLUB MEMBERS</p>
             {% else %}
             <p class="sub-title">{{ section.settings.sub-title }}</p>
             {% endif %}
+          {% endunless %}
         {% endif %}
         {% if section.settings.show_counter %}
           {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
