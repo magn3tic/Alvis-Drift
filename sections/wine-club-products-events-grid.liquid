@@ -113,20 +113,10 @@
                   
                   {% if excluded_product_ids contains product.id %}
                     <div class="product-price" style="margin-bottom: 15px">
-  {% if product.metafields.custom.product_discount_20 == true %}
-    {% assign discounted_price = price | times: 0.85 | round %}
-    <span class="discounted-price-v2">
-      {{ discounted_price | money | remove: '.00' | replace: ',', ' ' }}
-    </span>
-    <span class="original-price" style="text-decoration: line-through; margin-left: 8px;">
-      {{ price | money | remove: '.00' | replace: ',', ' ' }}
-    </span>
-  {% else %}
-    <span class="discounted-price-v2">
-      {{ price | money | remove: '.00' | replace: ',', ' ' }}
-    </span>
-  {% endif %}
-</div>
+                      <span class="discounted-price-v2 2">
+                        {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                      </span>     
+                  </div>
                     {% else %}
                     <div class="product-price" style="margin-bottom: 15px">
                       <span class="compare-price">
