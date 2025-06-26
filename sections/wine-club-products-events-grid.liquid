@@ -1,5 +1,23 @@
 {% if customer %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
+  {% if section.settings.show == 'exclusive_wines' %}
+    {% if section.settings.show_exclusive_wines_bronze == false %}
+      {% assign show_section=false %}
+    {% endif %}
+    {% if section.settings.show_exclusive_wines_silver == false %}
+      {% assign show_section=false  %}
+    {% endif %}
+    {% if section.settings.show_exclusive_wines_gold == false %}
+      {% assign show_section=false %}
+    {% endif %}
+    {% if section.settings.show_exclusive_wines_gold == false %}
+      {% assign show_section=false %}
+    {% endif %}
+    {% if section.settings.show_exclusive_wines_platinum == false %}
+      {% assign show_section=false %}
+    {% endif %}
+  {% endif %}
+  {% if show_section == !false %}
 <section class="awc-products-events-grid container {%  if  section.settings.show == 'exclusive_events' %}  awc-events-grid {% endif %}">
     {% comment %} Check if the customer is logged in {% endcomment %}
     {% assign lowertags = customer.tags | downcase %}
@@ -254,6 +272,8 @@
      {% endif %}
 
 </section>
+  {% endif %}
+
 
 {% endif %}
 
@@ -312,21 +332,26 @@
         "type": "header",
         "content": "Exclusive wine Grid"
       },
+ 
       {
         "type": "collection",
         "id": "bronze_collection",
         "label": "Bronze Tier Collection"
       },
+ 
       {
         "type": "collection",
         "id": "silver_collection",
         "label": "Silver Tier Collection"
       },
+
       {
         "type": "collection",
         "id": "gold_collection",
         "label": "Gold Tier Collection"
-      }, {
+      },
+
+      {
         "type": "collection",
         "id": "platinum_collection",
         "label": "Platinum Tier Collection"
@@ -336,8 +361,32 @@
       },{
         "type": "collection",
         "id": "collection_exclusive",
-        "label": "Exclusive Collection",
-        "info": "This collection will be shown to all tiers"
+        "label": "Exclusive Collection"
+        
+      },
+           {
+        "type": "checkbox",
+        "id": "show_exclusive_wines_bronze",
+        "label": "Show Bronze Tier Wines",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_exclusive_wines_silver",
+        "label": "Show Silver Tier Wines",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_exclusive_wines_gold",
+        "label": "Show Gold Tier Wines",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "show_exclusive_wines_platinum",
+        "label": "Show Platinum Tier Wines",
+        "default": true
       },
       {
       "type": "header",
