@@ -26,6 +26,7 @@
         "title_disconnected": "GET A FREE CASE OR TWO OF SAUVIGNON BLANC 2024",
         "blurb_disconnected": "<p>It's our biggest Signature Sauvignon Blanc 2024 sale ever, exclusive to  Wine Club members!</p>",
         "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Wine_club_sale_Hero.png",
+        "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Wine_club_sale_Mobile.png",
         "show_button_disconnected": true,
         "button_text_disconnected": "Shop Wine Club Deals",
         "url_disconnected": "https://alvisdrift.co.za/account/login"
