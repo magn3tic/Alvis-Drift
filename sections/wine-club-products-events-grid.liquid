@@ -144,10 +144,12 @@
                           {{ price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
                       {% else %}
-                        <span class="product-price ">
+                        
+                           {% endif %}
+                      {% else %}
+                      <span class="product-price ">
                           {{ price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
-                           {% endif %}
                       {% endif %}
                    
                         
