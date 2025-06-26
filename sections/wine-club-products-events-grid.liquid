@@ -126,15 +126,14 @@
                   {% comment %} End of Pricing and Discounts Logic {% endcomment %}
 
                   
+                     
                   {% if excluded_product_ids contains product.id %}
-              
                     <div class="product-price" style="margin-bottom: 15px">
-                            {% if product.metafields.my_fields.promo_label != blank %}
-                      <div class="silver-tier-text"> 
-                      {{ product.metafields.my_fields.promo_label }}
-                      </div>
-                      
-                    {% endif %}
+                      {% if product.metafields.my_fields.promo_label != blank %}
+                        <div class="silver-tier-text">
+                          {{ product.metafields.my_fields.promo_label }}
+                        </div>
+                      {% endif %}
                       <span class="discounted-price-v2 2">
                         {{ price | money | remove: '.00' | replace: ',', ' ' }}
                       </span>     
