@@ -134,6 +134,9 @@
                           {{ product.metafields.my_fields.promo_label }}
                         </div>
                       {% endif %}
+                           <span class="compare-price">
+                        {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                      </span>
                       <span class="discounted-price-v2 ">
                         {{ price | money | remove: '.00' | replace: ',', ' ' }}
                       </span>     
