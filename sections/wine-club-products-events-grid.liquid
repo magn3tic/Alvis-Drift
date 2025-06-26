@@ -193,7 +193,7 @@
       <div class="awc-hero--content-v2">
         {% if section.settings.show_title %}
           <h1 class="h1">{{section.settings.title}}</h1>
-        {% if section.settings.no-subtitle == blank %}
+        {% if section.settings.no-subtitle == false %}
           {% if section.settings.sub-title == blank  %}
           <p class="sub-title">FOR {{customer_tier}} CLUB MEMBERS</p>
             {% else %}
