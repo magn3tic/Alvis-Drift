@@ -53,7 +53,7 @@
         "collection_exclusive": "signature-sauvignon-blanc-promotion",
         "show_exclusive_collection_bronze": true,
         "show_exclusive_collection_silver": true,
-        "show_exclusive_collection_gold": false,
+        "show_exclusive_collection_gold": true,
         "show_exclusive_collection_platinum": false,
         "show_counter": false,
         "start_point": 0,
