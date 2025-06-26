@@ -102,6 +102,9 @@
                   {% assign price = product.price %}
                   {% assign discounted_price = price %}
                   {% assign discount_applicable = false %}
+                  {% assign compare_price = product.compare_at_price %}
+
+                  {% comment %} Determine the discount based on the customer tier {% endcomment %}
                   
                   {% case customer_tier %}
                     {% when 'Silver' %}
@@ -126,11 +129,36 @@
                   {% comment %} End of Pricing and Discounts Logic {% endcomment %}
 
                   
+                     
                   {% if excluded_product_ids contains product.id %}
-                    <div class="product-price" style="margin-bottom: 15px">
-                      <span class="discounted-price-v2 2">
+                  <div class="product-price" style="margin-bottom: 15px;text-align: center;">
+
+                    {% assign promo = product.metafields.my_fields.promo_label %}
+
+                    {% if promo != blank %}
+                      <div class="silver-tier-text">
+                        {{ promo }}
+                      </div>
+
+                      {% if compare_price != 0 %}
+                        <span class="compare-price">
+                          {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
+                        </span>
+                        <span class="product-price">
+                          {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                        </span>
+                      {% else %}
+                        <span class="product-price">
+                          {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                        </span>
+                      {% endif %}
+
+                    {% else %}
+                      <span class="product-price">
                         {{ price | money | remove: '.00' | replace: ',', ' ' }}
-                      </span>     
+                      </span>
+                    {% endif %}
+
                   </div>
                     {% else %}
                     <div class="product-price" style="margin-bottom: 15px">
