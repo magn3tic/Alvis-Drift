@@ -18,7 +18,7 @@
       {% assign show_section=false %}
     {% endif %}
   {% endif %}
-  {% if show_section != false %}
+  {% if show_section == true %}
 <section class="awc-products-events-grid container {%  if  section.settings.show == 'exclusive_events' %}  awc-events-grid {% endif %}">
     {% comment %} Check if the customer is logged in {% endcomment %}
     {% assign lowertags = customer.tags | downcase %}
