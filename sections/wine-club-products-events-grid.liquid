@@ -141,6 +141,10 @@
                           {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
                       {% endif %}
+                      {%  else  %}
+                        <span class="product-price ">
+                        {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                      </span>     
                       {% endif %}
                    
                         
