@@ -1,5 +1,6 @@
 {% if customer %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
+  {% assign show_section = true %}
   {% if section.settings.show == 'exclusive_wines' %}
     {% if section.settings.show_exclusive_wines_bronze == false %}
       {% assign show_section=false %}
@@ -17,7 +18,7 @@
       {% assign show_section=false %}
     {% endif %}
   {% endif %}
-  {% if show_section == !false %}
+  {% if show_section != false %}
 <section class="awc-products-events-grid container {%  if  section.settings.show == 'exclusive_events' %}  awc-events-grid {% endif %}">
     {% comment %} Check if the customer is logged in {% endcomment %}
     {% assign lowertags = customer.tags | downcase %}
