@@ -136,10 +136,14 @@
                         <div class="silver-tier-text">
                           {{ product.metafields.my_fields.promo_label }}
                         </div>
+                           {% if compare_price != 0 %}
+                        <span class="compare-price">
+                          {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
+                        </span>
                       {% endif %}
-                           <span class="compare-price">
-                        {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
-                      </span>
+                      {% endif %}
+                   
+                        
                       <span class="discounted-price-v2 ">
                         {{ price | money | remove: '.00' | replace: ',', ' ' }}
                       </span>     
