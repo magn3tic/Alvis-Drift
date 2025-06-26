@@ -23,13 +23,12 @@
     {% assign customer_tier = customer_tier_name | strip %}
 
     {% comment %} Assign the collection based on the customer tier {% endcomment %}
-  {% assign show_section = true %} {# Inicializamos como verdadero #}
+  {% assign show_section = true %}
 
 {% assign selected_collection = '' %}
 {% if section.settings.show == 'exclusive_collection' %}
   {% assign selected_collection = section.settings.collection_exclusive %}
 
-  {# Verificamos los checkboxes por tier y deshabilitamos si es necesario #}
   {% if customer_tier == 'Bronze' and section.settings.show_exclusive_collection_bronze == false %}
     {% assign show_section = false %}
   {% elsif customer_tier == 'Silver' and section.settings.show_exclusive_collection_silver == false %}
