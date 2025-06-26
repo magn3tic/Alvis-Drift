@@ -1,24 +1,6 @@
 {% if customer %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
-  {% assign show_section = true %}
-  {% if section.settings.show == 'exclusive_collection' %}
-    {% if section.settings.show_exclusive_wines_bronze == false %}
-      {% assign show_section=false %}
-    {% endif %}
-    {% if section.settings.show_exclusive_wines_silver == false %}
-      {% assign show_section=false  %}
-    {% endif %}
-    {% if section.settings.show_exclusive_wines_gold == false %}
-      {% assign show_section=false %}
-    {% endif %}
-    {% if section.settings.show_exclusive_wines_gold == false %}
-      {% assign show_section=false %}
-    {% endif %}
-    {% if section.settings.show_exclusive_wines_platinum == false %}
-      {% assign show_section=false %}
-    {% endif %}
-  {% endif %}
-  {% if show_section == true %}
+
 <section class="awc-products-events-grid container {%  if  section.settings.show == 'exclusive_events' %}  awc-events-grid {% endif %}">
     {% comment %} Check if the customer is logged in {% endcomment %}
     {% assign lowertags = customer.tags | downcase %}
@@ -41,23 +23,38 @@
     {% assign customer_tier = customer_tier_name | strip %}
 
     {% comment %} Assign the collection based on the customer tier {% endcomment %}
-    {% assign selected_collection = '' %}
-     {% if section.settings.show == 'exclusive_collection' %}
-      {% assign selected_collection = section.settings.collection_exclusive %}
-     {% elsif section.settings.show == 'exclusive_wines' %}
-      {% if customer_tier == 'Gold' %}
-        {% assign selected_collection = section.settings.gold_collection %}
-      {% elsif customer_tier == 'Silver' %}
-        {% assign selected_collection = section.settings.silver_collection %}
-      {% elsif customer_tier == 'Bronze' %}
-        {% assign selected_collection = section.settings.bronze_collection %}
-      {% elsif customer_tier == 'Platinum' %}
-        {% assign selected_collection = section.settings.platinum_collection %}
-      {% endif %}
-    {% endif %}
+  {% assign show_section = true %} {# Inicializamos como verdadero #}
+
+{% assign selected_collection = '' %}
+{% if section.settings.show == 'exclusive_collection' %}
+  {% assign selected_collection = section.settings.collection_exclusive %}
+
+  {# Verificamos los checkboxes por tier y deshabilitamos si es necesario #}
+  {% if customer_tier == 'Bronze' and section.settings.show_exclusive_collection_bronze == false %}
+    {% assign show_section = false %}
+  {% elsif customer_tier == 'Silver' and section.settings.show_exclusive_collection_silver == false %}
+    {% assign show_section = false %}
+  {% elsif customer_tier == 'Gold' and section.settings.show_exclusive_collection_gold == false %}
+    {% assign show_section = false %}
+  {% elsif customer_tier == 'Platinum' and section.settings.show_exclusive_collection_platinum == false %}
+    {% assign show_section = false %}
+  {% endif %}
+{% elsif section.settings.show == 'exclusive_wines' %}
+  {% if customer_tier == 'Gold' %}
+    {% assign selected_collection = section.settings.gold_collection %}
+  {% elsif customer_tier == 'Silver' %}
+    {% assign selected_collection = section.settings.silver_collection %}
+  {% elsif customer_tier == 'Bronze' %}
+    {% assign selected_collection = section.settings.bronze_collection %}
+  {% elsif customer_tier == 'Platinum' %}
+    {% assign selected_collection = section.settings.platinum_collection %}
+  {% endif %}
+{% endif %}
 
 
-    {% if section.settings.show == 'exclusive_collection' or section.settings.show == 'exclusive_wines'  %}
+    {% if show_section != false %}
+
+     {% if section.settings.show == 'exclusive_collection' or section.settings.show == 'exclusive_wines'  %}
       <div class="awc-hero--content-v2">
         {% if section.settings.show_title %}
           <h1 class="h1">{{section.settings.title}}</h1>
@@ -271,10 +268,10 @@
         <div class="awc-events awc-collection-grid" id="awc-events-rendered"></div>
         
      {% endif %}
+ {% endif %}
 
 </section>
-  {% endif %}
-
+ 
 
 {% endif %}
 
@@ -367,25 +364,25 @@
       },
            {
         "type": "checkbox",
-        "id": "show_exclusive_wines_bronze",
+        "id": "show_exclusive_collection_bronze",
         "label": "Show Bronze Tier Wines",
         "default": true
       },
       {
         "type": "checkbox",
-        "id": "show_exclusive_wines_silver",
+        "id": "show_exclusive_collection_silver",
         "label": "Show Silver Tier Wines",
         "default": true
       },
       {
         "type": "checkbox",
-        "id": "show_exclusive_wines_gold",
+        "id": "show_exclusive_collection_gold",
         "label": "Show Gold Tier Wines",
         "default": true
       },
       {
         "type": "checkbox",
-        "id": "show_exclusive_wines_platinum",
+        "id": "show_exclusive_collection_platinum",
         "label": "Show Platinum Tier Wines",
         "default": true
       },
