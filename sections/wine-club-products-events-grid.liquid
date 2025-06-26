@@ -129,7 +129,7 @@
                   {% if excluded_product_ids contains product.id %}
               
                     <div class="product-price" style="margin-bottom: 15px">
-                            {% if product.metafields.my_fields.promo_label %}
+                            {% if product.metafields.my_fields.promo_label != blank %}
                       <div class="silver-tier-text"> 
                       {{ product.metafields.my_fields.promo_label }}
                       </div>
