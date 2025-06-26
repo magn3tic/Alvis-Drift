@@ -102,6 +102,9 @@
                   {% assign price = product.price %}
                   {% assign discounted_price = price %}
                   {% assign discount_applicable = false %}
+                  {% assign compare_price = product.compare_at_price %}
+
+                  {% comment %} Determine the discount based on the customer tier {% endcomment %}
                   
                   {% case customer_tier %}
                     {% when 'Silver' %}
@@ -135,7 +138,7 @@
                         </div>
                       {% endif %}
                            <span class="compare-price">
-                        {{ price | money | remove: '.00' | replace: ',', ' ' }}
+                        {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
                       </span>
                       <span class="discounted-price-v2 ">
                         {{ price | money | remove: '.00' | replace: ',', ' ' }}
