@@ -120,25 +120,18 @@
               <div class="product-price">{{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
               {% endif %}
               
-              <div class="product-size">
-                 {% if product.metafields.my_fields.cost_per_item %}
-                   {{ product.metafields.my_fields.cost_per_item }} x {{ product.metafields.my_fields.per_ml }} ml
-                {% endif %}
-            </div>
+              <!--<div class="product-size">{{ product.metafields.my_fields.cost_per_item }} x {{ product.metafields.my_fields.per_ml }} ml</div> -->
              
               {% assign price_v = product.selected_or_first_available_variant.price %}
               
               
-                {% if product.metafields.my_fields.cost_per_item %}
-                  {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
-                  
-               <div class="product-price-per"> R{{ assigned_price | divided_by:100 }} per Bottle <br/>  </div>
-        
-                {% endif %}
-    
+              
+               {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
               
                
-               
+             
+               <div class="product-price-per"> R{{ assigned_price | divided_by:100 }} per Case <br/>  </div>
+          
               
               <div class="product-btn-wrap">
 <!--                 <div class="input-num-wrap">
@@ -1060,7 +1053,7 @@
 
 {% schema %}
 {
-  "name": "Product Information",
+  "name": "Product Info Special",
   "tag": "section",
   "class": "product-section spaced-section",
   "blocks": [
@@ -1286,7 +1279,12 @@
       "default": false,
       "label": "Enable Video Looping"
     }
-  ]
+  ],"presets": [
+      {
+        "name": "Product Info Special"
+        
+      }
+    ]
 }
 {% endschema %}
 <style>

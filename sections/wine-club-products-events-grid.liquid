@@ -42,11 +42,15 @@
       <div class="awc-hero--content-v2">
         {% if section.settings.show_title %}
           <h1 class="h1">{{section.settings.title}}</h1>
+          {% unless section.settings.no-subtitle %}
+            
+
           {% if section.settings.sub-title == blank  %}
           <p class="sub-title">FOR {{customer_tier}} CLUB MEMBERS</p>
             {% else %}
             <p class="sub-title">{{ section.settings.sub-title }}</p>
             {% endif %}
+          {% endunless %}
         {% endif %}
         {% if section.settings.show_counter %}
           {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
@@ -109,7 +113,7 @@
                   
                   {% if excluded_product_ids contains product.id %}
                     <div class="product-price" style="margin-bottom: 15px">
-                      <span class="discounted-price-v2">
+                      <span class="discounted-price-v2 2">
                         {{ price | money | remove: '.00' | replace: ',', ' ' }}
                       </span>     
                   </div>
@@ -125,8 +129,9 @@
                     {% endif %}
                   
                   <div class="product-price-per">
+               {% assign price_perUnit = price | divided_by: product.metafields.my_fields.cost_per_item | round: 2  %}
                 {% if product.metafields.my_fields.cost_per_item != blank %}
-                    R{{ assigned_price | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
+                    R{{ price_perUnit | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
                   {% endif %}
                   </div>
 
@@ -191,13 +196,17 @@
     {%  if  section.settings.show == 'exclusive_events' %}  
       <div class="awc-hero--content-v2">
         {% if section.settings.show_title %}
-          <h1 class="h1">{{section.settings.title}}</h1>
+          <h1 class="h1">{{section.settings.title}}</h1> 
+          {% endif %}
+        {% unless section.settings.no-subtitle %}
           {% if section.settings.sub-title == blank  %}
           <p class="sub-title">FOR {{customer_tier}} CLUB MEMBERS</p>
             {% else %}
             <p class="sub-title">{{ section.settings.sub-title }}</p>
             {% endif %}
-        {% endif %}
+        {% endunless %}
+         
+          
                {% if section.settings.show_counter %}
           {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
         {% endif %}
@@ -292,8 +301,13 @@
   {
     "type": "text",
     "id": "sub-title",
-    "label": "Sub Title"
+    "label": "SubTitle"
   },
+      {
+  "id": "no-subtitle",
+  "type": "checkbox",
+  "label": "Hide subtitle"
+},
       {
         "type": "header",
         "content": "Exclusive wine Grid"
