@@ -104,12 +104,14 @@
             {% if excluded_product_ids contains product.id %}
               {% if product.compare_at_price > product.price  %}
                   <div class="product-price">
+                    
                  <span class = "compare-price-exclude-discount compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
+                  <span class="product-price excluded-disount">
+                  {{ product.price | money | remove: '.00' | replace: ",", " " }}
+              </span>
                 </div>
                  
-                <div class="product-price excluded-disount">
-                  {{ product.price | money | remove: '.00' | replace: ",", " " }}
-              </div>
+               
               {% assign promo = product.metafields.my_fields.promo_label %}
 
                     {% if promo != blank %}
