@@ -542,6 +542,9 @@ summary.list-menu__item {
     font-size:60px !important;
     line-height:6rem !important
   }
+  .hero-section{
+    height:95vh;
+  }
 }
 
 @media screen and (max-width: 900px) {
