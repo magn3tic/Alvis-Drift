@@ -538,6 +538,9 @@ summary.list-menu__item {
     .hero-txt {
         left:355px
     }
+  .animate-reveal{
+    font-size:62px !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
