@@ -25,6 +25,24 @@
     "1639717679a92fb59c": {
       "type": "Hero-Main",
       "blocks": {
+        "slider_W8MHdn": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "",
+            "paragarh_p2": "",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "",
+            "paragarh_2": "",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        },
         "slider_MQBTbV": {
           "type": "slider",
           "disabled": true,
@@ -81,8 +99,8 @@
             "paragarh_p4": "",
             "paragarh_1": "",
             "paragarh_2": "",
-            "side_btn_text": "SHOP NOW",
-            "side_btn_link": "shopify://collections/icon-range"
+            "side_btn_text": "LEARN MORE",
+            "side_btn_link": "shopify://pages/icon-albertus-viljoen"
           }
         },
         "slider_6hLWbw": {
@@ -486,6 +504,7 @@
         }
       },
       "block_order": [
+        "slider_W8MHdn",
         "slider_MQBTbV",
         "slider_DGjHhf",
         "slider_eiynBD",
@@ -516,7 +535,7 @@
         "image_overlay": "#ffffff",
         "overlay_opacity": 0,
         "blurb": "<p>It’s where you come from, but also where you’re going. Because the choices you make today shape the legacy you leave tomorrow.</p><p><strong>Albertus Viljoen </strong>| Pursuit of Excellence<br/><br/></p>",
-        "right_btn_text": "LEARN MORE",
+        "right_btn_text": "",
         "right_btn_link": "shopify://pages/icon-albertus-viljoen"
       }
     },
