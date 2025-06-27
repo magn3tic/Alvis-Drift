@@ -140,6 +140,18 @@
                         {{ promo }}
                       </div>
 
+                    {% assign has_discount_20 = product.metafields.custom.product_discount_20 %}
+                    {% assign discounted_price_20 = product.price | times: 0.8 | round %}
+
+                    {% if has_discount_20 == true %}
+                      <span class="compare-price">
+                          {{ product.price| money | remove: '.00' | replace: ',', ' ' }}
+                        </span>
+                        <span class="product-price 20_discount">
+                          {{ discounted_price_20 | money | remove: '.00' | replace: ',', ' ' }}
+                        </span>
+                      {% else %}
+                      
                       {% if compare_price != 0 %}
                         <span class="compare-price">
                           {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
@@ -152,6 +164,10 @@
                           {{ price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
                       {% endif %}
+                      
+                      {% endif %}
+                    
+                      
 
                     {% else %}
                       <span class="product-price">
