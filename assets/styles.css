@@ -534,7 +534,7 @@ summary.list-menu__item {
     display: flex
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1150px) {
     .hero-txt {
         left:355px
     }
