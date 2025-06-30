@@ -143,7 +143,7 @@
                     {% assign has_discount_20 = product.metafields.custom.product_discount_20 %}
                     {% assign discounted_price_20 = product.price | times: 0.8 | round %}
                       {% assign has_discount_15 = product.metafields.custom.product_discount_15 %}
-                    {% assign discounted_price_15 = product.price | times: 0.75 | round %}
+                    {% assign discounted_price_15 = product.price | times: 0.85 | round %}
 
                     {% if has_discount_20 == true %}
                       <span class="compare-price">
