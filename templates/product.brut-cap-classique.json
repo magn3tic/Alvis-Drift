@@ -112,7 +112,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#f8f2e6",
-            "text": "<p>11,6%</p>",
+            "text": "<p><strong>2021:  </strong>11,6%</p>",
             "Text_color": "#c65336"
           }
         },
@@ -121,7 +121,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#f8f2e6",
-            "text": "<p>9,1 g/L</p>",
+            "text": "<p><strong>2021:  </strong>9,1 g/L</p>",
             "Text_color": "#c65336"
           }
         },
@@ -130,7 +130,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#f8f2e6",
-            "text": "<p>6,9 g/L</p>",
+            "text": "<p><strong>2021:  </strong>6,9 g/L</p>",
             "Text_color": "#c65336"
           }
         },
@@ -139,7 +139,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#f8f2e6",
-            "text": "<p>3,1</p>",
+            "text": "<p><strong>2021:  </strong>3,1</p>",
             "Text_color": "#c65336"
           }
         }
