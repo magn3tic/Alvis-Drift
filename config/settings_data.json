@@ -68,6 +68,7 @@
         "blocks": {
           "announcement_7TbFxm": {
             "type": "announcement",
+            "disabled": true,
             "settings": {
               "text": "Nominate your icon in our Albertus Viljoen Icon Of the Year Competition today!",
               "color_scheme": "background-1",
