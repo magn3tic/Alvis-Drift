@@ -243,7 +243,7 @@
                 {% endif %}
               {% endcomment %}
               {% if product.metafields.my_fields.cost_per_item != blank %}
-              <div class="product-price-per"> R{{ product.price | divided_by:100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/> </div>
+              <div class="product-price-per"> R{{ product.price | divided_by:product.metafields.my_fields.cost_per_item }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/> </div>
                 {% else %}
                 <div class = "blank-space">.</div>
                 {% endif %}
