@@ -446,6 +446,7 @@ summary.list-menu__item {
   bottom: 0;
   left: 0;
   object-fit: cover;
+  background-color:#2e112d;
 }
 .mobile-bg{
   max-height:548px;
