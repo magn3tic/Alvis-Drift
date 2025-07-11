@@ -37,8 +37,8 @@
       "type": "wine-club-hero-v2",
       "name": "Wine Club Hero V2",
       "settings": {
-        "subtitle_connected": "Alvi's Drift Wine Club",
-        "title_connected": "",
+        "subtitle_connected": "",
+        "title_connected": "Alvi's Drift Wine Club",
         "blurb_connected": "",
         "image_connected_desktop": "shopify://shop_images/wineclub-image1.png",
         "image_connected_mobile": "shopify://shop_images/wineclub-image1.png",
@@ -56,6 +56,7 @@
     },
     "wine_club_products_events_grid_cRYNQa": {
       "type": "wine-club-products-events-grid",
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 1023px) {.awc-collection-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 0fr)); }}",
         "p.sub-title {line-height: normal;}",
@@ -90,7 +91,7 @@
         "show_title": true,
         "title": "Exclusive Products",
         "sub-title": "",
-        "no-subtitle": true,
+        "no-subtitle": false,
         "bronze_collection": "club-bronze",
         "silver_collection": "club-silver",
         "gold_collection": "club-silver",
