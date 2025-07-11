@@ -287,6 +287,7 @@
         },
         "platinum_benefit_wLncN9": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Annual Competition: Win a private overnight stay for two at Alvi's Drift. The prize includes dinner, wine tastings, a cellar tour, and a game drive. The prize does not include travel expenses to and from Alvi’s Drift."
           }
