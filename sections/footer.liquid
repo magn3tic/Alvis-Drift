@@ -3,9 +3,7 @@
 <footer class="footer color-{{ section.settings.color_scheme }} gradient">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
   <div class="footer__content-top">
-    <div class = "top-footer-section-text">
-      <h3>{{ section.settings.top_footer_title }}</h3>
-    </div>
+    
     <div class="container">
       <div class="footer-top-content">
         <div class="f-logo-sc">
@@ -168,6 +166,9 @@
           {%- endif -%}
         </div></div></div></div>
   {%- endif -%}
+  <div class = "top-footer-section-text">
+      <h3>{{ section.settings.top_footer_title }}</h3>
+    </div>
   <div class="footer__content-bottom">
     <div class="container">    	
         <div class="footer-bottom-content footer-desktop">
