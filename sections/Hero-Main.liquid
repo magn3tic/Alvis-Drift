@@ -10,7 +10,7 @@
    <picture>
   {% if block.settings.mobile_background_image %}
     
-{{ block.settings.mobile_background_image | image_url: width: 600 | image_tag: preload: true, class: 'hero-section-bg mobile-bg' }} 
+{{ block.settings.mobile_background_image | image_url: width: 500 | image_tag: preload: true, class: 'hero-section-bg mobile-bg' }} 
     {% endif %}
   {% if block.settings.background_image %}
 {{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg laptop-bg" }}
@@ -34,9 +34,9 @@
         <h2>
           <span>
             {% if block.settings.paragarh_p1 %}<p class="animate-reveal">{{ block.settings.paragarh_p1 }}</p> {% endif %}
-            {% if block.settings.paragarh_p2 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p>{% endif %}
-            {% if block.settings.paragarh_p3 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>{% endif %}
-            {% if block.settings.paragarh_p4 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p>{% endif %}
+            {% if block.settings.paragarh_p2 %}<p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p>{% endif %}
+            {% if block.settings.paragarh_p3 %}<p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>{% endif %}
+            {% if block.settings.paragarh_p4 %}<p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p>{% endif %}
           </span> 
         </h2> 
       </div>
