@@ -50,15 +50,13 @@
   {% endif %}
 {% endif %}
 
-
     {% if show_section != false %}
 
      {% if section.settings.show == 'exclusive_collection' or section.settings.show == 'exclusive_wines'  %}
-      <div class="awc-hero--content-v2">
+      <div class="awc-hero--content">
         {% if section.settings.show_title %}
           <h1 class="h1">{{section.settings.title}}</h1>
-          {% unless section.settings.no-subtitle %}
-            
+          {% unless section.settings.no-subtitle %}     
 
           {% if section.settings.sub-title == blank  %}
           <p class="sub-title">FOR {{customer_tier}} CLUB MEMBERS</p>
@@ -70,7 +68,6 @@
         {% if section.settings.show_counter %}
           {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
         {% endif %}
-        
       </div>
 
       {% assign collection_object = collections[selected_collection] %}
@@ -95,10 +92,8 @@
                       <a href="{{ product.url }}">{{ product.title }}</a>
                     </div>
                   </div>
-
                   {% comment %} Pricing and Discounts Logic {% endcomment %}
                  
-
                   {% assign price = product.price %}
                   {% assign discounted_price = price %}
                   {% assign discount_applicable = false %}
@@ -127,8 +122,6 @@
                   
                   {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
                   {% comment %} End of Pricing and Discounts Logic {% endcomment %}
-
-                  
                      
                   {% if excluded_product_ids contains product.id %}
                   <div class="product-price" style="margin-bottom: 15px;text-align: center;">
@@ -136,7 +129,7 @@
                     {% assign promo = product.metafields.my_fields.promo_label %}
 
                     {% if promo != blank %}
-                      <div class="silver-tier-text">
+                      <div class="promo-label">
                         {{ promo }}
                       </div>
 
@@ -261,7 +254,7 @@
       {% endif %}
     {% endif %}
     {%  if  section.settings.show == 'exclusive_events' %}  
-      <div class="awc-hero--content-v2">
+      <div class="awc-hero--content">
         {% if section.settings.show_title %}
           <h1 class="h1">{{section.settings.title}}</h1> 
           {% endif %}
@@ -273,8 +266,7 @@
             {% endif %}
         {% endunless %}
          
-          
-               {% if section.settings.show_counter %}
+        {% if section.settings.show_counter %}
           {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
         {% endif %}
        </div>
@@ -322,10 +314,8 @@
  {% endif %}
 
 </section>
- 
 
 {% endif %}
-
 
 {% schema %}
   {
