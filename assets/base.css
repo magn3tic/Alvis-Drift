@@ -749,7 +749,7 @@ h2 ._textHeading_1ll8d_33 {
 .the_blurb{
     animation: reveal 3s ease 1 normal forwards;
     animation-delay: .10s;
-    max-width:650px
+    max-width:400px
 }
 @media screen and (max-width: 900px) {
   .the_blurb{
