@@ -9,6 +9,28 @@
  */
 {
   "sections": {
+    "wine_club_hero_v2_DGCEGY": {
+      "type": "wine-club-hero-v2",
+      "name": "Wine Club Hero V2",
+      "settings": {
+        "subtitle_connected": "Alvi's Drift Wine Club",
+        "title_connected": "The Winter <br>\nWarmer Sale",
+        "blurb_connected": "<p><strong>From 25 July to 10 August</strong></p><p>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.<br/><br/></p>",
+        "image_connected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
+        "image_connected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Mobile_Banner.png",
+        "show_button_connected": false,
+        "button_text_connected": "SHOP NOW",
+        "url_connected": "",
+        "subtitle_disconnected": "Alvi's Drift Wine Club",
+        "title_disconnected": "The Winter <br>\nWarmer Sale",
+        "blurb_disconnected": "<p><strong>From 25 July to 10 August</strong></p><p>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.</p>",
+        "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
+        "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Mobile_Banner.png",
+        "show_button_disconnected": false,
+        "button_text_disconnected": "JOIN NOW",
+        "url_disconnected": ""
+      }
+    },
     "wine_club_hero_v2_y96K78": {
       "type": "wine-club-hero-v2",
       "disabled": true,
@@ -35,6 +57,7 @@
     },
     "wine_club_hero_v2_HVqDTq": {
       "type": "wine-club-hero-v2",
+      "disabled": true,
       "name": "Wine Club Hero V2",
       "settings": {
         "subtitle_connected": "",
@@ -90,13 +113,13 @@
       "settings": {
         "show": "exclusive_wines",
         "show_title": true,
-        "title": "Exclusive Products",
-        "sub-title": "",
+        "title": "Mixed case special",
+        "sub-title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "no-subtitle": false,
         "bronze_collection": "club-bronze",
         "silver_collection": "club-silver",
-        "gold_collection": "club-silver",
-        "platinum_collection": "wine-club-platinum",
+        "gold_collection": "winter-warmer-specials",
+        "platinum_collection": "winter-warmer-specials",
         "collection_exclusive": "all-products",
         "show_exclusive_collection_bronze": true,
         "show_exclusive_collection_silver": true,
@@ -105,6 +128,52 @@
         "show_counter": false,
         "start_point": 200,
         "counter_text": "Live stock"
+      }
+    },
+    "wine_club_products_events_grid_mR33Ha": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_wines",
+        "show_title": true,
+        "title": "Hero wines",
+        "sub-title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
+        "no-subtitle": false,
+        "bronze_collection": "winter-warmer-individual-wines",
+        "silver_collection": "winter-warmer-individual-wines",
+        "gold_collection": "winter-warmer-individual-wines",
+        "platinum_collection": "winter-warmer-individual-wines",
+        "collection_exclusive": "",
+        "show_exclusive_collection_bronze": true,
+        "show_exclusive_collection_silver": true,
+        "show_exclusive_collection_gold": true,
+        "show_exclusive_collection_platinum": true,
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
+      }
+    },
+    "wine_club_products_events_grid_9qPYw3": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_wines",
+        "show_title": true,
+        "title": "20% discount per case",
+        "sub-title": "",
+        "no-subtitle": true,
+        "bronze_collection": "winter-warmer-red-wine-specials",
+        "silver_collection": "winter-warmer-red-wine-specials",
+        "gold_collection": "winter-warmer-red-wine-specials",
+        "platinum_collection": "winter-warmer-red-wine-specials",
+        "collection_exclusive": "",
+        "show_exclusive_collection_bronze": true,
+        "show_exclusive_collection_silver": true,
+        "show_exclusive_collection_gold": true,
+        "show_exclusive_collection_platinum": true,
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
       }
     },
     "wine_club_join_club_nkriVx": {
@@ -349,10 +418,13 @@
     }
   },
   "order": [
+    "wine_club_hero_v2_DGCEGY",
     "wine_club_hero_v2_y96K78",
     "wine_club_hero_v2_HVqDTq",
     "wine_club_products_events_grid_cRYNQa",
     "wine_club_products_events_grid_zDj4fc",
+    "wine_club_products_events_grid_mR33Ha",
+    "wine_club_products_events_grid_9qPYw3",
     "wine_club_join_club_nkriVx",
     "wine_club_how_it_works_Pi4r66",
     "wine_club_reserve_EriiN7",
