@@ -9,7 +9,8 @@
  <div class="hero-section">
    <picture>
   {% if block.settings.mobile_background_image %}
-{{ block.settings.mobile_background_image | image_url: width: 500 | image_tag: preload: true, class: 'hero-section-bg mobile-bg' }} 
+    
+{{ block.settings.mobile_background_image | image_url: width: 600 | image_tag: preload: true, class: 'hero-section-bg mobile-bg' }} 
     {% endif %}
   {% if block.settings.background_image %}
 {{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg laptop-bg" }}
@@ -31,15 +32,15 @@
     <div class="hero-content col-sm">
       <div class="hero-title">
         <h2>
-          <span>
-            {% if block.settings.paragarh_p1 %}<p class="animate-reveal">{{ block.settings.paragarh_p1 }}</p> {% endif %}
-            {% if block.settings.paragarh_p2 %}<p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p>{% endif %}
-            {% if block.settings.paragarh_p3 %}<p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>{% endif %}
-            {% if block.settings.paragarh_p4 %}<p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p>{% endif %}
+          <span style = "color:{{ block.settings.heading_color }}">
+           {% if block.settings.paragarh_p1 != blank %} <p class="animate-reveal">{{ block.settings.paragarh_p1 }}</p> {% endif %}
+           {% if block.settings.paragarh_p2 != blank %} <p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p> {% endif %}
+            {% if block.settings.paragarh_p3 != blank %} <p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>{% endif %}
+            {% if block.settings.paragarh_p4 != blank %} <p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p> {% endif %}
           </span> 
         </h2> 
       </div>
-      <div class = "the_blurb">{{ section.settings.blurb }}</div>
+      <div class = "the_blurb" style = "color:{{ block.settings.heading_color }}">{{ section.settings.blurb }}</div>
       <div class = "main_btn"><a href="{{ section.settings.right_btn_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
       </div>
       <div class="hero-txt col-sm"> 
@@ -88,8 +89,8 @@
 {% endfor %}
 </section>
 <style>
-  .animate-reveal {color: {{ section.settings.heading_color }};font-size: 70px;}
-  @media (min-width:250px) and (max-width:900px) { .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 38px;line-height: 1.2em;}
+  
+  @media (min-width:250px) and (max-width:900px) { .animate-reveal {;font-size: 38px;line-height: 1.2em;}
   </style>
 {% schema %}
 {
@@ -190,16 +191,16 @@
               "label": "Light Beige"
             }, 
             {
-              "value": "#c0ccbe",
-              "label": "Light Olive"
-            },
-            {
-              "value": "#aac4d3",
+              "value": "#6287a0",
               "label": "Light Blue"
             },
             {
-              "value": "#fedcc6",
-              "label": "Light Orange"
+              "value": "#2d5980",
+              "label": "Blue"
+            },
+            {
+              "value": "#c65336",
+              "label": "Orange"
             }
           ],
           "default": "#ffffff"
@@ -234,12 +235,12 @@
         {
           "type": "text",
           "id": "paragarh_1",
-          "label": "Paragraph Heading"
+          "label": "Paragraph Heading (Left)"
         },
         {
           "type": "text",
           "id": "paragarh_2",
-          "label": "Paragraph Text"
+          "label": "Paragraph Text (Left)"
         },
         {
           "type": "text",
