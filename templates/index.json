@@ -25,16 +25,17 @@
     "1639717679a92fb59c": {
       "type": "Hero-Main",
       "blocks": {
-        "slider_W8MHdn": {
+        "slider_YAerqN": {
           "type": "slider",
-          "disabled": true,
           "settings": {
-            "image_overlay": "",
-            "overlay_opacity": 30,
+            "background_image": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
+            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Mobile_Banner.png",
+            "image_overlay": "#292828",
+            "overlay_opacity": 20,
             "heading_color": "#ffffff",
             "video_banner": "",
-            "paragarh_p1": "",
-            "paragarh_p2": "",
+            "paragarh_p1": "The Winter",
+            "paragarh_p2": "Warmer Sale",
             "paragarh_p3": "",
             "paragarh_p4": "",
             "paragarh_1": "",
@@ -86,6 +87,7 @@
         },
         "slider_eiynBD": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png",
             "mobile_background_image": "shopify://shop_images/Alvis_drift_mobile_banner.png",
@@ -504,7 +506,7 @@
         }
       },
       "block_order": [
-        "slider_W8MHdn",
+        "slider_YAerqN",
         "slider_MQBTbV",
         "slider_DGjHhf",
         "slider_eiynBD",
@@ -534,7 +536,7 @@
         "background_image": "shopify://shop_images/hero-secton-bg.png",
         "image_overlay": "#ffffff",
         "overlay_opacity": 0,
-        "blurb": "<p>It’s where you come from, but also where you’re going. Because the choices you make today shape the legacy you leave tomorrow.</p><p><strong>Albertus Viljoen </strong>| Pursuit of Excellence<br/><br/></p>",
+        "blurb": "<p><strong>From 25 July to 10 August</strong><br/><br/>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.<br/><br/><br/></p>",
         "right_btn_text": "",
         "right_btn_link": "shopify://pages/icon-albertus-viljoen"
       }
