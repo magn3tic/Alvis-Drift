@@ -303,7 +303,7 @@
       },
       "3574802870912500141": {
         "type": "shopify://apps/sc-loyalty-rewards/blocks/enable_storefront_widget/21842f98-987a-4ad6-91bf-a00b77123261",
-        "disabled": false,
+        "disabled": true,
         "settings": {}
       }
     }
