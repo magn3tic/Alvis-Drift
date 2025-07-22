@@ -596,6 +596,7 @@
         },
         "172e4d3c-77bc-4d56-a15f-28ef7e101400": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Best Sellers",
             "collectionCarasoul": "best-sellers"
