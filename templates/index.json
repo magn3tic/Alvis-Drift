@@ -541,20 +541,6 @@
         "right_btn_link": "shopify://pages/icon-albertus-viljoen"
       }
     },
-    "focus_text_text_only_gdLJVB": {
-      "type": "Focus-Text-Text-Only",
-      "name": "Focus Text (Text Only)",
-      "settings": {
-        "text_transform": "uppercase",
-        "Heading_color": "#ffffff",
-        "title": "Join the wine club today",
-        "subtitle-1": "and get a membership discount and more...",
-        "subtitle-2": "<p>Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.<br/><br/></p>",
-        "button_text": "Find out more",
-        "button_link": "",
-        "new_tab": true
-      }
-    },
     "1639717880ecfddc97": {
       "type": "Collections-Grid",
       "blocks": {
@@ -695,6 +681,20 @@
         "topheading": "",
         "subtitle-1": "",
         "active_collection": "winter-warmer-sale"
+      }
+    },
+    "focus_text_text_only_gdLJVB": {
+      "type": "Focus-Text-Text-Only",
+      "name": "Focus Text (Text Only)",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "Join the wine club today",
+        "subtitle-1": "and get a membership discount and more...",
+        "subtitle-2": "<p>Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.<br/><br/></p>",
+        "button_text": "Find out more",
+        "button_link": "",
+        "new_tab": true
       }
     },
     "gifts_grid_mbQp4Y": {
@@ -989,8 +989,8 @@
     "1639717699756a1f5b",
     "custom_liquid_YMctFi",
     "1639717679a92fb59c",
-    "focus_text_text_only_gdLJVB",
     "1639717880ecfddc97",
+    "focus_text_text_only_gdLJVB",
     "gifts_grid_mbQp4Y",
     "collections_grid_PDLeiX",
     "173919213341da5d28",
