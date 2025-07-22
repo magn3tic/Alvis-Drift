@@ -35,9 +35,7 @@
     },
     "wine_club_hero_v2_HVqDTq": {
       "type": "wine-club-hero-v2",
-      "custom_css": [
-        "@media (min-width: 1023px) {.awc-hero-v2 .awc-bg-picture img {object-position: top;}}"
-      ],
+      "custom_css": [],
       "name": "Wine Club Hero V2",
       "settings": {
         "subtitle_connected": "",
