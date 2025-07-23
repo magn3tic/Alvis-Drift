@@ -245,7 +245,7 @@
               {% if product.metafields.my_fields.cost_per_item != blank %}
               <div class="product-price-per"> R{{ assigned_price | divided_by:100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/> </div>
                 {% else %}
-                <span class="blank-space"></span>
+                <span class="blank-space">.</span>
                 {% endif %}
               <!-- Start Add to cart button -->
              
