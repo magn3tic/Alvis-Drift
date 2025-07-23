@@ -29,7 +29,7 @@
           "type": "slider",
           "settings": {
             "background_image": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
-            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Mobile_Banner.png",
+            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
             "image_overlay": "#292828",
             "overlay_opacity": 20,
             "heading_color": "#ffffff",
