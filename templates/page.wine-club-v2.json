@@ -17,7 +17,7 @@
         "title_connected": "The Winter <br>\nWarmer Sale",
         "blurb_connected": "<p><strong>From 25 July to 10 August</strong></p><p>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.<br/><br/></p>",
         "image_connected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
-        "image_connected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Mobile_Banner.png",
+        "image_connected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
         "show_button_connected": false,
         "button_text_connected": "SHOP NOW",
         "url_connected": "",
@@ -25,7 +25,7 @@
         "title_disconnected": "The Winter <br>\nWarmer Sale",
         "blurb_disconnected": "<p><strong>From 25 July to 10 August</strong></p><p>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.</p>",
         "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
-        "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Mobile_Banner.png",
+        "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
         "show_button_disconnected": false,
         "button_text_disconnected": "JOIN NOW",
         "url_disconnected": ""
