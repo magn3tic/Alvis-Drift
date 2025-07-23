@@ -691,7 +691,7 @@
         "Heading_color": "#ffffff",
         "title": "Join the wine club today",
         "subtitle-1": "and get a membership discount and more...",
-        "subtitle-2": "<p>Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.<br/><br/></p>",
+        "subtitle-2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.<br/></p>",
         "button_text": "Find out more",
         "button_link": "",
         "new_tab": true
