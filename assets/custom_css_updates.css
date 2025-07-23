@@ -535,7 +535,8 @@ button#checkout {
   color:#b08d57;
   font-size:12px;
   line-height:1.5rem;
-  font-weight:700
+  font-weight:700;
+  padding-top:5px
 }
 .termsCheckbox {
     text-align: left !important;
