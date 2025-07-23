@@ -543,7 +543,7 @@ summary.list-menu__item {
     line-height:6rem !important
   }
   .hero-section{
-    height:95vh;
+    height:100vh;
   }
 }
 
@@ -4726,12 +4726,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     .hero-video-btn {
         right: 950px;
         top: 335px
-    }
-}
-
-@media screen and (max-width: 900px) {
-    .hero-section {
-        max-height:500px
     }
 }
 
