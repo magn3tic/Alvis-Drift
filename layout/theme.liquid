@@ -39,7 +39,7 @@
     {{ 'custom_css.css' | asset_url | stylesheet_tag }}
     {{ 'common_pages_animation.css' | asset_url | stylesheet_tag: preload: true}}
     {% render 'meta-tags' %}
-    <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+    
     
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     {{ content_for_header }}
@@ -212,11 +212,7 @@ body {
     <!-- VWO SmartCode -->
     <!-- Start VWO Async SmartCode -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-      defer></script>
+    
     
     <script type='text/javascript'>
           window._vwo_code = window._vwo_code || (function(){
@@ -312,7 +308,13 @@ body {
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
     {%- endif -%}
-    
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      defer> 
+      </script>
+    <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js" defer="defer"></script>
     <script
       type="text/javascript"
