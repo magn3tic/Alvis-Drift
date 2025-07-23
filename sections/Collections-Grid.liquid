@@ -39,13 +39,6 @@
                  <div class="product-price excluded-disount">
                   {{ product.price | money | remove: '.00' | replace: ",", " " }}
               </div>
-              {% assign promo = product.metafields.my_fields.promo_label %}
-
-                    {% if promo != blank %}
-                      <div class="promo-label">
-                        {{ promo }}
-                      </div>
-                    {% endif %}
              
               {% elsif included_product_ids contains product.id %}
               {% if product.compare_at_price > product.price  %}
@@ -115,7 +108,7 @@
               {% assign promo = product.metafields.my_fields.promo_label %}
 
                     {% if promo != blank %}
-                      <div class="silver-tier-text">
+                      <div class="promo-label">
                         {{ promo }}
                       </div>
                     {% endif %}
