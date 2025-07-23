@@ -42,7 +42,7 @@
               {% assign promo = product.metafields.my_fields.promo_label %}
 
                     {% if promo != blank %}
-                      <div class="silver-tier-text">
+                      <div class="promo-label">
                         {{ promo }}
                       </div>
                     {% endif %}
@@ -290,10 +290,6 @@
                   <div class="product-img">
                     <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url:'master' }}" alt="" loading="lazy"></a>
                   </div>
-                  {% assign promo = product.metafields.my_fields.promo_label %}
-                    {% if promo != blank %}
-                      <div class="promo-label">{{ promo }}</div>
-                      {% endif %}
                   <div class="product-title">
                     <div class="sp-t">{{ product.title }}</div>
                   </div>
