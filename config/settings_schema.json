@@ -359,7 +359,7 @@
         "type": "product_list",
         "id": "product_list",
         "label": "Excluded Product Discount",
-        "limit": 30
+        "limit": 40
       },
       {
         "type": "select",
