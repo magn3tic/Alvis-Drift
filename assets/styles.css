@@ -449,8 +449,7 @@ summary.list-menu__item {
   background-color:#2e112d;
 }
 .mobile-bg{
-  max-height:548px;
-  height:500px;
+  height:100%;
 }
 
 @media only screen and (max-width: 1200px) {
