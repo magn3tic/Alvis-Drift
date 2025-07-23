@@ -543,3 +543,4 @@ button#checkout {
     display: block;
     padding-top: 18px;
 }
+  @media (min-width:250px) and (max-width:900px) { .animate-reveal {;font-size: 35px;line-height: 1.2em;}
