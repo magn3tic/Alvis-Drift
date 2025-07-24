@@ -35,8 +35,8 @@
             "paragarh_p2": "WINTER",
             "paragarh_p3": "WINES",
             "paragarh_p4": "",
-            "paragarh_1": "FRUIT DRIVEN & DELIGHTFULLY COMPLEX",
-            "paragarh_2": "Our award-winning wines are internationally known for their distinctive, fruit-driven character and delightful complexity. Our wines include red, white, rosé, dessert, and outstanding Cap Classique and Brut sparkling wines.",
+            "paragarh_1": "WINTER WARMERS",
+            "paragarh_2": "Our award-winning red wines are internationally known for their distinctive, fruit-driven character and delightful complexity.",
             "side_btn_text": "",
             "side_btn_link": ""
           }
@@ -143,18 +143,6 @@
         "button_type": "alvisBtn"
       }
     },
-    "1642075771a13cdd91": {
-      "type": "Call-To-Action",
-      "settings": {
-        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
-        "image_overlay": false,
-        "Heading_color": "#c65336",
-        "title": "WINE CLUB",
-        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
-        "btn-txt": "FIND OUT MORE",
-        "btn-url": "shopify://pages/club"
-      }
-    },
     "collections_grid_XijH7r": {
       "type": "Collections-Grid",
       "blocks": {
@@ -174,6 +162,18 @@
         "topheading": "OUR RED WINES",
         "subtitle-1": "WINTER WARMERS",
         "active_collection": "red-wines"
+      }
+    },
+    "1642075771a13cdd91": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
       }
     }
   },
