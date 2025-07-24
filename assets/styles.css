@@ -6590,7 +6590,8 @@ button.t-link {
 
 .hero-title h2 span p {
     margin: 0!important;
-    line-height: 8rem
+    line-height: 8rem;
+    font-family: var(--metropolis);
 }
 
 .tabs-content .product-price {
