@@ -21,8 +21,6 @@
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay %}       
     {% assign opacity = block.settings.overlay_opacity %}       
-    {% assign opacityWithEndBracket = ', ' | append: opacity | append: '%)' %}  
-    {% assign rgba = bg_color | replace: 'rgb', 'rgba' | replace:')', opacityWithEndBracket %} 
     <span class="hero-overlay-bg" style="background: {{ bg_color }}"></span>
   {% else %}
     <div class="hero-overlay-bg"></div>
