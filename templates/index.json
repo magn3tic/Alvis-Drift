@@ -534,7 +534,7 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/hero-secton-bg.png",
-        "image_overlay": "#121212",
+        "image_overlay": "#000000",
         "overlay_opacity": 100,
         "blurb": "<p><strong>From 25 July to 10 August</strong><br/><br/>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.<br/><br/><br/></p>",
         "right_btn_text": "",
