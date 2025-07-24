@@ -26,7 +26,7 @@
         "91eea3c6-c67a-4481-a0ec-1025fdc593aa": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Our_Wine_Ranges.png",
+            "background_image": "shopify://shop_images/Red_wine_website_header.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 40,
             "heading_color": "#ffffff",
@@ -57,7 +57,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Verreaux-Flagship-Range-Wines.jpg",
+        "our-story-vid": "shopify://shop_images/Alvis_drift_red_wine.webp",
         "image_size": "100%",
         "video_url": "",
         "Heading_size": "h2",
@@ -72,7 +72,7 @@
     "1641827019a861ede0": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Albertus-Viljoen-Icon-Range-Wines.jpg",
+        "our-story-vid": "shopify://shop_images/Alvis_Drift_Verreaux_wine.png",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
@@ -87,7 +87,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Reserve-Range-Wines.jpg",
+        "our-story-vid": "shopify://shop_images/Alvis_drift_red_wine.webp",
         "image_size": "100%",
         "video_url": "",
         "Heading_size": "h2",
@@ -102,7 +102,7 @@
     "1641827535f50b1fac": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-221-Range-Wines.jpg",
+        "our-story-vid": "shopify://shop_images/Alvis_Drift_wine_tesing.png",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
@@ -117,7 +117,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Wines.jpg",
+        "our-story-vid": "shopify://shop_images/Red_Meat_Pairing_06.jpg",
         "image_size": "100%",
         "video_url": "",
         "Heading_size": "h2",
@@ -132,7 +132,7 @@
     "1641828055146d3909": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Sparkling-Range-Wines.jpg",
+        "our-story-vid": "shopify://shop_images/Alvis_Drift_Verreaux_wine.png",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
