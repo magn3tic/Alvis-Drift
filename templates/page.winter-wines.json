@@ -178,18 +178,6 @@
         "active_collection": "red-wines"
       }
     },
-    "1642075771a13cdd91": {
-      "type": "Call-To-Action",
-      "settings": {
-        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
-        "image_overlay": false,
-        "Heading_color": "#c65336",
-        "title": "WINE CLUB",
-        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
-        "btn-txt": "FIND OUT MORE",
-        "btn-url": "shopify://pages/club"
-      }
-    },
     "focus_text_text_only_bU7YjX": {
       "type": "Focus-Text-Text-Only",
       "name": "Focus Text (Text Only)",
@@ -202,6 +190,30 @@
         "button_text": "",
         "button_link": "",
         "new_tab": true
+      }
+    },
+    "1642075771a13cdd91": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "call_to_action_nzRcTU": {
+      "type": "Call-To-Action",
+      "name": "Call To Action",
+      "settings": {
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "Every Bottle Starts A Story",
+        "detail_box_txt": "Catching up with a friend in the heart of winter holds a special kind of magic. We’re referring to the kind of catch-up that doesn’t need a special occasion, a dress code, or a perfectly planned menu. Just a warm dish, a good bottle of red wine, and the comfort of people who feel like home.",
+        "btn-txt": "",
+        "btn-url": ""
       }
     }
   },
@@ -217,7 +229,8 @@
     "164182782815b79542",
     "1641828055146d3909",
     "collections_grid_XijH7r",
+    "focus_text_text_only_bU7YjX",
     "1642075771a13cdd91",
-    "focus_text_text_only_bU7YjX"
+    "call_to_action_nzRcTU"
   ]
 }
