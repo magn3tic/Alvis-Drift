@@ -29,10 +29,11 @@
             "background_image": "shopify://shop_images/Our_Wine_Ranges.png",
             "image_overlay": "#000000",
             "overlay_opacity": 40,
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "OUR",
-            "paragarh_p2": "WINE",
-            "paragarh_p3": "RANGES",
+            "paragarh_p2": "WINTER",
+            "paragarh_p3": "WINES",
             "paragarh_p4": "",
             "paragarh_1": "FRUIT DRIVEN & DELIGHTFULLY COMPLEX",
             "paragarh_2": "Our award-winning wines are internationally known for their distinctive, fruit-driven character and delightful complexity. Our wines include red, white, rosé, dessert, and outstanding Cap Classique and Brut sparkling wines.",
@@ -46,7 +47,10 @@
       ],
       "settings": {
         "image_overlay": "",
-        "overlay_opacity": 30
+        "overlay_opacity": 30,
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "1641826680091d5999": {
@@ -58,11 +62,11 @@
         "video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "FLAGSHIP RANGE",
-        "video-sec-content-txt-1": "<p><strong>BE BOLD</strong></p><p>Native to sub-Saharan Africa, the mighty Verreaux’s eagle (Aquila verreauxii) is a large predatory bird with an impressive wingspan of up to 2,3 m. We encapsulate its boldness and elegance with our exceptional Flagship Verreaux Pinotage. </p>",
-        "button-txt": "VIEW FLAGSHIP WINE",
+        "title": "WINE 1 HEADING",
+        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "button-txt": "BUTTON",
         "button_link": "shopify://collections/flagship-range",
-        "button_type": "alvisBtn"
+        "button_type": "alvisBtnOpposite"
       }
     },
     "1641827019a861ede0": {
@@ -72,9 +76,9 @@
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "ICON RANGE",
-        "video-sec-content-txt-1": "<p><strong>PURSUIT OF EXCELLENCE</strong></p><p>Named after our family patriarch, our Albertus Viljoen Icon range showcases the best of our harvest:  full-bodied, barrel-fermented wines of remarkable character and complexity.</p>",
-        "button-txt": "VIEW ICON RANGE",
+        "title": "WINE 2 HEADING",
+        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "button-txt": "BUTTON",
         "button_link": "shopify://collections/icon-range",
         "button_type": "alvisBtn"
       }
@@ -88,9 +92,9 @@
         "video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "RESERVE RANGE",
-        "video-sec-content-txt-1": "<p><strong>TASTE WHAT'S POSSIBLE</strong></p><p>Featuring an illustration of the iconic Alvi’s Drift low-water bridge on its label, our Reserve range wines are expertly and passionately crafted for the aspirational palate, boasting excellent maturation potential and smooth, intricate flavours.</p>",
-        "button-txt": "VIEW RESERVE RANGE",
+        "title": "WINE 3",
+        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "button-txt": "BUTTON",
         "button_link": "shopify://collections/reserve-range",
         "button_type": "alvisBtn"
       }
@@ -102,9 +106,9 @@
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "221 RANGE",
-        "video-sec-content-txt-1": "<p><strong>TOASTING OUR STORIES</strong></p><p>In 1928, 19-year old Albertus Viljoen (\"Alvi\") van der Merwe, scored the first try in history against the All Blacks on African soil. With our 221 range, we pay tribute to our family patriarch and our phenomenal Springbok rugby team.</p>",
-        "button-txt": "VIEW 221 RANGE",
+        "title": "WINE 4",
+        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "button-txt": "BUTTON",
         "button_link": "shopify://collections/221-range",
         "button_type": "alvisBtn"
       }
@@ -118,9 +122,9 @@
         "video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "SIGNATURE RANGE",
-        "video-sec-content-txt-1": "<p><strong>SPONTANEOUS CONNECTIONS</strong></p><p>The superb, fruit-driven wines in our Signature range offer wine lovers exceptional value. In the words of Alvi’s Drift head winemaker Alvi van der Merwe:  \"Think 'great’, for the price of good!”.</p>",
-        "button-txt": "VIEW SIGNATURE RANGE",
+        "title": "WINE 5",
+        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "button-txt": "BUTTON",
         "button_link": "shopify://collections/signature-range",
         "button_type": "alvisBtn"
       }
@@ -132,55 +136,44 @@
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "SPARKLING RANGE",
-        "video-sec-content-txt-1": "<p><strong>ELEVATE EVERY MOMENT</strong></p><p>The Chardonnay and Pinot Noir grapes for our sparkling wine range are carefully hand-harvested early in the season during the cool morning hours, preserving the crisp, fresh acidity so essential to producing a magnificent sparkling wine.</p>",
-        "button-txt": "VIEW SPARKLING RANGE",
+        "title": "WINE 6",
+        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
+        "button-txt": "BUTTON",
         "button_link": "shopify://collections/sparkling-range",
-        "button_type": "alvisBtn"
-      }
-    },
-    "fd3b8c6c-1da7-4e4c-8b9c-9c53c4f3040d": {
-      "type": "Focus-Text-Image-Left",
-      "settings": {
-        "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Cap-Classique-Range-Wines.jpg",
-        "image_size": "100%",
-        "video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#ffffff",
-        "title": "CAP CLASSIQUE RANGE",
-        "video-sec-content-txt-1": "<p><strong>CELEBRATE LIFE WELL LIVED</strong></p><p>Set apart by a refreshing and captivating character, these wines showcase a beautifully complex, rich, and biscuity profile, spending a minimum of two years on the lees.</p>",
-        "button-txt": "VIEW CAP CLASSIQUE RANGE",
-        "button_link": "shopify://collections/cap-classique-range",
-        "button_type": "alvisBtn"
-      }
-    },
-    "1641839451c754d9a6": {
-      "type": "Focus-Text-Image-Left",
-      "disabled": true,
-      "settings": {
-        "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Exclusive_Range.jpg",
-        "image_size": "100%",
-        "video_url": "",
-        "Heading_size": "h1",
-        "Heading_color": "#ffffff",
-        "title": "EXCLUSIVE",
-        "video-sec-content-txt-1": "<p>Some of our wines are available exclusively to wine club members – just one of the many benefits of joining our wine club.</p><p>However, during our wine club’s pre-registration period, sales of exclusive wines are open to all.</p>",
-        "button-txt": "VIEW EXCLUSIVE RANGE",
-        "button_link": "shopify://collections/exclusive-range",
         "button_type": "alvisBtn"
       }
     },
     "1642075771a13cdd91": {
       "type": "Call-To-Action",
       "settings": {
-        "wine-club-bg": "shopify://shop_images/wine-club-bg_772fa787-b0e0-4ca6-a229-45c5423aba51.png",
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
         "image_overlay": false,
         "Heading_color": "#c65336",
-        "title": "DARE TO BE TRUE",
-        "btn-txt": "DOWNLOAD PROFILE",
-        "btn-url": "https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Corporate-Profile.pdf?v=1732523089"
+        "title": "WINE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "collections_grid_XijH7r": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "item_nRGqB9": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "red-wines"
+          }
+        }
+      },
+      "block_order": [
+        "item_nRGqB9"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "topheading": "OUR RED WINES",
+        "subtitle-1": "WINTER WARMERS",
+        "active_collection": "red-wines"
       }
     }
   },
@@ -194,8 +187,7 @@
     "1641827535f50b1fac",
     "164182782815b79542",
     "1641828055146d3909",
-    "fd3b8c6c-1da7-4e4c-8b9c-9c53c4f3040d",
-    "1641839451c754d9a6",
+    "collections_grid_XijH7r",
     "1642075771a13cdd91"
   ]
 }
