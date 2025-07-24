@@ -6592,6 +6592,7 @@ button.t-link {
     margin: 0!important;
     line-height: 8rem;
     font-family: var(--metropolis);
+    font-weight:600
 }
 
 .tabs-content .product-price {
