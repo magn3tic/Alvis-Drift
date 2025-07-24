@@ -99,6 +99,20 @@
         "button_type": "alvisBtn"
       }
     },
+    "focus_text_text_only_9BzYr3": {
+      "type": "Focus-Text-Text-Only",
+      "name": "Focus Text (Text Only)",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "",
+        "subtitle-2": "<p><strong> “An easy choice for moments that feel relaxed and genuine, Merlot says, ‘make yourself at home’.”</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
     "1641827535f50b1fac": {
       "type": "Focus-Text-Image-Right",
       "settings": {
@@ -175,6 +189,20 @@
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }
+    },
+    "focus_text_text_only_bU7YjX": {
+      "type": "Focus-Text-Text-Only",
+      "name": "Focus Text (Text Only)",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "The Things That Truly Matter",
+        "subtitle-1": "Don’t wait for the perfect occasion this winter. Just open a bottle – because some nights are just made for reds, and the people who pour them.",
+        "subtitle-2": "<p>Wine doesn’t need to be complicated to be meaningful. But in winter, it does help us enjoy the things that truly matter. Like taking things a little slower, and spending time together to share our stories. That, in turn, lets us live with courage and be true to ourselves. Because when we eat together, when we raise a glass without needing a reason, that’s when we’re truly ourselves.</p><p>Whether you’re building confidence in your wine choices or exploring new flavour dimensions, these six wines meet you where you are.</p><p><strong>Alvi’s Drift. Dare to be true.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
     }
   },
   "order": [
@@ -184,10 +212,12 @@
     "1641826680091d5999",
     "1641827019a861ede0",
     "164182735506b8b21c",
+    "focus_text_text_only_9BzYr3",
     "1641827535f50b1fac",
     "164182782815b79542",
     "1641828055146d3909",
     "collections_grid_XijH7r",
-    "1642075771a13cdd91"
+    "1642075771a13cdd91",
+    "focus_text_text_only_bU7YjX"
   ]
 }
