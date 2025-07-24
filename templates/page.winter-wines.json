@@ -53,6 +53,20 @@
         "right_btn_link": ""
       }
     },
+    "focus_text_text_only_BEpDcR": {
+      "type": "Focus-Text-Text-Only",
+      "name": "Focus Text (Text Only)",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "Every Bottle Starts A Story",
+        "subtitle-1": "Poured, Not Planned",
+        "subtitle-2": "<p>Catching up with a friend in the heart of winter holds a special kind of magic. We’re referring to the kind of catch-up that doesn’t need a special occasion, a dress code, or a perfectly planned menu. Just a warm dish, a good bottle of red wine, and the comfort of people who feel like home.</p><p><strong>“At Alvi’s Drift, we believe the best moments in life are the simplest.”</strong></p><p>Winter doesn’t have to be about grand gestures. Sometimes it’s about saying, “Come over,” without warning. “I’m lighting a fire” or “I made stew”. The reds in our Signature Range and 221 Range will feel as easy and generous as the moment itself.</p><p>From couch catchups to spontaneous braais, these reds offer warmth, flavour, and an open invitation to make yourself at home. They are made for real life – full of character, smooth in texture, and easy to love.</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
     "call_to_action_nzRcTU": {
       "type": "Call-To-Action",
       "name": "Call To Action",
@@ -93,7 +107,7 @@
         "video-sec-content-txt-1": "<p>There’s something about our Signature Shiraz in winter – deep and seductive with aromas of dark fruit and layers of peppery spices. It’s made for fireplaces, slow-cooked oxtail, and nights that stretch a little longer than planned. Whether it’s with pizza, pasta or charcuterie, this wine will say, “settle in, we’re not rushing this”.</p>",
         "button-txt": "BUY",
         "button_link": "shopify://products/signature-shiraz",
-        "button_type": "alvisBtn"
+        "button_type": "alvisBtnOpposite"
       }
     },
     "164182735506b8b21c": {
@@ -109,7 +123,7 @@
         "video-sec-content-txt-1": "<p>This crowd pleaser shines with a deep black cherry colour and draws you in with inviting aromas of juicy ripe plum and warm spice. It’s the wine you open when you don’t know what to make for dinner – because it goes with just about everything. From pot pies to beef ragu to late-night cheese boards, Merlot brings ease and comfort to any meal. A red for go-with-the-flow nights.</p>",
         "button-txt": "BUY",
         "button_link": "shopify://products/signature-merlot",
-        "button_type": "alvisBtn"
+        "button_type": "alvisBtnOpposite"
       }
     },
     "focus_text_text_only_9BzYr3": {
@@ -137,7 +151,7 @@
         "video-sec-content-txt-1": "<p>A medium-bodied classic with quiet confidence, our Signature Cabernet Sauvignon is perfect for those evenings when the conversation gets deep and the stew gets richer. With an inviting aroma of warm spices and cassis, complemented by a hint of chocolate, this wine is built for hearty winter meals like pepper steak pie or chilli con carne.</p>",
         "button-txt": "BUY",
         "button_link": "shopify://products/signature-cabernet-sauvignon",
-        "button_type": "alvisBtn"
+        "button_type": "alvisBtnOpposite"
       }
     },
     "164182782815b79542": {
@@ -153,7 +167,7 @@
         "video-sec-content-txt-1": "<p>Stepping up in depth and detail, our 221 Pinotage captivates with concentrated and supple aromas of sweet brambleberry and mulberry. Think complexity without complication. This is the Pinotage you pour when you want to savour the food and the stories, because there will definitely be a story for every bottle. Try it with boerewors, chicken livers or matured cheddar cheese.</p>",
         "button-txt": "BUY",
         "button_link": "shopify://products/221-pinotage",
-        "button_type": "alvisBtn"
+        "button_type": "alvisBtnOpposite"
       }
     },
     "1641828055146d3909": {
@@ -167,7 +181,7 @@
         "video-sec-content-txt-1": "<p>This red blend with its deep ruby hue brings it all together: depth, elegance, and the unexpected. Aromas of mulberry, white pepper, plum and violet, with a subtle touch of herbs, make the Special Cuvée ideal for meals with taste and guests who like to linger long after dessert. Pour it on a slow Sunday afternoon with lamb chops, roasted vegetables, pasta with a spicy tomato base and aged cheeses.</p>",
         "button-txt": "BUY",
         "button_link": "shopify://products/221-special-cuvee",
-        "button_type": "alvisBtn"
+        "button_type": "alvisBtnOpposite"
       }
     },
     "collections_grid_XijH7r": {
@@ -222,6 +236,7 @@
     "main",
     "1641826354f199ac86",
     "163969141624b2e715",
+    "focus_text_text_only_BEpDcR",
     "call_to_action_nzRcTU",
     "1641826680091d5999",
     "1641827019a861ede0",
