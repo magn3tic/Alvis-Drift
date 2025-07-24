@@ -53,6 +53,19 @@
         "right_btn_link": ""
       }
     },
+    "call_to_action_nzRcTU": {
+      "type": "Call-To-Action",
+      "name": "Call To Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "Reds You’ll Want Within Reach",
+        "detail_box_txt": "If you’re looking to stock up on what we like to call “reasons to stay in,” here’s your winter lineup. Whether you’re discovering your palate or deepening it, each of these six reds brings something unique to the table – and all were created for the colder months.",
+        "btn-txt": "",
+        "btn-url": ""
+      }
+    },
     "1641826680091d5999": {
       "type": "Focus-Text-Image-Left",
       "settings": {
@@ -203,25 +216,13 @@
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }
-    },
-    "call_to_action_nzRcTU": {
-      "type": "Call-To-Action",
-      "name": "Call To Action",
-      "settings": {
-        "wine-club-bg": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
-        "image_overlay": false,
-        "Heading_color": "#c65336",
-        "title": "Winter Reds You’ll Want Within Reach",
-        "detail_box_txt": "If you’re looking to stock up on what we like to call “reasons to stay in,” here’s your winter lineup. Whether you’re discovering your palate or deepening it, each of these six reds brings something unique to the table – and all were created for the colder months.",
-        "btn-txt": "",
-        "btn-url": ""
-      }
     }
   },
   "order": [
     "main",
     "1641826354f199ac86",
     "163969141624b2e715",
+    "call_to_action_nzRcTU",
     "1641826680091d5999",
     "1641827019a861ede0",
     "164182735506b8b21c",
@@ -231,7 +232,6 @@
     "1641828055146d3909",
     "collections_grid_XijH7r",
     "focus_text_text_only_bU7YjX",
-    "1642075771a13cdd91",
-    "call_to_action_nzRcTU"
+    "1642075771a13cdd91"
   ]
 }
