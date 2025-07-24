@@ -23,7 +23,7 @@
     {% assign opacity = block.settings.overlay_opacity %}       
     {% assign opacityWithEndBracket = ', ' | append: opacity | append: '%)' %}  
     {% assign rgba = bg_color | replace: 'rgb', 'rgba' | replace:')', opacityWithEndBracket %} 
-    <span class="hero-overlay-bg" style="background: {{ rgba }}"></span>
+    <span class="hero-overlay-bg" style="background: {{ bg_color }}"></span>
   {% else %}
     <div class="hero-overlay-bg"></div>
   {% endif %}
