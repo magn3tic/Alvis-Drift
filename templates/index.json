@@ -535,7 +535,7 @@
       "settings": {
         "background_image": "shopify://shop_images/hero-secton-bg.png",
         "image_overlay": "#121212",
-        "overlay_opacity": 25,
+        "overlay_opacity": 15,
         "blurb": "<p><strong>From 25 July to 10 August</strong><br/><br/>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.<br/><br/><br/></p>",
         "right_btn_text": "",
         "right_btn_link": "shopify://pages/icon-albertus-viljoen"
@@ -696,9 +696,9 @@
       "settings": {
         "text_transform": "uppercase",
         "Heading_color": "#ffffff",
-        "title": "Join the wine club",
-        "subtitle-1": "Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        "subtitle-2": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.<br/></p>",
+        "title": "the Private club",
+        "subtitle-1": "Join the club and receive free shipping for first time buyers.",
+        "subtitle-2": "",
         "button_text": "Find out more",
         "button_link": "https://alvisdrift.co.za/pages/club",
         "new_tab": true
@@ -996,8 +996,8 @@
     "1639717699756a1f5b",
     "custom_liquid_YMctFi",
     "1639717679a92fb59c",
-    "1639717880ecfddc97",
     "focus_text_text_only_gdLJVB",
+    "1639717880ecfddc97",
     "gifts_grid_mbQp4Y",
     "collections_grid_PDLeiX",
     "173919213341da5d28",
