@@ -208,10 +208,11 @@
       "type": "Call-To-Action",
       "name": "Call To Action",
       "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
         "image_overlay": false,
         "Heading_color": "#c65336",
-        "title": "Every Bottle Starts A Story",
-        "detail_box_txt": "Catching up with a friend in the heart of winter holds a special kind of magic. We’re referring to the kind of catch-up that doesn’t need a special occasion, a dress code, or a perfectly planned menu. Just a warm dish, a good bottle of red wine, and the comfort of people who feel like home.",
+        "title": "Winter Reds You’ll Want Within Reach",
+        "detail_box_txt": "If you’re looking to stock up on what we like to call “reasons to stay in,” here’s your winter lineup. Whether you’re discovering your palate or deepening it, each of these six reds brings something unique to the table – and all were created for the colder months.",
         "btn-txt": "",
         "btn-url": ""
       }
