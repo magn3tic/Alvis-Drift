@@ -556,6 +556,13 @@
     "1639717880ecfddc97": {
       "type": "Collections-Grid",
       "blocks": {
+        "item_PmjxaM": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Winter warmer Sale",
+            "collectionCarasoul": "winter-warmer-sale"
+          }
+        },
         "item_wM48QH": {
           "type": "item",
           "disabled": true,
@@ -669,16 +676,10 @@
             "collection_heading": "Sparkling Wines",
             "collectionCarasoul": "sparkling-range"
           }
-        },
-        "item_PmjxaM": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "Winter warmer Sale",
-            "collectionCarasoul": "winter-warmer-sale"
-          }
         }
       },
       "block_order": [
+        "item_PmjxaM",
         "item_wM48QH",
         "f5fa0879-f0d7-4b72-8989-ed40a2f7b465",
         "b2567f39-56af-4cc8-ae4c-a7eb62ed04e3",
@@ -693,8 +694,7 @@
         "1639717880a3dfd1a1-0",
         "9b3f0de5-da23-4ea1-ba75-bdd3132f9c68",
         "item_ncMqVD",
-        "9d3f4820-036b-4a4d-9be4-267751c949d7",
-        "item_PmjxaM"
+        "9d3f4820-036b-4a4d-9be4-267751c949d7"
       ],
       "settings": {
         "topheading": "",
