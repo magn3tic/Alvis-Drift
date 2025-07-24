@@ -62,10 +62,10 @@
         "video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "WINE 1 HEADING",
-        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-        "button-txt": "BUTTON",
-        "button_link": "shopify://collections/flagship-range",
+        "title": "Signature Pinotage",
+        "video-sec-content-txt-1": "<p>South Africa’s own varietal, our Signature Pinotage is plush, juicy, and effortlessly drinkable. Expect lively red fruit aromas of ripe cherry, raspberry and a hint of cranberry. It’s the wine equivalent of your favourite worn-in hoodie: warm, relaxed, and always welcome. Perfect with cheesy beef burgers or a bowl of bolognese, and a fat chat with your best friend.</p>",
+        "button-txt": "BUY",
+        "button_link": "shopify://products/signature-pinotage",
         "button_type": "alvisBtnOpposite"
       }
     },
@@ -76,10 +76,10 @@
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "WINE 2 HEADING",
-        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-        "button-txt": "BUTTON",
-        "button_link": "shopify://collections/icon-range",
+        "title": "Signature Shiraz",
+        "video-sec-content-txt-1": "<p>There’s something about our Signature Shiraz in winter – deep and seductive with aromas of dark fruit and layers of peppery spices. It’s made for fireplaces, slow-cooked oxtail, and nights that stretch a little longer than planned. Whether it’s with pizza, pasta or charcuterie, this wine will say, “settle in, we’re not rushing this”.</p>",
+        "button-txt": "BUY",
+        "button_link": "shopify://products/signature-shiraz",
         "button_type": "alvisBtn"
       }
     },
@@ -92,10 +92,10 @@
         "video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "WINE 3",
-        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-        "button-txt": "BUTTON",
-        "button_link": "shopify://collections/reserve-range",
+        "title": "Signature Merlot",
+        "video-sec-content-txt-1": "<p>This crowd pleaser shines with a deep black cherry colour and draws you in with inviting aromas of juicy ripe plum and warm spice. It’s the wine you open when you don’t know what to make for dinner – because it goes with just about everything. From pot pies to beef ragu to late-night cheese boards, Merlot brings ease and comfort to any meal. A red for go-with-the-flow nights.</p>",
+        "button-txt": "BUY",
+        "button_link": "shopify://products/signature-merlot",
         "button_type": "alvisBtn"
       }
     },
@@ -106,10 +106,10 @@
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "WINE 4",
-        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-        "button-txt": "BUTTON",
-        "button_link": "shopify://collections/221-range",
+        "title": "Signature Cabernet Sauvignon",
+        "video-sec-content-txt-1": "<p>A medium-bodied classic with quiet confidence, our Signature Cabernet Sauvignon is perfect for those evenings when the conversation gets deep and the stew gets richer. With an inviting aroma of warm spices and cassis, complemented by a hint of chocolate, this wine is built for hearty winter meals like pepper steak pie or chilli con carne.</p>",
+        "button-txt": "BUY",
+        "button_link": "shopify://products/signature-cabernet-sauvignon",
         "button_type": "alvisBtn"
       }
     },
@@ -122,10 +122,10 @@
         "video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "WINE 5",
-        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-        "button-txt": "BUTTON",
-        "button_link": "shopify://collections/signature-range",
+        "title": "221 Pinotage",
+        "video-sec-content-txt-1": "<p>Stepping up in depth and detail, our 221 Pinotage captivates with concentrated and supple aromas of sweet brambleberry and mulberry. Think complexity without complication. This is the Pinotage you pour when you want to savour the food and the stories, because there will definitely be a story for every bottle. Try it with boerewors, chicken livers or matured cheddar cheese.</p>",
+        "button-txt": "BUY",
+        "button_link": "shopify://products/221-pinotage",
         "button_type": "alvisBtn"
       }
     },
@@ -136,10 +136,10 @@
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
-        "title": "WINE 6",
-        "video-sec-content-txt-1": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia quam felis, quis venenatis ligula tristique in. Cras gravida in tellus at pulvinar. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>",
-        "button-txt": "BUTTON",
-        "button_link": "shopify://collections/sparkling-range",
+        "title": "221 Special Cuvée",
+        "video-sec-content-txt-1": "<p>This red blend with its deep ruby hue brings it all together: depth, elegance, and the unexpected. Aromas of mulberry, white pepper, plum and violet, with a subtle touch of herbs, make the Special Cuvée ideal for meals with taste and guests who like to linger long after dessert. Pour it on a slow Sunday afternoon with lamb chops, roasted vegetables, pasta with a spicy tomato base and aged cheeses.</p>",
+        "button-txt": "BUY",
+        "button_link": "shopify://products/221-special-cuvee",
         "button_type": "alvisBtn"
       }
     },
