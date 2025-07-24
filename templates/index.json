@@ -554,6 +554,7 @@
         },
         "f5fa0879-f0d7-4b72-8989-ed40a2f7b465": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Whites",
             "collectionCarasoul": "white-wines"
@@ -561,6 +562,7 @@
         },
         "b2567f39-56af-4cc8-ae4c-a7eb62ed04e3": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Reds",
             "collectionCarasoul": "red-wines"
@@ -568,6 +570,7 @@
         },
         "7d59f5a1-19b5-4287-aa89-12b1fb3eca5d": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Blends",
             "collectionCarasoul": "blends"
@@ -575,20 +578,15 @@
         },
         "e82e5c1e-f6b8-4693-abd2-2e5c511f67dd": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Rosés",
             "collectionCarasoul": "rose-wines"
           }
         },
-        "9d3f4820-036b-4a4d-9be4-267751c949d7": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "Sparkling Wines",
-            "collectionCarasoul": "sparkling-range"
-          }
-        },
         "2e055f23-c192-465a-a500-fc63bf706210": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Cap Classique Wines",
             "collectionCarasoul": "cap-classique-range"
@@ -639,6 +637,7 @@
         },
         "9b3f0de5-da23-4ea1-ba75-bdd3132f9c68": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Premium Wines",
             "collectionCarasoul": "premium-wines"
@@ -646,9 +645,17 @@
         },
         "item_ncMqVD": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "All Wines",
             "collectionCarasoul": "all-wines"
+          }
+        },
+        "9d3f4820-036b-4a4d-9be4-267751c949d7": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Sparkling Wines",
+            "collectionCarasoul": "sparkling-range"
           }
         },
         "item_PmjxaM": {
@@ -665,7 +672,6 @@
         "b2567f39-56af-4cc8-ae4c-a7eb62ed04e3",
         "7d59f5a1-19b5-4287-aa89-12b1fb3eca5d",
         "e82e5c1e-f6b8-4693-abd2-2e5c511f67dd",
-        "9d3f4820-036b-4a4d-9be4-267751c949d7",
         "2e055f23-c192-465a-a500-fc63bf706210",
         "172e4d3c-77bc-4d56-a15f-28ef7e101400",
         "e1da377c-7a1d-4c54-80f0-ee4eb138fcb4",
@@ -675,6 +681,7 @@
         "1639717880a3dfd1a1-0",
         "9b3f0de5-da23-4ea1-ba75-bdd3132f9c68",
         "item_ncMqVD",
+        "9d3f4820-036b-4a4d-9be4-267751c949d7",
         "item_PmjxaM"
       ],
       "settings": {
