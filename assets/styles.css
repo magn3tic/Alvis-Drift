@@ -6141,7 +6141,10 @@ p.sub-title {
         width: 100%;
         height: auto
     }
-
+.product-gallery{
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
     .input-num-wrap input[type=number] {
         height: 28px
     }
