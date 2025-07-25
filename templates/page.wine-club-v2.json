@@ -14,7 +14,7 @@
       "name": "Wine Club Hero V2",
       "settings": {
         "subtitle_connected": "Alvi's Drift Private Club",
-        "title_connected": "The Winter <br>\nWarmer Sale",
+        "title_connected": "Shop The Winter <br>\nWarmer Sale",
         "blurb_connected": "<p><strong>From 25 July to 10 August</strong></p><p>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.<br/><br/></p>",
         "image_connected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
         "image_connected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
@@ -22,7 +22,7 @@
         "button_text_connected": "SHOP NOW",
         "url_connected": "",
         "subtitle_disconnected": "Alvi's Drift Private Club",
-        "title_disconnected": "The Winter <br>\nWarmer Sale",
+        "title_disconnected": "Shop The Winter <br>\nWarmer Sale",
         "blurb_disconnected": "<p><strong>From 25 July to 10 August</strong></p><p>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.</p>",
         "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
         "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
