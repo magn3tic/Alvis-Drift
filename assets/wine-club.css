@@ -450,7 +450,6 @@ margin-right: 20px;
       object-fit: cover;
     }
   
-    
     @media (max-width: 1023px) {
       .awc-hero--content-v2 h1 {
         width: 100%;
