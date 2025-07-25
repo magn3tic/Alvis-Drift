@@ -26,7 +26,7 @@
         "blurb_disconnected": "<p><strong>From 25 July to 10 August</strong></p><p>With generous savings across all the Alvi’s Drift red wines, including a curated mixed case, some nights are made for reds, and some <em>sales</em> are made for stocking up.</p>",
         "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
         "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
-        "show_button_disconnected": false,
+        "show_button_disconnected": true,
         "button_text_disconnected": "Sign up now to join the club",
         "url_disconnected": "https://alvisdrift.co.za/account/register"
       }
