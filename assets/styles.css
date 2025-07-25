@@ -6136,6 +6136,10 @@ p.sub-title {
         height: 36px;
         margin-bottom: 6px
     }
+  .gallery-thumbanil .current {
+        width: 36px;
+        height: auto;
+    }
 
     .gallery-imgs-wrap {
         margin-top: -12px;
