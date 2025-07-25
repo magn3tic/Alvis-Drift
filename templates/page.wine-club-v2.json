@@ -27,7 +27,7 @@
         "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
         "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
         "show_button_disconnected": true,
-        "button_text_disconnected": "Sign up now to join the club",
+        "button_text_disconnected": "Sign up now",
         "url_disconnected": "https://alvisdrift.co.za/account/register"
       }
     },
