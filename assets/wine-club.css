@@ -469,6 +469,10 @@ margin-right: 20px;
         padding-top:10px
       }
     }
+   .awc-header{
+     font-family: var(--metropolis) !important;
+     font-weight:600;
+   }
     @media (min-width: 1023px) {
 
       .awc-hero--content-v2 h1 {
