@@ -19,7 +19,7 @@
         "image_connected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
         "image_connected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
         "show_button_connected": false,
-        "button_text_connected": "SHOP NOW",
+        "button_text_connected": "Sign up now to join the club",
         "url_connected": "",
         "subtitle_disconnected": "Alvi's Drift Private Club",
         "title_disconnected": "Shop The Winter <br>\nWarmer Sale",
@@ -27,8 +27,8 @@
         "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
         "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
         "show_button_disconnected": false,
-        "button_text_disconnected": "JOIN NOW",
-        "url_disconnected": ""
+        "button_text_disconnected": "Sign up now to join the club",
+        "url_disconnected": "https://alvisdrift.co.za/account/register"
       }
     },
     "wine_club_hero_v2_y96K78": {
