@@ -11,7 +11,7 @@
   {% if block.settings.mobile_background_image != blank %}
 {{ block.settings.mobile_background_image | image_url: width: 600 | image_tag: preload: true, class: 'hero-section-bg mobile-bg' }} 
      {% else %}
-    {{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg mobile-bg" }}
+{{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg mobile-bg" }}
     {% endif %}
   {% if block.settings.background_image %}
 {{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg laptop-bg" }}
