@@ -218,7 +218,7 @@ body {
 
       
     
-     <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+     
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
@@ -275,11 +275,12 @@ body {
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
       defer></script>
+   
   </head>
 
   <!-- Sticky Banner -->
   <body class="template-{{ template | replace: '.', '-' | replace: '/', '-' }}">
-
+ <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
     {% include 'agechecker' %}
     {% comment %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
