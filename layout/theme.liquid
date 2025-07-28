@@ -270,28 +270,14 @@ body {
           checkAgeGate();
         };
     </script>
-<script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-      defer></script>
-   
   </head>
-
   <!-- Sticky Banner -->
   <body class="template-{{ template | replace: '.', '-' | replace: '/', '-' }}">
     <script
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"></script>
- <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
-    <script>
-        $(document).ready(function(){    
-          $("#MORE").click(function(){     
-      $('.icon-hamberger').click();    
-          });
-        });
-  </script>
+ 
     {% include 'agechecker' %}
     {% comment %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -348,7 +334,14 @@ body {
       defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js" defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js" defer="defer"></script>
-    
+    <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+    <script>
+        $(document).ready(function(){    
+          $("#MORE").click(function(){     
+      $('.icon-hamberger').click();    
+          });
+        });
+  </script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
 
     <style>
