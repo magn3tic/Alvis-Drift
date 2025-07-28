@@ -594,6 +594,7 @@
         },
         "172e4d3c-77bc-4d56-a15f-28ef7e101400": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Best Sellers",
             "collectionCarasoul": "best-sellers"
@@ -601,6 +602,7 @@
         },
         "e1da377c-7a1d-4c54-80f0-ee4eb138fcb4": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "SIGNATURE RANGE",
             "collectionCarasoul": "signature-range"
@@ -608,6 +610,7 @@
         },
         "da410b66-55b5-41bc-b50a-82a109d7f826": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "221 RANGE",
             "collectionCarasoul": "221-range"
@@ -615,6 +618,7 @@
         },
         "f7166b61-1b93-49a6-ae5a-a33b67e954c9": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "RESERVE RANGE",
             "collectionCarasoul": "reserve-range"
@@ -622,6 +626,7 @@
         },
         "91df3ff6-2007-4e78-bc2d-f3aef4a1fe16": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "ICON RANGE",
             "collectionCarasoul": "icon-range"
@@ -629,6 +634,7 @@
         },
         "1639717880a3dfd1a1-0": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "FLAGSHIP RANGE",
             "collectionCarasoul": "flagship-range"
@@ -644,6 +650,7 @@
         },
         "9b3f0de5-da23-4ea1-ba75-bdd3132f9c68": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Premium Wines",
             "collectionCarasoul": "premium-wines"
