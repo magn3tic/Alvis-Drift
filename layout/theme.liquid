@@ -215,7 +215,13 @@ body {
     {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'custom_css_updates.css' | asset_url | stylesheet_tag: preload: true}}
 
-      
+      <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+      defer></script>
+    
+     <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
@@ -267,12 +273,7 @@ body {
           checkAgeGate();
         };
     </script>
-<script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-      defer></script>
-     <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+
   </head>
 
   <!-- Sticky Banner -->
