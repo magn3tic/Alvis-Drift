@@ -286,6 +286,14 @@ body {
       crossorigin="anonymous"
       defer></script>
  <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+    
+    <script>
+        $(document).ready(function(){    
+          $("#MORE").click(function(){     
+      $('.icon-hamberger').click();    
+          });
+        });
+  </script>
     {% include 'agechecker' %}
     {% comment %}
     <a class="skip-to-content-link button visually-hidden" href="#MainContent">
@@ -356,13 +364,6 @@ body {
 
 
 
-    <script>
-        $(document).ready(function(){    
-          $("#MORE").click(function(){     
-      $('.icon-hamberger').click();    
-          });
-        });
-  </script>
     {% comment %} {% render 'back-to-the-top' %}{% endcomment %}
     {% include 'revy-discounts-script' %}
     <style>
