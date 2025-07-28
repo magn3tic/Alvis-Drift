@@ -273,10 +273,7 @@ body {
   </head>
   <!-- Sticky Banner -->
   <body class="template-{{ template | replace: '.', '-' | replace: '/', '-' }}">
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"></script>
+    
  
     {% include 'agechecker' %}
     {% comment %}
@@ -319,7 +316,10 @@ body {
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
     {%- endif -%}
-    
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js" defer="defer"></script>
     <script
       type="text/javascript"
