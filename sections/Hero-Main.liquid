@@ -25,12 +25,12 @@
     class = "hero-section-bg mobile-bg"
   />
      {% else %}
-{{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg mobile-bg" }}
+{{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg mobile-bg", fetchpriority: 'high'}}
     {% endif %}
   {% if block.settings.background_image %}
-{{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg laptop-bg" }}
+{{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg laptop-bg", fetchpriority: 'high'}}
    {% elsif block.settings.background_image %}
-{{ block.settings.background_image | image_url: width: master | image_tag: preload: true, class: "hero-section-bg" }}
+{{ block.settings.background_image | image_url: width: master | image_tag: preload: true, class: "hero-section-bg", fetchpriority: 'high'}}
    {% endif %}
    </picture>
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
