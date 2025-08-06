@@ -530,12 +530,13 @@ summary.list-menu__item {
 }
 
 .hero-txt {
-    display: flex
+    display: flex;
+
 }
 
 @media screen and (max-width: 1150px) {
     .hero-txt {
-        left:355px
+        left:355px;
     }
   .animate-reveal{
     line-height:6rem !important
@@ -2137,6 +2138,9 @@ img.icon.icon-search {
         max-width:100%;
         height: auto;
         margin-top: 30px
+    }
+    .hero-text{
+        justify-content:center;
     }
 }
 
