@@ -315,6 +315,7 @@
   }
   .hero-txt{
     padding-top:180px;
+     justify-content:center;
   }
 }
 .product-title{
