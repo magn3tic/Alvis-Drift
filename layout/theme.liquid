@@ -309,10 +309,10 @@ body {
      
   </script>
     {%- if settings.predictive_search_enabled -%}
-        {{ 'predictive-search.js' | asset_url | preload_tag: as: 'script' }}
+      <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
     {%- endif -%}
   
-    {{ 'product-form.js' | asset_url | preload_tag: as: 'script' }}
+    <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js" defer="defer"></script>
     <script
       type="text/javascript"
