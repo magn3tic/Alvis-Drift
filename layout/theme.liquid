@@ -9,23 +9,7 @@
     <link rel="canonical" href="{{ canonical_url }}">
     
 
-  
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
-    {{ 'venobox.css' | asset_url | stylesheet_tag: preload: true }}
-    
-    {%- if settings.favicon != blank -%}
-      <link
-        rel="icon"
-        type="image/png"
-        href="{{ settings.favicon | img_url: '32x32' }}">
-    {%- endif -%}
-    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
-      <link
-        rel="preconnect"
-        href="https://fonts.shopifycdn.com"
-        crossorigin>
-    {%- endunless -%}
-    <title>
+  <title>
       {{ page_title }}
       {%- if current_tags %}
         &ndash; tagged "{{ current_tags | join: ', ' }}"{% endif -%}
@@ -34,6 +18,18 @@
       {%- unless page_title contains shop.name %}
         &ndash; {{ shop.name }}{% endunless -%}
     </title>
+    
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    {{ 'venobox.css' | asset_url | stylesheet_tag: preload: true }}
+
+    {%- if settings.favicon != blank -%}
+      <link rel="icon" type="image/png" href="{{ settings.favicon | img_url: '32x32' }}">
+    
+    {%- endif -%}
+    {%- unless settings.type_header_font.system? and settings.type_body_font.system? -%}
+      <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
+    {%- endunless -%}
+    
     {{ 'custom_css.css' | asset_url | stylesheet_tag }}
     {{ 'common_pages_animation.css' | asset_url | stylesheet_tag: preload: true}}
     {% render 'meta-tags' %}
