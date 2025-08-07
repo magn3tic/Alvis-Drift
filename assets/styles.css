@@ -461,7 +461,7 @@ summary.list-menu__item {
     height: 100%;
     position: absolute;
     top:0;
-    z-index:5
+    z-index:2
 }
 
 .hero-section {
@@ -6600,9 +6600,7 @@ button.t-link {
     font-size: 28px;
     width: 100%
 }
-.hero-content{
-  padding-top:80px
-}
+
 @media only screen and (max-width: 500px) {
     .tabs-content .product-price {
         margin-top:-40px;
