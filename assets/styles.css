@@ -14,7 +14,7 @@
     --oliveBg: #4A5B52;
     --cartBg: #210e21;
     --metropolis: "Metropolis",sans-serif;
-    --moriarty: "Moriarty",serif;
+    --moriarty: "Moriarty",sans-serif;
     --whiteColor: #ffffff;
     --headingColor: #F5ECDD;
     --txtColor: #F3F3F3;
@@ -439,7 +439,6 @@ summary.list-menu__item {
 .hero-section-bg {
   width: 100%;
   height: 100%;
-  max-height: 730px;
   position: absolute;
   top: 0;
   right: 0;
@@ -449,8 +448,7 @@ summary.list-menu__item {
   background-color:#2e112d;
 }
 .mobile-bg{
-  max-height:548px;
-  height:500px;
+  height:100%;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -472,9 +470,9 @@ summary.list-menu__item {
 .hero-section {
     position: relative;
     width: 100%;
-    height: 85vh;
     margin-top: -131px;
-    overflow: hidden
+    overflow: hidden;
+    min-height:500px
 }
 
 .hero-title h2 span p {
@@ -532,19 +530,19 @@ summary.list-menu__item {
 }
 
 .hero-txt {
-    display: flex
+    display: flex;
+
 }
 
 @media screen and (max-width: 1150px) {
     .hero-txt {
-        left:355px
+        left:355px;
     }
   .animate-reveal{
-    font-size:60px !important;
     line-height:6rem !important
   }
   .hero-section{
-    height:95vh;
+    height:680px;
   }
 }
 
@@ -4730,12 +4728,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     }
 }
 
-@media screen and (max-width: 900px) {
-    .hero-section {
-        max-height:500px
-    }
-}
-
 @media screen and (max-width: 1023px) {
     body {
         font-size:14px
@@ -6138,7 +6130,7 @@ p.sub-title {
     }
 
     .product-gallery-thumbnails {
-        width: 38px
+        width: 65px
     }
 
     .gallery-thumbanil {
@@ -6148,13 +6140,15 @@ p.sub-title {
     }
 
     .gallery-imgs-wrap {
-        margin-top: -12px;
         width: 100%;
         height: auto
     }
-
+.product-gallery{
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+}
     .input-num-wrap input[type=number] {
-        height: 28px
+        height: 35px
     }
 
     .main-product {
@@ -6600,7 +6594,9 @@ button.t-link {
 
 .hero-title h2 span p {
     margin: 0!important;
-    line-height: 8rem
+    line-height: 8rem;
+    font-family: var(--metropolis);
+    font-weight:600
 }
 
 .tabs-content .product-price {
@@ -6608,7 +6604,7 @@ button.t-link {
     width: 100%
 }
 .hero-content{
-  padding-top:30px
+  padding-top:80px
 }
 @media only screen and (max-width: 500px) {
     .tabs-content .product-price {
@@ -6956,7 +6952,7 @@ summary.list-menu__item {
   color:#000!important
 }
 .blank-space{
-  margin-bottom:22px;
+  margin-bottom:10px;
   visibility: hidden;
   ;
 }
