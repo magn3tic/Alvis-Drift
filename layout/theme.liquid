@@ -8,13 +8,11 @@
     <meta name="description" content="{{ page_description }}">
     <link rel="canonical" href="{{ canonical_url }}">
     
-  <link
-      rel="preconnect"
-      href="https://cdn.shopify.com"
-      crossorigin>
-    {{ 'venobox.css' | asset_url | stylesheet_tag: preload: true }}
-    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
 
+  
+    <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+    {{ 'venobox.css' | asset_url | stylesheet_tag: preload: true }}
+    
     {%- if settings.favicon != blank -%}
       <link
         rel="icon"
