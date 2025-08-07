@@ -123,7 +123,9 @@ body {
   }
 }
     {% endstyle %}
+
     {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
+
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
     
@@ -302,6 +304,7 @@ body {
       crossorigin="anonymous"
       defer>
       {{ 'cart-limit.js' | asset_url | preload_tag: as: 'script' }}
+      <script src="{{ 'cart-limit.js' | asset_url }}" defer></script>
      
   </script>
     {%- if settings.predictive_search_enabled -%}
