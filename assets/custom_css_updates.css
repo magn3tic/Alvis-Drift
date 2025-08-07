@@ -160,7 +160,7 @@
 }
 @media only screen and (min-width:1800px){
   .hero-section{
-    height:50vh;
+    height:65vh;
   }
   .hero-main-content{
     padding:0 100px !important
@@ -269,6 +269,9 @@
  .hero-main-content .col-sm{
     width:100%!important
   }
+  .hero-main-content{
+    align-content:flex-start !important
+  }
 }
 
 .navbar-close .icon.icon-close {
@@ -312,6 +315,7 @@
   }
   .hero-txt{
     padding-top:180px;
+     justify-content:center;
   }
 }
 .product-title{
@@ -372,6 +376,7 @@ section.main-product-sec.pg-mrg-fx {
 }
 .gridCleanUp .product-title {
   margin-bottom: 15px;
+  margin-top:15px;
 }
 .gridCleanUp .product-price {
   margin: 0;
@@ -524,10 +529,27 @@ button#checkout {
   flex-wrap:wrap;
   align-content:center;
 }
+.col-sm{width:50%;}
+.hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:hover, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:hover:not(.inactive), .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:focus, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:active, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:active:not(.inactive):not(.link){background:none !important;}
+
+.promo-label{
+  color:#b08d57;
+  font-size:12px;
+  line-height:1.5rem;
+  font-weight:700;
+  padding-top:4px
+}
 .termsCheckbox {
     text-align: left !important;
     display: block;
     padding-top: 18px;
 }
-.col-sm{width:50%;}
-.hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:hover, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:hover:not(.inactive), .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:focus, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:active, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:active:not(.inactive):not(.link){background:none !important;}
+  @media (min-width:250px) and (max-width:900px) {
+ .animate-reveal {
+  font-size: 26px;
+  line-height: 1.2em;
+}
+.laptop-bg{
+  height:60vh
+}
+  }
