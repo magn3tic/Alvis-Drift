@@ -74,7 +74,7 @@
     <div class="awc-bg awc-bg-picture awc-bg-picture--disconnected">
       <picture>
         <source media="(max-width: 1023px)" srcset="{{ section.settings.image_disconnected_mobile | image_url: width: 450 }}">
-        {{ section.settings.image_disconnected_desktop | image_url: width: 2000 | image_tag: preload: true, class: "Alvi's Drift Wine Club" }}
+        {{ section.settings.image_disconnected_desktop | image_url: width: 2000 | image_tag: preload: true, alt: "Alvi's Drift Wine Club" }}
       </picture>
     </div>
   {% endif %}
