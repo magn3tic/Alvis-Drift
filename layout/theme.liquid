@@ -304,13 +304,15 @@ body {
       src="https://code.jquery.com/jquery-3.7.1.min.js"
       integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
-      defer> 
+      defer>
+      {{ 'cart-limit.js' | asset_url | preload_tag: as: 'script' }}
+     
   </script>
     {%- if settings.predictive_search_enabled -%}
-      <script src="{{ 'predictive-search.js' | asset_url }}" defer></script>
+        {{ 'predictive-search.js' | asset_url | preload_tag: as: 'script' }}
     {%- endif -%}
   
-    <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
+    {{ 'product-form.js' | asset_url | preload_tag: as: 'script' }}
     <script src="//cdnjs.cloudflare.com/ajax/libs/jQuery.Marquee/1.5.0/jquery.marquee.min.js" defer="defer"></script>
     <script
       type="text/javascript"
