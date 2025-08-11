@@ -22,16 +22,9 @@
             <div class="product-bx position-relative">
               <div class="product-img">
                 <a href="{{ product.url }}">
-                <img src="{{ product.featured_image | img_url:'master' }}"
-                srcset="
-                 {{ product.featured_image | img_url: '200x' }} 200w,
-                 {{ product.featured_image | img_url: '400x' }} 400w,
-                 {{ product.featured_image | img_url: '600x' }} 600w,
-                 {{ product.featured_image | img_url: '800x' }} 800w,
-                 {{ product.featured_image | img_url: 'master' }} 1200w "
-                 loading="lazy" 
-                alt="{{ product.featured_image.alt }}"
-                width = "282" height = "323"></a>
+              {{ product.featured_image | image_url: width: 400 | image_tag: loading: 'lazy' }}
+              </a>
+
               </div>
               <div class="product-title" style= "color: #E36653;">
                 <div class="sp-t"><a href="{{ product.url }}">{{ product.title }}</a></div>
