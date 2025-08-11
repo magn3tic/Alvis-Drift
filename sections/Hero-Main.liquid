@@ -7,11 +7,6 @@
 	</script>   
 {% for block in section.blocks %}
  <div class="hero-section">
-  <picture>
-        <source media="(max-width: 1023px)" srcset="{{ block.settings.mobile_background_image | image_url: width: 500 }}">
-        {{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg" }}
-      </picture>
- 
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
     {% assign opacity = block.settings.overlay_opacity %}       
@@ -21,6 +16,10 @@
   {% else %}
     <div class="hero-overlay-bg"></div>
   {% endif %}
+  <picture>
+        <source media="(max-width: 1023px)" srcset="{{ block.settings.mobile_background_image | image_url: width: 500 }}">
+        {{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg" }}
+      </picture>
   <div class="hero-section-inner">
     <div class = "hero-main-content">
     <div class="hero-content col-sm">
