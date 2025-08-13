@@ -7,9 +7,10 @@
 	</script>   
 {% for block in section.blocks %}
  <div class="hero-section">
- <picture>
-  <source media="(max-width: 920px)" srcset="{{ block.settings.mobile_background_image | image_url: width: 500, format: 'webp' }}" type="image/webp">
-  <img src="{{ block.settings.background_image | image_url: width: 1600, format: 'webp' }}" width ="{{ block.settings.background_image.width }}" height = "{{ block.settings.background_image.height }}" class="hero-section-bg" alt="">
+<picture>
+  <source media="(max-width: 920px)"
+    srcset="{{ block.settings.mobile_background_image | image_url: width: 500, format: 'webp' }}" type="image/webp">
+  <img src="{{ block.settings.background_image | image_url: width: 1600, format: 'webp' }}" width = "1600" height = "608" class="hero-section-bg" alt="">
 </picture>
 
 <script>
@@ -17,11 +18,13 @@
   var link = document.createElement('link');
   link.rel = 'preload';
   link.as = 'image';
+  
   if (window.innerWidth <= 920) {
     link.href = '{{ block.settings.mobile_background_image | image_url: width: 500, format: "webp" }}';
   } else {
     link.href = '{{ block.settings.background_image | image_url: width: 1600, format: "webp" }}';
   }
+
   document.head.appendChild(link);
 })();
 </script>
