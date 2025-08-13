@@ -8,8 +8,18 @@
 {% for block in section.blocks %}
  <div class="hero-section">
   <picture>
-        <source media="(max-width: 920px)" srcset="{{ block.settings.mobile_background_image | image_url: width: 500 }}">
-        {{ block.settings.background_image | image_url: width: 1600, format: 'webp' | image_tag: preload: true, class: "hero-section-bg" }}
+    
+    {% if request.design_mode %}
+  {%- comment -%} No preload in theme editor to avoid noise {%- endcomment -%}
+{% else %}
+  {% if screen_width < 920 %}
+    <source media="(max-width: 920px)" srcset="{{ block.settings.mobile_background_image | image_url: width: 500 }}">
+  {% else %}
+     {{ block.settings.background_image | image_url: width: 1600, format: 'webp' | image_tag: preload: true, class: "hero-section-bg" }}
+  {% endif %}
+{% endif %}
+        
+     
   </picture>
  
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
