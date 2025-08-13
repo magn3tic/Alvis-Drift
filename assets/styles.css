@@ -438,7 +438,7 @@ summary.list-menu__item {
 
 .hero-section-bg {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
   background-color:#2e112d;
 }
