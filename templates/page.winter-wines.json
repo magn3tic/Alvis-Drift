@@ -53,13 +53,6 @@
         "right_btn_link": ""
       }
     },
-    "spacer_J4kXwy": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "50px"
-      }
-    },
     "focus_text_text_only_BEpDcR": {
       "type": "Focus-Text-Text-Only",
       "name": "Focus Text (Text Only)",
@@ -243,7 +236,6 @@
     "main",
     "1641826354f199ac86",
     "163969141624b2e715",
-    "spacer_J4kXwy",
     "focus_text_text_only_BEpDcR",
     "call_to_action_nzRcTU",
     "1641826680091d5999",
