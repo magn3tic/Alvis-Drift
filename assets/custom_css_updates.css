@@ -524,7 +524,7 @@ button#checkout {
 .hero-main-content{
   display:flex;;
   align-items:center;
-  height:100%;
+  height:auto;
   padding:0 70px;
   flex-wrap:wrap;
   align-content:center;
