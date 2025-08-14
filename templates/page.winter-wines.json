@@ -74,13 +74,6 @@
         "new_tab": true
       }
     },
-    "spacer_gyzQr7": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "50px"
-      }
-    },
     "call_to_action_nzRcTU": {
       "type": "Call-To-Action",
       "name": "Call To Action",
@@ -252,7 +245,6 @@
     "163969141624b2e715",
     "spacer_J4kXwy",
     "focus_text_text_only_BEpDcR",
-    "spacer_gyzQr7",
     "call_to_action_nzRcTU",
     "1641826680091d5999",
     "1641827019a861ede0",
