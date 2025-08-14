@@ -8,7 +8,6 @@
 {% for block in section.blocks %}
  <div class="hero-section">
 <link rel="preload" as="image"  href="{{ block.settings.background_image | image_url: width: 1600, format: 'webp' }}">
-
 <picture>
 <source media="(max-width: 920px)" srcset="{{ block.settings.mobile_background_image | image_url: width: 500, format: 'webp' }}" type="image/webp">
  {{ block.settings.background_image | image_url: width: 1600, format: 'webp' | image_tag: preload: true, class: "hero-section-bg" }}
