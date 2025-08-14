@@ -30,7 +30,10 @@
             {% for product in collections[colName].products %}
             <div class="product-bx position-relative">
               <div class="product-img">
-                <a href="{{ product.url }}"><img src="{{ product.featured_image | img_url:'master' }}" loading="lazy" width = "133" height = "399" alt=""></a>
+                <a href="{{ product.url }}">
+                  {{ product.featured_image | image_url: width: 325, format: 'webp' | image_tag: loading: 'lazy'}}
+                
+                </a>
               </div>
               <div class="product-title"><div class="sp-t"><a href="{{ product.url }}">{{ product.title }}</a></div></div>              
         {% if settings.member-discount == "enable" %}
