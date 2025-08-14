@@ -8,8 +8,18 @@
 {% for block in section.blocks %}
  <div class="hero-section">
 <picture>
-<source media="(max-width: 920px)" srcset="{{ block.settings.mobile_background_image | image_url: width: 500, format: 'webp' }}" type="image/webp">
- {{ block.settings.background_image | image_url: width: 1600, format: 'webp' | image_tag: preload: true, class: "hero-section-bg" }}
+  <source 
+    media="(max-width: 920px)" 
+    srcset="{{ block.settings.mobile_background_image | image_url: width: 324, format: 'webp' }}" 
+    type="image/webp" 
+    sizes="324px">
+
+  <img 
+    src="{{ block.settings.background_image | image_url: width: 1600, format: 'webp' }}" 
+    sizes="100vw" 
+    class="hero-section-bg" 
+    loading="eager" 
+    alt="">
 </picture>
 
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
