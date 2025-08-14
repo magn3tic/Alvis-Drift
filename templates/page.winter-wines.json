@@ -126,13 +126,6 @@
         "button_type": "alvisBtnOpposite"
       }
     },
-    "spacer_EgTFfc": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "25px"
-      }
-    },
     "focus_text_text_only_9BzYr3": {
       "type": "Focus-Text-Text-Only",
       "name": "Focus Text (Text Only)",
@@ -237,13 +230,6 @@
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }
-    },
-    "spacer_B9WGVX": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "25px"
-      }
     }
   },
   "order": [
@@ -255,9 +241,7 @@
     "1641826680091d5999",
     "1641827019a861ede0",
     "164182735506b8b21c",
-    "spacer_EgTFfc",
     "focus_text_text_only_9BzYr3",
-    "spacer_B9WGVX",
     "1641827535f50b1fac",
     "164182782815b79542",
     "1641828055146d3909",
