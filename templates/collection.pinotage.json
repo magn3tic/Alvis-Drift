@@ -22,17 +22,9 @@
         "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "WHITE",
-        "paragarh_p2": "WINES",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "OUR SELECTION OF WHITE WINES INCLUDE SAUVIGNON BLANC, CHENIN BLANC, CHARDONNAY, VIOGNIER, AND WHITE WINE BLENDS",
-        "paragarh_2": "Alvi’s Drift winery has gained an international reputation for producing superb, fruit-driven white wines of singular character and complexity, including cooler-climate varietals such as Chardonnay.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-wines",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "product-grid": {
@@ -51,7 +43,7 @@
       ],
       "settings": {
         "topheading": "OUR PINOTAGE WINES",
-        "subtitle-1": "15% OFF Signature & 221 Wines. 25% OFF Flagship Verreaux. Discount Applied at Checkout!",
+        "subtitle-1": "",
         "active_collection": "pinotage"
       }
     },
