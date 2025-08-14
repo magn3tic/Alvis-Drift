@@ -84,7 +84,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Signature-Range-Pinotage.png",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Pinotage.png",
         "image_size": "100%",
         "video_url": "",
         "Heading_size": "h2",
@@ -99,7 +99,7 @@
     "1641827019a861ede0": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvis_Drift_Verreaux_wine.png",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Shiraz.png",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
@@ -114,7 +114,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Signature-Range-Merlot.jpg",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Merlot.png",
         "image_size": "100%",
         "video_url": "",
         "Heading_size": "h2",
@@ -143,7 +143,7 @@
     "1641827535f50b1fac": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvis_Drift_wine_tesing.png",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Cabernet-Sauvignon.png",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
@@ -158,7 +158,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Red_Meat_Pairing_06.jpg",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-221-Range-Pinotage.png",
         "image_size": "100%",
         "video_url": "",
         "Heading_size": "h2",
@@ -173,7 +173,7 @@
     "1641828055146d3909": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvis_Drift_Verreaux_wine.png",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-221-Range-Special-Cuvee.png",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
