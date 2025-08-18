@@ -540,6 +540,7 @@ summary.list-menu__item {
   }
   .hero-section{
     height:680px;
+    max-height:600px
   }
 }
 
