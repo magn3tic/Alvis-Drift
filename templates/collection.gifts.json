@@ -22,9 +22,10 @@
           "type": "slider",
           "settings": {
             "background_image": "shopify://shop_images/Alvis-Drift-Festive-Gifts.jpg",
+            "mobile_background_image": "shopify://shop_images/Alvis_drift_Gift_banner_mobile.png",
             "image_overlay": "#000000",
             "overlay_opacity": 50,
-            "Heading_color": "#f8f2e6",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "WINE",
             "paragarh_p2": "GIFTS",
@@ -44,17 +45,9 @@
         "background_image": "shopify://shop_images/DSC_4399.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "SHOP",
-        "paragarh_p2": "OUR",
-        "paragarh_p3": "GIFTS",
-        "paragarh_p4": "",
-        "paragarh_1": "BUY ALVI’S DRIFT-BRANDED GIFTING ONLINE",
-        "paragarh_2": "Browse our assortment of beautifully packaged, limited-edition Alvi’s Drift wines and stylish, Alvi’s Drift-branded gifts for wine enthusiasts.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-wines",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "16394887186124ed9d": {
