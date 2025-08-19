@@ -304,7 +304,7 @@
     width: 50%;
   }
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 900px) {
   .product-items-sec.gridCleanUp .product-bx, .product-items-sec .product-bx   {
     width: 33%;
   }
