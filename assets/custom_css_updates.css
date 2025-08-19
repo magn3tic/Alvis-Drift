@@ -25,11 +25,6 @@
     padding-right: 80px;
   }
 }
-@media only screen and (max-width:1025px){
-  .hero-main-content{
-    align-content:flex-start !important
-  }
-}
 
 .text-center {
   text-align: center;
@@ -274,7 +269,9 @@
  .hero-main-content .col-sm{
     width:100%!important
   }
-  
+  .hero-main-content{
+    align-content:flex-start !important
+  }
 }
 
 .navbar-close .icon.icon-close {
