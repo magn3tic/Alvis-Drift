@@ -308,15 +308,15 @@
   .product-items-sec.gridCleanUp .product-bx, .product-items-sec .product-bx   {
     width: 33%;
   }
-}
-@media screen and (min-width: 1000px) {
-  .product-items-sec.gridCleanUp .product-bx, .product-items-sec .product-bx {
-    width: 25%;
-  }
   .hero-txt{
     padding-top:180px;
      justify-content:center;
   }
+}
+@media screen and (min-width: 1200px) {
+  .product-items-sec.gridCleanUp .product-bx, .product-items-sec .product-bx {
+    width: 25%;
+  } 
 }
 .product-title{
   color: #c65336;
