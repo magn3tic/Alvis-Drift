@@ -7,12 +7,12 @@
 {% endif%}
 <section class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
   
-  <div class="sec-inner">
+  <div class="sec-inner" {% if section.settings.hypertext != blank %} id= "{{ section.settings.hypertext }}"{% endif %} >
     <div class="container">
       <h2 class = "h1">{{ section.settings.topheading }}</h2>
       <p class="sub-title">{{ section.settings.subtitle-1}}</p>
        {%- for block in section.blocks -%}
-      <div class="product-tabs"{% if block.settings.hypertext != blank %} id = "{{ block.settings.hypertext }}"{% endif %}>    
+      <div class="product-tabs">    
         {% assign default_collection =  section.settings.active_collection %}     
         <ul>
           {%- assign b_i = block.settings -%}
@@ -368,6 +368,11 @@
     "type": "collection",
     "id": "active_collection",
     "label": "Default active collection"
+    },
+    {
+      "type":"text",
+      "id": "hypertext",
+      "label": "Hypertext id"
     }
 
     ],
@@ -381,11 +386,6 @@
     "type": "text",
     "id": "collection_heading",
     "label": "Collection Name"
-    },
-    {
-      "type":"text",
-      "id": "hypertext",
-      "label": "Hypertext id"
     },
     {
     "type": "collection",
