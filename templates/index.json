@@ -802,7 +802,7 @@
         "Heading_color": "#f8f2e6",
         "title": "Our Cellar",
         "video-sec-content-txt-1": "<p><strong>Celebrating winemaking as a matter of choice, not chance</strong></p><p>The Alvi’s Drift cellar is where we experiment, innovate and dare to be true in living out our passion for winemaking. It’s one place you’ll rarely find us doing what’s expected. We’re too busy doing what we love.</p>",
-        "button-txt": "More",
+        "button-txt": "<!--td {border: 1px solid #cccccc;}br {mso-data-placement:same-cell;}-->The Cellar",
         "button_link": "shopify://pages/cellar",
         "button_type": "alvisBtn"
       }
