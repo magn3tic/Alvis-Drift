@@ -49,8 +49,8 @@
         "image_overlay": "",
         "overlay_opacity": 30,
         "blurb": "",
-        "right_btn_text": "",
-        "right_btn_link": ""
+        "right_btn_text": "Our red wines",
+        "right_btn_link": "#red-winter-wines"
       }
     },
     "focus_text_text_only_BEpDcR": {
@@ -202,7 +202,8 @@
       "settings": {
         "topheading": "OUR RED WINES",
         "subtitle-1": "WINTER WARMERS",
-        "active_collection": "winter-red-wines"
+        "active_collection": "winter-red-wines",
+        "hypertext": "red-winter-wines"
       }
     },
     "focus_text_text_only_bU7YjX": {
