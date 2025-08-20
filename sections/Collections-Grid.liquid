@@ -5,9 +5,9 @@
   {% assign included_product_ids = settings.product_list_included-second  | map: "id" %}
   {% assign included_product_ids_third = settings.product_list_included-third  | map: "id" %}
 {% endif%}
-<section class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
+<section {% if section.settings.hypertext != blank %} id= "{{ section.settings.hypertext }}"{% endif %} class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
   
-  <div class="sec-inner" {% if section.settings.hypertext != blank %} id= "{{ section.settings.hypertext }}"{% endif %} >
+  <div class="sec-inner" >
     <div class="container">
       <h2 class = "h1">{{ section.settings.topheading }}</h2>
       <p class="sub-title">{{ section.settings.subtitle-1}}</p>
