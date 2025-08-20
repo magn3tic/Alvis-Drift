@@ -539,6 +539,13 @@
         "right_btn_link": "shopify://pages/icon-albertus-viljoen"
       }
     },
+    "spacer_r3CYwj": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "100px"
+      }
+    },
     "focus_text_text_only_cDDDqq": {
       "type": "Focus-Text-Text-Only",
       "name": "Focus Text (Text Only)",
@@ -551,13 +558,6 @@
         "button_text": "find out more",
         "button_link": "https://alvisdrift.co.za/pages/club",
         "new_tab": true
-      }
-    },
-    "spacer_r3CYwj": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "100px"
       }
     },
     "1639717880ecfddc97": {
@@ -1002,8 +1002,8 @@
     "1639717699756a1f5b",
     "custom_liquid_YMctFi",
     "1639717679a92fb59c",
-    "focus_text_text_only_cDDDqq",
     "spacer_r3CYwj",
+    "focus_text_text_only_cDDDqq",
     "1639717880ecfddc97",
     "gifts_grid_mbQp4Y",
     "collections_grid_PDLeiX",
