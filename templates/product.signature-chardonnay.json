@@ -101,7 +101,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#c0ccbe",
-            "text": "<p><strong>2024:</strong>  5,3%</p>",
+            "text": "<p><strong>2024:</strong>  13,7%</p>",
             "Text_color": "#ffffff"
           }
         },
@@ -110,7 +110,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#c0ccbe",
-            "text": "<p><strong>2024:</strong>  13,7 g/L</p>",
+            "text": "<p><strong>2024:</strong>  5,3 g/L</p>",
             "Text_color": "#ffffff"
           }
         },
