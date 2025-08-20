@@ -17,7 +17,7 @@
         {%- endif -%}
         {%- when 'title'-%}
           <header class="page-width page-width--narrow article-post" {{ block.shopify_attributes }} >
-            <h1 class="article-template__title" style ="text-transform:{{ block.settings.header_transform }} !important" itemprop="headline">{{ article.title | escape }}</h1>
+            <h2 class="h1 article-template__title" style ="text-transform:{{ block.settings.header_transform }} !important" itemprop="headline">{{ article.title | escape }}</h2>
             <div class ="top-col">
               {% if article.metafields.custom.author_image  %} <img src ="{{ article.metafields.custom.author_image }}" width="30" height = "30" style = "border-radius:100%" > 
                 {% else %} <img src ="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvisdrift_icon_8dc3db4c-44ad-41a2-8e72-cbd10511fcf2.png?v=1712042942" width="30" height = "30">
