@@ -553,6 +553,13 @@
         "new_tab": true
       }
     },
+    "spacer_r3CYwj": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "100px"
+      }
+    },
     "1639717880ecfddc97": {
       "type": "Collections-Grid",
       "blocks": {
@@ -996,6 +1003,7 @@
     "custom_liquid_YMctFi",
     "1639717679a92fb59c",
     "focus_text_text_only_cDDDqq",
+    "spacer_r3CYwj",
     "1639717880ecfddc97",
     "gifts_grid_mbQp4Y",
     "collections_grid_PDLeiX",
