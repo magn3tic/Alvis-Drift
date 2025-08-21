@@ -90,11 +90,14 @@
         <a href ="{{ block.settings.side_btn_link }}"><img src = "{{ block.settings.img_icon | img_url:'master' }}" class = "front-img-icon"width = "110" height = "110" alt = "{{ block.settings.img_icon.image.alt }}"/> </a>   
      </div>
       {% endif %}
-      <div class="hero-btn-wrap">
+
+      
         {% if block.settings.side_btn_text != blank %}
+        <div class="hero-btn-wrap">
         <a href="{{ block.settings.side_btn_link }}" class="btn">{{ block.settings.side_btn_text }}</a>
+        </div> 
         {% endif %}
-      </div>  
+      
     <br> 
   </div>
    {% if block.settings.sec_banner != blank %}
