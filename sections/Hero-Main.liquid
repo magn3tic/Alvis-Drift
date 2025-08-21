@@ -52,10 +52,10 @@
       <div class="hero-title">
         <h2>
           <span>
-            {% if block.settings.paragarh_p1 %}<p class="animate-reveal">{{ block.settings.paragarh_p1 }}</p> {% endif %}
-            {% if block.settings.paragarh_p2 %}<p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p>{% endif %}
-            {% if block.settings.paragarh_p3 %}<p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>{% endif %}
-            {% if block.settings.paragarh_p4 %}<p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p>{% endif %}
+            {% if block.settings.paragarh_p1 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p1 }}</p> {% endif %}
+            {% if block.settings.paragarh_p2 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p>{% endif %}
+            {% if block.settings.paragarh_p3 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>{% endif %}
+            {% if block.settings.paragarh_p4 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p>{% endif %}
           </span> 
         </h2> 
       </div>
@@ -64,6 +64,7 @@
       <div class = "main_btn"><a href="{{ section.settings.right_btn_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
       {% endif %}
       </div>
+
         {% if block.settings.paragarh_1 != blank or block.settings.paragarh_2 != blank %}
       <div class="hero-txt col-sm"> 
         <div class="scrl-sec">
@@ -76,6 +77,7 @@
         </div>
         </div> 
         {% endif %}
+
   </div>
     </div>         
     {% if block.settings.video_banner != blank %}
