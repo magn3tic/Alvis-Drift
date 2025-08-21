@@ -16,8 +16,8 @@
       {{ block.settings.mobile_background_image | image_url: width: 768, format: 'webp' }} 768w,
       {{ block.settings.mobile_background_image | image_url: width: 1080, format: 'webp' }} 1080w
     "
-    width="{{ block.settings.mobile_background_image }}"
-    height="{{ block.settings.mobile_background_image }}"
+    width="{{ block.settings.mobile_background_image.width }}"
+    height="{{ block.settings.mobile_background_image.height }}"
     sizes="100vw"
     type="image/webp">
 
