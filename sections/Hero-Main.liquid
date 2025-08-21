@@ -9,6 +9,7 @@
  <div class="hero-section">
 <picture>
   <!-- Mobile -->
+  {% if mobile_background_image != blank %}
   <source 
     media="(max-width: 750px)" 
     srcset="
@@ -19,7 +20,7 @@
     height="{{ block.settings.mobile_background_image.height }}"
     sizes="100vw"
     type="image/webp">
-
+{% endif %}
   <!-- Desktop -->
   <img 
     src="{{ block.settings.background_image | image_url: width: 1600, format: 'webp' }}" 
