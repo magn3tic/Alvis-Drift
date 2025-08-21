@@ -8,8 +8,9 @@
 {% for block in section.blocks %}
  <div class="hero-section">
 <picture>
-  <!-- Mobile -->
+
   {% if block.settings.mobile_background_image != blank %}
+      <!-- Mobile -->
   <source 
     media="(max-width: 750px)" 
     srcset="
