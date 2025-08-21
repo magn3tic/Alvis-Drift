@@ -62,8 +62,8 @@
       <div class = "the_blurb">{{ section.settings.blurb }}</div>
       <div class = "main_btn"><a href="{{ section.settings.right_btn_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
       </div>
-      <div class="hero-txt col-sm"> 
         {% if block.settings.paragarh_1 != blank or block.settings.paragarh_2 != blank %}
+      <div class="hero-txt col-sm"> 
         <div class="scrl-sec">
             <span class="scrl-circle"></span>
             <span class="scrl-line"></span>
@@ -72,8 +72,8 @@
           <p class="sub-title">{{ block.settings.paragarh_1 }}</p>
           <p>{{ block.settings.paragarh_2 }}</p>
         </div>
+        </div> 
         {% endif %}
-      </div> 
   </div>
     </div>         
     {% if block.settings.video_banner != blank %}
