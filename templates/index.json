@@ -100,7 +100,7 @@
             "paragarh_1": "",
             "paragarh_2": "",
             "side_btn_text": "",
-            "side_btn_link": "shopify://pages/icon-albertus-viljoen"
+            "side_btn_link": ""
           }
         },
         "slider_6hLWbw": {
@@ -707,7 +707,8 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "signature-range"
+        "active_collection": "signature-range",
+        "hypertext": ""
       }
     },
     "gifts_grid_mbQp4Y": {
@@ -746,7 +747,8 @@
       "settings": {
         "topheading": "WINE GIFTS",
         "subtitle-1": "",
-        "active_collection": "gifts"
+        "active_collection": "gifts",
+        "hypertext": ""
       }
     },
     "173919213341da5d28": {
