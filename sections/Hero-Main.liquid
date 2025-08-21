@@ -8,8 +8,32 @@
 {% for block in section.blocks %}
  <div class="hero-section">
 <picture>
-  <source media="(max-width: 920px)" srcset="{{ block.settings.mobile_background_image | image_url: width: 324, format: 'webp' }}" type="image/webp" sizes="324px">
-  <img src="{{ block.settings.background_image | image_url: width: 1600, format: 'webp' }}" sizes="100vw" fetchPriority= "high" class="hero-section-bg" loading="eager" alt="">
+  <!-- Mobile first -->
+  <source 
+    media="(max-width: 920px)" 
+    srcset="
+      {{ block.settings.mobile_background_image | image_url: width: 480, format: 'webp' }} 480w,
+      {{ block.settings.mobile_background_image | image_url: width: 768, format: 'webp' }} 768w,
+      {{ block.settings.mobile_background_image | image_url: width: 1080, format: 'webp' }} 1080w
+    "
+    sizes="100vw"
+    type="image/webp">
+
+  <!-- Desktop -->
+  <img 
+    src="{{ block.settings.background_image | image_url: width: 1600, format: 'webp' }}" 
+    srcset="
+      {{ block.settings.background_image | image_url: width: 1200, format: 'webp' }} 1200w,
+      {{ block.settings.background_image | image_url: width: 1600, format: 'webp' }} 1600w,
+      {{ block.settings.background_image | image_url: width: 2000, format: 'webp' }} 2000w
+    "
+    width="{{ block.settings.background_image.width }}"
+    height="{{ block.settings.background_image.height }}"
+    sizes="100vw"
+    fetchpriority="high"
+    class="hero-section-bg"
+    loading="eager"
+    alt="">
 </picture>
 
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
