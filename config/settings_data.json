@@ -270,11 +270,6 @@
         "disabled": false,
         "settings": {}
       },
-      "3574802870912500141": {
-        "type": "shopify://apps/sc-loyalty-rewards/blocks/enable_storefront_widget/21842f98-987a-4ad6-91bf-a00b77123261",
-        "disabled": false,
-        "settings": {}
-      },
       "15683396631634586217": {
         "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
         "disabled": true,
@@ -304,6 +299,11 @@
           "remove_parameter": "powerx_rm_attr",
           "expire_after_hours": 5
         }
+      },
+      "3574802870912500141": {
+        "type": "shopify://apps/sc-loyalty-rewards/blocks/enable_storefront_widget/21842f98-987a-4ad6-91bf-a00b77123261",
+        "disabled": true,
+        "settings": {}
       }
     }
   },
