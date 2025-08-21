@@ -8,7 +8,7 @@
 {% for block in section.blocks %}
  <div class="hero-section">
 <picture>
-  <!-- Mobile first -->
+  <!-- Mobile -->
   <source 
     media="(max-width: 920px)" 
     srcset="
@@ -16,6 +16,8 @@
       {{ block.settings.mobile_background_image | image_url: width: 768, format: 'webp' }} 768w,
       {{ block.settings.mobile_background_image | image_url: width: 1080, format: 'webp' }} 1080w
     "
+    width="{{ block.settings.mobile_background_image }}"
+    height="{{ block.settings.mobile_background_image }}"
     sizes="100vw"
     type="image/webp">
 
