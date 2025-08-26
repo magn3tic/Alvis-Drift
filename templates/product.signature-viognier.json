@@ -101,7 +101,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#c0ccbe",
-            "text": "<p><strong>2024:  </strong>13,5%</p>",
+            "text": "<p><strong>2024:  </strong>13,6%</p>",
             "Text_color": "#ffffff"
           }
         },
@@ -110,7 +110,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#c0ccbe",
-            "text": "<p><strong>2024:  </strong>4,6 g/L</p>",
+            "text": "<p><strong>2024:  </strong>4,5 g/L</p>",
             "Text_color": "#ffffff"
           }
         },
@@ -437,7 +437,8 @@
       "settings": {
         "topheading": "OUR WHITE WINES",
         "subtitle-1": "",
-        "active_collection": "white-wines"
+        "active_collection": "white-wines",
+        "hypertext": ""
       }
     }
   },
