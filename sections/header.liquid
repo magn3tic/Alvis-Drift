@@ -17,9 +17,6 @@
 <noscript><link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}"></noscript>
 {%- endif -%}
 
-<style>
-
-</style>
 <script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
 <script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
@@ -303,23 +300,7 @@
 {%- endif -%}
     </li>
   </ul>
-</nav>
-            {% comment %}
-            {%- if shop.customer_accounts_enabled -%}
-              <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
-                {% render 'icon-account' %}
-                <span class="visually-hidden">
-                  {%- liquid
-                    if customer
-                      echo 'customer.account_fallback' | t
-                    else
-                      echo 'customer.log_in' | t
-                    endif
-                  -%}
-                </span>
-              </a>
-            {%- endif -%}
-            {% endcomment %}  
+</nav> 
             {% if customer.id == null %}
             <a href="/account" class="mobileAccountButton" style="margin-right:15px;">Login</a>
             {% else %}
@@ -555,10 +536,8 @@
     </div>
     <script>
         window.onscroll = function() {myFunction()};
-
         var header = document.getElementById("HeaderRight");
         var sticky = header.offsetTop;
-
         function myFunction() {
           if (window.pageYOffset > sticky) {
             header.classList.add("sticky");
