@@ -700,8 +700,7 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "signature-range",
-        "hypertext": ""
+        "active_collection": "signature-range"
       }
     },
     "gifts_grid_mbQp4Y": {
@@ -732,7 +731,7 @@
       "type": "Text-Scroller",
       "settings": {
         "dare-to-be-true-bg": "shopify://shop_images/Dare_To_Be_True.png",
-        "marquee-t-1": "D<i>A</i>RE TO BE TR<i>U</i>E",
+        "marquee-t-1": "DARE TO BE TRUE",
         "marquee-font-size": "90",
         "marquee-t-2": ""
       }
@@ -969,6 +968,13 @@
         "title_text": "",
         "Heading_color": "#f8f2e6"
       }
+    },
+    "spacer_LwaxT9": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "25px"
+      }
     }
   },
   "order": [
@@ -980,6 +986,7 @@
     "gifts_grid_mbQp4Y",
     "173919213341da5d28",
     "16397188493cb177a6",
+    "spacer_LwaxT9",
     "16397178753557dded",
     "16567627125bd91964",
     "1656762876d472a0f6",
