@@ -15,13 +15,6 @@
         "page_bg": "#2e112d"
       }
     },
-    "custom_liquid_YMctFi": {
-      "type": "custom-liquid",
-      "disabled": true,
-      "settings": {
-        "custom_liquid": "<div class=\"powr-popup\" id=\"c98e872a_1726730988\"></div><script src=\"https://www.powr.io/powr.js?platform=shopify\"></script>"
-      }
-    },
     "1639717679a92fb59c": {
       "type": "Hero-Main",
       "blocks": {
@@ -729,28 +722,6 @@
         "topheading": "WINE GIFTS"
       }
     },
-    "collections_grid_PDLeiX": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "item_D6heCM": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "gifts"
-          }
-        }
-      },
-      "block_order": [
-        "item_D6heCM"
-      ],
-      "disabled": true,
-      "settings": {
-        "topheading": "WINE GIFTS",
-        "subtitle-1": "",
-        "active_collection": "gifts",
-        "hypertext": ""
-      }
-    },
     "173919213341da5d28": {
       "type": "apps",
       "settings": {
@@ -1002,13 +973,11 @@
   },
   "order": [
     "1639717699756a1f5b",
-    "custom_liquid_YMctFi",
     "1639717679a92fb59c",
     "spacer_r3CYwj",
     "focus_text_text_only_cDDDqq",
     "1639717880ecfddc97",
     "gifts_grid_mbQp4Y",
-    "collections_grid_PDLeiX",
     "173919213341da5d28",
     "16397188493cb177a6",
     "16397178753557dded",
