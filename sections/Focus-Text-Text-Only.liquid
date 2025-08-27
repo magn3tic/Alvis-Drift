@@ -6,7 +6,7 @@
             </div>
             <p class="sub-title" >{{ section.settings.subtitle-1 }}</p>
             <p>{{ section.settings.subtitle-2 }}</p>
-            {% if section.settings.button_text!=blank %}
+            {% if section.settings.button_text !=blank %}
               <a class="alvisBtn" href="{{ section.settings.button_link }}" {% if section.settings.new_tab %} target="_blank" {% endif %} >{{ section.settings.button_text }}</a>
             {% endif %}
         </div>
