@@ -4,10 +4,11 @@
             <div class="marquee-wrap">
                 <div class="marquee" style = "font-size:{{ section.settings.marquee-font-size }}px">
                     <div class="marquee-t">{{ section.settings.marquee-t-1}}</div>
-                </div>          
-                <div class="marquee marquee2">
+                </div>
+                     
+                {% if section.settings.marquee-t-2 != blank %}<div class="marquee marquee2">
                     <div class="marquee-t">{{ section.settings.marquee-t-2}}</div>
-                </div>  
+                </div>  {% endif %}
             </div>     
            {% comment %} 
             <div class="dare-to-be-true-bx background">
