@@ -8,7 +8,7 @@
 <section class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
   <div class="sec-inner">
     <div class="container">
-      <h1>{{ section.settings.topheading }}</h1>
+     {% if section.settings.topheading != blank %} <h1>{{ section.settings.topheading }}</h1>{% endif %}
       <p class="sub-title">{{ section.settings.subtitle-1}}</p>
       <div class="product-tabs">    
         {% assign default_collection =  section.settings.active_collection %}     
@@ -390,4 +390,3 @@
     ]
     }
     {% endschema %}
-
