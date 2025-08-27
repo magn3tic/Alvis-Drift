@@ -87,21 +87,16 @@
         <a class="hero-video-btn-link" data-autoplay="true" data-vbtype="video" href="https://youtu.be/{{ block.settings.video_banner.id }}?modestbranding=0&autohide=1&showinfo=0&autoplay=0&playsinline=1&autohide=0&disablekb=1&showinfo=0&loop=0&fs=0&rel=0">{% render 'icon-video-btn' %}</a>
       </div>
     {% endif %}
-
-   
      {% if block.settings.img_icon != blank %}
       <div class = "right-hero-icon">
         <a href ="{{ block.settings.side_btn_link }}"><img src = "{{ block.settings.img_icon | img_url:'master' }}" class = "front-img-icon"width = "110" height = "110" alt = "{{ block.settings.img_icon.image.alt }}"/> </a>   
      </div>
       {% endif %}
-
-      
         {% if block.settings.side_btn_text != blank %}
         <div class="hero-btn-wrap">
         <a href="{{ block.settings.side_btn_link }}" class="btn">{{ block.settings.side_btn_text }}</a>
         </div> 
-        {% endif %}
-      
+        {% endif %}     
     <br> 
   </div>
    {% if block.settings.sec_banner != blank %}
