@@ -209,17 +209,7 @@ body {
     {{ 'slick-theme.min.css' | asset_url | stylesheet_tag: preload:true }}
     {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'custom_css_updates.css' | asset_url | stylesheet_tag: preload: true}}
-    
-    {% if template == 'product' %}
-  <link rel="preload" href="{{ 'product.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ 'product.css' | asset_url }}"></noscript>
-{% elsif template == 'cart' %}
-  <link rel="preload" href="{{ 'cart.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ 'cart.css' | asset_url }}"></noscript>
-{% else %}
-  <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="{{ 'styles.css' | asset_url }}"></noscript>
-{% endif %}
+    {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
  
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
