@@ -8,14 +8,13 @@
 {% for block in section.blocks %}
  <div class="hero-section">
 <picture>
-
   {% if block.settings.mobile_background_image != blank %}
       <!-- Mobile -->
   <source 
-    media="(max-width: 750px)" 
+    media="(max-width: 650px)" 
     srcset="
       {{ block.settings.mobile_background_image | image_url: width: 480, format: 'webp' }} 480w,
-      {{ block.settings.mobile_background_image | image_url: width: 768, format: 'webp' }} 768w,
+      {{ block.settings.mobile_background_image | image_url: width: 768, format: 'webp' }} 668w,
     "
     width="{{ block.settings.mobile_background_image.width }}"
     height="{{ block.settings.mobile_background_image.height }}"
@@ -114,7 +113,7 @@
 {% endfor %}
 </section>
 <style>
-  .animate-reveal {color: {{ section.settings.heading_color }};font-size: 70px;}
+  .animate-reveal { {% if section.settings.heading_color != blank %}color: {{ section.settings.heading_color }};{% endif %} font-size: 70px;}
   @media (min-width:250px) and (max-width:900px) { .animate-reveal {color: {{ section.settings.Heading_color }};font-size: 38px;line-height: 1.2em;}
   </style>
 {% schema %}
