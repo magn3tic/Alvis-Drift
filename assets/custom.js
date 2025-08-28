@@ -67,13 +67,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 	
-      $('.product-tabs ul li').click(function(){
-          var tab_id = $(this).attr('data-tab');
-          $('.product-tabs ul li').removeClass('current');
-          $('.tabs-content .product-items-wrap').removeClass('current');
-          $(this).addClass('current');
-          $("#"+tab_id).addClass('current');
-      });
+ // Tabs → ensure products are visible
+  $(".product-tabs ul li").click(function () {
+    var tab_id = $(this).attr("data-tab");
+    $(".product-tabs ul li, .tabs-content .product-items-wrap").removeClass("current");
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
+  });
   
       $('.gallery-thumbanil').click(function(){	
           /*var tab_id = $(this).attr('data-tab');
