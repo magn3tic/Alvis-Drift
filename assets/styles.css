@@ -48,7 +48,9 @@ a {
     width: 100%;
     margin: 0 auto
 }
-
+html {
+  scroll-behavior: smooth;
+}
 .header.page-width {
     max-width: 100%;
     display: flex;
@@ -438,9 +440,10 @@ summary.list-menu__item {
 
 .hero-section-bg {
   width: 100%;
-  height: 100%;
+  height: 100%; 
   object-fit: cover;
-  background-color:#480115;
+  display: block;
+  background-color: #480115; 
 }
 .mobile-bg{
   height:100%;
@@ -465,11 +468,12 @@ summary.list-menu__item {
 }
 
 .hero-section {
-    position: relative;
-    width: 100%;
-    margin-top: -131px;
-    overflow: hidden;
-    max-height:500px
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1521 / 578;
+  overflow: hidden;
+  margin-top: -131px;
+  background-color: #480115;
 }
 
 .hero-title h2 span p {
@@ -539,8 +543,7 @@ summary.list-menu__item {
     line-height:6rem !important
   }
   .hero-section{
-    height:680px;
-    max-height:600px
+    aspect-ratio: 376 / 680;
   }
 }
 
@@ -4892,7 +4895,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 .video-sec-vid-img {
-    width: 80%;
     height: auto;
     margin-bottom: 25px;
     margin-left: 84px
@@ -5139,6 +5141,9 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     .footer .container {
         padding-left:50px;
         padding-right: 50px
+    }
+    .footer-block.grid__item.footer-block--menu{
+        width:100% !important
     }
 }
 
@@ -5493,7 +5498,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 .footer-block.grid__item.footer-block--menu {
-    width: 33.33%!important
+    width: 33.33%
 }
 
 .our-range-content .video-sec-content-txt {
@@ -6956,3 +6961,6 @@ summary.list-menu__item {
   color: #D5C7BE;
   line-height: 40px
 }
+.blp-container {
+        display: flex !important;
+      }
