@@ -211,10 +211,13 @@ body {
       }
     {% endstyle %}
 
-    {{ 'styles.css' | asset_url | stylesheet_tag: preload: true }}
+    {{ 'critical.css' | asset_url | stylesheet_tag: preload: true }}
+
     {{ 'slick-theme.min.css' | asset_url | stylesheet_tag: preload:true }}
     {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true }}
     {{ 'custom_css_updates.css' | asset_url | stylesheet_tag: preload: true}}
+
+    {{ 'non-critical.css' | asset_url | stylesheet_tag: preload: true }}
 
       
     
