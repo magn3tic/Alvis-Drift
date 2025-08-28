@@ -124,14 +124,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 window.addEventListener("load", function () {
-  $('.marquee-imgs').marquee({
-      direction: 'left',
+  if ($(".marquee-imgs").length) {
+    $(".marquee-imgs").marquee({
+      direction: "left",
       duration: 8000,
       gap: 30,
       delayBeforeStart: 0,
       duplicated: true,
-      startVisible: true
-  });
+      startVisible: true,
+    });
+  }
+
   
   $('.hm-marquee').marquee({    
       direction: 'left',
