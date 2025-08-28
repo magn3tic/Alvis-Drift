@@ -75,21 +75,23 @@ document.addEventListener("DOMContentLoaded", function() {
     $("#" + tab_id).addClass("current");
   });
   
-      $('.gallery-thumbanil').click(function(){	
-          /*var tab_id = $(this).attr('data-tab');
-          $(this).parent().find('.gallery-thumbanil').removeClass('current');
-          $('.tabs-content > div').removeClass('current');
-          $(this).addClass('current');
-          $("#"+tab_id).addClass('current');*/
-  
-          var tab_id = $(this).attr('data-tab');
-          $(this).removeClass('current');
-          $('.gallery-imgs-wrap .gallery-img').removeClass('current');
-          $(this).addClass('current');
-          $("#"+tab_id).addClass('current');
-      });
+    // Gallery thumbnails → ensure first image loads
+  $(".gallery-thumbanil").click(function () {
+    var tab_id = $(this).attr("data-tab");
+    $(".gallery-imgs-wrap .gallery-img").removeClass("current");
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
+  });
 
-
+// Safety: if no tab is active, show the first by default
+  if ($(".product-tabs ul li.current").length === 0) {
+    $(".product-tabs ul li:first").addClass("current");
+    $(".tabs-content .product-items-wrap:first").addClass("current");
+  }
+  if ($(".gallery-thumbanil.current").length === 0) {
+    $(".gallery-thumbanil:first").addClass("current");
+    $(".gallery-imgs-wrap .gallery-img:first").addClass("current");
+  }
 
 
 
