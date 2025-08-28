@@ -182,9 +182,7 @@ window.addEventListener("load", function () {
     $("details").removeAttr("open");
   });
 });
-
-
-
+  
   $(function() {
       var controller = new ScrollMagic.Controller();	
   
