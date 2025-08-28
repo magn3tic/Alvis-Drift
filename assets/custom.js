@@ -136,14 +136,16 @@ window.addEventListener("load", function () {
   }
 
   
-  $('.hm-marquee').marquee({    
-      direction: 'left',
+  if ($(".hm-marquee").length) {
+    $(".hm-marquee").marquee({
+      direction: "left",
       duration: 22000,
       gap: 30,
       delayBeforeStart: 0,
       duplicated: true,
-      startVisible: true 
-  });
+      startVisible: true,
+    });
+  }
 
   
   $('.hero-video-btn-link').venobox()
