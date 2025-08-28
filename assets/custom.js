@@ -1,7 +1,7 @@
 
 /* -------------------------
-   Critical JS
-   Runs early (DOMContentLoaded)
+   Critical JS (runs on DOMContentLoaded)
+   Required for navigation, cart, product display
 ------------------------- */
 document.addEventListener("DOMContentLoaded", function () {
   // iOS detection
@@ -16,7 +16,6 @@ document.addEventListener("DOMContentLoaded", function () {
     ].includes(navigator.platform) ||
       (navigator.userAgent.includes("Mac") && "ontouchend" in document);
   }
-
   var iosDevice = iOS();
   document.body.classList.add(iosDevice ? "ios-device" : "not-ios-device");
 
@@ -39,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
   $(".top-left-navbar").click(function () {
     $("#sideNavbar").fadeIn(100).addClass("open");
   });
-
   $(".navbar-close").click(function () {
     $("#sideNavbar").fadeOut(100).removeClass("open");
   });
@@ -51,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".dropdown-link").removeClass("active").next().removeClass("show").slideUp(800);
     $this.addClass("active").next().toggleClass("show").slideToggle(800);
   });
-
   if (window.ontouchstart !== undefined && !iosDevice) {
     var clickedlinks = "";
     $(".dropdown-link").click(function (e) {
@@ -71,18 +68,39 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".cart-mini").toggleClass("open");
     $(this).toggleClass("active");
   });
-
   $(".mini-cart-close, .close-cart-button").on("click", function (e) {
     e.preventDefault();
     $(".cart-mini").removeClass("open");
     $(".mini-cart-btn").removeClass("active");
   });
-
   $("section.cart-mini").on("click", ".close-cart-button", function (e) {
     e.preventDefault();
     $(".cart-mini").removeClass("open");
     $(".mini-cart-btn").removeClass("active");
   });
+
+  // Product tabs (critical)
+  $(".product-tabs ul li").click(function () {
+    var tab_id = $(this).attr("data-tab");
+    $(".product-tabs ul li, .tabs-content .product-items-wrap").removeClass("current");
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
+  });
+
+  // Product gallery thumbnails (critical)
+  $(".gallery-thumbanil").click(function () {
+    var tab_id = $(this).attr("data-tab");
+    $(".gallery-imgs-wrap .gallery-img").removeClass("current");
+    $(this).addClass("current");
+    $("#" + tab_id).addClass("current");
+  });
+
+  // Product sliders (critical if products use slick)
+  /*
+  $(".product-slider").slick({...});
+  $(".product-list-slider").slick({...});
+  $(".product-list-3d").slick({...});
+  */
 
   // Lazy-load background images
   const lazyBackgrounds = document.querySelectorAll(".bg-overlay-bg");
@@ -107,17 +125,13 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 /* -------------------------
-   Deferred JS
-   Runs after full page load
-   (Sliders, marquees, modals, parallax, ScrollMagic, etc.)
+   Deferred JS (runs on window.load)
+   Visual effects, heavy scripts
 ------------------------- */
 window.addEventListener("load", function () {
-  // ✅ Sliders (if enabled)
+  // Hero slider (if enabled)
   /*
   $(".hero-section-slider").slick({...});
-  $(".product-slider").slick({...});
-  $(".product-list-slider").slick({...});
-  $(".product-list-3d").slick({...});
   */
 
   // Marquees
@@ -129,7 +143,6 @@ window.addEventListener("load", function () {
     duplicated: true,
     startVisible: true,
   });
-
   $(".hm-marquee").marquee({
     direction: "left",
     duration: 22000,
@@ -139,21 +152,19 @@ window.addEventListener("load", function () {
     startVisible: true,
   });
 
-  // Venobox (only init when clicked for performance)
+  // Venobox → init on click only
   $(document).on("click", ".hero-video-btn-link", function () {
     $(this).venobox();
   });
 
-  // Modal handlers
+  // Modal windows
   $(".modal-link").click(function () {
     var modalContent = "#" + $(this).attr("data-modal");
     $(modalContent).fadeIn(200).addClass("modal-active");
   });
-
   $(".modal-wrap .modal-bg, .modal-wrap .modal-close").click(function () {
     $(".modal-wrap").fadeOut(200).removeClass("modal-active");
   });
-
   $(".our-story .modal-link").click(function () {
     $(".our-story").addClass("animateModal");
   });
@@ -161,22 +172,7 @@ window.addEventListener("load", function () {
     $(".our-story").removeClass("animateModal");
   });
 
-  // Product tabs
-  $(".product-tabs ul li").click(function () {
-    var tab_id = $(this).attr("data-tab");
-    $(".product-tabs ul li, .tabs-content .product-items-wrap").removeClass("current");
-    $(this).addClass("current");
-    $("#" + tab_id).addClass("current");
-  });
-
-  $(".gallery-thumbanil").click(function () {
-    var tab_id = $(this).attr("data-tab");
-    $(".gallery-imgs-wrap .gallery-img").removeClass("current");
-    $(this).addClass("current");
-    $("#" + tab_id).addClass("current");
-  });
-
-  // ScrollMagic (only load if parallax elements exist)
+  // ScrollMagic (only if needed)
   if (document.querySelector(".parallax-h")) {
     var controller = new ScrollMagic.Controller();
     new ScrollMagic.Scene({ triggerElement: ".parallax-h .home-aboutus", offset: -150 })
@@ -184,10 +180,10 @@ window.addEventListener("load", function () {
       .reverse(false)
       .addTo(controller);
 
-    // ... other scenes (keep them but only inside this condition)
+    // Add more ScrollMagic scenes here if needed
   }
 
-  // Parallax scroll effects (throttled)
+  // Parallax scroll (throttled)
   let ticking = false;
   window.addEventListener("scroll", function () {
     if (!ticking) {
@@ -203,18 +199,15 @@ window.addEventListener("load", function () {
     }
   });
 
-  // Menu hover
+  // Menu hover → convert to click
   $(".main-link-shop summary.header__menu-item, .main-link-wines summary.header__menu-item, .main-link-about summary.header__menu-item, .main-link-contact summary.header__menu-item").mouseenter(function () {
     $("details").removeAttr("open");
     $(this).trigger("click");
   });
-
   $(".header__submenu").mouseleave(function () {
     $("details").removeAttr("open");
   });
-
   $(".main-link-home").mouseenter(function () {
     $("details").removeAttr("open");
   });
 });
-
