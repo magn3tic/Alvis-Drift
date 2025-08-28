@@ -1,24 +1,12 @@
 document.addEventListener("DOMContentLoaded", function() {
-function iOS() {
+// iOS detection
+  function iOS() {
     return [
-      'iPad Simulator',
-      'iPhone Simulator',
-      'iPod Simulator',
-      'iPad',
-      'iPhone',
-      'iPod'
-    ].includes(navigator.platform)
-    // iPad on iOS 13 detection
-    || (navigator.userAgent.includes("Mac") && "ontouchend" in document)
+      "iPad Simulator","iPhone Simulator","iPod Simulator","iPad","iPhone","iPod",
+    ].includes(navigator.platform) || 
+      (navigator.userAgent.includes("Mac") && "ontouchend" in document);
   }
-  
-  var iosDevice = iOS()
-  
-  if(iosDevice) {
-      $('body').addClass('ios-device')
-  } else {
-      $('body').addClass('not-ios-device')
-  }
+  document.body.classList.add(iOS() ? "ios-device" : "not-ios-device");
   
   
   // Check if the accUrl is set in localstorage
