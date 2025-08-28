@@ -152,19 +152,16 @@ window.addEventListener("load", function () {
   $(document).on("click", ".hero-video-btn-link", function () {
     if ($.fn.venobox) $(this).venobox();
   });
-  
-  $('.modal-link').click(function(){
-      var modalContent = '#' + $(this).attr("data-modal");
-      $(modalContent).fadeIn('200').addClass('modal-active');
-  })
-  
-  $('.modal-wrap .modal-bg').click(function(){
-      $('.modal-wrap').fadeOut('200').removeClass('modal-active');
-      //stopVideo();
+
+    // Modals
+  $(".modal-link").click(function () {
+    var modalContent = "#" + $(this).attr("data-modal");
+    if ($(modalContent).length) {
+      $(modalContent).fadeIn(200).addClass("modal-active");
+    }
   });
-  $('.modal-wrap .modal-close').click(function(){
-      $('.modal-wrap').fadeOut('200').removeClass('modal-active');
-      //stopVideo();
+  $(".modal-wrap .modal-bg, .modal-wrap .modal-close").click(function () {
+    $(".modal-wrap").fadeOut(200).removeClass("modal-active");
   });
   
   // adding .animateModal class to animate model 
