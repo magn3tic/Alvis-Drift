@@ -254,25 +254,7 @@ window.addEventListener("load", function () {
       .setClassToggle('.parallax-h .home-aboutus p', 'textAnimate')	
       .reverse(false)
       .addTo(controller);
-  
-    /*
-      // .dare-to-be-true small image - before
-      var containerScene3 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .dare-to-be-true',
-          offset: -50
-      })
-      .setClassToggle('.parallax-h .dare-to-be-true-bx', 'dare-to-animate-before')
-      .addTo(controller);
-  
-      // .dare-to-be-true small image - after
-      var containerScene4 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .dare-to-be-true',
-          offset: 500
-      })
-      .setClassToggle('.parallax-h .dare-to-be-true-bx', 'dare-to-animate-after')
-      .addTo(controller);
-  */
-      // .home-product-items 
+
       var containerScene5 = new ScrollMagic.Scene({
           triggerElement: '.parallax-h .home-product-items',
           offset: -100
@@ -379,16 +361,9 @@ window.addEventListener("load", function () {
       })
       .setClassToggle('.parallax-h .our-vineyards.our_family_parallex', 'our-family-animate-after')
       .addTo(controller);
-    
       
   });
   
-      /*
-  $(document).ready(function(){
-        $('.hero-section-inner .hero-title h2 span p').addClass('animate-reveal');
-        $('.hero-section-inner .hero-title h2').addClass('animate-reveal');
-  });
-  */
   
   
   window.addEventListener('scroll',function(){
