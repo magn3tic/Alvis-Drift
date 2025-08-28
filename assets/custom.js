@@ -93,7 +93,24 @@ document.addEventListener("DOMContentLoaded", function() {
     $(".gallery-imgs-wrap .gallery-img:first").addClass("current");
   }
 
-
+  // Lazy-load background images
+  const lazyBackgrounds = document.querySelectorAll(".bg-overlay-bg");
+  if ("IntersectionObserver" in window) {
+    let observer = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.style.backgroundImage = `url('${entry.target.dataset.bg}')`;
+          observer.unobserve(entry.target);
+        }
+      });
+    });
+    lazyBackgrounds.forEach(el => observer.observe(el));
+  } else {
+    lazyBackgrounds.forEach(el => {
+      el.style.backgroundImage = `url('${el.dataset.bg}')`;
+    });
+  }
+});
 
 
 
@@ -483,28 +500,5 @@ document.addEventListener("DOMContentLoaded", function() {
       $('details').removeAttr('open');
   });
 
-//Lazy loading background images on Call To Action Sections
 
-    const lazyBackgrounds = document.querySelectorAll(".bg-overlay-bg");
 
-    if ("IntersectionObserver" in window) {
-      let observer = new IntersectionObserver(function (entries) {
-        entries.forEach(function (entry) {
-          if (entry.isIntersecting) {
-            const el = entry.target;
-            el.style.backgroundImage = `url('${el.dataset.bg}')`;
-            observer.unobserve(el);
-          }
-        });
-      });
-
-      lazyBackgrounds.forEach(function (bg) {
-        observer.observe(bg);
-      });
-    } else {
-      // Fallback
-      lazyBackgrounds.forEach(function (el) {
-        el.style.backgroundImage = `url('${el.dataset.bg}')`;
-      });
-    }
-  });
