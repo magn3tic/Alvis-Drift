@@ -1,36 +1,28 @@
 
-/* -------------------------
-   Critical JS (runs on DOMContentLoaded)
-   Required for navigation, cart, product display
-------------------------- */
 document.addEventListener("DOMContentLoaded", function () {
+  /* --------- Critical (must run before render) --------- */
+
   // iOS detection
   function iOS() {
     return [
-      "iPad Simulator",
-      "iPhone Simulator",
-      "iPod Simulator",
-      "iPad",
-      "iPhone",
-      "iPod",
-    ].includes(navigator.platform) ||
+      "iPad Simulator","iPhone Simulator","iPod Simulator","iPad","iPhone","iPod",
+    ].includes(navigator.platform) || 
       (navigator.userAgent.includes("Mac") && "ontouchend" in document);
   }
-  var iosDevice = iOS();
-  document.body.classList.add(iosDevice ? "ios-device" : "not-ios-device");
+  document.body.classList.add(iOS() ? "ios-device" : "not-ios-device");
 
-  // Account redirect from localStorage
+  // Account redirect
   if (localStorage.getItem("accUrl")) {
     var url = localStorage.getItem("accUrl");
     localStorage.removeItem("accUrl");
     window.location.href = url;
   }
 
-  // Catch create-account button click
-  if (document.getElementById("catchClick")) {
-    document.getElementById("catchClick").addEventListener("mouseup", function () {
-      var accUrl = this.dataset.dest;
-      localStorage.setItem("accUrl", accUrl);
+  // Account create click
+  const catchClick = document.getElementById("catchClick");
+  if (catchClick) {
+    catchClick.addEventListener("mouseup", function () {
+      localStorage.setItem("accUrl", this.dataset.dest);
     });
   }
 
@@ -42,19 +34,21 @@ document.addEventListener("DOMContentLoaded", function () {
     $("#sideNavbar").fadeOut(100).removeClass("open");
   });
 
-  // Dropdown handling
+  // Dropdown
   $(".dropdown-link").hover(function (e) {
     e.preventDefault();
     var $this = $(this);
     $(".dropdown-link").removeClass("active").next().removeClass("show").slideUp(800);
     $this.addClass("active").next().toggleClass("show").slideToggle(800);
   });
-  if (window.ontouchstart !== undefined && !iosDevice) {
-    var clickedlinks = "";
+
+  // Touch fix
+  if (window.ontouchstart !== undefined && !iOS()) {
+    let clickedlinks = "";
     $(".dropdown-link").click(function (e) {
       e.preventDefault();
-      var linkHref = $(this).attr("href");
-      if (linkHref !== "undefined" && clickedlinks !== linkHref) {
+      const linkHref = $(this).attr("href");
+      if (linkHref && clickedlinks !== linkHref) {
         clickedlinks = linkHref;
       } else {
         window.location = linkHref;
@@ -62,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Mini-cart open/close
+  // Mini-cart
   $(".mini-cart-btn").on("click", function (e) {
     e.preventDefault();
     $(".cart-mini").toggleClass("open");
@@ -73,13 +67,10 @@ document.addEventListener("DOMContentLoaded", function () {
     $(".cart-mini").removeClass("open");
     $(".mini-cart-btn").removeClass("active");
   });
-  $("section.cart-mini").on("click", ".close-cart-button", function (e) {
-    e.preventDefault();
-    $(".cart-mini").removeClass("open");
-    $(".mini-cart-btn").removeClass("active");
-  });
 
-  // Product tabs (critical)
+  // --------- PRODUCT DISPLAY (Critical) ---------
+
+  // Tabs → ensure products are visible
   $(".product-tabs ul li").click(function () {
     var tab_id = $(this).attr("data-tab");
     $(".product-tabs ul li, .tabs-content .product-items-wrap").removeClass("current");
@@ -87,7 +78,7 @@ document.addEventListener("DOMContentLoaded", function () {
     $("#" + tab_id).addClass("current");
   });
 
-  // Product gallery thumbnails (critical)
+  // Gallery thumbnails → ensure first image loads
   $(".gallery-thumbanil").click(function () {
     var tab_id = $(this).attr("data-tab");
     $(".gallery-imgs-wrap .gallery-img").removeClass("current");
@@ -95,12 +86,15 @@ document.addEventListener("DOMContentLoaded", function () {
     $("#" + tab_id).addClass("current");
   });
 
-  // Product sliders (critical if products use slick)
-  /*
-  $(".product-slider").slick({...});
-  $(".product-list-slider").slick({...});
-  $(".product-list-3d").slick({...});
-  */
+  // Safety: if no tab is active, show the first by default
+  if ($(".product-tabs ul li.current").length === 0) {
+    $(".product-tabs ul li:first").addClass("current");
+    $(".tabs-content .product-items-wrap:first").addClass("current");
+  }
+  if ($(".gallery-thumbanil.current").length === 0) {
+    $(".gallery-thumbanil:first").addClass("current");
+    $(".gallery-imgs-wrap .gallery-img:first").addClass("current");
+  }
 
   // Lazy-load background images
   const lazyBackgrounds = document.querySelectorAll(".bg-overlay-bg");
@@ -108,32 +102,21 @@ document.addEventListener("DOMContentLoaded", function () {
     let observer = new IntersectionObserver(function (entries) {
       entries.forEach(function (entry) {
         if (entry.isIntersecting) {
-          const el = entry.target;
-          el.style.backgroundImage = `url('${el.dataset.bg}')`;
-          observer.unobserve(el);
+          entry.target.style.backgroundImage = `url('${entry.target.dataset.bg}')`;
+          observer.unobserve(entry.target);
         }
       });
     });
-    lazyBackgrounds.forEach(function (bg) {
-      observer.observe(bg);
-    });
+    lazyBackgrounds.forEach(el => observer.observe(el));
   } else {
-    lazyBackgrounds.forEach(function (el) {
+    lazyBackgrounds.forEach(el => {
       el.style.backgroundImage = `url('${el.dataset.bg}')`;
     });
   }
 });
 
-/* -------------------------
-   Deferred JS (runs on window.load)
-   Visual effects, heavy scripts
-------------------------- */
+/* --------- Deferred (nice-to-have only) --------- */
 window.addEventListener("load", function () {
-  // Hero slider (if enabled)
-  /*
-  $(".hero-section-slider").slick({...});
-  */
-
   // Marquees
   $(".marquee-imgs").marquee({
     direction: "left",
@@ -152,12 +135,12 @@ window.addEventListener("load", function () {
     startVisible: true,
   });
 
-  // Venobox → init on click only
+  // Venobox on demand
   $(document).on("click", ".hero-video-btn-link", function () {
     $(this).venobox();
   });
 
-  // Modal windows
+  // Modals
   $(".modal-link").click(function () {
     var modalContent = "#" + $(this).attr("data-modal");
     $(modalContent).fadeIn(200).addClass("modal-active");
@@ -165,33 +148,24 @@ window.addEventListener("load", function () {
   $(".modal-wrap .modal-bg, .modal-wrap .modal-close").click(function () {
     $(".modal-wrap").fadeOut(200).removeClass("modal-active");
   });
-  $(".our-story .modal-link").click(function () {
-    $(".our-story").addClass("animateModal");
-  });
-  $(".our-story .modal-wrap .modal-close").click(function () {
-    $(".our-story").removeClass("animateModal");
-  });
 
-  // ScrollMagic (only if needed)
+  // ScrollMagic (optional animations)
   if (document.querySelector(".parallax-h")) {
     var controller = new ScrollMagic.Controller();
     new ScrollMagic.Scene({ triggerElement: ".parallax-h .home-aboutus", offset: -150 })
       .setClassToggle(".parallax-h .home-aboutus h2", "textAnimate")
       .reverse(false)
       .addTo(controller);
-
-    // Add more ScrollMagic scenes here if needed
   }
 
-  // Parallax scroll (throttled)
+  // Parallax (throttled)
   let ticking = false;
   window.addEventListener("scroll", function () {
     if (!ticking) {
       window.requestAnimationFrame(function () {
-        var scrollValue = window.scrollY;
         var pic = document.querySelector(".background");
         if (pic) {
-          pic.style.transform = "translateY(" + (-scrollValue / 4 + 500) + "px)";
+          pic.style.transform = "translateY(" + (-window.scrollY / 4 + 500) + "px)";
         }
         ticking = false;
       });
@@ -211,3 +185,4 @@ window.addEventListener("load", function () {
     $("details").removeAttr("open");
   });
 });
+
