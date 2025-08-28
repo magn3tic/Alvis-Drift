@@ -148,7 +148,10 @@ window.addEventListener("load", function () {
   }
 
   
-  $('.hero-video-btn-link').venobox()
+// Venobox
+  $(document).on("click", ".hero-video-btn-link", function () {
+    if ($.fn.venobox) $(this).venobox();
+  });
   
   $('.modal-link').click(function(){
       var modalContent = '#' + $(this).attr("data-modal");
