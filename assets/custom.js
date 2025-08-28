@@ -183,19 +183,6 @@ window.addEventListener("load", function () {
   });
 });
 
-   // Menu hover → convert to click
-  $(".main-link-shop summary.header__menu-item, .main-link-wines summary.header__menu-item, .main-link-about summary.header__menu-item, .main-link-contact summary.header__menu-item").mouseenter(function () {
-    $("details").removeAttr("open");
-    $(this).trigger("click");
-  });
-  $(".header__submenu").mouseleave(function () {
-    $("details").removeAttr("open");
-  });
-  $(".main-link-home").mouseenter(function () {
-    $("details").removeAttr("open");
-
-});
-
 
 
   $(function() {
