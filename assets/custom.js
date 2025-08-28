@@ -425,23 +425,23 @@ window.addEventListener("load", function () {
   });
   
   
-  // Menu hover: scope only to header nav to avoid breaking product filters
-  const header = $('.site-header');
-  if (header.length) {
-    header.find('.main-link-shop summary.header__menu-item, \
-                 .main-link-wines summary.header__menu-item, \
-                 .main-link-about summary.header__menu-item, \
-                 .main-link-contact summary.header__menu-item').mouseenter(function() {
-      header.find('details').removeAttr('open'); // only inside header
+  // MENU HOVER CODE
+  
+  $('.main-link-shop summary.header__menu-item, .main-link-wines summary.header__menu-item, .main-link-about summary.header__menu-item, .main-link-contact summary.header__menu-item').mouseenter(function(){
+      $('details').removeAttr('open');
       $(this).trigger('click');
+  });
+  
+  $('.main-link-contact summary.header__menu-item').mouseenter(function(){
+      $('details').removeAttr('open');
+      $(this).trigger('click');
+  });
+  
+  $('.header__submenu').mouseleave(function(){
+      $('details').removeAttr('open');
+  });
+  
+  $('.main-link-home').mouseenter(function(){
+      $('details').removeAttr('open');
+  });
     });
-
-    header.find('.header__submenu').mouseleave(function() {
-      header.find('details').removeAttr('open');
-    });
-
-    header.find('.main-link-home').mouseenter(function() {
-      header.find('details').removeAttr('open');
-    });
-  }
-});
