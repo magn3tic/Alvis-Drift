@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", function() {
   });
 
 
-$(document).ready(function(){		
+	
       $('.product-tabs ul li').click(function(){
           var tab_id = $(this).attr('data-tab');
           $('.product-tabs ul li').removeClass('current');
@@ -88,7 +88,7 @@ $(document).ready(function(){
           $(this).addClass('current');
           $("#"+tab_id).addClass('current');
       });
-  });
+
 
 
 
