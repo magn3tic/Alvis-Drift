@@ -137,7 +137,7 @@ window.addEventListener("load", function () {
     $(this).venobox();
   });
 
-  // Modals
+ / Modals
   $(".modal-link").click(function () {
     var modalContent = "#" + $(this).attr("data-modal");
     $(modalContent).fadeIn(200).addClass("modal-active");
@@ -182,7 +182,22 @@ window.addEventListener("load", function () {
     $("details").removeAttr("open");
   });
 });
-  
+
+   // Menu hover → convert to click
+  $(".main-link-shop summary.header__menu-item, .main-link-wines summary.header__menu-item, .main-link-about summary.header__menu-item, .main-link-contact summary.header__menu-item").mouseenter(function () {
+    $("details").removeAttr("open");
+    $(this).trigger("click");
+  });
+  $(".header__submenu").mouseleave(function () {
+    $("details").removeAttr("open");
+  });
+  $(".main-link-home").mouseenter(function () {
+    $("details").removeAttr("open");
+
+});
+
+
+
   $(function() {
       var controller = new ScrollMagic.Controller();	
   
