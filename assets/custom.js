@@ -231,195 +231,43 @@ window.addEventListener("load", function () {
       });
   });
   
-  
-  $(function() {
-      var controller = new ScrollMagic.Controller();	
-  
-      /* [IMPORTANT]: .parallax-h is must added to homepage body to apply parrallax effect */
-  
-      // home-aboutus h2
-      var containerScene1 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .home-aboutus',
-          offset: -150 
-      })
-      .setClassToggle('.parallax-h .home-aboutus h2', 'textAnimate')
+  // ScrollMagic (optional animations)
+  if (document.querySelector(".parallax-h")) {
+    var controller = new ScrollMagic.Controller();
+    new ScrollMagic.Scene({ triggerElement: ".parallax-h .home-aboutus", offset: -150 })
+      .setClassToggle(".parallax-h .home-aboutus h2", "textAnimate")
       .reverse(false)
       .addTo(controller);
-  
-      // home-aboutus paragraph
-      var containerScene2 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .home-aboutus',
-          offset: -150
-      })
-      .setClassToggle('.parallax-h .home-aboutus p', 'textAnimate')	
-      .reverse(false)
-      .addTo(controller);
+  }
 
-      var containerScene5 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .home-product-items',
-          offset: -100
-      })
-      .setClassToggle('.parallax-h .home-product-items', 'home-product-animate')
-      .reverse(false)
-      .addTo(controller);	
-  
-      // .our-story
-      var containerScene6 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-story',
-          offset: -100
-      })
-      .setClassToggle('.parallax-h .our-story', 'our-story-animate')
-      .reverse(false)
-      .addTo(controller);
-  
-      // .our-vineyards before
-      var containerScene7 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-vineyards',
-          offset: 0
-      })
-      .setClassToggle('.parallax-h .our-vineyards', 'our-vineyards-animate-before')
-      .addTo(controller);
-  
-      // .our-vineyards after
-      var containerScene8 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-vineyards',
-          offset: 820
-      })
-      .setClassToggle('.parallax-h .our-vineyards', 'our-vineyards-animate-after')
-      .addTo(controller);
-  
-      // .our-cellars before
-      var containerScene9 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-cellars',
-          offset: -50
-      })
-      .setClassToggle('.parallax-h .our-cellars', 'our-cellars-animate-before')
-      .addTo(controller);
-  
-      // .our-cellars after
-      var containerScene10 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-cellars',
-          offset: 820
-      })
-      .setClassToggle('.parallax-h .our-cellars', 'our-cellars-animate-after')
-      .addTo(controller);	
-  
-      // .our-rewards before
-      var containerScene11 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-rewards',
-          offset: 0
-      })
-      .setClassToggle('.parallax-h .our-rewards', 'our-rewards-animate-before')
-      .addTo(controller);
-  
-      // .our-rewards after
-      var containerScene12 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-rewards',
-          offset: 820
-      })
-      .setClassToggle('.parallax-h .our-rewards', 'our-rewards-animate-after')
-      .addTo(controller);
-  
-      // .our-social-impact before
-      var containerScene13 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-social-impact',
-          offset: 0
-      })
-      .setClassToggle('.parallax-h .our-social-impact', 'our-social-impact-animate-before')
-      .addTo(controller);
-  
-      // .our-social-impact after
-      var containerScene14 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-social-impact',
-          offset: 820
-      })
-      .setClassToggle('.parallax-h .our-social-impact', 'our-social-impact-animate-after')
-      .addTo(controller);
-  
-      // .newsletter-sec
-      var containerScene20 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .newsletter-sec',
-          offset: -100
-      })
-      .setClassToggle('.parallax-h .newsletter-sec', 'newsletter-sec-animate')
-      .reverse(false)
-      .addTo(controller);
-    
-    
-      // our-family-page-parallex
-      var containerScene7 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-vineyards.our_family_parallex',
-          offset: 0
-      })
-      .setClassToggle('.parallax-h .our-vineyards.our_family_parallex', 'our-family-animate-before')
-      .addTo(controller);
-  
-      // our-family-page-parallex
-      var containerScene8 = new ScrollMagic.Scene({
-          triggerElement: '.parallax-h .our-vineyards.our_family_parallex',
-          offset: 820
-      })
-      .setClassToggle('.parallax-h .our-vineyards.our_family_parallex', 'our-family-animate-after')
-      .addTo(controller);
-      
-  });
-  
-  
-  
-  window.addEventListener('scroll',function(){
-    scrollValue = window.scrollY;
-    var pic = document.querySelector('.background');
-    if(pic != null){  
-      pic.style.transform = 'translateY('+(-scrollValue/4 + 500)+'px)';
+  // Parallax (throttled)
+  let ticking = false;
+  window.addEventListener("scroll", function () {
+    if (!ticking) {
+      window.requestAnimationFrame(function () {
+        var pic = document.querySelector(".background");
+        if (pic) {
+          pic.style.transform = "translateY(" + (-window.scrollY / 4 + 500) + "px)";
+        }
+        ticking = false;
+      });
+      ticking = true;
     }
   });
-  
-  
-  window.addEventListener('scroll',function(){
-    scrollValue = window.scrollY;
-    var pic = document.querySelector('.about_background');
-    if(pic != null){  
-      pic.style.transform = 'translateY('+(-scrollValue/4 + 1100)+'px)';
-    }
+
+  // Menu hover → convert to click
+  $(".main-link-shop summary.header__menu-item, .main-link-wines summary.header__menu-item, .main-link-about summary.header__menu-item, .main-link-contact summary.header__menu-item").mouseenter(function () {
+    $("details").removeAttr("open");
+    $(this).trigger("click");
   });
-  
-  
-  
-  
-  window.addEventListener('scroll',function(){
-    scrollValue = window.scrollY;
-     width = $(window).width();
-    console.log("width_size==>",width);
-    console.log((-scrollValue/4 + 1400));
-    var family_pge = document.querySelector('.template-page-our-family .parallex_div');
-    var farm_pge = document.querySelector('.template-page-our-farm .parallex_div');
-    var vineyards_pge = document.querySelector('.template-page-our-vineyards .parallex_div');
-    var cellar = document.querySelector('.template-page-our-cellar .parallex_div');
-    if(farm_pge != null){
-      var pic = document.querySelector('.parallex_div');
-      $('.parallex_div').eq(0).css("transform",'translateY('+(-scrollValue/4 + 400)+'px)');
-      $('.parallex_div').eq(1).css("transform",'translateY('+(-scrollValue/4 + 1100)+'px)');
-    }else if(vineyards_pge != null){
-      if(width < 1200){
-        $('.parallex_div').eq(0).css("transform",'translateY('+(-scrollValue/4 + 600)+'px)');
-      }else{
-        $('.parallex_div').eq(0).css("transform",'translateY('+(-scrollValue/4 + 500)+'px)');
-      }
-    }else if(cellar != null){
-      if(width < 1200){
-        $('.parallex_div').eq(0).css("transform",'translateY('+(-scrollValue/4 + 400)+'px)');
-      }else{
-        $('.parallex_div').eq(0).css("transform",'translateY('+(-scrollValue/4 + 400)+'px)');
-      }
-    }else if(family_pge != null){
-      $('.parallex_div').eq(0).css("transform",'translateY('+(-scrollValue/5 + 400)+'px)');
-      $('.parallex_div').eq(1).css("transform",'translateY('+(-scrollValue/4 + 1200)+'px)');
-      $('.parallex_div').eq(2).css("transform",'translateY('+(-scrollValue/4 + 2000)+'px)');
-    }else{
-      var pic = document.querySelector('.parallex_div');
-      $('.parallex_div').eq(2).css("transform",'translateY('+(-scrollValue/4 + 1400)+'px)');
-    }
+  $(".header__submenu").mouseleave(function () {
+    $("details").removeAttr("open");
   });
+  $(".main-link-home").mouseenter(function () {
+    $("details").removeAttr("open");
+  });
+});
+
   window.addEventListener('scroll',function(){
     scrollValue = window.scrollY;
     var pic = document.querySelector('.parallex_div2');
