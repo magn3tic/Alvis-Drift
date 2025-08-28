@@ -8,63 +8,49 @@ document.addEventListener("DOMContentLoaded", function() {
   }
   document.body.classList.add(iOS() ? "ios-device" : "not-ios-device");
   
-  
-  // Check if the accUrl is set in localstorage
-  // if it is, redirect to that url and remove the item from localstorage
-  if(localStorage.getItem('accUrl')) {
-      var url = localStorage.getItem('accUrl')
-      localStorage.removeItem('accUrl')
-      window.location.href = url
+   // Account redirect
+  if (localStorage.getItem("accUrl")) {
+    var url = localStorage.getItem("accUrl");
+    localStorage.removeItem("accUrl");
+    window.location.href = url;
   }
-  
-  // When clicking the create account button cover
-  // set the data-accUrl attribute value to localstorage
-  // and trigger a click on the .create-account button
-  if($('#catchClick').length > 0) {
-      document.getElementById('catchClick').addEventListener('mouseup', function () {
-          var accUrl = $('#catchClick').data('dest')
-          localStorage.setItem('accUrl', accUrl);
-      });
+
+  // Account create click
+  const catchClick = document.getElementById("catchClick");
+  if (catchClick) {
+    catchClick.addEventListener("mouseup", function () {
+      localStorage.setItem("accUrl", this.dataset.dest);
+    });
   }
-   
-  $('.top-left-navbar').click(function(){
-      $('#sideNavbar').fadeIn('100').addClass('open');
+
+  // Navbar open/close
+  $(".top-left-navbar").click(function () {
+    $("#sideNavbar").fadeIn(100).addClass("open");
+  });
+  $(".navbar-close").click(function () {
+    $("#sideNavbar").fadeOut(100).removeClass("open");
   });
   
-  $('.navbar-close').click(function(){
-      $('#sideNavbar').fadeOut('100').removeClass('open');	
+ // Dropdown
+  $(".dropdown-link").hover(function (e) {
+    e.preventDefault();
+    var $this = $(this);
+    $(".dropdown-link").removeClass("active").next().removeClass("show").slideUp(800);
+    $this.addClass("active").next().toggleClass("show").slideToggle(800);
   });
-  
-  $('.dropdown-link').hover(function(e) {
+
+  // Touch fix
+  if (window.ontouchstart !== undefined && !iOS()) {
+    let clickedlinks = "";
+    $(".dropdown-link").click(function (e) {
       e.preventDefault();
-      var $this = $(this);
-      if ($this.next().hasClass('show')) {
-      //	$this.next().removeClass('show');
-      //	$this.removeClass('active')
-      //	$this.next().slideUp(800);
+      const linkHref = $(this).attr("href");
+      if (linkHref && clickedlinks !== linkHref) {
+        clickedlinks = linkHref;
       } else {
-          $('.dropdown-link').removeClass('active')
-          $('.dropdown-link').next().removeClass('show');
-          $('.dropdown-link').next().slideUp(800);
-  
-          $this.addClass('active')
-          $this.next().toggleClass('show');
-          $this.next().slideToggle(800);
+        window.location = linkHref;
       }
-  });
-  
-  
-  if(window.ontouchstart !== undefined && !iosDevice) {
-      var clickedlinks = ''
-      $('.dropdown-link').click(function(e) {
-          e.preventDefault();
-          var linkHref = $(this).attr('href')
-          if(linkHref !== 'undefined' && clickedlinks !== linkHref) {
-              clickedlinks = linkHref
-          } else {
-              window.location = linkHref
-          }
-      })
+    });
   }
   
   
