@@ -113,75 +113,119 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-window.addEventListener("load", function () {
-  // Marquees
-  $(".marquee-imgs").marquee({
-    direction: "left",
-    duration: 8000,
-    gap: 30,
-    delayBeforeStart: 0,
-    duplicated: true,
-    startVisible: true,
+
+
+
+
+
+
+
+
+
+
+
+  $('.marquee-imgs').marquee({
+      direction: 'left',
+      duration: 8000,
+      gap: 30,
+      delayBeforeStart: 0,
+      duplicated: true,
+      startVisible: true
   });
-  $(".hm-marquee").marquee({
-    direction: "left",
-    duration: 22000,
-    gap: 30,
-    delayBeforeStart: 0,
-    duplicated: true,
-    startVisible: true,
+  
+  $('.hm-marquee').marquee({    
+      direction: 'left',
+      duration: 22000,
+      gap: 30,
+      delayBeforeStart: 0,
+      duplicated: true,
+      startVisible: true 
   });
 
-  // Venobox on demand
-  $(document).on("click", ".hero-video-btn-link", function () {
-    $(this).venobox();
+  
+  $('.hero-video-btn-link').venobox()
+  
+  $('.modal-link').click(function(){
+      var modalContent = '#' + $(this).attr("data-modal");
+      $(modalContent).fadeIn('200').addClass('modal-active');
+  })
+  
+  $('.modal-wrap .modal-bg').click(function(){
+      $('.modal-wrap').fadeOut('200').removeClass('modal-active');
+      //stopVideo();
   });
-
- / Modals
-  $(".modal-link").click(function () {
-    var modalContent = "#" + $(this).attr("data-modal");
-    $(modalContent).fadeIn(200).addClass("modal-active");
+  $('.modal-wrap .modal-close').click(function(){
+      $('.modal-wrap').fadeOut('200').removeClass('modal-active');
+      //stopVideo();
   });
-  $(".modal-wrap .modal-bg, .modal-wrap .modal-close").click(function () {
-    $(".modal-wrap").fadeOut(200).removeClass("modal-active");
+  
+  // adding .animateModal class to animate model 
+  $('.our-story .modal-link').click(function(){
+      $('.our-story').addClass('animateModal'); 
   });
-
-  // ScrollMagic (optional animations)
-  if (document.querySelector(".parallax-h")) {
-    var controller = new ScrollMagic.Controller();
-    new ScrollMagic.Scene({ triggerElement: ".parallax-h .home-aboutus", offset: -150 })
-      .setClassToggle(".parallax-h .home-aboutus h2", "textAnimate")
-      .reverse(false)
-      .addTo(controller);
-  }
-
-  // Parallax (throttled)
-  let ticking = false;
-  window.addEventListener("scroll", function () {
-    if (!ticking) {
-      window.requestAnimationFrame(function () {
-        var pic = document.querySelector(".background");
-        if (pic) {
-          pic.style.transform = "translateY(" + (-window.scrollY / 4 + 500) + "px)";
-        }
-        ticking = false;
+  // remove .animateModal class to animate model 
+  $('.our-story .modal-wrap .modal-close').click(function(){
+      $('.our-story').removeClass('animateModal');
+  });
+  
+  
+  
+  // animate items in sequence 
+  function itemAnimate(element, animationDelay){	
+      var i = 1;
+      $(element).each(function() {
+          $(this).css({"animation-delay": (i * animationDelay) + 's'});
+          i++;
       });
-      ticking = true;
-    }
+  }
+  
+  // navbar link animatation
+  itemAnimate($('.navbar-sec > ul > li'), '0.125');
+  // Home - hero section Heading animatation
+  //itemAnimate($('.parallax-h .hero-title h2 span'), '0.15');
+  // home-aboutus paragraph animatation
+  //itemAnimate($('.home-aboutus .container > p'), '0.25');
+  
+  
+  /* Homepage - Parallax Section animation */
+  (function(){
+      $(document).ready(function(){
+          /*
+          var $window = $(window);
+          var scrollTime = 1;
+          var scrollDistance = 10;        
+     
+          var iPadAgent = navigator.userAgent.match(/iPad/i) != null;
+          var iPodAgent = navigator.userAgent.match(/iPhone/i) != null;
+          var AndroidAgent = navigator.userAgent.match(/Android/i) != null;
+          var webOSAgent = navigator.userAgent.match(/webOS/i) != null;
+          
+          if(iPadAgent || iPodAgent || AndroidAgent || webOSAgent){
+              var controller = new ScrollMagic({container: "#scroll_wrapper"});
+              $('#scroll_wrapper').height($(window).height());
+              $('#scroll_wrapper').width($(window).width()); 
+          }
+          else{           
+              $window.on("mousewheel DOMMouseScroll", function(event){                
+                  event.preventDefault();	
+                            
+                  var delta = event.originalEvent.wheelDelta/120 || -event.originalEvent.detail/3;
+                  var scrollTop = $window.scrollTop();
+                  var finalScroll = scrollTop - parseInt(delta*scrollDistance);
+                  
+                  TweenMax.to($window, scrollTime, {
+                      scrollTo : { y: finalScroll, autoKill:true },
+                          ease: Power1.easeOut,
+                          overwrite: 5							
+                      });
+              });
+              
+               var controller = new ScrollMagic();             
+          }
+          */
+      });
   });
-
-  // Menu hover → convert to click
-  $(".main-link-shop summary.header__menu-item, .main-link-wines summary.header__menu-item, .main-link-about summary.header__menu-item, .main-link-contact summary.header__menu-item").mouseenter(function () {
-    $("details").removeAttr("open");
-    $(this).trigger("click");
-  });
-  $(".header__submenu").mouseleave(function () {
-    $("details").removeAttr("open");
-  });
-  $(".main-link-home").mouseenter(function () {
-    $("details").removeAttr("open");
-  });
-});
+  
   
   $(function() {
       var controller = new ScrollMagic.Controller();	
@@ -455,3 +499,4 @@ window.addEventListener("load", function () {
   $('.main-link-home').mouseenter(function(){
       $('details').removeAttr('open');
   });
+
