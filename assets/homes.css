@@ -151,6 +151,11 @@ summary.list-menu__item {
 .header__icon .icon {
     color: var(--whiteColor)
 }
+.header__icon:hover .icon {
+    transform: none;
+    color: var(--whiteColor)
+}
+
 .header__icon,.header__icon--cart .icon {
     height: 2.5rem;
     width: auto
