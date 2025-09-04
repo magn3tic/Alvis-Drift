@@ -41,9 +41,14 @@
       {{ settings.type_header_font | font_face: font_display: 'swap' }}
 
       :root {
-        --font-body-family: {{ settings.type_body_font.family }}, {{ settings.type_body_font.fallback_families }};
-        --font-body-style: {{ settings.type_body_font.style }};
-        --font-body-weight: {{ settings.type_body_font.weight }};
+        --font-body-family: 'Metropolis', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+        --font-body-style: normal;
+        --font-body-weight: 400;
+
+        --font-heading-family: 'Moriarty','Metropolis',system-ui,sans-serif;
+        --font-heading-style: normal;
+        --font-heading-weight: 600;
+
 
         --font-heading-family: {{ settings.type_header_font.family }}, {{ settings.type_header_font.fallback_families }};
         --font-heading-style: {{ settings.type_header_font.style }};
