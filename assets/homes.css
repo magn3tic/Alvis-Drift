@@ -336,6 +336,12 @@ p.sub-title {
     transition: all 50ms linear;
     -webkit-transition: all 50ms linear
 }
+.btn:hover {
+    background-color: transparent;
+    color: #e36653;
+    border: 2px solid #e36653;
+    text-decoration: none!important
+}
 
 @media only screen and (max-width: 500px) {
     .btn {
