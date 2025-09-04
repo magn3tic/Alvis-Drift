@@ -130,9 +130,9 @@ body {
   <noscript>{{ 'homes.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 
-    {%- if settings.predictive_search_enabled -%}
-    {{ 'component-predictive-search.css' | asset_url | stylesheet_tag: preload: true }}
-    {%- endif -%}
+{%- if settings.predictive_search_enabled -%}
+{{ 'component-predictive-search.css' | asset_url | stylesheet_tag: preload: true }}
+{%- endif -%}
  {% comment %}
     {% style %}
 
