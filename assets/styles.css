@@ -542,16 +542,15 @@ summary.list-menu__item {
   .animate-reveal{
     line-height:6rem !important
   }
-  .hero-section{
-    aspect-ratio: 376 / 680;
-  }
 }
 
 @media screen and (max-width: 900px) {
     .hero-txt {
         font-size:14px
     }
-
+  .hero-section{
+    aspect-ratio: 376 / 680;
+  }
     .scrl-sec {
         display: none
     }
