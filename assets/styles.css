@@ -870,29 +870,6 @@
     }
 }
 
-@media only screen and (max-width: 550px) {
-    .newsletter-frm {
-        margin-top:20px;
-        width: 700px;
-        height: 418px;
-        position: relative
-    }
-}
-
-.newsletter-frm {
-    position: absolute;
-    right: 0
-}
-
-@media only screen and (max-width: 850px) {
-    .newsletter-frm {
-        margin-top:10px;
-        margin-right: 20px;
-        width: 500px;
-        height: 418px;
-        position: relative
-    }
-}
 
 :-moz-placeholder,:-ms-input-placeholder,::-moz-placeholder,::-webkit-input-placeholder,::placeholder {
     opacity: 1
@@ -928,26 +905,6 @@
     outline: 0;
     outline-offset: 0;
     box-shadow: none
-}
-
-.rewards-marquee-sec {
-    position: relative;
-    margin-top: -50px;
-    height: 225px;
-    overflow: hidden
-}
-
-.rewards-marquee {
-    margin: 0 auto;
-    overflow: hidden;
-    position: absolute;
-    top: 70px;
-    width: 100%
-}
-
-.rewards-img img {
-    display: inline-block;
-    padding: 0 25px
 }
 
 .list-social__item .icon.icon-twitter {
@@ -1029,85 +986,10 @@
     }
 }
 
-.announcement-bar__message,.badge,.button,.button-label,.caption,.caption-large,.caption-with-letter-spacing,.customer .field input,.customer .field input:-webkit-autofill~label,.customer .field input:focus~label,.customer .field input:not(:placeholder-shown)~label,.customer .field label,.customer button,.customer select,.field__input,.field__input:-webkit-autofill~.field__label,.field__input:focus~.field__label,.field__input:not(:placeholder-shown)~.field__label,.field__label,.form__label,.h0,.h1,.h2,.h3,.h4,.h5,.link-with-icon,.select__select,.shopify-challenge__button,.subtitle,.text-body,h1,h2,h3,h4,h5 {
-    letter-spacing: 0
-}
-
-.top-footer-section-text {
-    background-color: #fff;
-    padding: 1px 20px;
-    text-align: center
-}
-
-.top-footer-section-text h3 {
-    color: #848484;
-    font-size: 15px
-}
-
-.footer__content-top {
-    padding: 80px 0 82px!important;
-    background-color: var(--footerBg)
-}
-
-.footer-top-content {
-    display: flex;
-    margin-right: 10px;
-    text-align: left
-}
-
-@media only screen and (max-width: 500px) {
-    .footer-top-content {
-        display:flex;
-        margin-right: 10px;
-        text-align: center
-    }
-}
-
-.f-logo-sc {
-    width: 20%
-}
-
-.f-logo a {
-    display: inline-block
-}
-
-.footer__blocks-wrapper.grid {
-    margin: 0!important;
-    row-gap: 0!important;
-    width: 67%
-}
-
 .unstyle-list {
     margin: 0;
     padding: 0;
     list-style: none
-}
-
-.list-social__item {
-    display: inline-block;
-    padding: 0 16px;
-    vertical-align: middle
-}
-
-.list-social__item a {
-    color: var(--footerHeading)
-}
-
-.footer .list-social__item a svg path {
-    fill: var(--footerHeading)
-}
-
-.f-logo,.f-social {
-    width: 385px;
-    text-align: center
-}
-
-.f-social {
-    margin-top: 55px
-}
-
-.footer__content-top .grid__item {
-    padding-left: 0!important
 }
 
 .footer__content-top .grid--4-col-tablet .grid__item {
