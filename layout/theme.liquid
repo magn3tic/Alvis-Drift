@@ -129,7 +129,7 @@ body {
 <link rel="preload" as="font" href="{{ 'moriarty.woff2' | asset_url }}" type="font/woff2" crossorigin>
 
 {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
-{{ 'fonts.css' | asset_url | stylesheet_tag }}
+{{ 'fonts.css' | asset_url | stylesheet_tag: preload: true  }}
 {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true  }}
 
 {{ 'styles.css' | asset_url | stylesheet_tag: preload: true  }}
