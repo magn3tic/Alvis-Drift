@@ -125,8 +125,11 @@ body {
     {% endstyle %}
 
 
+<link rel="preload" as="font" href="{{ 'metropolis-regular.woff2' | asset_url }}" type="font/woff2" crossorigin>
+<link rel="preload" as="font" href="{{ 'moriarty.woff2' | asset_url }}" type="font/woff2" crossorigin>
+
 {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
-{% comment %} {{ 'custom_css.css' | asset_url | stylesheet_tag: preload: true }} {% endcomment %}
+{{ 'fonts.css' | asset_url | stylesheet_tag }}
 {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true  }}
 
 {{ 'styles.css' | asset_url | stylesheet_tag: preload: true  }}
@@ -152,10 +155,7 @@ body {
   <noscript>{{ 'homes.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
 
-  {{ 'fonts.css' | asset_url | stylesheet_tag }}
-<link rel="preload" as="font" href="{{ 'metropolis-regular.woff2' | asset_url }}" type="font/woff2" crossorigin>
-
-<link rel="preload" as="font" href="{{ 'moriarty.woff2' | asset_url }}" type="font/woff2" crossorigin>
+ 
     
   
     {%- if settings.predictive_search_enabled -%}
@@ -163,7 +163,6 @@ body {
     {%- endif -%}
  
     {% style %}
-
 
       /* slider prev/next icons*/
       .slick-prev:before {
@@ -186,9 +185,6 @@ body {
       }
     {% endstyle %}
 
-    
-
-  
   
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
