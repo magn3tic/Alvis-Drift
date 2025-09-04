@@ -521,11 +521,6 @@
     min-height: 1002px
 }
 
-.video-sec-vid-img {
-    width: 100%;
-    height: auto
-}
-
 .story-vid-btn .icon-video-btn {
     width: 80px;
     height: 100px
@@ -551,11 +546,6 @@
     z-index: 1;
     color: #fff;
     text-decoration: none
-}
-
-.br-cut {
-    clip-path: polygon(100% 0,100% 84%,92% 100%,0 100%,0 0);
-    -webkit-clip-path: polygon(100% 0,100% 83%,90% 100%,0 100%,0 0)
 }
 
 .tr-bl-cut {
@@ -836,28 +826,6 @@
     }
 }
 
-.bg-overlay {
-    position: relative;
-    margin-bottom: -30px
-}
-
-.bg-overlay-bg {
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover
-}
-
-.bg-overlay-content-wrapper {
-    height: 900px;
-    margin-top: -50px;
-    overflow: hidden;
-    position: relative
-}
-
-.bg-overlay-content-wrapper .br-cut h2 {
-    opacity: 1
-}
-
 .bg-overlay-fliter {
     opacity: 1;
     position: absolute;
@@ -867,30 +835,6 @@
     left: 0;
     display: block!important;
     background-color: #0006
-}
-
-.bg-overlay-content {
-    margin-top: 140px;
-    max-width: 812px;
-    background-color: var(--whiteColor);
-    color: var(--darkOrange);
-    padding: 55px 170px 50px 55px
-}
-
-.bg-overlay-content h2 {
-    font: normal 35px/60px var(--moriarty);
-    letter-spacing: 1px
-}
-
-#MainContent .bg-overlay-content h2 {
-    color: var(--darkOrange)
-}
-
-@media only screen and (max-width: 500px) {
-    #MainContent .bg-overlay-content h2 {
-        color:var(--darkOrange);
-        font-size: 45px
-    }
 }
 
 .bg-overlay-content p {
@@ -906,48 +850,8 @@
     color: #fff
 }
 
-.bg-overlay-content.br-cut {
-    clip-path: polygon(100% 0,100% 75%,94% 100%,0 100%,0 0);
-    -webkit-clip-path: polygon(100% 0,100% 82%,90% 100%,0 100%,0 0)
-}
-
-.newsletter-sec {
-    border-top: 1px solid var(--textColor2);
-    padding: 80px 0 180px;
-    overflow: hidden
-}
-
-.newsletter-wrap {
-    display: flex;
-    justify-content: center;
-    gap: 150px;
-    justify-items: center
-}
-
-.newsletter-wrap h2 {
-    color: var(--readmoreColor);
-    font: normal 96px/105px var(--moriarty);
-    letter-spacing: 1px;
-    text-transform: uppercase
-}
-
-#MainContent .newsletter-wrap h2 {
-    color: var(--readmoreColor)
-}
-
-@media only screen and (max-width: 500px) {
-    #MainContent .newsletter-wrap h2 {
-        color:var(--readmoreColor);
-        font-size: 60px
-    }
-}
-
 .newsletterHeader {
     font-size: 50px
-}
-
-.newsletter-content {
-    width: 50%
 }
 
 .newsletter-wrap blockquote {
@@ -963,14 +867,6 @@
 @media only screen and (max-width: 850px) {
     .dare-to-be-true-bx {
         display:none
-    }
-
-    .newsletter-frm {
-        margin-top: 10px;
-        margin-right: 60px;
-        width: 500px;
-        height: 418px;
-        position: relative
     }
 }
 
