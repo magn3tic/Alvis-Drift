@@ -384,66 +384,9 @@
     color: #fff
 }
 
-@media only screen and (max-width: 500px) {
-    .btn-overlay {
-        background-color:#c65336;
-        border: 1px solid var(--headingColor);
-        padding: 11px 20px;
-        font-size: 10px
-    }
-}
-
-.btn:hover {
-    background-color: transparent;
-    color: #e36653;
-    border: 2px solid #e36653;
-    text-decoration: none!important
-}
-
 #shopify-section-template--15559201980672__16416293483ad24024 a.btn.btn-overlay:hover {
     background-color: #fff;
     color: #210e21
-}
-
-.container {
-    max-width: 1640px;
-    margin-left: auto;
-    margin-right: auto
-}
-
-#MainContent .h1,#MainContent .h2,#MainContent h1,#MainContent h2 {
-    margin: 1px 0 15px;
-    text-transform: uppercase;
-    font-family: var(--moriarty)
-}
-
-#MainContent p.sub-title {
-    margin-bottom: 20px
-}
-
-.home-aboutus {
-    text-align: center;
-    margin-top: -85px;
-    margin-bottom: -85px
-}
-
-.home-aboutus .container {
-    max-width: 1300px
-}
-
-.home-aboutus h2 {
-    font: normal 62px/100px var(--moriarty);
-    letter-spacing: 1px;
-    text-transform: uppercase
-}
-
-.product-items-sec {
-    text-align: center;
-    margin-top: -85px
-}
-
-.product-items-sec .container {
-    max-width: 1484px
 }
 
 .product-items-sec h2 {
@@ -464,128 +407,17 @@
     }
 }
 
-@media only screen and (min-width: 1500px) {
-    .product-items-sec .product-bx {
-        margin:20px 0 0
-    }
-}
-
-.product-bx .product-img {
-    height: 330px
-}
-
 .product-bx .product-img a img:hover {
     transform: scale(1.05);
     -webkit-transform: scale(1.05);
     transition: all .3s ease-in-out
 }
 
-.product-bx .product-img img {
-    max-height: 100%;
-    transition: all .3s ease-in-out
-}
-
-.product-bx .product-title {
-    font: bold 24px/30px var(--metropolis);
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    margin: 20px 5px 25px;
-    height: 50px;
-    position: relative
-}
-
-.product-bx .product-title .sp-t {
-    position: absolute;
-    font-size: 16px;
-    line-height: 1.2;
-    width: 100%;
-    text-align: center;
-    left: 0;
-    top: 0;
-    max-height: 150px;
-    overflow: hidden
-}
-
-@media only screen and (max-width: 500px) {
-    .product-bx .product-title .sp-t {
-        font-size:10px;
-        line-height: 1.2;
-        width: 100%;
-        text-align: center;
-        color: #e36653;
-        max-height: 150px;
-        overflow: hidden;
-        min-height: 50px
-    }
-}
-
-.product-bx .product-price {
-    font: 400 34px/30px var(--metropolis);
-    color: #f3f3f3;
-    margin-bottom: 10px
-}
 
 .product-bx .product-size {
     font: 400 20px/30px var(--metropolis);
     color: #f3f3f3;
     margin-bottom: 5px
-}
-
-.product-tabs {
-    margin: 0
-}
-
-.product-tabs ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-align: center
-}
-
-.product-tabs ul li {
-    display: inline-block;
-    cursor: pointer;
-    font: bold 16px/30px var(--metropolis);
-    color: var(--whiteColor);
-    text-transform: uppercase;
-    padding: 0 10px;
-    margin-bottom: 10px
-}
-
-.product-tabs ul li.current,.product-tabs ul li:hover {
-    color: var(--btnColor)
-}
-
-.tabs-content .product-items-wrap {
-    display: none
-}
-
-.tabs-content .product-items-wrap.current {
-    display: block
-}
-
-.product-bx-outer {
-    display: flex;
-    flex-wrap: wrap
-}
-
-.dare-to-be-true {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center
-}
-
-.dare-to-be-true .container {
-    max-width: 100%;
-    position: relative;
-    padding: 0!important;
-    margin-top: -45px
-}
-
-@media only screen and (max-width: 500px) {
-    .dare-to-be-true .container {
-        display:none
-    }
 }
 
 .dare-to-be-true-bx {
@@ -609,46 +441,9 @@
     }
 }
 
-.dare-to-be-true .marquee-wrap {
-    padding: 70px 0;
-    overflow: hidden
-}
-
-.marquee {
-    height: 135px;
-    overflow: hidden;
-    position: relative
-}
-
-.marquee .marquee-t {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    text-align: left;
-    line-height: 128px;
-    font-family: var(--moriarty);
-    color: var(--whiteColor);
-    text-transform: uppercase;
-    -moz-transform: translateX(100%);
-    -webkit-transform: translateX(100%);
-    transform: translate(100%);
-    -moz-animation: scroll-left 40s linear infinite;
-    -webkit-animation: scroll-left 40s linear infinite;
-    animation: scroll-left 15s linear infinite
-}
-
 .marquee2 .marquee-t {
     animation-delay: 12s;
     -webkit-animation-delay: 12s
-}
-
-.sec-inner {
-    margin: var(--sec-spacing) 0
-}
-
-.dare-to-be-true .sec-inner {
-    overflow: visible
 }
 
 .alvis-drift-awarded.video-sec .video-sec-inner {
@@ -689,11 +484,6 @@
 
 .t-link:hover {
     color: #fff
-}
-
-.video-sec .sec-inner {
-    position: relative;
-    overflow: hidden
 }
 
 #MainContent .our-story-animate .video-sec-content p {
