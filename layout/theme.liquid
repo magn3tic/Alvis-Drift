@@ -33,9 +33,7 @@
       <link rel="preconnect" href="https://fonts.shopifycdn.com" crossorigin>
     {%- endunless -%}
  
-    {{ 'custom_css.css' | asset_url | stylesheet_tag:preload: true}}
-    {{ 'common_pages_animation.css' | asset_url | stylesheet_tag: preload: true}}
-    {{ 'venobox.css' | asset_url | stylesheet_tag: preload: true }}
+
     
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
     
@@ -126,8 +124,33 @@ body {
 }
     {% endstyle %}
 
-    {{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
-   
+
+{{ 'base.css' | asset_url | stylesheet_tag: preload: true }}
+{% comment %} {{ 'custom_css.css' | asset_url | stylesheet_tag: preload: true }} {% endcomment %}
+{{ 'header-footer.css' | asset_url | stylesheet_tag }}
+
+{{ 'styles.css' | asset_url | stylesheet_tag }}
+
+{%- if template.name contains 'blog' -%}
+  {{ 'blog.css' | asset_url | stylesheet_tag }}
+{%- endif -%}
+
+{% comment %}{{ 'slick-theme.min.css' | asset_url | stylesheet_tag }}{% endcomment %}
+
+{{ 'venobox.css' | asset_url | stylesheet_tag }}
+
+<link rel="preload" as="style" href="{{ 'common_pages_animation.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'common_pages_animation.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'common_pages_animation.css' | asset_url | stylesheet_tag }}</noscript>
+
+<link rel="preload" as="style" href="{{ 'custom_css_updates.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'custom_css_updates.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'custom_css_updates.css' | asset_url | stylesheet_tag }}</noscript>
+
+{%- if request.page_type == 'index' -%}
+  <link rel="preload" as="style" href="{{ 'home.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>{{ 'home.css' | asset_url | stylesheet_tag }}</noscript>
+{%- endif -%}
     
 
     {%- unless settings.type_body_font.system? -%}
@@ -205,14 +228,10 @@ body {
       }
     {% endstyle %}
 
-  
-    {{ 'slick-theme.min.css' | asset_url | stylesheet_tag: preload:true }}
-    {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true }}
-    {{ 'custom_css_updates.css' | asset_url | stylesheet_tag: preload: true}}
+    
 
-    <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="{{ 'styles.css' | asset_url }}"></noscript>
- 
+  
+  
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
     </script>
@@ -331,17 +350,7 @@ body {
       defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.min.js" defer="defer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.min.js" defer="defer"></script>
-    <style>
-      div#shopify-section-template--15579529183488__product-grid {
-        padding-top: 100px;
-      }
-      div#shopify-section-template--15579529183488__1642113859b1f1945f {
-        padding-top: 100px;
-      }
-    </style>
-
     {% comment %} {% render 'back-to-the-top' %}{% endcomment %}
-   
         <script src="{{ 'custom.js' | asset_url }}" defer ></script>
   </body>
 </html>
