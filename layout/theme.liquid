@@ -20,7 +20,6 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="font" href="{{ 'metropolis-regular.woff2' | asset_url }}" type="font/woff2" crossorigin>
 
        {% render 'meta-tags' %}
 
@@ -152,16 +151,13 @@ body {
   <link rel="preload" as="style" href="{{ 'homes.css' | asset_url }}" onload="this.onload=null;this.rel='stylesheet'">
   <noscript>{{ 'homes.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
-         {{ 'fonts.css' | asset_url | stylesheet_tag }}
 
-    {%- unless settings.type_body_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
+  {{ 'fonts.css' | asset_url | stylesheet_tag }}
+<link rel="preload" as="font" href="{{ 'metropolis-regular.woff2' | asset_url }}" type="font/woff2" crossorigin>
+
+<link rel="preload" as="font" href="{{ 'moriarty.woff2' | asset_url }}" type="font/woff2" crossorigin>
     
-    {%- endunless -%}
-    {%- unless settings.type_header_font.system? -%}
-      <link rel="preload" as="font" href="{{ settings.type_header_font | font_url }}" type="font/woff2" crossorigin>
-    
-    {%- endunless -%}
+  
     {%- if settings.predictive_search_enabled -%}
     {{ 'component-predictive-search.css' | asset_url | stylesheet_tag: preload: true }}
     {%- endif -%}
