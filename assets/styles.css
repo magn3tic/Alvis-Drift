@@ -29,80 +29,6 @@
     --sec-spacing-mobile: 98px
 }
 
-body {
-    font: normal 16px/30px var(--metropolis);
-    letter-spacing: 1px;
-    background-color: var(--darkPurple)
-}
-
-a {
-    text-decoration: none
-}
-
-#shopify-section-announcement-bar {
-    display: block
-}
-
-#shopify-section-header {
-    max-width: 1920px;
-    width: 100%;
-    margin: 0 auto
-}
-html {
-  scroll-behavior: smooth;
-}
-.header.page-width {
-    max-width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 0 0 5%
-}
-
-.header-wrapper {
-    background-color: transparent;
-    border: none;
-    height: 130px;
-    width: 100%;
-    position: absolute;
-    top: 15px;
-    left: 0;
-    max-width: 100%;
-    margin-left: auto;
-    margin-right: auto
-}
-
-@media only screen and (max-width: 815px) {
-    .header-wrapper {
-        background-color:transparent;
-        border: none;
-        padding-top: 20px;
-        height: 130px;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 0;
-        max-width: 100%;
-        margin-left: auto;
-        margin-right: auto
-    }
-}
-
-@media only screen and (max-width: 500px) {
-    .header-wrapper {
-        background-color:transparent;
-        border: none;
-        height: 130px;
-        margin-top: 30px;
-        width: 100%;
-        position: absolute;
-        top: 0;
-        max-width: 1920px;
-        margin-left: auto;
-        margin-right: auto
-    }
-}
-
 .top-left-navbar button {
     background-color: none;
     border: none;
@@ -117,25 +43,6 @@ html {
 
 .header__heading-link:hover .h2 {
     color: var(--whiteColor)
-}
-
-.header-right {
-    display: flex;
-    margin-top: 55px;
-    padding-bottom: 17px;
-    align-items: center;
-    position: relative
-}
-
-.header-right:after {
-    content: "";
-    width: 100%;
-    display: table;
-    position: absolute;
-    height: 1px;
-    background: #ffffff80;
-    bottom: -1px;
-    right: 0
 }
 
 .sticky {
@@ -174,33 +81,6 @@ html {
         margin-top: -10px;
         align-content: center
     }
-}
-
-.header__icon--cart {
-    margin-right: 0
-}
-
-.header__menu-item {
-    padding: 0
-}
-
-.header__inline-menu>ul>li {
-    margin-right: 35px
-}
-
-.header__menu-item .icon-caret {
-    display: none
-}
-
-summary.list-menu__item {
-    padding-right: 0!important
-}
-
-.list-menu__item {
-    font-weight: 700;
-    font-size: 14px;
-    font-family: var(--metropolis);
-    color: var(--whiteColor)
 }
 
 .header__menu-item:hover span {
