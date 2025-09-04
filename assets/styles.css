@@ -115,9 +115,6 @@
     color: var(--btnColorHover)
 }
 
-.header__icon .icon {
-    color: var(--whiteColor)
-}
 
 .header__icon:hover .icon {
     transform: none;
