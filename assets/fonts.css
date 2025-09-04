@@ -1,4 +1,4 @@
-    /* font embedded */
+
       @font-face {
         font-family: 'Metropolis';
         src: url('{{ 'metropolis-bold.woff2' | asset_url }}') format('woff2')
