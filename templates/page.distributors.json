@@ -29,7 +29,7 @@
             "background_image": "shopify://shop_images/Main_2.png",
             "image_overlay": "#000000",
             "overlay_opacity": 35,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "FIND",
             "paragarh_p2": "OUR WINES",
@@ -49,17 +49,9 @@
         "background_image": "shopify://shop_images/DSC_5267.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "FIND",
-        "paragarh_p2": "OUR WINES",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "ALVI'S DRIFT DISTRIBUTION NETWORK",
-        "paragarh_2": "Our wines are available in all leading South African supermarkets and liquor outlets.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-wines",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "164390650014af140d": {
@@ -354,7 +346,7 @@
           "settings": {
             "title": "GERMANY",
             "Title_color": "#2d5980",
-            "text": "<p><strong>HEB - Heinz Egghert</strong><br/><a href=\"https://www.schwechower.com/\" target=\"_blank\" title=\"https://www.schwechower.com/\"><strong>www.schwechower.com/</strong></a></p>",
+            "text": "<p><strong>HEB - Heinz Egghert</strong><br/><a href=\"https://1229.de/\" target=\"_blank\" title=\"https://1229.de/\"><strong>www.schwechower.com/</strong></a></p>",
             "Text_color": "#ffffff"
           }
         },
