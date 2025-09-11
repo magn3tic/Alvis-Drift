@@ -2545,3 +2545,12 @@ summary.list-menu__item {
 
 /* optional: avoid layout jumps when menu opens */
 .header__submenu { contain: layout paint; }
+
+/* off-canvas cart — no reflow */
+.cart-mini {
+  position: fixed; inset: 0 0 0 auto; width: 420px; /* your width */
+  transform: translateX(100%);
+  transition: transform .25s ease;
+  will-change: transform;
+}
+.cart-mini.open { transform: translateX(0); }
