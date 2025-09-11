@@ -2530,19 +2530,3 @@ summary.list-menu__item {
 
 }
 
-/* submenu panel directly after .dropdown-link */
-.dropdown-panel {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition: max-height .35s ease, opacity .25s ease;
-  will-change: max-height, opacity; /* smooth on low-end devices */
-}
-.dropdown-panel.is-open {
-  max-height: 600px; /* > max expected submenu height */
-  opacity: 1;
-}
-
-/* optional: avoid layout jumps when menu opens */
-.header__submenu { contain: layout paint; }
-
