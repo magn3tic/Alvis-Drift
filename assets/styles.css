@@ -372,7 +372,6 @@ summary.list-menu__item {
 
 .sideNav-menu .navbar-dropdown {
     display: none;
-    padding: 10px 70px
 }
 
 .sideNav-menu .navbar-dropdown a {
@@ -5512,7 +5511,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 .sideNav-menu .navbar-dropdown {
     display: none;
-    padding: 5px 20px 10px 40px
 }
 
 .product-bx .product-img {
@@ -6040,7 +6038,6 @@ p.sub-title {
 
     .sideNav-menu .navbar-dropdown {
         display: none;
-        padding: 10px 30px
     }
 
     .product-slider .slick-next,.product-slider .slick-prev {
