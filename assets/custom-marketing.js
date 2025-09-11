@@ -114,18 +114,25 @@
     initWhenVisible(e.target);
   });
 
-  var debounce = (window.utils && window.utils.debounce) || function (fn, w) {
-    var t; return function(){ clearTimeout(t); t=setTimeout(fn, w||200); };
-  };
-  $(window).on('resize', debounce(function(){
-    // destroy & re-init with new width
-    $('.rewards-marquee, .marquee-imgs, .hm-marquee').each(function(){
-      var $el = $(this);
-      if ($el.data('marquee-initialized')) {
-        try { $el.marquee('destroy'); } catch(e){}
-        $el.removeData('marquee-initialized');
-      }
-    });
-    initAll(document);
-  }, 250));
-})();
+// Debounce resize-driven work (recompute marquee durations after layout changes)
+var debounce = (window.utils && window.utils.debounce) || function (fn, wait) {
+  var t; wait = wait || 250;
+  return function () { clearTimeout(t); t = setTimeout(fn, wait); };
+};
+
+$(window).on('resize', debounce(function () {
+  if (!$.fn.marquee) return; // plugin not loaded — nothing to do
+
+  // Destroy existing marquees so we can re-init with new widths
+  $('.rewards-marquee, .marquee-imgs, .hm-marquee').each(function () {
+    var $el = $(this);
+    if ($el.data('marquee-initialized')) {
+      try { $el.marquee('destroy'); } catch (e) {}
+      $el.removeData('marquee-initialized');
+    }
+  });
+
+  // Re-initialize with fresh measurements
+  // (initAll must be in scope in this file)
+  initAll(document);
+}, 250));
