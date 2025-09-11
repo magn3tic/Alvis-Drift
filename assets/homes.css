@@ -736,7 +736,7 @@ p.sub-title {
 }
 .rewards-marquee-sec {
     position: relative;
-    margin-top: -50px;
+    margin-top: -150px;
     height: 225px;
     overflow: hidden
 }
