@@ -2546,3 +2546,60 @@ summary.list-menu__item {
 /* optional: avoid layout jumps when menu opens */
 .header__submenu { contain: layout paint; }
 
+/* === Mini-cart: force right drawer === */
+body .cart-mini {
+  position: fixed !important;
+  top: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  left: auto !important;
+
+  width: clamp(320px, 92vw, 420px) !important;
+  max-width: 100% !important;
+
+  /* drawer behavior */
+  transform: translateX(100%) !important;
+  transition: transform .28s ease-in-out !important;
+  will-change: transform;
+
+  background: #221126; /* your purple */
+  color: #fff;
+  z-index: 10020 !important;
+
+  /* scrolling inside the drawer only */
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -webkit-overflow-scrolling: touch;
+
+  /* nuke stray height rules */
+  height: auto !important;
+  max-height: none !important;
+}
+
+/* open state */
+body .cart-mini.open {
+  transform: translateX(0) !important;
+}
+
+/* make sure inner wrappers don't cap the height */
+body .cart-mini > *,
+body .cart-mini .drawer,
+body .cart-mini .drawer__inner {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+  box-sizing: border-box;
+}
+
+/* overlay (if you added it) */
+.cart-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.45);
+  opacity: 0; pointer-events: none;
+  transition: opacity .2s ease;
+  z-index: 10010;
+}
+.cart-overlay.show { opacity: 1; pointer-events: auto; }
+
+/* lock background scroll when open */
+html.mini-cart-open, body.mini-cart-open { overflow: hidden; }
