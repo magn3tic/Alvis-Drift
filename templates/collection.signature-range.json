@@ -32,7 +32,7 @@
             "paragarh_p3": "",
             "paragarh_p4": "",
             "paragarh_1": "YES! IN A WORLD OF NO",
-            "paragarh_2": "In a world full of no, the Signature Selection is an easy yes. With its fruit-forward flavours, award-winning quality, and price tag under R100, the Signature Collection is made for spontaneous moments and honest connections.",
+            "paragarh_2": "",
             "side_btn_text": "",
             "side_btn_link": ""
           }
@@ -44,7 +44,7 @@
       "settings": {
         "image_overlay": "",
         "overlay_opacity": 30,
-        "blurb": "",
+        "blurb": "<p><br/>In a world full of no, the Signature Selection is an easy yes. With its fruit-forward flavours, award-winning quality, and price tag under R100, the Signature Collection is made for spontaneous moments and honest connections.<br/><br/></p>",
         "right_btn_text": "",
         "right_btn_link": ""
       }
