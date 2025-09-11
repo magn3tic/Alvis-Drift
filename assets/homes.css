@@ -1775,7 +1775,6 @@ p.sub-title {
 
     .sideNav-menu .navbar-dropdown {
         display: none;
-        padding: 10px 30px
     }
      .navbar-close,.sideNavbar-logo {
         filter: hue-rotate(0) brightness(0) contrast(100%);
@@ -1906,7 +1905,6 @@ p.sub-title {
 }
 .sideNav-menu .navbar-dropdown {
     display: none;
-    padding: 10px 30px
 }
 
 .home-product-items.product-items-sec.bg-darkPurple .sec-inner {
