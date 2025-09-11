@@ -2050,19 +2050,6 @@ p.sub-title {
     margin-top: -10px
 }
 
-@media only screen and (max-width: 970px) {
-    #age-gate {
-        width:75%!important;
-        height: 45%!important;
-        border: 2px solid #d5c7be
-    }
-}
-@media only screen and (max-width: 1200px) {
-    #age-gate {
-        width:40%;
-        height: 35%
-    }
-}
 .list-menu {
     list-style: none;
     padding: 0;
