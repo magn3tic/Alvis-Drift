@@ -2529,19 +2529,22 @@ summary.list-menu__item {
 
 
 }
-
-/* submenu panel directly after .dropdown-link */
-.dropdown-panel {
+/* submenu panel immediately after .dropdown-link */
+.dropdown-panel{
   overflow: hidden;
   max-height: 0;
   opacity: 0;
   transition: max-height .35s ease, opacity .25s ease;
-  will-change: max-height, opacity; /* smooth on low-end devices */
+  will-change: max-height, opacity;
 }
-.dropdown-panel.is-open {
-  max-height: 600px; /* > max expected submenu height */
+.dropdown-panel.is-open{
+  max-height: 600px; /* adjust to your tallest submenu */
   opacity: 1;
 }
 
-/* optional: avoid layout jumps when menu opens */
-.header__submenu { contain: layout paint; }
+/* optional: contain paint/layout while animating */
+.header__submenu{ contain: layout paint; }
+
+@media (prefers-reduced-motion: reduce){
+  .dropdown-panel{ transition: none; }
+}
