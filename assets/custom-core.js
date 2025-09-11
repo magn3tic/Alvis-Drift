@@ -1,22 +1,15 @@
-/* custom-core.js — sitewide UI that needs jQuery; safe if utils.js is missing */
+/* custom-core.js — sitewide UI that needs jQuery; no jQuery effects; mobile drawer fixed */
 (function () {
   'use strict';
 
-  // --- Dependency guards ---
+  // --- Dependency guard ---
   var $ = window.jQuery;
   if (!$) { console.error('[custom-core] jQuery not found. Load it before custom-core.js'); return; }
 
-  // utils fallbacks (if utils.js did not load)
+  // --- utils fallback (if window.utils not present) ---
   var U = (function () {
     if (window.utils) return window.utils;
 
-    function onIdle(fn, timeout) {
-      if ('requestIdleCallback' in window) requestIdleCallback(fn, { timeout: timeout || 2000 });
-      else setTimeout(fn, 1);
-    }
-    function loadScript(src) {
-      var s = document.createElement('script'); s.src = src; s.defer = true; document.body.appendChild(s); return s;
-    }
     function debounce(fn, wait, immediate) {
       var t; wait = wait || 300;
       return function () {
@@ -30,11 +23,13 @@
       return ['iPad Simulator','iPhone Simulator','iPod Simulator','iPad','iPhone','iPod'].includes(navigator.platform)
         || (navigator.userAgent.indexOf('Mac') > -1 && 'ontouchend' in document);
     }
-    return { onIdle: onIdle, loadScript: loadScript, debounce: debounce, iOS: iOS };
+    function onIdle(fn, timeout){ if ('requestIdleCallback' in window) requestIdleCallback(fn, {timeout: timeout||2000}); else setTimeout(fn,1); }
+    return { debounce: debounce, iOS: iOS, onIdle: onIdle };
   })();
 
-  // --- One-time delegated event bindings (attach once, work for future DOM) ---
-  // Navbar open/close
+  // =========================================================
+  // NAVBAR: open/close the side drawer (#sideNavbar)
+  // =========================================================
   $(document).on('click', '.top-left-navbar', function () {
     $('#sideNavbar').fadeIn(100).addClass('open');
   });
@@ -42,122 +37,56 @@
     $('#sideNavbar').fadeOut(100).removeClass('open');
   });
 
-// ==========================
-// Dropdowns: desktop hover + mobile click (no slide*, no reflow)
-// ==========================
-(function dropdownMenus(){
-  // helper: find the panel next to a link
-  function panelFor($link){
-    var $p = $link.next('.navbar-dropdown, .dropdown-panel');
-    if ($p.length) return $p;
-    // as a fallback, treat the immediate sibling as the panel
-    $p = $link.next();
-    if ($p.length) $p.addClass('navbar-dropdown');
-    return $p;
-  }
+  // =========================================================
+  // SIDENAV ACCORDION (your drawer markup)
+  // .dropdown-link followed by .navbar-dropdown  → click to toggle
+  // Works on all devices; scoped ONLY inside #sideNavbar
+  // =========================================================
+  (function sideNavAccordion(){
+    function panelFor($link){
+      // prefer next .navbar-dropdown / .dropdown-panel sibling
+      var $p = $link.siblings('.navbar-dropdown, .dropdown-panel');
+      if ($p.length) return $p;
+      // fallback: immediate sibling
+      $p = $link.next();
+      return $p;
+    }
 
-  // --- Desktop (hover-capable pointers) ---
-  var supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-  if (supportsHover) {
-    $(document).on('mouseenter', '.dropdown-link', function(e){
-      e.preventDefault();
+    // Toggle submenu on click
+    $(document).on('click', '#sideNavbar .dropdown-link', function(e){
       var $link = $(this);
-      $('.dropdown-link').removeClass('active');
-      $('.navbar-dropdown, .dropdown-panel').removeClass('is-open');
-      $link.addClass('active');
-      panelFor($link).addClass('is-open');
+      var $panel = panelFor($link);
+      if (!$panel.length) return; // no submenu → let it navigate
+
+      e.preventDefault(); // has submenu → toggle
+      var open = $panel.hasClass('is-open');
+
+      // close other open ones
+      $('#sideNavbar .navbar-dropdown.is-open, #sideNavbar .dropdown-panel.is-open').not($panel).removeClass('is-open');
+      $('#sideNavbar .dropdown-link.active').not($link).removeClass('active').removeAttr('aria-expanded');
+
+      // toggle this one
+      $panel.toggleClass('is-open', !open);
+      $link.toggleClass('active', !open).attr('aria-expanded', String(!open));
     });
-    $(document).on('mouseleave', '.navbar-dropdown, .dropdown-panel', function(){
-      $('.dropdown-link').removeClass('active');
-      $('.navbar-dropdown, .dropdown-panel').removeClass('is-open');
+
+    // Click outside submenus closes all (but stays inside drawer)
+    $(document).on('click', function(e){
+      if ($(e.target).closest('#sideNavbar .main_parent').length) return;
+      $('#sideNavbar .navbar-dropdown.is-open, #sideNavbar .dropdown-panel.is-open').removeClass('is-open');
+      $('#sideNavbar .dropdown-link.active').removeClass('active').removeAttr('aria-expanded');
     });
-  }
+  })();
 
-  // --- Mobile / touch / small screens: click to toggle ---
-  function isMobileContext(){
-    return ('ontouchstart' in window) || window.matchMedia('(hover: none)').matches || window.innerWidth < 992;
-  }
-
-  $(document).on('click', '.dropdown-link', function(e){
-    if (!isMobileContext()) return; // let desktop navigate as usual
-    var $link = $(this);
-    var $panel = panelFor($link);
-    if (!$panel.length) return; // no submenu, allow navigation
-
-    // has submenu: toggle instead of navigating
-    e.preventDefault();
-    var open = $panel.hasClass('is-open');
-    $('.navbar-dropdown.is-open, .dropdown-panel.is-open').not($panel).removeClass('is-open');
-    $('.dropdown-link.active').not($link).removeClass('active');
-
-    if (!open){ $panel.addClass('is-open'); $link.addClass('active'); }
-    else { $panel.removeClass('is-open'); $link.removeClass('active'); }
-  });
-
-  // Close if clicking outside
-  $(document).on('click', function(e){
-    if ($(e.target).closest('.main_parent').length) return;
-    $('.navbar-dropdown.is-open, .dropdown-panel.is-open').removeClass('is-open');
-    $('.dropdown-link.active').removeClass('active');
-  });
-})();
-
-
-  // Touch fix for non-iOS (first tap opens, second navigates)
-  if (window.ontouchstart !== undefined && !U.iOS()) {
-    var lastHref = '';
-    $(document).on('click', '.dropdown-link', function (e) {
-      var href = this.getAttribute('href');
-      if (!href) return;
-      if (lastHref !== href) {
-        e.preventDefault();
-        lastHref = href;
-        // open its panel like desktop hover
-        $('.dropdown-link').removeClass('active');
-        $('.dropdown-panel').removeClass('is-open');
-        var $link = $(this);
-        $link.addClass('active');
-        var $p = $link.next('.dropdown-panel');
-        if (!$p.length) $p = $link.next().addClass('dropdown-panel');
-        $p.addClass('is-open');
-      }
-      // second tap navigates naturally
-    });
-  }
-
-  // Mini-cart toggle
-  $(document).on('click', '.mini-cart-btn', function (e) {
-    e.preventDefault();
-    $('.cart-mini').toggleClass('open');
-    $(this).toggleClass('active');
-  });
-  $(document).on('click', '.mini-cart-close, .close-cart-button', function (e) {
-    e.preventDefault();
-    $('.cart-mini').removeClass('open');
-    $('.mini-cart-btn').removeClass('active');
-  });
-
-  // Tabs
-  $(document).on('click', '.product-tabs ul li', function () {
-    var tab_id = $(this).attr('data-tab');
-    $('.product-tabs ul li, .tabs-content .product-items-wrap').removeClass('current');
-    $(this).addClass('current');
-    $('#' + tab_id).addClass('current');
-  });
-
-  // Gallery thumbnails
-  $(document).on('click', '.gallery-thumbanil', function () {
-    var tab_id = $(this).attr('data-tab');
-    $('.gallery-imgs-wrap .gallery-img').removeClass('current');
-    $(this).addClass('current');
-    $('#' + tab_id).addClass('current');
-  });
-
-  // Menu hover — details/summary friendly (desktop only)
-  (function menuHover() {
+  // =========================================================
+  // HEADER MENU (desktop): hover opens (details/summary friendly)
+  // Keeps previous UX but without jQuery slide*.
+  // =========================================================
+  (function headerHoverMenus(){
     var supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    if (!supportsHover) return; // keep click behavior on touch
+    if (!supportsHover) return; // keep tap behavior on touch
 
+    // For Dawn-like headers that use <details><summary>
     var topSummarySel =
       'header .header__inline-menu details.header__menu-item > summary.header__menu-item,' +
       'header .main-link-shop summary.header__menu-item,' +
@@ -173,22 +102,94 @@
     $(document).on('mouseleave', 'header .header__submenu', function () {
       $(this).closest('details').removeAttr('open');
     });
-    $(document).on('mouseenter', 'header .main-link-home, header', function (e) {
-      if ($(e.target).closest('.header__submenu').length) return;
-      $('header details[open]').removeAttr('open');
+
+    // If your header uses .dropdown-link + .dropdown-panel (not details),
+    // support that too (scoped to header only).
+    function panelFor($link){
+      var $p = $link.next('.dropdown-panel');
+      if ($p.length) return $p;
+      $p = $link.next();
+      if ($p.length) $p.addClass('dropdown-panel');
+      return $p;
+    }
+    $(document).on('mouseenter', 'header .dropdown-link', function(e){
+      e.preventDefault();
+      var $link = $(this);
+      $('header .dropdown-link').removeClass('active');
+      $('header .dropdown-panel').removeClass('is-open');
+      $link.addClass('active');
+      panelFor($link).addClass('is-open');
+    });
+    $(document).on('mouseleave', 'header .dropdown-panel, header .header__submenu', function(){
+      $('header .dropdown-link').removeClass('active');
+      $('header .dropdown-panel').removeClass('is-open');
     });
   })();
 
-  // --- Functions that must run when DOM is (re)rendered ---
+  // Touch fix for header links (first tap opens submenu, second navigates)
+  if ('ontouchstart' in window && !U.iOS()) {
+    var lastHref = '';
+    $(document).on('click', 'header .dropdown-link', function (e) {
+      var href = this.getAttribute('href');
+      // if it has a panel, control via tap
+      var $panel = $(this).next('.dropdown-panel');
+      if (!$panel.length) $panel = $(this).next('.navbar-dropdown');
+      if (!$panel.length) return; // no submenu → let it navigate
+
+      if (lastHref !== href) {
+        e.preventDefault();
+        lastHref = href;
+        $('header .dropdown-link').removeClass('active');
+        $('header .dropdown-panel, header .navbar-dropdown').removeClass('is-open');
+        $(this).addClass('active');
+        $panel.addClass('is-open');
+      }
+      // second tap navigates naturally
+    });
+  }
+
+  // =========================================================
+  // MINI-CART toggle (CSS should use transform drawer; no jQuery animate)
+  // =========================================================
+  $(document).on('click', '.mini-cart-btn', function (e) {
+    e.preventDefault();
+    $('.cart-mini').toggleClass('open');
+    $(this).toggleClass('active');
+  });
+  $(document).on('click', '.mini-cart-close, .close-cart-button', function (e) {
+    e.preventDefault();
+    $('.cart-mini').removeClass('open');
+    $('.mini-cart-btn').removeClass('active');
+  });
+
+  // =========================================================
+  // Tabs & Gallery
+  // =========================================================
+  $(document).on('click', '.product-tabs ul li', function () {
+    var tab_id = $(this).attr('data-tab');
+    $('.product-tabs ul li, .tabs-content .product-items-wrap').removeClass('current');
+    $(this).addClass('current');
+    $('#' + tab_id).addClass('current');
+  });
+  $(document).on('click', '.gallery-thumbanil', function () {
+    var tab_id = $(this).attr('data-tab');
+    $('.gallery-imgs-wrap .gallery-img').removeClass('current');
+    $(this).addClass('current');
+    $('#' + tab_id).addClass('current');
+  });
+
+  // =========================================================
+  // INIT STATE on first load & on section re-render
+  // =========================================================
   function initStaticState(root) {
     var $root = root ? $(root) : $(document);
 
-    // iOS / not-iOS body flag (once)
+    // Body flag for iOS
     if (!document.body.classList.contains('ios-device') && !document.body.classList.contains('not-ios-device')) {
       document.body.classList.add(U.iOS() ? 'ios-device' : 'not-ios-device');
     }
 
-    // Account redirect binding (id is unique so safe)
+    // Account redirect (one-time bind)
     var catchClick = document.getElementById('catchClick');
     if (catchClick && !catchClick.__accBound) {
       catchClick.addEventListener('mouseup', function () {
@@ -202,7 +203,7 @@
       window.location.href = url;
     }
 
-    // Safety defaults for first tab / first gallery image inside root
+    // Default first tab & gallery image
     var $tabs = $root.find('.product-tabs ul li');
     if ($tabs.length && $root.find('.product-tabs ul li.current').length === 0) {
       $tabs.first().addClass('current');
@@ -238,7 +239,7 @@
       }
     }
 
-    // Stagger navbar links (once per render)
+    // Stagger navbar links (visual only)
     var i = 1;
     $root.find('.navbar-sec > ul > li').each(function () {
       this.style.animationDelay = (i * 0.125) + 's';
@@ -246,10 +247,7 @@
     });
   }
 
-  // Run on initial DOM ready
-  document.addEventListener('DOMContentLoaded', function () { initStaticState(document); });
-
-  // Run again when Shopify re-renders a section
-  document.addEventListener('shopify:section:load', function (evt) { initStaticState(evt.target); });
+  document.addEventListener('DOMContentLoaded', function(){ initStaticState(document); });
+  document.addEventListener('shopify:section:load', function(e){ initStaticState(e.target); });
 
 })();
