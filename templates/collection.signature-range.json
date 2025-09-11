@@ -21,17 +21,18 @@
         "slider_KVxqKk": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Alvis-Drift-Signature-Range.jpg",
+            "background_image": "shopify://shop_images/Alvis_Drift_Website_banner_siganture_page.jpg",
+            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Website_banner_siganture_page_mobile.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
-            "paragarh_p1": "Signature",
-            "paragarh_p2": "Range",
+            "paragarh_p1": "SIGNATURE",
+            "paragarh_p2": "SELECTION",
             "paragarh_p3": "",
             "paragarh_p4": "",
-            "paragarh_1": "Spontaneous Connections",
-            "paragarh_2": "Whether you’re just starting out on your wine journey or prefer unpretentious, fruit-driven flavours, our Signature range offers exceptional quality at incredible value.",
+            "paragarh_1": "YES! IN A WORLD OF NO",
+            "paragarh_2": "In a world full of no, the Signature Selection is an easy yes. With its fruit-forward flavours, award-winning quality, and price tag under R100, the Signature Collection is made for spontaneous moments and honest connections.",
             "side_btn_text": "",
             "side_btn_link": ""
           }
@@ -43,17 +44,9 @@
       "settings": {
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "",
-        "paragarh_p2": "",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "",
-        "paragarh_2": "",
-        "btn_text": "",
-        "btn_link": "",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "focus_text_text_only_3qzFnW": {
@@ -63,7 +56,7 @@
         "Heading_color": "#ffffff",
         "title": "",
         "subtitle-1": "",
-        "subtitle-2": "<p>Award-winning, superb value single-variety wines that are ready to be enjoyed immediately, these fruit-driven wines showcase the flavours of popular South African varieties. This range offers uncomplicated yet high-quality wines with accessible flavours to suit all palates.</p>",
+        "subtitle-2": "<p>Whether planned or last-minute, this range gives you more than expected: in taste, value, and the joy of saying <em>yes!</em></p>",
         "button_text": "",
         "button_link": "",
         "new_tab": true
