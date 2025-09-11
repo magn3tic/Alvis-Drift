@@ -736,7 +736,8 @@ p.sub-title {
 }
 .rewards-marquee-sec {
     position: relative;
-    margin-top: -80px;
+    margin-top: -8
+    0px;
     height: 225px;
     overflow: hidden
 }
@@ -2012,21 +2013,38 @@ p.sub-title {
     margin: 10px;
     cursor: pointer
 }
-#age-gate {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 30%;
-    height: 270px;
-    margin: auto;
-    background-color: #000c;
-    z-index: 9999;
-    color: #fff;
-    text-align: center
-}
+
+/* Age gate: critical no-shift styles */
+  #age-gate[hidden]{display:none !important;}
+  #age-gate{
+    position:fixed; inset:0; z-index:10050;
+    display:grid; place-items:center;
+    pointer-events:none; /* off until open */
+  }
+  /* dim background via backdrop without layout */
+  #age-gate::before{
+    content:""; position:fixed; inset:0;
+    background:rgba(0,0,0,.5); opacity:0;
+    transition:opacity .2s ease;
+  }
+  #age-gate.is-open{ pointer-events:auto; }
+  #age-gate.is-open::before{ opacity:1; }
+
+  /* centered panel */
+  #age-gate .age-gate__panel{
+    width:min(520px, 92vw);
+    background:#111; color:#fff;
+    border-radius:12px; padding:24px;
+    box-shadow:0 20px 60px rgba(0,0,0,.45);
+    transform:translateY(6px) scale(.985);
+    opacity:0;
+    transition:opacity .22s ease, transform .22s ease;
+  }
+  #age-gate.is-open .age-gate__panel{
+    opacity:1; transform:none;
+  }
+
+
 
 .age-container p {
     margin-top: -10px
