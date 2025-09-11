@@ -240,5 +240,40 @@ body {
       <script src="{{ 'custom-parallax.js' | asset_url }}" defer></script>
     {%- endif -%}
 
+
+    <script>
+(function(){
+  const on = (t,fn)=>window.addEventListener(t,fn,{once:true,passive:true});
+  function afterIdleOrInteract(cb){
+    if('requestIdleCallback' in window) requestIdleCallback(()=>cb(),{timeout:2500});
+    on('pointerdown', cb); on('touchstart', cb); on('scroll', cb);
+    setTimeout(cb, 3000); // ultimate fallback
+  }
+  function add(src,attrs){
+    var s=document.createElement('script'); s.src=src; s.defer=true;
+    if(attrs){ for(const k in attrs) s.setAttribute(k, attrs[k]); }
+    document.body.appendChild(s); return s;
+  }
+
+  afterIdleOrInteract(function(){
+    // Facebook Pixel (legacy) – defer
+    add('https://connect.facebook.net/en_US/fbevents.js');
+
+    // Klaviyo onsite – defer
+    add('https://static.klaviyo.com/onsite/js/klaviyo.js?company_id={{ shop.metafields.klaviyo.public_id | default: "" }}');
+
+    // Google gtag – defer (if you use it)
+    add('https://www.googletagmanager.com/gtag/js?id=G-Y5Y8JXDJKN', {async:'', defer:''});
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){ dataLayer.push(arguments); }
+    gtag('js', new Date()); gtag('config','G-Y5Y8JXDJKN',{send_page_view:true});
+
+    // Loyalty widget – only on pages that need it
+    {% if template.name == 'customers/account' or template.name == 'product' %}
+      add('https://loy.shopapps.site/v2/js/loyaltiesWidget.js?shop={{ shop.permanent_domain }}');
+    {% endif %}
+  });
+})();
+</script>
   </body>
 </html>
