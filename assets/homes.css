@@ -2563,3 +2563,26 @@ height:600px;
   will-change: transform;
 }
 .cart-mini.open { transform: translateX(0); }
+
+/* submenu container */
+.navbar-dropdown,
+.dropdown-panel{
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height .3s ease, opacity .2s ease, visibility 0s linear .3s;
+  will-change: max-height, opacity;
+}
+
+/* open state */
+.navbar-dropdown.is-open,
+.dropdown-panel.is-open{
+  max-height: 800px;       /* > tallest submenu */
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s;    /* show immediately */
+}
+
+/* make links look active if you need */
+.dropdown-link.active { /* style as needed */ }
