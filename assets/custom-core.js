@@ -42,26 +42,64 @@
     $('#sideNavbar').fadeOut(100).removeClass('open');
   });
 
-  // Dropdown (hover) — parity with original slide animations
-  $(document).on('mouseenter', '.dropdown-link', function (e) {
-    e.preventDefault();
-    var $this = $(this);
-    $('.dropdown-link').removeClass('active').next().removeClass('show').stop(true, true).slideUp(800);
-    $this.addClass('active').next().toggleClass('show').stop(true, true).slideToggle(800);
-  });
-
-  // Touch fix for non-iOS (first tap focuses, second navigates)
-  if (window.ontouchstart !== undefined && !U.iOS()) {
-    var clickedHref = '';
-    $(document).on('click', '.dropdown-link', function (e) {
-      var linkHref = $(this).attr('href');
-      if (!linkHref) return; // nothing to do
-      if (clickedHref !== linkHref) {
-        e.preventDefault();
-        clickedHref = linkHref;
-      } else {
-        // allow navigation
+  // ==========================
+  // Dropdown (hover) — CSS transitions (no jQuery slide*, avoids forced reflow)
+  // ==========================
+  (function dropdownHover(){
+    // desktop only; preserve click behavior on touch
+    var supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+    if (supportsHover) {
+      function panelFor($link){
+        var $p = $link.next('.dropdown-panel');
+        if ($p.length) return $p;
+        $p = $link.next();          // fallback: immediate sibling
+        if ($p.length) $p.addClass('dropdown-panel');
+        return $p;
       }
+
+      // open hovered link's panel
+      $(document).on('mouseenter', '.dropdown-link', function(e){
+        e.preventDefault();
+        var $link = $(this);
+        $('.dropdown-link').removeClass('active');
+        $('.dropdown-panel').removeClass('is-open');
+        $link.addClass('active');
+        panelFor($link).addClass('is-open');
+      });
+
+      // close when leaving the panel/submenu
+      $(document).on('mouseleave', '.dropdown-panel, header .header__submenu', function(){
+        $('.dropdown-link').removeClass('active');
+        $('.dropdown-panel').removeClass('is-open');
+      });
+
+      // hovering "home" closes all
+      $(document).on('mouseenter', '.main-link-home', function(){
+        $('.dropdown-link').removeClass('active');
+        $('.dropdown-panel').removeClass('is-open');
+      });
+    }
+  })();
+
+  // Touch fix for non-iOS (first tap opens, second navigates)
+  if (window.ontouchstart !== undefined && !U.iOS()) {
+    var lastHref = '';
+    $(document).on('click', '.dropdown-link', function (e) {
+      var href = this.getAttribute('href');
+      if (!href) return;
+      if (lastHref !== href) {
+        e.preventDefault();
+        lastHref = href;
+        // open its panel like desktop hover
+        $('.dropdown-link').removeClass('active');
+        $('.dropdown-panel').removeClass('is-open');
+        var $link = $(this);
+        $link.addClass('active');
+        var $p = $link.next('.dropdown-panel');
+        if (!$p.length) $p = $link.next().addClass('dropdown-panel');
+        $p.addClass('is-open');
+      }
+      // second tap navigates naturally
     });
   }
 
