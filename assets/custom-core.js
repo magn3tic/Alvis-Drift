@@ -42,44 +42,66 @@
     $('#sideNavbar').fadeOut(100).removeClass('open');
   });
 
-  // ==========================
-  // Dropdown (hover) — CSS transitions (no jQuery slide*, avoids forced reflow)
-  // ==========================
-  (function dropdownHover(){
-    // desktop only; preserve click behavior on touch
-    var supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
-    if (supportsHover) {
-      function panelFor($link){
-        var $p = $link.next('.dropdown-panel');
-        if ($p.length) return $p;
-        $p = $link.next();          // fallback: immediate sibling
-        if ($p.length) $p.addClass('dropdown-panel');
-        return $p;
-      }
+// ==========================
+// Dropdowns: desktop hover + mobile click (no slide*, no reflow)
+// ==========================
+(function dropdownMenus(){
+  // helper: find the panel next to a link
+  function panelFor($link){
+    var $p = $link.next('.navbar-dropdown, .dropdown-panel');
+    if ($p.length) return $p;
+    // as a fallback, treat the immediate sibling as the panel
+    $p = $link.next();
+    if ($p.length) $p.addClass('navbar-dropdown');
+    return $p;
+  }
 
-      // open hovered link's panel
-      $(document).on('mouseenter', '.dropdown-link', function(e){
-        e.preventDefault();
-        var $link = $(this);
-        $('.dropdown-link').removeClass('active');
-        $('.dropdown-panel').removeClass('is-open');
-        $link.addClass('active');
-        panelFor($link).addClass('is-open');
-      });
+  // --- Desktop (hover-capable pointers) ---
+  var supportsHover = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  if (supportsHover) {
+    $(document).on('mouseenter', '.dropdown-link', function(e){
+      e.preventDefault();
+      var $link = $(this);
+      $('.dropdown-link').removeClass('active');
+      $('.navbar-dropdown, .dropdown-panel').removeClass('is-open');
+      $link.addClass('active');
+      panelFor($link).addClass('is-open');
+    });
+    $(document).on('mouseleave', '.navbar-dropdown, .dropdown-panel', function(){
+      $('.dropdown-link').removeClass('active');
+      $('.navbar-dropdown, .dropdown-panel').removeClass('is-open');
+    });
+  }
 
-      // close when leaving the panel/submenu
-      $(document).on('mouseleave', '.dropdown-panel, header .header__submenu', function(){
-        $('.dropdown-link').removeClass('active');
-        $('.dropdown-panel').removeClass('is-open');
-      });
+  // --- Mobile / touch / small screens: click to toggle ---
+  function isMobileContext(){
+    return ('ontouchstart' in window) || window.matchMedia('(hover: none)').matches || window.innerWidth < 992;
+  }
 
-      // hovering "home" closes all
-      $(document).on('mouseenter', '.main-link-home', function(){
-        $('.dropdown-link').removeClass('active');
-        $('.dropdown-panel').removeClass('is-open');
-      });
-    }
-  })();
+  $(document).on('click', '.dropdown-link', function(e){
+    if (!isMobileContext()) return; // let desktop navigate as usual
+    var $link = $(this);
+    var $panel = panelFor($link);
+    if (!$panel.length) return; // no submenu, allow navigation
+
+    // has submenu: toggle instead of navigating
+    e.preventDefault();
+    var open = $panel.hasClass('is-open');
+    $('.navbar-dropdown.is-open, .dropdown-panel.is-open').not($panel).removeClass('is-open');
+    $('.dropdown-link.active').not($link).removeClass('active');
+
+    if (!open){ $panel.addClass('is-open'); $link.addClass('active'); }
+    else { $panel.removeClass('is-open'); $link.removeClass('active'); }
+  });
+
+  // Close if clicking outside
+  $(document).on('click', function(e){
+    if ($(e.target).closest('.main_parent').length) return;
+    $('.navbar-dropdown.is-open, .dropdown-panel.is-open').removeClass('is-open');
+    $('.dropdown-link.active').removeClass('active');
+  });
+})();
+
 
   // Touch fix for non-iOS (first tap opens, second navigates)
   if (window.ontouchstart !== undefined && !U.iOS()) {
