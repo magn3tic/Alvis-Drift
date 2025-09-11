@@ -2564,28 +2564,40 @@ height:600px;
 }
 .cart-mini.open { transform: translateX(0); }
 
-/* Side drawer submenu: never use display:none; hide via max-height/opacity */
+/* Side drawer container (yours is fine) */
+#sideNavbar{
+  width:100%;
+  height:100%;
+  display:none;
+  position:fixed;
+  top:0; left:0;
+  z-index:100;
+  overflow:auto;
+  background-color:#f5ecdd;
+}
+
+/* Submenu panels: hidden by default, but never display:none */
 #sideNavbar .navbar-dropdown,
 #sideNavbar .dropdown-panel{
-  display: block !important;     /* some themes set display:none; override it */
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  visibility: hidden;
-  transition: max-height .28s ease, opacity .2s ease, visibility 0s linear .28s;
-  will-change: max-height, opacity;
+  display:block !important;        /* override any legacy display:none */
+  overflow:hidden;
+  max-height:0;
+  opacity:0;
+  visibility:hidden;
+  transition:max-height .28s ease, opacity .2s ease, visibility 0s linear .28s;
+  will-change:max-height, opacity;
 }
 
 /* Open state */
 #sideNavbar .navbar-dropdown.is-open,
 #sideNavbar .dropdown-panel.is-open{
-  max-height: 800px;             /* > tallest submenu */
-  opacity: 1;
-  visibility: visible;
-  transition-delay: 0s;
+  max-height:800px;                /* bigger than your tallest submenu */
+  opacity:1;
+  visibility:visible;
+  transition-delay:0s;
 }
 
-/* Optional: style active parent link */
-#sideNavbar .dropdown-link.active { /* e.g. */
-  /* color: #c9a46b; font-weight: 600; */
+/* (Optional) make the parent link look active when open */
+#sideNavbar .dropdown-link.active{
+  /* color:#c9a46b; font-weight:600; */
 }
