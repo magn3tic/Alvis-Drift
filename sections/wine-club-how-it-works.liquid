@@ -65,6 +65,7 @@
           {% endfor %}
         </ul>
       </div>
+      {% if display_platinum == true %}
       <div class="benefits platinum-tier">
         <span class="awc-heading-xs">WINE CLUB</span>
         <h5 class="h1 whiteTitle">Platinum</h5>
@@ -85,6 +86,7 @@
           {% endfor %}
         </ul>
       </div>
+    {% endif %}
     </div>
   </div>
 </section>
@@ -166,21 +168,12 @@
         "label": "Platinum Tier Image"
       },
       {
-        "type": "radio",
-        "id": "display-platinum",
-        "label": "Disable Platinum Tier",
-        "options": [
-          {
-            "label": "Enable",
-            "value": "enable-platinum"
-          },
-          {
-            "label": "Disable",
-            "value": "disable-platinum"
-          }
-        ]
+      "type": "checkbox",
+      "id": "display_platinum",
+      "label": "Disable Platinum Tier",
+      "default": false
       },
-       {
+      {
         "type": "text",
         "id": "platinum_text",
         "label": "Point for Platinum",
