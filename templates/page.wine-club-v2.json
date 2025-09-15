@@ -113,9 +113,9 @@
       "name": "Wine Club join club",
       "settings": {
         "bronze_image": "shopify://shop_images/Bronze.webp",
-        "bronze_richtext": "<p>Welcome to our portal for Bronze tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Bronze tier members</li></ul>",
+        "bronze_richtext": "<p>Welcome to our portal for Bronze tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Bronze tier members</li></ul><p>As a Bronze member, you also qualify for a fantastic 5% discount* on all wine purchases from our online shop.<br/></p>",
         "bronze_to_silver": "shopify://shop_images/go-for-silver.webp",
-        "bronze_to_silver_text": "<p>As a Silver member, you also qualify for a fantastic 5% discount* on all wine purchases from our online shop.</p><p><em>*Excluding selected sales and promotions.</em></p>",
+        "bronze_to_silver_text": "<p>As a Silver member, you also qualify for a fantastic 10% discount* on all wine purchases from our online shop.</p><p><em>*Excluding selected sales and promotions.</em></p>",
         "silver_image": "shopify://shop_images/Silver.webp",
         "silver_richtext": "<p>Welcome to our portal for Silver tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Silver tier members</li></ul><p>As a Silver member, you also qualify for a fantastic 5% discount* on all wine purchases from our online shop.</p>",
         "silver_to_gold": "shopify://shop_images/go-for-gold.webp",
