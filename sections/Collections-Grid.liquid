@@ -212,10 +212,10 @@
               {% else %}
               {% if product.compare_at_price > product.price  %}
                   <div class="product-price position-relative">
-                    <span class="compare-price ">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}</div>   
+                    <span class="compare-price ">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.85 | money | remove: '.00' | replace: ",", " " }}</div>   
                 {% else %}
                   <div class="product-price ">
-                    <span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}</div>
+                    <span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.85 | money | remove: '.00' | replace: ",", " " }}</div>
                    <div class = "silver-{{ settings.discount-badge }}"> 
                     {% if lowertags contains 'gold' %}
                      {% if settings.discount-badge == 'tier-text'%}Gold Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
