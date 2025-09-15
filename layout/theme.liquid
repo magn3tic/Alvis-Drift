@@ -147,40 +147,7 @@ body {
           f=false,d=document,code={use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.fetchPriority='high';b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){window.settings_timer=setTimeout(function () {_vwo_code.finish() },settings_tolerance);var a=d.createElement('style'),b=hide_element?hide_element+'{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}':'',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('https://dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&f='+(+is_spa)+'&r='+Math.random());return settings_timer; }};window._vwo_settings_timer = code.init(); return code; }());
     </script>
     <!-- End VWO Async SmartCode -->
-    <script>
-        // Check if the page is homepage, product, or collection
-        function shouldShowAgeGate() {
-          var ageVerified = localStorage.getItem('ageVerified'); 
-          // Check if age has already been verified
-          if (ageVerified === 'true') {
-      return false; // Do not show popup if already verified
-          }
-          // Check if the current page is the homepage, product page, or collection page
-          var isHomePage = {{ template.name == 'index' | json }};
-          var isProductPage = {{ template.name == 'product' | json }};
-          var isCollectionPage = {{ template.name == 'collection' | json }};
 
-          return isHomePage || isProductPage || isCollectionPage;
-        }
-        // Show the popup if required
-        function checkAgeGate() {
-          if (shouldShowAgeGate()) {
-      document.getElementById('age-gate').style.display = 'block';
-          }
-        }
-        // Set age verification in localStorage
-        function verifyAge() {
-          localStorage.setItem('ageVerified', 'true');
-          document.getElementById('age-gate').style.display = 'none';
-        }
-        // Deny access for underage users
-        function denyAccess() {
-          window.location.href = 'https://www.gov.za/sites/default/files/gcis_document/201503/act-27-1989.pdf'; // Redirect underage users
-        }
-        window.onload = function() {
-          checkAgeGate();
-        };
-    </script>
     <meta name="google-site-verification" content="ARs--uG7rgAn04FtH4Sj2niLmhqBJudZFBT5YbDhkcQ" />
   </head>
   <!-- Sticky Banner -->
