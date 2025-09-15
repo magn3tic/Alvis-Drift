@@ -149,6 +149,12 @@
             "text": "Early Access to New Releases"
           }
         },
+        "bronze_benefit_wNzLFz": {
+          "type": "bronze_benefit",
+          "settings": {
+            "text": "5% Off All Non-Sale Cases"
+          }
+        },
         "silver_benefit_Y4hczk": {
           "type": "silver_benefit",
           "settings": {
@@ -176,7 +182,7 @@
         "silver_benefit_H7pecz": {
           "type": "silver_benefit",
           "settings": {
-            "text": "5% Off All Non-Sale Cases"
+            "text": "10% Off All Non-Sale Cases"
           }
         },
         "gold_benefit_Tb4A6G": {
@@ -254,7 +260,7 @@
         "platinum_benefit_CBKXT4": {
           "type": "platinum_benefit",
           "settings": {
-            "text": "10% Off All Non-Sale Cases"
+            "text": "15% Off All Non-Sale Cases"
           }
         },
         "platinum_benefit_WJrJiT": {
@@ -299,6 +305,7 @@
         "bronze_benefit_w6MCcE",
         "bronze_benefit_xCfbEx",
         "bronze_benefit_9bi9DA",
+        "bronze_benefit_wNzLFz",
         "silver_benefit_Y4hczk",
         "silver_benefit_Q9KaQY",
         "silver_benefit_LmBxkW",
