@@ -105,7 +105,7 @@
           {% if compare_price > item.original_line_price %}
             <span class="comparred">{{ item.original_line_price | money | replace: ",", " " }}</span>
           {% else %}
-            {% assign discounted_price = item.original_line_price | times: 0.95 | round %}
+            {% assign discounted_price = item.original_line_price | times: 0.90 | round %}
             <span>{{ discounted_price | money | replace: ",", " " }}</span>
           {% endif %}
 
@@ -122,7 +122,7 @@
             {{ item.original_line_price | times: 0.95 | money | replace: ",", " " }}
           </span>
         {% else %}    
-            {% assign discounted_price = item.original_line_price | times: 0.95 | round %}
+            {% assign discounted_price = item.original_line_price | times: 0.90 | round %}
               <span>{{ discounted_price | money | replace: ",", " " }}</span>
         
           {% endif %}
@@ -137,7 +137,7 @@
           {% if compare_price > item.original_line_price %}
             <span class="comparred">{{ item.original_line_price | money | replace: ",", " " }}</span>
           {% else %}
-            {% assign discounted_price = item.original_line_price | times: 0.90 | round %}
+            {% assign discounted_price = item.original_line_price | times: 0.85 | round %}
             <span>{{ discounted_price | money | replace: ",", " " }}</span>
           {% endif %}
 
@@ -154,7 +154,7 @@
             {{ item.original_line_price | times: 0.90 | money | replace: ",", " " }}
           </span>
         {% else %}    
-            {% assign discounted_price = item.original_line_price | times: 0.90 | round %}
+            {% assign discounted_price = item.original_line_price | times: 0.85 | round %}
               <span>{{ discounted_price | money | replace: ",", " " }}</span>
         
           {% endif %}
