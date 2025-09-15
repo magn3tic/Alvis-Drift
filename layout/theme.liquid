@@ -280,5 +280,7 @@ body {
   });
 })();
 </script>
+
+{{ 'age-gate.js' | asset_url | preload_tag: as: 'script' }}
   </body>
 </html>
