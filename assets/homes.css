@@ -1999,49 +1999,16 @@ p.sub-title {
         margin-bottom:55px
     }
 }
-#age-gate div {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%)
+
+#age-gate[hidden] { display: none !important; }
+#age-gate { position: fixed; inset: 0; z-index: 9999; }
+#age-gate::before {
+  content: ""; position: absolute; inset: 0; background: rgba(0,0,0,.6);
 }
-
-#age-gate button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin: 10px;
-    cursor: pointer
+#age-gate .age-container {
+  position: relative; z-index: 1; max-width: 480px; margin: 0 auto; background: #fff;
+  padding: 24px; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.25); text-align: center;
 }
-
-/* Age gate: critical no-shift styles */
-  #age-gate[hidden]{display:none !important;}
-  #age-gate{
-    position:fixed; inset:0; z-index:10050;
-    display:grid; place-items:center;
-    pointer-events:none; /* off until open */
-  }
-  /* dim background via backdrop without layout */
-  #age-gate::before{
-    content:""; position:fixed; inset:0;
-    background:rgba(0,0,0,.5); opacity:0;
-    transition:opacity .2s ease;
-  }
-  #age-gate.is-open{ pointer-events:auto; }
-  #age-gate.is-open::before{ opacity:1; }
-
-  /* centered panel */
-  #age-gate .age-gate__panel{
-    width:min(520px, 92vw);
-    background:#111; color:#fff;
-    border-radius:12px; padding:24px;
-    box-shadow:0 20px 60px rgba(0,0,0,.45);
-    transform:translateY(6px) scale(.985);
-    opacity:0;
-    transition:opacity .22s ease, transform .22s ease;
-  }
-  #age-gate.is-open .age-gate__panel{
-    opacity:1; transform:none;
-  }
-
 
 
 .age-container p {
