@@ -1,63 +1,47 @@
-(function () {
+document.addEventListener('DOMContentLoaded', () => {
+  const gate = document.getElementById('age-gate');
+  const yes  = document.getElementById('age-yes');
+  const no   = document.getElementById('age-no');
   const AGE_KEY = 'ageVerified';
   const REDIRECT_URL = 'https://www.gov.za/sites/default/files/gcis_document/201503/act-27-1989.pdf';
 
-  function canUseStorage() {
-    try {
-      localStorage.setItem('__age_test__', '1');
-      localStorage.removeItem('__age_test__');
-      return true;
-    } catch (_) { return false; }
-  }
-
-  function shouldShowAgeGate() {
-    if (!canUseStorage()) return true;
-    return localStorage.getItem(AGE_KEY) !== 'true';
-  }
-
   function showGate() {
-    const gate = document.getElementById('age-gate');
     if (!gate) return;
-    gate.hidden = false;
+    gate.removeAttribute('hidden');         // <-- THIS is the key
+    gate.style.removeProperty('display');   // clean up any inline 'display'
     document.documentElement.style.overflow = 'hidden';
   }
 
   function hideGate() {
-    const gate = document.getElementById('age-gate');
     if (!gate) return;
-    gate.hidden = true;
+    gate.setAttribute('hidden', '');        // hide by putting the attribute back
     document.documentElement.style.overflow = '';
   }
 
-  function bind() {
-    const yes = document.getElementById('age-yes');
-    const no  = document.getElementById('age-no');
-    const gate = document.getElementById('age-gate');
-    if (!gate || !yes || !no) return;
+  const shouldShow = (() => {
+    try { return localStorage.getItem(AGE_KEY) !== 'true'; }
+    catch { return true; } // if storage blocked, show gate
+  })();
 
-    if (!gate.__bound) {
-      yes.addEventListener('click', function (e) {
-        e.preventDefault();
-        try { localStorage.setItem(AGE_KEY, 'true'); } catch (_) {}
-        hideGate();
-      });
+  if (shouldShow) showGate();
 
-      no.addEventListener('click', function (e) {
-        e.preventDefault();
-        window.location.href = REDIRECT_URL;
-      });
+  yes?.addEventListener('click', e => {
+    e.preventDefault();
+    try { localStorage.setItem(AGE_KEY, 'true'); } catch {}
+    hideGate();
+  });
 
-      document.addEventListener('keydown', function (e) {
-        if (e.key === 'Escape' && !gate.hidden) hideGate();
-      });
+  no?.addEventListener('click', e => {
+    e.preventDefault();
+    window.location.href = REDIRECT_URL;
+  });
+});
 
-      gate.__bound = true;
-    }
-
-    if (shouldShowAgeGate()) showGate();
+// If your theme re-renders sections, re-run the logic:
+document.addEventListener('shopify:section:load', () => {
+  const gate = document.getElementById('age-gate');
+  if (gate && localStorage.getItem('ageVerified') !== 'true') {
+    gate.removeAttribute('hidden');
+    gate.style.removeProperty('display');
   }
-
-  document.addEventListener('DOMContentLoaded', bind);
-  document.addEventListener('shopify:section:load', bind);
-  document.addEventListener('shopify:section:select', bind);
-})();
+});
