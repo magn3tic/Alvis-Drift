@@ -327,7 +327,7 @@
       "name": "Wine Club How it Works",
       "settings": {
         "how_it_works_title": "How it Works",
-        "how_it_works_text": "<p>There are three tiers in the Alvi's Drift Wine Club: Bronze, Silver and Gold. New members start on Bronze and, as you earn points, you'll be able to move up the tiers to receive extra benefits and discounts.</p><p>To move up the tiers, simply shop in our <a href=\"https://alvisdrift.co.za/collections/all-wines\">online wine shop</a>. You earn 1 point* for every R1 spent. As you move up the tiers, you'll be eligible for more discount on our wines.</p><p>* Your tier level is based on the amount spent in the last 12 months. If no purchases are made within a rolling 365-day period, your tier will automatically reset to Bronze. To keep your current tier, make sure to maintain your minimum points by making a purchase before the 12-month period ends.</p>",
+        "how_it_works_text": "<p>There are three tiers in the Alvi's Drift Wine Club: Bronze, Silver and Gold. New members start on Bronze and, as you earn points, you'll be able to move up the tiers to receive extra benefits and discounts.</p><p>To move up the tiers, simply shop in our <a href=\"https://alvisdrift.co.za/collections/all-wines\">online wine shop</a>. You earn 1 point* for every R1 spent. As you move up the tiers, you'll be eligible for more discount on our wines.</p><p></p>",
         "bronze_image": "shopify://shop_images/Bronze.webp",
         "bronze_text": "350",
         "silver_image": "shopify://shop_images/Silver.webp",
