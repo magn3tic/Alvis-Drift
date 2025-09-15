@@ -185,7 +185,7 @@ body {
   </head>
   <!-- Sticky Banner -->
   <body class="template-{{ template | replace: '.', '-' | replace: '/', '-' }}">
-
+    {% include 'agechecker' %}
     {% section 'announcement-bar' %}
     {% section 'header' %}
     <main id="MainContent" class="content-for-layout" role="main" tabindex="-1">
