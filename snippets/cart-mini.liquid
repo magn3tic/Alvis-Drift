@@ -63,7 +63,41 @@
                 <div class="cart-item-price-t">
                   
               {% if settings.member-discount == "enable" %}
-                {% if lowertags contains 'silver' %}
+                {% if lowertags contains 'bronze' %}
+                  
+              {% if excluded_product_ids contains item.product.id %}
+                    {{ item.original_line_price | money | replace: ",", " " }}
+              {% else %}
+          {% if compare_price %}
+          {% if compare_price > item.original_line_price %}
+            <span class="comparred">{{ item.original_line_price | money | replace: ",", " " }}</span>
+          {% else %}
+            {% assign discounted_price = item.original_line_price | times: 0.95 | round %}
+            <span>{{ discounted_price | money | replace: ",", " " }}</span>
+          {% endif %}
+
+       {% elsif included_product_ids contains item.product.id %}
+          <span class="included-discount">
+            {{ item.original_line_price | times: 0.95 | money | replace: ",", " " }}
+          </span>
+        {% elsif included_product_ids_second contains item.product.id %}
+          <span class="included-discount-556">
+            {{ item.original_line_price | times: 0.95 | money | replace: ",", " " }}
+          </span>
+        {% elsif included_product_ids_third contains item.product.id %}
+          <span class="included-discount-625">
+            {{ item.original_line_price | times: 0.95 | money | replace: ",", " " }}
+          </span>
+        {% else %}    
+            {% assign discounted_price = item.original_line_price | times: 0.95 | round %}
+              <span>{{ discounted_price | money | replace: ",", " " }}</span>
+        
+          {% endif %}
+   
+    {% endif %}
+
+
+      {% elsif lowertags contains 'silver' %}
                   
               {% if excluded_product_ids contains item.product.id %}
                     {{ item.original_line_price | money | replace: ",", " " }}
@@ -169,7 +203,7 @@
       </div>
      
       <div class="cart-min-footer">
-        <div class="cart-mini-total">TOTAL:  <p class="totals__subtotal-value"><span id='revy-cart-subtotal-price'>{{ cart.total_price | money | remove: '.00' | replace: ",", " "  }}</span></p></div>
+        <div class="cart-mini-total">TOTAL:  <p class="totals__subtotal-value">{{ cart.total_price | money | remove: '.00' | replace: ",", " "  }}</p></div>
         <!--<div class="cart-mini-total">TOTAL: {*{cart.total_price | money | replace: ",", " " }}</div>-->
         <div class="cart-mini-btn">          
       	  <a href="https://alvisdrift.co.za/collections/all-wines" class="btn btn-overlay close-cart-button">Continue Shopping</a>
