@@ -102,14 +102,17 @@
                   {% comment %} Determine the discount based on the customer tier {% endcomment %}
                   
                   {% case customer_tier %}
-                    {% when 'Silver' %}
+                    {% when 'Bronze' %}
                       {% assign discounted_price = price | times: 0.95 | round %}
                       {% assign discount_applicable = true %}
-                    {% when 'Gold' %}
+                    {% when 'Silver' %}
                       {% assign discounted_price = price | times: 0.90 | round %}
                       {% assign discount_applicable = true %}
+                    {% when 'Gold' %}
+                      {% assign discounted_price = price | times: 0.85 | round %}
+                      {% assign discount_applicable = true %}
                     {% when 'Platinum' %}
-                      {% assign discounted_price = price | times: 0.90 | round %}
+                      {% assign discounted_price = price | times: 0.85 | round %}
                       {% assign discount_applicable = true %}
                     {% else %}
                       {% assign discount_applicable = false %}
