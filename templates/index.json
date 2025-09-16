@@ -80,20 +80,20 @@
         "slider_eiynBD": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png",
-            "mobile_background_image": "shopify://shop_images/alvis_drift_banner_mobile.png",
+            "background_image": "shopify://shop_images/Alvis_Drift_Home_Banner.jpg",
+            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Home_Banner_mobile.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
             "heading_color": "#ffffff",
             "video_banner": "",
-            "paragarh_p1": "WHAT'S IN",
-            "paragarh_p2": "A NAME?",
+            "paragarh_p1": "SIGNATURE",
+            "paragarh_p2": "SELECTION",
             "paragarh_p3": "",
             "paragarh_p4": "",
             "paragarh_1": "",
             "paragarh_2": "",
-            "side_btn_text": "",
-            "side_btn_link": ""
+            "side_btn_text": "Shop Now",
+            "side_btn_link": "https://alvisdrift.co.za/collections/signature-range"
           }
         },
         "slider_6hLWbw": {
@@ -527,8 +527,8 @@
         "background_image": "shopify://shop_images/hero-secton-bg.png",
         "image_overlay": "#ffffff",
         "overlay_opacity": 0,
-        "blurb": "<p>It’s where you come from, but also where you’re going. Because the choices you make today shape the legacy you leave tomorrow.</p><p><strong>Albertus Viljoen </strong>| Pursuit of Excellence<br/><br/></p>",
-        "right_btn_text": "",
+        "blurb": "<p><strong>YES! IN A WORLD OF NO<br/></strong>In a world full of no, the Signature Selection is an easy yes. With its fruit-forward flavours, award-winning quality, and price tag under R100, the Signature Collection is made for spontaneous moments and honest connections.<br/><br/><br/><br/></p>",
+        "right_btn_text": "Shop now",
         "right_btn_link": ""
       }
     },
