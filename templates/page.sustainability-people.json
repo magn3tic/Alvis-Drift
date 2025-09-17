@@ -29,7 +29,7 @@
             "background_image": "shopify://shop_images/Sustainability.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "DARE",
             "paragarh_p2": "TO DO",
@@ -49,17 +49,9 @@
         "background_image": "shopify://shop_images/Vineyards-10.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#f8f2e6",
-        "video_banner": "https://youtu.be/NHaK24QOLow",
-        "paragarh_p1": "ABOUT",
-        "paragarh_p2": "US",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "Learn more about our family, our farm, the Alvi’s Drift vineyards, our cellar, and our wine region.",
-        "paragarh_2": "Nestled in South Africa’s fertile Breede River Valley region, Alvi’s Drift winery boasts a long and storied history. Meet our family and get to know our farm, our vineyards, our cellar, and our award-winning wines.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-products",
-        "btn_main_link": "https://alvisdrift.co.za/"
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "focus_text_image_right_GLeLTK": {
@@ -86,7 +78,7 @@
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
         "title": "",
-        "video-sec-content-txt-1": "<p>“At Alvi’s Drift, despite our commitment to education and upliftment, social challenges among our employee community have persisted more than we’d hoped. That’s why we’re now partnering with the <a href=\"https://www.indaba-foundation.org/\" target=\"_blank\" title=\"Indaba Foundation\"><span style=\"text-decoration:underline\"><strong>Indaba Foundation for Early Childhood Development</strong></span></a>, taking a transformative approach to create lasting social change,” says Richard Bradfield, Alvi’s Drift Sales and Marketing Manager. </p><p>“After reviewing several global systems, we realised that none offered true accountability or allowed us to track tangible change. With the Indaba Foundation, we can measure and monitor our impact, and we’re excited about the positive change this project will bring.”</p>",
+        "video-sec-content-txt-1": "<p>“At Alvi’s Drift, despite our commitment to education and upliftment, social challenges among our employee community have persisted more than we’d hoped. That’s why we’re now partnering with the <a href=\"https://indabainstitute.org/\" target=\"_blank\" title=\"https://indabainstitute.org/\"><span style=\"text-decoration:underline\"><strong>Indaba Foundation for Early Childhood Development</strong></span></a>, taking a transformative approach to create lasting social change,” says Richard Bradfield, Alvi’s Drift Sales and Marketing Manager. </p><p>“After reviewing several global systems, we realised that none offered true accountability or allowed us to track tangible change. With the Indaba Foundation, we can measure and monitor our impact, and we’re excited about the positive change this project will bring.”</p>",
         "button-txt": "",
         "button_link": "",
         "button_type": "alvisBtn"
