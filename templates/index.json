@@ -20,7 +20,6 @@
       "blocks": {
         "slider_YAerqN": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis_Drift_Winter_Warmer_Promo.png",
             "mobile_background_image": "shopify://shop_images/Alvis_Drift_Winter_Warmer_banner_mobile.png",
@@ -41,6 +40,7 @@
         },
         "slider_E7wafL": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner.jpg",
             "mobile_background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner_Mobile.jpg",
