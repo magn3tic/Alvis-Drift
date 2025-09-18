@@ -7,32 +7,37 @@
 	</script>   
 {% for block in section.blocks %}
  <div class="hero-section">
-   <picture>
+<picture>
   {% if block.settings.mobile_background_image != blank %}
-      <img
-    src="{{ block.settings.mobile_background_image | image_url: width: 600 }}"
+      <!-- Mobile -->
+  <source 
+    media="(max-width: 650px)" 
     srcset="
-      {{ block.settings.mobile_background_image | image_url: width: 352 }} 352w,
-      {{ block.settings.mobile_background_image | image_url: width: 400 }} 400w,
-      {{ block.settings.mobile_background_image | image_url: width: 600 }} 600w
+      {{ block.settings.mobile_background_image | image_url: width: 480, format: 'webp' }} 480w,
+      {{ block.settings.mobile_background_image | image_url: width: 768, format: 'webp' }} 668w,
     "
-    sizes="(max-width: 600px) 100vw, 600px"
+    width="{{ block.settings.mobile_background_image.width }}"
+    height="{{ block.settings.mobile_background_image.height }}"
+    sizes="100vw"
+    type="image/webp">
+{% endif %}
+  <!-- Desktop -->
+  <img 
+    src="{{ block.settings.background_image | image_url: width: 1600, format: 'webp' }}" 
+    srcset="
+      {{ block.settings.background_image | image_url: width: 1200, format: 'webp' }} 1200w,
+      {{ block.settings.background_image | image_url: width: 1600, format: 'webp' }} 1600w,
+      {{ block.settings.background_image | image_url: width: 2000, format: 'webp' }} 2000w
+    "
+    width="{{ block.settings.background_image.width }}"
+    height="{{ block.settings.background_image.height }}"
+    sizes="100vw"
     fetchpriority="high"
+    class="hero-section-bg"
     loading="eager"
-    alt="{{ block.settings.mobile_background_image.alt | escape }}"
-    width="600"
-    height="1095"
-    class = "hero-section-bg mobile-bg"
-  />
-     {% else %}
-{{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg mobile-bg", fetchpriority: 'high'}}
-    {% endif %}
-  {% if block.settings.background_image %}
-{{ block.settings.background_image | image_url: width: 1600 | image_tag: preload: true, class: "hero-section-bg laptop-bg", fetchpriority: 'high'}}
-   {% elsif block.settings.background_image %}
-{{ block.settings.background_image | image_url: width: master | image_tag: preload: true, class: "hero-section-bg", fetchpriority: 'high'}}
-   {% endif %}
-   </picture>
+    alt="">
+</picture>
+
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
     {% assign opacity = block.settings.overlay_opacity %}       
@@ -47,19 +52,22 @@
     <div class="hero-content col-sm">
       <div class="hero-title">
         <h2>
-          <span style = "color:{{ block.settings.heading_color }}">
-           {% if block.settings.paragarh_p1 != blank %} <p class="animate-reveal">{{ block.settings.paragarh_p1 }}</p> {% endif %}
-           {% if block.settings.paragarh_p2 != blank %} <p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p> {% endif %}
-            {% if block.settings.paragarh_p3 != blank %} <p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>{% endif %}
-            {% if block.settings.paragarh_p4 != blank %} <p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p> {% endif %}
+          <span>
+            {% if block.settings.paragarh_p1 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p1 }}</p> {% endif %}
+            {% if block.settings.paragarh_p2 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p>{% endif %}
+            {% if block.settings.paragarh_p3 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>{% endif %}
+            {% if block.settings.paragarh_p4 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p>{% endif %}
           </span> 
         </h2> 
       </div>
-      <div class = "the_blurb" style = "color:{{ block.settings.heading_color }}">{{ block.settings.blurb }}</div>
+      <div class = "the_blurb">{{ section.settings.blurb }}</div>
+      {% if section.settings.right_btn_link != blank %}
       <div class = "main_btn"><a href="{{ section.settings.right_btn_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
+      {% endif %}
       </div>
-      <div class="hero-txt col-sm"> 
+
         {% if block.settings.paragarh_1 != blank or block.settings.paragarh_2 != blank %}
+      <div class="hero-txt col-sm"> 
         <div class="scrl-sec">
             <span class="scrl-circle"></span>
             <span class="scrl-line"></span>
@@ -68,8 +76,9 @@
           <p class="sub-title">{{ block.settings.paragarh_1 }}</p>
           <p>{{ block.settings.paragarh_2 }}</p>
         </div>
+        </div> 
         {% endif %}
-      </div> 
+
   </div>
     </div>         
     {% if block.settings.video_banner != blank %}
@@ -77,16 +86,16 @@
         <a class="hero-video-btn-link" data-autoplay="true" data-vbtype="video" href="https://youtu.be/{{ block.settings.video_banner.id }}?modestbranding=0&autohide=1&showinfo=0&autoplay=0&playsinline=1&autohide=0&disablekb=1&showinfo=0&loop=0&fs=0&rel=0">{% render 'icon-video-btn' %}</a>
       </div>
     {% endif %}
-   <div class = "right-hero-icon">
      {% if block.settings.img_icon != blank %}
+      <div class = "right-hero-icon">
         <a href ="{{ block.settings.side_btn_link }}"><img src = "{{ block.settings.img_icon | img_url:'master' }}" class = "front-img-icon"width = "110" height = "110" alt = "{{ block.settings.img_icon.image.alt }}"/> </a>   
-    {% endif %}
-   </div>
-      <div class="hero-btn-wrap">
+     </div>
+      {% endif %}
         {% if block.settings.side_btn_text != blank %}
+        <div class="hero-btn-wrap">
         <a href="{{ block.settings.side_btn_link }}" class="btn">{{ block.settings.side_btn_text }}</a>
-        {% endif %}
-      </div>  
+        </div> 
+        {% endif %}     
     <br> 
   </div>
    {% if block.settings.sec_banner != blank %}
@@ -103,6 +112,10 @@
      {% endif %}
 {% endfor %}
 </section>
+<style>
+  .animate-reveal { {% if section.settings.heading_color != blank %}color: {{ section.settings.heading_color }};{% endif %} font-size: 70px;}
+  @media (min-width:250px) and (max-width:900px) {font-size: 38px;line-height: 1.2em;}
+  </style>
 {% schema %}
 {
   "name": {
@@ -114,6 +127,20 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "image_overlay",
+      "label": "Image Overlay Color"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 30,
+      "label": "Overlay Opacity"
     },
     {
       "type": "text",
@@ -183,16 +210,16 @@
               "label": "Light Beige"
             }, 
             {
-              "value": "#6287a0",
+              "value": "#c0ccbe",
+              "label": "Light Olive"
+            },
+            {
+              "value": "#aac4d3",
               "label": "Light Blue"
             },
             {
-              "value": "#2d5980",
-              "label": "Blue"
-            },
-            {
-              "value": "#c65336",
-              "label": "Orange"
+              "value": "#fedcc6",
+              "label": "Light Orange"
             }
           ],
           "default": "#ffffff"
@@ -223,7 +250,7 @@
           "id": "paragarh_p4",
           "label": "Heading Line 4"
         },
-        {
+          {
           "type": "richtext",
           "id": "blurb",
           "label": "Blurb"
@@ -231,12 +258,12 @@
         {
           "type": "text",
           "id": "paragarh_1",
-          "label": "Paragraph Heading (Left)"
+          "label": "Paragraph Heading"
         },
         {
           "type": "text",
           "id": "paragarh_2",
-          "label": "Paragraph Text (Left)"
+          "label": "Paragraph Text"
         },
         {
           "type": "text",
