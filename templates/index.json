@@ -43,7 +43,7 @@
           "type": "slider",
           "settings": {
             "background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner.jpg",
-            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner.jpg",
+            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner_Mobile.jpg",
             "image_overlay": "",
             "overlay_opacity": 30,
             "heading_color": "#ffffff",
@@ -66,6 +66,8 @@
       ],
       "settings": {
         "background_image": "shopify://shop_images/hero-secton-bg.png",
+        "image_overlay": "",
+        "overlay_opacity": 30,
         "right_btn_text": "",
         "right_btn_link": "shopify://pages/icon-albertus-viljoen"
       }
