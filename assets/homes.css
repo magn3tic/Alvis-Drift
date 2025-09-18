@@ -2614,7 +2614,9 @@ summary.list-menu__item {
     .main-product-wrap .product-gallery-sec{
         width:40%;
     }
-
+.sticky{
+    margin-top:0
+}
     .gallery-thumbanil {
         width: 36px;
         height: 36px;
