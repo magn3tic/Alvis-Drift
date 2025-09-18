@@ -55,7 +55,7 @@
           </span> 
         </h2> 
       </div>
-      <div class = "the_blurb" style = "color:{{ block.settings.heading_color }}">{{ section.settings.blurb }}</div>
+      <div class = "the_blurb" style = "color:{{ block.settings.heading_color }}">{{ block.settings.blurb }}</div>
       <div class = "main_btn"><a href="{{ section.settings.right_btn_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
       </div>
       <div class="hero-txt col-sm"> 
@@ -114,11 +114,6 @@
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
-    },
-    {
-          "type": "richtext",
-          "id": "blurb",
-          "label": "Blurb"
     },
     {
       "type": "text",
@@ -228,7 +223,11 @@
           "id": "paragarh_p4",
           "label": "Heading Line 4"
         },
-      
+        {
+          "type": "richtext",
+          "id": "blurb",
+          "label": "Blurb"
+        },
         {
           "type": "text",
           "id": "paragarh_1",
