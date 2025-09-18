@@ -185,7 +185,7 @@ body {
             integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
             crossorigin="anonymous"
             defer></script>
-{{ 'age-gate.js' | asset_url | preload_tag: as: 'script' }}
+<script src="{{ 'age-gate.js' | asset_url }}" defer></script>
     <!-- Core theme scripts -->
     <script src="{{ 'product-form.js' | asset_url }}" defer></script>
     <script src="{{ 'cart-limit.js'  | asset_url }}" defer></script>
