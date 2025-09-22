@@ -8,7 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function showGate() {
     if (!gate) return;
     gate.removeAttribute('hidden');         // <-- THIS is the key
-    gate.style.removeProperty('display');   // clean up any inline 'display'
+    // gate.style.removeProperty('display');   // clean up any inline 'display'
+    gate.style.display = 'block';
     document.documentElement.style.overflow = 'hidden';
   }
 
