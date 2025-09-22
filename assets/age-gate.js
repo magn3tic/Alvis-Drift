@@ -8,8 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function showGate() {
     if (!gate) return;
     gate.removeAttribute('hidden');         // <-- THIS is the key
-    // gate.style.removeProperty('display');   // clean up any inline 'display'
-    gate.style.display = 'block';
+    // gate.style.removeProperty('display');   // clean up any inline 'display' - commented out 22/09/25
+    gate.style.display = 'block'; // Added to show Age-Gate 22/09/25
     document.documentElement.style.overflow = 'hidden';
   }
 
