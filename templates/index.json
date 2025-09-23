@@ -138,6 +138,13 @@
             "collection_heading": "Sparkling Wines",
             "collectionCarasoul": "sparkling-range"
           }
+        },
+        "item_ETUPGN": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "CAP CLASSIQUE WINES",
+            "collectionCarasoul": "cap-classique-range"
+          }
         }
       },
       "block_order": [
@@ -146,7 +153,8 @@
         "f7166b61-1b93-49a6-ae5a-a33b67e954c9",
         "91df3ff6-2007-4e78-bc2d-f3aef4a1fe16",
         "1639717880a3dfd1a1-0",
-        "9d3f4820-036b-4a4d-9be4-267751c949d7"
+        "9d3f4820-036b-4a4d-9be4-267751c949d7",
+        "item_ETUPGN"
       ],
       "settings": {
         "topheading": "",
