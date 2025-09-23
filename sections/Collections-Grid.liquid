@@ -272,11 +272,19 @@
           {% endif %}     
 {% assign promo = product.metafields.my_fields.promo_label %}
 
-                    {% if promo != blank %}
-                      <div class="promo-label">
-                        {{ promo }}
-                      </div>
-                    {% endif %}
+                     {% if excluded_product_ids contains product.id %}
+              {% if promo != blank %}
+                {% if section.settings.promo_badge == true %}
+                  <div class="promo-badge">
+                      {{ promo }}
+                  </div>
+                  {% else %}
+                  <div class="promo-label">
+                      {{ promo }}
+                  </div>
+                  {% endif %}
+                {% endif %}
+              {% endif %}
               <!-- Price per bottle -->
                  
               {% assign price_v = product.selected_or_first_available_variant.price %}
@@ -414,6 +422,12 @@
     "type": "collection",
     "id": "active_collection",
     "label": "Default active collection"
+    },
+     {
+      "type": "checkbox",
+      "id": "promo_badge",
+      "default":false,
+      "label": "Enable Promo Badge"
     }
 
     ],
