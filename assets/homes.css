@@ -1810,7 +1810,8 @@ p.sub-title {
 }
 
 .rewards-marquee-sec {
-    height: 235px
+    height: auto;
+    padding-bottom: 30px;
 }
 .footer__content-top {
     padding: 0!important
