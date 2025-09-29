@@ -2959,7 +2959,7 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
         /*     height: 1000px; */
         object-fit: contain;
       }
-      .silver-tier-text, .gold-tier-text{
+      .silver-tier-text, .gold-tier-text, .bronze-tier-text{
         font-size:8px !important;
         padding-top:10px;
         line-height:1.5rem;
@@ -3025,7 +3025,7 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
   .main-link-shop .header__submenu a {
     display: block;
   }
-  .silver-tier-text, .gold-tier-text {
+  .silver-tier-text, .gold-tier-text, .bronze-tier-text {
       color: #b08d57;
       font-size: 12px;
       font-weight: 700;
