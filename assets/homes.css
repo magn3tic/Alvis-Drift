@@ -1552,9 +1552,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     font: 400 16px/15px var(--metropolis);
     letter-spacing: 1px
 }
-.hm-marquee-wrap {
-    height: 370px
-}
 .product-img img {
     max-height: 284px;
     width: auto
