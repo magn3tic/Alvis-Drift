@@ -900,19 +900,10 @@
     }
 }
 
-
 .unstyle-list {
     margin: 0;
     padding: 0;
     list-style: none
-}
-
-.list-social__item a {
-    color: var(--footerHeading)
-}
-
-.footer .list-social__item a svg path {
-    fill: var(--footerHeading)
 }
 
 .footer__content-top .grid--4-col-tablet .grid__item {

@@ -832,18 +832,18 @@ p.sub-title {
     padding: 0 16px;
     vertical-align: middle
 }
-
-.list-social__item a {
-    color: var(--footerHeading)
-}
-
-.list-social__item a {
-    color: var(--footerHeading)
-}
-
 .footer .list-social__item a svg path {
     fill: var(--footerHeading)
 }
+
+.list-social__item a {
+    color: var(--footerHeading)
+}
+
+.list-social__item a {
+    color: var(--footerHeading)
+}
+
 .footer-bd {
     width: 67%;
     display: flex
