@@ -786,20 +786,6 @@
     border: none
 }
 
-@media only screen and (max-width: 850px) {
-    .dare-to-be-true-bx {
-        display:none
-    }
-
-    .newsletter-frm {
-        margin-top: 10px;
-        margin-right: 60px;
-        width: 500px;
-        height: 418px;
-        position: relative
-    }
-}
-
 :-moz-placeholder,:-ms-input-placeholder,::-moz-placeholder,::-webkit-input-placeholder,::placeholder {
     opacity: 1
 }
@@ -835,12 +821,6 @@
     outline-offset: 0;
     box-shadow: none
 }
-
-.rewards-img img {
-    display: inline-block;
-    padding: 0 25px
-}
-
 .list-social__item .icon.icon-twitter {
     width: 2.2rem;
     height: 2.2rem;
