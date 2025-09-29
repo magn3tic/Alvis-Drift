@@ -114,38 +114,49 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
+(function() {
+  function initMarquee($el, opts) {
+    if (!$el || !$el.length) return;
 
+    try {
+      if ($el.data('marquee')) {      
+        $el.marquee('destroy');
+      }
+      if ($el.data('plugin_marquee')) { 
+        $el.marquee('destroy');
+      }
+    } catch(e) {
+      // safe-guard: ignore if not initialized yet
+    }
 
-
-
-
-
-
-
-
-window.addEventListener("load", function () {
-  if ($(".marquee-imgs").length) {
-    $(".marquee-imgs").marquee({
-      direction: "left",
-      duration: 8000,
+    $el.marquee(Object.assign({
+      direction: 'left',
+      duration: 20000,
       gap: 30,
       delayBeforeStart: 0,
-      duplicated: true,
-      startVisible: true,
-    });
+      duplicated: true, 
+      startVisible: false, 
+      loop: -1,     
+      pauseOnHover: true
+    }, opts || {}));
   }
 
-  
-  if ($(".hm-marquee").length) {
-    $(".hm-marquee").marquee({
-      direction: "left",
-      duration: 22000,
-      gap: 30,
-      delayBeforeStart: 0,
-      duplicated: true,
-      startVisible: true,
-    });
+  function initAll() {
+    initMarquee($('.marquee-imgs'));      
+    initMarquee($('.hm-marquee'), { duration: 22000 });
   }
+
+  // Initial load
+  document.addEventListener('DOMContentLoaded', initAll);
+
+  window.addEventListener('load', initAll);
+
+  document.addEventListener('shopify:section:load', initAll);
+  document.addEventListener('shopify:section:select', initAll);
+  document.addEventListener('shopify:section:deselect', initAll);
+  document.addEventListener('shopify:block:select', initAll);
+  document.addEventListener('shopify:block:deselect', initAll);
+})();
 
   
 // Venobox
