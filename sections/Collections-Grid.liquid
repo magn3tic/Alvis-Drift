@@ -1,8 +1,9 @@
 {% if customer.has_account %}
   {% assign lowertags = customer.tags | downcase %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
-   {% assign promo = product.metafields.my_fields.promo_label %}
 {% endif%}
+{% assign promo = product.metafields.my_fields.promo_label %}
+
 <section class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
   <div class="sec-inner">
     <div class="container">
@@ -29,7 +30,7 @@
             <div class="product-bx position-relative">
               <div class="product-img">
                 <a href="{{ product.url }}">
-                  {{ product.featured_image | image_url: width: 325 | image_tag: loading: 'lazy' }}
+                  {{ product.featured_image | image_url: width: 325, format: 'webp' | image_tag: loading: 'lazy' }}
                 </a>
               </div>
               <div class="product-title"><div class="sp-t"><a href="{{ product.url }}">{{ product.title }}</a></div></div>              
@@ -185,7 +186,6 @@
                   </product-form>
               </div>
                 <!-- End Add to cart button -->
-              
               {% endfor %}
             </div>
             </div>
