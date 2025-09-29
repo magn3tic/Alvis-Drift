@@ -519,7 +519,7 @@
   .main-link-shop .header__submenu a {
     display: block;
   }
-  .silver-tier-text, .gold-tier-text, .bronze-tier-text  {
+  .silver-tier-text, .gold-tier-text, .bronze-tier-text{
       color: #b08d57;
       font-size: 12px;
       font-weight: 700;
