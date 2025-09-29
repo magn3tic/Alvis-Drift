@@ -3,14 +3,10 @@
   <h3 style="color:{{ section.settings.Heading_color }}">{{ section.settings.title_text }}</h3>
   {% endif %}
     <div class="rewards-marquee">
-        <div class="rewards-img hm-marquee">
-          
-          {%- for block in section.blocks -%}
-			
-			{%- assign b_i = block.settings -%}
-          
-         <img src="{{b_i.logo_slider | img_url:'master'}}" width="150" height = "150" loading="lazy" alt="">
-          
+        <div class="rewards-img hm-marquee">     
+          {%- for block in section.blocks -%}	
+			{%- assign b_i = block.settings -%}        
+         <img src="{{b_i.logo_slider | img_url:'master'}}" width="150" height = "150" loading="lazy" alt="">  
           {%- endfor -%}        
         </div>
     </div> 
