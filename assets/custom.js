@@ -339,8 +339,6 @@ document.addEventListener("DOMContentLoaded", function() {
       
   });
   
-  
-  
   window.addEventListener('scroll',function(){
     scrollValue = window.scrollY;
     var pic = document.querySelector('.background');
@@ -349,7 +347,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
   });
   
-  
   window.addEventListener('scroll',function(){
     scrollValue = window.scrollY;
     var pic = document.querySelector('.about_background');
@@ -357,9 +354,6 @@ document.addEventListener("DOMContentLoaded", function() {
       pic.style.transform = 'translateY('+(-scrollValue/4 + 1100)+'px)';
     }
   });
-  
-  
-  
   
   window.addEventListener('scroll',function(){
     scrollValue = window.scrollY;
@@ -434,7 +428,6 @@ document.addEventListener("DOMContentLoaded", function() {
       pic.style.transform = 'translateY('+(-scrollValue/4 + 2700)+'px)';
     }
   });
-  
   
   // MENU HOVER CODE
   
