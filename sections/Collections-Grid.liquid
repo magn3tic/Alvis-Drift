@@ -1,6 +1,7 @@
 {% if customer.has_account %}
   {% assign lowertags = customer.tags | downcase %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
+   {% assign promo = product.metafields.my_fields.promo_label %}
 {% endif%}
 <section class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
   <div class="sec-inner">
@@ -61,8 +62,7 @@
                     {% if settings.discount-badge == 'tier-text'%}Bronze Member Discount{% endif %}</div>
                   {% endif %}
              {% endif %}
-
-
+             <!-- For Silver Members -->
             {% elsif lowertags contains 'silver'%}
             {% if excluded_product_ids contains product.id %}
 
@@ -86,16 +86,14 @@
                   <div class="product-price position-relative">
                     <span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span> <span class="current-price">{{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}</span></div>
                   <div class = "silver-{{ settings.discount-badge }}"> 
-                    {% if settings.discount-badge == 'tier-text'%}Silver Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                    {% if settings.discount-badge == 'tier-text'%}Silver Member Discount{% endif %}</div>
                   {% endif %}
              {% endif %}
-                
-              {% elsif lowertags contains 'gold' or lowertags contains 'platinum' %}
-
+                 <!-- For Gold Members -->
+              {% elsif lowertags contains 'gold' %}
             {% if excluded_product_ids contains product.id %}
               {% if product.compare_at_price > product.price  %}
-                  <div class="product-price">
-                    
+                  <div class="product-price">    
                  <span class = "compare-price-exclude-discount compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
                   <span class="product-price excluded-disount"></span>
                   <span class="current-price">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
@@ -115,11 +113,7 @@
                   <div class="product-price ">
                     <span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price |times:0.85 | money | remove: '.00' | replace: ",", " " }}</div>
                    <div class = "silver-{{ settings.discount-badge }}"> 
-                    {% if lowertags contains 'gold' %}
-                     {% if settings.discount-badge == 'tier-text'%}Gold Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
-                    {% elsif lowertags contains 'platinum' %}  
-                      {% if settings.discount-badge == 'tier-text'%}Plantinum Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
-                    {% endif %}
+                     {% if settings.discount-badge == 'tier-text'%}Gold Member Discount{% endif %}</div>
                 {% endif %}
               {% endif %} 
                 
@@ -133,49 +127,7 @@
               <div class="product-price" {% if  settings.discount-badge == "tier-text" %}style = "margin-bottom:15px" {% endif %}>{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
             {% endif %}
                 {% endif %}
-          {% else %}        
-          {% if settings.member-included-discount == "enable" %}
-            {% if lowertags contains 'bronze' or lowertags contains 'silver' or lowertags contains 'gold' or lowertags contains 'platinum' %}
-              {% if included_product_ids contains product.id %}
-                <div class="product-price included-disount_25">
-                   <span class = "compare_and_include_25 compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.85 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-
-                {% elsif included_product_ids_second contains product.id %}
-                  <div class="product-price included-disount_20">
-                   <span class = "compare_and_include_20 compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.80 | money | remove: '.00' | replace: ",", " " }}
-                  </div>
-                 
-                {% elsif included_product_ids_third contains product.id %}
-                  <div class="product-price included-disount_15">
-                   <span class = "compare_and_include_15 compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                    {{ product.price |times:0.75 | money | remove: '.00' | replace: ",", " " }}
-                  </div>
-                {% else %}
-                {% if product.compare_at_price > product.price %}
-              <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
-             {% else %} <div class="product-price ">{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>{% endif %}
-                {% endif %}
-              {% else %}
-              
-              {% if product.compare_at_price > product.price %}
-              <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
-             {% else %} <div class="product-price ">{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>{% endif %}
-              {% endif %}
-
-            {% else %}
-          {% if product.compare_at_price > product.price %}
-              <div class="product-price" >
-                <span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span>
-                <span class="current-price">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
-              </div>
-             {% else %} <div class="product-price ">{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>{% endif %}
-          {% endif %}
           {% endif %}     
-          {% assign promo = product.metafields.my_fields.promo_label %}
-            
               {% if promo != blank %}
                 {% if section.settings.promo_badge == true %}
                   <div class="promo-badge">
@@ -186,10 +138,8 @@
                       {{ promo }}
                   </div>
                   {% endif %}
-                
               {% endif %}
               <!-- Price per bottle -->
-                 
               {% assign price_v = product.selected_or_first_available_variant.price %}
                   {% assign price_discount_gold = product.price | times:0.90 %}
                   {% assign price_discount_silver = product.price | times:0.95 %}
@@ -198,7 +148,7 @@
                   {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %} 
 
               {% if product.metafields.my_fields.cost_per_item != blank %}
-              <div class="product-price-per"> R{{ assigned_price | divided_by:100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/> </div>
+              <div class="product-price-per"> R{{ assigned_price | divided_by:100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/></div>
                 {% else %}
                 <div class="product-price-per">Per Case</div>
                 {% endif %}
@@ -287,7 +237,7 @@
                       </div>
                       {%- endform -%}
                       </product-form>
-                    <!-- End Add to cart button -->
+                 
                     </div>
                   {% endfor %}
                 </div>
