@@ -76,7 +76,7 @@
           "announcement_7bkPfk": {
             "type": "announcement",
             "settings": {
-              "text": "Log in or join our Wine Club for members' discount (applied at checkout). FREE SHIPPING on orders over R1 800",
+              "text": "Log in or join our Wine Club for members' discount (applied at checkout). FREE SHIPPING on orders over R1 500",
               "color_scheme": "background-1",
               "link": "https://alvisdrift.co.za/pages/club"
             }
@@ -303,11 +303,6 @@
       "3574802870912500141": {
         "type": "shopify://apps/sc-loyalty-rewards/blocks/enable_storefront_widget/21842f98-987a-4ad6-91bf-a00b77123261",
         "disabled": true,
-        "settings": {}
-      },
-      "11068332061543699368": {
-        "type": "shopify://apps/booster-page-speed-optimizer/blocks/app-embed/d920faf3-7c60-423a-9636-22618b5561b5",
-        "disabled": false,
         "settings": {}
       }
     }
