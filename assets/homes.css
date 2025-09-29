@@ -141,6 +141,17 @@ html {
         align-content: center
     }
 }
+@media only screen and (min-width: 2000px) {
+    .sticky {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        background-color: #2e112d;
+        opacity: .93;
+        margin-top: -10px;
+        align-content: center
+    }
+}
 .header-right {
     display: flex;
     margin-top: 55px;
