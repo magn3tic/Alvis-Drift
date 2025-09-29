@@ -131,6 +131,15 @@ html {
         margin-left: auto;
         margin-right: auto
     }
+     .sticky {
+        position:fixed;
+        top: 0;
+        width: 100%;
+        background-color: #2e112d;
+        opacity: .93;
+        margin-top: -10px;
+        align-content: center
+    }
 }
 .header-right {
     display: flex;
