@@ -1,12 +1,10 @@
 <section class="home-aboutus focusTextSection bg-darkPurple text-center">       
     <div class="sec-inner">
         <div class="container">        
-            
               <h2 class = "h1" style="color:{{ section.settings.Heading_color }};text-transform:{{ section.settings.text_transform }}">{{ section.settings.title }}</h2>
-            
-            <p class="sub-title" >{{ section.settings.subtitle-1 }}</p>
-            {% if section.settings.subtitle-2 != blank %} <p>{{ section.settings.subtitle-2 }}</p> {% endif %}
-            {% if section.settings.button_text !=blank %}
+              <p class="sub-title" >{{ section.settings.subtitle-1 }}</p>
+              {% if section.settings.subtitle-2 != blank %} <p>{{ section.settings.subtitle-2 }}</p> {% endif %}
+              {% if section.settings.button_text !=blank %}
               <a class="alvisBtn" href="{{ section.settings.button_link }}" {% if section.settings.new_tab %} target="_blank" {% endif %} >{{ section.settings.button_text }}</a>
             {% endif %}
         </div>
