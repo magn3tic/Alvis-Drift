@@ -49,6 +49,7 @@
 .sticky+.content {
     padding-top: 100px
 }
+
 .list-menu--disclosure {
     background-color: var(--darkPlum)!important;
     border: none
