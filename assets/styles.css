@@ -215,15 +215,6 @@
 
 }
 
-@media screen and (max-width: 1150px) {
-    .hero-txt {
-        left:355px;
-    }
-  .hero-section{
-    height:680px;
-  }
-}
-
 @media screen and (max-width: 900px) {
     .hero-txt {
         font-size:14px
