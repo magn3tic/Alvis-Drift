@@ -137,7 +137,6 @@
                   </div>
                   {% endif %}
               {% endif %}
-              <!-- Price per bottle -->
               {% assign price_v = product.selected_or_first_available_variant.price %}
                   {% assign price_discount_gold = product.price | times:0.90 %}
                   {% assign price_discount_silver = product.price | times:0.95 %}
