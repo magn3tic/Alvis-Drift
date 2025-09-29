@@ -453,7 +453,7 @@
         /*     height: 1000px; */
         object-fit: contain;
       }
-      .silver-tier-text, .gold-tier-text{
+      .silver-tier-text, .gold-tier-text, .bronze-tier-text{
         font-size:8px !important;
         padding-top:10px;
         line-height:1.5rem;
