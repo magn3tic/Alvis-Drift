@@ -408,10 +408,6 @@
           {
             "label": "Text",
             "value": "tier-text"
-          },
-          {
-            "label": "Badge",
-            "value": "tier-badge"
           }
         ]
       }
