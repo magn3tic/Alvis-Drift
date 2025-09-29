@@ -2716,3 +2716,4 @@ summary.list-menu__item {
 #sideNavbar .dropdown-link.active{
   /* color:#c9a46b; font-weight:600; */
 }
+@media (min-width:250px) and (max-width:900px) {font-size: 38px;line-height: 1.2em;}
