@@ -739,13 +739,6 @@ p.sub-title {
         position: relative
     }
 }
-.rewards-marquee-sec {
-    position: relative;
-    margin-top: -8
-    0px;
-    height: 225px;
-    overflow: hidden
-}
 
 .rewards-img img {
     display: inline-block;
