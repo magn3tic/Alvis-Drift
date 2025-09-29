@@ -1,9 +1,6 @@
 {% if customer.has_account %}
   {% assign lowertags = customer.tags | downcase %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
-  {% assign included_product_ids_second = settings.product_list_included | map: "id" %}
-  {% assign included_product_ids = settings.product_list_included-second  | map: "id" %}
-  {% assign included_product_ids_third = settings.product_list_included-third  | map: "id" %}
 {% endif%}
 <section class="home-product-items product-items-sec bg-darkPurple gridCleanUp">
   <div class="sec-inner">
@@ -23,7 +20,7 @@
       <div class="tabs-content">
         {%- for block in section.blocks -%}
         {%- assign b_i = block.settings -%}
-{% assign colName = block.settings.collectionCarasoul %} 
+        {% assign colName = block.settings.collectionCarasoul %} 
         <div id="tab-{{ forloop.index }}" class="product-items-wrap {% if colName == default_collection %}current{% endif %}">
           <div class="product-bx-outer">
             {% assign colName = b_i.collectionCarasoul %} 
@@ -36,7 +33,7 @@
               </div>
               <div class="product-title"><div class="sp-t"><a href="{{ product.url }}">{{ product.title }}</a></div></div>              
         {% if settings.member-discount == "enable" %}
-
+      <!-- For Bronze Members -->
           {% if lowertags contains 'bronze'%}
             {% if excluded_product_ids contains product.id %}
                  {% if product.compare_at_price > product.price %}
@@ -49,48 +46,6 @@
                   {{ product.price | money | remove: '.00' | replace: ",", " " }}
                     </div>
                   {% endif %}
-             
-              {% elsif included_product_ids contains product.id %}
-              {% if product.compare_at_price > product.price  %}
-                <div class="product-price included-disount">
-               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.95 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-                
-                {% else %}
-              <div class="product-price included-disount">
-               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.95 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-              {% endif %}
-              {% elsif included_product_ids_second contains product.id %}
-              {% if product.compare_at_price > product.price  %}
-                <div class="product-price included-disount">
-               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.80 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-                
-                {% else %}
-              <div class="product-price included-disount">
-               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.80 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-              {% endif %}
-              {% elsif included_product_ids_third contains product.id %}
-              {% if product.compare_at_price > product.price  %}
-                <div class="product-price included-disount">
-               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.75 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-                
-                {% else %}
-              <div class="product-price included-disount">
-               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.75 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-              {% endif %}
-
-              
               {% else %}
                 {% if product.compare_at_price > product.price %}
                   <div class="product-price">
@@ -99,11 +54,11 @@
                   </div>
                   {% else %}
                   <div class="product-price position-relative">
-                    <span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
+                    <span class="compare-price bronze-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
                     <span class="current-price">{{ product.price |times:0.95 | money | remove: '.00' | replace: ",", " " }}</span>
                   </div>
-                  <div class = "silver-{{ settings.discount-badge }}"> 
-                    {% if settings.discount-badge == 'tier-text'%}Bronze Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                  <div class = "bronze-{{ settings.discount-badge }}"> 
+                    {% if settings.discount-badge == 'tier-text'%}Bronze Member Discount{% endif %}</div>
                   {% endif %}
              {% endif %}
 
@@ -121,51 +76,6 @@
                   {{ product.price | money | remove: '.00' | replace: ",", " " }}
                     </div>
                   {% endif %}
-                 
-             
-              {% elsif included_product_ids contains product.id %}
-              {% if product.compare_at_price > product.price  %}
-                <div class="product-price included-disount">
-               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-                
-                {% else %}
-              <div class="product-price included-disount">
-               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-              {% endif %}
-              {% elsif included_product_ids_second contains product.id %}
-              {% if product.compare_at_price > product.price  %}
-                <div class="product-price included-disount">
-               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.80 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-                
-                {% else %}
-              <div class="product-price included-disount">
-               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.80 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-              {% endif %}
-              {% elsif included_product_ids_third contains product.id %}
-              {% if product.compare_at_price > product.price  %}
-                <div class="product-price included-disount">
-               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.75 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-                
-                {% else %}
-                  {% if product.compare_at_price > product.price %}
-              <div class="product-price included-disount">
-              <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-              <span class="current-price">{{ product.price |times:0.75 | money | remove: '.00' | replace: ",", " " }}</span>
-              </div>
-              {% endif %}
-              {% endif %}
-
-              
               {% else %}
                 {% if product.compare_at_price > product.price %}
                   <div class="product-price">
@@ -195,45 +105,6 @@
                   {{ product.price | money | remove: '.00' | replace: ",", " " }}
               </div>
                 {% endif %}
-              {% elsif included_product_ids contains product.id %}
-              {% if product.compare_at_price > product.price  %}
-              <div class="product-price included-disount_10">
-              <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-              <span class="current-price">{{ product.price |times:0.85 | money | remove: '.00' | replace: ",", " " }}</span>
-              </div>
-                {% else %}
-              <div class="product-price included-disount_10">
-               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.85 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-              {% endif %}
-              {% elsif included_product_ids_second contains product.id %}
-              {% if product.compare_at_price > product.price  %}
-                <div class="product-price included-disount_5">
-               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.9444 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-                
-                {% else %}
-              <div class="product-price included-disount_5">
-              <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}.</span>
-              <span class="current-price">{{ product.price |times:0.9444 | money | remove: '.00' | replace: ",", " " }}</span>
-              </div>
-              {% endif %}
-              {% elsif included_product_ids_third contains product.id %}
-              {% if product.compare_at_price > product.price  %}
-                <div class="product-price included-disount_8">
-               <span class = "compare-price-include compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.9375 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-                
-                {% else %}
-              <div class="product-price included-disount_8">
-               <span class = "compare_and_include compare-price"> {{ product.price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  {{ product.price |times:0.9375 | money | remove: '.00' | replace: ",", " " }}
-              </div>
-              {% endif %}
-
               {% else %}
               {% if product.compare_at_price > product.price  %}
                   <div class="product-price position-relative">
