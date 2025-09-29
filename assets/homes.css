@@ -272,6 +272,7 @@ summary.list-menu__item {
     .hero-main-content {
         padding: 0 30px!important
     }
+   
 }
 .hero-section-inner {
     width: 100%;
@@ -294,6 +295,7 @@ summary.list-menu__item {
     margin: 0!important;
     line-height: 80px
 }
+
 
 @media only screen and (max-width: 850px) {
     .hero-title h2 span p {
@@ -365,7 +367,7 @@ summary.list-menu__item {
         height: 34px!important
     }
     .gridCleanUp .product-form form {
-        justify-content: flex-end;
+        justify-content: center;
     }
 }
 p.sub-title {
@@ -743,14 +745,6 @@ p.sub-title {
     0px;
     height: 225px;
     overflow: hidden
-}
-
-.rewards-marquee {
-    margin: 0 auto;
-    overflow: hidden;
-    position: absolute;
-    top: 70px;
-    width: 100%
 }
 
 .rewards-img img {
@@ -1428,7 +1422,9 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 
 @media only screen and (max-width: 500px) {
     .product-bx .product-title {
-        font-size:14px
+        font-size:12px;
+        margin:10px 0px 5px;
+        height:90px
     }
 }
 
@@ -2102,7 +2098,7 @@ p.sub-title {
     font-weight: 600
 }
 
-.tabs-content .product-price {
+.tabs-content .product-price, .product-price {
     font-size: 28px;
     width: 100%
 }
@@ -2112,11 +2108,14 @@ p.sub-title {
 }
 
 @media only screen and (max-width: 500px) {
-    .tabs-content .product-price {
-        margin-top:-40px;
-        font-size: 18px;
+    .tabs-content .product-price  {
+        margin-top:-30px;
+        font-size: ;
         float: left;
         width: 100%
+    }
+    .product-price{
+        18px
     }
 }
 .header__search summary {
@@ -2716,4 +2715,51 @@ summary.list-menu__item {
 #sideNavbar .dropdown-link.active{
   /* color:#c9a46b; font-weight:600; */
 }
+.promo-badge{
+    position:absolute;
+    top:15%;
+    left:50%;
+    background-color:#c05140;
+    width:100px;
+    height:100px;
+    padding:30px 10px;
+    border-radius:100%;
+    line-height:22px;
+    font-size:20px;
+    font-weight:600;
+    text-align:center
+
+}
+@media only screen and (max-width: 1200px){
+    .promo-badge{
+    position:absolute;
+    top:10%;
+    width:70px;
+    height:70px;
+    padding:18px 15px;
+    line-height:18px;
+    font-size:15px;
+    font-weight:500
+}
+}
+
+.product-price {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 8px; 
+  align-items: baseline;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 799px) {
+  .product-price {
+    flex-direction: column;
+    gap: 0; 
+  }
+  .gridCleanUp .product-form form{
+    justify-content:flex-end
+  }
+}
+
 @media (min-width:250px) and (max-width:900px) {font-size: 38px;line-height: 1.2em;}

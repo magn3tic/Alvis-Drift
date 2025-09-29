@@ -1,6 +1,7 @@
 <section class="rewards-marquee-sec hm-marquee-wrap">
-  
+  {% if  section.settings.title_text != blank %}
   <h3 style="color:{{ section.settings.Heading_color }}">{{ section.settings.title_text }}</h3>
+  {% endif %}
     <div class="rewards-marquee">
         <div class="rewards-img hm-marquee">
           
@@ -8,7 +9,7 @@
 			
 			{%- assign b_i = block.settings -%}
           
-          <div style="display: inline-block"><img src="{{b_i.logo_slider | img_url:'master'}}" width="150" height = "150" loading="lazy" alt=""></div>
+         <img src="{{b_i.logo_slider | img_url:'master'}}" width="150" height = "150" loading="lazy" alt="">
           
           {%- endfor -%}        
         </div>
@@ -17,29 +18,25 @@
 
 
 <style>
-  <!--
+ 
    .js-marquee-wrapper{
     width: 100000px;
     transform: translateX(1280px);
     animation: 77.3266s linear 0s infinite normal none running marqueeAnimation-8937272;
   }
-  -->
+
   
-  @media only screen and (min-width:1610px) {
-	.hm-marquee .js-marquee img {
-      min-width: 164px;
-      height: 125px;
-    }
-  }
-  @media only screen and (max-width:1500px) {
-	.hm-marquee .js-marquee img {
-      min-width: 100px;
-      height: 85px;
-    }
-    .rewards-marquee-sec{
-      height:200px
-    }
-  }
+@media (max-width: 767px) {
+  .hm-marquee,
+  .marquee-imgs { white-space: nowrap; } 
+  .hm-marquee .js-marquee,
+  .marquee-imgs .js-marquee { margin-right: 24px; } 
+  .hm-marquee img,
+  .marquee-imgs img { height: 40px; }
+}
+
+.hm-marquee .js-marquee-wrapper { animation-iteration-count: infinite !important; }
+
   section.rewards-marquee-sec.hm-marquee-wrap h2 {
     font: normal 80px/100px var(--moriarty);
     letter-spacing: .8px;
@@ -48,8 +45,32 @@
     float: left;
     width: 100%;
 }
-.rewards-marquee-sec {
-	text-align: center;
+
+.js-marquee-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;     
+  gap: 30px;            
+  white-space: nowrap;   
+}
+.hm-marquee { overflow: hidden; line-height: 0; }
+
+.hm-marquee .js-marquee-wrapper { 
+  display: block;
+  white-space: nowrap;
+}
+
+.hm-marquee .js-marquee {       
+  display: inline-flex;         
+  align-items: center;                 
+  float: none !important;     
+}
+
+.hm-marquee img {
+  display: inline-block;            
+  width: auto;
+  vertical-align: middle;
+  margin: 0;
 }
   
 @media only screen and (max-width:500px) {
@@ -119,9 +140,6 @@
             "label": "Logo Link URL"
 			
           }
-
-
-
 		]
 	  }
       

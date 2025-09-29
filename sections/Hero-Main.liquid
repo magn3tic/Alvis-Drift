@@ -37,7 +37,6 @@
     loading="eager"
     alt="">
 </picture>
-
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
     {% assign opacity = block.settings.overlay_opacity %}       
@@ -78,7 +77,6 @@
         </div>
         </div> 
         {% endif %}
-
   </div>
     </div>         
     {% if block.settings.video_banner != blank %}
