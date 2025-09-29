@@ -907,12 +907,6 @@
     list-style: none
 }
 
-.list-social__item {
-    display: inline-block;
-    padding: 0 16px;
-    vertical-align: middle
-}
-
 .list-social__item a {
     color: var(--footerHeading)
 }
