@@ -35,7 +35,6 @@
               </div>
               <div class="product-title"><div class="sp-t"><a href="{{ product.url }}">{{ product.title }}</a></div></div>              
         {% if settings.member-discount == "enable" %}
-      <!-- For Bronze Members -->
           {% if lowertags contains 'bronze'%}
             {% if excluded_product_ids contains product.id %}
                  {% if product.compare_at_price > product.price %}
@@ -63,7 +62,6 @@
                     {% if settings.discount-badge == 'tier-text'%}Bronze Member Discount{% endif %}</div>
                   {% endif %}
              {% endif %}
-             <!-- For Silver Members -->
             {% elsif lowertags contains 'silver'%}
             {% if excluded_product_ids contains product.id %}
 
@@ -90,7 +88,6 @@
                     {% if settings.discount-badge == 'tier-text'%}Silver Member Discount{% endif %}</div>
                   {% endif %}
              {% endif %}
-                 <!-- For Gold Members -->
               {% elsif lowertags contains 'gold' %}
             {% if excluded_product_ids contains product.id %}
               {% if product.compare_at_price > product.price  %}
