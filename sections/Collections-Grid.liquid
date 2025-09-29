@@ -138,11 +138,7 @@
                   {% endif %}
               {% endif %}
               {% assign price_v = product.selected_or_first_available_variant.price %}
-                  {% assign price_discount_gold = product.price | times:0.90 %}
-                  {% assign price_discount_silver = product.price | times:0.95 %}
-                  {% assign discounted_unit_gold = price_discount_gold | divided_by:product.metafields.my_fields.cost_per_item  %}
-                  {% assign discounted_unit_silver = price_discount_silver | divided_by:product.metafields.my_fields.cost_per_item  %}
-                  {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %} 
+              {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %} 
 
               {% if product.metafields.my_fields.cost_per_item != blank %}
               <div class="product-price-per"> R{{ assigned_price | divided_by:100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }} <br/></div>
