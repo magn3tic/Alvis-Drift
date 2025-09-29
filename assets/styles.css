@@ -3954,14 +3954,6 @@ input::-ms-input-placeholder {
     display: inline-block
 }
 
-.rewards-marquee-sec {
-    height: 250px
-}
-
-.rewards-marquee2 {
-    display: none
-}
-
 @media only screen and (max-width: 1025px) {
     .footer__content-top .grid--4-col-tablet .grid__item {
         max-width: 100%!important;
