@@ -2460,9 +2460,8 @@ button.num-down::before {
     color: #fff;
     font-weight:700;
 }
-button.num-up::before .button.num-up:hover, .button.num-down:hover{
-    color: #c65336;
-    font-size:12px
+.button.num-up:hover, .button.num-down:hover{
+    font-size:13px
 }
 .product-info {
     font: normal 16px/30px var(--metropolis);
