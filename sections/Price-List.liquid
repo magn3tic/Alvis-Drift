@@ -10,33 +10,16 @@
   <h2 class="page-title">
 	{{ page.title }}
   </h2>
-  
 
   <div class="sort-section">
-  
-    <button id="alphBnt">Product Name A-Z</button>
-    
-    
-    
+    <button id="alphBnt">Product Name A-Z</button>  
 	<button id="numBnt">Price Low to High</button>
-  
-    
-  
+
   </div>
-  
-
-
-
   <div class="container-price-list wrap">
-    
-    
-
-    
+ 
 {% for product in collections[section.settings.collection].products  %}
 
-    
-      
-    
     <div class="price-list box">
     
       <div class="product-image">
@@ -62,13 +45,9 @@
       </div>
     
     </div>
-    
-    
-{% endfor %}
-    
-    
-    
   
+{% endfor %}
+
   </div>
   
   <div  id="DivIdToPrint" style="display:none;">  
