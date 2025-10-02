@@ -2453,10 +2453,12 @@ summary.list-menu__item {
 button.num-up::before {
     content: "+";
     color: #fff;
+    font-weight:600;
 }
 button.num-down::before {
     content: "-";
     color: #fff;
+    font-weight:700;
 }
 .product-info {
     font: normal 16px/30px var(--metropolis);
