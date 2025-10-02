@@ -37,6 +37,7 @@
         </div>
 
         <div class="main-product-wrap">  
+
           <div class="product-gallery-sec">
             <div class="product-gallery">
               <div class="gallery-imgs-wrap">
@@ -44,20 +45,27 @@
 				<div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
                   <img src="{{ image | product_img_url: 'original' }}" alt="" rel="preload">
                 </div>
+                
                {% endfor %}
               </div>
             </div>
             {%- assign current_variant = product.selected_or_first_available_variant -%}
             <div class="sku-no">SKU CODE:  {{ current_variant.sku }}</div> 
           </div> 
+
           <div class="product-detail">
             <div class="product-detail-inner">
               <div class="main-product-header main-product-header-desktop">
+				
+
                 <div class="product-type">{{ product.metafields.my_fields.wine_range }}</div>
                 <h2>{{ product.title | escape }}</h2>
               </div>
+              
+              
               <div class="product-title-sub">
 
+                
                 <span>{{ product.metafields.my_fields.wine_type }}</span> 
                 
               </div>
@@ -76,7 +84,7 @@
               {% if product.compare_at_price > product.price %}
               <div class="product-price"><span class="compare-price">{{ product.selected_or_first_available_variant.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
               {% else %}
-              <div class="product-price main-price">{{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
+              <div class="product-price">{{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
               {% endif %}
               
               <div class="product-size">
@@ -100,13 +108,6 @@
                
               
               <div class="product-btn-wrap">
-<!--                 <div class="input-num-wrap">
-                  <button class="num-up"></button>
-                  <button class="num-down"></button>
-                  <input type="number" min="0" max="100" value="1" name="" id="" class="input-num">
-                </div> -->
-                
-                      <!-- Quantity -->
 
                 <product-form class="product-form">
                   <div class="product-form__error-message-wrapper" role="alert" hidden>
@@ -152,20 +153,17 @@
                     {%- endform -%}
                     </product-form>  
 
-{% comment %}
-    {%  include 'x23-sale-banner' %}
-{% endcomment %}
-               
                 <div class="">                  
                 <div class="product-info mobile-hide">
                 <p>
+                 
                   {% if product.metafields.my_fields.product_info != blank %}
                     {{ product.metafields.my_fields.product_info }}
                   {% else %}
                   <i>Vintage depends on availability and can't be selected.</i>
                     {% endif %}
                   </a> 
-                    </p>
+                </p>
                 </div>
                 <div class="product-extra-info">
                 
