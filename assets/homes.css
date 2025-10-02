@@ -2636,7 +2636,8 @@ button.num-down::before {
     } 
  .product-gallery-thumbnails {
         width: 100%;
-        display:flex
+        display:flex;
+        gap:10px
     }
     .main-product-wrap{
         justify-content:flex-end;
