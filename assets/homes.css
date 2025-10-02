@@ -2450,7 +2450,14 @@ summary.list-menu__item {
     color: var(--headingColor);
     border-radius: 0!important
 }
-
+button.num-up::before {
+    content: "+";
+    color: #fff;
+}
+button.num-down::before {
+    content: "-";
+    color: #fff;
+}
 .product-info {
     font: normal 16px/30px var(--metropolis);
     text-align: right;
