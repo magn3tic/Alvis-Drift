@@ -106,6 +106,13 @@
         "button_link": ""
       }
     },
+    "spacer_ggKm4H": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
+      }
+    },
     "focus_text_text_only_BfryVm": {
       "type": "Focus-Text-Text-Only",
       "settings": {
@@ -123,7 +130,7 @@
       "type": "Spacer",
       "name": "Spacer",
       "settings": {
-        "spacer_size": "100px"
+        "spacer_size": "50px"
       }
     },
     "1642344433cd8f2875": {
@@ -294,6 +301,7 @@
     "1639677536f2892eaa",
     "1711806339a48fec37",
     "163968008729148d8c",
+    "spacer_ggKm4H",
     "focus_text_text_only_BfryVm",
     "spacer_ba9xTP",
     "1642344433cd8f2875",
