@@ -2846,3 +2846,6 @@ summary.list-menu__item {
   }
 }
 @media (min-width:250px) and (max-width:900px) {font-size: 38px;line-height: 1.2em;}
+.product-title a:hover{
+    color:#ffffff
+}
