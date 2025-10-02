@@ -17,15 +17,12 @@
   <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
   <link id="ModelViewerOverride" rel="stylesheet" href="{{ 'component-model-viewer-ui.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
-
-
 <script>
   /* important javascript script to add background to entire product page */
   /*********** DON'T REMOVE THIS CODE FORM THIS PAGE ***********/
   var body = document.body;
   body.classList.add("bg-olive");
 </script>
-
 <section class="main-product-sec pg-mrg-fx bg-olive">    
   <div class="product-gallery-bg" style="background-image:url({{ 'texture-bg.png' | asset_url}})"></div>
   <div class="sec-inner">
@@ -35,113 +32,44 @@
           <div class="product-type">{{ product.metafields.my_fields.wine_range }}</div>
           <h2>{{ product.title | escape }}</h2>
         </div>
-
         <div class="main-product-wrap">  
-
           <div class="product-gallery-sec">
             <div class="product-gallery">
-              
-              
-              {% comment %}
-              <div class="product-gallery-thumbnails">
-                
-               {% for image in product.images %}
-                <div class="gallery-thumbanil {% if forloop.first == true %} current {% endif %}" data-tab="{{ image.id }}">
-                  <img src="{{ image | product_img_url: 'original' }}"  alt="" loading="lazy">
-                </div>
-               {% endfor %}
-
-<!--                 <div class="gallery-thumbanil current" data-tab="{{ image.id }}">
-                  <img src="{{ image | product_img_url: 'original' }}"  alt="" loading="lazy">
-                </div>
-                <div class="gallery-thumbanil" data-tab="mainimg02">
-                  <img src="{{ 'our-social-impact-main.png' | asset_url }}" alt="" loading="lazy">
-                </div>
-                <div class="gallery-thumbanil" data-tab="mainimg03">
-                  <img src="{{ 'in-the-cellar-main.png' | asset_url }}" alt="" loading="lazy">
-                </div> -->
-              </div>
-              {% endcomment %}
-              
               <div class="gallery-imgs-wrap">
                {% for image in product.images %}
 				<div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
                   <img src="{{ image | product_img_url: 'original' }}" alt="" rel="preload">
                 </div>
-                
                {% endfor %}
-                
-<!--                 <div class="gallery-img current" id="mainimg01">
-                  <img src="{{ image | product_img_url: 'original' }}" alt="" rel="preload">
-                </div>
-                <div class="gallery-img" id="mainimg02">
-                  <img src="{{ 'our-social-impact-main.png' | asset_url }}" alt="" rel="preload">
-                </div>
-                <div class="gallery-img" id="mainimg03">
-                  <img src="{{ 'in-the-cellar-main.png' | asset_url }}" alt=""  rel="preload">
-                </div> -->
               </div>
             </div>
             {%- assign current_variant = product.selected_or_first_available_variant -%}
             <div class="sku-no">SKU CODE:  {{ current_variant.sku }}</div> 
           </div> 
-
           <div class="product-detail">
             <div class="product-detail-inner">
               <div class="main-product-header main-product-header-desktop">
-				
-
                 <div class="product-type">{{ product.metafields.my_fields.wine_range }}</div>
                 <h2>{{ product.title | escape }}</h2>
               </div>
-              
-              
               <div class="product-title-sub">
-
-                
                 <span>{{ product.metafields.my_fields.wine_type }}</span> 
-                
               </div>
               <div class="product-title-sub">
-
-                
                 <span>{{ product.metafields.my_fields.cultivar }}</span> 
-                
               </div>
-              
               <div class="product-desc">
                 <p>{{product.description}}</p>
               </div>
-              
-              
               {% if product.compare_at_price > product.price %}
               <div class="product-price main-product"><span class="compare-price">{{ product.selected_or_first_available_variant.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
               {% else %}
               <div class="product-price main-product">{{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
               {% endif %}
-              
-              <!--<div class="product-size">{{ product.metafields.my_fields.cost_per_item }} x {{ product.metafields.my_fields.per_ml }} ml</div> -->
-             
               {% assign price_v = product.selected_or_first_available_variant.price %}
-              
-              
-              
                {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
-              
-               
-             
                <div class="product-price-per"> R{{ assigned_price | divided_by:100 }} per Case <br/>  </div>
-          
-              
               <div class="product-btn-wrap">
-<!--                 <div class="input-num-wrap">
-                  <button class="num-up"></button>
-                  <button class="num-down"></button>
-                  <input type="number" min="0" max="100" value="1" name="" id="" class="input-num">
-                </div> -->
-                
-                      <!-- Quantity -->
-
                 <product-form class="product-form">
                   <div class="product-form__error-message-wrapper" role="alert" hidden>
                     <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
@@ -185,11 +113,6 @@
                       </button>
                     {%- endform -%}
                     </product-form>  
-
-{% comment %}
-    {%  include 'x23-sale-banner' %}
-{% endcomment %}
-               
                 <div class="">                  
                 <div class="product-info mobile-hide">
                 <p>
