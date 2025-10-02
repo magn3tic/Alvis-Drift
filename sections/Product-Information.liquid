@@ -37,37 +37,27 @@
         </div>
 
         <div class="main-product-wrap">  
-
           <div class="product-gallery-sec">
             <div class="product-gallery">
-
               <div class="gallery-imgs-wrap">
                {% for image in product.images %}
 				<div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
                   <img src="{{ image | product_img_url: 'original' }}" alt="" rel="preload">
                 </div>
-                
                {% endfor %}
-                
               </div>
             </div>
             {%- assign current_variant = product.selected_or_first_available_variant -%}
             <div class="sku-no">SKU CODE:  {{ current_variant.sku }}</div> 
           </div> 
-
           <div class="product-detail">
             <div class="product-detail-inner">
               <div class="main-product-header main-product-header-desktop">
-				
-
                 <div class="product-type">{{ product.metafields.my_fields.wine_range }}</div>
                 <h2>{{ product.title | escape }}</h2>
               </div>
-              
-              
               <div class="product-title-sub">
 
-                
                 <span>{{ product.metafields.my_fields.wine_type }}</span> 
                 
               </div>
