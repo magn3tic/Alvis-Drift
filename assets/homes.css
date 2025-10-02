@@ -2774,7 +2774,9 @@ summary.list-menu__item {
   justify-content: center;
   align-items: center;
 }
-
+.main-price{
+    justify-content:flex-end
+}
 @media (max-width: 799px) {
   .product-price {
     flex-direction: column;
