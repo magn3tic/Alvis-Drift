@@ -2460,6 +2460,10 @@ button.num-down::before {
     color: #fff;
     font-weight:700;
 }
+button.num-up:hover, .button.num-down:hover{
+    color: #c65336;
+    font-size:12px
+}
 .product-info {
     font: normal 16px/30px var(--metropolis);
     text-align: right;
