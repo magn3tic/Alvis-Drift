@@ -159,7 +159,8 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "signature-range"
+        "active_collection": "signature-range",
+        "promo_badge": true
       }
     },
     "gifts_grid_mbQp4Y": {
