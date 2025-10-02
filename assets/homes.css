@@ -2458,10 +2458,7 @@ button.num-up::before {
 button.num-down::before {
     content: "-";
     color: #fff;
-    font-weight:700;
-}
-.button.num-up:hover, .button.num-down:hover{
-    font-size:13px
+    font-weight:800;
 }
 .product-info {
     font: normal 16px/30px var(--metropolis);
