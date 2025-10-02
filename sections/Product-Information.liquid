@@ -92,8 +92,12 @@
                     <!--                   <input class="quantity__input" type="hidden" name="quantity" id="Quantity-template--15114413473959__main" min="1" value="1" form="product-form-template--15114413473959__main">                   -->
                     <div class="input-num-wrap">
                       <quantity-input class="">
-                      <button type="button" name="plus" class="num-up"></button>
-                      <button type="button" name="minus" class="num-down"></button>
+                      <button type="button" name="plus" class="num-up">
+                        {% render 'icon-arrow-up' %}
+                      </button>
+                      <button type="button" name="minus" class="num-down">
+                        {% render 'icon-arrow-down' %}
+                      </button>
                       <input min="1" type="number" id="quantity" name="quantity" class="input-num" min="1" max="30"value="1" />
                       </quantity-input>
                     </div>                
