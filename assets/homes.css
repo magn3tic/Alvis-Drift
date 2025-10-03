@@ -1859,6 +1859,11 @@ p.sub-title {
         width: 50%
     }
 }
+.main-product h2 {
+    font: normal 60px/80px var(--moriarty);
+    letter-spacing: 1px;
+    margin-bottom: 35px!important
+}
 @media only screen and (max-width: 1025px) {
       .link.link--text.list-menu__item.list-menu__item--link {
         margin-bottom:0;
@@ -2373,10 +2378,6 @@ summary.list-menu__item {
     margin-right: 0;
     margin-bottom: 20px
 }
-.main-product h2 {
-    font: normal 80px/80px var(--moriarty);
-    letter-spacing: 1px
-}
 
 #MainContent .main-product-wrap h2 {
     margin-bottom: 0
@@ -2487,11 +2488,7 @@ button.num-down::before {
     display: block;
     text-align: right
 }
-.main-product h2 {
-    font: normal 60px/80px var(--moriarty);
-    letter-spacing: 1px;
-    margin-bottom: 35px!important
-}
+
 .gallery-imgs-wrap {
     margin-top: -20px;
     width: 100%;
