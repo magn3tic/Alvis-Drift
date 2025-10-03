@@ -2931,19 +2931,19 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
       
        }
     }
-  @media only screen and (max-width:1290px){
+@media only screen and (max-width:1290px){
     .product-bx .product-img{
         height:355px;
       }
-  }
-    @media only screen and (max-width:550px) {
+}
+@media only screen and (max-width:550px) {
       /* For mobile phones: */
       .from-right-sec div.block-sec-img img {
         margin-top: -100px;
         width: 50%;
         object-fit: contain;
       }
-    }
+}
     .from-right-sec div.block-sec-img {
       margin-right: 25px;
     }
@@ -2952,7 +2952,7 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
       /*     height: 1000px; */
       object-fit: contain;
     }
-    @media only screen and (max-width:600px) {
+@media only screen and (max-width:600px) {
       /* For mobile phones: */
       .from-left-sec div.block-sec-img img {
         width: 100%;
@@ -2964,12 +2964,12 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
         padding-top:10px;
         line-height:1.5rem;
       }
-    }
+}
     .from-left-sec div.block-sec-img {
       margin-left: 20px;
     }
   
-  @media only screen and (min-width: 1600px) {
+@media only screen and (min-width: 1600px) {
     .image_size_contain img.br-cut4 {
       clip-path: polygon(0 42%, 0 170%, 100% 58%, 100% 0, 35% 0);
       -webkit-clip-path: polygon(0 65%, 0 169%, 100% 85%, 100% 0, 68% 0);
@@ -3002,13 +3002,17 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
     .from-left-sec div.block-sec-img {
       margin-left: 110px;
     }
-  }
+}
   .product-price .compare-price {
     font-size: 0.75em;
     text-decoration: line-through;
     opacity: 0.6;
+}
+ .position-relative{
+    position:relative;
   }
-  @media only screen and (min-width: 1700px) {
+
+@media only screen and (min-width: 1700px) {
     .video-sec-inner .video-sec-vid {
       position: relative;
       margin-left: -81px;
@@ -3042,7 +3046,7 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
   .qty__wrapper input[type=number]::-webkit-inner-spin-button {
       opacity: 1
   }
-  @media only screen and (min-width: 1023px) {
+@media only screen and (min-width: 1023px) {
     .top-left-navbar {
       display: none;
     }
@@ -3073,10 +3077,7 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
     width: calc(100% - 20px) !important;
     margin: 0 10px;
   }
-  .position-relative{
-    position:relative;
-  }
-
+ 
   
   .silver-tier-badge{
     width: 50px;
