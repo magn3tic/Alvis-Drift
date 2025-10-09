@@ -75,7 +75,7 @@
       {% if collection_object != blank and collection_object.products_count > 0 %}
         <div class="awc-collection-grid">
               {% for product in collection_object.products %}
-                <div class="product-bx-v2">
+                <div class="product-bx-v2 position-relative">
                   <div class="product-img product-img-v2">
                     <a href="{{ product.url }}">
                       <img
@@ -129,17 +129,13 @@
                   {% if excluded_product_ids contains product.id %}
                   <div class="product-price" style="margin-bottom: 15px;text-align: center;">
 
-                    
-
                     {% assign has_discount_20 = product.metafields.custom.product_discount_20 %}
                     {% assign discounted_price_20 = product.price | times: 0.8 | round %}
                       {% assign has_discount_15 = product.metafields.custom.product_discount_15 %}
                     {% assign discounted_price_15 = product.price | times: 0.85 | round %}
 
                     {% if has_discount_20 == true %}
-                      <span class="compare-price">
-                          {{ product.price| money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
+                      <span class="compare-price">{{ product.price| money | remove: '.00' | replace: ',', ' ' }}</span>
                         <span class="product-price 20_discount">
                           {{ discounted_price_20 | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
@@ -157,20 +153,28 @@
                         <span class="compare-price">
                           {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
-                        <span class="product-price">
+                        <span class="current-price">
                           {{ price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
                       {% else %}
-                        <span class="product-price">
+                        <span class="current-price">
                           {{ price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
                       {% endif %}
                       {% assign promo = product.metafields.my_fields.promo_label %}
 
-                    {% if promo != blank %}
-                      <div class="promo-label">
-                        {{ promo }}
-                      </div>
+                    {% if excluded_product_ids contains product.id %}
+                      {% if promo != blank %}
+                        {% if section.settings.promo_badge == true %}
+                          <div class="promo-badge">
+                              {{ promo }}
+                          </div>
+                          {% else %}
+                          <div class="promo-label">
+                              {{ promo }}
+                          </div>
+                          {% endif %}
+                        {% endif %}
                       {% endif %}
                     
                     {% else %}
@@ -195,7 +199,9 @@
                {% assign price_perUnit = price | divided_by: product.metafields.my_fields.cost_per_item | round: 2  %}
                 {% if product.metafields.my_fields.cost_per_item != blank %}
                     R{{ price_perUnit | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
-                  {% endif %}
+                {% else %}
+                  Per Case
+                {% endif %}
                   </div>
 
                   {% comment %} Add to Cart Button {% endcomment %}
@@ -344,6 +350,12 @@
   ],
   "default": "exclusive_wines"
 },
+{
+      "type": "checkbox",
+      "id": "promo_badge",
+      "default":false,
+      "label": "Enable Promo Badge"
+    },
       {
         "type": "header",
         "content": "Title"

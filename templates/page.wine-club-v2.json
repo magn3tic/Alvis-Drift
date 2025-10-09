@@ -38,27 +38,26 @@
       "custom_css": [],
       "name": "Wine Club Hero V2",
       "settings": {
-        "subtitle_connected": "",
-        "title_connected": "Alvi's Drift Wine Club",
+        "subtitle_connected": "STOCK UP ON YOUR FAVOURITES",
+        "title_connected": "INCREDIBLE \n<br>SPRING SAVINGS!",
         "blurb_connected": "",
-        "image_connected_desktop": "shopify://shop_images/wineclub-image1.png",
-        "image_connected_mobile": "shopify://shop_images/WineClub_Mobile_banner.png",
-        "show_button_connected": true,
+        "image_connected_desktop": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner.jpg",
+        "image_connected_mobile": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner_Mobile.jpg",
+        "show_button_connected": false,
         "button_text_connected": "SHOP NOW",
         "url_connected": "https://alvisdrift.co.za/collections/best-sellers",
         "subtitle_disconnected": "",
-        "title_disconnected": "Alvi's Drift Wine Club",
-        "blurb_disconnected": "",
-        "image_disconnected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
-        "image_disconnected_mobile": "shopify://shop_images/WineClub_Mobile_banner.png",
+        "title_disconnected": "JOIN THE CLUB\n<br>& SAVE",
+        "blurb_disconnected": "<p>Shop at discounted prices and enjoy exclusive launches!</p>",
+        "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner.jpg",
+        "image_disconnected_mobile": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner_Mobile.jpg",
         "show_button_disconnected": true,
-        "button_text_disconnected": "JOIN NOW",
+        "button_text_disconnected": "Sign Me Up",
         "url_disconnected": "https://alvisdrift.co.za/account/register"
       }
     },
     "wine_club_products_events_grid_cRYNQa": {
       "type": "wine-club-products-events-grid",
-      "disabled": true,
       "custom_css": [
         "@media (min-width: 1023px) {.awc-collection-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 0fr)); }}",
         "p.sub-title {line-height: normal;}",
@@ -67,15 +66,88 @@
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_collection",
+        "promo_badge": true,
         "show_title": true,
-        "title": "GET A FREE CASE OR TWO OF SAUVIGNON BLANC",
-        "sub-title": "It's our biggest Signature Sauvignon Blanc sale ever, exclusive to  Wine Club members! Buy 2 Get 1 Free. Buy 4 Get 2 Free.",
+        "title": "Taste the Tiers: Mixed White Wine Case",
+        "sub-title": "Save R281!",
         "no-subtitle": false,
-        "bronze_collection": "",
-        "silver_collection": "signature-sauvignon-blanc-promotion",
-        "gold_collection": "signature-sauvignon-blanc-promotion",
-        "platinum_collection": "signature-sauvignon-blanc-promotion",
-        "collection_exclusive": "signature-sauvignon-blanc-promotion",
+        "bronze_collection": "mixed-case-special-spring-sale",
+        "silver_collection": "mixed-case-special-spring-sale",
+        "gold_collection": "mixed-case-special-spring-sale",
+        "platinum_collection": "",
+        "collection_exclusive": "mixed-case-special-spring-sale",
+        "show_exclusive_collection_bronze": true,
+        "show_exclusive_collection_silver": true,
+        "show_exclusive_collection_gold": true,
+        "show_exclusive_collection_platinum": false,
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
+      }
+    },
+    "wine_club_products_events_grid_eDmcgT": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_wines",
+        "promo_badge": true,
+        "show_title": true,
+        "title": "Serious Spring Savings!",
+        "sub-title": "Save up to R420",
+        "no-subtitle": false,
+        "bronze_collection": "featured-individual-hero-wines-spring-sale",
+        "silver_collection": "featured-individual-hero-wines-spring-sale",
+        "gold_collection": "featured-individual-hero-wines-spring-sale",
+        "platinum_collection": "",
+        "collection_exclusive": "featured-individual-hero-wines-spring-sale",
+        "show_exclusive_collection_bronze": true,
+        "show_exclusive_collection_silver": true,
+        "show_exclusive_collection_gold": true,
+        "show_exclusive_collection_platinum": false,
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
+      }
+    },
+    "wine_club_products_events_grid_VwCPAt": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_wines",
+        "promo_badge": true,
+        "show_title": true,
+        "title": "Everyday Favourites. Even Better Value.",
+        "sub-title": "Save 20% on the bottles that make any moment special.",
+        "no-subtitle": false,
+        "bronze_collection": "20-on-the-signature-221-and-sparking-wines-spring-sale",
+        "silver_collection": "20-on-the-signature-221-and-sparking-wines-spring-sale",
+        "gold_collection": "20-on-the-signature-221-and-sparking-wines-spring-sale",
+        "platinum_collection": "20-on-the-signature-221-and-sparking-wines-spring-sale",
+        "collection_exclusive": "",
+        "show_exclusive_collection_bronze": true,
+        "show_exclusive_collection_silver": true,
+        "show_exclusive_collection_gold": true,
+        "show_exclusive_collection_platinum": true,
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
+      }
+    },
+    "wine_club_products_events_grid_drVBLG": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_wines",
+        "promo_badge": true,
+        "show_title": true,
+        "title": " Go Bigger. Save Bolder.",
+        "sub-title": "Enjoy 30% off selected wines, crafted to make an impression!",
+        "no-subtitle": false,
+        "bronze_collection": "30-on-the-reserve-albertus-viljoen-and-cap-classique-spring-sale",
+        "silver_collection": "30-on-the-reserve-albertus-viljoen-and-cap-classique-spring-sale",
+        "gold_collection": "30-on-the-reserve-albertus-viljoen-and-cap-classique-spring-sale",
+        "platinum_collection": "30-on-the-reserve-albertus-viljoen-and-cap-classique-spring-sale",
+        "collection_exclusive": "",
         "show_exclusive_collection_bronze": true,
         "show_exclusive_collection_silver": true,
         "show_exclusive_collection_gold": true,
@@ -90,6 +162,7 @@
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
+        "promo_badge": false,
         "show_title": true,
         "title": "Exclusive Products",
         "sub-title": "",
@@ -122,8 +195,7 @@
         "silver_to_gold_text": "<p>Should you reach 10 000 points or more and progress to Gold membership, you will receive 15% discount* on purchases from our online shop. </p><p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p><p><em>*Excluding selected sales and promotions.</em></p>",
         "gold_image": "shopify://shop_images/Gold.webp",
         "gold_richtext": "<p>Welcome to our portal for Gold tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Gold tier members</li></ul><p>As a Gold member, you also qualify for a fantastic 15% discount* on all wine purchases from our online shop.</p><p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p>",
-        "gold_to_platinum": "shopify://shop_images/Artboard_6.png",
-        "gold_to_platinum_text": "<p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p><p><em>*Excluding selected sales and promotions.</em></p>",
+        "gold_to_platinum_text": "",
         "platinum_image": "shopify://shop_images/Platinum.png",
         "platinum_richtext": "<p>Welcome to our portal for Platinum tier members. This is where you can:</p><ul><li>Access your personal member's dashboard</li><li>View your points status</li><li>Get information about exclusive offers and promotions for Platinum tier members</li></ul><p>As a Platinum member, you also qualify for a fantastic 15% discount* on all wine purchases from our online shop.</p><p>You will also be eligible for exclusive invitations to VIP events and wine tastings.</p>"
       }
@@ -153,6 +225,12 @@
           "type": "bronze_benefit",
           "settings": {
             "text": "5% Off All Non-Sale Cases"
+          }
+        },
+        "bronze_benefit_Fff6cJ": {
+          "type": "bronze_benefit",
+          "settings": {
+            "text": "Join the club and receive instant 350 points"
           }
         },
         "silver_benefit_Y4hczk": {
@@ -229,66 +307,77 @@
         },
         "gold_benefit_YKRaat": {
           "type": "gold_benefit",
+          "disabled": true,
           "settings": {
             "text": "Invitation to Red Wine Blending Session"
           }
         },
         "platinum_benefit_YUxTJE": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Monthly Newsletter"
           }
         },
         "platinum_benefit_e966h3": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Exclusive Members-Only Sales"
           }
         },
         "platinum_benefit_TUkyTQ": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Early Access to New Releases"
           }
         },
         "platinum_benefit_md8XQa": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Invitation to A Virtual Masterclass"
           }
         },
         "platinum_benefit_CBKXT4": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "15% Off All Non-Sale Cases"
           }
         },
         "platinum_benefit_WJrJiT": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Win Tickets to Events & Festivals"
           }
         },
         "platinum_benefit_UqbmB3": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Access to Exclusive Bespoke Offers"
           }
         },
         "platinum_benefit_wHNE8f": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Invitation to Red Wine Blending Session"
           }
         },
         "platinum_benefit_dTEccK": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Access to Limited-Edition Magnums"
           }
         },
         "platinum_benefit_pnEAdp": {
           "type": "platinum_benefit",
+          "disabled": true,
           "settings": {
             "text": "Mystery Box (On Reaching 40 000 Points)"
           }
@@ -306,6 +395,7 @@
         "bronze_benefit_xCfbEx",
         "bronze_benefit_9bi9DA",
         "bronze_benefit_wNzLFz",
+        "bronze_benefit_Fff6cJ",
         "silver_benefit_Y4hczk",
         "silver_benefit_Q9KaQY",
         "silver_benefit_LmBxkW",
@@ -361,6 +451,9 @@
     "wine_club_hero_v2_y96K78",
     "wine_club_hero_v2_HVqDTq",
     "wine_club_products_events_grid_cRYNQa",
+    "wine_club_products_events_grid_eDmcgT",
+    "wine_club_products_events_grid_VwCPAt",
+    "wine_club_products_events_grid_drVBLG",
     "wine_club_products_events_grid_zDj4fc",
     "wine_club_join_club_nkriVx",
     "wine_club_how_it_works_Pi4r66",

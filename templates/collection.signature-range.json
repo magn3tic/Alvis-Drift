@@ -79,7 +79,8 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "signature-range"
+        "active_collection": "signature-range",
+        "promo_badge": true
       }
     },
     "16421090351c47438f": {

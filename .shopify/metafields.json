@@ -1,196 +1,103 @@
 {
   "article": [
     {
-      "key": "tagline",
+      "key": "author_description",
       "namespace": "custom",
-      "name": "Tagline",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "author-image",
-      "namespace": "custom",
-      "name": "Author Image",
-      "description": "Author Profile Image",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "author-bio",
-      "namespace": "custom",
-      "name": "Author Bio",
-      "description": "Author Bio",
+      "name": "Author Description",
+      "description": "Author's Details",
       "type": {
         "name": "multi_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "author",
+      "key": "author_name",
       "namespace": "custom",
-      "name": "Author",
-      "description": "Author Name & Surname",
+      "name": "Author Name",
+      "description": "Authos's Name",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
       }
+    },
+    {
+      "key": "author_image",
+      "namespace": "custom",
+      "name": "Author Image",
+      "description": "Author's Image (url) ",
+      "type": {
+        "name": "url",
+        "category": "URL"
+      }
+    },
+    {
+      "key": "date_remove",
+      "namespace": "custom",
+      "name": "Date Remove",
+      "description": "Remove date on individual posts",
+      "type": {
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
     }
   ],
   "blog": [],
-  "brand": [],
-  "collection": [
-    {
-      "key": "collection_leaflet",
-      "namespace": "custom",
-      "name": "Collection Leaflet",
-      "description": "Collection Leaflet",
-      "type": {
-        "name": "link",
-        "category": "LINK"
-      }
-    },
-    {
-      "key": "animation-video",
-      "namespace": "custom",
-      "name": "Animation / Video",
-      "description": "Header Animation / Video",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "header_background_video",
-      "namespace": "custom",
-      "name": "Header Background Video",
-      "description": "Header Background Video",
-      "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    }
-  ],
+  "collection": [],
   "company": [],
   "company_location": [],
   "location": [],
   "market": [],
   "order": [],
-  "page": [
-    {
-      "key": "menu_of_the_month_year",
-      "namespace": "custom",
-      "name": "Menu of the month - Year",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "menu_of_the_month__month",
-      "namespace": "custom",
-      "name": "Menu of the month - Month",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "recipe_type",
-      "namespace": "custom",
-      "name": "Recipe Type",
-      "description": "",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    }
-  ],
+  "page": [],
   "product": [
     {
-      "key": "ingredients",
-      "namespace": "custom",
-      "name": "Product Ingredients",
-      "description": "Product Ingredients",
+      "key": "cost_per_item",
+      "namespace": "my_fields",
+      "name": "Package Quantity",
+      "description": "Number of Bottles per Delivery",
       "type": {
-        "name": "list.single_line_text_field",
+        "name": "single_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "allergens",
-      "namespace": "custom",
-      "name": "Allergens",
-      "description": "Product Allergens",
+      "key": "per_ml",
+      "namespace": "my_fields",
+      "name": "ml Per Bottle",
+      "description": "Single Bottle's Volume",
       "type": {
-        "name": "list.single_line_text_field",
+        "name": "single_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "nutritional-info",
-      "namespace": "custom",
-      "name": "Nutritional Info",
-      "description": "Nutritional Information",
+      "key": "cultivar",
+      "namespace": "my_fields",
+      "name": "Cultivar",
+      "description": "Percentage + Cultivar – E.g:  \"100% Chenin Blanc\" or \"Blend\"",
       "type": {
-        "name": "file_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "related-products",
-      "namespace": "custom",
-      "name": "Related Products",
-      "description": "Related Products",
-      "type": {
-        "name": "list.product_reference",
-        "category": "REFERENCE"
-      }
-    },
-    {
-      "key": "additional-ingredients-required",
-      "namespace": "custom",
-      "name": "Additional Ingredients Required",
-      "description": "Additional ingredients Required",
-      "type": {
-        "name": "list.single_line_text_field",
+        "name": "single_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "equipment-required",
-      "namespace": "custom",
-      "name": "Equipment Required",
-      "description": "Equipment Required",
+      "key": "wine_type",
+      "namespace": "my_fields",
+      "name": "Wine Type",
+      "description": "Type of Wine – E.g:  \"Red Wine\"",
       "type": {
-        "name": "list.single_line_text_field",
+        "name": "single_line_text_field",
         "category": "TEXT"
       }
     },
     {
-      "key": "temperature-duration",
-      "namespace": "custom",
-      "name": "Temperature & Duration",
-      "description": "Temperature & Duration",
+      "key": "wine_range",
+      "namespace": "my_fields",
+      "name": "Wine Range",
+      "description": "Wine Range – E.g:  \"Signature Range\"",
       "type": {
-        "name": "list.single_line_text_field",
+        "name": "single_line_text_field",
         "category": "TEXT"
-      }
-    },
-    {
-      "key": "video",
-      "namespace": "custom",
-      "name": "Video (YouTube Link)",
-      "description": "Video (YouTube Link)",
-      "type": {
-        "name": "list.url",
-        "category": "URL"
       }
     },
     {
@@ -244,92 +151,42 @@
       }
     },
     {
-      "key": "product_category",
+      "key": "product_discount_20",
       "namespace": "custom",
-      "name": "Product Category",
-      "description": "Primary Product Category (Collection)",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "instructions",
-      "namespace": "custom",
-      "name": "Instructions",
-      "description": "Mixing / Baking / Cooking / Usage Instructions",
-      "type": {
-        "name": "rich_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "youtube_id",
-      "namespace": "custom",
-      "name": "Youtube ID",
-      "description": "Youtube Video ID",
-      "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
-      }
-    },
-    {
-      "key": "tablepress",
-      "namespace": "custom",
-      "name": "TablePress",
+      "name": "Product discount 20%",
       "description": "",
       "type": {
-        "name": "multi_line_text_field",
-        "category": "TEXT"
+        "name": "boolean",
+        "category": "TRUE_FALSE"
       }
     },
     {
-      "key": "additional-info",
+      "key": "product_discount_15",
       "namespace": "custom",
-      "name": "Additional Info",
-      "description": "Additional Info",
+      "name": "Product discount 15%",
+      "description": "",
       "type": {
-        "name": "list.single_line_text_field",
+        "name": "boolean",
+        "category": "TRUE_FALSE"
+      }
+    },
+    {
+      "key": "promo_label",
+      "namespace": "my_fields",
+      "name": "Promo Label",
+      "description": "",
+      "type": {
+        "name": "single_line_text_field",
         "category": "TEXT"
       }
     }
   ],
   "variant": [
     {
-      "key": "volume",
-      "namespace": "custom",
-      "name": "Volume",
-      "description": "Product Volume",
-      "type": {
-        "name": "volume",
-        "category": "MEASUREMENT"
-      }
-    },
-    {
-      "key": "weight",
-      "namespace": "custom",
-      "name": "Weight",
-      "description": "Product Weight",
-      "type": {
-        "name": "weight",
-        "category": "MEASUREMENT"
-      }
-    },
-    {
-      "key": "dimensions",
-      "namespace": "custom",
-      "name": "Dimensions",
-      "description": "Product Dimensions",
-      "type": {
-        "name": "list.dimension",
-        "category": "MEASUREMENT"
-      }
-    },
-    {
       "key": "custom_label_4",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 4",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -339,7 +196,7 @@
       "key": "custom_label_3",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 3",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -349,7 +206,7 @@
       "key": "custom_label_2",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 2",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -359,7 +216,7 @@
       "key": "custom_label_1",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 1",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -369,7 +226,7 @@
       "key": "custom_label_0",
       "namespace": "mm-google-shopping",
       "name": "Google: Custom Label 0",
-      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns.",
+      "description": "Label that you assign to a product to help organize bidding and reporting in Shopping campaigns",
       "type": {
         "name": "single_line_text_field",
         "category": "TEXT"
@@ -436,13 +293,23 @@
       }
     },
     {
-      "key": "units",
+      "key": "dark_wood_image",
       "namespace": "custom",
-      "name": "Units",
-      "description": "Weight / Volume of Units in Package",
+      "name": "Dark Wood image",
+      "description": "",
       "type": {
-        "name": "single_line_text_field",
-        "category": "TEXT"
+        "name": "url",
+        "category": "URL"
+      }
+    },
+    {
+      "key": "butchers_block_image",
+      "namespace": "custom",
+      "name": "Butchers block Image",
+      "description": "",
+      "type": {
+        "name": "url",
+        "category": "URL"
       }
     }
   ],

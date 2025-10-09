@@ -296,8 +296,7 @@
       "settings": {
         "topheading": "OUR RED WINES",
         "subtitle-1": "",
-        "active_collection": "red-wines",
-        "promo_badge": true
+        "active_collection": "red-wines"
       }
     }
   },

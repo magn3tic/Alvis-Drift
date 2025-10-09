@@ -48,7 +48,27 @@
       "icon-pinot-noir-2021",
       "icon-albertus-viljoen-3-pack",
       "signature-sauvignon-blanc-buy-2-get-1",
-      "signature-sauvignon-blanc-buy-4-get-2"
+      "signature-sauvignon-blanc-buy-4-get-2",
+      "signature-chenin-blanc",
+      "reserve-cvc",
+      "221-sauvignon-blanc",
+      "signature-sauvignon-blanc",
+      "signature-viognier",
+      "signature-chardonnay",
+      "signature-pinotage-rose",
+      "221-chenin-blanc",
+      "sparkling-brut-blanc-de-blanc",
+      "sparkling-brut-rose",
+      "reserve-chardonnay",
+      "reserve-sauvignon-blanc",
+      "sparkling-brut-cap-classique",
+      "sparkling-brut-cap-classique-single-box",
+      "sparkling-brut-nature-vintage-cap-classique",
+      "reserve-viognier",
+      "icon-albertus-viljoen-chenin-blanc",
+      "icon-albertus-viljoen-chardonnay",
+      "reserve-muscat-nectarinia",
+      "taste-the-tiers-white-wine-mixed-case"
     ],
     "member-included-discount": "enable",
     "product_list_included": [],
@@ -303,6 +323,11 @@
       "3574802870912500141": {
         "type": "shopify://apps/sc-loyalty-rewards/blocks/enable_storefront_widget/21842f98-987a-4ad6-91bf-a00b77123261",
         "disabled": true,
+        "settings": {}
+      },
+      "11068332061543699368": {
+        "type": "shopify://apps/booster-page-speed-optimizer/blocks/app-embed/d920faf3-7c60-423a-9636-22618b5561b5",
+        "disabled": false,
         "settings": {}
       }
     }

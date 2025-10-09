@@ -32,7 +32,8 @@
       "settings": {
         "topheading": "OUR BEST SELLERS",
         "subtitle-1": "",
-        "active_collection": "best-sellers"
+        "active_collection": "best-sellers",
+        "promo_badge": true
       }
     },
     "164210934350db4240": {

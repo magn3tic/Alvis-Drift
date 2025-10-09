@@ -1,4 +1,4 @@
-<section class="our-vineyards bg-darkPurple splash-sec from-left-sec dfd {% if section.settings.add_class != blank %} {{ section.settings.add_class }} {% endif %}" style="margin-top: -280px;">
+<section class="our-vineyards bg-darkPurple splash-sec from-left-sec{% if section.settings.add_class != blank %} {{ section.settings.add_class }} {% endif %}">
     <div class="sec-inner">
         <div class="container">
             <div class="splash-bx">
@@ -7,10 +7,11 @@
                 </div>
                 <div class="block-sec">
                     <div class="img-igw">
-                        <div class="block-sec-img parallex_div  {% if section.settings.left_image_contain == true %} image_size_contain{% endif %}">
+                        <div class="focusTextImageSection__imageInner {% if section.settings.left_image_contain == true %} image_size_contain{% endif %}">
                           <img class="br-cut3" src="{{ section.settings.our-vineyards-main | img_url: 'master' }}" alt="our-vineyards-main" loading="lazy">
                         </div>        
-                    </div>        
+                    </div>
+                    <div class = "focusTextImageSection__content">        
                     <h2><span class="fword">{{ section.settings.main_heading }}</span> </h2>
                     <div class="detail-box">
                         <div class="detail-box-txt">
@@ -21,6 +22,7 @@
                       {% endif %}  
                   </div>
                 </div>
+              </div>
             </div>
         </div>
     </div>

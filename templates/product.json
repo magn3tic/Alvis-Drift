@@ -180,8 +180,41 @@
         "button_type": "alvisBtn"
       }
     },
+    "focus_text_image_left_FcxaKM": {
+      "type": "Focus-Text-Image-Left",
+      "name": "Focus Text (Image Left)",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/one-the-wine-main.png",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "ON THE VINES",
+        "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "focus_text_image_right_AYKRje": {
+      "type": "Focus-Text-Image-Right",
+      "name": "Focus Text (Image Right)",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/in-the-cellar-main.png",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "In The Celler",
+        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
     "1639224118e06f2478": {
       "type": "Featured-Content-Left",
+      "disabled": true,
       "settings": {
         "main_heading": "<p>ON TH<em>E</em><br/>VINES</p>",
         "our-vineyards-main": "shopify://shop_images/one-the-wine-main.png",
@@ -195,6 +228,7 @@
     },
     "1639224398aa0e3aa7": {
       "type": "Featured-Content-Right",
+      "disabled": true,
       "settings": {
         "main_heading": "<p>IN TH<em>E</em><br/>CELLAR</p>",
         "our-cellars-main": "shopify://shop_images/in-the-cellar-main.png",
@@ -225,7 +259,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "ACROSS OUR RANGES",
-            "collectionCarasoul": "red-wines"
+            "collectionCarasoul": "white-wines"
           }
         }
       },
@@ -233,9 +267,10 @@
         "1639253594dbdedc92-0"
       ],
       "settings": {
-        "topheading": "THESE ARE ALL OUR RED WINES",
-        "subtitle-1": "Add Text",
-        "active_collection": "red-wines"
+        "topheading": "THESE ARE ALL OUR WHITE WINES",
+        "subtitle-1": "",
+        "active_collection": "white-wines",
+        "promo_badge": true
       }
     }
   },
@@ -246,6 +281,8 @@
     "16392371564aec5ac1",
     "1639224403b97d22e1",
     "1639224916778fd50c",
+    "focus_text_image_left_FcxaKM",
+    "focus_text_image_right_AYKRje",
     "1639224118e06f2478",
     "1639224398aa0e3aa7",
     "1639226365ec4bf8dd",

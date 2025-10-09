@@ -44,7 +44,8 @@
       "settings": {
         "topheading": "OUR PINOTAGE WINES",
         "subtitle-1": "",
-        "active_collection": "pinotage"
+        "active_collection": "pinotage",
+        "promo_badge": true
       }
     },
     "164210934350db4240": {

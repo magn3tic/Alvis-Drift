@@ -29,7 +29,7 @@
             "background_image": "shopify://shop_images/Bulk_Wine_Purchases.png",
             "image_overlay": "#000000",
             "overlay_opacity": 40,
-            "heading_color": "#ffffff",
+            "Heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "Larger",
             "paragarh_p2": "Volume Orders",
@@ -49,9 +49,17 @@
         "background_image": "shopify://shop_images/DSC_5580.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "blurb": "",
-        "right_btn_text": "",
-        "right_btn_link": ""
+        "Heading_color": "#ffffff",
+        "video_banner": "",
+        "paragarh_p1": "",
+        "paragarh_p2": "",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "MAKE US PART OF YOUR SPECIAL EVENT",
+        "paragarh_2": "",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-wines",
+        "btn_main_link": ""
       }
     },
     "spacer_xNNUaN": {
@@ -100,13 +108,6 @@
         "button_link": "shopify://pages/distributors",
         "new_tab": true
       }
-    },
-    "spacer_m6WGnN": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "100px"
-      }
     }
   },
   "order": [
@@ -115,7 +116,6 @@
     "1639602940145c735b",
     "spacer_xNNUaN",
     "1711903745a24b0fa0",
-    "1642663525935577f7",
-    "spacer_m6WGnN"
+    "1642663525935577f7"
   ]
 }

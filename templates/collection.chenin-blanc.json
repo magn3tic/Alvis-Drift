@@ -32,7 +32,8 @@
       "settings": {
         "topheading": "OUR CHENIN BLANC WINES",
         "subtitle-1": "",
-        "active_collection": "chenin-blanc"
+        "active_collection": "chenin-blanc",
+        "promo_badge": true
       }
     },
     "164210934350db4240": {
@@ -42,7 +43,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "WINE CLUB",
-        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }

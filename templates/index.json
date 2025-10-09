@@ -43,14 +43,14 @@
         "slider_eiynBD": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Alvis_Drift_Home_Banner.jpg",
-            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Home_Banner_mobile.jpg",
+            "background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner.jpg",
+            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner_Mobile.jpg",
             "image_overlay": "#000000",
-            "overlay_opacity": 20,
+            "overlay_opacity": 30,
             "heading_color": "#ffffff",
             "video_banner": "",
-            "paragarh_p1": "SIGNATURE",
-            "paragarh_p2": "SELECTION",
+            "paragarh_p1": "SPRING STARTS HERE.",
+            "paragarh_p2": "STOCK UP & SAVE",
             "paragarh_p3": "",
             "paragarh_p4": "",
             "paragarh_1": "",
@@ -68,9 +68,10 @@
         "background_image": "shopify://shop_images/hero-secton-bg.png",
         "image_overlay": "#ffffff",
         "overlay_opacity": 0,
-        "blurb": "<p><strong>YES! IN A WORLD OF NO<br/></strong>In a world full of no, the Signature Selection is an easy yes. With its fruit-forward flavours, award-winning quality, and price tag under R100, the Signature Selection is made for spontaneous moments and honest connections.<br/></p>",
-        "right_btn_text": "Shop now",
-        "right_btn_link": "https://alvisdrift.co.za/collections/signature-range"
+        "blurb": "<p><strong>From 25 Sep to 19 Oct</strong><br/>Award-winning wines, sunny-day favourites – now at unmissable prices.</p>",
+        "right_btn_text": "SHOP NOW",
+        "right_btn_link": "",
+        "anchor_link": "product-collection"
       }
     },
     "spacer_r3CYwj": {
@@ -87,7 +88,7 @@
         "text_transform": "uppercase",
         "Heading_color": "#ffffff",
         "title": "The Private club",
-        "subtitle-1": "Join the club and receive free shipping for first time buyers",
+        "subtitle-1": "Join the club and receive free shipping for first-time buyers",
         "subtitle-2": "",
         "button_text": "find out more",
         "button_link": "https://alvisdrift.co.za/pages/club",
@@ -97,6 +98,13 @@
     "1639717880ecfddc97": {
       "type": "Collections-Grid",
       "blocks": {
+        "item_rU48pK": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Spring sale",
+            "collectionCarasoul": "spring-sale-collection"
+          }
+        },
         "e1da377c-7a1d-4c54-80f0-ee4eb138fcb4": {
           "type": "item",
           "settings": {
@@ -139,7 +147,7 @@
             "collectionCarasoul": "sparkling-range"
           }
         },
-        "item_ETUPGN": {
+        "item_7WjGR7": {
           "type": "item",
           "settings": {
             "collection_heading": "CAP CLASSIQUE WINES",
@@ -148,18 +156,19 @@
         }
       },
       "block_order": [
+        "item_rU48pK",
         "e1da377c-7a1d-4c54-80f0-ee4eb138fcb4",
         "da410b66-55b5-41bc-b50a-82a109d7f826",
         "f7166b61-1b93-49a6-ae5a-a33b67e954c9",
         "91df3ff6-2007-4e78-bc2d-f3aef4a1fe16",
         "1639717880a3dfd1a1-0",
         "9d3f4820-036b-4a4d-9be4-267751c949d7",
-        "item_ETUPGN"
+        "item_7WjGR7"
       ],
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "signature-range",
+        "active_collection": "spring-sale-collection",
         "promo_badge": true
       }
     },
