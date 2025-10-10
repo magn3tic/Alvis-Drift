@@ -375,7 +375,7 @@ summary.list-menu__item {
 .hero-title h2 span {
     display: block
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1367px) {
 
     .animate-reveal {
         line-height: 3.5rem!important
