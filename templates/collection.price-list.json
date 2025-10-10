@@ -44,6 +44,13 @@
         "anchor_link": ""
       }
     },
+    "spacer_CVqbwz": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
+      }
+    },
     "product-grid": {
       "type": "price-list-grid",
       "settings": {
@@ -137,13 +144,6 @@
       "type": "Page-Background-Colour",
       "settings": {
         "page_bg": "#C2AB9B"
-      }
-    },
-    "spacer_CVqbwz": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "25px"
       }
     }
   },
