@@ -45,7 +45,6 @@
     },
     "spacer_ef46Fh": {
       "type": "Spacer",
-      "disabled": true,
       "name": "Spacer",
       "settings": {
         "spacer_size": "100px"
@@ -149,8 +148,8 @@
   },
   "order": [
     "1642755007ac0ed3ed",
-    "spacer_ef46Fh",
     "product-grid",
+    "spacer_ef46Fh",
     "165835183884042e76",
     "1642755010578ddd9f",
     "16427563776be0838a",
