@@ -1,5 +1,3 @@
-
-
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -11,89 +9,43 @@
 	{{ page.title }}
   </h2>
   
-
   <div class="sort-section">
-  
     <button id="alphBnt">Product Name A-Z</button>
-    
-    
-    
-	<button id="numBnt">Price Low to High</button>
-  
-    
-  
+	  <button id="numBnt">Price Low to High</button>
   </div>
-  
-
-
-
   <div class="container-price-list wrap">
-    
-    
-
-    
-{% for product in collections[section.settings.collection].products  %}
-
-    
-      
-    
+  {% for product in collections[section.settings.collection].products  %}
     <div class="price-list box">
-    
       <div class="product-image">
-      	
-        <a target="_blank" href="{{ product.url }}"> <img src="{{ product.featured_image | img_url:'master' }}"></a>
-        
+        <a target="_blank" href="{{ product.url }}"> <img src="{{ product.featured_image | img_url:'master' }}"></a>   
       </div>
-      
       <div class="product-name">
-      	
         <a target="_blank" href="{{ product.url }}">  <h1>{{ product.title }}</h1></a>
-      
       </div>
-      
       <div class="product-price">
-      	
         <a target="_blank" href="{{ product.url }}"><h3>{{ product.price | money | remove:'.00' | replace: ",", " "  }}</h3>
-        
            <h2 style="display:none;">{{ product.price }}</h2>
-        
         </a>
-        
       </div>
-    
     </div>
-    
-    
-{% endfor %}
-    
-    
-    
-  
+  {% endfor %}
   </div>
   
   <div  id="DivIdToPrint" style="display:none;">  
-        <table class="price-table-list" border="0" style="width: 100%;">
-   
-        
-{% for product in collections[section.settings.collection].products  %}
+    <table class="price-table-list" border="0" style="width: 100%;">   
+      {% for product in collections[section.settings.collection].products  %}
 
-     <tr style="margin-bottom:35px;">  	
-      <td> <img style="height:100px;" src="{{ product.featured_image | img_url:'master' }}"></td>
-      <td><h1>{{ product.title }}</h1></td>
-      <td> <h2>{{ product.price | money | remove:'.00' }}</h2></td>
-      
-      </tr>
-          
-{% endfor %} 
-          
-       </table>
- </div>     
+      <tr style="margin-bottom:35px;">  	
+        <td> <img style="height:100px;" src="{{ product.featured_image | img_url:'master' }}"></td>
+        <td><h1>{{ product.title }}</h1></td>
+        <td> <h2>{{ product.price | money | remove:'.00' }}</h2></td>
+      </tr>     
+      {% endfor %}    
+    </table>
+  </div>     
   <div class="product-print-btn">
-  	
     <button  id='btn'  onclick='printDiv();'>Print This Page</button>
-    
   </div>
-  
 </div>
 
 
