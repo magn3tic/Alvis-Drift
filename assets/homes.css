@@ -2097,7 +2097,7 @@ p.sub-title {
         line-height: 23px
     }
 }
-.hero-title h2 span p, hero-title h1 span p {
+.hero-title h2 span p, .hero-title h1 span p {
     margin: 0!important;
     line-height: 8rem;
     font-family: var(--metropolis);
