@@ -88,6 +88,20 @@
             "collection_heading": "Flagship Range",
             "collectionCarasoul": "flagship-range"
           }
+        },
+        "item_LGFNR3": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "SPARKLING RANGE",
+            "collectionCarasoul": "sparkling-range"
+          }
+        },
+        "item_yW7GzX": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "CAP CLASSIQUE RANGE",
+            "collectionCarasoul": "cap-classique-range"
+          }
         }
       },
       "block_order": [
@@ -95,7 +109,9 @@
         "item_m63Nt8",
         "item_QMc4hr",
         "item_9jpKUc",
-        "item_pNpEbe"
+        "item_pNpEbe",
+        "item_LGFNR3",
+        "item_yW7GzX"
       ],
       "settings": {
         "topheading": "",
