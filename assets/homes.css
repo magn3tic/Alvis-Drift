@@ -235,7 +235,7 @@ summary.list-menu__item {
 }
 .icon-hamberger {
     display: inline-block;
-    width: 60px;
+    padding:20px;
     color: var(--whiteColor)
 }
 
