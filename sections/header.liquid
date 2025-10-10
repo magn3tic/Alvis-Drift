@@ -25,6 +25,12 @@
     <div class="top-left-navbar">
       <a href="#" class="icon-hamberger" >{% render 'icon-hamburger' %} </a> 
     </div>
+    <div class="header__heading">
+      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
+        <img src="{{ 'Navbar_logo.svg' | asset_url }}" loading="lazy" class="header__heading-logo" alt="{{ shop.name }}">
+      </a>
+    </div>
+
     <section id="sideNavbar">
       <div class="sideNavbar-inner">
         <div class="sideNavbar-logo">
@@ -156,11 +162,7 @@
         </details>
       </details-modal>
     {%- endif -%}
-    <div class="header__heading">
-      <a href="{{ routes.root_url }}" class="header__heading-link link link--text focus-inset">
-        <img src="{{ 'Navbar_logo.svg' | asset_url }}" loading="lazy" class="header__heading-logo" alt="{{ shop.name }}">
-      </a>
-    </div>
+    
     <div class="header-right header-right__column">
         <div class="header-right__top">
           {%- if section.settings.menu != blank -%}
