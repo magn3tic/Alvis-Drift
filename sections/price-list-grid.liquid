@@ -20,7 +20,6 @@
 
   newWin.document.write('<html><body onload="window.print()">'+ divToPrint.innerHTML +'</body></html>');
 
- 
 
 };
 
@@ -32,8 +31,7 @@
   </h2> 
 
   <div class="Product-default-sort">
-         
-              
+                  
    <select name="sort_by" id="sort-by" aria-describedby="a11y-refresh-page-message" class="collection-sort__input sort-by">
     {% for option in collection.sort_options %}
         <option value="{{ option.value }}"{% if sort_by == option.value %} selected="selected"{% endif %}>{{ option.name }}</option>
@@ -85,8 +83,7 @@
       </div>
     
     </div>
-    
-          
+
           
           {%- endfor -%}
      
