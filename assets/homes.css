@@ -1188,7 +1188,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
         -webkit-animation-delay: .35s
     }
     .parallax-h .home-product-items .product-tabs,.parallax-h .home-product-items .tabs-content {
-        opacity: 0;
         margin-top: 10px
     }
     .parallax-h .newsletter-sec {
