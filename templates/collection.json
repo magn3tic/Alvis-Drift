@@ -126,6 +126,7 @@
       "blocks": {
         "item_HXjPzG": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "",
             "collectionCarasoul": "all-products"
