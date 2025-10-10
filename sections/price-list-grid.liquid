@@ -64,7 +64,7 @@
     
       <div class="product-image">
       	
-        <a target="_blank" href="{{ product.url }}"> <img src="{{ product.featured_image | img_url:'master' }}" alt ="" loading="lazy"></a>
+        <a target="_blank" href="{{ product.url }}"> <img src="{{ product.featured_image | img_url:'master' }}" alt ="" loading="lazy" width ="{{ product.featured_image.width }}" height ="{{ product.featured_image.height }}"></a>
         
       </div>
                       
@@ -345,12 +345,6 @@
     location.search = new URLSearchParams(Shopify.queryParams).toString();
   });
 
-
-
-
-</script>
-
-<script>
 
 $(document).ready(function(){
   
