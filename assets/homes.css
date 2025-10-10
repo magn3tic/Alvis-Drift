@@ -378,7 +378,7 @@ summary.list-menu__item {
 @media screen and (max-width: 1150px) {
 
     .animate-reveal {
-        line-height: 6rem!important
+        line-height: 3.5rem!important
     }
      .hero-section {
         height: 680px
