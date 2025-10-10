@@ -2848,9 +2848,6 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
     clip-path: polygon(0 0, 0 70%, 100% 210%, 100% 30%, 80% 0);
     -webkit-clip-path: polygon(0 0, 0 70%, 100% 210%, 100% 30%, 80% 0);
   }
-  .top-left-navbar {
-    min-width: 94px;
-  }
   a.mobileAccountButton {
     color: #fff;
     padding: 0.6rem 0;

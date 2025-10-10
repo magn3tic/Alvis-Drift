@@ -376,7 +376,8 @@ summary.list-menu__item {
     display: block
 }
 .left-bar{
-    display:flex
+    display:flex;
+    align-items:center
 }
 @media screen and (max-width: 1150px) { 
      .hero-section {
