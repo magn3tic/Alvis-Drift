@@ -47,6 +47,7 @@
     },
     "1639248035a16a435a": {
       "type": "Page-Background-Colour",
+      "disabled": true,
       "settings": {
         "page_bg": "#2e112d"
       }
