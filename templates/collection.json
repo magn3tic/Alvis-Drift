@@ -116,7 +116,7 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "all-products",
+        "active_collection": "signature-range",
         "promo_badge": true
       }
     },
@@ -127,7 +127,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
-            "collectionCarasoul": ""
+            "collectionCarasoul": "all-products"
           }
         }
       },
