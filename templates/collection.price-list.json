@@ -18,7 +18,7 @@
             "background_image": "shopify://shop_images/Alvi_s_Drift_Wine_Prices.jpg",
             "image_overlay": "#ffffff",
             "overlay_opacity": 0,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "WINE",
             "paragarh_p2": "PRICING",
@@ -38,17 +38,16 @@
         "background_image": "shopify://shop_images/Cellar-14_3773dad7-b9bf-4ab0-accf-b9de761ff2e3.jpg",
         "image_overlay": "",
         "overlay_opacity": 0,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "WINE",
-        "paragarh_p2": "PRICING",
-        "paragarh_p3": "INFORMATION",
-        "paragarh_p4": "",
-        "paragarh_1": "QUICK PRICING OVERVIEW",
-        "paragarh_2": "At Alvi’s Drift, we’re committed to fair pricing for our award-winning South African wines. Please note that all prices supplied are per case, including VAT.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-products",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
+      }
+    },
+    "spacer_ef46Fh": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "100px"
       }
     },
     "product-grid": {
@@ -149,6 +148,7 @@
   },
   "order": [
     "1642755007ac0ed3ed",
+    "spacer_ef46Fh",
     "product-grid",
     "165835183884042e76",
     "1642755010578ddd9f",
