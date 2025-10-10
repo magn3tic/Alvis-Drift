@@ -116,7 +116,29 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "",
+        "active_collection": "all-products",
+        "promo_badge": true
+      }
+    },
+    "collections_grid_ggfn93": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "item_HXjPzG": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": ""
+          }
+        }
+      },
+      "block_order": [
+        "item_HXjPzG"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "topheading": "",
+        "subtitle-1": "",
+        "active_collection": "20-on-the-signature-221-and-sparking-wines-spring-sale",
         "promo_badge": true
       }
     }
@@ -124,6 +146,7 @@
   "order": [
     "hero_main_YxYBEQ",
     "1639248035a16a435a",
-    "product-grid"
+    "product-grid",
+    "collections_grid_ggfn93"
   ]
 }
