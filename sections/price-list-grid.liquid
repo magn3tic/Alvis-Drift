@@ -31,16 +31,16 @@
 	ALVI'S DRIFT PRICE OVERVIEW
   </h2> 
 
-<div class="Product-default-sort">
+  <div class="Product-default-sort">
          
               
    <select name="sort_by" id="sort-by" aria-describedby="a11y-refresh-page-message" class="collection-sort__input sort-by">
     {% for option in collection.sort_options %}
         <option value="{{ option.value }}"{% if sort_by == option.value %} selected="selected"{% endif %}>{{ option.name }}</option>
     {% endfor %}
-</select>
+  </select>
 
-              </div>
+  </div>
 
 <div id="ProductGridContainer_notcollection">
   {%- paginate collection.products by 100 -%}
@@ -108,7 +108,7 @@
         
 
      <tr style="margin-bottom:35px;">  	
-      <td> <img style="height:100px;" src="{{ product.featured_image | img_url:'master' }}"></td>
+      <td> <img style="height:100px;" src="{{ product.featured_image | img_url:'master' }}" width ="{{ product.featured_image.width }}" height ="{{ product.featured_image.height }}" ></td>
       <td><h3>{{ product.title }}</h3></td>
       <td><h2>{{ product.price | money | remove:'.00' }}</h2></td>
       
