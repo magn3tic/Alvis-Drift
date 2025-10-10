@@ -52,6 +52,13 @@
         "page_bg": "#2e112d"
       }
     },
+    "spacer_Ujk8Xn": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "100px"
+      }
+    },
     "product-grid": {
       "type": "Collections-Grid",
       "blocks": {
@@ -148,6 +155,7 @@
   "order": [
     "hero_main_YxYBEQ",
     "1639248035a16a435a",
+    "spacer_Ujk8Xn",
     "product-grid",
     "collections_grid_ggfn93"
   ]
