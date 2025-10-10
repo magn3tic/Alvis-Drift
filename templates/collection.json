@@ -60,10 +60,42 @@
             "collection_heading": "SIGNATURE RANGE",
             "collectionCarasoul": "signature-range"
           }
+        },
+        "item_m63Nt8": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "221 RANGE",
+            "collectionCarasoul": "221-range"
+          }
+        },
+        "item_QMc4hr": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "RESERVE RANGE",
+            "collectionCarasoul": "reserve-range"
+          }
+        },
+        "item_9jpKUc": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "ICON RANGE",
+            "collectionCarasoul": "icon-range"
+          }
+        },
+        "item_pNpEbe": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Flagship Range",
+            "collectionCarasoul": "flagship-range"
+          }
         }
       },
       "block_order": [
-        "item_xgjyCH"
+        "item_xgjyCH",
+        "item_m63Nt8",
+        "item_QMc4hr",
+        "item_9jpKUc",
+        "item_pNpEbe"
       ],
       "settings": {
         "topheading": "",
