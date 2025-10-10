@@ -1398,10 +1398,6 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
     }
 }
 
-.top-left-navbar {
-    margin-top: 48px
-}
-
 .header-right {
     border-bottom: 1px solid #f8f2e6
 }
