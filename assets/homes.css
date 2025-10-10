@@ -348,12 +348,7 @@ summary.list-menu__item {
 .hero-title h2 span {
     display: block
 }
-@media screen and (max-width: 1150px) {
 
-    .animate-reveal {
-        line-height: 3.5rem!important
-    }
-}
 @media screen and (max-width: 900px) {
     .hero-section {
         aspect-ratio: 376 / 680
@@ -368,6 +363,9 @@ summary.list-menu__item {
     }
     .gridCleanUp .product-form form {
         justify-content: center;
+    }
+     .animate-reveal {
+        line-height: 3.5rem!important
     }
 }
 p.sub-title {
