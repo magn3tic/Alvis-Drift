@@ -127,36 +127,12 @@
         "active_collection": "signature-range",
         "promo_badge": true
       }
-    },
-    "collections_grid_ggfn93": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "item_HXjPzG": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "all-products"
-          }
-        }
-      },
-      "block_order": [
-        "item_HXjPzG"
-      ],
-      "name": "Collections Grid",
-      "settings": {
-        "topheading": "",
-        "subtitle-1": "ALL WINES",
-        "active_collection": "all-products",
-        "promo_badge": true
-      }
     }
   },
   "order": [
     "hero_main_YxYBEQ",
     "1639248035a16a435a",
     "spacer_Ujk8Xn",
-    "product-grid",
-    "collections_grid_ggfn93"
+    "product-grid"
   ]
 }
