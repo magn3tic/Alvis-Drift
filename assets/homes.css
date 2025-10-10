@@ -375,6 +375,9 @@ summary.list-menu__item {
 .hero-title h2 span {
     display: block
 }
+.left-bar{
+    display:flex
+}
 @media screen and (max-width: 1150px) { 
      .hero-section {
         height: 680px
