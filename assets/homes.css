@@ -1834,7 +1834,7 @@ p.sub-title {
     }
 }
 
-.main-product h2 {
+.main-product h2, .main-product h1{
     font: normal 60px/80px var(--moriarty);
     letter-spacing: 1px;
     margin-bottom: 35px!important
@@ -1960,7 +1960,7 @@ p.sub-title {
         display: none!important
     }
 
-        .main-product h2 {
+        .main-product h2, .main-product h1 {
         font: normal 30px/40px var(--moriarty);
         letter-spacing: 1px;
         margin-bottom: 22px!important
