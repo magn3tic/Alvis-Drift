@@ -2376,7 +2376,8 @@ summary.list-menu__item {
 
 .product-detail .product-price {
     font: 400 30px/30px var(--metropolis);
-    margin-bottom: 20px
+    margin-bottom: 20px;
+    justify-content:right
 }
 
 .product-detail .product-size {
@@ -2748,9 +2749,6 @@ summary.list-menu__item {
   align-items: center;
 }
 
-product-detail-inner .product-price{
-     justify-content: right;
-}
 @media (max-width: 799px) {
   .product-price {
     flex-direction: column;
