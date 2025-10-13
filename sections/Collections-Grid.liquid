@@ -187,7 +187,7 @@
                   <div class="product-price">
                     
                  <span class = "compare-price-exclude-discount compare-price"> {{ product.compare_at_price  | money | remove: '.00' | replace: ",", " " }}</span>
-                  <span class="product-price excluded-disount"></span>
+                 
                   <span class="current-price">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
                 </div>
                 {% else %}
