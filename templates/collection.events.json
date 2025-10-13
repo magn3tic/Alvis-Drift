@@ -21,7 +21,8 @@
         "heading_Ry68Tx": {
           "type": "heading",
           "settings": {
-            "heading": "OUR EVENTS"
+            "heading": "OUR EVENTS",
+            "heading_size": false
           }
         }
       },
