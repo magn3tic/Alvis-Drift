@@ -15,22 +15,23 @@
         "page_bg": "#C2AB9B"
       }
     },
-    "16394887186124ed9d": {
-      "type": "Gifts-Grid",
+    "text_only_pFtmJY": {
+      "type": "Text-Only",
       "blocks": {
-        "1639488718813dca96-0": {
-          "type": "item",
+        "heading_Ry68Tx": {
+          "type": "heading",
           "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "events"
+            "heading": "OUR EVENTS"
           }
         }
       },
       "block_order": [
-        "1639488718813dca96-0"
+        "heading_Ry68Tx"
       ],
+      "name": "Text Only",
       "settings": {
-        "topheading": "Our Events"
+        "color_scheme": "none",
+        "text_alignment": "center"
       }
     },
     "1639247544080331f4": {
@@ -45,7 +46,7 @@
   },
   "order": [
     "1639248035a16a435a",
-    "16394887186124ed9d",
+    "text_only_pFtmJY",
     "1639247544080331f4"
   ]
 }
