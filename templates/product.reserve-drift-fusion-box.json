@@ -32,8 +32,8 @@
         "collapsible_tab_97F8Mt": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Wine Fact Sheet",
-            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "heading": "CULtivars 2020",
+            "content": "<p>36,5% Pinotage<br/>33% Cabernet Sauvignon<br/>15% Shiraz<br/>7% Durif<br/>5% Petit Verdot<br/>3,5% Grenache</p>",
             "page": "",
             "icon": "none",
             "border": false
@@ -42,11 +42,31 @@
         "collapsible_tab_U4ATDp": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Bulk Price Request",
-            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "heading": "AWARDS",
+            "content": "<p><a href=\"https://alvisdrift.co.za/pages/reserve-awards-drift-fusion\" target=\"_blank\" title=\"https://alvisdrift.co.za/pages/reserve-awards-drift-fusion\">View our full list of awards here</a></p>",
             "page": "",
             "icon": "none",
             "border": false
+          }
+        },
+        "collapsible_tab_Y6GC8h": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine fact sheets",
+            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"https://alvisdrift.co.za/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.<br/><br/></p>",
+            "page": "",
+            "icon": "none",
+            "border": true
+          }
+        },
+        "collapsible_tab_JgjEgt": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "bulk price request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"https://alvisdrift.co.za/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": true
           }
         },
         "a9428cd9-b80c-40ea-88e5-2c83bc1e8990": {
@@ -60,6 +80,8 @@
         "1354c4bd-0ae3-46de-a98f-adeed3e5f492",
         "collapsible_tab_97F8Mt",
         "collapsible_tab_U4ATDp",
+        "collapsible_tab_Y6GC8h",
+        "collapsible_tab_JgjEgt",
         "a9428cd9-b80c-40ea-88e5-2c83bc1e8990"
       ],
       "settings": {
@@ -157,11 +179,11 @@
     "1639224403b97d22e1": {
       "type": "Call-To-Action",
       "settings": {
-        "wine-club-bg": "shopify://shop_images/serving-suggestion-bg.png",
+        "wine-club-bg": "shopify://shop_images/Red_Meat_Pairing_01.jpg",
         "image_overlay": false,
-        "Heading_color": "#c65336",
+        "Heading_color": "#2d5980",
         "title": "SERVING SUGGESTION",
-        "detail_box_txt": "<p>Pair this wine with creamy seafood, risotto, or aromatic Thai curries.</p>",
+        "detail_box_txt": "This red wine is best enjoyed with red meats like roast lamb, beef steak and venison pie. It also pairs well with strong cheeses such as Roquefort, Gruyère or Comté.",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -174,7 +196,7 @@
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
         "title": "HERITAGE",
-        "video-sec-content-txt-1": "<p>In 1928, the All Black rugby team, known as “the invincibles” was unassailable. They arrived on South African shores after completing an undefeated tour of France and the British colonies, expecting to continue their winning streak. The rugby world was rocked when a young unknown, 19-year old Albertus Viljoen Van Der Merwe, “Alvi” to his friends, scored the first try in history against the All Blacks on African soil. </p><p>Our charismatic founder gripped the rugby world’s imagination by scoring this historic try, going on to be selected as the 221st player to play for the Springboks – South Africa’s national rugby team. With Alvi in their ranks, the Springboks turned the tide on “the invincibles”, going on to tour the UK and Europe undefeated. </p><p>Alvi’s farm in Worcester, South Africa has continued this winning legacy, remaining family owned and home to three generations of the Van Der Merwe family. Today, it is home to the Alvi’s Drift winery, producing internationally acclaimed, world-class wines of exceptional quality and value. </p><p>With our 221 range of Alvi’s Drift wines, we pay tribute to our patriarch, Oupa Alvi, and our winning Springbok rugby team.</p>",
+        "video-sec-content-txt-1": "<p>The wine labels on bottles from our Reserve range feature an illustration of Alvi’s Drift, the low-water bridge over the Breede River cutting through the family farm. Our patriarch, Albertus Viljoen “Oupa Alvi” van der Merwe, was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p><p>Our Alvi’s Drift Reserve range is the culmination of our pursuit of excellence in producing outstanding wines of unrivalled complexity.</p>",
         "button-txt": "VIEW THE REST OF OUR 221 RANGE",
         "button_link": "shopify://collections/221-range",
         "button_type": "alvisBtn"
@@ -191,7 +213,7 @@
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
         "title": "ON THE VINES",
-        "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour</p>",
+        "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Our Reserve range showcases the best of our harvest; a fusion of our trademark fresh, primary-fruit style – with just a hint of the luscious and opulent barrel-fermented style of our Albertus Viljoen Icon range.</p>",
         "button-txt": "",
         "button_link": "",
         "button_type": "alvisBtn"
@@ -206,7 +228,7 @@
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
         "title": "In The Celler",
-        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.</p>",
+        "video-sec-content-txt-1": "<p>A true Cape blend led by Pinotage and backed by Cabernet Sauvignon, this wine is literally a fusion of old and new. Not only of grapes and styles of wine, but also of winemaking techniques, with each variety vinified separately to showcase specific characters of each varietal.</p><p>After juice is macerated on skins, each variety follows its own path through the cellar, enjoying pumping-over and open-tank fermentation in some cases, while other varieties enjoy partial tank fermentation, completing fermentation in barrel. The wine is matured for 18 months in a combination of French and American oak barrels, of which approximately a third are new. Thereafter, wines from individual barrels are carefully selected to make up the final blend.</p>",
         "button-txt": "",
         "button_link": "",
         "button_type": "alvisBtn"
@@ -259,7 +281,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "ACROSS OUR RANGES",
-            "collectionCarasoul": "white-wines"
+            "collectionCarasoul": "red-wines"
           }
         }
       },
@@ -267,9 +289,9 @@
         "1639253594dbdedc92-0"
       ],
       "settings": {
-        "topheading": "THESE ARE ALL OUR WHITE WINES",
+        "topheading": "OUR RED WINES",
         "subtitle-1": "",
-        "active_collection": "white-wines",
+        "active_collection": "red-wines",
         "promo_badge": true
       }
     }
