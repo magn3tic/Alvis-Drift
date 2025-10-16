@@ -32,7 +32,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Wine Fact Sheets",
-            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis_Drift_Verreaux_Pinotage_2023.pdf?v=1760622987\" target=\"_blank\" title=\"https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis_Drift_Verreaux_Pinotage_2023.pdf?v=1760622987\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
             "page": "",
             "icon": "none",
             "border": false
@@ -284,7 +284,8 @@
       "settings": {
         "topheading": "OUR RED WINES",
         "subtitle-1": "",
-        "active_collection": "red-wines"
+        "active_collection": "red-wines",
+        "promo_badge": false
       }
     }
   },
