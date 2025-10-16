@@ -130,7 +130,7 @@
         "Background_Colour": "#f8f2e6",
         "title": "Analysis",
         "Heading_color": "#ffffff",
-        "image_width": "full",
+        "image_width": "third",
         "image_ratio": "adapt",
         "column_alignment": "left",
         "background_style": "primary",
