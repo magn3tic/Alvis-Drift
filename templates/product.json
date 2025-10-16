@@ -18,6 +18,16 @@
     "main": {
       "type": "product-information",
       "blocks": {
+        "collapsible_tab_Gcdzi6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"https://alvisdrift.co.za/pages/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": true
+          }
+        },
         "1354c4bd-0ae3-46de-a98f-adeed3e5f492": {
           "type": "collapsible_tab",
           "disabled": true,
@@ -33,7 +43,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Wine Fact Sheet",
-            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "content": "<p>View all vintage fact sheets / tasting notes<a href=\"https://alvisdrift.co.za/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/><br/>Availability of vintages depends on current stock.</p>",
             "page": "",
             "icon": "none",
             "border": false
@@ -43,7 +53,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Bulk Price Request",
-            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"https://alvisdrift.co.za/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
             "page": "",
             "icon": "none",
             "border": false
@@ -57,6 +67,7 @@
         }
       },
       "block_order": [
+        "collapsible_tab_Gcdzi6",
         "1354c4bd-0ae3-46de-a98f-adeed3e5f492",
         "collapsible_tab_97F8Mt",
         "collapsible_tab_U4ATDp",
@@ -66,6 +77,66 @@
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false
+      }
+    },
+    "multi_column_content_b8KXiQ": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "column_YGEKAn": {
+          "type": "column",
+          "settings": {
+            "title": "ALCOHOL",
+            "Title_color": "#480115",
+            "text": "<p><strong>13,6%</strong></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "column_pgLAR3": {
+          "type": "column",
+          "settings": {
+            "title": "RESIDUAL SUGAR",
+            "Title_color": "#480115",
+            "text": "<p><strong>4,2 g/L</strong></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "column_yHMbMx": {
+          "type": "column",
+          "settings": {
+            "title": "ACIDITY",
+            "Title_color": "#480115",
+            "text": "<p><strong>6,0 g/L</strong></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "column_mbH9Qb": {
+          "type": "column",
+          "settings": {
+            "title": "pH",
+            "Title_color": "#480115",
+            "text": "<p><strong>3,3</strong></p>",
+            "Text_color": "#2d5980"
+          }
+        }
+      },
+      "block_order": [
+        "column_YGEKAn",
+        "column_pgLAR3",
+        "column_yHMbMx",
+        "column_mbH9Qb"
+      ],
+      "name": "Multi-Column Content",
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "Multicolumn",
+        "Heading_color": "#ffffff",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Read More",
+        "button_link": "",
+        "swipe_on_mobile": false
       }
     },
     "1639223856bcb87c3a": {
@@ -157,11 +228,11 @@
     "1639224403b97d22e1": {
       "type": "Call-To-Action",
       "settings": {
-        "wine-club-bg": "shopify://shop_images/serving-suggestion-bg.png",
+        "wine-club-bg": "shopify://shop_images/Red_Meat_Pairing_01.jpg",
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "SERVING SUGGESTION",
-        "detail_box_txt": "<p>Pair this wine with creamy seafood, risotto, or aromatic Thai curries.</p>",
+        "detail_box_txt": "Enjoy this remarkable, one-of-a-kind wine with rump roast, mushroom risotto, or seared tuna steak.",
         "btn-txt": "",
         "btn-url": ""
       }
@@ -174,10 +245,10 @@
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
         "title": "HERITAGE",
-        "video-sec-content-txt-1": "<p>In 1928, the All Black rugby team, known as “the invincibles” was unassailable. They arrived on South African shores after completing an undefeated tour of France and the British colonies, expecting to continue their winning streak. The rugby world was rocked when a young unknown, 19-year old Albertus Viljoen Van Der Merwe, “Alvi” to his friends, scored the first try in history against the All Blacks on African soil. </p><p>Our charismatic founder gripped the rugby world’s imagination by scoring this historic try, going on to be selected as the 221st player to play for the Springboks – South Africa’s national rugby team. With Alvi in their ranks, the Springboks turned the tide on “the invincibles”, going on to tour the UK and Europe undefeated. </p><p>Alvi’s farm in Worcester, South Africa has continued this winning legacy, remaining family owned and home to three generations of the Van Der Merwe family. Today, it is home to the Alvi’s Drift winery, producing internationally acclaimed, world-class wines of exceptional quality and value. </p><p>With our 221 range of Alvi’s Drift wines, we pay tribute to our patriarch, Oupa Alvi, and our winning Springbok rugby team.</p>",
-        "button-txt": "VIEW THE REST OF OUR 221 RANGE",
-        "button_link": "shopify://collections/221-range",
-        "button_type": "alvisBtn"
+        "video-sec-content-txt-1": "<p>Named in honour of the mighty Verraux’s eagle that soars high above our vineyards, Alvi’s Drift presents a 100% Pinotage wine as rare, bold, and elegant as this magnificent bird. Made in small volumes only and blended from individually selected barrels, this wine is the ultimate symbol of the heights and resilience one can reach.</p>",
+        "button-txt": "",
+        "button_link": "shopify://collections/flagship-range",
+        "button_type": "alvisBtnOpposite"
       }
     },
     "focus_text_image_left_FcxaKM": {
@@ -191,7 +262,7 @@
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
         "title": "ON THE VINES",
-        "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour</p>",
+        "video-sec-content-txt-1": "<p>Sourced from a 20-year-old vineyard rooted in ancient limestone soils, Alvi’s Drift Verreaux Black Eagle Pinotage 2023 reflects the power of terroir. These mineral-rich soils provide the ideal foundation for grapes to produce a wine of exceptional depth and character. The limestone influence enhances freshness, resulting in a one-of-a-kind wine that is both bold and refined – a true expression of place.</p>",
         "button-txt": "",
         "button_link": "",
         "button_type": "alvisBtn"
@@ -206,7 +277,7 @@
         "Heading_size": "h2",
         "Heading_color": "#f8f2e6",
         "title": "In The Celler",
-        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.</p>",
+        "video-sec-content-txt-1": "<p>To create this wine, Pinotage grapes were crushed and transferred to our winery’s traditional, open-top concrete fermentation tanks, constructed nearly a century ago by our founder, Albertus Viljoen van der Merwe (or ‘Oupa Alvi,’ as we still fondly refer to him).</p><p>During fermentation, punch-downs (<em>pigéage</em>) were performed by hand, up to eight times daily, to optimise skin-to-juice contact and enhance both colour and flavour extraction.</p><p>Following fermentation, the wine was left to soak on the skins for several days before being transferred to a combination of new French and American oak barrels. It was then matured for 12 months before final bottling.</p>",
         "button-txt": "",
         "button_link": "",
         "button_type": "alvisBtn"
@@ -259,7 +330,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "ACROSS OUR RANGES",
-            "collectionCarasoul": "white-wines"
+            "collectionCarasoul": "red-wines"
           }
         }
       },
@@ -267,9 +338,9 @@
         "1639253594dbdedc92-0"
       ],
       "settings": {
-        "topheading": "THESE ARE ALL OUR WHITE WINES",
+        "topheading": "THESE ARE ALL OUR RED WINES",
         "subtitle-1": "",
-        "active_collection": "white-wines",
+        "active_collection": "red-wines",
         "promo_badge": true
       }
     }
@@ -277,6 +348,7 @@
   "order": [
     "1639248143bd9f4fca",
     "main",
+    "multi_column_content_b8KXiQ",
     "1639223856bcb87c3a",
     "16392371564aec5ac1",
     "1639224403b97d22e1",
