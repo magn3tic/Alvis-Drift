@@ -25,7 +25,7 @@
             "content": "<p><a href=\"https://alvisdrift.co.za/pages/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">View our full list of awards here.</a></p>",
             "page": "",
             "icon": "none",
-            "border": true
+            "border": false
           }
         },
         "1354c4bd-0ae3-46de-a98f-adeed3e5f492": {
