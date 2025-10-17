@@ -7,24 +7,24 @@
             </div>
             <div class="newsletter-frm">
                 <div class="newsletter-frm-inner">
-     {% form 'contact' %}
-  {{ form.errors | default_errors }}
-  <div class=" form-row first-name">
-    <label for="first-name">FIRST NAME</label>
-    <input type="text" name="contact[first_name]" id="first-name" />
-  </div>
-  <div class=" form-row last-name">
-    <label for="last-name">SURNAME</label>
-    <input type="text" name="contact[surname]" id="last-name" />
-  </div>
-  <div class=" form-row email">
-    <label for="email">EMAIL ADDRESS</label>
-    <input type="email" name="contact[email]" id="email" />
-  </div>
-  <div class="submit">
-    <input type="submit" value="SUBMIT" />
-  </div>
-{% endform %}      
+                  {% form 'contact' %}
+                {{ form.errors | default_errors }}
+                <div class=" form-row first-name">
+                  <label for="first-name">FIRST NAME</label>
+                  <input type="text" name="contact[first_name]" id="first-name" />
+                </div>
+                <div class=" form-row last-name">
+                  <label for="last-name">SURNAME</label>
+                  <input type="text" name="contact[surname]" id="last-name" />
+                </div>
+                <div class=" form-row email">
+                  <label for="email">EMAIL ADDRESS</label>
+                  <input type="email" name="contact[email]" id="email" />
+                </div>
+                <div class="submit">
+                  <input type="submit" value="SUBMIT" />
+                </div>
+              {% endform %}      
                 </div>
             </div>
         </div>
