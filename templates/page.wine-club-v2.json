@@ -81,6 +81,7 @@
     },
     "wine_club_products_events_grid_cRYNQa": {
       "type": "wine-club-products-events-grid",
+      "disabled": true,
       "custom_css": [
         "@media (min-width: 1023px) {.awc-collection-grid {grid-template-columns: repeat(auto-fit, minmax(450px, 0fr)); }}",
         "p.sub-title {line-height: normal;}",
@@ -110,6 +111,7 @@
     },
     "wine_club_products_events_grid_eDmcgT": {
       "type": "wine-club-products-events-grid",
+      "disabled": true,
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
@@ -134,6 +136,7 @@
     },
     "wine_club_products_events_grid_VwCPAt": {
       "type": "wine-club-products-events-grid",
+      "disabled": true,
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
@@ -158,6 +161,7 @@
     },
     "wine_club_products_events_grid_drVBLG": {
       "type": "wine-club-products-events-grid",
+      "disabled": true,
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
