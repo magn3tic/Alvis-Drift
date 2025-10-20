@@ -194,7 +194,7 @@
                       </span>              
                   </div>
                     {% endif %}
-                  
+                  {% unless product.tags == "gift" %}
                   <div class="product-price-per">
                {% assign price_perUnit = price | divided_by: product.metafields.my_fields.cost_per_item | round: 2  %}
                 {% if product.metafields.my_fields.cost_per_item != blank %}
@@ -203,6 +203,7 @@
                   Per Case
                 {% endif %}
                   </div>
+                  {% endunless %}
 
                   {% comment %} Add to Cart Button {% endcomment %}
                   <product-form class="product-form">
