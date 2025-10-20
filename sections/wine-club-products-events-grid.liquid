@@ -194,7 +194,7 @@
                       </span>              
                   </div>
                     {% endif %}
-                  {% unless product.tags == "gift" %}
+                  {% unless product.tags contains "gift" %}
                   <div class="product-price-per">
                {% assign price_perUnit = price | divided_by: product.metafields.my_fields.cost_per_item | round: 2  %}
                 {% if product.metafields.my_fields.cost_per_item != blank %}
