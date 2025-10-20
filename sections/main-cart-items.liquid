@@ -241,7 +241,6 @@
     {% assign compare_price = item.variant.compare_at_price %}
 {% assign original_price = item.original_line_price %}
 
-
 {%- if lowertags contains 'bronze' -%}
         {% if excluded_product_ids contains item.product.id %}
           {% if compare_price %}
@@ -274,7 +273,7 @@
               </span>
             {% endif %}
           {% else %}
-            <!-- Default Silver Discount -->
+            <!-- Default bronze Discount -->
             <span class="price price--end discounted-price">
               {{ original_price | money | replace: ",", " " }}
             </span>
@@ -283,10 +282,6 @@
             </span>
           {% endif %}
         {% endif %}
-
-
-
-
       {%- elsif lowertags contains 'silver' -%}
         {% if excluded_product_ids contains item.product.id %}
           {% if compare_price %}
