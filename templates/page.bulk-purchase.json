@@ -29,7 +29,6 @@
             "background_image": "shopify://shop_images/Bulk_Wine_Purchases.png",
             "image_overlay": "#000000",
             "overlay_opacity": 40,
-            "Heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "Larger",
             "paragarh_p2": "Volume Orders",
@@ -48,18 +47,7 @@
       "settings": {
         "background_image": "shopify://shop_images/DSC_5580.jpg",
         "image_overlay": "",
-        "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "",
-        "paragarh_p2": "",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "MAKE US PART OF YOUR SPECIAL EVENT",
-        "paragarh_2": "",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-wines",
-        "btn_main_link": ""
+        "overlay_opacity": 30
       }
     },
     "spacer_xNNUaN": {

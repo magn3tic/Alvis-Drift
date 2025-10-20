@@ -42,6 +42,7 @@
         },
         "slider_eiynBD": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner.jpg",
             "mobile_background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner_Mobile.jpg",
@@ -58,19 +59,39 @@
             "side_btn_text": "",
             "side_btn_link": "https://alvisdrift.co.za/collections/signature-range"
           }
+        },
+        "slider_hXPgKV": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis_Drift_Home_Banner.jpg",
+            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Home_Banner_mobile.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Signature",
+            "paragarh_p2": "Selection",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "",
+            "paragarh_2": "",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
         }
       },
       "block_order": [
         "slider_MQBTbV",
-        "slider_eiynBD"
+        "slider_eiynBD",
+        "slider_hXPgKV"
       ],
       "settings": {
         "background_image": "shopify://shop_images/hero-secton-bg.png",
         "image_overlay": "#ffffff",
         "overlay_opacity": 0,
-        "blurb": "<p><strong>From 25 Sep to 19 Oct</strong><br/>Award-winning wines, sunny-day favourites – now at unmissable prices.</p>",
+        "blurb": "<p><strong>YES! IN A WORLD OF NO<br/></strong>In a world full of no, the Signature Selection is an easy yes. With its fruit-forward flavours, award-winning quality, and price tag under R100, the Signature Selection is made for spontaneous moments and honest connections.</p>",
         "right_btn_text": "SHOP NOW",
-        "right_btn_link": "",
+        "right_btn_link": "https://alvisdrift.co.za/collections/signature-range",
         "anchor_link": "product-collection"
       }
     },
