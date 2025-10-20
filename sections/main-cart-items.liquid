@@ -240,8 +240,9 @@
   {%- if settings.member-discount == "enable" -%}
     {% assign compare_price = item.variant.compare_at_price %}
 {% assign original_price = item.original_line_price %}
-        
-    {%- if lowertags contains 'silver' -%}
+
+
+{%- if lowertags contains 'bronze' -%}
         {% if excluded_product_ids contains item.product.id %}
           {% if compare_price %}
             {% if compare_price > original_price %}
@@ -282,6 +283,51 @@
             </span>
           {% endif %}
         {% endif %}
+
+
+
+
+      {%- elsif lowertags contains 'silver' -%}
+        {% if excluded_product_ids contains item.product.id %}
+          {% if compare_price %}
+            {% if compare_price > original_price %}
+              <span class = "price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
+              {% endif %}
+            <span class="price price--end no-discount">
+              {{ original_price | money | replace: ",", " " }}
+            </span>
+              {% else %}
+            <span class="price price--end no-discount">
+              {{ original_price | money | replace: ",", " " }}
+            </span>
+            {% endif %}
+        {% else %}
+          {% if compare_price %}
+            {% if compare_price > original_price %}
+              <!-- Compare at Price -->
+              <span class="price price--end discounted-price">
+                <s>{{ compare_price | money | replace: ",", " " }}</s>
+              </span>
+              <!-- Discounted Price -->
+              <span class="price price--end">
+                {{ original_price | money | replace: ",", " " }}
+              </span>
+            {% else %}
+              <!-- No Discount Applied -->
+              <span class="price price--end no-discount">
+                {{ original_price | money | replace: ",", " " }}
+              </span>
+            {% endif %}
+          {% else %}
+            <!-- Default Silver Discount -->
+            <span class="price price--end discounted-price">
+              {{ original_price | money | replace: ",", " " }}
+            </span>
+            <span class="price price--end silver-discount">
+              {{ original_price | times: 0.90 | money | replace: ",", " " }}
+            </span>
+          {% endif %}
+        {% endif %}
         {%- elsif lowertags contains 'gold' -%}
         {% if excluded_product_ids contains item.product.id %}
           {% if compare_price %}
@@ -319,7 +365,7 @@
               {{ original_price | money | replace: ",", " " }}
             </span>
             <span class="price price--end gold-discount">
-              {{ original_price | times: 0.90 | money | replace: ",", " " }}
+              {{ original_price | times: 0.85 | money | replace: ",", " " }}
             </span>
           {% endif %}
         {% endif %}
