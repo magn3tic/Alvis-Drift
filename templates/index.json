@@ -121,6 +121,7 @@
       "blocks": {
         "item_rU48pK": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "Spring sale",
             "collectionCarasoul": "spring-sale-collection"
