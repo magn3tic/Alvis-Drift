@@ -61,7 +61,7 @@
       "type": "wine-club-hero-v2",
       "name": "Wine Club Hero V2",
       "settings": {
-        "subtitle_connected": "Alvi's Drift<br>Wine Club",
+        "subtitle_connected": "",
         "title_connected": "Alvi's Drift<br>\nWine Club",
         "blurb_connected": "",
         "image_connected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
@@ -69,7 +69,7 @@
         "show_button_connected": true,
         "button_text_connected": "SHOP NOW",
         "url_connected": "https://alvisdrift.co.za/collections/best-sellers",
-        "subtitle_disconnected": "Alvi's Drift<br>\nWine Club",
+        "subtitle_disconnected": "",
         "title_disconnected": "Alvi's Drift\nWine Club",
         "blurb_disconnected": "",
         "image_disconnected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
