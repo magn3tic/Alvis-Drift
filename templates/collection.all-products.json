@@ -24,7 +24,7 @@
             "background_image": "shopify://shop_images/Red_wine_website_header.jpg",
             "image_overlay": "",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "SHOP OUR",
             "paragarh_p2": "WINES &",
@@ -44,17 +44,9 @@
         "background_image": "shopify://shop_images/2_Content.webp",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#f8f2e6",
-        "video_banner": "",
-        "paragarh_p1": "SHOP OUR",
-        "paragarh_p2": "WINES &",
-        "paragarh_p3": "GIFTS",
-        "paragarh_p4": "",
-        "paragarh_1": "WELCOME TO OUR ONLINE SHOP",
-        "paragarh_2": "Browse our ranges of award-winning South African red, white, blended, rosé, sparkling, and dessert wines. Enjoy the convenience of having your purchase delivered straight to your door.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-wines",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "164211201435c7bdbd": {
@@ -194,7 +186,8 @@
       "settings": {
         "topheading": "OUR WINES",
         "subtitle-1": "",
-        "active_collection": "all-wines"
+        "active_collection": "all-wines",
+        "promo_badge": true
       }
     },
     "1642113859b1f1945f": {

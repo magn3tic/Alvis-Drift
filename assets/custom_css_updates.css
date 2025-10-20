@@ -234,7 +234,7 @@
 .product-price-per {
     font-size: 0.9em;
 }
-
+.col-sm{width:50%;}
 @media screen and (min-width: 750px) {
 
 .product-price-per {
@@ -258,7 +258,11 @@
   }
   
 }
-
+@media screen and (max-width:1450px) {
+.col-sm{
+  width:60%
+}
+}
 @media screen and (max-width:900px) {
   .f-logo-sc {
     margin: 20px auto 0;
@@ -530,7 +534,8 @@ button#checkout {
   align-content:center;
   height:100%;
 }
-.col-sm{width:50%;}
+
+
 .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:hover, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:hover:not(.inactive), .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:focus, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:active, .hs-form-401cab74-2819-4c67-8416-abb3e821d469_4f6b9470-0b5c-4246-a700-50402d04fd22 .hs-button:active:not(.inactive):not(.link){background:none !important;}
 
 .promo-label{
@@ -538,8 +543,7 @@ button#checkout {
   font-size:12px;
   line-height:1.5rem;
   font-weight:700;
-  padding-top:4px;
-  padding-bottom:10px
+  padding-top:4px
 }
 .termsCheckbox {
     text-align: left !important;

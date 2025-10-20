@@ -24,7 +24,7 @@
             "background_image": "shopify://shop_images/Alvis-Drift-Reserve-Range.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "Reserve",
             "paragarh_p2": "Range",
@@ -43,17 +43,9 @@
       "settings": {
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "",
-        "paragarh_p2": "",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "",
-        "paragarh_2": "",
-        "btn_text": "",
-        "btn_link": "",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "focus_text_text_only_3eEJrE": {
@@ -86,7 +78,8 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "reserve-range"
+        "active_collection": "reserve-range",
+        "promo_badge": true
       }
     },
     "1642115387ee485822": {

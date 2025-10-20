@@ -24,7 +24,7 @@
             "background_image": "shopify://shop_images/Alvis-Drift-Cap-Classique-Range.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "Cap",
             "paragarh_p2": "Classique",
@@ -43,17 +43,9 @@
       "settings": {
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "",
-        "paragarh_p2": "",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "",
-        "paragarh_2": "",
-        "btn_text": "",
-        "btn_link": "",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "focus_text_text_only_AB7fzR": {
@@ -86,7 +78,8 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "cap-classique-range"
+        "active_collection": "cap-classique-range",
+        "promo_badge": true
       }
     },
     "4c22084d-088c-4244-8877-bf7c968090a1": {
@@ -106,7 +99,8 @@
       "settings": {
         "topheading": "Our Other Sparkling Wines",
         "subtitle-1": "",
-        "active_collection": "sparkling-range"
+        "active_collection": "sparkling-range",
+        "promo_badge": false
       }
     },
     "gifts_grid_NaR9TB": {

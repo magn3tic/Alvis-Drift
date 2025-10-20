@@ -106,13 +106,6 @@
         "button_link": ""
       }
     },
-    "spacer_ggKm4H": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "50px"
-      }
-    },
     "focus_text_text_only_BfryVm": {
       "type": "Focus-Text-Text-Only",
       "settings": {
@@ -126,13 +119,6 @@
         "new_tab": true
       }
     },
-    "spacer_ba9xTP": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "50px"
-      }
-    },
     "1642344433cd8f2875": {
       "type": "Call-To-Action",
       "settings": {
@@ -140,7 +126,7 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "WINE CLUB",
-        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "detail_box_txt": "",
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }
@@ -301,9 +287,7 @@
     "1639677536f2892eaa",
     "1711806339a48fec37",
     "163968008729148d8c",
-    "spacer_ggKm4H",
     "focus_text_text_only_BfryVm",
-    "spacer_ba9xTP",
     "1642344433cd8f2875",
     "1639603063787a43d2",
     "16396031315c4c1f82"

@@ -22,17 +22,9 @@
         "background_image": "shopify://shop_images/Drinking-Wine-13.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "PREMIUM",
-        "paragarh_p2": "WINES",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "Our Top-Tier, Luxury Wines",
-        "paragarh_2": "Alvi’s Drift offers wine enthusiasts and serious collectors a number of exceptionally crafted wines. These are full-bodied, barrel-fermented wines of singular character and outstanding complexity, with excellent maturation potential.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-wines",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "product-grid": {
@@ -52,7 +44,8 @@
       "settings": {
         "topheading": "OUR LUXURY WINES",
         "subtitle-1": "",
-        "active_collection": "premium-wines"
+        "active_collection": "premium-wines",
+        "promo_badge": true
       }
     },
     "164210934350db4240": {

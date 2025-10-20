@@ -337,7 +337,7 @@
     ]
   },
   {
-    "name": "Members Discount",
+    "name": "Collection Section",
     "settings": [
       {
         "type": "select",
@@ -363,6 +363,40 @@
       },
       {
         "type": "select",
+        "id": "member-included-discount",
+        "label": "Enable/Disable Included Discount",
+        "default":"enable",
+        "options": [
+          {
+            "label": "Enable",
+            "value": "enable"
+          },
+          {
+            "label": "Disable",
+            "value": "disable"
+          }
+        ]
+      },
+      {
+        "type": "product_list",
+        "id": "product_list_included",
+        "label": "Included Product Discount 20%",
+        "limit": 24
+      },
+      {
+        "type": "product_list",
+        "id": "product_list_included-second",
+        "label": "Included Product Discount 15%",
+        "limit": 24
+      },
+      {
+        "type": "product_list",
+        "id": "product_list_included-third",
+        "label": "Included Product Discount 25%",
+        "limit": 24
+      },
+      {
+        "type": "select",
         "id": "discount-badge",
         "label": "Discount Badge",
         "default":"tier-icon",
@@ -374,6 +408,10 @@
           {
             "label": "Text",
             "value": "tier-text"
+          },
+          {
+            "label": "Badge",
+            "value": "tier-badge"
           }
         ]
       }

@@ -37,6 +37,7 @@
     loading="eager"
     alt="">
 </picture>
+
     {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
     {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
     {% assign opacity = block.settings.overlay_opacity %}       
@@ -63,6 +64,9 @@
       {% if section.settings.right_btn_link != blank %}
       <div class = "main_btn"><a href="{{ section.settings.right_btn_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
       {% endif %}
+      {% if section.settings.anchor_link != blank %}
+      <div class = "main_btn anchor"><a href="#{{ section.settings.anchor_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
+      {% endif %}
       </div>
 
         {% if block.settings.paragarh_1 != blank or block.settings.paragarh_2 != blank %}
@@ -77,6 +81,7 @@
         </div>
         </div> 
         {% endif %}
+
   </div>
     </div>         
     {% if block.settings.video_banner != blank %}
@@ -112,10 +117,13 @@
 </section>
 <style>
   .animate-reveal { {% if section.settings.heading_color != blank %}color: {{ section.settings.heading_color }};{% endif %} font-size: 70px;}
-</style>
+  @media (min-width:250px) and (max-width:900px) {font-size: 38px;line-height: 1.2em;}
+  </style>
 {% schema %}
 {
-  "name": "Page Header (Hero)",
+  "name": {
+    "en": "Page Header (Hero)"
+  },
   "class": "index-section",
   "settings": [
     {
@@ -151,6 +159,11 @@
       "type": "url",
       "id": "right_btn_link",
       "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "anchor_link",
+      "label": "Anchor Link (ID name here)"
     }
   ],
   "blocks":[
@@ -267,19 +280,23 @@
           "label": "Button Text"
         },
         {
-          "type": "url",
+          "type": "text",
           "id": "side_btn_link",
           "label": "Button Link"
         }
       ]
     }
   ],
-"presets": [
-  {
-    "name": "Page Header (Hero)",
-    "category": "Banner"
-  }
-]
+  "presets": [
+    {
+      "name": {
+        "en": "Page Header (Hero)"
+      },
+      "category": {
+        "en": "Banner"
+      }
+    }
+  ]
 }
 {% endschema %}
 {% stylesheet %}

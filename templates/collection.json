@@ -9,104 +9,130 @@
  */
 {
   "sections": {
-    "1639248035a16a435a": {
-      "type": "Page-Background-Colour",
-      "settings": {
-        "page_bg": "#2e112d"
-      }
-    },
-    "banner": {
-      "type": "Range-Header",
+    "hero_main_YxYBEQ": {
+      "type": "Hero-Main",
       "blocks": {
-        "3f3c051f-68fe-48bc-bf8a-58871c755c90": {
+        "slider_YkfcUY": {
           "type": "slider",
           "settings": {
-            "slider_link": ""
-          }
-        },
-        "4b213a1a-e32c-4af1-917d-4d410febf63d": {
-          "type": "slider",
-          "settings": {
-            "slider_link": ""
-          }
-        },
-        "c5648291-9f96-4fce-8ec1-ac4f4589cfa8": {
-          "type": "slider",
-          "settings": {
-            "slider_link": ""
+            "background_image": "shopify://shop_images/Alvi_s_Drift_Wines_16046b23-855a-4cc5-885d-bb58dfd940f8.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Shop",
+            "paragarh_p2": "Our Wines",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "",
+            "paragarh_2": "",
+            "side_btn_text": "",
+            "side_btn_link": ""
           }
         }
       },
       "block_order": [
-        "3f3c051f-68fe-48bc-bf8a-58871c755c90",
-        "4b213a1a-e32c-4af1-917d-4d410febf63d",
-        "c5648291-9f96-4fce-8ec1-ac4f4589cfa8"
+        "slider_YkfcUY"
       ],
+      "name": "Page Header (Hero)",
       "settings": {
-        "show_collection_description": true,
-        "show_collection_image": false,
-        "title": "<p>GREAT FOR THE PRICE OF GOOD</p>",
-        "description": "<p>sdfsdfsdf</p>",
-        "sub_title": "sdfsdfsd"
+        "background_image": "shopify://shop_images/Alvi_s_Drift_Wines_16046b23-855a-4cc5-885d-bb58dfd940f8.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "blurb": "<p>Find your favourite among our ranges of internationally acclaimed, award-winning South African red, white, blended, rosé, sparkling, and dessert wines – and have them conveniently delivered straight to your door.<br/><br/></p>",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
-    "1639247430b11975b9": {
-      "type": "Focus-Text-Image-Left",
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "disabled": true,
       "settings": {
-        "our-story-vid": "shopify://shop_images/the-wine-side.png",
-        "video_url": "",
-        "Heading_size": "h1",
-        "Heading_color": "#f8f2e6",
-        "title": "221 RANGE",
-        "video-sec-content-txt-1": "<p>Our range is the best</p>",
-        "button-txt": "",
-        "button_link": ""
+        "page_bg": "#2e112d"
+      }
+    },
+    "spacer_Ujk8Xn": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "100px"
       }
     },
     "product-grid": {
       "type": "Collections-Grid",
       "blocks": {
-        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
+        "item_xgjyCH": {
           "type": "item",
           "settings": {
-            "collection_heading": "",
+            "collection_heading": "SIGNATURE RANGE",
+            "collectionCarasoul": "signature-range"
+          }
+        },
+        "item_m63Nt8": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "221 RANGE",
             "collectionCarasoul": "221-range"
+          }
+        },
+        "item_QMc4hr": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "RESERVE RANGE",
+            "collectionCarasoul": "reserve-range"
+          }
+        },
+        "item_9jpKUc": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "ICON RANGE",
+            "collectionCarasoul": "icon-range"
+          }
+        },
+        "item_pNpEbe": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Flagship Range",
+            "collectionCarasoul": "flagship-range"
+          }
+        },
+        "item_LGFNR3": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "SPARKLING RANGE",
+            "collectionCarasoul": "sparkling-range"
+          }
+        },
+        "item_yW7GzX": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "CAP CLASSIQUE RANGE",
+            "collectionCarasoul": "cap-classique-range"
           }
         }
       },
       "block_order": [
-        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
+        "item_xgjyCH",
+        "item_m63Nt8",
+        "item_QMc4hr",
+        "item_9jpKUc",
+        "item_pNpEbe",
+        "item_LGFNR3",
+        "item_yW7GzX"
       ],
       "settings": {
         "topheading": "",
-        "subtitle-1": "Add Text",
-        "active_collection": ""
-      }
-    },
-    "1639247728bb3b5028": {
-      "type": "Logos",
-      "blocks": {
-        "1639247728c24078eb-0": {
-          "type": "item",
-          "settings": {
-            "logo_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "1639247728c24078eb-0"
-      ],
-      "settings": {
-        "title_text": "",
-        "Heading_color": "#f8f2e6"
+        "subtitle-1": "",
+        "active_collection": "signature-range",
+        "promo_badge": true
       }
     }
   },
   "order": [
+    "hero_main_YxYBEQ",
     "1639248035a16a435a",
-    "banner",
-    "1639247430b11975b9",
-    "product-grid",
-    "1639247728bb3b5028"
+    "spacer_Ujk8Xn",
+    "product-grid"
   ]
 }

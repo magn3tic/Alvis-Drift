@@ -1,7 +1,17 @@
 <section class="home-product-items product-items-sec bg-darkPurple">
   <div class="sec-inner">
     <div class="container">
-      <h1>{{ section.settings.topheading }}</h1>
+      <h2 class = "h1">{{ section.settings.topheading }}</h2>
+      {% comment %}
+      <div class="product-tabs">
+        <ul>
+          {%- for block in section.blocks -%}
+          {%- assign b_i = block.settings -%}
+          <li class="tabs-btn  {% if forloop.first == true %}current{% endif %}" data-tab="tab-{{ forloop.index }}">{{ b_i.collection_heading }}</li>
+          {%- endfor -%}	
+        </ul>
+      </div>
+      {% endcomment %}
       <div class="tabs-content">
         {%- for block in section.blocks -%}
         {%- assign c_i = block.settings -%}
@@ -15,7 +25,7 @@
               {{ product.featured_image | image_url: width: 400, format: 'webp' | image_tag: loading: 'lazy' }}
               </a>
               </div>
-              <div class="product-title">
+              <div class="product-title" style= "color: #E36653;">
                 <div class="sp-t"><a href="{{ product.url }}">{{ product.title }}</a></div>
               </div>
               {% if product.compare_at_price > product.price %}
@@ -60,6 +70,7 @@
             </div>
             </div>
             {%- endfor -%}
+
           </div>
         </div>
       </div>

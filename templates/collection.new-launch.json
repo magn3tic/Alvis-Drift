@@ -24,7 +24,7 @@
             "background_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "ALBERTUS",
             "paragarh_p2": "VILJOEN",
@@ -44,17 +44,9 @@
         "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_01.png",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "BEST",
-        "paragarh_p2": "SELLERS",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "OUR MOST POPULAR WINES",
-        "paragarh_2": "Alvi’s Drift wines are known internationally for their fruit-driven character and full-bodied complexity. This is a collection of our most-loved Alvi’s Drift wines, as indicated by sales and feedback from our customers.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-wines",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": ""
       }
     },
     "focus_text_text_only_JhezLt": {
@@ -88,7 +80,8 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "launch"
+        "active_collection": "launch",
+        "promo_badge": true
       }
     }
   },

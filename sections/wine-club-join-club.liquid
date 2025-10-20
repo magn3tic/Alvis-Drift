@@ -60,21 +60,20 @@
       </div>
     </div>
     <div class="awc-join-club-logged">
+     
       <div class=" awc-intro--col-v2 awc-points-balance ">
         <h3 class="h1">Your Balance</h3>
         <div class="awc-points">
           <strong>Point Balance:
           </strong>
-          <div id="points-container">13350</div>
+          <div id="points-container">[balance]</div>
         </div>
-        <p>
-          <small>
-            <em>*Please note that Membership point and tier updates can take up to 24 hours to update.</em>
-          </small>
-        </p>
+       
       </div>
+     
       {% if go_for %}
-        <div class="awc-intro--col-v2 awc-go-for">
+        <div class="awc-intro--col-v2 awc-go-for"> 
+          {% unless go_for_text == "Platinum" %}
           <h3 class="h1">Go for {{ go_for_text }}</h3>
           {% if go_for_image %}
             <figure>
@@ -87,8 +86,11 @@
             </figure>
           {% endif %}
           <p>{{ go_for_benefits }}</p>
-        </div>
+          {% endunless %}
+         </div> 
+   
       {% endif %}
+     
       {% unless go_for %}
         <div class="awc-intro--col-v2">
           <span class="awc-centered-balance">.</span>

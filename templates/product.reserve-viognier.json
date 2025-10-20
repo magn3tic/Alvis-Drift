@@ -102,7 +102,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2023:</strong>  13,3%</p>",
+            "text": "<p><strong>2024:</strong>  13,7%</p>",
             "Text_color": "#867065"
           }
         },
@@ -111,7 +111,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2023:  </strong>5,2 g/L</p>",
+            "text": "<p><strong>2024:  </strong>4,6 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -120,7 +120,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2023:  </strong>6,7 g/L</p>",
+            "text": "<p><strong>2024:  </strong>6,6 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -129,7 +129,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2023:</strong>  3,1</p>",
+            "text": "<p><strong>2024:</strong>  3,2</p>",
             "Text_color": "#867065"
           }
         }
@@ -426,7 +426,8 @@
       "settings": {
         "topheading": "OUR WHITE WINES",
         "subtitle-1": "",
-        "active_collection": "red-wines"
+        "active_collection": "red-wines",
+        "promo_badge": false
       }
     }
   },

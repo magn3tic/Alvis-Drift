@@ -54,13 +54,6 @@
         "right_btn_link": ""
       }
     },
-    "spacer_FfAAHb": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "50px"
-      }
-    },
     "164390650014af140d": {
       "type": "Focus-Text-Text-Only",
       "settings": {
@@ -68,7 +61,7 @@
         "Heading_color": "#ffffff",
         "title": "",
         "subtitle-1": "",
-        "subtitle-2": "<p></p><p><strong>Our wines are available in all leading South African supermarkets and liquor outlets.</strong></p><p><strong>Internationally, our wines are available in countries across Africa, North America, Europe, Eurasia, Central Asia and the Far East.</strong></p><p><strong>Should you require further country-specific reseller or distribution information for any of our wines, please do not hesitate to get in touch.</strong></p><p></p><p></p>",
+        "subtitle-2": "<p><strong>Our wines are available in all leading South African supermarkets and liquor outlets.</strong></p><p><strong>Internationally, our wines are available in countries across Africa, North America, Europe, Eurasia, Central Asia and the Far East.</strong></p><p><strong>Should you require further country-specific reseller or distribution information for any of our wines, please do not hesitate to get in touch.</strong></p>",
         "button_text": "",
         "button_link": "",
         "new_tab": true
@@ -604,22 +597,13 @@
       "settings": {
         "include_margins": false
       }
-    },
-    "spacer_rzMPnT": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "25px"
-      }
     }
   },
   "order": [
     "main",
     "1639603079ac59d760",
     "1639602940145c735b",
-    "spacer_FfAAHb",
     "164390650014af140d",
-    "spacer_rzMPnT",
     "16396031315c4c1f82",
     "163968008729148d8c",
     "1639727235616c1014",
