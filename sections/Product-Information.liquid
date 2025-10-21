@@ -1,3 +1,12 @@
+{% if customer.has_account %}
+  {% assign lowertags = customer.tags | downcase %}
+  {% assign excluded_product_ids = settings.product_list | map: "id" %}
+  {% assign included_product_ids_second = settings.product_list_included | map: "id" %}
+  {% assign included_product_ids = settings.product_list_included-second  | map: "id" %}
+  {% assign included_product_ids_third = settings.product_list_included-third  | map: "id" %}
+{% endif%}
+{%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
+
 {% comment %}theme-check-disable TemplateLength{% endcomment %}
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
@@ -11,7 +20,7 @@
 
 <script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
-{%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
+
 {%- if first_3d_model -%}
   {{ 'component-product-model.css' | asset_url | stylesheet_tag }}
   <link id="ModelViewerStyle" rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css" media="print" onload="this.media='all'">
@@ -82,12 +91,46 @@
                 <p>{{product.description}}</p>
               </div>
               
-              
-              {% if product.compare_at_price > product.price %}
+                {% if lowertags contains 'bronze'%}
+
+                    {% if excluded_product_ids contains product.id %}
+                      {% if product.compare_at_price > product.price %}
+                        <div class="product-price">
+                          <span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span>   
+                          <span class="current-price">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
+                        </div>
+                        {% else %}
+                          <div class="product-price excluded-disount">
+                        {{ product.price | money | remove: '.00' | replace: ",", " " }}
+                          </div>
+                        {% endif %}
+                        
+                        {% else %}
+                      {% if product.compare_at_price > product.price %}
+                        <div class="product-price">
+                          <span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span>
+                          <span class="current-price"> {{ product.price |times:0.95 | money | remove: '.00' | replace: ",", " " }}</span>
+                        </div>
+                        {% else %}
+                        <div class="product-price position-relative">
+                          <span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
+                          <span class="current-price">{{ product.price |times:0.95 | money | remove: '.00' | replace: ",", " " }}</span>
+                        </div>
+                        <div class = "silver-{{ settings.discount-badge }}"> 
+                          {% if settings.discount-badge == 'tier-text'%}Bronze Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                        {% endif %}
+                      {% endif %}
+
+                {% else %}
+                  {% if product.compare_at_price > product.price %}
               <div class="product-price"><span class="compare-price">{{ product.selected_or_first_available_variant.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
               {% else %}
               <div class="product-price">{{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
               {% endif %}
+                {% endif %}
+
+              
+              
               
               <div class="product-size">
                  {% if product.metafields.my_fields.cost_per_item %}
