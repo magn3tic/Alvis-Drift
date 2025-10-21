@@ -104,7 +104,7 @@
                         {{ product.price | money | remove: '.00' | replace: ",", " " }}
                           </div>
                         {% endif %}
-                        
+
                         {% else %}
                       {% if product.compare_at_price > product.price %}
                         <div class="product-price">
@@ -121,6 +121,62 @@
                         {% endif %}
                       {% endif %}
 
+                    {% elsif lowertags contains 'silver'%}
+                        {% if excluded_product_ids contains product.id %}
+                      {% if product.compare_at_price > product.price %}
+                        <div class="product-price">
+                          <span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span>   
+                          <span class="current-price">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
+                        </div>
+                        {% else %}
+                          <div class="product-price excluded-disount">
+                        {{ product.price | money | remove: '.00' | replace: ",", " " }}
+                          </div>
+                        {% endif %}
+
+                        {% else %}
+                      {% if product.compare_at_price > product.price %}
+                        <div class="product-price">
+                          <span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span>
+                          <span class="current-price"> {{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}</span>
+                        </div>
+                        {% else %}
+                        <div class="product-price position-relative">
+                          <span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
+                          <span class="current-price">{{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}</span>
+                        </div>
+                        <div class = "silver-{{ settings.discount-badge }}"> 
+                          {% if settings.discount-badge == 'tier-text'%}Bronze Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                        {% endif %}
+                      {% endif %}
+                    {% elsif lowertags contains 'gold'%}
+                      {% if excluded_product_ids contains product.id %}
+                      {% if product.compare_at_price > product.price %}
+                        <div class="product-price">
+                          <span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span>   
+                          <span class="current-price">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
+                        </div>
+                        {% else %}
+                          <div class="product-price excluded-disount">
+                        {{ product.price | money | remove: '.00' | replace: ",", " " }}
+                          </div>
+                        {% endif %}
+
+                        {% else %}
+                      {% if product.compare_at_price > product.price %}
+                        <div class="product-price">
+                          <span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span>
+                          <span class="current-price"> {{ product.price |times:0.85 | money | remove: '.00' | replace: ",", " " }}</span>
+                        </div>
+                        {% else %}
+                        <div class="product-price position-relative">
+                          <span class="compare-price silver-discount">{{ product.price | money | remove: '.00' | replace: ",", " " }}</span>
+                          <span class="current-price">{{ product.price |times:0.85 | money | remove: '.00' | replace: ",", " " }}</span>
+                        </div>
+                        <div class = "silver-{{ settings.discount-badge }}"> 
+                          {% if settings.discount-badge == 'tier-text'%}Bronze Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                        {% endif %}
+                      {% endif %}
                 {% else %}
                   {% if product.compare_at_price > product.price %}
               <div class="product-price"><span class="compare-price">{{ product.selected_or_first_available_variant.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
