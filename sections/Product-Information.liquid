@@ -146,7 +146,7 @@
                           <span class="current-price">{{ product.price |times:0.90 | money | remove: '.00' | replace: ",", " " }}</span>
                         </div>
                         <div class = "silver-{{ settings.discount-badge }}"> 
-                          {% if settings.discount-badge == 'tier-text'%}Bronze Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
+                          {% if settings.discount-badge == 'tier-text'%}Silver Member Discount{% elsif settings.discount-badge == 'tier-badge' %}5% sale Disc{% else %}<img src ="{{ settings.silver-image |img_url:master }}" width = "50" height = "50"> {% endif %}</div>
                         {% endif %}
                       {% endif %}
                     {% elsif lowertags contains 'gold'%}
