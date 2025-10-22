@@ -536,7 +536,8 @@ p.sub-title {
 
 .product-bx-outer {
     display: flex;
-    flex-wrap: wrap
+    flex-wrap: wrap;
+    justify-content:center
 }
 
 .dare-to-be-true {
