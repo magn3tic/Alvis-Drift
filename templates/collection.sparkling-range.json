@@ -45,7 +45,15 @@
         "overlay_opacity": 30,
         "blurb": "",
         "right_btn_text": "",
-        "right_btn_link": ""
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "spacer_n89P4f": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
       }
     },
     "focus_text_text_only_pUVjFV": {
@@ -205,6 +213,7 @@
   "order": [
     "1639248035a16a435a",
     "hero_main_Ykkqin",
+    "spacer_n89P4f",
     "focus_text_text_only_pUVjFV",
     "product-grid",
     "8c6f6d04-e973-4e87-806b-0bc5b3b1249e",
