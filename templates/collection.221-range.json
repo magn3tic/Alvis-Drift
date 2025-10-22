@@ -49,6 +49,13 @@
         "anchor_link": ""
       }
     },
+    "spacer_69k7yi": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
+      }
+    },
     "focus_text_text_only_fPPLfN": {
       "type": "Focus-Text-Text-Only",
       "settings": {
@@ -176,13 +183,6 @@
       "settings": {
         "title_text": "",
         "Heading_color": "#f8f2e6"
-      }
-    },
-    "spacer_69k7yi": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "25px"
       }
     }
   },
