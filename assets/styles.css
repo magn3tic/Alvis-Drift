@@ -4623,10 +4623,3 @@ header-drawer {
   visibility: hidden;
   ;
 }
-.age-header{
-  padding:10px 20px; 
-  font-size:30px;
-  letter-spacing: 3px !important; 
-  color: #D5C7BE;
-  line-height: 40px
-}
