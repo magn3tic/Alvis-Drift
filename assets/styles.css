@@ -4513,8 +4513,6 @@ button.t-link:hover {
 @media only screen and (max-width: 970px) {
     #age-gate {
         width:75%!important;
-        height: 45%!important;
-        border: 2px solid #d5c7be
     }
 
     .front-img-icon {
