@@ -2121,7 +2121,7 @@ p.sub-title {
 #age-gate .age-container {
   position: relative;
    z-index: 1;
-    max-width: 480px;
+    max-width: 450px;
     margin: 0 auto;
   padding: 50px 24px; 
   border-radius: 10px;
