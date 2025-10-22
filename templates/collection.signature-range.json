@@ -50,6 +50,13 @@
         "anchor_link": ""
       }
     },
+    "spacer_7xDzBx": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "100px"
+      }
+    },
     "focus_text_text_only_3qzFnW": {
       "type": "Focus-Text-Text-Only",
       "settings": {
@@ -207,6 +214,7 @@
   "order": [
     "1639248035a16a435a",
     "hero_main_PkLEzE",
+    "spacer_7xDzBx",
     "focus_text_text_only_3qzFnW",
     "product-grid",
     "16421090351c47438f",
