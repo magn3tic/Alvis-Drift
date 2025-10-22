@@ -45,7 +45,8 @@
         "overlay_opacity": 30,
         "blurb": "",
         "right_btn_text": "",
-        "right_btn_link": ""
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
     "focus_text_text_only_fPPLfN": {
@@ -55,7 +56,7 @@
         "Heading_color": "#ffffff",
         "title": "",
         "subtitle-1": "",
-        "subtitle-2": "<p>Crafted for food pairing, our multi-award-winning 221 wines include beautifully smooth single varietals and an impressive blend of various red cultivars. Perfect for celebrating your own heritage with a special meal, whether dining out or cooking with friends at home. This range invites wine enthusiasts to deepen their journey, offering the opportunity to explore more complex flavours and develop their palates.</p>",
+        "subtitle-2": "<p></p><p>Crafted for food pairing, our multi-award-winning 221 wines include beautifully smooth single varietals and an impressive blend of various red cultivars. Perfect for celebrating your own heritage with a special meal, whether dining out or cooking with friends at home. This range invites wine enthusiasts to deepen their journey, offering the opportunity to explore more complex flavours and develop their palates.</p>",
         "button_text": "",
         "button_link": "",
         "new_tab": true
@@ -176,11 +177,19 @@
         "title_text": "",
         "Heading_color": "#f8f2e6"
       }
+    },
+    "spacer_69k7yi": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "25px"
+      }
     }
   },
   "order": [
     "1639248035a16a435a",
     "3cedd762-10d3-4783-a12a-a7755f238c56",
+    "spacer_69k7yi",
     "focus_text_text_only_fPPLfN",
     "product-grid",
     "16421155221c48519d",
