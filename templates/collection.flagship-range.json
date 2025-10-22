@@ -24,7 +24,7 @@
             "background_image": "shopify://shop_images/Alvis-Drift-Verreaux-Flagship-Range.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "Verreaux",
             "paragarh_p2": "Flagship",
@@ -44,17 +44,17 @@
         "background_image": "shopify://shop_images/Alvis-Drift-Verreaux-Flagship-Range.jpg",
         "image_overlay": "",
         "overlay_opacity": 0,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "",
-        "paragarh_p2": "",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "",
-        "paragarh_2": "",
-        "btn_text": "",
-        "btn_link": "",
-        "btn_main_link": ""
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "spacer_XW6atX": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
       }
     },
     "focus_text_text_only_dy4cpD": {
@@ -87,7 +87,8 @@
       "settings": {
         "topheading": "",
         "subtitle-1": "",
-        "active_collection": "flagship-range"
+        "active_collection": "flagship-range",
+        "promo_badge": false
       }
     },
     "164210896940931286": {
@@ -189,6 +190,7 @@
   "order": [
     "1639248035a16a435a",
     "hero_main_HQgbp6",
+    "spacer_XW6atX",
     "focus_text_text_only_dy4cpD",
     "product-grid",
     "164210896940931286",
