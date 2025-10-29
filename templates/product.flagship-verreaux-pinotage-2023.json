@@ -115,7 +115,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#721326",
-            "text": "<p><strong>2023:</strong>  13,5%</p>",
+            "text": "<p><strong>2023:</strong>  13,6%</p>",
             "Text_color": "#2d5980"
           }
         },
@@ -124,7 +124,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#721326",
-            "text": "<p><strong>2023:</strong>  4,5 g/L</p>",
+            "text": "<p><strong>2023:</strong>  4,2 g/L</p>",
             "Text_color": "#2d5980"
           }
         },
@@ -133,7 +133,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#721326",
-            "text": "<p><strong>2023:</strong>  5,9 g/L</p>",
+            "text": "<p><strong>2023:</strong>  6,0 g/L</p>",
             "Text_color": "#2d5980"
           }
         },
@@ -142,7 +142,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#721326",
-            "text": "<p><strong>2023:</strong>  3,5</p>",
+            "text": "<p><strong>2023:</strong>  3,3</p>",
             "Text_color": "#2d5980"
           }
         }
