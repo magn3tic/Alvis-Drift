@@ -269,8 +269,10 @@
       ],
       "settings": {
         "topheading": "OUR RED WINES",
+        "heading-tag": false,
         "subtitle-1": "",
-        "active_collection": "red-wines"
+        "active_collection": "red-wines",
+        "promo_badge": false
       }
     }
   },
