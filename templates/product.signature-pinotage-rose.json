@@ -282,6 +282,7 @@
       ],
       "settings": {
         "topheading": "OUR ROSÉ WINES",
+        "heading-tag": false,
         "subtitle-1": "",
         "active_collection": "rose-wines",
         "promo_badge": false
