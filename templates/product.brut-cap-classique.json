@@ -296,8 +296,10 @@
       ],
       "settings": {
         "topheading": "OUR CAP CLASSIQUE & SPARKLING WINES",
+        "heading-tag": false,
         "subtitle-1": "",
-        "active_collection": "cap-classique-range"
+        "active_collection": "cap-classique-range",
+        "promo_badge": false
       }
     }
   },
