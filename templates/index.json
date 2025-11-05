@@ -189,6 +189,7 @@
       ],
       "settings": {
         "topheading": "",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "spring-sale-collection",
         "promo_badge": true
@@ -209,7 +210,8 @@
         "item_KkEeAE"
       ],
       "settings": {
-        "topheading": "WINE GIFTS"
+        "topheading": "WINE GIFTS",
+        "heading-tag": false
       }
     },
     "16397188493cb177a6": {
