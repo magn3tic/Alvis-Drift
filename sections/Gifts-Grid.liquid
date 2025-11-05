@@ -2,16 +2,6 @@
   <div class="sec-inner">
     <div class="container">
       <h2 class = "h1">{{ section.settings.topheading }}</h2>
-      {% comment %}
-      <div class="product-tabs">
-        <ul>
-          {%- for block in section.blocks -%}
-          {%- assign b_i = block.settings -%}
-          <li class="tabs-btn  {% if forloop.first == true %}current{% endif %}" data-tab="tab-{{ forloop.index }}">{{ b_i.collection_heading }}</li>
-          {%- endfor -%}	
-        </ul>
-      </div>
-      {% endcomment %}
       <div class="tabs-content">
         {%- for block in section.blocks -%}
         {%- assign c_i = block.settings -%}
