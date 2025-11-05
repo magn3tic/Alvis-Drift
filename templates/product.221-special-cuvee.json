@@ -281,8 +281,10 @@
       ],
       "settings": {
         "topheading": "ALL OUR BLENDS",
+        "heading-tag": false,
         "subtitle-1": "",
-        "active_collection": "blends"
+        "active_collection": "blends",
+        "promo_badge": false
       }
     }
   },
