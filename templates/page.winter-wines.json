@@ -50,7 +50,8 @@
         "overlay_opacity": 30,
         "blurb": "",
         "right_btn_text": "Shop Now",
-        "right_btn_link": "#red-winter-wines"
+        "right_btn_link": "#red-winter-wines",
+        "anchor_link": ""
       }
     },
     "focus_text_text_only_BEpDcR": {
@@ -201,9 +202,10 @@
       "name": "Collections Grid",
       "settings": {
         "topheading": "OUR RED WINES",
+        "heading-tag": false,
         "subtitle-1": "WINTER WARMERS",
         "active_collection": "winter-red-wines",
-        "hypertext": "red-winter-wines"
+        "promo_badge": false
       }
     },
     "focus_text_text_only_bU7YjX": {
