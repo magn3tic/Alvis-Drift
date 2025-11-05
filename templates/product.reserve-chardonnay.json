@@ -282,8 +282,10 @@
       ],
       "settings": {
         "topheading": "OUR WHITE WINES",
+        "heading-tag": false,
         "subtitle-1": "",
-        "active_collection": "white-wines"
+        "active_collection": "white-wines",
+        "promo_badge": false
       }
     }
   },
