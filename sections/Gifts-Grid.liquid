@@ -1,7 +1,7 @@
 <section class="home-product-items product-items-sec bg-darkPurple">
   <div class="sec-inner">
     <div class="container">
-      <h2 class = "h1">{{ section.settings.topheading }}</h2>
+      <{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>{{ section.settings.topheading }}</{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>
       <div class="tabs-content">
         {%- for block in section.blocks -%}
         {%- assign c_i = block.settings -%}
@@ -73,7 +73,13 @@
     "type": "text",
     "id": "topheading",
     "label": "Heading"
-    }
+    },
+    {
+      "type": "checkbox",
+      "default":true,
+      "id": "heading-tag",
+      "label": "Header Tag (H1)"
+    },
 
     ],
     "blocks": [
