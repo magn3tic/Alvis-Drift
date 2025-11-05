@@ -269,8 +269,10 @@
       ],
       "settings": {
         "topheading": "OUR RESERVE RANGE WINES",
+        "heading-tag": false,
         "subtitle-1": "",
-        "active_collection": "reserve-range"
+        "active_collection": "reserve-range",
+        "promo_badge": false
       }
     }
   },
