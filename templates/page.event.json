@@ -1,1 +1,152 @@
-{"sections":{"page_background_colour_azYn4M":{"type":"Page-Background-Colour","settings":{"page_bg":"#480115"}},"hero_main_xncpat":{"type":"Hero-Main","blocks":{"slider_bYgyB3":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/Alvi_s-Drift-Wine-Club-Members.jpg","image_overlay":"#000000","overlay_opacity":50,"Heading_color":"#ffffff","video_banner":"","paragarh_p1":"We've Saved","paragarh_p2":"You A Seat","paragarh_p3":"At Our Table","paragarh_p4":"","paragarh_1":"Please Join Us","paragarh_2":"Saturday, 19 August 2025 @ 16:00 for our xxxx"}}},"block_order":["slider_bYgyB3"],"settings":{"image_overlay":"","overlay_opacity":30,"Heading_color":"#ffffff","video_banner":"","paragarh_p1":"","paragarh_p2":"","paragarh_p3":"","paragarh_p4":"","paragarh_1":"","paragarh_2":"","btn_text":"","btn_link":""}},"main":{"type":"main-page","disabled":true,"settings":{}},"focus_text_image_left_Aqz3Mn":{"type":"Focus-Text-Image-Left","settings":{"our-story-vid":"shopify:\/\/shop_images\/221_SAUVIGNON_LAUNCH-54.jpg","video_url":"","Heading_size":"h1","Heading_color":"#ffffff","title":"Harvest Celebration","video-sec-content-txt-1":"<p>A new harvest, a new red wine maturation cellar in the making, a new website and a fresh, new look-and-feel for our brand. At Alvi’s Drift, we have so much to celebrate – and we’d love for you to be part of this special gathering at our third-generation Breede River Valley winery.<\/p><p>Please join us for a celebratory day of tasting our very best wines, feasting on dishes from much-loved family recipes, and enjoying some warm Boland hospitality at our family wine farm situated in the cool-climate wine ward of Scherpenheuwel, just outside of Worcester.<\/p>","button-txt":"","button_link":""}},"1711965442358e95d5":{"type":"apps","blocks":{"forms_inline_YttmX7":{"type":"shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a","settings":{"form_id":"90244","text_color":"#ffffff","button_background_color":"#c65336","button_label_color":"#ffffff","links_color":"#1878b9","errors_color":"#c65336","text_alignment":"center","form_alignment":"center","padding_top":60,"padding_bottom":60,"padding_right":0,"padding_left":0}}},"block_order":["forms_inline_YttmX7"],"settings":{"include_margins":false}},"focus_text_image_right_tTm6kH":{"type":"Focus-Text-Image-Right","settings":{"our-story-vid":"shopify:\/\/shop_images\/one-the-wine-side.png","right_video_url":"","Heading_size":"h2","Heading_color":"#ffffff","title":"We Make World-Class Wines, Not Compromises","video-sec-content-txt-1":"<p>While grapes from our 430 hectares of vineyards are coming into our cellar, we’ll be honouring our roots and rich heritage, with an optimistic, energised eye on the future.<br\/><br\/>Expect updates about our latest wines, a peek at our new, under-construction wine cellar, the announcement of some exciting future plans for our winery and the chance to return home with some rare and exclusive Alvi’s Drift wines from our family cellar.<\/p>","button-txt":"","button_link":""}},"focus_text_image_left_kDWQQG":{"type":"Focus-Text-Image-Left","settings":{"our-story-vid":"shopify:\/\/shop_images\/Shiraz_4.jpg","video_url":"","Heading_size":"h2","Heading_color":"#ffffff","title":"Our Story","video-sec-content-txt-1":"<p>We don’t strive to break even. We strive to break rules. To break barriers. To break through. We make it our goal to make waves, not excuses. To follow our gut, not the crowd. To know our heart, not our place.<\/p><p>At Alvi’s Drift, we’re committed to enriching people’s enjoyment of what truly matters. Inspiring more honest, more open and more spontaneous connections, more often.Pursuing a life well-lived over simply living well.<\/p><p>Celebrating taste as a matter of choice, not chance.We believe in the power of our will, not our won’t. In making our way, instead of just finding it.<\/p><p>It’s why you’ll never find us doing what’s expected. We’re too busy doing what we love.<\/p>","button-txt":"MORE","button_link":"shopify:\/\/pages\/about"}},"map_VLUGiP":{"type":"Map","settings":{"Heading":"ALVI'S DRIFT WINERY IS SITUATED IN SCHERPENHEUWEL, ABOUT 20 KILOMETERS SOUTH OF WORCESTER, SOUTH AFRICA","map_url":"<iframe src=\"https:\/\/www.google.com\/maps\/embed?pb=!1m18!1m12!1m3!1d3316.5151442652127!2d19.530228315207694!3d-33.77319298068268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcd87b05e2eea91%3A0x6c640f79cf372224!2sAlvi's%20Drift%20-%20No%20farm%20visits%20until%20further%20notice.!5e0!3m2!1sen!2sza!4v1639680134120!5m2!1sen!2sza\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"><\/iframe>","Heading_color":"#ffffff","button-txt":"","button_link":""}}},"order":["page_background_colour_azYn4M","hero_main_xncpat","main","focus_text_image_left_Aqz3Mn","1711965442358e95d5","focus_text_image_right_tTm6kH","focus_text_image_left_kDWQQG","map_VLUGiP"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "page_background_colour_azYn4M": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "hero_main_xncpat": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_bYgyB3": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 50,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "We've Saved",
+            "paragarh_p2": "You A Seat",
+            "paragarh_p3": "At Our Table",
+            "paragarh_p4": "",
+            "paragarh_1": "Please Join Us",
+            "paragarh_2": "Saturday, 19 August 2025 @ 16:00 for our xxxx",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_bYgyB3"
+      ],
+      "settings": {
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "focus_text_image_left_Aqz3Mn": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/221_SAUVIGNON_LAUNCH-54.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#ffffff",
+        "title": "Harvest Celebration",
+        "video-sec-content-txt-1": "<p>A new harvest, a new red wine maturation cellar in the making, a new website and a fresh, new look-and-feel for our brand. At Alvi’s Drift, we have so much to celebrate – and we’d love for you to be part of this special gathering at our third-generation Breede River Valley winery.</p><p>Please join us for a celebratory day of tasting our very best wines, feasting on dishes from much-loved family recipes, and enjoying some warm Boland hospitality at our family wine farm situated in the cool-climate wine ward of Scherpenheuwel, just outside of Worcester.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1711965442358e95d5": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_YttmX7": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "90244",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#c65336",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 60,
+            "padding_bottom": 60,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_YttmX7"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    },
+    "focus_text_image_right_tTm6kH": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/one-the-wine-side.png",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#ffffff",
+        "title": "We Make World-Class Wines, Not Compromises",
+        "video-sec-content-txt-1": "<p>While grapes from our 430 hectares of vineyards are coming into our cellar, we’ll be honouring our roots and rich heritage, with an optimistic, energised eye on the future.<br/><br/>Expect updates about our latest wines, a peek at our new, under-construction wine cellar, the announcement of some exciting future plans for our winery and the chance to return home with some rare and exclusive Alvi’s Drift wines from our family cellar.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "focus_text_image_left_kDWQQG": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Shiraz_4.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#ffffff",
+        "title": "Our Story",
+        "video-sec-content-txt-1": "<p>We don’t strive to break even. We strive to break rules. To break barriers. To break through. We make it our goal to make waves, not excuses. To follow our gut, not the crowd. To know our heart, not our place.</p><p>At Alvi’s Drift, we’re committed to enriching people’s enjoyment of what truly matters. Inspiring more honest, more open and more spontaneous connections, more often.Pursuing a life well-lived over simply living well.</p><p>Celebrating taste as a matter of choice, not chance.We believe in the power of our will, not our won’t. In making our way, instead of just finding it.</p><p>It’s why you’ll never find us doing what’s expected. We’re too busy doing what we love.</p>",
+        "button-txt": "MORE",
+        "button_link": "shopify://pages/about",
+        "button_type": "alvisBtn"
+      }
+    },
+    "map_VLUGiP": {
+      "type": "Map",
+      "settings": {
+        "Heading": "ALVI'S DRIFT WINERY IS SITUATED IN SCHERPENHEUWEL, ABOUT 20 KILOMETERS SOUTH OF WORCESTER, SOUTH AFRICA",
+        "map_url": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.5151442652127!2d19.530228315207694!3d-33.77319298068268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcd87b05e2eea91%3A0x6c640f79cf372224!2sAlvi's%20Drift%20-%20No%20farm%20visits%20until%20further%20notice.!5e0!3m2!1sen!2sza!4v1639680134120!5m2!1sen!2sza\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+        "Heading_color": "#ffffff",
+        "button-txt": "",
+        "button_link": ""
+      }
+    }
+  },
+  "order": [
+    "page_background_colour_azYn4M",
+    "hero_main_xncpat",
+    "main",
+    "focus_text_image_left_Aqz3Mn",
+    "1711965442358e95d5",
+    "focus_text_image_right_tTm6kH",
+    "focus_text_image_left_kDWQQG",
+    "map_VLUGiP"
+  ]
+}
