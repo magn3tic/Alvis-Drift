@@ -207,7 +207,8 @@
         "16421138599e0a1534-0"
       ],
       "settings": {
-        "topheading": "GIFTING COLLECTION"
+        "topheading": "GIFTING COLLECTION",
+        "heading-tag": false
       }
     },
     "164210934350db4240": {
