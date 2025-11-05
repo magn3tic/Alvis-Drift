@@ -85,6 +85,7 @@
       ],
       "settings": {
         "topheading": "",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "sparkling-range",
         "promo_badge": true
@@ -114,6 +115,7 @@
       ],
       "settings": {
         "topheading": "Our Cap Classique Range",
+        "heading-tag": false,
         "subtitle-1": "",
         "active_collection": "cap-classique-range",
         "promo_badge": true
@@ -135,7 +137,8 @@
       ],
       "name": "Gifts Grid",
       "settings": {
-        "topheading": "Gifts"
+        "topheading": "Gifts",
+        "heading-tag": false
       }
     },
     "1642109056cf30ac48": {
