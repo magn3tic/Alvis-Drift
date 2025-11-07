@@ -28,20 +28,8 @@
     "favicon": "shopify://shop_images/Alvis_Fabicon.png",
     "member-discount": "enable",
     "product_list": [
-      "exclusive-butter-tree-viognier-2023",
-      "wine-bottle-sabre",
-      "champagne-sabrage-and-sabre-engraving",
-      "icon-mixed-gift-box",
-      "icon-white-gift-box",
-      "nectarinia-gift-box",
-      "sparkling-brut-gift-box",
-      "champagne-stopper",
-      "best-of-2024-mixed-box",
-      "best-of-2024-white-box",
-      "signature-sauvignon-blanc-buy-2-get-1",
-      "signature-sauvignon-blanc-buy-4-get-2",
-      "taste-the-tiers-white-wine-mixed-case",
-      "reserve-drift-fusion-magnum"
+      "icon-albertus-viljoen-3-pack",
+      "verreaux-pinotage-2023"
     ],
     "member-included-discount": "enable",
     "discount-badge": "tier-text",
