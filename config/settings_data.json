@@ -28,7 +28,6 @@
     "favicon": "shopify://shop_images/Alvis_Fabicon.png",
     "member-discount": "enable",
     "product_list": [
-      "voucher",
       "exclusive-butter-tree-viognier-2023",
       "wine-bottle-sabre",
       "champagne-sabrage-and-sabre-engraving",
@@ -50,10 +49,10 @@
       "reserve-drift-fusion-magnum"
     ],
     "member-included-discount": "enable",
+    "discount-badge": "tier-text",
     "product_list_included": [],
     "product_list_included-second": [],
     "product_list_included-third": [],
-    "discount-badge": "tier-text",
     "discount_options": "0.9412",
     "silver-image": "shopify://shop_images/Silver.webp",
     "gold-image": "shopify://shop_images/Gold.webp",
