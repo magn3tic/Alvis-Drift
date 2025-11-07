@@ -358,8 +358,7 @@
       {
         "type": "product_list",
         "id": "product_list",
-        "label": "Excluded Product Discount",
-        "limit": 50
+        "label": "Excluded Product Discount"
       },
       {
         "type": "select",
