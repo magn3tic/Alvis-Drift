@@ -163,7 +163,7 @@
                       {% endif %}
                       {% assign promo = product.metafields.my_fields.promo_label %}
 
-                    {% if excluded_product_ids contains product.id and product.tag == "Gift"%}
+                    {% if excluded_product_ids contains product.id and product.tags == "Gift"%}
                       {% if promo != blank %}
                         {% if section.settings.promo_badge == true %}
                           <div class="promo-badge">
