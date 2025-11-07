@@ -230,6 +230,12 @@
     "wine_club_how_it_works_Pi4r66": {
       "type": "wine-club-how-it-works",
       "blocks": {
+        "bronze_benefit_wNzLFz": {
+          "type": "bronze_benefit",
+          "settings": {
+            "text": "5% Off All Non-Sale Cases"
+          }
+        },
         "bronze_benefit_w6MCcE": {
           "type": "bronze_benefit",
           "settings": {
@@ -248,16 +254,16 @@
             "text": "Early Access to New Releases"
           }
         },
-        "bronze_benefit_wNzLFz": {
-          "type": "bronze_benefit",
-          "settings": {
-            "text": "5% Off All Non-Sale Cases"
-          }
-        },
         "bronze_benefit_Fff6cJ": {
           "type": "bronze_benefit",
           "settings": {
             "text": "Join the club and receive instant 350 points"
+          }
+        },
+        "silver_benefit_H7pecz": {
+          "type": "silver_benefit",
+          "settings": {
+            "text": "10% Off All Non-Sale Cases"
           }
         },
         "silver_benefit_Y4hczk": {
@@ -284,10 +290,10 @@
             "text": "Invitation to A Virtual Wine Tasting"
           }
         },
-        "silver_benefit_H7pecz": {
-          "type": "silver_benefit",
+        "gold_benefit_VQK6p7": {
+          "type": "gold_benefit",
           "settings": {
-            "text": "10% Off All Non-Sale Cases"
+            "text": "15% Off All Non-Sale Cases"
           }
         },
         "gold_benefit_Tb4A6G": {
@@ -312,12 +318,6 @@
           "type": "gold_benefit",
           "settings": {
             "text": "Invitation to A Virtual Wine Tasting"
-          }
-        },
-        "gold_benefit_VQK6p7": {
-          "type": "gold_benefit",
-          "settings": {
-            "text": "15% Off All Non-Sale Cases"
           }
         },
         "gold_benefit_KW7aqX": {
@@ -418,21 +418,21 @@
         }
       },
       "block_order": [
+        "bronze_benefit_wNzLFz",
         "bronze_benefit_w6MCcE",
         "bronze_benefit_xCfbEx",
         "bronze_benefit_9bi9DA",
-        "bronze_benefit_wNzLFz",
         "bronze_benefit_Fff6cJ",
+        "silver_benefit_H7pecz",
         "silver_benefit_Y4hczk",
         "silver_benefit_Q9KaQY",
         "silver_benefit_LmBxkW",
         "silver_benefit_4wY7YJ",
-        "silver_benefit_H7pecz",
+        "gold_benefit_VQK6p7",
         "gold_benefit_Tb4A6G",
         "gold_benefit_dkjbbU",
         "gold_benefit_LGcLgA",
         "gold_benefit_Xd3qEG",
-        "gold_benefit_VQK6p7",
         "gold_benefit_KW7aqX",
         "gold_benefit_RMT6pE",
         "gold_benefit_YKRaat",
