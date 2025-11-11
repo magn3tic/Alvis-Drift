@@ -31,9 +31,10 @@
       ],
       "settings": {
         "topheading": "OUR BEST SELLERS",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "best-sellers",
-        "promo_badge": true
+        "promo_badge": false
       }
     },
     "164210934350db4240": {
