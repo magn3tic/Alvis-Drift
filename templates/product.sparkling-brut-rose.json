@@ -284,6 +284,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "SPARKLING WINES",
+            "collection_subheader": "",
             "collectionCarasoul": "sparkling-range"
           }
         },
@@ -291,6 +292,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "CAP CLASSIQUE WINES",
+            "collection_subheader": "",
             "collectionCarasoul": "cap-classique-range"
           }
         }
@@ -304,7 +306,7 @@
         "heading-tag": false,
         "subtitle-1": "",
         "active_collection": "sparkling-range",
-        "promo_badge": false
+        "promo_badge": true
       }
     }
   },
