@@ -46,7 +46,8 @@
         "overlay_opacity": 30,
         "blurb": "",
         "right_btn_text": "",
-        "right_btn_link": ""
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
     "focus_text_text_only_JhezLt": {
@@ -79,9 +80,10 @@
       ],
       "settings": {
         "topheading": "",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "launch",
-        "promo_badge": true
+        "promo_badge": false
       }
     }
   },
