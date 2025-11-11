@@ -2707,6 +2707,20 @@ summary.list-menu__item {
     text-align:center
 
 }
+promo-single-product{
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    background-color: #c05140;
+    width: 150px;
+    height: 150px;
+    padding: 40px 10px;
+    border-radius: 100%;
+    line-height: 1em;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
 @media only screen and (max-width: 1200px){
     .promo-badge{
     position:absolute;
