@@ -26,6 +26,8 @@
   {% assign show_section = true %}
 
 {% assign selected_collection = '' %}
+
+
 {% if section.settings.show == 'exclusive_collection' %}
   {% assign selected_collection = section.settings.collection_exclusive %}
 
@@ -125,7 +127,7 @@
                   
                   {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
                   {% comment %} End of Pricing and Discounts Logic {% endcomment %}
-                     
+                     {% if settings.member-discount == "enable" %}
                   {% if excluded_product_ids contains product.id %}
                   <div class="product-price" style="margin-bottom: 15px;text-align: center;">
 
@@ -254,15 +256,17 @@
                       </div>
                     {%- endform -%}
                   </product-form>
-
-                </div> 
+                {% endif %} 
+              </div>  
               {% endfor %}
+            
             </div> 
        
       {% else %}
         <p>No products found in the assigned collection.</p>
       {% endif %}
     {% endif %}
+    
     {%  if  section.settings.show == 'exclusive_events' %}  
       <div class="awc-hero--content">
         {% if section.settings.show_title %}
