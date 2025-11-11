@@ -128,7 +128,7 @@
                   {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
                   {% comment %} End of Pricing and Discounts Logic {% endcomment %}
                      
-                  {% if excluded_product_ids contains product.id %}
+                  {% if excluded_product_ids contains product.id or settings.member-discount == "enable" %}
                   <div class="product-price" style="margin-bottom: 15px;text-align: center;">
 
                     {% assign has_discount_20 = product.metafields.custom.product_discount_20 %}
