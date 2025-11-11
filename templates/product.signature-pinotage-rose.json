@@ -273,6 +273,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "rose-wines"
           }
         }
@@ -285,7 +286,7 @@
         "heading-tag": false,
         "subtitle-1": "",
         "active_collection": "rose-wines",
-        "promo_badge": false
+        "promo_badge": true
       }
     }
   },
