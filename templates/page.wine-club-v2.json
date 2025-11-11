@@ -79,30 +79,6 @@
         "url_disconnected": "https://alvisdrift.co.za/account/register/"
       }
     },
-    "wine_club_products_events_grid_9GLNNV": {
-      "type": "wine-club-products-events-grid",
-      "name": "Wine Club Products & Events Grid",
-      "settings": {
-        "show": "exclusive_wines",
-        "promo_badge": false,
-        "show_title": true,
-        "title": "Combos",
-        "sub-title": "",
-        "no-subtitle": true,
-        "bronze_collection": "sale-gift-box-home",
-        "silver_collection": "sale-gift-box-home",
-        "gold_collection": "sale-gift-box-home",
-        "platinum_collection": "",
-        "collection_exclusive": "",
-        "show_exclusive_collection_bronze": true,
-        "show_exclusive_collection_silver": true,
-        "show_exclusive_collection_gold": true,
-        "show_exclusive_collection_platinum": true,
-        "show_counter": false,
-        "start_point": 0,
-        "counter_text": "Stock Quantity"
-      }
-    },
     "wine_club_products_events_grid_cRYNQa": {
       "type": "wine-club-products-events-grid",
       "custom_css": [
@@ -127,6 +103,30 @@
         "show_exclusive_collection_silver": true,
         "show_exclusive_collection_gold": true,
         "show_exclusive_collection_platinum": false,
+        "show_counter": false,
+        "start_point": 0,
+        "counter_text": "Stock Quantity"
+      }
+    },
+    "wine_club_products_events_grid_9GLNNV": {
+      "type": "wine-club-products-events-grid",
+      "name": "Wine Club Products & Events Grid",
+      "settings": {
+        "show": "exclusive_wines",
+        "promo_badge": false,
+        "show_title": true,
+        "title": "Combos",
+        "sub-title": "",
+        "no-subtitle": true,
+        "bronze_collection": "sale-gift-box-home",
+        "silver_collection": "sale-gift-box-home",
+        "gold_collection": "sale-gift-box-home",
+        "platinum_collection": "",
+        "collection_exclusive": "",
+        "show_exclusive_collection_bronze": true,
+        "show_exclusive_collection_silver": true,
+        "show_exclusive_collection_gold": true,
+        "show_exclusive_collection_platinum": true,
         "show_counter": false,
         "start_point": 0,
         "counter_text": "Stock Quantity"
@@ -501,8 +501,8 @@
     "wine_club_hero_v2_y96K78",
     "wine_club_hero_v2_HVqDTq",
     "wine_club_hero_v2_6fAbp9",
-    "wine_club_products_events_grid_9GLNNV",
     "wine_club_products_events_grid_cRYNQa",
+    "wine_club_products_events_grid_9GLNNV",
     "wine_club_products_events_grid_eDmcgT",
     "wine_club_products_events_grid_VwCPAt",
     "wine_club_products_events_grid_drVBLG",
