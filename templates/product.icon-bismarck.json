@@ -319,6 +319,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "red-wines"
           }
         }
@@ -331,7 +332,7 @@
         "heading-tag": false,
         "subtitle-1": "",
         "active_collection": "red-wines",
-        "promo_badge": false
+        "promo_badge": true
       }
     }
   },
