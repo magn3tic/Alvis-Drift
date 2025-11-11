@@ -260,6 +260,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "reserve-range"
           }
         }
@@ -272,7 +273,7 @@
         "heading-tag": false,
         "subtitle-1": "",
         "active_collection": "reserve-range",
-        "promo_badge": false
+        "promo_badge": true
       }
     }
   },
