@@ -298,6 +298,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "white-wines"
           }
         }
@@ -307,8 +308,10 @@
       ],
       "settings": {
         "topheading": "OUR WHITE WINES",
+        "heading-tag": true,
         "subtitle-1": "",
-        "active_collection": "white-wines"
+        "active_collection": "white-wines",
+        "promo_badge": true
       }
     }
   },
