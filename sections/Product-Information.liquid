@@ -58,14 +58,10 @@
                   {% assign promo = product.metafields.my_fields.promo_label %}
             
               {% if promo != blank %}
-                {% if section.settings.promo_badge == true %}
                   <div class="promo-badge">
                       {{ promo }}
                   </div>
                   {% endif %}
-                {% endif %}
-
-
                 </div>
                 
                {% endfor %}
