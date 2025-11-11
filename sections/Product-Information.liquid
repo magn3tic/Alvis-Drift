@@ -52,7 +52,7 @@
 
               <div class="gallery-imgs-wrap">
                {% for image in product.images %}
-				<div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
+				<div class="gallery-img {% if forloop.first == true %}current {% endif %}" id="{{ image.id }}">
                   <img src="{{ image | product_img_url: 'original' }}" alt="" rel="preload">
                 </div>
                 
