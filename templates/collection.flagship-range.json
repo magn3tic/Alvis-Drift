@@ -77,6 +77,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "flagship-range"
           }
         }
@@ -86,9 +87,10 @@
       ],
       "settings": {
         "topheading": "",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "flagship-range",
-        "promo_badge": false
+        "promo_badge": true
       }
     },
     "164210896940931286": {
