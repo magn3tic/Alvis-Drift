@@ -272,6 +272,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "blends"
           }
         }
@@ -284,7 +285,7 @@
         "heading-tag": false,
         "subtitle-1": "",
         "active_collection": "blends",
-        "promo_badge": false
+        "promo_badge": true
       }
     }
   },
