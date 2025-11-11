@@ -24,7 +24,8 @@
         "overlay_opacity": 30,
         "blurb": "",
         "right_btn_text": "",
-        "right_btn_link": ""
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
     "product-grid": {
@@ -43,9 +44,10 @@
       ],
       "settings": {
         "topheading": "OUR ROSÉ WINES",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "rose-wines",
-        "promo_badge": true
+        "promo_badge": false
       }
     },
     "164210934350db4240": {
