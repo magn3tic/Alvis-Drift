@@ -163,20 +163,7 @@
                           {{ price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
                       {% endif %}
-                      {% assign promo = product.metafields.my_fields.promo_label %}
-
-                   
-                      {% if promo != blank %}
-                        {% if section.settings.promo_badge == true %}
-                          <div class="promo-badge">
-                              {{ promo }}
-                          </div>
-                          {% else %}
-                          <div class="promo-label">
-                              {{ promo }}
-                          </div>
-                          {% endif %}
-                        {% endif %}
+                      
                       
                     
                     {% else %}
@@ -258,7 +245,21 @@
                     {%- endform -%}
                   </product-form>
 
-                </div> 
+                </div>
+                {% assign promo = product.metafields.my_fields.promo_label %}
+
+                   
+                      {% if promo != blank %}
+                        {% if section.settings.promo_badge == true %}
+                          <div class="promo-badge">
+                              {{ promo }}
+                          </div>
+                          {% else %}
+                          <div class="promo-label">
+                              {{ promo }}
+                          </div>
+                          {% endif %}
+                        {% endif %} 
               {% endfor %}
             </div> 
        
