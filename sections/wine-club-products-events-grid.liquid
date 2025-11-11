@@ -244,22 +244,22 @@
                       </div>
                     {%- endform -%}
                   </product-form>
+            {% assign promo = product.metafields.my_fields.promo_label %}
 
+                              
+                                  {% if promo != blank %}
+                                    {% if section.settings.promo_badge == true %}
+                                      <div class="promo-badge">
+                                          {{ promo }}
+                                      </div>
+                                      {% else %}
+                                      <div class="promo-label">
+                                          {{ promo }}
+                                      </div>
+                                      {% endif %}
+                                    {% endif %} 
                 </div>
-                {% assign promo = product.metafields.my_fields.promo_label %}
-
-                   
-                      {% if promo != blank %}
-                        {% if section.settings.promo_badge == true %}
-                          <div class="promo-badge">
-                              {{ promo }}
-                          </div>
-                          {% else %}
-                          <div class="promo-label">
-                              {{ promo }}
-                          </div>
-                          {% endif %}
-                        {% endif %} 
+                
               {% endfor %}
             </div> 
        
