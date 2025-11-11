@@ -121,11 +121,10 @@
       "blocks": {
         "item_rU48pK": {
           "type": "item",
-          "disabled": true,
           "settings": {
-            "collection_heading": "Spring sale",
+            "collection_heading": "Gift Box",
             "collection_subheader": "",
-            "collectionCarasoul": "spring-sale-collection"
+            "collectionCarasoul": "sale-gift-box-home"
           }
         },
         "e1da377c-7a1d-4c54-80f0-ee4eb138fcb4": {
@@ -199,7 +198,7 @@
         "topheading": "",
         "heading-tag": true,
         "subtitle-1": "",
-        "active_collection": "spring-sale-collection",
+        "active_collection": "sale-gift-box-home",
         "promo_badge": true
       }
     },
