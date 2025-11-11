@@ -25,14 +25,16 @@
             "background_image": "shopify://shop_images/Wine-Club-Offers-Header.jpg",
             "image_overlay": "",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "WINE CLUB",
             "paragarh_p2": "MEMBERS'",
             "paragarh_p3": "SPECIAL OFFERS",
             "paragarh_p4": "",
             "paragarh_1": "",
-            "paragarh_2": "There are currently no members-only offers available."
+            "paragarh_2": "There are currently no members-only offers available.",
+            "side_btn_text": "",
+            "side_btn_link": ""
           }
         },
         "5975d606-75e4-4041-a762-5e3229c5ad00": {
@@ -41,14 +43,16 @@
             "background_image": "shopify://shop_images/WineClub_Banner.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 80,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "WINE CLUB",
             "paragarh_p2": "SPECIAL OFFERS",
             "paragarh_p3": "",
             "paragarh_p4": "",
             "paragarh_1": "LIMITED QUANTITIES",
-            "paragarh_2": "While Stock Lasts"
+            "paragarh_2": "While Stock Lasts",
+            "side_btn_text": "",
+            "side_btn_link": ""
           }
         }
       },
@@ -60,16 +64,10 @@
         "background_image": "shopify://shop_images/Wine-Club-Offers-Header.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "LIMITED",
-        "paragarh_p2": "OFFERS",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "",
-        "paragarh_2": "Enjoy our limited offers – while stocks last.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/gifts"
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
     "0a1a3ee2-7c65-4a0e-9980-731a98b46ebd": {
@@ -85,7 +83,8 @@
         "template--16476661121280__9ee39b9c-d746-4698-a6c1-4f5ed254b65b-1665353925b7ff6d1c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Check Back Soon"
+            "heading": "Check Back Soon",
+            "heading_size": true
           }
         },
         "template--16476661121280__9ee39b9c-d746-4698-a6c1-4f5ed254b65b-1665353925b7ff6d1c-1": {
@@ -113,6 +112,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "club-bronze"
           }
         }
@@ -122,8 +122,10 @@
       ],
       "settings": {
         "topheading": "EXCLUSIVE WINES",
+        "heading-tag": true,
         "subtitle-1": "TO WINE CLUB MEMBERS",
-        "active_collection": "club-bronze"
+        "active_collection": "club-bronze",
+        "promo_badge": true
       }
     },
     "64d30e84-18b3-4c8f-9d8a-46505a9e304d": {
@@ -142,7 +144,8 @@
       ],
       "disabled": true,
       "settings": {
-        "topheading": ""
+        "topheading": "",
+        "heading-tag": true
       }
     },
     "976a9640-2b4d-4dec-b081-c5bf5afc4c52": {
@@ -151,7 +154,8 @@
         "template--16476661121280__976a9640-2b4d-4dec-b081-c5bf5afc4c52-1665353925b7ff6d1c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Log In Before shopping"
+            "heading": "Log In Before shopping",
+            "heading_size": true
           }
         },
         "template--16476661121280__976a9640-2b4d-4dec-b081-c5bf5afc4c52-1665353925b7ff6d1c-1": {
