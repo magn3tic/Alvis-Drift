@@ -22,6 +22,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "dessert-wines"
           }
         }
@@ -31,8 +32,10 @@
       ],
       "settings": {
         "topheading": "OUR DESSERT WINES",
+        "heading-tag": true,
         "subtitle-1": "",
-        "active_collection": "dessert-wines"
+        "active_collection": "dessert-wines",
+        "promo_badge": true
       }
     },
     "164210934350db4240": {
