@@ -85,9 +85,10 @@
       ],
       "settings": {
         "topheading": "",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "221-range",
-        "promo_badge": true
+        "promo_badge": false
       }
     },
     "16421155221c48519d": {
