@@ -42,10 +42,9 @@
         },
         "slider_eiynBD": {
           "type": "slider",
-          "disabled": true,
           "settings": {
-            "background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner.jpg",
-            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Spring_Sale_banner_Mobile.jpg",
+            "background_image": "shopify://shop_images/Cheers_2025_Sale_Banner.png",
+            "mobile_background_image": "shopify://shop_images/Cheers_2025_Sale_banner_mobile.png",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
             "heading_color": "#ffffff",
@@ -62,6 +61,7 @@
         },
         "slider_hXPgKV": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis_Drift_Home_Banner.jpg",
             "mobile_background_image": "shopify://shop_images/Alvis_Drift_Home_Banner_mobile.jpg",
