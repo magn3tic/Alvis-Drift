@@ -2083,7 +2083,8 @@ p.sub-title {
 
 .tabs-content .product-price, .product-price, .current-price {
     font-size: 28px;
-    width: 100%
+    width: 100%;
+    text-align:center;
 }
 
 .hero-content {
