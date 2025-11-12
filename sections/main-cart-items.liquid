@@ -394,16 +394,18 @@
                   {{ item.original_line_price | times: 0.75 | money | replace: ",", " " }}
                 </span>
               {% else %}
-                {% assign compare_price = item.variant.compare_at_price %}
-                        {% assign original_price = item.original_line_price %}
-                        {% if compare_price > original_price %}
-                          <span class = "price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
-                        {% endif %}
+                
+                {% if compare_price > original_price %}
+                <span class = "price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
+                {% endif %}
                 <span class="price price--end">
                   {{ item.original_line_price | money | replace: ",", " " }}
                 </span>
               {% endif %}
             {% else %}
+              {% if compare_price > original_price %}
+                <span class = "price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
+                {% endif %}
               <span class="price price--end tags-not-included">
                 {{ item.original_line_price | money | replace: ",", " " }}
               </span>
