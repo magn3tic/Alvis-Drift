@@ -371,6 +371,8 @@
           </span>
         {%- endif -%}
           {%- elsif settings.member-included-discount == "enable" -%}
+            {% assign compare_price = item.variant.compare_at_price %}
+            {% assign original_price = item.original_line_price %}
             {% if lowertags contains 'bronze' or lowertags contains 'silver' or lowertags contains 'gold' %}
               {% if included_product_ids contains item.product.id %}
                 <span class="price price--end discounted-price">
