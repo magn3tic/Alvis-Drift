@@ -2081,7 +2081,7 @@ p.sub-title {
     font-weight: 600
 }
 
-.tabs-content .product-price, .product-price {
+.tabs-content .product-price, .product-price, .current-price {
     font-size: 28px;
     width: 100%
 }
