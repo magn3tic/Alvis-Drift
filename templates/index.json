@@ -43,8 +43,8 @@
         "slider_eiynBD": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/Cheers_2025_Sale_Banner.png",
-            "mobile_background_image": "shopify://shop_images/Cheers_2025_Sale_banner_mobile.png",
+            "background_image": "shopify://shop_images/Alvis_Drift_Cheers_to_2025_banner.png",
+            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Cheers_to_2025_Mobile.png",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
             "heading_color": "#ffffff",
