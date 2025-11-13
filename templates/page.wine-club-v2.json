@@ -66,7 +66,7 @@
         "blurb_connected": "<p>Climb The Tiers For Greater Future Discounts</p>",
         "image_connected_desktop": "shopify://shop_images/Alvis_Drift_Cheers_to_2025_banner.png",
         "image_connected_mobile": "shopify://shop_images/Alvis_Drift_Cheers_to_2025_Mobile.png",
-        "show_button_connected": true,
+        "show_button_connected": false,
         "button_text_connected": "SHOP NOW",
         "url_connected": "https://alvisdrift.co.za/collections/best-sellers",
         "subtitle_disconnected": "",
