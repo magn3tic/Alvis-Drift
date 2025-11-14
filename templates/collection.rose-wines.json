@@ -1,1 +1,72 @@
-{"sections":{"1639248035a16a435a":{"type":"Page-Background-Colour","settings":{"page_bg":"#480115"}},"16421087169fe104d9":{"type":"Hero-Main","disabled":true,"settings":{"background_image":"shopify:\/\/shop_images\/alvis-drift-awarded-m01.png","image_overlay":"","overlay_opacity":30,"blurb":"","right_btn_text":"","right_btn_link":"","anchor_link":""}},"product-grid":{"type":"Collections-Grid","blocks":{"82a8bb92-17dd-44c1-9572-5db0f1c097ec":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"rose-wines"}}},"block_order":["82a8bb92-17dd-44c1-9572-5db0f1c097ec"],"settings":{"topheading":"OUR ROSÉ WINES","heading-tag":true,"subtitle-1":"","active_collection":"rose-wines","promo_badge":false}},"164210934350db4240":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/wine-club-bg.png","image_overlay":false,"Heading_color":"#c65336","title":"WINE CLUB","detail_box_txt":"Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.","btn-txt":"FIND OUT MORE","btn-url":"shopify:\/\/pages\/club"}}},"order":["1639248035a16a435a","16421087169fe104d9","product-grid","164210934350db4240"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "16421087169fe104d9": {
+      "type": "Hero-Main",
+      "disabled": true,
+      "settings": {
+        "background_image": "shopify://shop_images/alvis-drift-awarded-m01.png",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "product-grid": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "rose-wines"
+          }
+        }
+      },
+      "block_order": [
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
+      ],
+      "settings": {
+        "topheading": "OUR ROSÉ WINES",
+        "heading-tag": true,
+        "subtitle-1": "",
+        "active_collection": "rose-wines",
+        "promo_badge": false
+      }
+    },
+    "164210934350db4240": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "16421087169fe104d9",
+    "product-grid",
+    "164210934350db4240"
+  ]
+}

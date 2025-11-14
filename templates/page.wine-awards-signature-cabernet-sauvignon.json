@@ -1,1 +1,478 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"1639603079ac59d760":{"type":"Page-Background-Colour","settings":{"page_bg":"#480115"}},"1639602940145c735b":{"type":"Hero-Main","blocks":{"1057803c-0dc6-4a23-b4c5-05ea3c33e322":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/Drinking-Wine-16.jpg","image_overlay":"#000000","overlay_opacity":50,"Heading_color":"#ffffff","video_banner":"","paragarh_p1":"SIGNATURE","paragarh_p2":"CABERNET SAUVIGNON","paragarh_p3":"AWARDS","paragarh_p4":"","paragarh_1":"Alvi’s Drift winery is home to several multi award-winning wines.","paragarh_2":"View the awards for our Cabernet Sauvignon vintages, in our Signature Range, below.","side_btn_text":"Buy Our Signature Cabernet Sauvignon","side_btn_link":"shopify:\/\/products\/signature-cabernet-sauvignon"}}},"block_order":["1057803c-0dc6-4a23-b4c5-05ea3c33e322"],"settings":{"background_image":"shopify:\/\/shop_images\/Alvi_s_Drink_Wine_Enjoyment_06.png","image_overlay":"#121212","overlay_opacity":75,"Heading_color":"#f8f2e6","video_banner":"","paragarh_p1":"SIGNATURE","paragarh_p2":"CABERNET SAUVIGNON","paragarh_p3":"AWARDS","paragarh_p4":"","paragarh_1":"Alvi’s Drift winery is home to several multi award-winning wines.","paragarh_2":"View the awards for our Cabernet Sauvignon vintages, in our Signature Range, below.","btn_text":"BUY OUR SIGNATURE CABERNET SAUVIGNON","btn_link":"shopify:\/\/products\/signature-cabernet-sauvignon","btn_main_link":""}},"tabled_information_ExxtFw":{"type":"Tabled-Information","blocks":{"row_7REemD":{"type":"row","settings":{"award":"NWC & Top 100","year":"2024","arward_level":"Double Gold"}},"row_rXnm8F":{"type":"row","settings":{"award":"Lumo Awards","year":"2024","arward_level":"Gold"}}},"block_order":["row_7REemD","row_rXnm8F"],"settings":{"main_heading":"Cabernet Sauvignon:  2022"}},"df689551-0537-4578-80b5-cd3c18d7124a":{"type":"Tabled-Information","blocks":{"6e2dd4a5-cc24-47b9-87fe-d2c9927bba2e":{"type":"row","settings":{"award":"Vitis Vinifera Awards","year":"2022","arward_level":"Gold"}}},"block_order":["6e2dd4a5-cc24-47b9-87fe-d2c9927bba2e"],"settings":{"main_heading":"Cabernet Sauvignon:  2021"}},"1643144192a36582e5":{"type":"Tabled-Information","blocks":{"260f95e9-0344-44d0-bb51-a93b17ba4377":{"type":"row","disabled":true,"settings":{"award":"NWC & Top 100","year":"2021","arward_level":"Double Silver"}},"1e61bf52-986d-48ef-97fe-23ec37c2d4b7":{"type":"row","settings":{"award":"Gilbert & Gaillard International Challenge","year":"2021","arward_level":"Best Value"}},"c79b5b2e-a9e3-453f-b168-de1a3c0f2b2e":{"type":"row","settings":{"award":"Gold Wine Awards","year":"2021","arward_level":"Gold"}}},"block_order":["260f95e9-0344-44d0-bb51-a93b17ba4377","1e61bf52-986d-48ef-97fe-23ec37c2d4b7","c79b5b2e-a9e3-453f-b168-de1a3c0f2b2e"],"settings":{"main_heading":"Cabernet Sauvignon:  2020"}},"1643144072fc60fc5e":{"type":"Tabled-Information","blocks":{"fc32615b-78f4-4de4-8305-08cb775fe040":{"type":"row","settings":{"award":"Gold Wine Awards","year":"2020","arward_level":"Top 10 Producer"}},"3ae61102-843e-49ea-b817-fb65b7b85f1c":{"type":"row","settings":{"award":"Ultra Value Wine Challenge","year":"2020 \/ 2021","arward_level":"Gold"}}},"block_order":["fc32615b-78f4-4de4-8305-08cb775fe040","3ae61102-843e-49ea-b817-fb65b7b85f1c"],"settings":{"main_heading":"Cabernet Sauvignon:  2019"}},"1643143963df311bb7":{"type":"Tabled-Information","blocks":{"a8c97906-52b8-4cd3-b2e8-0bc67f30cd31":{"type":"row","settings":{"award":"Vitis Vinifera Awards","year":"2019","arward_level":"Top 10 Producer"}},"40c658df-4c4a-422c-af25-c67841d645c3":{"type":"row","settings":{"award":"Vitis Vinifera Awards","year":"2019","arward_level":"Gold"}},"a011f2f0-25e6-46fe-b9ed-4abf717cd730":{"type":"row","disabled":true,"settings":{"award":"NWC & Top 100","year":"2019","arward_level":"Double Silver"}},"2c682f52-98c9-4c4e-af49-f2061ce0f27b":{"type":"row","disabled":true,"settings":{"award":"Veritas Awards","year":"2019","arward_level":"Bronze"}},"99c38ecd-f25d-473f-a4dc-555380522d5e":{"type":"row","disabled":true,"settings":{"award":"Ultra Value Wines Awards","year":"2019 \/ 2020","arward_level":"Silver"}},"b962776d-f49b-47c7-85a9-fb73dc1e434b":{"type":"row","disabled":true,"settings":{"award":"International Wine & Spirits Awards:  Spain","year":"2020","arward_level":"Silver"}}},"block_order":["a8c97906-52b8-4cd3-b2e8-0bc67f30cd31","40c658df-4c4a-422c-af25-c67841d645c3","a011f2f0-25e6-46fe-b9ed-4abf717cd730","2c682f52-98c9-4c4e-af49-f2061ce0f27b","99c38ecd-f25d-473f-a4dc-555380522d5e","b962776d-f49b-47c7-85a9-fb73dc1e434b"],"settings":{"main_heading":"Cabernet Sauvignon:  2018"}},"1643143855fc9a7b01":{"type":"Tabled-Information","blocks":{"bd24cd3e-d94e-4087-8ec3-0af8d406ece1":{"type":"row","settings":{"award":"Gilbert & Gaillard International Challenge","year":"2018","arward_level":"Smart Buy"}},"733cece6-bdd3-4b31-ae6a-29d06435f022":{"type":"row","settings":{"award":"Vitis Vinifera Awards","year":"2018","arward_level":"Gold"}},"163ad724-0085-4350-9b60-7c1041b31d14":{"type":"row","settings":{"award":"Gold Wine Awards","year":"2018","arward_level":"Gold"}},"1627fa19-3bda-4b83-9c25-8c875b2d8b90":{"type":"row","settings":{"award":"Ultra Value Wine Challenge","year":"2018 \/ 2019","arward_level":"Gold"}}},"block_order":["bd24cd3e-d94e-4087-8ec3-0af8d406ece1","733cece6-bdd3-4b31-ae6a-29d06435f022","163ad724-0085-4350-9b60-7c1041b31d14","1627fa19-3bda-4b83-9c25-8c875b2d8b90"],"settings":{"main_heading":"Cabernet Sauvignon:  2017"}},"16423667519a6836be":{"type":"Logos","blocks":{"1642366751d2473fd1-0":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Gold-Wine-Awards-Top-10.png","logo_link":"https:\/\/www.goldwineawards.com\/"}},"d14d4dbf-f407-4d53-b73e-df90db9c9845":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Gold-Wine-Awards.png","logo_link":"https:\/\/www.goldwineawards.com\/"}},"816919e6-8689-4675-a4fa-29b06c6886af":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Gilbert-_-Gaillard-Best-Value_e6052faf-bd44-486c-92cd-c36835e3ab8a.png","logo_link":"https:\/\/en.gilbertgaillard.com\/"}},"43178b72-1624-4cfc-a64d-f2b134df1544":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Vitis-Vinifera-Awards-Gold-2.png","logo_link":"https:\/\/www.vitisawards.com\/"}}},"block_order":["1642366751d2473fd1-0","d14d4dbf-f407-4d53-b73e-df90db9c9845","816919e6-8689-4675-a4fa-29b06c6886af","43178b72-1624-4cfc-a64d-f2b134df1544"],"settings":{"title_text":"","Heading_color":"#f8f2e6"}},"16430340119e659e4c":{"type":"Multi-Column-Content","blocks":{"56ea5e51-174b-4d9e-8910-364f7176c576":{"type":"column","settings":{"title":"FLAGSHIP RANGE","Title_color":"#480115","text":"<p><a href=\"\/pages\/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">Verreaux Pinotage<\/a><\/p>","Text_color":"#2d5980"}},"1643034010691e68fe-0":{"type":"column","settings":{"title":"ICON RANGE","Title_color":"#480115","text":"<p><a href=\"\/pages\/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chenin Blanc<\/a><\/p><p><a href=\"\/pages\/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chardonnay<\/a><\/p><p><a href=\"\/pages\/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Bismarck Blend<\/a><\/p>","Text_color":"#2d5980"}},"1643034010691e68fe-1":{"type":"column","settings":{"title":"RESERVE RANGE","Title_color":"#480115","text":"<p><a href=\"\/pages\/wine-awards-reserve-viognier\" target=\"_blank\" title=\"Wine Awards Reserve Viognier\">Viognier<\/a><\/p><p><a href=\"\/pages\/reserve-awards-cvc\" target=\"_blank\" title=\"Wine Awards Reserve CVC Blend\">CVC Blend<\/a><\/p><p><a href=\"\/pages\/reserve-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Reserve Sauvignon Blanc\">Sauvignon Blanc<\/a><\/p><p><a href=\"\/pages\/reserve-awards-drift-fusion\" target=\"_blank\" title=\"Wine Awards Reserve Drift Fusion Blend\">Drift Fusion Blend<\/a><\/p><p><a href=\"\/pages\/awards-reserve-chardonnay\" target=\"_blank\" title=\"Wine Awards Reserve Chardonnay\">Chardonnay<\/a><\/p><p><a href=\"\/pages\/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat Nectarinia<\/a><\/p><p><a href=\"\/pages\/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat de Frontignan<\/a><\/p>","Text_color":"#2d5980"}},"1643034010691e68fe-2":{"type":"column","settings":{"title":"221 RANGE","Title_color":"#480115","text":"<p><a href=\"\/pages\/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Chenin Blanc<\/a><\/p><p><a href=\"\/pages\/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Pinotage<\/a><\/p><p><a href=\"\/pages\/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Special Cuvée Blend<\/a><\/p>","Text_color":"#2d5980"}},"05dd72a3-069d-4b39-989e-de08931892e1":{"type":"column","settings":{"title":"SIGNATURE RANGE","Title_color":"#480115","text":"<p><a href=\"\/pages\/signature-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Signature Sauvignon Blanc\">Sauvignon Blanc<\/a><\/p><p><a href=\"\/pages\/signature-awards-chenin-blanc\" target=\"_blank\" title=\"Wine Awards Signature Chenin Blanc\">Chenin Blanc<\/a><\/p><p><a href=\"\/pages\/signature-awards-viognier\" target=\"_blank\" title=\"Wine Awards Signature Viognier\">Viognier<\/a><\/p><p><a href=\"\/pages\/signature-awards-chardonnay\" target=\"_blank\" title=\"Wine Awards Signature Chardonnay\">Chardonnay<\/a><\/p><p><a href=\"\/pages\/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage Rosé<\/a><\/p><p><a href=\"\/pages\/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage<\/a><\/p><p><a href=\"\/pages\/signature-awards-shiraz\" target=\"_blank\" title=\"Wine Awards Signature Shiraz\">Shiraz<\/a><\/p><p><a href=\"\/pages\/signature-awards-merlot\" target=\"_blank\" title=\"Wine Awards Signature Merlot\">Merlot<\/a><\/p>","Text_color":"#2d5980"}},"bbd2b331-6bb7-4bf6-abc3-2a2c6379f925":{"type":"column","settings":{"title":"SPARKLING RANGE","Title_color":"#480115","text":"<p><a href=\"\/pages\/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Rosé<\/a><\/p><p><a href=\"\/pages\/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Blanc de Blanc<\/a><\/p><p><a href=\"\/pages\/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Cap Classique<\/a><\/p><p><a href=\"\/pages\/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Nature Cap Classique<\/a><\/p><p><a href=\"\/pages\/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Thornlands MCC<\/a><\/p>","Text_color":"#2d5980"}},"af0d031d-5b54-45c0-8cb4-fac652753af9":{"type":"column","settings":{"title":"EXCLUSIVE RANGE","Title_color":"#480115","text":"<p><a href=\"\/pages\/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Chenin Blanc<\/a><\/p><p><a href=\"\/pages\/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Pinotage<\/a><\/p>","Text_color":"#2d5980"}},"3c17bccd-b195-4def-94af-f5231e74b02c":{"type":"column","settings":{"title":"EXPORT WINES","Title_color":"#480115","text":"<p><a href=\"\/pages\/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Rondebosch Wines<\/a><\/p><p><a href=\"\/pages\/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Cape Pride Wines<\/a><\/p>","Text_color":"#2d5980"}}},"block_order":["56ea5e51-174b-4d9e-8910-364f7176c576","1643034010691e68fe-0","1643034010691e68fe-1","1643034010691e68fe-2","05dd72a3-069d-4b39-989e-de08931892e1","bbd2b331-6bb7-4bf6-abc3-2a2c6379f925","af0d031d-5b54-45c0-8cb4-fac652753af9","3c17bccd-b195-4def-94af-f5231e74b02c"],"settings":{"Background_Colour":"#f8f2e6","title":"OUR AWARDS BY RANGE","Heading_color":"#f8f2e6","image_width":"full","image_ratio":"adapt","column_alignment":"left","background_style":"primary","button_label":"BUY OUR AWARD-WINNING SIGNATURE RANGE WINES","button_link":"shopify:\/\/collections\/signature-range","swipe_on_mobile":false}},"16423669557e20a789":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/Alvi_s_Drift_Wine_Club.png","image_overlay":false,"Heading_color":"#c65336","title":"WINE CLUB","detail_box_txt":"<p>This wine is ideal for enjoying with red meats such as beef sirloin, venison pie, fillet with a creamy pepper sauce; or a hearty oxtail or lamb stew. It will also complement any mature cheese; as well as dark chocolate (70-85% cacao).<\/p>","btn-txt":"FIND OUT MORE","btn-url":"shopify:\/\/pages\/club"}},"1711996057955575c3":{"type":"apps","blocks":{"forms_inline_3EXtdm":{"type":"shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a","settings":{"form_id":"89937","text_color":"#ffffff","button_background_color":"#c65336","button_label_color":"#ffffff","links_color":"#1878b9","errors_color":"#c65336","text_alignment":"center","form_alignment":"center","padding_top":60,"padding_bottom":0,"padding_right":0,"padding_left":0}}},"block_order":["forms_inline_3EXtdm"],"settings":{"include_margins":false}}},"order":["main","1639603079ac59d760","1639602940145c735b","tabled_information_ExxtFw","df689551-0537-4578-80b5-cd3c18d7124a","1643144192a36582e5","1643144072fc60fc5e","1643143963df311bb7","1643143855fc9a7b01","16423667519a6836be","16430340119e659e4c","16423669557e20a789","1711996057955575c3"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "1057803c-0dc6-4a23-b4c5-05ea3c33e322": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Drinking-Wine-16.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 50,
+            "video_banner": "",
+            "paragarh_p1": "SIGNATURE",
+            "paragarh_p2": "CABERNET SAUVIGNON",
+            "paragarh_p3": "AWARDS",
+            "paragarh_p4": "",
+            "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+            "paragarh_2": "View the awards for our Cabernet Sauvignon vintages, in our Signature Range, below.",
+            "side_btn_text": "Buy Our Signature Cabernet Sauvignon",
+            "side_btn_link": "shopify://products/signature-cabernet-sauvignon"
+          }
+        }
+      },
+      "block_order": [
+        "1057803c-0dc6-4a23-b4c5-05ea3c33e322"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+        "image_overlay": "#121212",
+        "overlay_opacity": 75
+      }
+    },
+    "tabled_information_ExxtFw": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "row_7REemD": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2024",
+            "arward_level": "Double Gold"
+          }
+        },
+        "row_rXnm8F": {
+          "type": "row",
+          "settings": {
+            "award": "Lumo Awards",
+            "year": "2024",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "row_7REemD",
+        "row_rXnm8F"
+      ],
+      "settings": {
+        "main_heading": "Cabernet Sauvignon:  2022"
+      }
+    },
+    "df689551-0537-4578-80b5-cd3c18d7124a": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "6e2dd4a5-cc24-47b9-87fe-d2c9927bba2e": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2022",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "6e2dd4a5-cc24-47b9-87fe-d2c9927bba2e"
+      ],
+      "settings": {
+        "main_heading": "Cabernet Sauvignon:  2021"
+      }
+    },
+    "1643144192a36582e5": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "260f95e9-0344-44d0-bb51-a93b17ba4377": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2021",
+            "arward_level": "Double Silver"
+          }
+        },
+        "1e61bf52-986d-48ef-97fe-23ec37c2d4b7": {
+          "type": "row",
+          "settings": {
+            "award": "Gilbert & Gaillard International Challenge",
+            "year": "2021",
+            "arward_level": "Best Value"
+          }
+        },
+        "c79b5b2e-a9e3-453f-b168-de1a3c0f2b2e": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "260f95e9-0344-44d0-bb51-a93b17ba4377",
+        "1e61bf52-986d-48ef-97fe-23ec37c2d4b7",
+        "c79b5b2e-a9e3-453f-b168-de1a3c0f2b2e"
+      ],
+      "settings": {
+        "main_heading": "Cabernet Sauvignon:  2020"
+      }
+    },
+    "1643144072fc60fc5e": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "fc32615b-78f4-4de4-8305-08cb775fe040": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2020",
+            "arward_level": "Top 10 Producer"
+          }
+        },
+        "3ae61102-843e-49ea-b817-fb65b7b85f1c": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2020 / 2021",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "fc32615b-78f4-4de4-8305-08cb775fe040",
+        "3ae61102-843e-49ea-b817-fb65b7b85f1c"
+      ],
+      "settings": {
+        "main_heading": "Cabernet Sauvignon:  2019"
+      }
+    },
+    "1643143963df311bb7": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "a8c97906-52b8-4cd3-b2e8-0bc67f30cd31": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2019",
+            "arward_level": "Top 10 Producer"
+          }
+        },
+        "40c658df-4c4a-422c-af25-c67841d645c3": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2019",
+            "arward_level": "Gold"
+          }
+        },
+        "a011f2f0-25e6-46fe-b9ed-4abf717cd730": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2019",
+            "arward_level": "Double Silver"
+          }
+        },
+        "2c682f52-98c9-4c4e-af49-f2061ce0f27b": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2019",
+            "arward_level": "Bronze"
+          }
+        },
+        "99c38ecd-f25d-473f-a4dc-555380522d5e": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "Ultra Value Wines Awards",
+            "year": "2019 / 2020",
+            "arward_level": "Silver"
+          }
+        },
+        "b962776d-f49b-47c7-85a9-fb73dc1e434b": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2020",
+            "arward_level": "Silver"
+          }
+        }
+      },
+      "block_order": [
+        "a8c97906-52b8-4cd3-b2e8-0bc67f30cd31",
+        "40c658df-4c4a-422c-af25-c67841d645c3",
+        "a011f2f0-25e6-46fe-b9ed-4abf717cd730",
+        "2c682f52-98c9-4c4e-af49-f2061ce0f27b",
+        "99c38ecd-f25d-473f-a4dc-555380522d5e",
+        "b962776d-f49b-47c7-85a9-fb73dc1e434b"
+      ],
+      "settings": {
+        "main_heading": "Cabernet Sauvignon:  2018"
+      }
+    },
+    "1643143855fc9a7b01": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "bd24cd3e-d94e-4087-8ec3-0af8d406ece1": {
+          "type": "row",
+          "settings": {
+            "award": "Gilbert & Gaillard International Challenge",
+            "year": "2018",
+            "arward_level": "Smart Buy"
+          }
+        },
+        "733cece6-bdd3-4b31-ae6a-29d06435f022": {
+          "type": "row",
+          "settings": {
+            "award": "Vitis Vinifera Awards",
+            "year": "2018",
+            "arward_level": "Gold"
+          }
+        },
+        "163ad724-0085-4350-9b60-7c1041b31d14": {
+          "type": "row",
+          "settings": {
+            "award": "Gold Wine Awards",
+            "year": "2018",
+            "arward_level": "Gold"
+          }
+        },
+        "1627fa19-3bda-4b83-9c25-8c875b2d8b90": {
+          "type": "row",
+          "settings": {
+            "award": "Ultra Value Wine Challenge",
+            "year": "2018 / 2019",
+            "arward_level": "Gold"
+          }
+        }
+      },
+      "block_order": [
+        "bd24cd3e-d94e-4087-8ec3-0af8d406ece1",
+        "733cece6-bdd3-4b31-ae6a-29d06435f022",
+        "163ad724-0085-4350-9b60-7c1041b31d14",
+        "1627fa19-3bda-4b83-9c25-8c875b2d8b90"
+      ],
+      "settings": {
+        "main_heading": "Cabernet Sauvignon:  2017"
+      }
+    },
+    "16423667519a6836be": {
+      "type": "Logos",
+      "blocks": {
+        "1642366751d2473fd1-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards-Top-10.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "816919e6-8689-4675-a4fa-29b06c6886af": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gilbert-_-Gaillard-Best-Value_e6052faf-bd44-486c-92cd-c36835e3ab8a.png",
+            "logo_link": "https://en.gilbertgaillard.com/"
+          }
+        },
+        "43178b72-1624-4cfc-a64d-f2b134df1544": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Vitis-Vinifera-Awards-Gold-2.png",
+            "logo_link": "https://www.vitisawards.com/"
+          }
+        }
+      },
+      "block_order": [
+        "1642366751d2473fd1-0",
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845",
+        "816919e6-8689-4675-a4fa-29b06c6886af",
+        "43178b72-1624-4cfc-a64d-f2b134df1544"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16430340119e659e4c": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "56ea5e51-174b-4d9e-8910-364f7176c576": {
+          "type": "column",
+          "settings": {
+            "title": "FLAGSHIP RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">Verreaux Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-0": {
+          "type": "column",
+          "settings": {
+            "title": "ICON RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chenin Blanc</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chardonnay</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Bismarck Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-1": {
+          "type": "column",
+          "settings": {
+            "title": "RESERVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/wine-awards-reserve-viognier\" target=\"_blank\" title=\"Wine Awards Reserve Viognier\">Viognier</a></p><p><a href=\"/pages/reserve-awards-cvc\" target=\"_blank\" title=\"Wine Awards Reserve CVC Blend\">CVC Blend</a></p><p><a href=\"/pages/reserve-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Reserve Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/reserve-awards-drift-fusion\" target=\"_blank\" title=\"Wine Awards Reserve Drift Fusion Blend\">Drift Fusion Blend</a></p><p><a href=\"/pages/awards-reserve-chardonnay\" target=\"_blank\" title=\"Wine Awards Reserve Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat Nectarinia</a></p><p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">Muscat de Frontignan</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-2": {
+          "type": "column",
+          "settings": {
+            "title": "221 RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Chenin Blanc</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Pinotage</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Special Cuvée Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "05dd72a3-069d-4b39-989e-de08931892e1": {
+          "type": "column",
+          "settings": {
+            "title": "SIGNATURE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/signature-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Signature Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/signature-awards-chenin-blanc\" target=\"_blank\" title=\"Wine Awards Signature Chenin Blanc\">Chenin Blanc</a></p><p><a href=\"/pages/signature-awards-viognier\" target=\"_blank\" title=\"Wine Awards Signature Viognier\">Viognier</a></p><p><a href=\"/pages/signature-awards-chardonnay\" target=\"_blank\" title=\"Wine Awards Signature Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage Rosé</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage</a></p><p><a href=\"/pages/signature-awards-shiraz\" target=\"_blank\" title=\"Wine Awards Signature Shiraz\">Shiraz</a></p><p><a href=\"/pages/signature-awards-merlot\" target=\"_blank\" title=\"Wine Awards Signature Merlot\">Merlot</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925": {
+          "type": "column",
+          "settings": {
+            "title": "SPARKLING RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Rosé</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Blanc de Blanc</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Nature Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Thornlands MCC</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "af0d031d-5b54-45c0-8cb4-fac652753af9": {
+          "type": "column",
+          "settings": {
+            "title": "EXCLUSIVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Chenin Blanc</a></p><p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "3c17bccd-b195-4def-94af-f5231e74b02c": {
+          "type": "column",
+          "settings": {
+            "title": "EXPORT WINES",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Rondebosch Wines</a></p><p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Cape Pride Wines</a></p>",
+            "Text_color": "#2d5980"
+          }
+        }
+      },
+      "block_order": [
+        "56ea5e51-174b-4d9e-8910-364f7176c576",
+        "1643034010691e68fe-0",
+        "1643034010691e68fe-1",
+        "1643034010691e68fe-2",
+        "05dd72a3-069d-4b39-989e-de08931892e1",
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925",
+        "af0d031d-5b54-45c0-8cb4-fac652753af9",
+        "3c17bccd-b195-4def-94af-f5231e74b02c"
+      ],
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "OUR AWARDS BY RANGE",
+        "Heading_color": "#f8f2e6",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "BUY OUR AWARD-WINNING SIGNATURE RANGE WINES",
+        "button_link": "shopify://collections/signature-range",
+        "swipe_on_mobile": false
+      }
+    },
+    "16423669557e20a789": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail_box_txt": "<p>This wine is ideal for enjoying with red meats such as beef sirloin, venison pie, fillet with a creamy pepper sauce; or a hearty oxtail or lamb stew. It will also complement any mature cheese; as well as dark chocolate (70-85% cacao).</p>",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "1711996057955575c3": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_3EXtdm": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "89937",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#c65336",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 60,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_3EXtdm"
+      ],
+      "settings": {
+        "include_margins": false
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "tabled_information_ExxtFw",
+    "df689551-0537-4578-80b5-cd3c18d7124a",
+    "1643144192a36582e5",
+    "1643144072fc60fc5e",
+    "1643143963df311bb7",
+    "1643143855fc9a7b01",
+    "16423667519a6836be",
+    "16430340119e659e4c",
+    "16423669557e20a789",
+    "1711996057955575c3"
+  ]
+}

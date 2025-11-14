@@ -1,1 +1,96 @@
-{"sections":{"1639248035a16a435a":{"type":"Page-Background-Colour","settings":{"page_bg":"#C2AB9B"}},"16421087169fe104d9":{"type":"Hero-Main","blocks":{"slider_6NwpFP":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/Alvis-Drift-Icon-Range-New-Label.jpg","image_overlay":"#000000","overlay_opacity":30,"heading_color":"#ffffff","video_banner":"","paragarh_p1":"ALBERTUS","paragarh_p2":"VILJOEN","paragarh_p3":"","paragarh_p4":"","paragarh_1":"Icon Range","paragarh_2":"New Label Launch","side_btn_text":"MORE","side_btn_link":"https:\/\/alvisdrift.co.za\/pages\/icon-albertus-viljoen\/"}}},"block_order":["slider_6NwpFP"],"settings":{"background_image":"shopify:\/\/shop_images\/Alvi_s_Drink_Wine_Enjoyment_01.png","image_overlay":"","overlay_opacity":30,"blurb":"","right_btn_text":"","right_btn_link":"","anchor_link":""}},"focus_text_text_only_JhezLt":{"type":"Focus-Text-Text-Only","disabled":true,"settings":{"text_transform":"uppercase","Heading_color":"#ffffff","title":"The Best Viognier","subtitle-1":"","subtitle-2":"<p>Renowned for our vast Viognier plantings, we are South Africa's top bottled wine producer of this exceptional wine. <\/p><p>We've won Best Viognier in South Africa.<br\/><strong>And now we've made it even better.<\/strong><\/p>","button_text":"","button_link":"","new_tab":true}},"product-grid":{"type":"Collections-Grid","blocks":{"82a8bb92-17dd-44c1-9572-5db0f1c097ec":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"launch"}}},"block_order":["82a8bb92-17dd-44c1-9572-5db0f1c097ec"],"settings":{"topheading":"","heading-tag":true,"subtitle-1":"","active_collection":"launch","promo_badge":false}}},"order":["1639248035a16a435a","16421087169fe104d9","focus_text_text_only_JhezLt","product-grid"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    },
+    "16421087169fe104d9": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_6NwpFP": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "ALBERTUS",
+            "paragarh_p2": "VILJOEN",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "Icon Range",
+            "paragarh_2": "New Label Launch",
+            "side_btn_text": "MORE",
+            "side_btn_link": "https://alvisdrift.co.za/pages/icon-albertus-viljoen/"
+          }
+        }
+      },
+      "block_order": [
+        "slider_6NwpFP"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_01.png",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "focus_text_text_only_JhezLt": {
+      "type": "Focus-Text-Text-Only",
+      "disabled": true,
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "The Best Viognier",
+        "subtitle-1": "",
+        "subtitle-2": "<p>Renowned for our vast Viognier plantings, we are South Africa's top bottled wine producer of this exceptional wine. </p><p>We've won Best Viognier in South Africa.<br/><strong>And now we've made it even better.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "product-grid": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "launch"
+          }
+        }
+      },
+      "block_order": [
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
+      ],
+      "settings": {
+        "topheading": "",
+        "heading-tag": true,
+        "subtitle-1": "",
+        "active_collection": "launch",
+        "promo_badge": false
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "16421087169fe104d9",
+    "focus_text_text_only_JhezLt",
+    "product-grid"
+  ]
+}

@@ -1,1 +1,227 @@
-{"sections":{"1639248035a16a435a":{"type":"Page-Background-Colour","settings":{"page_bg":"#6287A0"}},"hero_main_Ykkqin":{"type":"Hero-Main","blocks":{"slider_Nnz3eC":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/Alvis-Drift-Sparkling-Range.jpg","image_overlay":"#000000","overlay_opacity":30,"heading_color":"#ffffff","video_banner":"","paragarh_p1":"Sparkling","paragarh_p2":"Range","paragarh_p3":"","paragarh_p4":"","paragarh_1":"Elevate Every Moment","paragarh_2":"Elevate every moment with our easy-drinking, unpretentious sparkling wines that offer exceptional value. Bright, crisp, and pleasingly dry, this range features a Sparkling Brut Rosé and a Sparkling Brut Blanc de Blanc.","side_btn_text":"","side_btn_link":""}}},"block_order":["slider_Nnz3eC"],"settings":{"image_overlay":"","overlay_opacity":30,"blurb":"","right_btn_text":"","right_btn_link":"","anchor_link":""}},"spacer_n89P4f":{"type":"Spacer","name":"Spacer","settings":{"spacer_size":"50px"}},"focus_text_text_only_pUVjFV":{"type":"Focus-Text-Text-Only","settings":{"text_transform":"uppercase","Heading_color":"#ffffff","title":"","subtitle-1":"","subtitle-2":"<p>Try our Brut Rosé, a blend of Chardonnay and Pinot Noir, or our Brut Blanc de Blanc, made exclusively from Chardonnay. These quality, dry, sparkling wines are perfect for those shared moments that call for a bit of sparkle. Whether you’re celebrating a big occasion or simply adding a celebratory touch to any moment, these unpretentious, Brut sparkling wines – crafted for the discerning sparkling wine drinker – are the ideal choice.<\/p>","button_text":"","button_link":"","new_tab":true}},"product-grid":{"type":"Collections-Grid","blocks":{"82a8bb92-17dd-44c1-9572-5db0f1c097ec":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"sparkling-range"}}},"block_order":["82a8bb92-17dd-44c1-9572-5db0f1c097ec"],"settings":{"topheading":"","heading-tag":true,"subtitle-1":"","active_collection":"sparkling-range","promo_badge":false}},"8c6f6d04-e973-4e87-806b-0bc5b3b1249e":{"type":"Collections-Grid","blocks":{"template--15470254752000__8c6f6d04-e973-4e87-806b-0bc5b3b1249e-168167278796320118-0":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"cap-classique-range"}},"item_dMT8LH":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":""}}},"block_order":["template--15470254752000__8c6f6d04-e973-4e87-806b-0bc5b3b1249e-168167278796320118-0","item_dMT8LH"],"settings":{"topheading":"Our Cap Classique Range","heading-tag":false,"subtitle-1":"","active_collection":"cap-classique-range","promo_badge":true}},"gifts_grid_gLf4x9":{"type":"Gifts-Grid","blocks":{"item_dAyJQA":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"cap-classique-sparkling-gifts"}}},"block_order":["item_dAyJQA"],"name":"Gifts Grid","settings":{"topheading":"Gifts","heading-tag":false}},"1642109056cf30ac48":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/wine-club-bg.png","image_overlay":false,"Heading_color":"#c65336","title":"WINE CLUB","detail_box_txt":"Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.","btn-txt":"FIND OUT MORE","btn-url":"shopify:\/\/pages\/club"}},"1639247728bb3b5028":{"type":"Logos","blocks":{"1639247728c24078eb-0":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Platters-4.png","logo_link":"https:\/\/www.wineonaplatter.com\/"}},"c6db9cef-8cfc-464c-9b05-a7b602fa8931":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/NWC-Awards-Double-Gold_e1d7658b-67c9-4a95-b51b-9d455c7d3bb5.png","logo_link":"https:\/\/www.goldwineawards.com\/"}},"846ffeca-fadb-4247-9e64-421c10b2a6d0":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/SA-Wine-Index-Platinum.png","logo_link":"https:\/\/www.sawineindex.com\/"}},"971c805b-6aef-41b5-b0a0-887940813990":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Michelangelo-Award-Double-Gold.png","logo_link":"https:\/\/maiwsa.co.za\/"}},"a4d9217e-d625-401d-bd00-8f34a9a5110a":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/International-Wine-_-Spirits-90-94-Points-Gold.png","logo_link":"https:\/\/iwsc.net\/"}},"47ee947d-a6e0-4d31-84f1-6aceb5749653":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Catavinum-Awards-Gold.png","logo_link":"https:\/\/www.cwwsc.net\/"}}},"block_order":["1639247728c24078eb-0","c6db9cef-8cfc-464c-9b05-a7b602fa8931","846ffeca-fadb-4247-9e64-421c10b2a6d0","971c805b-6aef-41b5-b0a0-887940813990","a4d9217e-d625-401d-bd00-8f34a9a5110a","47ee947d-a6e0-4d31-84f1-6aceb5749653"],"settings":{"title_text":"","Heading_color":"#f8f2e6"}}},"order":["1639248035a16a435a","hero_main_Ykkqin","spacer_n89P4f","focus_text_text_only_pUVjFV","product-grid","8c6f6d04-e973-4e87-806b-0bc5b3b1249e","gifts_grid_gLf4x9","1642109056cf30ac48","1639247728bb3b5028"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#6287A0"
+      }
+    },
+    "hero_main_Ykkqin": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_Nnz3eC": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis-Drift-Sparkling-Range.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Sparkling",
+            "paragarh_p2": "Range",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "Elevate Every Moment",
+            "paragarh_2": "Elevate every moment with our easy-drinking, unpretentious sparkling wines that offer exceptional value. Bright, crisp, and pleasingly dry, this range features a Sparkling Brut Rosé and a Sparkling Brut Blanc de Blanc.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_Nnz3eC"
+      ],
+      "settings": {
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "spacer_n89P4f": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
+      }
+    },
+    "focus_text_text_only_pUVjFV": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "",
+        "subtitle-2": "<p>Try our Brut Rosé, a blend of Chardonnay and Pinot Noir, or our Brut Blanc de Blanc, made exclusively from Chardonnay. These quality, dry, sparkling wines are perfect for those shared moments that call for a bit of sparkle. Whether you’re celebrating a big occasion or simply adding a celebratory touch to any moment, these unpretentious, Brut sparkling wines – crafted for the discerning sparkling wine drinker – are the ideal choice.</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "product-grid": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "sparkling-range"
+          }
+        }
+      },
+      "block_order": [
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
+      ],
+      "settings": {
+        "topheading": "",
+        "heading-tag": true,
+        "subtitle-1": "",
+        "active_collection": "sparkling-range",
+        "promo_badge": false
+      }
+    },
+    "8c6f6d04-e973-4e87-806b-0bc5b3b1249e": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "template--15470254752000__8c6f6d04-e973-4e87-806b-0bc5b3b1249e-168167278796320118-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "cap-classique-range"
+          }
+        },
+        "item_dMT8LH": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": ""
+          }
+        }
+      },
+      "block_order": [
+        "template--15470254752000__8c6f6d04-e973-4e87-806b-0bc5b3b1249e-168167278796320118-0",
+        "item_dMT8LH"
+      ],
+      "settings": {
+        "topheading": "Our Cap Classique Range",
+        "heading-tag": false,
+        "subtitle-1": "",
+        "active_collection": "cap-classique-range",
+        "promo_badge": true
+      }
+    },
+    "gifts_grid_gLf4x9": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "item_dAyJQA": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "cap-classique-sparkling-gifts"
+          }
+        }
+      },
+      "block_order": [
+        "item_dAyJQA"
+      ],
+      "name": "Gifts Grid",
+      "settings": {
+        "topheading": "Gifts",
+        "heading-tag": false
+      }
+    },
+    "1642109056cf30ac48": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "1639247728bb3b5028": {
+      "type": "Logos",
+      "blocks": {
+        "1639247728c24078eb-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Platters-4.png",
+            "logo_link": "https://www.wineonaplatter.com/"
+          }
+        },
+        "c6db9cef-8cfc-464c-9b05-a7b602fa8931": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Gold_e1d7658b-67c9-4a95-b51b-9d455c7d3bb5.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "846ffeca-fadb-4247-9e64-421c10b2a6d0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/SA-Wine-Index-Platinum.png",
+            "logo_link": "https://www.sawineindex.com/"
+          }
+        },
+        "971c805b-6aef-41b5-b0a0-887940813990": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Award-Double-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "a4d9217e-d625-401d-bd00-8f34a9a5110a": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points-Gold.png",
+            "logo_link": "https://iwsc.net/"
+          }
+        },
+        "47ee947d-a6e0-4d31-84f1-6aceb5749653": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Catavinum-Awards-Gold.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        }
+      },
+      "block_order": [
+        "1639247728c24078eb-0",
+        "c6db9cef-8cfc-464c-9b05-a7b602fa8931",
+        "846ffeca-fadb-4247-9e64-421c10b2a6d0",
+        "971c805b-6aef-41b5-b0a0-887940813990",
+        "a4d9217e-d625-401d-bd00-8f34a9a5110a",
+        "47ee947d-a6e0-4d31-84f1-6aceb5749653"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "hero_main_Ykkqin",
+    "spacer_n89P4f",
+    "focus_text_text_only_pUVjFV",
+    "product-grid",
+    "8c6f6d04-e973-4e87-806b-0bc5b3b1249e",
+    "gifts_grid_gLf4x9",
+    "1642109056cf30ac48",
+    "1639247728bb3b5028"
+  ]
+}

@@ -1,1 +1,207 @@
-{"sections":{"1639248035a16a435a":{"type":"Page-Background-Colour","settings":{"page_bg":"#712f1f"}},"hero_main_fbUdXt":{"type":"Hero-Main","blocks":{"slider_QYzBFR":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/Alvis-Drift-Albertus-Viljoen-Icon-Range.jpg","image_overlay":"#000000","overlay_opacity":30,"heading_color":"#ffffff","video_banner":"","paragarh_p1":"Albertus","paragarh_p2":"Viljoen","paragarh_p3":"Icon Range","paragarh_p4":"","paragarh_1":"Pursuit of Excellence","paragarh_2":"Crafted for the discerning palate, our multi-award-winning Icon range wines stand shoulder-to-shoulder with the best in the world and exemplify our pursuit of excellence in all we do.","side_btn_text":"","side_btn_link":""}}},"block_order":["slider_QYzBFR"],"settings":{"image_overlay":"","overlay_opacity":30,"blurb":"","right_btn_text":"","right_btn_link":"","anchor_link":""}},"spacer_9BNCdt":{"type":"Spacer","name":"Spacer","settings":{"spacer_size":"50px"}},"focus_text_text_only_CaFzqn":{"type":"Focus-Text-Text-Only","settings":{"text_transform":"uppercase","Heading_color":"#ffffff","title":"","subtitle-1":"","subtitle-2":"<p>Full-bodied and barrel-fermented, these wines boast remarkable character and complexity, offering a rich elegance and a lingering finish. Our Albertus Viljoen Icon range embodies our winery’s unwavering commitment to perfection, showcasing excellence in every bottle.<\/p>","button_text":"","button_link":"","new_tab":true}},"product-grid":{"type":"Collections-Grid","blocks":{"82a8bb92-17dd-44c1-9572-5db0f1c097ec":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"icon-range"}}},"block_order":["82a8bb92-17dd-44c1-9572-5db0f1c097ec"],"settings":{"topheading":"","heading-tag":true,"subtitle-1":"","active_collection":"icon-range","promo_badge":false}},"16421089918c15802d":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/wine-club-bg.png","image_overlay":false,"Heading_color":"#c65336","title":"WINE CLUB","detail_box_txt":"Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.","btn-txt":"FIND OUT MORE","btn-url":"shopify:\/\/pages\/club"}},"1639247728bb3b5028":{"type":"Logos","blocks":{"1639247728c24078eb-0":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Platters-4.png","logo_link":"https:\/\/www.wineonaplatter.com\/"}},"229010df-09bf-4321-9cc6-e56f9d92a976":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/NWC-Champion.png","logo_link":"https:\/\/buybetterwine.com\/nwc-top-100\/"}},"6ef4ce6c-83f1-459c-ab36-deaffbf1dbad":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Sommeliers-Choice-Awards-Gold.png","logo_link":"https:\/\/sommelierschoiceawards.com\/"}},"9d5a7cb8-a6a6-46cc-ab75-80e46c914623":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/SA-Wine-Index-Platinum.png","logo_link":"https:\/\/www.sawineindex.com\/"}},"caeba61c-4899-45c1-bab6-8f9a306a8a19":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Michelangelo-Gold.png","logo_link":"https:\/\/maiwsa.co.za\/"}},"807ec3fe-f89d-4150-979b-3c5c880f8ef0":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/Veritas-Awards_825e96e8-eea9-44e7-b436-8a94381d7377.png","logo_link":"https:\/\/veritas.co.za\/"}},"f49e8f43-606e-4bdd-a1ac-25e806140392":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/S_hiraz-SA-Challenge-Top-3.png","logo_link":"https:\/\/shirazsa.co.za\/challenge\/"}},"a0f6aa43-81ea-480f-ad94-a2caa263182c":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/NWC-Awards-Double-Platinum.png","logo_link":"https:\/\/buybetterwine.com\/nwc-top-100\/"}},"857cd646-6d33-4cec-b7fb-dbd90d7a3063":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/International-Wine-_-Spirits-90-94-Points-Gold.png","logo_link":"https:\/\/iwsc.net\/"}},"b73534a4-3ecd-4db0-bf8a-606217153b68":{"type":"item","settings":{"logo_slider":"shopify:\/\/shop_images\/International-Wine-_-Spirits-90-94-Points.png","logo_link":"https:\/\/www.cwwsc.net\/"}}},"block_order":["1639247728c24078eb-0","229010df-09bf-4321-9cc6-e56f9d92a976","6ef4ce6c-83f1-459c-ab36-deaffbf1dbad","9d5a7cb8-a6a6-46cc-ab75-80e46c914623","caeba61c-4899-45c1-bab6-8f9a306a8a19","807ec3fe-f89d-4150-979b-3c5c880f8ef0","f49e8f43-606e-4bdd-a1ac-25e806140392","a0f6aa43-81ea-480f-ad94-a2caa263182c","857cd646-6d33-4cec-b7fb-dbd90d7a3063","b73534a4-3ecd-4db0-bf8a-606217153b68"],"settings":{"title_text":"","Heading_color":"#f8f2e6"}}},"order":["1639248035a16a435a","hero_main_fbUdXt","spacer_9BNCdt","focus_text_text_only_CaFzqn","product-grid","16421089918c15802d","1639247728bb3b5028"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#712f1f"
+      }
+    },
+    "hero_main_fbUdXt": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_QYzBFR": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis-Drift-Albertus-Viljoen-Icon-Range.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Albertus",
+            "paragarh_p2": "Viljoen",
+            "paragarh_p3": "Icon Range",
+            "paragarh_p4": "",
+            "paragarh_1": "Pursuit of Excellence",
+            "paragarh_2": "Crafted for the discerning palate, our multi-award-winning Icon range wines stand shoulder-to-shoulder with the best in the world and exemplify our pursuit of excellence in all we do.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_QYzBFR"
+      ],
+      "settings": {
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "spacer_9BNCdt": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
+      }
+    },
+    "focus_text_text_only_CaFzqn": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "",
+        "subtitle-2": "<p>Full-bodied and barrel-fermented, these wines boast remarkable character and complexity, offering a rich elegance and a lingering finish. Our Albertus Viljoen Icon range embodies our winery’s unwavering commitment to perfection, showcasing excellence in every bottle.</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "product-grid": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "icon-range"
+          }
+        }
+      },
+      "block_order": [
+        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
+      ],
+      "settings": {
+        "topheading": "",
+        "heading-tag": true,
+        "subtitle-1": "",
+        "active_collection": "icon-range",
+        "promo_badge": false
+      }
+    },
+    "16421089918c15802d": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "1639247728bb3b5028": {
+      "type": "Logos",
+      "blocks": {
+        "1639247728c24078eb-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Platters-4.png",
+            "logo_link": "https://www.wineonaplatter.com/"
+          }
+        },
+        "229010df-09bf-4321-9cc6-e56f9d92a976": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Champion.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "6ef4ce6c-83f1-459c-ab36-deaffbf1dbad": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Sommeliers-Choice-Awards-Gold.png",
+            "logo_link": "https://sommelierschoiceawards.com/"
+          }
+        },
+        "9d5a7cb8-a6a6-46cc-ab75-80e46c914623": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/SA-Wine-Index-Platinum.png",
+            "logo_link": "https://www.sawineindex.com/"
+          }
+        },
+        "caeba61c-4899-45c1-bab6-8f9a306a8a19": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "807ec3fe-f89d-4150-979b-3c5c880f8ef0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Veritas-Awards_825e96e8-eea9-44e7-b436-8a94381d7377.png",
+            "logo_link": "https://veritas.co.za/"
+          }
+        },
+        "f49e8f43-606e-4bdd-a1ac-25e806140392": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/S_hiraz-SA-Challenge-Top-3.png",
+            "logo_link": "https://shirazsa.co.za/challenge/"
+          }
+        },
+        "a0f6aa43-81ea-480f-ad94-a2caa263182c": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Platinum.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "857cd646-6d33-4cec-b7fb-dbd90d7a3063": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points-Gold.png",
+            "logo_link": "https://iwsc.net/"
+          }
+        },
+        "b73534a4-3ecd-4db0-bf8a-606217153b68": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        }
+      },
+      "block_order": [
+        "1639247728c24078eb-0",
+        "229010df-09bf-4321-9cc6-e56f9d92a976",
+        "6ef4ce6c-83f1-459c-ab36-deaffbf1dbad",
+        "9d5a7cb8-a6a6-46cc-ab75-80e46c914623",
+        "caeba61c-4899-45c1-bab6-8f9a306a8a19",
+        "807ec3fe-f89d-4150-979b-3c5c880f8ef0",
+        "f49e8f43-606e-4bdd-a1ac-25e806140392",
+        "a0f6aa43-81ea-480f-ad94-a2caa263182c",
+        "857cd646-6d33-4cec-b7fb-dbd90d7a3063",
+        "b73534a4-3ecd-4db0-bf8a-606217153b68"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "hero_main_fbUdXt",
+    "spacer_9BNCdt",
+    "focus_text_text_only_CaFzqn",
+    "product-grid",
+    "16421089918c15802d",
+    "1639247728bb3b5028"
+  ]
+}

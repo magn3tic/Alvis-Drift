@@ -271,7 +271,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "CAP CLASSIQUE WINES",
-            "collection_subheader": "",
             "collectionCarasoul": "cap-classique-range"
           }
         },
@@ -279,7 +278,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "SPARKLING WINES",
-            "collection_subheader": "",
             "collectionCarasoul": "sparkling-range"
           }
         }

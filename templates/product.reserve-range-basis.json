@@ -1,1 +1,316 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#867065"}},"main":{"type":"product-information","blocks":{"4a9ee308-4258-4003-b827-7d623c44942a":{"type":"collapsible_tab","disabled":true,"settings":{"heading":"Cultivars 2019","content":"<p>33%  Shiraz<br\/>23%  Durif<br\/>16%  Cabernet Sauvignon<br\/>10%  Pinotage<br\/>9%  Petit Verdot<br\/>7%  Grenache<br\/>2%  Viognier<\/p>","page":"","icon":"none","border":true}},"c5c9c1e6-6ca0-46e1-9bc4-4ae4112591d5":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/awards\" target=\"_blank\" title=\"Wine Awards\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"489993f1-0166-4720-a748-93b2dcdf71fd":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p>View all vintage fact sheets \/ tasting notes <a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here<\/a>.<br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"2104d49a-34c0-49d7-8d8c-ae96f4f36e10":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"a9428cd9-b80c-40ea-88e5-2c83bc1e8990":{"type":"share","settings":{"share_label":"Share This Page"}}},"block_order":["4a9ee308-4258-4003-b827-7d623c44942a","c5c9c1e6-6ca0-46e1-9bc4-4ae4112591d5","489993f1-0166-4720-a748-93b2dcdf71fd","2104d49a-34c0-49d7-8d8c-ae96f4f36e10","a9428cd9-b80c-40ea-88e5-2c83bc1e8990"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639223856bcb87c3a":{"type":"Logos","blocks":{"163922385675455466-0":{"type":"item","settings":{"logo_link":""}},"90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0":{"type":"item","settings":{"logo_link":""}}},"block_order":["163922385675455466-0","90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"],"disabled":true,"settings":{"title_text":"","Heading_color":"#f8f2e6"}},"16392371564aec5ac1":{"type":"Multi-Column-Content","blocks":{"163923715616dacea7-0":{"type":"column","settings":{"title":"ALCOHOL","Title_color":"#ffffff","text":"<p><strong>2019:<\/strong>  13,5%<strong><br\/>2020:<\/strong>  13,7%<\/p>","Text_color":"#867065"}},"163923715616dacea7-1":{"type":"column","settings":{"title":"RESIDUAL SUGAR","Title_color":"#ffffff","text":"<p><strong>2019:<\/strong>  4,5 g\/l<strong><br\/>2020:<\/strong>  5,5 g\/l<\/p>","Text_color":"#867065"}},"163923715616dacea7-2":{"type":"column","settings":{"title":"ACIDITY","Title_color":"#ffffff","text":"<p><strong>2019:<\/strong>  5,7 g\/l<strong><br\/>2020:<\/strong>  6,1 g\/l<\/p>","Text_color":"#867065"}},"aea1e924-be0e-4fad-bc4e-1959cf2c7e79":{"type":"column","settings":{"title":"pH","Title_color":"#ffffff","text":"<p><strong>2019:<\/strong>  3,5<strong><br\/>2020:<\/strong>  3,4<\/p>","Text_color":"#867065"}}},"block_order":["163923715616dacea7-0","163923715616dacea7-1","163923715616dacea7-2","aea1e924-be0e-4fad-bc4e-1959cf2c7e79"],"disabled":true,"settings":{"Background_Colour":"#aac4d3","title":"ANALYSIS","Heading_color":"#f8f2e6","image_width":"third","image_ratio":"adapt","column_alignment":"left","background_style":"none","button_label":"","button_link":"","swipe_on_mobile":false}},"image_with_overlay_text_tJjbr7":{"type":"Image-With-Overlay-Text","blocks":{"heading_Ua7xkE":{"type":"heading","settings":{"heading":"future-forward wines","heading_size":"medium"}},"text_V4Nm8c":{"type":"text","settings":{"text":""}},"buttons_rVBPEL":{"type":"buttons","settings":{"button_label_1":"discover more","button_link_1":"shopify:\/\/pages\/sustainability","button_style_secondary_1":false,"button_label_2":"","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading_Ua7xkE","text_V4Nm8c","buttons_rVBPEL"],"settings":{"image":"shopify:\/\/shop_images\/Website_banner_sustainability_00c60d8b-a6d1-4a64-8a6f-3b534904e9c1.jpg","image_height":"medium","adapt_height_first_image":true,"desktop_text_box_position":"center","show_text_box":true,"image_overlay_opacity":0,"color_scheme":"accent-2","stack_images_on_mobile":true,"show_text_below":true}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/White_Meat_Pairing_12.jpg","image_overlay":false,"Heading_color":"#2d5980","title":"SERVING SUGGESTION","detail_box_txt":"This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.","btn-txt":"","btn-url":""}},"1639224916778fd50c":{"type":"Focus-Text-Image-Right","settings":{"our-story-vid":"shopify:\/\/shop_images\/DSC_5742.jpg","right_video_url":"","Heading_size":"h2","Heading_color":"#aac4d3","title":"HERITAGE","video-sec-content-txt-1":"<p>The wine labels on bottles from our Reserve range feature an illustration of Alvi’s Drift, the low-water bridge over the Breede River cutting through the family farm. Our patriarch, Albertus Viljoen “Oupa Alvi” van der Merwe, was instrumental in having this bridge built back in 1930.<\/p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.<\/p><p>Our Alvi’s Drift Reserve range is the culmination of our pursuit of excellence in producing outstanding wines of unrivalled complexity.<\/p>","button-txt":"VIEW ALL OUR RESERVE RANGE WINES","button_link":"shopify:\/\/collections\/reserve-range","button_type":"alvisBtn"}},"1643896394d4685ade":{"type":"Focus-Text-Image-Left","settings":{"background_colour":"#00000000","our-story-vid":"shopify:\/\/shop_images\/DSC_5267.jpg","image_size":"100%","video_url":"","Heading_size":"h2","Heading_color":"#aac4d3","title":"ON THE VINES","video-sec-content-txt-1":"<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. <\/p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.<\/p>","button-txt":"","button_link":"","button_type":"alvisBtn"}},"1643897167b28bd4cf":{"type":"Focus-Text-Image-Right","settings":{"our-story-vid":"shopify:\/\/shop_images\/Cellar-02.jpg","right_video_url":"","Heading_size":"h2","Heading_color":"#aac4d3","title":"IN THE CELLAR","video-sec-content-txt-1":"<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.<\/p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.<\/p>","button-txt":"","button_link":"","button_type":"alvisBtn"}},"1639226365ec4bf8dd":{"type":"Focus-Text-Text-Only","settings":{"text_transform":"uppercase","Heading_color":"#ffffff","title":"","subtitle-1":"<p>\"Absolutely loved this blend, just placed another order!\"<\/p>","subtitle-2":"<p><em>- Wendy -<\/em><\/p>","button_text":"","button_link":"","new_tab":true}},"16392534101a01b24e":{"type":"Collections-Grid","blocks":{"16392534108f7600fd-0":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"red-wines"}}},"block_order":["16392534108f7600fd-0"],"settings":{"topheading":"OUR RED WINES","subtitle-1":"","active_collection":"red-wines"}}},"order":["1639248182bc55fb26","main","1639223856bcb87c3a","16392371564aec5ac1","image_with_overlay_text_tJjbr7","1639224403b97d22e1","1639224916778fd50c","1643896394d4685ade","1643897167b28bd4cf","1639226365ec4bf8dd","16392534101a01b24e"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#867065"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "4a9ee308-4258-4003-b827-7d623c44942a": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Cultivars 2019",
+            "content": "<p>33%  Shiraz<br/>23%  Durif<br/>16%  Cabernet Sauvignon<br/>10%  Pinotage<br/>9%  Petit Verdot<br/>7%  Grenache<br/>2%  Viognier</p>",
+            "page": "",
+            "icon": "none",
+            "border": true
+          }
+        },
+        "c5c9c1e6-6ca0-46e1-9bc4-4ae4112591d5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/awards\" target=\"_blank\" title=\"Wine Awards\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "489993f1-0166-4720-a748-93b2dcdf71fd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "2104d49a-34c0-49d7-8d8c-ae96f4f36e10": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share This Page"
+          }
+        }
+      },
+      "block_order": [
+        "4a9ee308-4258-4003-b827-7d623c44942a",
+        "c5c9c1e6-6ca0-46e1-9bc4-4ae4112591d5",
+        "489993f1-0166-4720-a748-93b2dcdf71fd",
+        "2104d49a-34c0-49d7-8d8c-ae96f4f36e10",
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639223856bcb87c3a": {
+      "type": "Logos",
+      "blocks": {
+        "163922385675455466-0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163922385675455466-0",
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16392371564aec5ac1": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "163923715616dacea7-0": {
+          "type": "column",
+          "settings": {
+            "title": "ALCOHOL",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>2019:</strong>  13,5%<strong><br/>2020:</strong>  13,7%</p>",
+            "Text_color": "#867065"
+          }
+        },
+        "163923715616dacea7-1": {
+          "type": "column",
+          "settings": {
+            "title": "RESIDUAL SUGAR",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>2019:</strong>  4,5 g/l<strong><br/>2020:</strong>  5,5 g/l</p>",
+            "Text_color": "#867065"
+          }
+        },
+        "163923715616dacea7-2": {
+          "type": "column",
+          "settings": {
+            "title": "ACIDITY",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>2019:</strong>  5,7 g/l<strong><br/>2020:</strong>  6,1 g/l</p>",
+            "Text_color": "#867065"
+          }
+        },
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79": {
+          "type": "column",
+          "settings": {
+            "title": "pH",
+            "Title_color": "#ffffff",
+            "text": "<p><strong>2019:</strong>  3,5<strong><br/>2020:</strong>  3,4</p>",
+            "Text_color": "#867065"
+          }
+        }
+      },
+      "block_order": [
+        "163923715616dacea7-0",
+        "163923715616dacea7-1",
+        "163923715616dacea7-2",
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
+      ],
+      "disabled": true,
+      "settings": {
+        "Background_Colour": "#aac4d3",
+        "title": "ANALYSIS",
+        "Heading_color": "#f8f2e6",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "image_with_overlay_text_tJjbr7": {
+      "type": "Image-With-Overlay-Text",
+      "blocks": {
+        "heading_Ua7xkE": {
+          "type": "heading",
+          "settings": {
+            "heading": "future-forward wines",
+            "heading_size": "medium"
+          }
+        },
+        "text_V4Nm8c": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "buttons_rVBPEL": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "discover more",
+            "button_link_1": "shopify://pages/sustainability",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_Ua7xkE",
+        "text_V4Nm8c",
+        "buttons_rVBPEL"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Website_banner_sustainability_00c60d8b-a6d1-4a64-8a6f-3b534904e9c1.jpg",
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/White_Meat_Pairing_12.jpg",
+        "image_overlay": false,
+        "Heading_color": "#2d5980",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.",
+        "btn-txt": "",
+        "btn-url": ""
+      }
+    },
+    "1639224916778fd50c": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/DSC_5742.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#aac4d3",
+        "title": "HERITAGE",
+        "video-sec-content-txt-1": "<p>The wine labels on bottles from our Reserve range feature an illustration of Alvi’s Drift, the low-water bridge over the Breede River cutting through the family farm. Our patriarch, Albertus Viljoen “Oupa Alvi” van der Merwe, was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p><p>Our Alvi’s Drift Reserve range is the culmination of our pursuit of excellence in producing outstanding wines of unrivalled complexity.</p>",
+        "button-txt": "VIEW ALL OUR RESERVE RANGE WINES",
+        "button_link": "shopify://collections/reserve-range",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1643896394d4685ade": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/DSC_5267.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#aac4d3",
+        "title": "ON THE VINES",
+        "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. </p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1643897167b28bd4cf": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Cellar-02.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#aac4d3",
+        "title": "IN THE CELLAR",
+        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639226365ec4bf8dd": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "<p>\"Absolutely loved this blend, just placed another order!\"</p>",
+        "subtitle-2": "<p><em>- Wendy -</em></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "16392534101a01b24e": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "16392534108f7600fd-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "red-wines"
+          }
+        }
+      },
+      "block_order": [
+        "16392534108f7600fd-0"
+      ],
+      "settings": {
+        "topheading": "OUR RED WINES",
+        "subtitle-1": "",
+        "active_collection": "red-wines"
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639223856bcb87c3a",
+    "16392371564aec5ac1",
+    "image_with_overlay_text_tJjbr7",
+    "1639224403b97d22e1",
+    "1639224916778fd50c",
+    "1643896394d4685ade",
+    "1643897167b28bd4cf",
+    "1639226365ec4bf8dd",
+    "16392534101a01b24e"
+  ]
+}

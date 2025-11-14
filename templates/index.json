@@ -123,7 +123,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "SIGNATURE RANGE",
-            "collection_subheader": "",
             "collectionCarasoul": "signature-range"
           }
         },
@@ -131,7 +130,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "221 RANGE",
-            "collection_subheader": "",
             "collectionCarasoul": "221-range"
           }
         },
@@ -139,7 +137,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "RESERVE RANGE",
-            "collection_subheader": "",
             "collectionCarasoul": "reserve-range"
           }
         },
@@ -147,7 +144,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "ICON RANGE",
-            "collection_subheader": "",
             "collectionCarasoul": "icon-range"
           }
         },
@@ -155,7 +151,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "FLAGSHIP RANGE",
-            "collection_subheader": "",
             "collectionCarasoul": "flagship-range"
           }
         },
@@ -163,7 +158,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "Sparkling Wines",
-            "collection_subheader": "",
             "collectionCarasoul": "sparkling-range"
           }
         },
@@ -171,7 +165,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "CAP CLASSIQUE WINES",
-            "collection_subheader": "",
             "collectionCarasoul": "cap-classique-range"
           }
         }

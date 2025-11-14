@@ -1,1 +1,261 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{}},"1639603079ac59d760":{"type":"Page-Background-Colour","settings":{"page_bg":"#712f1f"}},"1639602940145c735b":{"type":"Hero-Main","blocks":{"5c7c7291-e941-4cdb-9f77-ffbdabf8dcff":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png","mobile_background_image":"shopify:\/\/shop_images\/Alvis_drift_mobile_banner.png","image_overlay":"rgba(0,0,0,0)","overlay_opacity":0,"heading_color":"#ffffff","video_banner":"","paragarh_p1":"What's","paragarh_p2":"In A","paragarh_p3":"Name?","paragarh_p4":"","paragarh_1":"","paragarh_2":"","side_btn_text":"","side_btn_link":""}}},"block_order":["5c7c7291-e941-4cdb-9f77-ffbdabf8dcff"],"settings":{"background_image":"shopify:\/\/shop_images\/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png","image_overlay":"","overlay_opacity":30,"heading_color":"#ffffff","video_banner":"","paragarh_p1":"OUR","paragarh_p2":"VINEYARDS","paragarh_p3":"","paragarh_p4":"","paragarh_1":"The Alvi’s Drift vineyards are cool, pleasant and inspirational. Just like our wines","paragarh_2":"Discover the conditions that make the Alvi’s Drift vineyards so unique.","btn_text":"","btn_link":"shopify:\/\/collections\/all-products","btn_main_link":""}},"rich_text_bDYdVH":{"type":"rich-text","blocks":{"heading_3iQJT3":{"type":"heading","settings":{"heading":"Albertus Viljoen Icon of the Year 2025 Award ","heading_size":"h1"}},"text_VKBhPF":{"type":"text","settings":{"text":"<p>Entries are open for our very first Albertus Viljoen Icon of the Year Award! <\/p><p>This is your chance to nominate someone whose vision and courage embody the pursuit of excellence. Someone who stands as a force for good and positive change in their community.<\/p><p><strong>Enter Here<\/strong><br\/><br\/><\/p>"}}},"block_order":["heading_3iQJT3","text_VKBhPF"],"custom_css":[".rich-text {margin: auto; text-align: center; background-color: #712f1f; padding-bottom: 10px;}"],"name":"t:sections.rich-text.presets.name","settings":{"color_scheme":"accent-1","full_width":false}},"17447361233ed5c64f":{"type":"apps","blocks":{"forms_inline_n6ttAG":{"type":"shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a","settings":{"form_id":"429098","text_color":"#ffffff","button_background_color":"#c65336","button_label_color":"#ffffff","links_color":"#1878b9","errors_color":"#e02229","text_alignment":"center","form_alignment":"center","padding_top":0,"padding_bottom":64,"padding_right":0,"padding_left":0}}},"block_order":["forms_inline_n6ttAG"],"settings":{"include_margins":true}},"multiple_posts_settings_XYHCLd":{"type":"Multiple-Posts-Settings","custom_css":["h2 {color: #712f1f;}"],"name":"Multiple Posts Settings","settings":{"heading":"Meet Our Local Icons","text_transform":"none","blog_show_tags":false,"blog":"local-icons","post_limit":3,"show_image":true,"show_date":false,"show_author":false,"soft_background":false}},"focus_text_text_only_CqmfTq":{"type":"Focus-Text-Text-Only","name":"Focus Text (Text Only)","settings":{"text_transform":"uppercase","Heading_color":"#ffffff","title":"A Man With A Vision. A Wine With A Purpose.","subtitle-1":"","subtitle-2":"","button_text":"","button_link":"","new_tab":true}},"video_single_BDwAAp":{"type":"Video-Single","custom_css":[".video-section__media {position: relative !important;}"],"settings":{"heading":"","cover_image":"shopify:\/\/shop_images\/Alvis-Drift-Icon-Range-New-Label.jpg","video_url":"https:\/\/www.youtube.com\/watch?v=WIYA4Btj6uA","description":"","full_width":true}},"164388456995a70c72":{"type":"Focus-Text-Image-Right","settings":{"our-story-vid":"shopify:\/\/shop_images\/Alvis-Drift-River-Landscape.jpg","right_video_url":"","Heading_size":"h2","Heading_color":"#f8f2e6","title":"The Pursuit of Excellence","video-sec-content-txt-1":"<p>In 1928, our founder, Albertus Viljoen ‘Oupa Alvi’ van der Merwe, acquired a fertile piece of farmland on the banks of the Breede River. His work ethic, love for people, and deep respect for the land, shaped our winery’s legacy.<\/p><p>Nearly a century later, Oupa Alvi’s unyielding pursuit of excellence continues to guide us. His passion and legacy lives on in our Albertus Viljoen range, and we honour his vision with every bottle we craft.<br\/><\/p>","button-txt":"","button_link":"","button_type":"alvisBtn"}},"1639686778727cf64f":{"type":"Focus-Text-Image-Left","settings":{"background_colour":"#00000000","our-story-vid":"shopify:\/\/shop_images\/Alvis-Drift-Community-Upliftment.jpg","image_size":"100%","video_url":"","Heading_size":"h2","Heading_color":"#f8f2e6","title":"Empowering Our Communities, Transforming Our Future","video-sec-content-txt-1":"<p>A brighter future begins with a strong foundation. That’s why we’ve partnered with the Indaba Institute to empower teachers and create opportunities for the next generation.<\/p><p>Inspired by Oupa Alvi’s legacy, our partnership with the Indaba Institute supports Early Childhood Development on our farm and beyond.<\/p><p>Every bottle of Albertus Viljoen wine sold helps to fund this work – training teachers, nurturing young minds, and creating lasting change.<\/p>","button-txt":"","button_link":"","button_type":"alvisBtn"}},"call_to_action_iaXjc6":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/Alvi_s_Drift_Wine_Club.jpg","image_overlay":false,"Heading_color":"#c65336","title":"","detail_box_txt":"“This is more than just a wine. With every bottle of Albertus Viljoen you open, you help open a door to a brighter future. A portion of proceeds from every bottle sold goes towards supporting the life-changing work of the Indaba Institute.” – Alvi van der Merwe","btn-txt":"SHOP","btn-url":"shopify:\/\/collections\/icon-range"}},"collections_grid_fbeztG":{"type":"Collections-Grid","blocks":{"item_nxK3Y7":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"launch"}}},"block_order":["item_nxK3Y7"],"name":"Collections Grid","settings":{"topheading":"Icon Range","subtitle-1":"","active_collection":"launch"}},"multiple_posts_settings_a3K4pj":{"type":"Multiple-Posts-Settings","disabled":true,"name":"Multiple Posts Settings","settings":{"heading":"","text_transform":"uppercase","blog_show_tags":true,"blog":"icon-albertus-viljoen","post_limit":3,"show_image":true,"show_date":false,"show_author":false,"soft_background":false}},"spacer_WcP7qF":{"type":"Spacer","name":"Spacer","settings":{"spacer_size":"50px"}}},"order":["main","1639603079ac59d760","1639602940145c735b","rich_text_bDYdVH","17447361233ed5c64f","multiple_posts_settings_XYHCLd","focus_text_text_only_CqmfTq","video_single_BDwAAp","164388456995a70c72","1639686778727cf64f","call_to_action_iaXjc6","collections_grid_fbeztG","multiple_posts_settings_a3K4pj","spacer_WcP7qF"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#712f1f"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png",
+            "mobile_background_image": "shopify://shop_images/Alvis_drift_mobile_banner.png",
+            "image_overlay": "rgba(0,0,0,0)",
+            "overlay_opacity": 0,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "What's",
+            "paragarh_p2": "In A",
+            "paragarh_p3": "Name?",
+            "paragarh_p4": "",
+            "paragarh_1": "",
+            "paragarh_2": "",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5c7c7291-e941-4cdb-9f77-ffbdabf8dcff"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvis_drift_desktop_banner_31e2a6c6-ba31-43c1-9c14-8b93d1b0aed0.png",
+        "image_overlay": "",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_bDYdVH": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_3iQJT3": {
+          "type": "heading",
+          "settings": {
+            "heading": "Albertus Viljoen Icon of the Year 2025 Award ",
+            "heading_size": "h1"
+          }
+        },
+        "text_VKBhPF": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Entries are open for our very first Albertus Viljoen Icon of the Year Award! </p><p>This is your chance to nominate someone whose vision and courage embody the pursuit of excellence. Someone who stands as a force for good and positive change in their community.</p><p><strong>Enter Here</strong><br/><br/></p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_3iQJT3",
+        "text_VKBhPF"
+      ],
+      "custom_css": [
+        ".rich-text {margin: auto; text-align: center; background-color: #712f1f; padding-bottom: 10px;}"
+      ],
+      "name": "t:sections.rich-text.presets.name",
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": false
+      }
+    },
+    "17447361233ed5c64f": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_n6ttAG": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "429098",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 64,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_n6ttAG"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    },
+    "multiple_posts_settings_XYHCLd": {
+      "type": "Multiple-Posts-Settings",
+      "custom_css": [
+        "h2 {color: #712f1f;}"
+      ],
+      "name": "Multiple Posts Settings",
+      "settings": {
+        "heading": "Meet Our Local Icons",
+        "text_transform": "none",
+        "blog_show_tags": false,
+        "blog": "local-icons",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
+    "focus_text_text_only_CqmfTq": {
+      "type": "Focus-Text-Text-Only",
+      "name": "Focus Text (Text Only)",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "A Man With A Vision. A Wine With A Purpose.",
+        "subtitle-1": "",
+        "subtitle-2": "",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "video_single_BDwAAp": {
+      "type": "Video-Single",
+      "custom_css": [
+        ".video-section__media {position: relative !important;}"
+      ],
+      "settings": {
+        "heading": "",
+        "cover_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
+        "video_url": "https://www.youtube.com/watch?v=WIYA4Btj6uA",
+        "description": "",
+        "full_width": true
+      }
+    },
+    "164388456995a70c72": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-River-Landscape.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "The Pursuit of Excellence",
+        "video-sec-content-txt-1": "<p>In 1928, our founder, Albertus Viljoen ‘Oupa Alvi’ van der Merwe, acquired a fertile piece of farmland on the banks of the Breede River. His work ethic, love for people, and deep respect for the land, shaped our winery’s legacy.</p><p>Nearly a century later, Oupa Alvi’s unyielding pursuit of excellence continues to guide us. His passion and legacy lives on in our Albertus Viljoen range, and we honour his vision with every bottle we craft.<br/></p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639686778727cf64f": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-Community-Upliftment.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "Empowering Our Communities, Transforming Our Future",
+        "video-sec-content-txt-1": "<p>A brighter future begins with a strong foundation. That’s why we’ve partnered with the Indaba Institute to empower teachers and create opportunities for the next generation.</p><p>Inspired by Oupa Alvi’s legacy, our partnership with the Indaba Institute supports Early Childhood Development on our farm and beyond.</p><p>Every bottle of Albertus Viljoen wine sold helps to fund this work – training teachers, nurturing young minds, and creating lasting change.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "call_to_action_iaXjc6": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "",
+        "detail_box_txt": "“This is more than just a wine. With every bottle of Albertus Viljoen you open, you help open a door to a brighter future. A portion of proceeds from every bottle sold goes towards supporting the life-changing work of the Indaba Institute.” – Alvi van der Merwe",
+        "btn-txt": "SHOP",
+        "btn-url": "shopify://collections/icon-range"
+      }
+    },
+    "collections_grid_fbeztG": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "item_nxK3Y7": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "launch"
+          }
+        }
+      },
+      "block_order": [
+        "item_nxK3Y7"
+      ],
+      "name": "Collections Grid",
+      "settings": {
+        "topheading": "Icon Range",
+        "subtitle-1": "",
+        "active_collection": "launch"
+      }
+    },
+    "multiple_posts_settings_a3K4pj": {
+      "type": "Multiple-Posts-Settings",
+      "disabled": true,
+      "name": "Multiple Posts Settings",
+      "settings": {
+        "heading": "",
+        "text_transform": "uppercase",
+        "blog_show_tags": true,
+        "blog": "icon-albertus-viljoen",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
+    "spacer_WcP7qF": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "rich_text_bDYdVH",
+    "17447361233ed5c64f",
+    "multiple_posts_settings_XYHCLd",
+    "focus_text_text_only_CqmfTq",
+    "video_single_BDwAAp",
+    "164388456995a70c72",
+    "1639686778727cf64f",
+    "call_to_action_iaXjc6",
+    "collections_grid_fbeztG",
+    "multiple_posts_settings_a3K4pj",
+    "spacer_WcP7qF"
+  ]
+}

@@ -1,1 +1,136 @@
-{"sections":{"1639248035a16a435a":{"type":"Page-Background-Colour","settings":{"page_bg":"#C2AB9B"}},"16396708752d4c299f":{"type":"Hero-Main","blocks":{"slider_RmPJnX":{"type":"slider","disabled":true,"settings":{"background_image":"shopify:\/\/shop_images\/Alvis-Drift-Icon-Range-New-Label.jpg","image_overlay":"#000000","overlay_opacity":30,"Heading_color":"#ffffff","video_banner":"","paragarh_p1":"NEW","paragarh_p2":"LABEL","paragarh_p3":"LAUNCH","paragarh_p4":"","paragarh_1":"ICON ALBERTUS VILJOEN","paragarh_2":"","side_btn_text":"SHOP NOW","side_btn_link":"shopify:\/\/collections\/icon-range"}},"slider_dFCWrV":{"type":"slider","disabled":true,"settings":{"background_image":"shopify:\/\/shop_images\/Albertus-Viljoen-Icon-Range-Header.jpg","image_overlay":"","overlay_opacity":0,"Heading_color":"#ffffff","video_banner":"","paragarh_p1":"NEW","paragarh_p2":"LABEL","paragarh_p3":"LAUNCH","paragarh_p4":"","paragarh_1":"ICON ALBERTUS VILJOEN","paragarh_2":"","side_btn_text":"SHOP NOW","side_btn_link":"shopify:\/\/collections\/icon-range"}},"db5ba68b-9ec8-4dc4-ae52-b88935c1e37e":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/Alvi_s-Drift-Wine-Club-Members.jpg","image_overlay":"#000000","overlay_opacity":30,"Heading_color":"#ffffff","video_banner":"","paragarh_p1":"TO","paragarh_p2":"PROOF","paragarh_p3":"","paragarh_p4":"","paragarh_1":"","paragarh_2":"","side_btn_text":"","side_btn_link":""}}},"block_order":["slider_RmPJnX","slider_dFCWrV","db5ba68b-9ec8-4dc4-ae52-b88935c1e37e"],"settings":{"background_image":"shopify:\/\/shop_images\/Pairing-Boxes.jpg","image_overlay":"","overlay_opacity":30,"Heading_color":"#ffffff","video_banner":"","paragarh_p1":"LIMITED","paragarh_p2":"OFFERS","paragarh_p3":"","paragarh_p4":"","paragarh_1":"","paragarh_2":"Enjoy our limited offers – while stocks last.","btn_text":"","btn_link":"shopify:\/\/collections\/gifts","btn_main_link":""}},"1655375092a9531a0d":{"type":"Gifts-Grid","blocks":{"16553750920cfb9fe7-0":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"test"}}},"block_order":["16553750920cfb9fe7-0"],"settings":{"topheading":"Products to Proof"}},"focus_text_text_only_Rm3nP3":{"type":"Focus-Text-Text-Only","disabled":true,"settings":{"text_transform":"uppercase","Heading_color":"#ffffff","title":"NO CURRENT SALES","subtitle-1":"","subtitle-2":"<p>Be the first to know about our promotions and annual sales!<\/p><p>Follow us on social media or subscribe to our newsletter.<\/p>","button_text":"","button_link":"","new_tab":true}},"1639247544080331f4":{"type":"Newsletter-Subscription","disabled":true,"settings":{"section_heading":"<p>TH<em>E<\/em><br\/>DRIFT<\/p>","section_content":"<p><strong>Get the very best when it comes to wine promotions.<\/strong><\/p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.<\/p>","Heading_color":"#c65336","hs_form_portal_id":"25422535"}}},"order":["1639248035a16a435a","16396708752d4c299f","1655375092a9531a0d","focus_text_text_only_Rm3nP3","1639247544080331f4"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    },
+    "16396708752d4c299f": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_RmPJnX": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis-Drift-Icon-Range-New-Label.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "video_banner": "",
+            "paragarh_p1": "NEW",
+            "paragarh_p2": "LABEL",
+            "paragarh_p3": "LAUNCH",
+            "paragarh_p4": "",
+            "paragarh_1": "ICON ALBERTUS VILJOEN",
+            "paragarh_2": "",
+            "side_btn_text": "SHOP NOW",
+            "side_btn_link": "shopify://collections/icon-range"
+          }
+        },
+        "slider_dFCWrV": {
+          "type": "slider",
+          "disabled": true,
+          "settings": {
+            "background_image": "shopify://shop_images/Albertus-Viljoen-Icon-Range-Header.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 0,
+            "video_banner": "",
+            "paragarh_p1": "NEW",
+            "paragarh_p2": "LABEL",
+            "paragarh_p3": "LAUNCH",
+            "paragarh_p4": "",
+            "paragarh_1": "ICON ALBERTUS VILJOEN",
+            "paragarh_2": "",
+            "side_btn_text": "SHOP NOW",
+            "side_btn_link": "shopify://collections/icon-range"
+          }
+        },
+        "db5ba68b-9ec8-4dc4-ae52-b88935c1e37e": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 30,
+            "video_banner": "",
+            "paragarh_p1": "TO",
+            "paragarh_p2": "PROOF",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "",
+            "paragarh_2": "",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_RmPJnX",
+        "slider_dFCWrV",
+        "db5ba68b-9ec8-4dc4-ae52-b88935c1e37e"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Pairing-Boxes.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30
+      }
+    },
+    "1655375092a9531a0d": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "16553750920cfb9fe7-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "test"
+          }
+        }
+      },
+      "block_order": [
+        "16553750920cfb9fe7-0"
+      ],
+      "settings": {
+        "topheading": "Products to Proof"
+      }
+    },
+    "focus_text_text_only_Rm3nP3": {
+      "type": "Focus-Text-Text-Only",
+      "disabled": true,
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "NO CURRENT SALES",
+        "subtitle-1": "",
+        "subtitle-2": "<p>Be the first to know about our promotions and annual sales!</p><p>Follow us on social media or subscribe to our newsletter.</p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "1639247544080331f4": {
+      "type": "Newsletter-Subscription",
+      "disabled": true,
+      "settings": {
+        "section_heading": "<p>TH<em>E</em><br/>DRIFT</p>",
+        "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
+        "Heading_color": "#c65336",
+        "hs_form_portal_id": "25422535"
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "16396708752d4c299f",
+    "1655375092a9531a0d",
+    "focus_text_text_only_Rm3nP3",
+    "1639247544080331f4"
+  ]
+}
