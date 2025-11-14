@@ -1,1 +1,376 @@
+<<<<<<< HEAD
 {"current":{"colors_solid_button_labels":"#FFFFFF","colors_accent_1":"#121212","colors_accent_2":"#2E112D","colors_text":"#121212","colors_outline_button_labels":"#121212","colors_background_1":"#FFFFFF","colors_background_2":"#F3F3F3","type_header_font":"assistant_n4","type_body_font":"assistant_n4","page_width":"1600","social_twitter_link":"","social_linkedin_link":"https:\/\/www.linkedin.com\/company\/alvi's-drift-wines-international-south-africa\/","social_facebook_link":"https:\/\/www.facebook.com\/AlvisDriftWines","social_instagram_link":"https:\/\/www.instagram.com\/alvisdriftwine\/","social_youtube_link":"https:\/\/www.youtube.com\/c\/AlvisdriftCoZa","predictive_search_enabled":true,"favicon":"shopify:\/\/shop_images\/Alvis_Fabicon.png","member-discount":"enable","product_list":["voucher","exclusive-butter-tree-viognier-2023","wine-bottle-sabre","champagne-sabrage-and-sabre-engraving","sparkling-brut-cap-classique-gift-box","sparkling-brut-nature-vintage-cap-classique-single-box","icon-mixed-gift-box","icon-white-gift-box","nectarinia-gift-box","sparkling-brut-gift-box","champagne-stopper","flagship-gift-box","best-of-2024-mixed-box","best-of-2024-white-box","icon-albertus-viljoen-3-pack","signature-sauvignon-blanc-buy-2-get-1","signature-sauvignon-blanc-buy-4-get-2","sparkling-brut-cap-classique-single-box","taste-the-tiers-white-wine-mixed-case","reserve-drift-fusion-magnum"],"member-included-discount":"enable","product_list_included":[],"product_list_included-second":[],"product_list_included-third":[],"discount-badge":"tier-text","discount_options":"0.9412","silver-image":"shopify:\/\/shop_images\/Silver.webp","gold-image":"shopify:\/\/shop_images\/Gold.webp","checkout_logo_image":"shopify:\/\/shop_images\/Logo_V2.png","checkout_logo_position":"center","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement_7TbFxm":{"type":"announcement","disabled":true,"settings":{"text":"Nominate your icon in our Albertus Viljoen Icon Of the Year Competition today!","color_scheme":"background-1","link":"shopify:\/\/pages\/icon-albertus-viljoen"}},"announcement_7bkPfk":{"type":"announcement","settings":{"text":"Log in or join our Wine Club for members' discount (applied at checkout). FREE SHIPPING on orders over R1 500","color_scheme":"background-1","link":"https:\/\/alvisdrift.co.za\/pages\/club"}},"e302fa2a-93ec-4514-b82b-cd250fd6a5ec":{"type":"announcement","disabled":true,"settings":{"text":"SHOP YEAR-END SALE:  SAVE UP TO 25%  |  FREE shipping over R1 800","color_scheme":"accent-2","link":"shopify:\/\/collections\/sale"}},"6376a361-868a-4534-ab18-bbdc9c6a709c":{"type":"announcement","disabled":true,"settings":{"text":"FREE shipping over R1 800   |   Delivery to outlying areas up to two weeks","color_scheme":"accent-2","link":""}},"b2595c56-7a0c-478c-8971-0b5f22b13818":{"type":"announcement","disabled":true,"settings":{"text":"UP TO 15% OFF all wines | End of Harvest SALE:  17-26 April","color_scheme":"accent-2","link":"shopify:\/\/collections\/sale"}},"403c65d2-febe-4b47-bd0d-0a25baa38f99":{"type":"announcement","disabled":true,"settings":{"text":"SHOP SPRING SALE 26 SEP - 6 OCT   |   FREE shipping over R1 800","color_scheme":"accent-2","link":"shopify:\/\/collections\/sale"}},"22aa6001-fc78-46f8-9a7d-7df52879cdca":{"type":"announcement","disabled":true,"settings":{"text":"FREE shipping over R1 800   |   Shop our award-winning Sparkling wines","color_scheme":"accent-2","link":"shopify:\/\/products\/jhb-food-wine-pairing"}},"announcement_9ApeFQ":{"type":"announcement","disabled":true,"settings":{"text":"FREE SHIPPING over R1 800  |  Log in for member discount to apply at checkout.","color_scheme":"accent-2","link":""}}},"block_order":["announcement_7TbFxm","announcement_7bkPfk","e302fa2a-93ec-4514-b82b-cd250fd6a5ec","6376a361-868a-4534-ab18-bbdc9c6a709c","b2595c56-7a0c-478c-8971-0b5f22b13818","403c65d2-febe-4b47-bd0d-0a25baa38f99","22aa6001-fc78-46f8-9a7d-7df52879cdca","announcement_9ApeFQ"],"settings":{}},"header":{"type":"header","settings":{"color_scheme":"background-2","logo_svg":"","logo_width":100,"logo_position":"middle-left","menu":"secondary-menu-top-1","sub_menu":"secondary-menu-top","show_line_separator":false,"enable_sticky_header":false}},"footer":{"type":"footer","blocks":{"footer-0":{"type":"link_list","settings":{"heading":"OUR WINES","menu":"footer-menu-type"}},"d99c39c2-aac7-4920-908d-1d0104171692":{"type":"link_list","settings":{"heading":"OUR RANGES","menu":"footer-menu-range"}},"a613a5be-c5ef-4b30-a3c8-0475920db38f":{"type":"link_list","settings":{"heading":"EVERYTHING ALVI’S","menu":"footer-menu-alvis"}}},"block_order":["footer-0","d99c39c2-aac7-4920-908d-1d0104171692","a613a5be-c5ef-4b30-a3c8-0475920db38f"],"settings":{"color_scheme":"background-1","top_footer_title":"Alvi’s Drift wines contain up to 13,5% ABV, except our dessert wine at 15,5%. Not for sale to under 18s. Drink responsibly.","footer_logo":"https:\/\/cdn.shopify.com\/s\/files\/1\/0608\/0505\/4720\/files\/Alvi_s-Drift-Logo-Blue.png?v=1645089435","newsletter_enable":false,"newsletter_heading":"Subscribe To Our Newsletter","show_social":true,"enable_country_selector":false,"enable_language_selector":false,"payment_enable":false,"all_right_reserve":"Alcohol not for sale to under 18s.","policy_text":"POLICIES","policy_url":"shopify:\/\/pages\/policies","phone_number":"021 905 0653","email_id":"WINE@ALVISDRIFT.CO.ZA"}},"main-password-header":{"type":"main-password-header","settings":{"logo":"shopify:\/\/shop_images\/Alvi_s-Drift-Logo-Blue.png","logo_max_width":250,"color_scheme":"background-2"}},"main-password-footer":{"type":"main-password-footer","settings":{"color_scheme":"accent-2"}},"Collections-Grid":{"type":"Collections-Grid","blocks":{"item_HwGbcz":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"all-wine-club-member-wines"}},"item_yB9N36":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":""}}},"block_order":["item_HwGbcz","item_yB9N36"],"custom_css":[".product-bx-outer {justify-content: center;}"],"settings":{"topheading":"15% Flash sale Discount","subtitle-1":"","active_collection":"all-wine-club-member-wines"}},"Collections-Grid-Members":{"type":"Collections-Grid-Members","settings":{}}},"content_for_index":[],"blocks":{"855628211100114053":{"type":"shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/klaviyo-onsite-embed\/2632fe16-c075-4321-a88b-50b567f42507","disabled":false,"settings":{}},"13768625480086291342":{"type":"shopify:\/\/apps\/forms\/blocks\/forms\/8744a304-fcb1-4347-b211-bb6b4759a76a","disabled":false,"settings":{}},"15683396631634586217":{"type":"shopify:\/\/apps\/inbox\/blocks\/chat\/841fc607-4181-4ad1-842d-e24d7f8bad6b","disabled":true,"settings":{"button_color":"#9f9f9f","secondary_color":"#ffffff","ternary_color":"#2d1616","button_icon":"chat_bubble","button_text":"need_help","button_horizontal_position":"bottom_left","button_vertical_position":"lowest","greeting_message":"Any questions? We'd love to help."}},"10605408327587305396":{"type":"shopify:\/\/apps\/eg-auto-add-to-cart\/blocks\/app-embed\/0f7d4f74-1e89-4820-aec4-6564d7e535d2","disabled":true,"settings":{"version":"v3"}},"12331707899451543273":{"type":"shopify:\/\/apps\/powerx-functions\/blocks\/powerx-app-embed\/dff772ea-9dfb-4eb2-9268-03f89642169d","disabled":false,"settings":{"tracked_parameters":"powerx_attr","remove_parameter":"powerx_rm_attr","expire_after_hours":5}},"3574802870912500141":{"type":"shopify:\/\/apps\/sc-loyalty-rewards\/blocks\/enable_storefront_widget\/21842f98-987a-4ad6-91bf-a00b77123261","disabled":false,"settings":{}}}},"presets":{"Default":{"colors_solid_button_labels":"#FFFFFF","colors_accent_1":"#121212","colors_accent_2":"#2E112D","colors_text":"#121212","colors_outline_button_labels":"#121212","colors_background_1":"#FFFFFF","colors_background_2":"#F3F3F3","type_header_font":"assistant_n4","type_body_font":"assistant_n4","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"announcement-bar-0":{"type":"announcement","settings":{"color_scheme":"background-1"}}},"block_order":["announcement-bar-0"],"settings":{}}}},"Craft":{"colors_solid_button_labels":"#EFECEC","colors_accent_1":"#2A332F","colors_accent_2":"#476154","colors_text":"#1C1A1A","colors_outline_button_labels":"#7B8382","colors_background_1":"#EFECEC","colors_background_2":"#C1BCAE","type_header_font":"americana_n4","type_body_font":"quattrocento_sans_n4","sections":{"footer":{"type":"footer","blocks":{"menu":{"type":"link_list","settings":{}},"text":{"type":"text","settings":{}}},"block_order":["menu","text"],"settings":{"color_scheme":"accent-1"}}}}}}
+=======
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "current": {
+    "colors_solid_button_labels": "#FFFFFF",
+    "colors_accent_1": "#121212",
+    "colors_accent_2": "#2E112D",
+    "colors_text": "#121212",
+    "colors_outline_button_labels": "#121212",
+    "colors_background_1": "#FFFFFF",
+    "colors_background_2": "#F3F3F3",
+    "type_header_font": "assistant_n4",
+    "type_body_font": "assistant_n4",
+    "page_width": "1600",
+    "social_twitter_link": "",
+    "social_linkedin_link": "https://www.linkedin.com/company/alvi's-drift-wines-international-south-africa/",
+    "social_facebook_link": "https://www.facebook.com/AlvisDriftWines",
+    "social_instagram_link": "https://www.instagram.com/alvisdriftwine/",
+    "social_youtube_link": "https://www.youtube.com/c/AlvisdriftCoZa",
+    "predictive_search_enabled": true,
+    "favicon": "shopify://shop_images/Alvis_Fabicon.png",
+    "member-discount": "enable",
+    "product_list": [
+      "voucher",
+      "exclusive-butter-tree-viognier-2023",
+      "wine-bottle-sabre",
+      "champagne-sabrage-and-sabre-engraving",
+      "sparkling-brut-cap-classique-gift-box",
+      "sparkling-brut-nature-vintage-cap-classique-single-box",
+      "icon-mixed-gift-box",
+      "icon-white-gift-box",
+      "nectarinia-gift-box",
+      "sparkling-brut-gift-box",
+      "champagne-stopper",
+      "flagship-gift-box",
+      "best-of-2024-mixed-box",
+      "best-of-2024-white-box",
+      "icon-albertus-viljoen-3-pack",
+      "signature-sauvignon-blanc-buy-2-get-1",
+      "signature-sauvignon-blanc-buy-4-get-2",
+      "sparkling-brut-cap-classique-single-box",
+      "taste-the-tiers-white-wine-mixed-case",
+      "reserve-drift-fusion-magnum"
+    ],
+    "member-included-discount": "enable",
+    "product_list_included": [],
+    "product_list_included-second": [],
+    "product_list_included-third": [],
+    "discount-badge": "tier-text",
+    "discount_options": "0.9412",
+    "silver-image": "shopify://shop_images/Silver.webp",
+    "gold-image": "shopify://shop_images/Gold.webp",
+    "checkout_logo_image": "shopify://shop_images/Logo_V2.png",
+    "checkout_logo_position": "center",
+    "sections": {
+      "announcement-bar": {
+        "type": "announcement-bar",
+        "blocks": {
+          "announcement_7TbFxm": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "Nominate your icon in our Albertus Viljoen Icon Of the Year Competition today!",
+              "color_scheme": "background-1",
+              "link": "shopify://pages/icon-albertus-viljoen"
+            }
+          },
+          "announcement_7bkPfk": {
+            "type": "announcement",
+            "settings": {
+              "text": "Log in or join our Wine Club for members' discount (applied at checkout). FREE SHIPPING on orders over R1 500",
+              "color_scheme": "background-1",
+              "link": "https://alvisdrift.co.za/pages/club"
+            }
+          },
+          "e302fa2a-93ec-4514-b82b-cd250fd6a5ec": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "SHOP YEAR-END SALE:  SAVE UP TO 25%  |  FREE shipping over R1 800",
+              "color_scheme": "accent-2",
+              "link": "shopify://collections/sale"
+            }
+          },
+          "6376a361-868a-4534-ab18-bbdc9c6a709c": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "FREE shipping over R1 800   |   Delivery to outlying areas up to two weeks",
+              "color_scheme": "accent-2",
+              "link": ""
+            }
+          },
+          "b2595c56-7a0c-478c-8971-0b5f22b13818": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "UP TO 15% OFF all wines | End of Harvest SALE:  17-26 April",
+              "color_scheme": "accent-2",
+              "link": "shopify://collections/sale"
+            }
+          },
+          "403c65d2-febe-4b47-bd0d-0a25baa38f99": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "SHOP SPRING SALE 26 SEP - 6 OCT   |   FREE shipping over R1 800",
+              "color_scheme": "accent-2",
+              "link": "shopify://collections/sale"
+            }
+          },
+          "22aa6001-fc78-46f8-9a7d-7df52879cdca": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "FREE shipping over R1 800   |   Shop our award-winning Sparkling wines",
+              "color_scheme": "accent-2",
+              "link": "shopify://products/jhb-food-wine-pairing"
+            }
+          },
+          "announcement_9ApeFQ": {
+            "type": "announcement",
+            "disabled": true,
+            "settings": {
+              "text": "FREE SHIPPING over R1 800  |  Log in for member discount to apply at checkout.",
+              "color_scheme": "accent-2",
+              "link": ""
+            }
+          }
+        },
+        "block_order": [
+          "announcement_7TbFxm",
+          "announcement_7bkPfk",
+          "e302fa2a-93ec-4514-b82b-cd250fd6a5ec",
+          "6376a361-868a-4534-ab18-bbdc9c6a709c",
+          "b2595c56-7a0c-478c-8971-0b5f22b13818",
+          "403c65d2-febe-4b47-bd0d-0a25baa38f99",
+          "22aa6001-fc78-46f8-9a7d-7df52879cdca",
+          "announcement_9ApeFQ"
+        ],
+        "settings": {}
+      },
+      "header": {
+        "type": "header",
+        "settings": {
+          "color_scheme": "background-2",
+          "logo_svg": "",
+          "logo_width": 100,
+          "logo_position": "middle-left",
+          "menu": "secondary-menu-top-1",
+          "sub_menu": "secondary-menu-top",
+          "show_line_separator": false,
+          "enable_sticky_header": false
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "blocks": {
+          "footer-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "OUR WINES",
+              "menu": "footer-menu-type"
+            }
+          },
+          "d99c39c2-aac7-4920-908d-1d0104171692": {
+            "type": "link_list",
+            "settings": {
+              "heading": "OUR RANGES",
+              "menu": "footer-menu-range"
+            }
+          },
+          "a613a5be-c5ef-4b30-a3c8-0475920db38f": {
+            "type": "link_list",
+            "settings": {
+              "heading": "EVERYTHING ALVI’S",
+              "menu": "footer-menu-alvis"
+            }
+          }
+        },
+        "block_order": [
+          "footer-0",
+          "d99c39c2-aac7-4920-908d-1d0104171692",
+          "a613a5be-c5ef-4b30-a3c8-0475920db38f"
+        ],
+        "settings": {
+          "color_scheme": "background-1",
+          "top_footer_title": "Alvi’s Drift wines contain up to 13,5% ABV, except our dessert wine at 15,5%. Not for sale to under 18s. Drink responsibly.",
+          "footer_logo": "https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvi_s-Drift-Logo-Blue.png?v=1645089435",
+          "newsletter_enable": false,
+          "newsletter_heading": "Subscribe To Our Newsletter",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false,
+          "all_right_reserve": "Alcohol not for sale to under 18s.",
+          "policy_text": "POLICIES",
+          "policy_url": "shopify://pages/policies",
+          "phone_number": "021 905 0653",
+          "email_id": "WINE@ALVISDRIFT.CO.ZA"
+        }
+      },
+      "main-password-header": {
+        "type": "main-password-header",
+        "settings": {
+          "logo": "shopify://shop_images/Alvi_s-Drift-Logo-Blue.png",
+          "logo_max_width": 250,
+          "color_scheme": "background-2"
+        }
+      },
+      "main-password-footer": {
+        "type": "main-password-footer",
+        "settings": {
+          "color_scheme": "accent-2"
+        }
+      },
+      "Collections-Grid": {
+        "type": "Collections-Grid",
+        "blocks": {
+          "item_HwGbcz": {
+            "type": "item",
+            "settings": {
+              "collection_heading": "",
+              "collectionCarasoul": "all-wine-club-member-wines"
+            }
+          },
+          "item_yB9N36": {
+            "type": "item",
+            "settings": {
+              "collection_heading": "",
+              "collectionCarasoul": ""
+            }
+          }
+        },
+        "block_order": [
+          "item_HwGbcz",
+          "item_yB9N36"
+        ],
+        "custom_css": [
+          ".product-bx-outer {justify-content: center;}"
+        ],
+        "settings": {
+          "topheading": "15% Flash sale Discount",
+          "subtitle-1": "",
+          "active_collection": "all-wine-club-member-wines"
+        }
+      },
+      "Collections-Grid-Members": {
+        "type": "Collections-Grid-Members",
+        "settings": {}
+      }
+    },
+    "content_for_index": [],
+    "blocks": {
+      "855628211100114053": {
+        "type": "shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507",
+        "disabled": false,
+        "settings": {}
+      },
+      "13768625480086291342": {
+        "type": "shopify://apps/forms/blocks/forms/8744a304-fcb1-4347-b211-bb6b4759a76a",
+        "disabled": false,
+        "settings": {}
+      },
+      "15683396631634586217": {
+        "type": "shopify://apps/inbox/blocks/chat/841fc607-4181-4ad1-842d-e24d7f8bad6b",
+        "disabled": true,
+        "settings": {
+          "button_color": "#9f9f9f",
+          "secondary_color": "#ffffff",
+          "ternary_color": "#2d1616",
+          "button_icon": "chat_bubble",
+          "button_text": "need_help",
+          "button_horizontal_position": "bottom_left",
+          "button_vertical_position": "lowest",
+          "greeting_message": "Any questions? We'd love to help."
+        }
+      },
+      "10605408327587305396": {
+        "type": "shopify://apps/eg-auto-add-to-cart/blocks/app-embed/0f7d4f74-1e89-4820-aec4-6564d7e535d2",
+        "disabled": true,
+        "settings": {
+          "version": "v3"
+        }
+      },
+      "12331707899451543273": {
+        "type": "shopify://apps/powerx-functions/blocks/powerx-app-embed/dff772ea-9dfb-4eb2-9268-03f89642169d",
+        "disabled": false,
+        "settings": {
+          "tracked_parameters": "powerx_attr",
+          "remove_parameter": "powerx_rm_attr",
+          "expire_after_hours": 5
+        }
+      },
+      "3574802870912500141": {
+        "type": "shopify://apps/sc-loyalty-rewards/blocks/enable_storefront_widget/21842f98-987a-4ad6-91bf-a00b77123261",
+        "disabled": false,
+        "settings": {}
+      }
+    }
+  },
+  "presets": {
+    "Default": {
+      "colors_solid_button_labels": "#FFFFFF",
+      "colors_accent_1": "#121212",
+      "colors_accent_2": "#2E112D",
+      "colors_text": "#121212",
+      "colors_outline_button_labels": "#121212",
+      "colors_background_1": "#FFFFFF",
+      "colors_background_2": "#F3F3F3",
+      "type_header_font": "assistant_n4",
+      "type_body_font": "assistant_n4",
+      "sections": {
+        "announcement-bar": {
+          "type": "announcement-bar",
+          "blocks": {
+            "announcement-bar-0": {
+              "type": "announcement",
+              "settings": {
+                "color_scheme": "background-1"
+              }
+            }
+          },
+          "block_order": [
+            "announcement-bar-0"
+          ],
+          "settings": {}
+        }
+      }
+    },
+    "Craft": {
+      "colors_solid_button_labels": "#EFECEC",
+      "colors_accent_1": "#2A332F",
+      "colors_accent_2": "#476154",
+      "colors_text": "#1C1A1A",
+      "colors_outline_button_labels": "#7B8382",
+      "colors_background_1": "#EFECEC",
+      "colors_background_2": "#C1BCAE",
+      "type_header_font": "americana_n4",
+      "type_body_font": "quattrocento_sans_n4",
+      "sections": {
+        "footer": {
+          "type": "footer",
+          "blocks": {
+            "menu": {
+              "type": "link_list",
+              "settings": {}
+            },
+            "text": {
+              "type": "text",
+              "settings": {}
+            }
+          },
+          "block_order": [
+            "menu",
+            "text"
+          ],
+          "settings": {
+            "color_scheme": "accent-1"
+          }
+        }
+      }
+    }
+  }
+}
+>>>>>>> 6115e16b7737af0cb26553a58d3c303f1671b145

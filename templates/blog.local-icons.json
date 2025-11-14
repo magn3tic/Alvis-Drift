@@ -1,1 +1,98 @@
+<<<<<<< HEAD
 {"sections":{"hero_main_RMjjUa":{"type":"Hero-Main","blocks":{"slider_LRqeLx":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/Alvi_s_Drift_Wine_Club.jpg","image_overlay":"","overlay_opacity":30,"Heading_color":"#ffffff","video_banner":"","paragarh_p1":"Wine","paragarh_p2":"Is a Way","paragarh_p3":"of Life","paragarh_p4":"","paragarh_1":"","paragarh_2":"At Alvi's Drift, wine is our everyday passion and we love sharing it with you. Our blog brings you insider insights, wine trends, tips and recipes, plus the latest Alvi's Drift news.","side_btn_text":"","side_btn_link":""}}},"block_order":["slider_LRqeLx"],"settings":{"image_overlay":"","overlay_opacity":30,"Heading_color":"#ffffff","video_banner":"","paragarh_p1":"","paragarh_p2":"","paragarh_p3":"","paragarh_p4":"","paragarh_1":"","paragarh_2":"","btn_text":"","btn_link":"","btn_main_link":""}},"main":{"type":"main-blog","disabled":true,"settings":{"layout":"grid","show_image":true,"image_height":"medium","show_date":false,"show_author":false}},"multiple_posts_pEQRFf":{"type":"Multiple-Posts","settings":{"heading":"Meet Our Local Icons","text_transform":"none","blog_show_tags":true,"blog":"local-icons","post_limit":3,"show_image":true,"show_date":false,"show_author":false,"soft_background":false}},"newsletter_subscription_JnPUij":{"type":"Newsletter-Subscription","settings":{"section_heading":"<h2>TH<em>E<\/em><br\/>DRIFT<\/h2>","section_content":"<p><strong>Get the very best when it comes to wine promotions.<\/strong><\/p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.<\/p>","Heading_color":"#fedcc6","hs_form_portal_id":""}}},"order":["hero_main_RMjjUa","main","multiple_posts_pEQRFf","newsletter_subscription_JnPUij"]}
+=======
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_main_RMjjUa": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_LRqeLx": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s_Drift_Wine_Club.jpg",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Wine",
+            "paragarh_p2": "Is a Way",
+            "paragarh_p3": "of Life",
+            "paragarh_p4": "",
+            "paragarh_1": "",
+            "paragarh_2": "At Alvi's Drift, wine is our everyday passion and we love sharing it with you. Our blog brings you insider insights, wine trends, tips and recipes, plus the latest Alvi's Drift news.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_LRqeLx"
+      ],
+      "settings": {
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#ffffff",
+        "video_banner": "",
+        "paragarh_p1": "",
+        "paragarh_p2": "",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "",
+        "paragarh_2": "",
+        "btn_text": "",
+        "btn_link": "",
+        "btn_main_link": ""
+      }
+    },
+    "main": {
+      "type": "main-blog",
+      "disabled": true,
+      "settings": {
+        "layout": "grid",
+        "show_image": true,
+        "image_height": "medium",
+        "show_date": false,
+        "show_author": false
+      }
+    },
+    "multiple_posts_pEQRFf": {
+      "type": "Multiple-Posts",
+      "settings": {
+        "heading": "Meet Our Local Icons",
+        "text_transform": "none",
+        "blog_show_tags": true,
+        "blog": "local-icons",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
+    "newsletter_subscription_JnPUij": {
+      "type": "Newsletter-Subscription",
+      "settings": {
+        "section_heading": "<h2>TH<em>E</em><br/>DRIFT</h2>",
+        "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
+        "Heading_color": "#fedcc6",
+        "hs_form_portal_id": ""
+      }
+    }
+  },
+  "order": [
+    "hero_main_RMjjUa",
+    "main",
+    "multiple_posts_pEQRFf",
+    "newsletter_subscription_JnPUij"
+  ]
+}
+>>>>>>> 6115e16b7737af0cb26553a58d3c303f1671b145
