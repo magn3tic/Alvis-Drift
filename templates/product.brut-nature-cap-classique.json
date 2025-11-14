@@ -1,0 +1,310 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#6287A0"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "01620f59-fe07-41a9-93cb-3c056a4852a2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Cultivars",
+            "content": "<p>70%  Chardonnay<br/>30%  Pinot Noir</p>",
+            "page": "",
+            "icon": "none",
+            "border": true
+          }
+        },
+        "cea18169-8ac4-4436-b705-65821ee5632a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "d5fdb772-1f0f-41b3-a626-be06163b1d3e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "9940af3f-ed18-4a2b-9273-5e590be86a3a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share This Page"
+          }
+        }
+      },
+      "block_order": [
+        "01620f59-fe07-41a9-93cb-3c056a4852a2",
+        "cea18169-8ac4-4436-b705-65821ee5632a",
+        "d5fdb772-1f0f-41b3-a626-be06163b1d3e",
+        "9940af3f-ed18-4a2b-9273-5e590be86a3a",
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639223856bcb87c3a": {
+      "type": "Logos",
+      "blocks": {
+        "163922385675455466-0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163922385675455466-0",
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16392371564aec5ac1": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "163923715616dacea7-0": {
+          "type": "column",
+          "settings": {
+            "title": "ALCOHOL",
+            "Title_color": "#f8f2e6",
+            "text": "<p><strong>2021: </strong> 12,6%</p>",
+            "Text_color": "#c65336"
+          }
+        },
+        "163923715616dacea7-1": {
+          "type": "column",
+          "settings": {
+            "title": "RESIDUAL SUGAR",
+            "Title_color": "#f8f2e6",
+            "text": "<p><strong>2021:  </strong>1,7 g/L</p>",
+            "Text_color": "#c65336"
+          }
+        },
+        "163923715616dacea7-2": {
+          "type": "column",
+          "settings": {
+            "title": "ACIDITY",
+            "Title_color": "#f8f2e6",
+            "text": "<p><strong>2021:  </strong>6,9 g/L</p>",
+            "Text_color": "#c65336"
+          }
+        },
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79": {
+          "type": "column",
+          "settings": {
+            "title": "pH",
+            "Title_color": "#f8f2e6",
+            "text": "<p><strong>2021:</strong>  3,2</p>",
+            "Text_color": "#c65336"
+          }
+        }
+      },
+      "block_order": [
+        "163923715616dacea7-0",
+        "163923715616dacea7-1",
+        "163923715616dacea7-2",
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
+      ],
+      "settings": {
+        "Background_Colour": "#2e112d",
+        "title": "ANALYSIS",
+        "Heading_color": "#ffffff",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "image_with_overlay_text_8bcx6H": {
+      "type": "Image-With-Overlay-Text",
+      "blocks": {
+        "heading_6cdDE7": {
+          "type": "heading",
+          "settings": {
+            "heading": "future-forward wines",
+            "heading_size": "medium"
+          }
+        },
+        "text_hfzpik": {
+          "type": "text",
+          "settings": {
+            "text": ""
+          }
+        },
+        "buttons_fHnmE7": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "discover more",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_6cdDE7",
+        "text_hfzpik",
+        "buttons_fHnmE7"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Website_banner_sustainability_00c60d8b-a6d1-4a64-8a6f-3b534904e9c1.jpg",
+        "image_height": "medium",
+        "adapt_height_first_image": true,
+        "desktop_text_box_position": "center",
+        "show_text_box": true,
+        "image_overlay_opacity": 0,
+        "color_scheme": "accent-2",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Cheese_Pairing_04.jpg",
+        "image_overlay": true,
+        "Heading_color": "#5c6e67",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "<p>Serve this sparkling wine with fresh oysters and grilled prawns, or enjoy with a pear, goats’ cheese and walnut salad, or a mushroom quiche.</p>",
+        "btn-txt": "",
+        "btn-url": ""
+      }
+    },
+    "1639224916778fd50c": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Vineyards-04.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "HERITAGE",
+        "video-sec-content-txt-1": "<p>Alvi's Drift winery takes its name from the low-water bridge over the Breede River which cuts through the family farm. Our family patriarch, Albertus Viljoen \"Oupa Alvi\" van der Merwe was instrumental in having this bridge built back in 1930. </p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines.</p><p>Alvi’s Drift Brut Nature Cap Classique is made in the traditional bottle fermented method made famous in the Champagne region of France.</p><p>This Cap Classique has been patiently riddled for 36 months and is made without dosage to be the most pure expression of the Cap Classique as interpreted from the grapes of Alvi’s Drift.</p>",
+        "button-txt": "SPARKLING RANGE",
+        "button_link": "shopify://collections/sparkling-range",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1643891693b4dbdf10": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/DJI_0001.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "ON THE VINES",
+        "video-sec-content-txt-1": "<p>Growing in the ancient limestone soils the Breede River Valley is so famous for, our mature Chardonnay vineyard is ideally situated for yielding grapes of the quality, character and complexity required for an outstanding MCC wine. Our Pinot Noir vineyards are situated on north-facing slopes, with grapes grown in black slate soil.</p><p>At Alvi’s Drift, it remains our philosophy that fruit should be phenolically ripe to ensure wines with an excellent, fruit-driven character and perfect mouthfeel. The Chardonnay and Pinot Noir grapes for this wine are specifically harvested at optimal ripeness in the cool, early morning hours to protect the acidity so crucial to producing a superb Brut Nature sparkling wine.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "16438917023a1c45b3": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Cellar-17.jpg",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "IN THE CELLAR",
+        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Once delivered to our cellar, cool Chardonnay and Pinot Noir grapes are whole-bunch pressed to ensure a soft, elegant base wine. Only the highest-quality free-run juice is drawn off skins, then fermented at cool temperatures and aged on lees for 36 months before secondary fermentation.</p><p>No dosage is used on this wine – making it the most pure expression of the South African Cap Classique as written in the language of the grapes of Alvi’s Drift.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "16392534101a01b24e": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "16392534108f7600fd-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "CAP CLASSIQUE WINES",
+            "collectionCarasoul": "cap-classique-range"
+          }
+        },
+        "item_nKQeQf": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "SPARKLING WINES",
+            "collectionCarasoul": "sparkling-range"
+          }
+        }
+      },
+      "block_order": [
+        "16392534108f7600fd-0",
+        "item_nKQeQf"
+      ],
+      "settings": {
+        "topheading": "OUR CAP CLASSIQUE & SPARKLING WINES",
+        "heading-tag": false,
+        "subtitle-1": "",
+        "active_collection": "cap-classique-range",
+        "promo_badge": false
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639223856bcb87c3a",
+    "16392371564aec5ac1",
+    "image_with_overlay_text_8bcx6H",
+    "1639224403b97d22e1",
+    "1639224916778fd50c",
+    "1643891693b4dbdf10",
+    "16438917023a1c45b3",
+    "16392534101a01b24e"
+  ]
+}

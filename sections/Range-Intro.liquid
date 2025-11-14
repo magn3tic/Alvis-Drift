@@ -1,0 +1,90 @@
+{% assign data = section.settings %}
+<section class="our-range video-sec">
+  <div class="sec-inner">
+      <div class="container">
+          <div class="video-sec-inner">
+              <div class="video-sec-vid" style="margin-top: 100px">
+                {% if data.video_url %}
+<!--                   <a href="{{data.video_url}}" target="_blank" class="story-vid-btn">{% render 'icon-video-btn' %}</a> -->
+                
+                                    <a href="javascript:" class="story-vid-btn modal-link"  data-modal="VideoModalRight">{% render 'icon-video-btn' %}</a>
+
+                {% endif %}  
+                <div class="story-vid-block">
+                      <img src="{{ data.bg_image | img_url:"master" }};" class="video-sec-vid-img br-cut" alt=""loading="lazy">
+                  </div>
+              </div>
+              <div class="video-sec-content our-range-content"  style="margin-top: 100px">
+                  <div class="video-sec-subtitle">{{data.Sub_title}}</div>
+                  <h2>{{data.title}}</h2>
+                  <div class="video-sec-content-txt">                        
+                      <p>{{data.description}}</p>
+                  </div> 
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+				<!-- our-story Section - Video Modal-->
+				<div class="modal-wrap" id="VideoModalRight">
+					<div class="modal-bg"></div>		
+					<div class="modal-content">	
+						<div class="modal-close">{%- render 'icon-close' -%}</div>
+						<div class="modal-content-inner">					
+							<div class="modal-vid">
+								<div class="iframe-wrap">
+									<div class="iframe-container">
+										<div id="ourStory" class="video-iframe"></div>										
+										<iframe id="ourStoryVideoRight" class="video-iframe" type="text/html" width="720" height="405" src="https://www.youtube.com/embed/{{ section.settings.video_url.id }}?modestbranding=1&autohide=1&showinfo=0&autoplay=0&playsinline=1&autohide=0&disablekb=1&controls=0&showinfo=0&modestbranding=0&loop=1&fs=0&rel=0" frameborder="0" allowfullscreen></iframe>
+                                  </div>
+								</div>
+							</div>
+						</div>	
+					</div>
+				</div>
+
+{% schema %}
+  {
+    "name": "Range Intro",
+    "settings": [
+	{
+	"type":"image_picker",
+	"id":"bg_image",
+	"label":"Choose Image"
+	},
+	{
+"type": "video_url",
+          "accept": ["youtube"],
+          "id": "video_url",
+          "label": "Video URL",
+          "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      
+	},
+	{
+	"type":"text",
+	"id":"Sub_title",
+	"label":"Pre-Heading",
+	"default":"Pre-Heading"
+	},
+	{
+	"type":"text",
+	"id":"title",
+	"label":"Range Name"
+	},
+	{
+	"type":"textarea",
+	"id":"description",
+	"label":"Text"
+	}
+
+	],
+"presets":[
+{
+"name":"Range Intro",
+"category":"collection"
+}
+]
+  }
+{% endschema %}

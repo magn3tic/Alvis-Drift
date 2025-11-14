@@ -1,0 +1,387 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "b802da46-4cc3-435e-b205-9c811c1cb55f": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s-Drift-About-Us_99716504-9b99-4e9c-a84b-e31c349ff881.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 20,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "ABOUT US",
+            "paragarh_p2": "",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "Alvi’s Drift is a third-generation wine farm situated in South Africa’s Western Cape province",
+            "paragarh_2": "Our family-owned winery, tucked away in the southern reaches of the fertile Breede River Valley, is located in the cooler-climate wine ward of Scherpenheuvel.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b802da46-4cc3-435e-b205-9c811c1cb55f"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Vineyards-10.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "",
+        "paragarh_p1": "ABOUT",
+        "paragarh_p2": "US",
+        "paragarh_p3": "",
+        "paragarh_p4": "",
+        "paragarh_1": "Learn more about our family, our farm, the Alvi’s Drift vineyards, our cellar, and our wine region.",
+        "paragarh_2": "Nestled in South Africa’s fertile Breede River Valley region, Alvi’s Drift winery boasts a long and storied history. Meet our family and get to know our farm, our vineyards, our cellar, and our award-winning wines.",
+        "btn_text": "",
+        "btn_link": "shopify://collections/all-products",
+        "btn_main_link": ""
+      }
+    },
+    "16396030097fb630ce": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Low-Water-Drift.jpg",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "OUR FAMILY",
+        "video-sec-content-txt-1": "<p>Known for scoring the first try against the All Blacks on African soil back in 1928, our family patriarch, Albertus Viljoen “Oupa Alvi” van der Merwe commissioned a low-water bridge to be built across the Breede River on our family farm in 1930. Locals named this bridge “Alvi’s Drift”, the name by which it is still known today. </p><p>Oupa Alvi’s grandson, Alvi’s Drift winemaker Alvi van der Merwe, named our winery after this landmark, honouring both our family patriarch and the life-giving river that nourishes our vineyards.</p>",
+        "button-txt": "MORE ABOUT US",
+        "button_link": "shopify://pages/family",
+        "button_type": "alvisBtn"
+      }
+    },
+    "164328175026de0ec4": {
+      "type": "Text-Scroller",
+      "disabled": true,
+      "settings": {
+        "dare-to-be-true-bg": "shopify://shop_images/dare-to-be-true-bg_large_7cb0c57c-703f-473b-81ef-ce21f46940f2.png",
+        "dare-to-be-true-bx": "shopify://shop_images/dare-to-be-true-bx.png",
+        "marquee-t-1": "D<i>A</i>RE TO BE TR<i>U</i>E",
+        "marquee-font-size": "128",
+        "marquee-t-2": ""
+      }
+    },
+    "1639677536f2892eaa": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Alvi-_-Junel_53b98a48-3f89-4036-a788-7c0308c099d0.jpg",
+        "right_video_url": "https://www.youtube.com/watch?v=zlpmJKSHR-g",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "OUR FARM",
+        "video-sec-content-txt-1": "<p>Alfalfa farm and its adjoining farm network is a busy agricultural centre situated in the Scherpenheuvel wine ward, situated in the cooler southern reaches of the fertile Breede River Valley.</p><p>Home to approximately 410 hectares of Alvi’s Drift vineyards, the farm boasts a large commercial dairy, cheese factory, fruit orchards, livestock herds, and free-roaming game. It is also home to three generations of the Van der Merwe family.</p><p>As custodians of the land, Alvi and Junel van der Merwe are deeply committed to environmental conservation. Through sustainable farming practices, they strive, wherever possible, to give back to the land what is taken from it.</p>",
+        "button-txt": "MORE ABOUT OUR FARM",
+        "button_link": "shopify://pages/farm",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639677693b31dbd4a": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Pruning.jpg",
+        "image_size": "100%",
+        "video_url": "https://www.youtube.com/watch?v=NHaK24QOLow",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "OUR VINEYARDS",
+        "video-sec-content-txt-1": "<p>A serendipitous combination of climate, soils, topography and abundant water from the life-giving Breede River enables the Alvi’s Drift vineyards to produce distinctive, award-winning South African wines of singular character and complexity.</p><p>Scattered across a network of adjoining farms in the cooler, southernmost part of the fertile Breede River Valley, our vineyards lie nestled among indigenous renosterveld, succulent Karoo vegetation and fynbos. </p><p>For our winemaker and his team, the location of each vineyard is a matter of meticulous planning, ensuring the most beneficial terroir for each grape varietal cultivated on our land.</p>",
+        "button-txt": "MORE ABOUT OUR VINEYARDS",
+        "button_link": "shopify://pages/vineyards",
+        "button_type": "alvisBtn"
+      }
+    },
+    "16396792696f5f15b3": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/Alvi_s-Drift-Wine-Cellar.jpg",
+        "right_video_url": "https://www.youtube.com/watch?v=t-qKB9wX-3o",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "OUR CELLAR",
+        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, both modern and traditional production techniques are applied, in tandem with a low-intervention, unhurried approach to winemaking. In 1932, our founder commissioned the kuipe (open-top concrete fermentation tanks) to be built. These same concrete fermentation tanks are still used in the production of certain award-winning Alvi’s Drift red wines today.</p><p>No “one size fits all” winemaking recipe is applied. Each wine reflects its particular journey, fruit characteristics and terroir. Here, stainless steel tanks, wooden barrels, and cement kuipe each have their place, as do modern and ancient winemaking practices. </p>",
+        "button-txt": "MORE ABOUT OUR CELLAR",
+        "button_link": "shopify://pages/cellar",
+        "button_type": "alvisBtn"
+      }
+    },
+    "fd3e1084-77a1-432b-a2ad-9f427d6ee983": {
+      "type": "Focus-Text-Image-Left",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/Alvi_s_Drift_Sustainability.jpg",
+        "image_size": "100%",
+        "video_url": "https://youtu.be/1MJNc-AQCKY",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "Sustainability",
+        "video-sec-content-txt-1": "<p>At our third-generation winery, we realise that our success is only possible through the dedicated labour of our workforce.</p><p>As one of the largest employers in our area, with a team of more than 500 workers, we value and acknowledge the unique contribution of each of our employees.</p><p>We also recognise the importance of integrity, equality, fair compensation, and career advancement opportunities in a safe and inclusive working environment.</p>",
+        "button-txt": "MORE ABOUT SUSTAINABILITY",
+        "button_link": "shopify://pages/sustainability",
+        "button_type": "alvisBtn"
+      }
+    },
+    "163960322017a44185": {
+      "type": "Text-Scroller",
+      "disabled": true,
+      "settings": {
+        "dare-to-be-true-bg": "shopify://shop_images/dare-to-be-true-bg.png",
+        "dare-to-be-true-bx": "shopify://shop_images/one-the-wine-main.png",
+        "marquee-t-1": "DAR<i>E</i> TO BE TRUE",
+        "marquee-font-size": "128",
+        "marquee-t-2": "DAR<i>E</i> TO BE TRUE"
+      }
+    },
+    "16420784138a039bdd": {
+      "type": "Multiple-Posts",
+      "disabled": true,
+      "settings": {
+        "heading": "OUR SOCIAL IMPACT",
+        "text_transform": "uppercase",
+        "blog_show_tags": true,
+        "blog": "guides-insights",
+        "post_limit": 3,
+        "show_image": true,
+        "show_date": false,
+        "show_author": false,
+        "soft_background": false
+      }
+    },
+    "163968008729148d8c": {
+      "type": "Map",
+      "settings": {
+        "Heading": "We're located in the cool-climate wine ward of Scherpenheuvel.",
+        "map_url": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3316.5151442652127!2d19.530228315207694!3d-33.77319298068268!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcd87b05e2eea91%3A0x6c640f79cf372224!2sAlvi's%20Drift%20-%20No%20farm%20visits%20until%20further%20notice.!5e0!3m2!1sen!2sza!4v1639680134120!5m2!1sen!2sza\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+        "Heading_color": "#ffffff",
+        "button-txt": "",
+        "button_link": ""
+      }
+    },
+    "1643794081a38832fc": {
+      "type": "Blog-External",
+      "blocks": {
+        "57925f9a-7428-453c-a1ef-66972b94e60e": {
+          "type": "article",
+          "settings": {
+            "image": "shopify://shop_images/Buying_Wine_Online.jpg",
+            "title": "Your Complete Guide to Buying Wine Online",
+            "content": "<p>Buying wine online saves you time and money. We asked Fiona Rossiter, founder of Inspired Living, to share tips on all the points you need to consider.</p>",
+            "link": "https://blog.alvisdrift.co.za/guide-to-buy-wine-online-south-africa"
+          }
+        },
+        "33ff0b53-a842-4c8b-899b-e5f511efd398": {
+          "type": "article",
+          "settings": {
+            "image": "shopify://shop_images/shutterstock_1751876834.png",
+            "title": "",
+            "content": "<p>Learn more about international wine trends, read our interesting wine-related articles and get top tips from wine experts from around the globe.</p>",
+            "link": "https://blog.alvisdrift.co.za"
+          }
+        }
+      },
+      "block_order": [
+        "57925f9a-7428-453c-a1ef-66972b94e60e",
+        "33ff0b53-a842-4c8b-899b-e5f511efd398"
+      ],
+      "disabled": true,
+      "settings": {
+        "external_link": "https://blog.alvisdrift.co.za",
+        "hs_form_id": "",
+        "hs_form_portal_id": ""
+      }
+    },
+    "1639603063787a43d2": {
+      "type": "Newsletter-Subscription",
+      "settings": {
+        "section_heading": "<p>TH<em>E</em><br/>DRIFT</p>",
+        "section_content": "<p><strong>Get the very best when it comes to wine promotions.</strong></p><p>Subscribe to our newsletter, The Drift, to receive all the latest updates, special offers, wine promotions, industry news and more, delivered straight to your inbox.</p>",
+        "Heading_color": "#c65336",
+        "hs_form_portal_id": "25422535"
+      }
+    },
+    "16396031315c4c1f82": {
+      "type": "Logos",
+      "blocks": {
+        "1639603131a0cab8b7-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Absa-Top-10-Pinotage-Award.png",
+            "logo_link": "https://www.pinotage.co.za/"
+          }
+        },
+        "996b9d51-9dd6-464e-83c7-38fe6e79f278": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        },
+        "bf85ff2b-a1e8-4a90-840e-57b0ae9ba01f": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Award-Double-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "ec919cb8-de59-431b-aff4-0a4b2e15cd7e": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points-Gold.png",
+            "logo_link": "https://iwsc.net/"
+          }
+        },
+        "389a4aa6-8043-4db6-9758-07da450fae8a": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gold-Wine-Awards-Double-Gold.png",
+            "logo_link": "https://www.goldwineawards.com/"
+          }
+        },
+        "559de3d5-e1c1-43dd-87b4-709026b238e3": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-Double-Platinum.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "a5e9fe0a-7f01-4ce8-939b-5fbbc25d4e17": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Champion.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "b691579a-2757-424e-875c-20da06f64aa0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/NWC-Awards-1st-Place.png",
+            "logo_link": "https://buybetterwine.com/nwc-top-100/"
+          }
+        },
+        "941dfda5-bc8d-433d-8b0b-bfc4f1e7797c": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/S_hiraz-SA-Challenge-Top-3.png",
+            "logo_link": "https://shirazsa.co.za/challenge/"
+          }
+        },
+        "120962f3-9811-4534-ba23-04d26ca788c0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Veritas-Awards_825e96e8-eea9-44e7-b436-8a94381d7377.png",
+            "logo_link": "https://veritas.co.za/"
+          }
+        },
+        "2f2bd81c-868b-4f6c-b1e9-cf57fdc453ea": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Vitis-Vinifera-Awards-Gold-2.png",
+            "logo_link": "https://www.vitisawards.com/"
+          }
+        },
+        "4add91e9-5567-46a9-bf41-7689fe301d10": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Women_s-Wine-_-Spirits-Awards-Gold.png",
+            "logo_link": "https://lumoawards.com/"
+          }
+        },
+        "8a6be1b6-176d-449c-8118-bac2f3f43c04": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Sauvignon-Blanc-Top-10.png",
+            "logo_link": "https://sauvignonblanc.com/"
+          }
+        },
+        "f49f4558-36bc-434d-bc7f-d44d2fb36aa0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Sommeliers-Choice-Awards-Double-Gold.png",
+            "logo_link": "https://sommelierschoiceawards.com/"
+          }
+        },
+        "d78b044d-4a73-4198-baac-e71313054b26": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Gilbert-_-Gaillard-Best-Value_e6052faf-bd44-486c-92cd-c36835e3ab8a.png",
+            "logo_link": "https://en.gilbertgaillard.com/"
+          }
+        },
+        "84f8be76-8a7b-4cb9-93e9-cce8c340cdaf": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/SA-Wine-Index-Platinum.png",
+            "logo_link": "https://www.sawineindex.com/"
+          }
+        }
+      },
+      "block_order": [
+        "1639603131a0cab8b7-0",
+        "996b9d51-9dd6-464e-83c7-38fe6e79f278",
+        "bf85ff2b-a1e8-4a90-840e-57b0ae9ba01f",
+        "ec919cb8-de59-431b-aff4-0a4b2e15cd7e",
+        "389a4aa6-8043-4db6-9758-07da450fae8a",
+        "559de3d5-e1c1-43dd-87b4-709026b238e3",
+        "a5e9fe0a-7f01-4ce8-939b-5fbbc25d4e17",
+        "b691579a-2757-424e-875c-20da06f64aa0",
+        "941dfda5-bc8d-433d-8b0b-bfc4f1e7797c",
+        "120962f3-9811-4534-ba23-04d26ca788c0",
+        "2f2bd81c-868b-4f6c-b1e9-cf57fdc453ea",
+        "4add91e9-5567-46a9-bf41-7689fe301d10",
+        "8a6be1b6-176d-449c-8118-bac2f3f43c04",
+        "f49f4558-36bc-434d-bc7f-d44d2fb36aa0",
+        "d78b044d-4a73-4198-baac-e71313054b26",
+        "84f8be76-8a7b-4cb9-93e9-cce8c340cdaf"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "16396030097fb630ce",
+    "164328175026de0ec4",
+    "1639677536f2892eaa",
+    "1639677693b31dbd4a",
+    "16396792696f5f15b3",
+    "fd3e1084-77a1-432b-a2ad-9f427d6ee983",
+    "163960322017a44185",
+    "16420784138a039bdd",
+    "163968008729148d8c",
+    "1643794081a38832fc",
+    "1639603063787a43d2",
+    "16396031315c4c1f82"
+  ]
+}

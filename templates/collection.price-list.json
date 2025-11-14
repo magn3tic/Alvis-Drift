@@ -1,0 +1,159 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1642755007ac0ed3ed": {
+      "type": "Hero-Main",
+      "blocks": {
+        "95cbd5e7-08f7-42bd-8557-76921c352452": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s_Drift_Wine_Prices.jpg",
+            "image_overlay": "#ffffff",
+            "overlay_opacity": 0,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "WINE",
+            "paragarh_p2": "PRICING",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "QUICK PRICING OVERVIEW",
+            "paragarh_2": "At Alvi’s Drift, we’re committed to fair pricing for our award-winning South African wines. Please note that all prices supplied are per case, including VAT.",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "95cbd5e7-08f7-42bd-8557-76921c352452"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Cellar-14_3773dad7-b9bf-4ab0-accf-b9de761ff2e3.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 0,
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "spacer_CVqbwz": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
+      }
+    },
+    "product-grid": {
+      "type": "price-list-grid",
+      "settings": {
+        "products_per_page": 16,
+        "image_ratio": "adapt",
+        "show_secondary_image": false,
+        "add_image_padding": false,
+        "show_image_outline": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_filtering": true,
+        "enable_sorting": true,
+        "collapse_on_larger_devices": false
+      }
+    },
+    "165835183884042e76": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "",
+        "subtitle-2": "<p><strong>Please note that all prices supplied are per case.</strong></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "1642755010578ddd9f": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg_772fa787-b0e0-4ca6-a229-45c5423aba51.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club-1"
+      }
+    },
+    "16427563776be0838a": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "164275637793547712-0": {
+          "type": "column",
+          "settings": {
+            "title": "LARGER ORDER ENQUIRY",
+            "Title_color": "#2e112d",
+            "text": "<p><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Enquire about ordering larger volumes (than available on this site) for special events.</strong></a></p>",
+            "Text_color": "#2e112d"
+          }
+        },
+        "164275637793547712-1": {
+          "type": "column",
+          "settings": {
+            "title": "DISTRIBUTION ENQUIRY",
+            "Title_color": "#2e112d",
+            "text": "<p><a href=\"/pages/distributors\" target=\"_blank\" title=\"Distributors\"><strong>Click here to enquire about stocking or distributing our wines.</strong></a></p>",
+            "Text_color": "#2e112d"
+          }
+        },
+        "164275637793547712-2": {
+          "type": "column",
+          "settings": {
+            "title": "OTHER ENQUIRIES",
+            "Title_color": "#2e112d",
+            "text": "<p><a href=\"/pages/contact\" target=\"_blank\" title=\"Contact Us\"><strong>Click here for any other enquiries pertaining to our brand or wines.</strong></a></p>",
+            "Text_color": "#2e112d"
+          }
+        }
+      },
+      "block_order": [
+        "164275637793547712-0",
+        "164275637793547712-1",
+        "164275637793547712-2"
+      ],
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "REQUIRE ADDITIONAL INFORMATION?",
+        "Heading_color": "#ffffff",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "page_background_colour_fywbBj": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    }
+  },
+  "order": [
+    "1642755007ac0ed3ed",
+    "spacer_CVqbwz",
+    "product-grid",
+    "165835183884042e76",
+    "1642755010578ddd9f",
+    "16427563776be0838a",
+    "page_background_colour_fywbBj"
+  ]
+}

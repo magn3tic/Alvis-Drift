@@ -1,0 +1,98 @@
+<section class="alvis-drift-awarded video-sec bg-olive">
+  <div class="sec-inner">
+      <div class="container">
+          <div class="video-sec-inner">
+              <h2 class="desktop-hide tablet-show">{{section.settings.title_text}}</h2>
+              <div class="video-sec-vid">
+                  <div class="story-vid-block">
+                      <img src="{{ section.settings.main_image | img_url:"master" }};" class="video-sec-vid-img br-cut" alt="">
+                  </div>
+              </div>
+              <div class="video-sec-content alvis-drift-awarded-content">
+                  <h2 class="desktop-show tablet-hide">{{section.settings.title_text}}</h2>
+                  <div class="video-sec-content-txt">                        
+                      <p>{{section.settings.main_content}}</p>
+                  </div>
+                  <a href="{{section.settings.main_btn_url}}" class="btn btn-overlay">{{section.settings.main_btn_name}}</a>
+                  <div class="nd-bx-wrap">
+                    <div class="nd-bx-s">                      
+                      <div class="nd-bx">
+                        <img src="{{ section.settings.second_image | img_url:"master" }};" class="video-sec-vid-img br-cut2" alt="">
+                        <div class="nd-bx-no">{{section.settings.second_text}}</div>
+                      </div>
+                      <div class="nd-bx desktop-hide tablet-show">
+                        <img src="{{ section.settings.second_image | img_url:"master" }};" class="video-sec-vid-img br-cut2" alt="">
+                        <div class="nd-bx-no">{{section.settings.second_text}}</div>
+                      </div>
+                    </div> 
+                    <div class="nd-bx-btn-wrap"><a href="{{section.settings.second_btn_url}}" class="btn btn-overlay">{{section.settings.second_btn_name}}</a></div>
+                  </div>                  
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+{% schema %}
+  {
+    "name": "Awards Section",
+    "settings": [
+	{
+	"type":"image_picker",
+	"id":"main_image",
+	"label":"Choose Image"
+	},
+	{
+	"type":"text",
+	"id":"title_text",
+	"label":"Enter Title"
+	},
+	{
+	"type":"textarea",
+	"id":"main_content",
+	"label":"Enter Description"
+	},
+	{
+	"type":"text",
+	"id":"main_btn_name",
+	"label":"Enter button text"
+	},
+	{
+	"type":"url",
+	"id":"main_btn_url",
+	"label":"Enter URL"
+	},
+	{
+	"type":"header",
+	"content":"Bottom Part"
+	},
+	{
+	"type":"image_picker",
+	"id":"second_image",
+	"label":"Choose Image"
+	},
+	{
+	"type":"text",
+	"id":"second_text",
+	"label":"Enter text"
+	},
+	{
+	"type":"text",
+	"id":"second_btn_name",
+	"label":"Enter button text"
+	},
+	{
+	"type":"url",
+	"id":"second_btn_url",
+	"label":"Enter URL"
+	}
+	]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

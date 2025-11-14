@@ -1,0 +1,305 @@
+<section>
+	<script>
+		/* important javascript script to add parallax effect to Home Page */
+		/*********** DON'T REMOVE THIS CODE FORM THIS PAGE ***********/
+		var body = document.body;
+		body.classList.add("parallax-h");
+	</script>   
+{% for block in section.blocks %}
+ <div class="hero-section">
+<picture>
+  {% if block.settings.mobile_background_image != blank %}
+      <!-- Mobile -->
+  <source 
+    media="(max-width: 650px)" 
+    srcset="
+      {{ block.settings.mobile_background_image | image_url: width: 480, format: 'webp' }} 480w,
+      {{ block.settings.mobile_background_image | image_url: width: 768, format: 'webp' }} 668w,
+    "
+    width="{{ block.settings.mobile_background_image.width }}"
+    height="{{ block.settings.mobile_background_image.height }}"
+    sizes="100vw"
+    type="image/webp">
+{% endif %}
+  <!-- Desktop -->
+  <img 
+    src="{{ block.settings.background_image | image_url: width: 1600, format: 'webp' }}" 
+    srcset="
+      {{ block.settings.background_image | image_url: width: 1200, format: 'webp' }} 1200w,
+      {{ block.settings.background_image | image_url: width: 1600, format: 'webp' }} 1600w,
+      {{ block.settings.background_image | image_url: width: 2000, format: 'webp' }} 2000w
+    "
+    width="{{ block.settings.background_image.width }}"
+    height="{{ block.settings.background_image.height }}"
+    sizes="100vw"
+    fetchpriority="high"
+    class="hero-section-bg"
+    loading="eager"
+    alt="">
+</picture>
+
+    {% if block.settings.image_overlay != blank and block.settings.image_overlay != 'rgba(0,0,0,0)' and block.settings.overlay_opacity != blank %}
+    {% assign bg_color = block.settings.image_overlay | color_to_rgb %}       
+    {% assign opacity = block.settings.overlay_opacity %}       
+    {% assign opacityWithEndBracket = ', ' | append: opacity | append: '%)' %}  
+    {% assign rgba = bg_color | replace: 'rgb', 'rgba' | replace:')', opacityWithEndBracket %} 
+    <span class="hero-overlay-bg" style="background: {{ rgba }}"></span>
+  {% else %}
+    <div class="hero-overlay-bg"></div>
+  {% endif %}
+  <div class="hero-section-inner">
+    <div class = "hero-main-content">
+    <div class="hero-content col-sm">
+      <div class="hero-title">
+        <h1>
+          <span>
+            {% if block.settings.paragarh_p1 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p1 }}</p> {% endif %}
+            {% if block.settings.paragarh_p2 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p2 }}</p>{% endif %}
+            {% if block.settings.paragarh_p3 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p3 }}</p>{% endif %}
+            {% if block.settings.paragarh_p4 != blank %}<p class="animate-reveal">{{ block.settings.paragarh_p4 }}</p>{% endif %}
+          </span> 
+        </h1> 
+      </div>
+      <div class = "the_blurb">{{ section.settings.blurb }}</div>
+      {% if section.settings.right_btn_link != blank %}
+      <div class = "main_btn"><a href="{{ section.settings.right_btn_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
+      {% endif %}
+      {% if section.settings.anchor_link != blank %}
+      <div class = "main_btn anchor"><a href="#{{ section.settings.anchor_link }}" class="btn">{{ section.settings.right_btn_text }}</a> </div>
+      {% endif %}
+      </div>
+
+        {% if block.settings.paragarh_1 != blank or block.settings.paragarh_2 != blank %}
+      <div class="hero-txt col-sm"> 
+        <div class="scrl-sec">
+            <span class="scrl-circle"></span>
+            <span class="scrl-line"></span>
+        </div>
+        <div class="hero-txt-c">                    
+          <p class="sub-title">{{ block.settings.paragarh_1 }}</p>
+          <p>{{ block.settings.paragarh_2 }}</p>
+        </div>
+        </div> 
+        {% endif %}
+
+  </div>
+    </div>         
+    {% if block.settings.video_banner != blank %}
+      <div class="hero-video-btn">
+        <a class="hero-video-btn-link" data-autoplay="true" data-vbtype="video" href="https://youtu.be/{{ block.settings.video_banner.id }}?modestbranding=0&autohide=1&showinfo=0&autoplay=0&playsinline=1&autohide=0&disablekb=1&showinfo=0&loop=0&fs=0&rel=0">{% render 'icon-video-btn' %}</a>
+      </div>
+    {% endif %}
+     {% if block.settings.img_icon != blank %}
+      <div class = "right-hero-icon">
+        <a href ="{{ block.settings.side_btn_link }}"><img src = "{{ block.settings.img_icon | img_url:'master' }}" class = "front-img-icon"width = "110" height = "110" alt = "{{ block.settings.img_icon.image.alt }}"/> </a>   
+     </div>
+      {% endif %}
+        {% if block.settings.side_btn_text != blank %}
+        <div class="hero-btn-wrap">
+        <a href="{{ block.settings.side_btn_link }}" class="btn">{{ block.settings.side_btn_text }}</a>
+        </div> 
+        {% endif %}     
+    <br> 
+  </div>
+   {% if block.settings.sec_banner != blank %}
+   <div class = "sec-banner">
+     <img src = "{{ block.settings.sec_banner | img_url:'master' }}"
+       srcset="
+      {{ block.settings.sec_banner | img_url: '400x' }} 400w,
+      {{ block.settings.sec_banner | img_url: '600x' }} 600w,
+      {{ block.settings.sec_banner | img_url: '800x' }} 800w,
+      {{ block.settings.sec_banner | img_url: 'master' }} 1200w
+      "
+      class = "second-img" sizes="(max-width: 768px) 100vw, 80vw" loading="eager" alt = "{{ block.settings.sec_banner.alt }}" width = "{{ block.settings.sec_banner.width }}" height = "{{ block.settings.sec_banner.height }}">
+     </div>
+     {% endif %}
+{% endfor %}
+</section>
+<style>
+  .animate-reveal { {% if section.settings.heading_color != blank %}color: {{ section.settings.heading_color }};{% endif %} font-size: 70px;}
+  @media (min-width:250px) and (max-width:900px) {font-size: 38px;line-height: 1.2em;}
+  </style>
+{% schema %}
+{
+  "name": {
+    "en": "Page Header (Hero)"
+  },
+  "class": "index-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "color",
+      "id": "image_overlay",
+      "label": "Image Overlay Color"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 30,
+      "label": "Overlay Opacity"
+    },
+    {
+          "type": "richtext",
+          "id": "blurb",
+          "label": "Blurb"
+    },
+    {
+      "type": "text",
+      "id": "right_btn_text",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "right_btn_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "text",
+      "id": "anchor_link",
+      "label": "Anchor Link (ID name here)"
+    }
+  ],
+  "blocks":[
+    {
+      "type":"slider",
+      "name":"Slide",
+      "settings":[
+        {
+          "type": "image_picker",
+          "id": "background_image",
+          "label": "Background Image"
+        },
+        {
+        "type": "image_picker",
+        "id": "mobile_background_image",
+        "label": "Background Image for Mobile Screens"
+        },
+        {
+        "type": "image_picker",
+        "id": "sec_banner",
+        "label": "Second Banner Image"
+        },
+        {
+          "type": "color",
+          "id": "image_overlay",
+          "label": "Image Overlay Color"
+        },
+        {
+          "type": "range",
+          "id": "overlay_opacity",
+          "min": 0,
+          "max": 100,
+          "step": 5,
+          "default": 30,
+          "label": "Overlay Opacity"
+        },
+        {
+          "type": "image_picker",
+          "id": "img_icon",
+          "label": "Image Icon on the right"
+        },
+        {
+          "type": "select",
+          "id": "heading_color",
+          "label": "Heading Colour",
+          "options": [
+            {
+              "value": "#ffffff",
+              "label": "White"
+            },
+            {
+              "value": "#2e112d",
+              "label": "Dark Plum"
+            },
+            {
+              "value": "#f8f2e6",
+              "label": "Light Beige"
+            }, 
+            {
+              "value": "#c0ccbe",
+              "label": "Light Olive"
+            },
+            {
+              "value": "#aac4d3",
+              "label": "Light Blue"
+            },
+            {
+              "value": "#fedcc6",
+              "label": "Light Orange"
+            }
+          ],
+          "default": "#ffffff"
+        },
+        {
+          "type": "video_url",
+          "accept": ["youtube"],
+          "id": "video_banner",
+          "label": "Video URL"
+        },
+        {
+          "type": "text",
+          "id": "paragarh_p1",
+          "label": "Heading Line 1"
+        },
+        {
+          "type": "text",
+          "id": "paragarh_p2",
+          "label": "Heading Line 2"
+        },
+        {
+          "type": "text",
+          "id": "paragarh_p3",
+          "label": "Heading Line 3"
+        },
+        {
+          "type": "text",
+          "id": "paragarh_p4",
+          "label": "Heading Line 4"
+        },
+      
+        {
+          "type": "text",
+          "id": "paragarh_1",
+          "label": "Paragraph Heading"
+        },
+        {
+          "type": "text",
+          "id": "paragarh_2",
+          "label": "Paragraph Text"
+        },
+        {
+          "type": "text",
+          "id": "side_btn_text",
+          "label": "Button Text"
+        },
+        {
+          "type": "text",
+          "id": "side_btn_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": {
+        "en": "Page Header (Hero)"
+      },
+      "category": {
+        "en": "Banner"
+      }
+    }
+  ]
+}
+{% endschema %}
+{% stylesheet %}
+{% endstylesheet %}
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,569 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1639603079ac59d760": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "1639602940145c735b": {
+      "type": "Hero-Main",
+      "blocks": {
+        "d6377de7-429d-4029-a05e-935e446b9f18": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+            "image_overlay": "#000000",
+            "overlay_opacity": 60,
+            "Heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "RESERVE",
+            "paragarh_p2": "MUSCAT",
+            "paragarh_p3": "AWARDS",
+            "paragarh_p4": "",
+            "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+            "paragarh_2": "View the awards for our Muscat Nectarinia and Muscat De Frontignan (Discontinued) wines, in our Reserve Range, below.",
+            "side_btn_text": "Buy Our Reserve Muscat Nectarinia",
+            "side_btn_link": "shopify://products/reserve-muscat-nectarinia"
+          }
+        }
+      },
+      "block_order": [
+        "d6377de7-429d-4029-a05e-935e446b9f18"
+      ],
+      "settings": {
+        "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "Heading_color": "#f8f2e6",
+        "video_banner": "",
+        "paragarh_p1": "RESERVE",
+        "paragarh_p2": "MUSCAT",
+        "paragarh_p3": "AWARDS",
+        "paragarh_p4": "",
+        "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
+        "paragarh_2": "View the awards for our Muscat Nectarinia and Muscat De Frontignan (Discontinued) wines, in our Reserve Range, below.",
+        "btn_text": "Buy Our Reserve Muscat Nectarinia",
+        "btn_link": "shopify://products/reserve-muscat-nectarinia",
+        "btn_main_link": ""
+      }
+    },
+    "c0c5758e-9db0-4d30-a98d-bd9a981cb50c": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "8fbf7070-6870-4a2f-971e-93586364ea23": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2023",
+            "arward_level": "Great Gold"
+          }
+        },
+        "0f5c0567-0ac6-4336-9d49-591ab8507d19": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2023",
+            "arward_level": "Top 10"
+          }
+        },
+        "7693ae5f-8e38-44d3-8047-e16ff6397782": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2023",
+            "arward_level": "Platinum Certificate Of Excellence"
+          }
+        },
+        "row_y6VJej": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2023",
+            "arward_level": "Top 100"
+          }
+        },
+        "row_yMcny7": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2023",
+            "arward_level": "Double Platinum"
+          }
+        },
+        "row_bRK7Vc": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2023",
+            "arward_level": "Great Gold"
+          }
+        },
+        "row_jD3AXb": {
+          "type": "row",
+          "settings": {
+            "award": "Lumo Awards",
+            "year": "2023",
+            "arward_level": "Double Gold"
+          }
+        },
+        "row_qMkM7E": {
+          "type": "row",
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2023",
+            "arward_level": "Double Gold"
+          }
+        },
+        "row_78pGXV": {
+          "type": "row",
+          "settings": {
+            "award": "Platters Wine Awards Competition",
+            "year": "2024",
+            "arward_level": "97 Points"
+          }
+        },
+        "row_fMVwgz": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2024",
+            "arward_level": "Great Gold"
+          }
+        }
+      },
+      "block_order": [
+        "8fbf7070-6870-4a2f-971e-93586364ea23",
+        "0f5c0567-0ac6-4336-9d49-591ab8507d19",
+        "7693ae5f-8e38-44d3-8047-e16ff6397782",
+        "row_y6VJej",
+        "row_yMcny7",
+        "row_bRK7Vc",
+        "row_jD3AXb",
+        "row_qMkM7E",
+        "row_78pGXV",
+        "row_fMVwgz"
+      ],
+      "settings": {
+        "main_heading": "Muscat Nectarinia:  2017"
+      }
+    },
+    "16431510074857ca28": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "91fd257c-8716-42c5-8fb3-65e58ab5ee1a": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "508f3a26-a564-4604-8a1b-8ff1c142d6cf": {
+          "type": "row",
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2021",
+            "arward_level": "Gold"
+          }
+        },
+        "ea2dfd67-5e24-45c6-9107-172d4c3e5f59": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2021",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "353c364e-ec0c-4a00-a140-a17bbfdaf1fd": {
+          "type": "row",
+          "disabled": true,
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2021",
+            "arward_level": "Double Gold"
+          }
+        },
+        "f52226dd-91a4-4f77-944d-d05109168cb9": {
+          "type": "row",
+          "settings": {
+            "award": "NWC & Top 100",
+            "year": "2022",
+            "arward_level": "Double Gold"
+          }
+        },
+        "4fe4306c-6cff-4413-9105-beba9dea9589": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2023",
+            "arward_level": "Top 10"
+          }
+        },
+        "515eb061-3430-417a-954e-1f770c7db17f": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2023",
+            "arward_level": "Platinum Certificate Of Excellence"
+          }
+        }
+      },
+      "block_order": [
+        "91fd257c-8716-42c5-8fb3-65e58ab5ee1a",
+        "508f3a26-a564-4604-8a1b-8ff1c142d6cf",
+        "ea2dfd67-5e24-45c6-9107-172d4c3e5f59",
+        "353c364e-ec0c-4a00-a140-a17bbfdaf1fd",
+        "f52226dd-91a4-4f77-944d-d05109168cb9",
+        "4fe4306c-6cff-4413-9105-beba9dea9589",
+        "515eb061-3430-417a-954e-1f770c7db17f"
+      ],
+      "settings": {
+        "main_heading": "Muscat Nectarinia:  2016"
+      }
+    },
+    "164305753843dd40a5": {
+      "type": "Tabled-Information",
+      "blocks": {
+        "1b018536-f9e7-42a3-80a6-01751869d453": {
+          "type": "row",
+          "settings": {
+            "award": "Michelangelo International Wine & Spirits Awards",
+            "year": "2017",
+            "arward_level": "Highest Scoring"
+          }
+        },
+        "062330e6-5acc-4ef1-ae79-34914002935e": {
+          "type": "row",
+          "settings": {
+            "award": "Veritas Awards",
+            "year": "2017",
+            "arward_level": "Double Gold"
+          }
+        },
+        "7c543c78-02e3-4268-84ec-d8f6d2f07c86": {
+          "type": "row",
+          "settings": {
+            "award": "Muskadel SA",
+            "year": "2017",
+            "arward_level": "Platinum"
+          }
+        },
+        "699f7120-e97d-4fb6-8be1-55a5576a4fd8": {
+          "type": "row",
+          "settings": {
+            "award": "International Wine & Spirits Awards:  Spain",
+            "year": "2017",
+            "arward_level": "Gold"
+          }
+        },
+        "b075a235-690a-4b65-9506-988f07821499": {
+          "type": "row",
+          "settings": {
+            "award": "Top Wine SA",
+            "year": "2018",
+            "arward_level": "Top 10"
+          }
+        },
+        "bf29065f-a261-4d3a-965d-9a1e169bc977": {
+          "type": "row",
+          "settings": {
+            "award": "Catavinum World Wine & Spirits Competition: Spain",
+            "year": "2018",
+            "arward_level": "Gold"
+          }
+        },
+        "7502c062-b96b-43da-a724-9cc05a118c33": {
+          "type": "row",
+          "settings": {
+            "award": "Platters Wine Awards Competition",
+            "year": "2018",
+            "arward_level": "93 Points"
+          }
+        },
+        "9591e86f-37f1-441e-a543-d5efa2b1fdc1": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2019",
+            "arward_level": "Grand Gold Certificate Of Excellence"
+          }
+        },
+        "6a0022f0-80ab-46d3-9bcd-ff439f560e4d": {
+          "type": "row",
+          "settings": {
+            "award": "Platters Wine Awards Competition",
+            "year": "2020",
+            "arward_level": "93 Points"
+          }
+        },
+        "bbdb56cb-1366-416e-9df1-226cc2f012a2": {
+          "type": "row",
+          "settings": {
+            "award": "Wine Of The Month Club",
+            "year": "2020",
+            "arward_level": "Best Sweet Wine"
+          }
+        },
+        "5663af61-7751-437c-853d-e7f39d76de61": {
+          "type": "row",
+          "settings": {
+            "award": "Top Wine SA",
+            "year": "2020",
+            "arward_level": "Top 10"
+          }
+        },
+        "b058f786-1684-4594-ba0b-41be47ebd986": {
+          "type": "row",
+          "settings": {
+            "award": "Tim Atkins Tasting Report",
+            "year": "2020",
+            "arward_level": "92 Points"
+          }
+        },
+        "48c99af9-ea10-4b19-9a23-a13d71f4b027": {
+          "type": "row",
+          "settings": {
+            "award": "South African Wine Index",
+            "year": "2020",
+            "arward_level": "Platinum Certificate Of Excellence"
+          }
+        }
+      },
+      "block_order": [
+        "1b018536-f9e7-42a3-80a6-01751869d453",
+        "062330e6-5acc-4ef1-ae79-34914002935e",
+        "7c543c78-02e3-4268-84ec-d8f6d2f07c86",
+        "699f7120-e97d-4fb6-8be1-55a5576a4fd8",
+        "b075a235-690a-4b65-9506-988f07821499",
+        "bf29065f-a261-4d3a-965d-9a1e169bc977",
+        "7502c062-b96b-43da-a724-9cc05a118c33",
+        "9591e86f-37f1-441e-a543-d5efa2b1fdc1",
+        "6a0022f0-80ab-46d3-9bcd-ff439f560e4d",
+        "bbdb56cb-1366-416e-9df1-226cc2f012a2",
+        "5663af61-7751-437c-853d-e7f39d76de61",
+        "b058f786-1684-4594-ba0b-41be47ebd986",
+        "48c99af9-ea10-4b19-9a23-a13d71f4b027"
+      ],
+      "settings": {
+        "main_heading": "Muscat De Frontignan:  2014"
+      }
+    },
+    "16423667519a6836be": {
+      "type": "Logos",
+      "blocks": {
+        "cf2f4e9e-dc5e-4227-bd75-51f9d6dec5a9": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/International-Wine-_-Spirits-90-94-Points-Gold.png",
+            "logo_link": "https://iwsc.net/"
+          }
+        },
+        "1642366751d2473fd1-0": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Veritas-Awards_825e96e8-eea9-44e7-b436-8a94381d7377.png",
+            "logo_link": "https://veritas.co.za/"
+          }
+        },
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Michelangelo-Gold.png",
+            "logo_link": "https://maiwsa.co.za/"
+          }
+        },
+        "816919e6-8689-4675-a4fa-29b06c6886af": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/SA-Wine-Index-Platinum.png",
+            "logo_link": "https://www.sawineindex.com/"
+          }
+        },
+        "43178b72-1624-4cfc-a64d-f2b134df1544": {
+          "type": "item",
+          "settings": {
+            "logo_slider": "shopify://shop_images/Catavinum-Awards-Gold.png",
+            "logo_link": "https://www.cwwsc.net/"
+          }
+        }
+      },
+      "block_order": [
+        "cf2f4e9e-dc5e-4227-bd75-51f9d6dec5a9",
+        "1642366751d2473fd1-0",
+        "d14d4dbf-f407-4d53-b73e-df90db9c9845",
+        "816919e6-8689-4675-a4fa-29b06c6886af",
+        "43178b72-1624-4cfc-a64d-f2b134df1544"
+      ],
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16430340119e659e4c": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "1643034010691e68fe-1": {
+          "type": "column",
+          "settings": {
+            "title": "FLAGSHIP RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">Verreaux Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-0": {
+          "type": "column",
+          "settings": {
+            "title": "ICON RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chenin Blanc</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Chardonnay</a></p><p><a href=\"/pages/icon-awards\" target=\"_blank\" title=\"Wine Awards Icon Range\">Albertus Viljoen Bismarck Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "8f4bf254-ce9d-46b9-87f5-2e0d8579cbd2": {
+          "type": "column",
+          "settings": {
+            "title": "RESERVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/wine-awards-reserve-viognier\" target=\"_blank\" title=\"Wine Awards Reserve Viognier\">Viognier</a></p><p><a href=\"/pages/reserve-awards-cvc\" target=\"_blank\" title=\"Wine Awards Reserve CVC Blend\">CVC Blend</a></p><p><a href=\"/pages/reserve-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Reserve Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/reserve-awards-drift-fusion\" target=\"_blank\" title=\"Wine Awards Reserve Drift Fusion Blend\">Drift Fusion Blend</a></p><p><a href=\"/pages/awards-reserve-chardonnay\" target=\"_blank\" title=\"Wine Awards Reserve Chardonnay\">Chardonnay</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "1643034010691e68fe-2": {
+          "type": "column",
+          "settings": {
+            "title": "221 RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Chenin Blanc</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Pinotage</a></p><p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">Special Cuvée Blend</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "56ea5e51-174b-4d9e-8910-364f7176c576": {
+          "type": "column",
+          "settings": {
+            "title": "SIGNATURE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/signature-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Signature Sauvignon Blanc\">Sauvignon Blanc</a></p><p><a href=\"/pages/signature-awards-chenin-blanc\" target=\"_blank\" title=\"Wine Awards Signature Chenin Blanc\">Chenin Blanc</a></p><p><a href=\"/pages/signature-awards-viognier\" target=\"_blank\" title=\"Wine Awards Signature Viognier\">Viognier</a></p><p><a href=\"/pages/signature-awards-chardonnay\" target=\"_blank\" title=\"Wine Awards Signature Chardonnay\">Chardonnay</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage Rosé</a></p><p><a href=\"/pages/signature-awards-pinotages\" target=\"_blank\" title=\"Wine Awards Signature Pinotage Rosé & Pinotage\">Pinotage</a></p><p><a href=\"/pages/signature-awards-cabernet-sauvignon\" target=\"_blank\" title=\"Wine Awards Signature Cabernet Sauvignon\">Cabernet Sauvignon</a></p><p><a href=\"/pages/signature-awards-shiraz\" target=\"_blank\" title=\"Wine Awards Signature Shiraz\">Shiraz</a></p><p><a href=\"/pages/signature-awards-merlot\" target=\"_blank\" title=\"Wine Awards Signature Merlot\">Merlot</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925": {
+          "type": "column",
+          "settings": {
+            "title": "SPARKLING RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Rosé</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Blanc de Blanc</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Nature Cap Classique</a></p><p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">Brut Thornlands MCC</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "af0d031d-5b54-45c0-8cb4-fac652753af9": {
+          "type": "column",
+          "settings": {
+            "title": "EXCLUSIVE RANGE",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Chenin Blanc</a></p><p><a href=\"/pages/exclusive-awards\" target=\"_blank\" title=\"Wine Awards Exclusive Range\">Martial Pinotage</a></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "89e381ec-c738-419e-b4de-0a42b27dc65f": {
+          "type": "column",
+          "settings": {
+            "title": "EXPORT WINES",
+            "Title_color": "#480115",
+            "text": "<p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Rondebosch Wines</a></p><p><a href=\"/pages/export-awards\" target=\"_blank\" title=\"Wine Awards Export Wines\">Export Cape Pride Wines</a></p>",
+            "Text_color": "#2d5980"
+          }
+        }
+      },
+      "block_order": [
+        "1643034010691e68fe-1",
+        "1643034010691e68fe-0",
+        "8f4bf254-ce9d-46b9-87f5-2e0d8579cbd2",
+        "1643034010691e68fe-2",
+        "56ea5e51-174b-4d9e-8910-364f7176c576",
+        "bbd2b331-6bb7-4bf6-abc3-2a2c6379f925",
+        "af0d031d-5b54-45c0-8cb4-fac652753af9",
+        "89e381ec-c738-419e-b4de-0a42b27dc65f"
+      ],
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "OUR AWARDS BY RANGE",
+        "Heading_color": "#f8f2e6",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "BUY OUR AWARD-WINNING RESERVE RANGE WINES",
+        "button_link": "shopify://collections/reserve-range",
+        "swipe_on_mobile": false
+      }
+    },
+    "16423669557e20a789": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Alvi_s_Drift_Wine_Club.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "WINE CLUB",
+        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club"
+      }
+    },
+    "171199585535038585": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_ekzLU8": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "89337",
+            "text_color": "#ffffff",
+            "button_background_color": "#c65336",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#c65336",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 0,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_ekzLU8"
+      ],
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1639603079ac59d760",
+    "1639602940145c735b",
+    "c0c5758e-9db0-4d30-a98d-bd9a981cb50c",
+    "16431510074857ca28",
+    "164305753843dd40a5",
+    "16423667519a6836be",
+    "16430340119e659e4c",
+    "16423669557e20a789",
+    "171199585535038585"
+  ]
+}

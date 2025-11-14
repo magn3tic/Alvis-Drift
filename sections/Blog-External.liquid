@@ -1,0 +1,145 @@
+<section class="alvis-drift-awarded video-sec bg-olive">
+  <div class="sec-inner">
+      <div class="container">
+          <div class="video-sec-inner">
+              <h2 class="desktop-hide tablet-show">{{section.settings.title_text}}</h2>
+              <div class="video-sec-vid">
+                  <div class="story-vid-block">
+                  {%- for block in section.blocks -%}
+<!--                       <img src="{{ section.settings.main_image | img_url:"master" }};" class="video-sec-vid-img br-cut" alt="" loading="lazy"> -->
+                                <img class="video-sec-vid-img br-cut{% unless forloop.index == 1 %} hidden{% endunless %}" data-article-bg-img="article-{{ forloop.index }}" src="{{ block.settings.image | img_url:"master" }}" alt="{{ block.settings.image.alt }}" loading="lazy">
+        
+                    {%- endfor -%}
+  
+                </div>
+              </div>
+              <div class="video-sec-content alvis-drift-awarded-content">
+                          {%- for block in section.blocks -%}
+
+                  <h2 class="desktop-show tablet-hide {% unless forloop.index == 1 %} hidden{% endunless %}">{{block.settings.title | escape }}</h2>
+                  <div class="video-sec-content-txt {% unless forloop.index == 1 %} hidden{% endunless %}">                        
+                      <p>{{block.settings.content | replace: '<p>', '<p>'}}</p>
+                  </div>
+                  <a href="{{block.settings.link}}" class="btn btn-overlay{% unless forloop.index == 1 %} hidden{% endunless %}">Read more</a>
+                                              {%- endfor -%}
+
+                  <div class="nd-bx-wrap">
+                    <div class="nd-bx-s">                      
+                      <div class="nd-bx">
+                                          {%- for block in section.blocks -%}
+                        {% if forloop.index == 2 %}
+                        <img src="{{ block.settings.image | img_url:"master" }};" class="video-sec-vid-img br-cut2" alt="" loading="lazy">
+                        {% endif %}
+
+                        <div class="nd-bx-no">                        
+                          {% if forloop.index == 2 %}                       
+                          {% endif %}
+                        </div>
+                        
+                          {%- endfor -%}
+
+                      </div>
+                      <div class="nd-bx desktop-hide tablet-show">
+                        <img src="{{ section.settings.second_image | img_url:"master" }};" class="video-sec-vid-img br-cut2" alt="" loading="lazy">
+                        <div class="nd-bx-no">{{section.settings.second_text}}</div>
+                      </div>
+                    </div> 
+                    <div class="nd-bx-btn-wrap">
+                      {%- for block in section.blocks -%}
+                         {% if forloop.index == 2 %}
+						
+                      <div class="cotnetn_sectiona">
+                      	
+                        <h3>{{ block.settings.title}}</h3>
+                      
+                         {{ block.settings.content }}
+                        
+                        
+                         <a href="{{section.settings.external_link}}" class="btn btn-overlay">View All</a></div>
+                        
+                      </div>
+                      
+                      
+                         {% endif %}
+                      {% endfor %} 
+                      </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Blog External",
+  "tag": "section",
+  "class": "section-spacing-sm section-spacing-sm--full-width section-blog",
+  "settings": [
+    {
+      "type": "url",
+      "id": "external_link",
+      "label": "External Blog Link"
+    },
+    {
+      "type": "header",
+      "content": "HSForm"
+    },
+    {
+      "type": "text",
+      "id": "hs_form_id",
+      "label": "Hubspot form id",
+      "default": "a6ef4a66-7426-4297-a9b0-48554295c621"
+    },
+    {
+      "type": "text",
+      "id": "hs_form_portal_id",
+      "label": "Hubspot Form Portal ID",
+      "default": "1908549"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "article",
+      "name": "Article",
+      "limit": 2,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Title"
+        },
+        {
+          "type": "richtext",
+          "id": "content",
+          "label": "Content",
+          "default": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Blog External"
+    }
+  ]
+}
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+ 

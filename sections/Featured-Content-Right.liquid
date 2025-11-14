@@ -1,0 +1,97 @@
+<section class="our-cellars bg-darkPurple splash-sec from-right-sec">    
+    <div class="sec-inner">
+        <div class="container">
+            <div class="splash-bx">
+                <div class="sec-side-img">              
+                    <img src="{{ section.settings.our-cellars-side | img_url: 'master'}}" alt="Our Cellars Side" loading="lazy">
+                </div>
+                <div class="block-sec">
+                    <div class="img-igw">
+                        <div class="block-sec-img parallex_div2 image-right-cut {% if section.settings.right_image_contain == true %} image_size_contain{% endif %}">
+                           <img class="br-cut4" src="{{ section.settings.our-cellars-main | img_url: 'master'}}" alt="Our Cellars Main" loading="lazy">
+                        </div>
+                    </div>
+                  <h2><span class="fword">{{ section.settings.main_heading }}</span></h2>
+                    <div class="detail-box">
+                        <div class="detail-box-txt">            
+                            <p>{{ section.settings.detail-box-txt }}</p>
+                        </div>
+                      {% if section.settings.btn-url !="" %}
+                        <a href="{{ section.settings.btn-url }}" class="readmore">{{ section.settings.btn-txt }}</a>
+                      {% endif %}
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% schema %}
+  {
+    "name": "Featured Content (Right)",
+    "settings": [
+	  {
+        "type": "richtext",
+        "id": "main_heading",
+        "label": "Heading",
+        "info": "Some letters italic!"
+      },
+	  	       {
+        "type": "image_picker",
+        "id": "our-cellars-main",
+        "label": "Main Image (Right)",
+        "info": "Perfect size for Portrait image:- 418X627 and perfect size for landscape image:- 600X375"
+      },
+	  	       {
+        "type": "checkbox",
+        "id": "right_image_contain",
+        "label": "Right image landscape mode",
+        "default": false
+      },
+	{
+        "type": "image_picker",
+        "id": "our-cellars-side",
+        "label": "Secondary Image (Left)"
+      },	  
+	{
+        "type": "richtext",
+        "id": "detail-box-txt",
+        "label": "Text"
+
+      },
+	  {
+        "type": "text",
+        "id": "btn-txt",
+        "label": "Link Text",
+		"default": "Read More"
+      },
+	  {
+        "type": "url",
+        "id": "btn-url",
+        "label": "Link URL"
+      }
+],
+  "presets": [
+    {
+      "name": "Featured Content (Right)"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}
+
+<style>
+
+@media only screen and (max-width: 767px) {
+
+.from-left-sec div.block-sec-img img {
+	width: 100%;
+	/* height: 1000px; */
+	object-fit: contain;
+}
+  }
+</style>

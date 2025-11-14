@@ -1,0 +1,119 @@
+<div class="wine-club bg-overlay bg-overlay-bg"  data-bg = "{{ section.settings.wine-club-bg | img_url: 'master'}}" >  
+    {% if section.settings.image_overlay %}
+    <div class="bg-overlay-fliter"></div>
+    {% endif %}
+    <div class="sec-inner">
+        <div class="bg-overlay-content-wrapper">
+            <div class="container">
+                <div class="bg-overlay-content br-cut">
+                    <h2 style="color:{{ section.settings.Heading_color }};">{{ section.settings.title }}</h2>
+                    <div class = "detail-box-text" >{{ section.settings.detail_box_txt }}</div>
+                  <br>
+                  {% if section.settings.btn-txt != blank%}
+                    <a href="{{ section.settings.btn-url }}" class="alvisBtn alvisBtn--orange">{{ section.settings.btn-txt }}</a>
+                  {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<style>
+  .detail-box-text p{
+  color:{{ section.settings.Heading_color }};font-size: 16px;}
+</style>
+{% schema %}
+  {
+    "name": "Call To Action",
+    "settings": [
+	  {
+        "type": "image_picker",
+        "id": "wine-club-bg",
+        "label": "Background Image"
+      },
+	  {
+          "type": "checkbox",
+          "id": "image_overlay",
+          "default": false,
+          "label": "Image Overlay"
+      },
+	{
+          "type": "select",
+          "id": "Heading_color",
+          "label": "Text Colour",
+          "options": [
+			{
+              "value": "#c65336",
+              "label": "Dark Orange"
+            }, 
+            {
+              "value": "#2e112d",
+              "label": "Dark Plum"
+              },
+			  {
+                "value": "#480115",
+                "label": "Dark Maroon"
+              },
+              {
+                "value": "#721326",
+                "label": "Dark Red"
+              },
+              {
+                "value": "#5c6e67",
+                "label": "Dark Olive"
+              },
+              {
+                "value": "#6b7231",
+                "label": "Dark Green"
+              },
+              {
+                "value": "#2d5980",
+                "label": "Dark Navy"
+              },
+              {
+                "value": "#6287e0",
+                "label": "Dark Blue"
+              },
+              {
+                "value": "#867065",
+                "label": "Dark Tan"
+              }
+
+            ],
+            "default": "#c65336"
+        },
+	  {
+        "type": "text",
+        "id": "title",
+        "label": "Heading",
+		"default": "Wine Club"
+      },
+	  {
+        "type": "text",
+        "id": "detail_box_txt",
+        "label": "Text"
+      },
+      {
+        "type": "text",
+        "id": "btn-txt",
+        "label": "Button Text",
+		"default": "FIND OUT MORE"
+      },
+	  {
+        "type": "url",
+        "id": "btn-url",
+        "label": "Button URL"
+      }
+],
+  "presets": [
+    {
+      "name": "Call To Action"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

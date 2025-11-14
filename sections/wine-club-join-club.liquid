@@ -1,0 +1,212 @@
+<section class="awc-join-club container {% if customer %} awc-join-club-container-logged {% else %} awc-join-club-logout {% endif %}">
+  {% if customer %}
+    {% assign lowertags = customer.tags | downcase %}
+    {% assign tier_image = '' %}
+    {% assign tier_richtext = '' %}
+    {% assign go_for = false %}
+    {% assign go_for_image = '' %}
+    {% assign go_for_text = '' %}
+    {% assign go_for_benefits = '' %}
+    {% capture customer_tier_name %}
+      {% if lowertags contains 'gold' %}
+        Gold
+        {% assign tier_image = section.settings.gold_image %}
+        {% assign tier_richtext = section.settings.gold_richtext %}
+        {% assign go_for = true %}
+        {% assign go_for_image = section.settings.gold_to_platinum %}
+        {% assign go_for_text = 'Platinum' %}
+        {% assign go_for_benefits = section.settings.gold_to_platinum_text %}
+      {% elsif lowertags contains 'silver' %}
+        Silver
+        {% assign tier_image = section.settings.silver_image %}
+        {% assign tier_richtext = section.settings.silver_richtext %}
+        {% assign go_for = true %}
+        {% assign go_for_image = section.settings.silver_to_gold %}
+        {% assign go_for_text = 'Gold' %}
+        {% assign go_for_benefits = section.settings.silver_to_gold_text %}
+      {% elsif lowertags contains 'bronze' %}
+        Bronze
+        {% assign tier_image = section.settings.bronze_image %}
+        {% assign tier_richtext = section.settings.bronze_richtext %}
+        {% assign go_for = true %}
+        {% assign go_for_image = section.settings.bronze_to_silver %}
+        {% assign go_for_text = 'Silver' %}
+        {% assign go_for_benefits = section.settings.bronze_to_silver_text %}
+        {% elsif lowertags contains 'platinum' %}
+         Platinum 
+        {% assign tier_image = section.settings.platinum_image %}
+        {% assign tier_richtext = section.settings.platinum_richtext %}
+
+      {% endif %}
+    {% endcapture %}
+    {% assign customer_tier = customer_tier_name | strip %}
+    <div class="awc-join-club-logged">
+      <div class="awc-intro--col-v2">
+        <h5 class="awc-heading-xs">You Are</h5>
+        <h3 class="h1">{{ customer_tier }} Tier</h3>
+        {% if tier_image %}
+          <figure>
+            <img
+              src="{{ tier_image |  image_url }} "
+              alt="{{customer_tier}}"
+              width="200"
+              height="200"
+              class="awc-tier-badge" />
+          </figure>
+        {% endif %}
+      </div>
+      <div class="awc-intro--col-v2">
+        {{ tier_richtext }}
+      </div>
+    </div>
+    <div class="awc-join-club-logged">
+     
+      <div class=" awc-intro--col-v2 awc-points-balance ">
+        <h3 class="h1">Your Balance</h3>
+        <div class="awc-points">
+          <strong>Point Balance:
+          </strong>
+          <div id="points-container">[balance]</div>
+        </div>
+       
+      </div>
+     
+      {% if go_for %}
+        <div class="awc-intro--col-v2 awc-go-for"> 
+          {% unless go_for_text == "Platinum" %}
+          <h3 class="h1">Go for {{ go_for_text }}</h3>
+          {% if go_for_image %}
+            <figure>
+              <img
+                src="{{ go_for_image | image_url }}"
+                alt="Go for {{go_for_text}}"
+                width="400"
+                height="160"
+                class="awc-go-for-badge" />
+            </figure>
+          {% endif %}
+          <p>{{ go_for_benefits }}</p>
+          {% endunless %}
+         </div> 
+   
+      {% endif %}
+     
+      {% unless go_for %}
+        <div class="awc-intro--col-v2">
+          <span class="awc-centered-balance">.</span>
+        </div>
+      {% endunless %}
+    </div>
+    <script src="{{ 'wine-club.js' | asset_url }}" async></script>
+
+  {% else %}
+    <div class="awc-join-club-not-logged-in">
+
+      <div class="awc-intro--col-v2">
+        <h4>Join our Alvi's Drift wine club to enjoy:</h4>
+        <ul>
+          <li>Members-Only Offers</li>
+          <li>Exclusive Discounts</li>
+          <li>Invites to One-of-a-Kind Events & Wine Tastings</li>
+          <li>Exclusive Content About All Things Wine</li>
+        </ul>
+      </div>
+      <div class="awc-intro--col-v2">
+        <p>What’s more, should you progress through our Wine Club’s three tiers to become a Gold member, you’ll enjoy 15% discount* on purchases from our online wine shop.</p>
+        <p>Best of all? Our Alvi’s Drift Wine Club requires no recurring membership fees.</p>
+        <small>
+          <em>*Excluding selected sales and promotions. Discount is automatically deducted at check-out.</em>
+        </small>
+      </div>
+    </div>
+  {% endif %}
+
+</section>
+
+
+{% schema %}
+  {
+    "name": "Wine Club Join Club",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Bronze Tier"
+      },
+      {
+        "type": "image_picker",
+        "id": "bronze_image",
+        "label": "Bronze Tier Image"
+      },
+      {
+        "type": "richtext",
+        "id": "bronze_richtext",
+        "label": "Rich Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "bronze_to_silver",
+        "label": "Bronze to Silver Image"
+      }, {
+        "type": "richtext",
+        "id": "bronze_to_silver_text",
+        "label": "Bronze to Silver Text"
+      }, {
+        "type": "header",
+        "content": "Silver Tier"
+      }, {
+        "type": "image_picker",
+        "id": "silver_image",
+        "label": "Silver Tier Image"
+      }, {
+        "type": "richtext",
+        "id": "silver_richtext",
+        "label": "Rich Text"
+      }, {
+        "type": "image_picker",
+        "id": "silver_to_gold",
+        "label": "Silver to Gold Image"
+      }, {
+        "type": "richtext",
+        "id": "silver_to_gold_text",
+        "label": "Silver to Gold Text"
+      }, {
+        "type": "header",
+        "content": "Gold Tier"
+      }, {
+        "type": "image_picker",
+        "id": "gold_image",
+        "label": "Gold Tier Image"
+      }, {
+        "type": "richtext",
+        "id": "gold_richtext",
+        "label": "Rich Text"
+      }, {
+        "type": "image_picker",
+        "id": "gold_to_platinum",
+        "label": "Gold to Platinum Image"
+      }, {
+        "type": "richtext",
+        "id": "gold_to_platinum_text",
+        "label": "Gold to Platinum Text"
+      }, {
+        "type": "header",
+        "content": "Platinum Tier"
+      }, {
+        "type": "image_picker",
+        "id": "platinum_image",
+        "label": "Platinum Tier Image"
+      }, {
+        "type": "richtext",
+        "id": "platinum_richtext",
+        "label": "Rich Text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Wine Club Join Club",
+        "category": "Wine Club"
+      }
+    ]
+  }
+
+{% endschema %}

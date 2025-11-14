@@ -1,0 +1,183 @@
+{{ 'wine-club.css' | asset_url | stylesheet_tag }}
+
+<section class="awc-hero-v2">
+  {% if customer %}
+    {%- comment -%} View for logged users {%- endcomment -%}
+    {% assign lowertags = customer.tags | downcase %}
+    {% capture customer_tier_name %}
+      {% if lowertags contains 'gold' %}
+        Gold
+      {% elsif lowertags contains 'silver' %}
+        Silver
+      {% elsif lowertags contains 'bronze' %}
+        Bronze
+      {% elsif lowertags contains 'platinum' %}
+        Platinum 
+      {% endif %}
+    {% endcapture %}
+    {% assign customer_tier = customer_tier_name | strip %}
+
+    <div class="awc-hero--content-v2">
+      <div class="awc-hero-content-v2--text awc-hero-content-v2--text--connected">
+        <span class="awc-subtitle">{{ section.settings.subtitle_connected }}</span>
+        <h1 class="h1 awc-header">{{ section.settings.title_connected }}</h1>
+        {% if section.settings.blurb_connected != blank %}
+          <span class="awc-blurb">{{ section.settings.blurb_connected }}</span>
+        {% else %}
+          <p>{{ customer_tier }} Tier Members Portal</p>
+        {% endif %}
+      </div>
+      {% if section.settings.show_button_connected %}
+        {% if section.settings.url_connected %}
+          {% assign url_connected = section.settings.url_connected %}
+        {% else %}
+          {% assign url_connected = '/collections/club-{{ customer_tier }}' %}
+        {% endif %}
+        <div class="awc-promo--btn">
+          <a class="btn" href="{{url_connected}}">{{ section.settings.button_text_connected }}</a>
+        </div>
+      {% endif %}
+
+    </div>
+    <div class="awc-bg awc-bg-picture">
+      <picture>
+        <source media="(max-width: 1023px)" srcset="{{ section.settings.image_connected_mobile | image_url: width: 450 }}">
+        {{ section.settings.image_connected_desktop | image_url: width: master | image_tag: preload: true, class: "Alvi's Drift Wine Club" }}
+      </picture>
+    </div>
+
+  {% else %}
+    {%- comment -%} User not logged {%- endcomment -%}
+    <div class="awc-hero--content-v2">
+      <div class="awc-hero-content-v2--text awc-hero-content-v2--text--disconnected">
+
+
+        <span class="awc-subtitle">{{ section.settings.subtitle_disconnected }}</span>
+        <h1 class="h1 awc-header">{{ section.settings.title_disconnected }}</h1>
+        {% if section.settings.blurb_disconnected != blank %}
+          <span class="awc-blurb">{{ section.settings.blurb_disconnected }}</span>
+        {% else %}
+          <p>{{ customer_tier }} Tier Members Portal</p>
+        {% endif %}
+      </div>
+      {% if section.settings.show_button_disconnected %}
+        {% if section.settings.url_disconnected %}
+          {% assign url_disconnected = section.settings.url_disconnected %}
+        {% else %}
+          {% assign url_disconnected = '/account/register/' %}
+        {% endif %}
+        <div class="awc-promo--btn">
+          <a class="btn" href="{{url_disconnected}}">{{ section.settings.button_text_disconnected }}</a>
+        </div>
+      {% endif %}
+    </div>
+    <div class="awc-bg awc-bg-picture awc-bg-picture--disconnected">
+      <picture>
+        <source media="(max-width: 1023px)" srcset="{{ section.settings.image_disconnected_mobile | image_url: width: 450 }}">
+        {{ section.settings.image_disconnected_desktop | image_url: width: 2000 | image_tag: preload: true, alt: "Alvi's Drift Wine Club" }}
+      </picture>
+    </div>
+  {% endif %}
+</section>
+
+
+{% schema %}
+  {
+    "name": "Wine Club Hero V2",
+    "settings": [
+      {
+        "type": "header",
+        "content": "🔐 Logged-in User Images"
+      },
+      {
+        "type": "textarea",
+        "id": "subtitle_connected",
+        "label": "Title (Logged-in)",
+        "default": "Alvi's Drift Wine Club"
+      },
+      {
+        "type": "textarea",
+        "id": "title_connected",
+        "label": "Sub-Title (Logged-in)",
+        "default": "Alvi's Drift Wine Club"
+      },
+      {
+        "type": "richtext",
+        "id": "blurb_connected",
+        "label": "Blurb(Logged-in)"
+      }, {
+        "type": "image_picker",
+        "id": "image_connected_desktop",
+        "label": "Desktop Image (Logged-in)",
+        "info": "Recommended resolution 1920x720"
+      }, {
+        "type": "image_picker",
+        "id": "image_connected_mobile",
+        "label": "Mobile Image (Logged-in)",
+        "info": "Recommended resolution 1024x720"
+      }, {
+        "type": "checkbox",
+        "id": "show_button_connected",
+        "label": "Show Button (Logged-in)"
+      }, {
+        "type": "text",
+        "id": "button_text_connected",
+        "label": "Button Text (Logged-in)",
+        "default": "SHOP NOW"
+      }, {
+        "type": "url",
+        "id": "url_connected",
+        "label": "URL (Logged-in)",
+        "info": "By default goes to '/collections/club-{{ customer_tier }} '"
+      }, {
+        "type": "header",
+        "content": "🚫 Logged-out User Images"
+      }, {
+        "type": "textarea",
+        "id": "subtitle_disconnected",
+        "label": "Title (Logged-out)",
+        "default": "Alvi's Drift Wine Club"
+      }, {
+        "type": "textarea",
+        "id": "title_disconnected",
+        "label": "Title (Logged-out)",
+        "default": "Alvi's Drift Wine Club"
+      }, {
+        "type": "richtext",
+        "id": "blurb_disconnected",
+        "label": "Blurb(Logged-out)"
+      }, {
+        "type": "image_picker",
+        "id": "image_disconnected_desktop",
+        "label": "Desktop Image (Logged-out)",
+        "info": "Recommended resolution 1920x1080 in .webp format"
+      }, {
+        "type": "image_picker",
+        "id": "image_disconnected_mobile",
+        "label": "Mobile Image (Logged-out)",
+        "info": "Recommended resolution 1024x720 in .webp format"
+      }, {
+        "type": "checkbox",
+        "id": "show_button_disconnected",
+        "label": "Show Button (Logged-out)"
+      }, {
+        "type": "text",
+        "id": "button_text_disconnected",
+        "label": "Button Text (Logged-out)",
+        "default": "JOIN NOW"
+      }, {
+        "type": "url",
+        "id": "url_disconnected",
+        "label": "URL (Logged-out)",
+        "info": "By default goes to '/account/register/'"
+      }
+
+    ],
+    "presets": [
+      {
+        "name": "Wine Club Hero V2",
+        "category": "Wine Club"
+      }
+    ]
+  }
+{% endschema %}

@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#480115"
+      }
+    },
+    "main": {
+      "type": "voucher-information",
+      "settings": {
+        "enable_sticky_info": true,
+        "single_product": "voucher",
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639488777a48ab371": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "16394887776a751a2b-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "gifts"
+          }
+        }
+      },
+      "block_order": [
+        "16394887776a751a2b-0"
+      ],
+      "settings": {
+        "topheading": "OUR GIFTING COLLECTION"
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639488777a48ab371"
+  ]
+}

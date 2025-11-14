@@ -1,0 +1,224 @@
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+<div class="customer register">
+  <svg style="display: none">
+    <symbol id="icon-error" viewBox="0 0 13 13">
+      <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+      <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+      <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+      <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7">
+    </symbol>
+  </svg>
+  <h1>
+    {{ 'customer.register.title' | t }}
+  </h1>
+  {%- form 'create_customer', id: 'registerForm', novalidate: 'novalidate' -%}
+    {%- if form.errors -%}
+      <h2 class="form__message" tabindex="-1" autofocus>
+        <svg aria-hidden="true" focusable="false" role="presentation">
+          <use href="#icon-error" />
+        </svg>
+        {{ 'templates.contact.form.error_heading' | t }}
+      </h2>
+      <ul> 
+        {%- for field in form.errors -%}
+          <li>
+            {%- if field == 'form' -%}
+              {{ form.errors.messages[field] }}
+            {%- else -%}
+              <a href="#RegisterForm-{{ field }}">
+                {{ form.errors.translated_fields[field] | capitalize }}
+                {{ form.errors.messages[field] }}
+              </a>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+    <div class="field">      
+      <input
+        type="text"
+        name="customer[first_name]"
+        id="RegisterForm-FirstName"
+        {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
+        autocomplete="given-name"
+        placeholder="{{ 'customer.register.first_name' | t }}"
+      >
+      <label for="RegisterForm-FirstName">
+        {{ 'customer.register.first_name' | t }}
+      </label>
+    </div>
+    <div class="field" style="color:#F3F3F3">
+      <input
+        type="text"
+        name="customer[last_name]"
+        id="RegisterForm-LastName"
+        {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
+        autocomplete="family-name"
+        placeholder="{{ 'customer.register.last_name' | t }}"
+      >
+      <label for="RegisterForm-LastName">
+        {{ 'customer.register.last_name' | t }}
+      </label>
+    </div>
+    <div class="field">
+  <input type="tel"
+         id="RegisterForm-phone"
+         name="customer[phone]" 
+        autocomplete="tel"
+        required placeholder="Phone Number">
+    <label for="RegisterForm-phone">Phone Number</label>
+  </div>
+    <div class="field">      
+      <input
+        type="email"
+        name="customer[email]"
+        id="RegisterForm-email"
+        {% if form.email %} value="{{ form.email }}"{% endif %}
+        spellcheck="false"
+        autocapitalize="off"
+        autocomplete="email"
+        aria-required="true"
+        {% if form.errors contains 'email' %}
+          aria-invalid="true"
+          aria-describedby="RegisterForm-email-error"
+        {% endif %}
+        placeholder="{{ 'customer.register.email' | t }}"
+      >
+      <label for="RegisterForm-email">
+        {{ 'customer.register.email' | t }}
+      </label>
+    </div>
+    {%- if form.errors contains 'email' -%}
+      <span id="RegisterForm-email-error" class="form__message">
+        <svg aria-hidden="true" focusable="false" role="presentation">
+          <use href="#icon-error" />
+        </svg>
+        {{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}.
+      </span>
+    {%- endif -%}
+    <div class="field password-field">
+  <input
+    type="password"
+    name="customer[password]"
+    id="RegisterForm-password"
+    aria-required="true"
+    {% if form.errors contains 'password' %}
+      aria-invalid="true"
+      aria-describedby="RegisterForm-password-error"
+    {% endif %}
+    placeholder="{{ 'customer.register.password' | t }}"
+  >
+  <label for="RegisterForm-password">
+    {{ 'customer.register.password' | t }}
+  </label>
+
+  <!-- Toggle button for password visibility -->
+  <button type="button" class="toggle-password" aria-label="Show password">
+        <svg  class="icon icon-eye-closed" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.98 8.223A10.477 10.477 0 0 0 1.934 12C3.226 16.338 7.244 19.5 12 19.5c.993 0 1.953-.138 2.863-.395M6.228 6.228A10.451 10.451 0 0 1 12 4.5c4.756 0 8.773 3.162 10.065 7.498a10.522 10.522 0 0 1-4.293 5.774M6.228 6.228 3 3m3.228 3.228 3.65 3.65m7.894 7.894L21 21m-3.228-3.228-3.65-3.65m0 0a3 3 0 1 0-4.243-4.243m4.242 4.242L9.88 9.88" />
+  </svg>
+      <svg class="icon icon-eye-open hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+</svg>
+
+  </button>
+</div>    
+<span class="termsCheckbox">
+  <label>
+    <input type="checkbox" id="marketing-sms" name="customer[accepts_marketing_sms]" required>
+    By joining the Alvi’s Drift Private club, I agree to the <a href = "https://alvisdrift.co.za/pages/policies">Terms & Conditions</a> and consent to occasional WhatsApp messages about my membership and exclusive benefits
+  </label>
+</span>
+    {% comment %}
+      <span class="termsCheckbox">
+      <input type="hidden" name="customer[accepts_marketing]" value="false" />
+      <input type="checkbox" name="customer[accepts_marketing]" id="accepts-marketing" checked required />
+      <label for="accepts-marketing">
+      Subscribe to email marketing
+      </label>
+</span>
+    {% endcomment %}   
+{%- if form.errors contains 'password' -%}
+  <span id="RegisterForm-password-error" class="form__message">
+    <svg aria-hidden="true" focusable="false" role="presentation">
+      <use href="#icon-error" />
+    </svg>
+    {{ form.errors.translated_fields['password'] | capitalize }} {{ form.errors.messages['password'] }}.
+  </span>
+{%- endif -%}
+
+<style>
+  .toggle-password {
+  background: none;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0;
+}
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.field.password-field {
+  position: relative;
+}
+.password-field button{
+  margin:0;
+  border: none;
+  padding: 17px;
+  min-width:20px
+}
+</style>
+    
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var toggleBtn = document.querySelector('.toggle-password');
+  var passwordInput = document.getElementById('RegisterForm-password');
+  var eyeOpen = toggleBtn.querySelector('.icon-eye-open');
+  var eyeClosed = toggleBtn.querySelector('.icon-eye-closed');
+
+  toggleBtn.addEventListener('click', function () {
+    var isPassword = passwordInput.type === 'password';
+    passwordInput.type = isPassword ? 'text' : 'password';
+
+    eyeOpen.classList.toggle('hidden', !isPassword);
+    eyeClosed.classList.toggle('hidden', isPassword);
+    toggleBtn.setAttribute('aria-label', isPassword ? 'Hide password' : 'Show password');
+  });
+
+document.getElementById("registerForm").addEventListener("submit", function (e) {
+  const phoneInput = document.getElementById("RegisterForm-phone").value.trim();
+  const phonePattern = /^\+?[0-9]{10,15}$/;
+
+  const emailCheck = document.getElementById("marketing-email");
+  const smsCheck = document.getElementById("marketing-sms");
+  const termsCheck = document.getElementById("termsandconditions");
+
+  if (!phonePattern.test(phoneInput)) {
+    alert("Please enter a valid phone number.");
+    e.preventDefault();
+    return;
+  }
+
+  if (!smsCheck.checked) {
+    alert("Enjoy free shipping on your first order and stay updated with exclusive private wine club offers via WhatsApp. Tick the box to opt in — you can unsubscribe at any time.");
+    e.preventDefault();
+    return;
+  }
+});
+});
+</script> 
+        <button> {{ 'customer.register.submit' | t }} </button>
+  {%- endform -%}
+</div>
