@@ -2081,9 +2081,9 @@ p.sub-title {
     font-weight: 600
 }
 
-.tabs-content .product-price, .product-price {
+.tabs-content .product-price, .product-price, .current-price {
     font-size: 28px;
-    width: 100%
+    text-align:center;
 }
 
 .hero-content {
@@ -2318,7 +2318,6 @@ summary.list-menu__item {
     }
 }
 .product-detail-inner {
-    margin-right: 40px;
     text-align: right;
     max-width: 815px
 }
@@ -2708,8 +2707,23 @@ summary.list-menu__item {
     text-align:center
 
 }
+.promo-single-product{
+    position: absolute;
+    top: 32%;
+    left: 5%;
+    background-color: #c05140;
+    width: 150px;
+    height: 150px;
+    padding: 40px 10px;
+    border-radius: 100%;
+    line-height: 1em;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+}
+
 @media only screen and (max-width: 1200px){
-    .promo-badge{
+.promo-badge{
     position:absolute;
     top:10%;
     width:70px;
@@ -2718,6 +2732,16 @@ summary.list-menu__item {
     line-height:18px;
     font-size:15px;
     font-weight:500
+}
+.promo-single-product{
+    top: 10%;
+    width: 100px;
+    height: 100px;
+    padding: 32px 15px;
+    line-height: 1em;
+    font-size: 20px;
+    font-weight: 500;
+    left: 17%;
 }
 }
 

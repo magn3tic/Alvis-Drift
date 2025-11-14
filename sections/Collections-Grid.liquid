@@ -20,11 +20,13 @@
           {%- endfor -%}	
         </ul>
       </div>
+
       <div class="tabs-content">
         {%- for block in section.blocks -%}
         {%- assign b_i = block.settings -%}
 {% assign colName = block.settings.collectionCarasoul %} 
         <div id="tab-{{ forloop.index }}" class="product-items-wrap {% if colName == default_collection %}current{% endif %}">
+         {% if block.settings.collection_subheader != blank %}<h2>{{ block.settings.collection_subheader }}</h2> {% endif %}
           <div class="product-bx-outer">
             {% assign colName = b_i.collectionCarasoul %} 
             {% for product in collections[colName].products %}
@@ -35,7 +37,8 @@
                 </a>
               </div>
               <div class="product-title"><div class="sp-t"><a href="{{ product.url }}">{{ product.title }}</a></div></div>              
-        {% if settings.member-discount == "enable" %}
+        
+         {% if settings.member-discount == "enable" %}
 
           {% if lowertags contains 'bronze'%}
             {% if excluded_product_ids contains product.id %}
@@ -464,6 +467,11 @@
     "type": "text",
     "id": "collection_heading",
     "label": "Collection Name"
+    },
+    {	
+    "type": "text",
+    "id": "collection_subheader",
+    "label": "Header"
     },
     {
     "type": "collection",

@@ -249,6 +249,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "reserve-range"
           }
         }
@@ -258,8 +259,10 @@
       ],
       "settings": {
         "topheading": "OUR RESERVE RANGE WINES",
+        "heading-tag": true,
         "subtitle-1": "",
-        "active_collection": "reserve-range"
+        "active_collection": "reserve-range",
+        "promo_badge": true
       }
     }
   },

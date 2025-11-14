@@ -358,8 +358,7 @@
       {
         "type": "product_list",
         "id": "product_list",
-        "label": "Excluded Product Discount",
-        "limit": 50
+        "label": "Excluded Product Discount"
       },
       {
         "type": "select",
@@ -376,24 +375,6 @@
             "value": "disable"
           }
         ]
-      },
-      {
-        "type": "product_list",
-        "id": "product_list_included",
-        "label": "Included Product Discount 20%",
-        "limit": 24
-      },
-      {
-        "type": "product_list",
-        "id": "product_list_included-second",
-        "label": "Included Product Discount 15%",
-        "limit": 24
-      },
-      {
-        "type": "product_list",
-        "id": "product_list_included-third",
-        "label": "Included Product Discount 25%",
-        "limit": 24
       },
       {
         "type": "select",
