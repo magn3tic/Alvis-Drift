@@ -253,14 +253,6 @@
     position: relative
 }
 
-.hero-section {
-    position: relative;
-    width: 100%;
-    margin-top: -131px;
-    overflow: hidden;
-    min-height:500px
-}
-
 @media (min-width: 250px) and (max-width:900px) {
     .hero-title h2 span p {
         margin:0!important;
