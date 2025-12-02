@@ -1,7 +1,9 @@
 <section class="home-product-items product-items-sec bg-darkPurple">
   <div class="sec-inner">
     <div class="container">
+      {% if section.settings.topheader != Blank %}
       <{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>{{ section.settings.topheading }}</{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>
+      {% endif %}
       <div class="tabs-content">
         {%- for block in section.blocks -%}
         {%- assign c_i = block.settings -%}

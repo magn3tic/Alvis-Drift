@@ -8,8 +8,10 @@
 <section class="home-product-items product-items-sec bg-darkPurple gridCleanUp" id = "product-collection">
   <div class="sec-inner">
     <div class="container">
-     {% if section.settings.topheading != blank %} <{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>{{ section.settings.topheading }}</{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>{% endif %}
-       {% if section.settings.subtitle-1 != blank %}<p class="sub-title">{{ section.settings.subtitle-1}}</p>{% endif %}
+     {% if section.settings.topheading != blank %}
+       <{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>{{ section.settings.topheading }}</{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>{% endif %}
+       {% if section.settings.subtitle-1 != blank %}
+        <p class="sub-title">{{ section.settings.subtitle-1}}</p>{% endif %}
       <div class="product-tabs">    
         {% assign default_collection =  section.settings.active_collection %}     
         <ul>
