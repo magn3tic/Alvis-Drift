@@ -101,7 +101,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#c0ccbe",
-            "text": "<p><strong>2023:</strong>  13,8%</p>",
+            "text": "<p><strong>2024:</strong>  13,8%</p>",
             "Text_color": "#ffffff"
           }
         },
@@ -110,7 +110,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#c0ccbe",
-            "text": "<p><strong>2023:</strong>  4,6 g/L</p>",
+            "text": "<p><strong>2024:</strong>  4,7 g/L</p>",
             "Text_color": "#ffffff"
           }
         },
@@ -119,7 +119,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#c0ccbe",
-            "text": "<p><strong>2023:</strong>  5,5 g/L</p>",
+            "text": "<p><strong>2024:</strong>  6,3 g/L</p>",
             "Text_color": "#ffffff"
           }
         },
@@ -128,7 +128,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#c0ccbe",
-            "text": "<p><strong>2023:</strong>  3,4</p>",
+            "text": "<p><strong>2024:</strong>  3,5</p>",
             "Text_color": "#ffffff"
           }
         }
@@ -260,6 +260,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "red-wines"
           }
         }
