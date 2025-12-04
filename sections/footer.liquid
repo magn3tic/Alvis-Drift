@@ -3,9 +3,7 @@
 <footer class="footer color-{{ section.settings.color_scheme }} gradient">
   {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
   <div class="footer__content-top">
-    <div class = "top-footer-section-text">
-      <h3>{{ section.settings.top_footer_title }}</h3>
-    </div>
+    
     <div class="container">
       <div class="footer-top-content">
         <div class="f-logo-sc">
@@ -68,12 +66,14 @@
           if section.blocks.size == 9
             assign footer_grid_class = 'grid--3-col-tablet'
           elsif section.blocks.size > 6
-            assign footer_grid_class = 'grid--4-col-desktop'
-          elsif section.blocks.size > 4
+            assign footer_grid_class = 'grid--3-col-desktop'
+          elsif section.blocks.size == 4
+            assign footer_grid_class = 'grid--4-col-tablet'
+            elsif section.blocks.size == 3
             assign footer_grid_class = 'grid--3-col-tablet'
           endif
         -%}
-        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col grid--4-col-tablet {{ footer_grid_class }}">
+        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col {{ footer_grid_class }}">
           {%- for block in section.blocks -%}
           <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
             {%- if block.settings.heading != blank -%}
@@ -168,6 +168,9 @@
           {%- endif -%}
         </div></div></div></div>
   {%- endif -%}
+  <div class = "top-footer-section-text">
+      <h3>{{ section.settings.top_footer_title }}</h3>
+    </div>
   <div class="footer__content-bottom">
     <div class="container">    	
         <div class="footer-bottom-content footer-desktop">
