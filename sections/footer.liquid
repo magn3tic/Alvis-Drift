@@ -6,13 +6,7 @@
     
     <div class="container">
       <div class="footer-top-content">
-        <div class="f-logo-sc">
-          <div class="f-logo">
-            <a href="{{ routes.root_url }}"><img src="{{section.settings.footer_logo}}" alt="" loading="lazy"></a>
-          </div>
-          
-         
-        </div>
+       
         {%- if section.blocks.size > 0 -%}
         {%- liquid
           if section.blocks.size == 9
@@ -63,7 +57,11 @@
                    style="max-width: min(100%, {{ block.settings.image_width }}px);"
                    >
               {%- else -%}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+              <div class="f-logo-sc">
+                <div class="f-logo">
+                <a href="{{ routes.root_url }}"><img src="{{section.settings.footer_logo}}" alt="" loading="lazy"></a>
+              </div>
+              </div>
               {%- endif -%}
                 {% if block.settings.social-icons == true %}
                   <div class="f-social">   
