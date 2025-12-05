@@ -186,67 +186,69 @@
     padding-top:50px;
   }
 }
-.newsletter-content {
-  text-align: left;
-}
-.newsletter-content h2 {
-  width: 100%;
-  max-width: 100%;
-  text-align: left;
-  font-size:80px;
-  line-height:1.1;
-}
-.footer__blocks-wrapper .footer-block.grid__item:first-child,
-.footer-block.grid__item.footer-block--menu {
-  max-width: 100%!important;
-  text-align: center;
-  margin: 4rem 0 0!important;
-}
-
-.footer-block.grid__item.footer-block--menu .list-menu__item {
-  display: inline-block;
-}
-.footer-block .footer-block__details-content {
-  margin-bottom: 0;
-}
-
-.footer-top-content {
-  flex-direction: column;
-}
-
-.list-social__item {
-  margin-top: 5px;
-}
-.list-social__item:last-of-type {
-  margin-top: 5px;
-}
-.f-logo-sc .f-info-m {
-  display: none;
-}
-.f-social {
-  margin-top: 35px;
-}
-
-.product-price-per {
-    font-size: 0.9em;
-}
-.col-sm{width:50%;}
-@media screen and (min-width: 750px) {
-
-.product-price-per {
-    font-size: 1.1em;
-}
-  
+  .newsletter-content {
+    text-align: left;
+  }
+  .newsletter-content h2 {
+    width: 100%;
+    max-width: 100%;
+    text-align: left;
+    font-size:80px;
+    line-height:1.1;
+  }
   .footer__blocks-wrapper .footer-block.grid__item:first-child,
   .footer-block.grid__item.footer-block--menu {
-    text-align: left;
-    margin: 0!important;
+    max-width: 100%!important;
+    text-align: center;
+    margin: 4rem 0 0!important;
+  }
+
+  .footer-block.grid__item.footer-block--menu .list-menu__item {
+    display: inline-block;
+  }
+  .footer-block .footer-block__details-content {
+    margin-bottom: 0;
+  }
+
+  .footer-top-content {
+    flex-direction: column;
+  }
+
+  .list-social__item {
+    margin-top: 5px;
+  }
+  .list-social__item:last-of-type {
+    margin-top: 5px;
+  }
+  .f-logo-sc .f-info-m {
+    display: none;
+  }
+  .f-social {
+    margin-top: 35px;
+  }
+
+  .product-price-per {
+      font-size: 0.9em;
+  }
+  .col-sm{width:50%;}
+@media screen and (min-width: 750px) {
+
+  .product-price-per {
+      font-size: 1.1em;
   }
   .footer-top-content {
     flex-direction: column-reverse;
   }
 
 }
+@media screen and (min-width: 810px) {
+  .footer__blocks-wrapper .footer-block.grid__item:first-child,
+  .footer-block.grid__item.footer-block--menu {
+    text-align: left;
+    margin: 0!important;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .footer-top-content {
     flex-direction: row;
