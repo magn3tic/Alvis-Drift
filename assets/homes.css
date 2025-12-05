@@ -847,7 +847,7 @@ p.sub-title {
 }
 
 .footer__content-top .grid--4-col-tablet .grid__item {
-    max-width: 278px!important;
+    max-width: 25%!important;
     width: auto!important
 }
 
