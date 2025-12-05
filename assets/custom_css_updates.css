@@ -196,12 +196,6 @@
     font-size:80px;
     line-height:1.1;
   }
-  .footer__blocks-wrapper .footer-block.grid__item:first-child,
-  .footer-block.grid__item.footer-block--menu {
-    max-width: 100%!important;
-    text-align: center;
-    margin: 4rem 0 0!important;
-  }
 
   .footer-block.grid__item.footer-block--menu .list-menu__item {
     display: inline-block;
