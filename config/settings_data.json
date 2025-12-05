@@ -163,6 +163,14 @@
       "footer": {
         "type": "footer",
         "blocks": {
+          "image_PMpat6": {
+            "type": "image",
+            "settings": {
+              "image_width": 100,
+              "alignment": "center",
+              "social-icons": true
+            }
+          },
           "footer-0": {
             "type": "link_list",
             "settings": {
@@ -186,6 +194,7 @@
           }
         },
         "block_order": [
+          "image_PMpat6",
           "footer-0",
           "d99c39c2-aac7-4920-908d-1d0104171692",
           "a613a5be-c5ef-4b30-a3c8-0475920db38f"
