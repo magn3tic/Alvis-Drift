@@ -777,7 +777,8 @@ p.sub-title {
 .footer__blocks-wrapper.grid {
     margin: 0!important;
     row-gap: 0!important;
-    width: 67%
+    width: 67%;
+    align-items:center
 }
 .list-social__item {
     display: inline-block;
