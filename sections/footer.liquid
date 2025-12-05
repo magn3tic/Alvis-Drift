@@ -110,12 +110,15 @@
               </ul>
             {%- endif -%}
           </div>
-                {% endif %}
-                 <div class="f-info-m">            
-            <div class="foot-c f-tel"><a href="tel:{{settings.phone_number}}">{{settings.phone_number}}</a></div>
-            <div class="foot-c f-email"><a href="mailto:{{settings.email_id}}">{{settings.email_id}}</a></div>
-          </div>
+          {% endif %}
+          {% if settings.phone_number or settings.email_id !=blank %}
+            <div class="f-info-m">            
+              <div class="foot-c f-tel"><a href="tel:{{settings.phone_number}}">{{settings.phone_number}}</a></div>
+              <div class="foot-c f-email"><a href="mailto:{{settings.email_id}}">{{settings.email_id}}</a></div>
             </div>
+          {% endif %}
+            </div>
+            
             {%- endcase -%}
           </div>
           {%- endfor -%}
