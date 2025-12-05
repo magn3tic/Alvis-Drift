@@ -6,61 +6,7 @@
     
     <div class="container">
       <div class="footer-top-content">
-        <div class="f-logo-sc">
-          <div class="f-logo">
-            <a href="{{ routes.root_url }}"><img src="{{section.settings.footer_logo}}" alt="" loading="lazy"></a>
-          </div>
-          <div class="f-social">   
-            {%- if section.settings.show_social -%}
-            <ul class="footer__list-social list-unstyled list-social" role="list">
-              {%- if settings.social_facebook_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_facebook_link }}" class="" target="_blank">
-                  {%- render 'icon-facebook' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-                </a>
-              </li>
-              {%- endif -%}
-              {%- if settings.social_youtube_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_youtube_link }}" class="" target="_blank">
-                  {%- render 'icon-youtube' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
-                </a>
-              </li>
-              {%- endif -%}
-              {%- if settings.social_instagram_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_instagram_link }}" class="" target="_blank">
-                  {%- render 'icon-instagram' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
-                </a>
-              </li>
-                {%- if settings.social_linkedin_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_linkedin_link }}" class="" target="_blank">
-                  {%- render 'icon-linkedin' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
-                </a>
-              </li>
-              {%- endif -%}
-              {%- if settings.social_twitter_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_twitter_link }}" class="" target="_blank">
-                  {%- render 'icon-twitter' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
-                </a>
-              </li>
-              {%- endif -%}
-              {%- endif -%}   
-              </ul>
-            {%- endif -%}
-          </div>
-          <div class="f-info-m">            
-            <div class="foot-c f-tel"><a href="tel:{{settings.phone_number}}">{{settings.phone_number}}</a></div>
-            <div class="foot-c f-email"><a href="mailto:{{settings.email_id}}">{{settings.email_id}}</a></div>
-          </div>
-        </div>
+       
         {%- if section.blocks.size > 0 -%}
         {%- liquid
           if section.blocks.size == 9
@@ -111,9 +57,68 @@
                    style="max-width: min(100%, {{ block.settings.image_width }}px);"
                    >
               {%- else -%}
-              {{ 'image' | placeholder_svg_tag: 'placeholder-svg placeholder' }}
+              <div class="f-logo-sc">
+                <div class="f-logo">
+                <a href="{{ routes.root_url }}"><img src="{{section.settings.footer_logo}}" alt="" loading="lazy"></a>
+              </div>
+              </div>
               {%- endif -%}
+                {% if block.settings.social-icons == true %}
+                  <div class="f-social">   
+            {%- if section.settings.show_social -%}
+            <ul class="footer__list-social list-unstyled list-social" role="list">
+              {%- if settings.social_facebook_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_facebook_link }}" class="" target="_blank">
+                  {%- render 'icon-facebook' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
+                </a>
+              </li>
+              {%- endif -%}
+              {%- if settings.social_youtube_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_youtube_link }}" class="" target="_blank">
+                  {%- render 'icon-youtube' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
+                </a>
+              </li>
+              {%- endif -%}
+              {%- if settings.social_instagram_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_instagram_link }}" class="" target="_blank">
+                  {%- render 'icon-instagram' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
+                </a>
+              </li>
+                {%- if settings.social_linkedin_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_linkedin_link }}" class="" target="_blank">
+                  {%- render 'icon-linkedin' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
+                </a>
+              </li>
+              {%- endif -%}
+              {%- if settings.social_twitter_link != blank -%}
+              <li class="list-social__item">
+                <a href="{{ settings.social_twitter_link }}" class="" target="_blank">
+                  {%- render 'icon-twitter' -%}
+                  <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
+                </a>
+              </li>
+              {%- endif -%}
+              {%- endif -%}   
+              </ul>
+            {%- endif -%}
+          </div>
+          {% endif %}
+          {% if settings.phone_number or settings.email_id !=blank %}
+            <div class="f-info-m">            
+              <div class="foot-c f-tel"><a href="tel:{{settings.phone_number}}">{{settings.phone_number}}</a></div>
+              <div class="foot-c f-email"><a href="mailto:{{settings.email_id}}">{{settings.email_id}}</a></div>
             </div>
+          {% endif %}
+            </div>
+            
             {%- endcase -%}
           </div>
           {%- endfor -%}
@@ -324,6 +329,12 @@
             }
           ],
           "default": "center"
+        },
+        {
+          "type": "checkbox",
+          "default":true,
+          "id": "social-icons",
+          "label": "Enable Social Icons"
         }
       ]
     }
