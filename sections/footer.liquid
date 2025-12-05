@@ -11,10 +11,7 @@
             <a href="{{ routes.root_url }}"><img src="{{section.settings.footer_logo}}" alt="" loading="lazy"></a>
           </div>
           
-          <div class="f-info-m">            
-            <div class="foot-c f-tel"><a href="tel:{{settings.phone_number}}">{{settings.phone_number}}</a></div>
-            <div class="foot-c f-email"><a href="mailto:{{settings.email_id}}">{{settings.email_id}}</a></div>
-          </div>
+         
         </div>
         {%- if section.blocks.size > 0 -%}
         {%- liquid
@@ -116,6 +113,10 @@
             {%- endif -%}
           </div>
                 {% endif %}
+                 <div class="f-info-m">            
+            <div class="foot-c f-tel"><a href="tel:{{settings.phone_number}}">{{settings.phone_number}}</a></div>
+            <div class="foot-c f-email"><a href="mailto:{{settings.email_id}}">{{settings.email_id}}</a></div>
+          </div>
             </div>
             {%- endcase -%}
           </div>
