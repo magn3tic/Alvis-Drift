@@ -57,6 +57,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "ALL WINES",
+            "collection_subheader": "",
             "collectionCarasoul": "all-wines"
           }
         },
@@ -64,6 +65,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "SIGNATURE RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "signature-range"
           }
         },
@@ -71,6 +73,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "221 RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "221-range"
           }
         },
@@ -78,6 +81,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "RESERVE RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "reserve-range"
           }
         },
@@ -85,6 +89,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "ICON RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "icon-range"
           }
         },
@@ -92,6 +97,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "FLAGSHIP RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "flagship-range"
           }
         },
@@ -99,6 +105,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "SPARKLING RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "sparkling-range"
           }
         },
@@ -106,6 +113,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "EXCLUSIVE RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "exclusive-range"
           }
         },
@@ -113,6 +121,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "RED WINES",
+            "collection_subheader": "",
             "collectionCarasoul": "red-wines"
           }
         },
@@ -120,6 +129,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "WHITE WINES",
+            "collection_subheader": "",
             "collectionCarasoul": "white-wines"
           }
         },
@@ -127,6 +137,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "BLENDS",
+            "collection_subheader": "",
             "collectionCarasoul": "blends"
           }
         },
@@ -134,6 +145,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "ROSÉ WINES",
+            "collection_subheader": "",
             "collectionCarasoul": "rose-wines"
           }
         },
@@ -141,6 +153,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "DESSERT WINES",
+            "collection_subheader": "",
             "collectionCarasoul": "dessert-wines"
           }
         },
@@ -148,6 +161,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "PREMIUM WINES",
+            "collection_subheader": "",
             "collectionCarasoul": "premium-wines"
           }
         },
@@ -155,6 +169,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "BEST SELLERS",
+            "collection_subheader": "",
             "collectionCarasoul": "best-sellers"
           }
         },
@@ -162,6 +177,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "Limited Offers",
+            "collection_subheader": "",
             "collectionCarasoul": "limited-offers"
           }
         }
@@ -189,7 +205,7 @@
         "heading-tag": false,
         "subtitle-1": "",
         "active_collection": "all-wines",
-        "promo_badge": true
+        "promo_badge": false
       }
     },
     "1642113859b1f1945f": {
