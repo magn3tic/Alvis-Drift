@@ -22,6 +22,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "blends"
           }
         }
@@ -31,9 +32,10 @@
       ],
       "settings": {
         "topheading": "OUR RED / WHITE BLENDS",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "blends",
-        "promo_badge": true
+        "promo_badge": false
       }
     },
     "164210934350db4240": {
