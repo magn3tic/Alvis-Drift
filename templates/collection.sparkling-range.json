@@ -76,6 +76,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "sparkling-range"
           }
         }
@@ -88,7 +89,7 @@
         "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "sparkling-range",
-        "promo_badge": true
+        "promo_badge": false
       }
     },
     "8c6f6d04-e973-4e87-806b-0bc5b3b1249e": {
@@ -98,6 +99,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "cap-classique-range"
           }
         },
@@ -105,6 +107,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": ""
           }
         }
