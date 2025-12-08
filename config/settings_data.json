@@ -26,7 +26,7 @@
     "social_youtube_link": "https://www.youtube.com/c/AlvisdriftCoZa",
     "predictive_search_enabled": true,
     "favicon": "shopify://shop_images/Alvis_Fabicon.png",
-    "member-discount": "disable",
+    "member-discount": "enable",
     "product_list": [
       "icon-albertus-viljoen-3-pack",
       "sparkling-brut-cap-classique-gift-box",
@@ -34,7 +34,12 @@
       "icon-white-gift-box",
       "reserve-drift-fusion-magnum",
       "nectarinia-gift-box",
-      "sparkling-brut-gift-box"
+      "sparkling-brut-gift-box",
+      "flagship-gift-box",
+      "champagne-sabrage-and-sabre-engraving",
+      "wine-bottle-sabre",
+      "voucher",
+      "champagne-stopper"
     ],
     "member-included-discount": "enable",
     "discount-badge": "tier-text",
