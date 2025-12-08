@@ -24,7 +24,8 @@
         "overlay_opacity": 30,
         "blurb": "",
         "right_btn_text": "",
-        "right_btn_link": ""
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
     "product-grid": {
@@ -34,6 +35,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "pinotage"
           }
         }
@@ -43,9 +45,10 @@
       ],
       "settings": {
         "topheading": "OUR PINOTAGE WINES",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "pinotage",
-        "promo_badge": true
+        "promo_badge": false
       }
     },
     "164210934350db4240": {
