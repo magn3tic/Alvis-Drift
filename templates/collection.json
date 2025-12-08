@@ -66,6 +66,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "SIGNATURE RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "signature-range"
           }
         },
@@ -73,6 +74,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "221 RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "221-range"
           }
         },
@@ -80,6 +82,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "RESERVE RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "reserve-range"
           }
         },
@@ -87,6 +90,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "ICON RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "icon-range"
           }
         },
@@ -94,6 +98,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "Flagship Range",
+            "collection_subheader": "",
             "collectionCarasoul": "flagship-range"
           }
         },
@@ -101,6 +106,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "SPARKLING RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "sparkling-range"
           }
         },
@@ -108,6 +114,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "CAP CLASSIQUE RANGE",
+            "collection_subheader": "",
             "collectionCarasoul": "cap-classique-range"
           }
         }
@@ -123,9 +130,10 @@
       ],
       "settings": {
         "topheading": "",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "signature-range",
-        "promo_badge": true
+        "promo_badge": false
       }
     }
   },

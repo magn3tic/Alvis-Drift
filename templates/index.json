@@ -42,6 +42,7 @@
         },
         "slider_eiynBD": {
           "type": "slider",
+          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis_Drift_Cheers_to_2025_banner.png",
             "mobile_background_image": "shopify://shop_images/Alvis_Drift_Cheers_to_2025_Mobile.png",
@@ -61,7 +62,6 @@
         },
         "slider_hXPgKV": {
           "type": "slider",
-          "disabled": true,
           "settings": {
             "background_image": "shopify://shop_images/Alvis_Drift_Home_Banner.jpg",
             "mobile_background_image": "shopify://shop_images/Alvis_Drift_Home_Banner_mobile.jpg",
@@ -190,7 +190,7 @@
         "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "signature-range",
-        "promo_badge": true
+        "promo_badge": false
       }
     },
     "gifts_grid_mbQp4Y": {
