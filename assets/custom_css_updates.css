@@ -249,11 +249,7 @@
   }
   
 }
-@media screen and (max-width:1450px) {
-.col-sm{
-  width:60%
-}
-}
+
 @media screen and (max-width:900px) {
   .f-logo-sc {
     margin: 20px auto 0;
