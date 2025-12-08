@@ -59,6 +59,7 @@
     },
     "wine_club_hero_v2_6fAbp9": {
       "type": "wine-club-hero-v2",
+      "disabled": true,
       "name": "Wine Club Hero V2",
       "settings": {
         "subtitle_connected": "",
@@ -77,6 +78,28 @@
         "show_button_disconnected": true,
         "button_text_disconnected": "JOIN NOW",
         "url_disconnected": "https://alvisdrift.co.za/account/register/"
+      }
+    },
+    "wine_club_hero_v2_RcnM4a": {
+      "type": "wine-club-hero-v2",
+      "name": "Wine Club Hero V2",
+      "settings": {
+        "subtitle_connected": "Alvi's Drift Wine Club",
+        "title_connected": "Alvi's Drift Wine Club",
+        "blurb_connected": "",
+        "image_connected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
+        "image_connected_mobile": "shopify://shop_images/WineClub_Mobile_banner.png",
+        "show_button_connected": false,
+        "button_text_connected": "SHOP NOW",
+        "url_connected": "",
+        "subtitle_disconnected": "Alvi's Drift Wine Club",
+        "title_disconnected": "Alvi's Drift Wine Club",
+        "blurb_disconnected": "",
+        "image_disconnected_desktop": "shopify://shop_images/alvis-wineclub-hero.jpg",
+        "image_disconnected_mobile": "shopify://shop_images/WineClub_Mobile_banner.png",
+        "show_button_disconnected": true,
+        "button_text_disconnected": "JOIN NOW",
+        "url_disconnected": "https://alvisdrift.co.za/account/register"
       }
     },
     "wine_club_products_events_grid_cRYNQa": {
@@ -501,6 +524,7 @@
     "wine_club_hero_v2_y96K78",
     "wine_club_hero_v2_HVqDTq",
     "wine_club_hero_v2_6fAbp9",
+    "wine_club_hero_v2_RcnM4a",
     "wine_club_products_events_grid_cRYNQa",
     "wine_club_products_events_grid_9GLNNV",
     "wine_club_products_events_grid_eDmcgT",
