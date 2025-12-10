@@ -112,6 +112,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "club-silver"
           }
         }
@@ -121,7 +122,7 @@
       ],
       "settings": {
         "topheading": "EXCLUSIVE WINES",
-        "heading-tag": true,
+        "heading-tag": false,
         "subtitle-1": "TO SILVER CLUB MEMBERS",
         "active_collection": "club-silver",
         "promo_badge": true
