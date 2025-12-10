@@ -25,6 +25,7 @@
             "background_image": "shopify://shop_images/Wine-Club-Offers-Header.jpg",
             "image_overlay": "",
             "overlay_opacity": 30,
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "WINE CLUB",
             "paragarh_p2": "MEMBERS'",
@@ -42,6 +43,7 @@
             "background_image": "shopify://shop_images/Website_banner_Icon_139d053b-b7ba-46c5-bdeb-b3a7aa3d3c59.png",
             "image_overlay": "#000000",
             "overlay_opacity": 45,
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "WINE CLUB: PLATINUM",
             "paragarh_p2": "SPECIAL OFFERS",
@@ -61,7 +63,11 @@
       "settings": {
         "background_image": "shopify://shop_images/Wine-Club-Offers-Header.jpg",
         "image_overlay": "",
-        "overlay_opacity": 30
+        "overlay_opacity": 30,
+        "blurb": "",
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
     "0a1a3ee2-7c65-4a0e-9980-731a98b46ebd": {
@@ -77,7 +83,8 @@
         "template--16476661121280__9ee39b9c-d746-4698-a6c1-4f5ed254b65b-1665353925b7ff6d1c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Check Back Soon"
+            "heading": "Check Back Soon",
+            "heading_size": true
           }
         },
         "template--16476661121280__9ee39b9c-d746-4698-a6c1-4f5ed254b65b-1665353925b7ff6d1c-1": {
@@ -105,6 +112,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "club-gold"
           }
         }
@@ -114,8 +122,10 @@
       ],
       "settings": {
         "topheading": "EXCLUSIVE WINES",
+        "heading-tag": false,
         "subtitle-1": "TO PLATINUM MEMBERS",
-        "active_collection": "club-gold"
+        "active_collection": "club-gold",
+        "promo_badge": false
       }
     },
     "64d30e84-18b3-4c8f-9d8a-46505a9e304d": {
@@ -134,7 +144,8 @@
       ],
       "disabled": true,
       "settings": {
-        "topheading": ""
+        "topheading": "",
+        "heading-tag": true
       }
     },
     "976a9640-2b4d-4dec-b081-c5bf5afc4c52": {
@@ -143,7 +154,8 @@
         "template--16476661121280__976a9640-2b4d-4dec-b081-c5bf5afc4c52-1665353925b7ff6d1c-0": {
           "type": "heading",
           "settings": {
-            "heading": "Log In Before shopping"
+            "heading": "Log In Before shopping",
+            "heading_size": true
           }
         },
         "template--16476661121280__976a9640-2b4d-4dec-b081-c5bf5afc4c52-1665353925b7ff6d1c-1": {
