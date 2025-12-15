@@ -12,7 +12,7 @@
     "1639248143bd9f4fca": {
       "type": "Page-Background-Colour",
       "settings": {
-        "page_bg": "#867065"
+        "page_bg": "#721326"
       }
     },
     "main": {
@@ -330,7 +330,8 @@
           "type": "item",
           "settings": {
             "collection_heading": "ACROSS OUR RANGES",
-            "collectionCarasoul": "red-wines"
+            "collection_subheader": "",
+            "collectionCarasoul": "gifts"
           }
         }
       },
@@ -338,7 +339,7 @@
         "1639253594dbdedc92-0"
       ],
       "settings": {
-        "topheading": "THESE ARE ALL OUR RED WINES",
+        "topheading": "THESE ARE ALL OUR GIFT Range",
         "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "red-wines",
