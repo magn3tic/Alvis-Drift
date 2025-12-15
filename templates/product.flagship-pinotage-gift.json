@@ -1,0 +1,364 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248143bd9f4fca": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#867065"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "collapsible_tab_Gcdzi6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"https://alvisdrift.co.za/pages/flagship-awards\" target=\"_blank\" title=\"Wine Awards Flagship Range\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "1354c4bd-0ae3-46de-a98f-adeed3e5f492": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Awards",
+            "content": "",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "collapsible_tab_97F8Mt": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheet",
+            "content": "<p>View all vintage fact sheets / tasting notes<a href=\"https://alvisdrift.co.za/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/><br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "collapsible_tab_U4ATDp": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"https://alvisdrift.co.za/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share This Page"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_tab_Gcdzi6",
+        "1354c4bd-0ae3-46de-a98f-adeed3e5f492",
+        "collapsible_tab_97F8Mt",
+        "collapsible_tab_U4ATDp",
+        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "multi_column_content_b8KXiQ": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "column_YGEKAn": {
+          "type": "column",
+          "settings": {
+            "title": "ALCOHOL",
+            "Title_color": "#480115",
+            "text": "<p><strong>13,6%</strong></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "column_pgLAR3": {
+          "type": "column",
+          "settings": {
+            "title": "RESIDUAL SUGAR",
+            "Title_color": "#480115",
+            "text": "<p><strong>4,2 g/L</strong></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "column_yHMbMx": {
+          "type": "column",
+          "settings": {
+            "title": "ACIDITY",
+            "Title_color": "#480115",
+            "text": "<p><strong>6,0 g/L</strong></p>",
+            "Text_color": "#2d5980"
+          }
+        },
+        "column_mbH9Qb": {
+          "type": "column",
+          "settings": {
+            "title": "pH",
+            "Title_color": "#480115",
+            "text": "<p><strong>3,3</strong></p>",
+            "Text_color": "#2d5980"
+          }
+        }
+      },
+      "block_order": [
+        "column_YGEKAn",
+        "column_pgLAR3",
+        "column_yHMbMx",
+        "column_mbH9Qb"
+      ],
+      "name": "Multi-Column Content",
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "Analysis",
+        "Heading_color": "#ffffff",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "Read More",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "1639223856bcb87c3a": {
+      "type": "Logos",
+      "blocks": {
+        "163922385675455466-0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        },
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0": {
+          "type": "item",
+          "settings": {
+            "logo_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "163922385675455466-0",
+        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"
+      ],
+      "disabled": true,
+      "settings": {
+        "title_text": "",
+        "Heading_color": "#f8f2e6"
+      }
+    },
+    "16392371564aec5ac1": {
+      "type": "Multi-Column-Content",
+      "blocks": {
+        "163923715616dacea7-0": {
+          "type": "column",
+          "settings": {
+            "title": "ALCOHOL",
+            "Title_color": "#721326",
+            "text": "<p><strong>2019:</strong>  13,5%<strong><br/>2020:</strong>  13,7%</p>",
+            "Text_color": "#721326"
+          }
+        },
+        "163923715616dacea7-1": {
+          "type": "column",
+          "settings": {
+            "title": "RESIDUAL SUGAR",
+            "Title_color": "#721326",
+            "text": "<p><strong>2019:</strong>  4,5 g/l<strong><br/>2020:</strong>  5,5 g/l</p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "163923715616dacea7-2": {
+          "type": "column",
+          "settings": {
+            "title": "ACIDITY",
+            "Title_color": "#721326",
+            "text": "<p><strong>2019:</strong>  5,7 g/l<strong><br/>2020:</strong>  6,1 g/l</p>",
+            "Text_color": "#ffffff"
+          }
+        },
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79": {
+          "type": "column",
+          "settings": {
+            "title": "pH",
+            "Title_color": "#721326",
+            "text": "<p><strong>2019:</strong>  3,5<strong><br/>2020:</strong>  3,4</p>",
+            "Text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "163923715616dacea7-0",
+        "163923715616dacea7-1",
+        "163923715616dacea7-2",
+        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
+      ],
+      "disabled": true,
+      "settings": {
+        "Background_Colour": "#f8f2e6",
+        "title": "ANALYSIS",
+        "Heading_color": "#ffffff",
+        "image_width": "third",
+        "image_ratio": "adapt",
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "swipe_on_mobile": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Red_Meat_Pairing_01.jpg",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "Enjoy this remarkable, one-of-a-kind wine with rump roast, mushroom risotto, or seared tuna steak.",
+        "btn-txt": "",
+        "btn-url": ""
+      }
+    },
+    "1639224916778fd50c": {
+      "type": "Focus-Text-Image-Right",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/our-rewards-main.png",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "HERITAGE",
+        "video-sec-content-txt-1": "<p>Named in honour of the mighty Verraux’s eagle that soars high above our vineyards, Alvi’s Drift presents a 100% Pinotage wine as rare, bold, and elegant as this magnificent bird. Made in small volumes only and blended from individually selected barrels, this wine is the ultimate symbol of the heights and resilience one can reach.</p>",
+        "button-txt": "",
+        "button_link": "shopify://collections/flagship-range",
+        "button_type": "alvisBtnOpposite"
+      }
+    },
+    "focus_text_image_left_FcxaKM": {
+      "type": "Focus-Text-Image-Left",
+      "name": "Focus Text (Image Left)",
+      "settings": {
+        "background_colour": "#00000000",
+        "our-story-vid": "shopify://shop_images/one-the-wine-main.png",
+        "image_size": "100%",
+        "video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "ON THE VINES",
+        "video-sec-content-txt-1": "<p>Sourced from a 20-year-old vineyard rooted in ancient limestone soils, Alvi’s Drift Verreaux Black Eagle Pinotage 2023 reflects the power of terroir. These mineral-rich soils provide the ideal foundation for grapes to produce a wine of exceptional depth and character. The limestone influence enhances freshness, resulting in a one-of-a-kind wine that is both bold and refined – a true expression of place.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "focus_text_image_right_AYKRje": {
+      "type": "Focus-Text-Image-Right",
+      "name": "Focus Text (Image Right)",
+      "settings": {
+        "our-story-vid": "shopify://shop_images/in-the-cellar-main.png",
+        "right_video_url": "",
+        "Heading_size": "h2",
+        "Heading_color": "#f8f2e6",
+        "title": "In The Celler",
+        "video-sec-content-txt-1": "<p>To create this wine, Pinotage grapes were crushed and transferred to our winery’s traditional, open-top concrete fermentation tanks, constructed nearly a century ago by our founder, Albertus Viljoen van der Merwe (or ‘Oupa Alvi,’ as we still fondly refer to him).</p><p>During fermentation, punch-downs (<em>pigéage</em>) were performed by hand, up to eight times daily, to optimise skin-to-juice contact and enhance both colour and flavour extraction.</p><p>Following fermentation, the wine was left to soak on the skins for several days before being transferred to a combination of new French and American oak barrels. It was then matured for 12 months before final bottling.</p>",
+        "button-txt": "",
+        "button_link": "",
+        "button_type": "alvisBtn"
+      }
+    },
+    "1639224118e06f2478": {
+      "type": "Featured-Content-Left",
+      "disabled": true,
+      "settings": {
+        "main_heading": "<p>ON TH<em>E</em><br/>VINES</p>",
+        "our-vineyards-main": "shopify://shop_images/one-the-wine-main.png",
+        "left_image_contain": false,
+        "our-vineyards-side": "shopify://shop_images/one-the-wine-side.png",
+        "detail-box-txt": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. </p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
+        "btn-txt": "",
+        "btn-url": "",
+        "add_class": ""
+      }
+    },
+    "1639224398aa0e3aa7": {
+      "type": "Featured-Content-Right",
+      "disabled": true,
+      "settings": {
+        "main_heading": "<p>IN TH<em>E</em><br/>CELLAR</p>",
+        "our-cellars-main": "shopify://shop_images/in-the-cellar-main.png",
+        "right_image_contain": false,
+        "our-cellars-side": "shopify://shop_images/in-the-cellar-side.png",
+        "detail-box-txt": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.</p>",
+        "btn-txt": "",
+        "btn-url": ""
+      }
+    },
+    "1639226365ec4bf8dd": {
+      "type": "Focus-Text-Text-Only",
+      "settings": {
+        "text_transform": "uppercase",
+        "Heading_color": "#ffffff",
+        "title": "",
+        "subtitle-1": "<p>Absolutely loved this blend, just placed another order!</p>",
+        "subtitle-2": "<p><em>Wendy</em></p>",
+        "button_text": "",
+        "button_link": "",
+        "new_tab": true
+      }
+    },
+    "1639253594473c8d26": {
+      "type": "Collections-Grid",
+      "blocks": {
+        "1639253594dbdedc92-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "ACROSS OUR RANGES",
+            "collectionCarasoul": "red-wines"
+          }
+        }
+      },
+      "block_order": [
+        "1639253594dbdedc92-0"
+      ],
+      "settings": {
+        "topheading": "THESE ARE ALL OUR RED WINES",
+        "heading-tag": true,
+        "subtitle-1": "",
+        "active_collection": "red-wines",
+        "promo_badge": false
+      }
+    }
+  },
+  "order": [
+    "1639248143bd9f4fca",
+    "main",
+    "multi_column_content_b8KXiQ",
+    "1639223856bcb87c3a",
+    "16392371564aec5ac1",
+    "1639224403b97d22e1",
+    "1639224916778fd50c",
+    "focus_text_image_left_FcxaKM",
+    "focus_text_image_right_AYKRje",
+    "1639224118e06f2478",
+    "1639224398aa0e3aa7",
+    "1639226365ec4bf8dd",
+    "1639253594473c8d26"
+  ]
+}
