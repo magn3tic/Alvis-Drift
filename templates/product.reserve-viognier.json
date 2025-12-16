@@ -102,7 +102,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2024:</strong>  13,7%</p>",
+            "text": "<p><strong>2025:</strong>  13,7%</p>",
             "Text_color": "#867065"
           }
         },
@@ -111,7 +111,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2024:  </strong>4,6 g/L</p>",
+            "text": "<p><strong>2025:  </strong>4,5 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -120,7 +120,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2024:  </strong>6,6 g/L</p>",
+            "text": "<p><strong>2025:  </strong>6,6 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -129,7 +129,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2024:</strong>  3,2</p>",
+            "text": "<p><strong>2024:</strong>  3,1</p>",
             "Text_color": "#867065"
           }
         }
@@ -415,6 +415,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "white-wines"
           }
         }
@@ -425,6 +426,7 @@
       "disabled": true,
       "settings": {
         "topheading": "OUR WHITE WINES",
+        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "red-wines",
         "promo_badge": false
