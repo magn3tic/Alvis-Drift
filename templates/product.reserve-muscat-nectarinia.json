@@ -101,7 +101,7 @@
           "settings": {
             "title": "ALCOHOL",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2017:</strong>  15,7%</p>",
+            "text": "<p><strong>2022:</strong>  15,4%</p>",
             "Text_color": "#867065"
           }
         },
@@ -110,7 +110,7 @@
           "settings": {
             "title": "RESIDUAL SUGAR",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2017:</strong>  357,6 g/L</p>",
+            "text": "<p><strong>2022:</strong>  298 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -119,7 +119,7 @@
           "settings": {
             "title": "ACIDITY",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2017:</strong>  6,3 g/L</p>",
+            "text": "<p><strong>2022:</strong>  5,9 g/L</p>",
             "Text_color": "#867065"
           }
         },
@@ -128,7 +128,7 @@
           "settings": {
             "title": "pH",
             "Title_color": "#ffffff",
-            "text": "<p><strong>2017:</strong>  3,2</p>",
+            "text": "<p><strong>2022:</strong>  3,5</p>",
             "Text_color": "#867065"
           }
         }
@@ -260,6 +260,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "reserve-range"
           }
         }
