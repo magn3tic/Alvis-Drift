@@ -49,7 +49,7 @@
       "taste-the-tiers-white-wine-mixed-case",
       "reserve-drift-fusion-magnum"
     ],
-    "member-included-discount": "enable",
+    "member-included-discount": "disable",
     "discount-badge": "tier-text",
     "product_list_included": [],
     "product_list_included-second": [],
