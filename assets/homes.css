@@ -2179,7 +2179,7 @@ summary.list-menu__item {
     align-items: end
 }
 .blp-container {
-    display: flex!important
+    display: none!important
 }
 .age-header {
     font-size: 30px;
