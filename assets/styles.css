@@ -1011,6 +1011,11 @@
     fill: var(--footerHeading)
 }
 
+.footer__content-top .grid--4-col-tablet .grid__item {
+    max-width: 278px!important;
+    width: auto!important
+}
+
 .footer-block__details-content list-unstyled li {
     padding: 0
 }

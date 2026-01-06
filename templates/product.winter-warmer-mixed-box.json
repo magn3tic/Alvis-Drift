@@ -12,7 +12,7 @@
     "1639248182bc55fb26": {
       "type": "Page-Background-Colour",
       "settings": {
-        "page_bg": "#712f1f"
+        "page_bg": "#C2AB9B"
       }
     },
     "165537808074252eff": {
@@ -64,8 +64,7 @@
         "163949428839bac508-0"
       ],
       "settings": {
-        "topheading": "OUR GIFTING COLLECTION",
-        "heading-tag": true
+        "topheading": "OUR GIFTING COLLECTION"
       }
     }
   },

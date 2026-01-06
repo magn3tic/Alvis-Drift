@@ -1,0 +1,115 @@
+<div class="stats-wrap">
+  <div class="alcontainer">
+    <div class="row">
+      
+      <!-- STATS COLUMN -->
+      <div class="col-6">
+        <ul>
+          {% for block in section.blocks %}
+            {% if block.type == 'stat' %}
+              <li>
+                {% if block.settings.number != blank %}
+                  <div>{{ block.settings.number }}</div>
+                {% endif %}
+                {% if block.settings.label != blank %}
+                  <span>{{ block.settings.label }}</span>
+                {% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
+
+      <!-- CTA COLUMN -->
+      <div class="col-6">
+        <div class="stats-cta">
+          {% if section.settings.heading != blank %}
+            <h3 class="h2">{{ section.settings.heading }}</h3>
+          {% endif %}
+          {% if section.settings.text != blank %}
+            <p>{{ section.settings.text }}</p>
+          {% endif %}
+
+          <div class="cta-group">
+            {% if section.settings.primary_text != blank and section.settings.primary_link != blank %}
+              <a href="{{ section.settings.primary_link }}" class="cta-btn-lite">{{ section.settings.primary_text }}</a>
+            {% endif %}
+            {% if section.settings.secondary_text != blank and section.settings.secondary_link != blank %}
+              <a href="{{ section.settings.secondary_link }}" class="cta-btn-border-lite">{{ section.settings.secondary_text }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "New Stats",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "CTA Heading",
+      "default": "Private wine club"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "CTA Text",
+      "default": "Join the Alvi’s Drift Wine Club and <br>receive free shipping for first-time buyers."
+    },
+    {
+      "type": "text",
+      "id": "primary_text",
+      "label": "Primary Button Text",
+      "default": "JOIN OUR PRIVATE WINE CLUB"
+    },
+    {
+      "type": "url",
+      "id": "primary_link",
+      "label": "Primary Button Link"
+    },
+    {
+      "type": "text",
+      "id": "secondary_text",
+      "label": "Secondary Button Text",
+      "default": "LOG IN"
+    },
+    {
+      "type": "url",
+      "id": "secondary_link",
+      "label": "Secondary Button Link"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "stat",
+      "name": "Stat Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "number",
+          "label": "Stat Number",
+          "default": "202"
+        },
+        {
+          "type": "textarea",
+          "id": "label",
+          "label": "Stat Label",
+          "default": "Local & International <br>Medals in 2024"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "New Stats",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}

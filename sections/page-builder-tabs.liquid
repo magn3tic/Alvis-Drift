@@ -1,0 +1,188 @@
+<section class="wine-ranges">
+  <div class="alcontainer">
+    <div class="head">
+      {% if section.settings.small_heading != blank %}
+        <div class="heading-small">{{ section.settings.small_heading }}</div>
+      {% endif %}
+      {% if section.settings.heading != blank %}
+        <h3 class="heading">{{ section.settings.heading }}</h3>
+      {% endif %}
+    </div>
+
+    <!-- Tabs Navigation -->
+    <div class="wr-filter">
+    <ul>
+        {% for block in section.blocks %}
+        {% assign first_word = block.settings.title | split: ' ' | first %}
+        <li>
+            <a href="#wr-{{ block.id }}" class="{% if forloop.first %}active{% endif %}">
+            {{ first_word }}
+            </a>
+        </li>
+        {% endfor %}
+    </ul>
+    </div>
+
+    <!-- Tabs Content -->
+    <div class="wr-tab-content">
+      {% assign total_blocks = section.blocks.size %}
+      {% for block in section.blocks %}
+        {% assign current_index = forloop.index0 %}
+        {% assign prev_index = current_index | minus: 1 %}
+        {% assign next_index = current_index | plus: 1 %}
+        {% assign last_index = total_blocks | minus: 1 %}
+
+        {% if prev_index < 0 %}
+          {% assign prev_index = last_index %}
+        {% endif %}
+        {% if next_index > last_index %}
+          {% assign next_index = 0 %}
+        {% endif %}
+
+        {% assign prev_block = section.blocks[prev_index] %}
+        {% assign next_block = section.blocks[next_index] %}
+
+        <div class="wr-tabs{% if forloop.first %} active{% endif %}" id="wr-{{ block.id }}">
+          <div class="row">
+
+            <!-- LEFT SIDE -->
+            <div class="col-6">
+              <ul class="tab-img tab-img-left">
+                <!-- previous -->
+                <li class="only-desktop">
+                  {% if prev_block.settings.main_image != blank %}
+                    <img 
+                      src="{{ prev_block.settings.main_image | img_url: '600x' }}" 
+                      alt="{{ prev_block.settings.title | escape }}" 
+                      data-target="#wr-{{ prev_block.id }}" />
+                  {% endif %}
+                </li>
+
+                <!-- active -->
+                <li class="act">
+                  {% if block.settings.main_image != blank %}
+                    <img 
+                      src="{{ block.settings.main_image | img_url: '600x' }}" 
+                      alt="{{ block.settings.title | escape }}" 
+                      data-target="#wr-{{ block.id }}" />
+                  {% endif %}
+                </li>
+              </ul>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-6">
+              <ul class="tab-img tab-img-right">
+                <!-- previous -->
+                <li class="only-mobile">
+                  {% if prev_block.settings.main_image != blank %}
+                    <img 
+                      src="{{ prev_block.settings.main_image | img_url: '600x' }}" 
+                      alt="{{ prev_block.settings.title | escape }}" 
+                      data-target="#wr-{{ prev_block.id }}" />
+                  {% endif %}
+                </li>
+
+                {% for img_block in section.blocks %}
+                  {% unless img_block.id == block.id %}
+                    {% if img_block.id != prev_block.id %}
+                      <li>
+                        {% if img_block.settings.main_image != blank %}
+                          <img 
+                            src="{{ img_block.settings.main_image | img_url: '600x' }}" 
+                            alt="{{ img_block.settings.title | escape }}" 
+                            data-target="#wr-{{ img_block.id }}" />
+                        {% endif %}
+                      </li>
+                    {% endif %}
+                  {% endunless %}
+                {% endfor %}
+              </ul>
+
+              <div class="wr-tab-text">
+                {% if block.settings.title != blank %}
+                  <h3>{{ block.settings.title }}</h3>
+                {% endif %}
+                {% if block.settings.description != blank %}
+                  <p>{{ block.settings.description }}</p>
+                {% endif %}
+                {% if block.settings.link_text != blank and block.settings.link_url != blank %}
+                  <a href="{{ block.settings.link_url }}" class="cta-btn-border-lite">{{ block.settings.link_text }}</a>
+                {% endif %}
+              </div>
+            </div>
+
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "New Tabs Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "small_heading",
+      "label": "Small Heading",
+      "default": "Our Wine Ranges"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Get Familiar with Our Wine Ranges"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "range_tab",
+      "name": "Wine Range Tab",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Range Title",
+          "default": "Signature Range"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Range Description",
+          "default": "A bold and expressive range celebrating our family’s winemaking legacy."
+        },
+        {
+          "type": "image_picker",
+          "id": "main_image",
+          "label": "Main Bottle Image"
+        },
+        {
+          "type": "text",
+          "id": "link_text",
+          "label": "Button Text",
+          "default": "Shop Range"
+        },
+        {
+          "type": "url",
+          "id": "link_url",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [
+    {
+      "name": "New Tabs Section",
+      "category": "Content",
+      "blocks": [
+        { "type": "range_tab" },
+        { "type": "range_tab" },
+        { "type": "range_tab" }
+      ]
+    }
+  ]
+}
+{% endschema %}

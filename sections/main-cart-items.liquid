@@ -156,7 +156,6 @@
                           </dd>
                         </dl>
                       {%- else -%}
-                        
                         <span class="price price--end">
                           {{ item.original_line_price | money | replace: ",", " " }}
                         </span>
@@ -371,8 +370,6 @@
           </span>
         {%- endif -%}
           {%- elsif settings.member-included-discount == "enable" -%}
-            {% assign compare_price = item.variant.compare_at_price %}
-            {% assign original_price = item.original_line_price %}
             {% if lowertags contains 'bronze' or lowertags contains 'silver' or lowertags contains 'gold' %}
               {% if included_product_ids contains item.product.id %}
                 <span class="price price--end discounted-price">
@@ -396,18 +393,11 @@
                   {{ item.original_line_price | times: 0.75 | money | replace: ",", " " }}
                 </span>
               {% else %}
-                
-                {% if compare_price > original_price %}
-                <span class = "price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
-                {% endif %}
                 <span class="price price--end">
                   {{ item.original_line_price | money | replace: ",", " " }}
                 </span>
               {% endif %}
             {% else %}
-              {% if compare_price > original_price %}
-                <span class = "price price--end discounted-price">{{ compare_price | money | replace: ",", " " }}</span>
-                {% endif %}
               <span class="price price--end tags-not-included">
                 {{ item.original_line_price | money | replace: ",", " " }}
               </span>

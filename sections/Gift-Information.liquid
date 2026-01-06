@@ -26,154 +26,96 @@
   body.classList.add("bg-olive");
 </script>
 
-<section class="main-product-sec pg-mrg-fx bg-olive">    
-  <div class="product-gallery-bg" style="background-image:url({{ 'texture-bg.png' | asset_url}})"></div>
-  <div class="sec-inner">
-    <div class="container">        
-      <div class="main-product">
-        <div class="main-product-header main-product-header-tablet">
-          <div class="product-type">{{ product.type }}</div>
-          <h1>{{ product.title | escape }}</h1>
+
+<div class="new-product-single">
+  <div class="alcontainer">
+      <div class="row row-one">
+        <div class="col-12">
+            <div class="np-product-type">{{ product.type }}</div>
+            <h1 class="h2"> {{ product.title | escape }}</h1>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row row-two">
+        <div class="col-4">
+            <div class="product-gallery">
+                <div class="gallery-imgs-wrap">
+                    {% for image in product.images %}
+                    <div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
+                      <img src="{{ image | product_img_url: 'original' }}" alt="" rel="preload">
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+            <div class="text-center">
+              {%- assign current_variant = product.selected_or_first_available_variant -%}
+              <div class="sku-no mobile-hide">SKU CODE:  {{ current_variant.sku }}</div> 
+            </div>
         </div>
 
-        <div class="main-product-wrap">  
+        <div class="col-8">
+           <p>{{product.description}}</p>
+          {% if product.compare_at_price > product.price %}
+          <div class="np-product-price"><span class="compare-price">{{ product.selected_or_first_available_variant.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
+          {% else %}
+          <div class="np-product-price">{{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
+          {% endif %}
 
-          <div class="product-gallery-sec">
-            <div class="product-gallery">
-			  <div class="product-gallery-thumbnails">
-                
-               {% for image in product.images %}
-                <div class="gallery-thumbanil {% if forloop.first == true %} current {% endif %}" data-tab="{{ image.id }}">
-                  <img src="{{ image | product_img_url: 'original' }}"  alt="">
-                </div>
-               {% endfor %}
+          {% assign price_v = product.selected_or_first_available_variant.price %}
+          <div class="product-btn-wrap">
+            <!-- Quantity -->
 
-<!--                 <div class="gallery-thumbanil current" data-tab="{{ image.id }}">
-                  <img src="{{ image | product_img_url: 'original' }}"  alt="">
-                </div>
-                <div class="gallery-thumbanil" data-tab="mainimg02">
-                  <img src="{{ 'our-social-impact-main.png' | asset_url }}" alt="">
-                </div>
-                <div class="gallery-thumbanil" data-tab="mainimg03">
-                  <img src="{{ 'in-the-cellar-main.png' | asset_url }}" alt="">
-                </div> -->
-              </div>
-              {% comment %}
-              <div class="product-gallery-thumbnails">
-
-                {% for image in product.images %}
-                <div class="gallery-thumbanil {% if forloop.first == true %} current {% endif %}" data-tab="{{ image.id }}">
-                  <img src="{{ image | product_img_url: 'original' }}"  alt="">
-                </div>
-                {% endfor %}
-
-                <!--                 <div class="gallery-thumbanil current" data-tab="{{ image.id }}">
-<img src="{{ image | product_img_url: 'original' }}"  alt="">
-</div>
-<div class="gallery-thumbanil" data-tab="mainimg02">
-<img src="{{ 'our-social-impact-main.png' | asset_url }}" alt="">
-</div>
-<div class="gallery-thumbanil" data-tab="mainimg03">
-<img src="{{ 'in-the-cellar-main.png' | asset_url }}" alt="">
-</div> -->
-              </div>
-              {% endcomment %}
-              <div class="gallery-imgs-wrap">
-                {% for image in product.images %}
-                <div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
-                  <img src="{{ image | product_img_url: 'original' }}" alt="">
+            <product-form class="product-form">
+              <div class="product-form__error-message-wrapper" role="alert" hidden>
+                <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
+                  <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
+                  <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
+                  <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
+                  <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7"></svg>
+                  <span class="product-form__error-message"></span>
+                  </div>
+                {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                <!--                   <input class="quantity__input" type="hidden" name="quantity" id="Quantity-template--15114413473959__main" min="1" value="1" form="product-form-template--15114413473959__main">                   -->
+                <div class="input-num-wrap">
+                  <quantity-input class="">
+                    <button type="button" name="plus" class="num-up"></button>
+                    <button type="button" name="minus" class="num-down"></button>
+                    <input min="1" type="number" id="quantity" name="quantity" class="input-num" min="1" max="30"value="1" />
+                  </quantity-input>
                 </div>
 
-                {% endfor %}
+                <button
+                        type="submit"
+                        name="add"
+                        class="btn btn-overlay"
+                        {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                        >
+                  <span>
+                    {%- if product.selected_or_first_available_variant.available -%}
+                    BUY
+                    {%- else -%}
+                    {{ 'products.product.sold_out' | t }}
+                    {%- endif -%}
+                  </span>
+                  <b>{{ product_item.price | money }}</b>
+                  <div class="loading-overlay__spinner hidden">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                    </svg>
+                  </div>
+                </button>
+                {%- endform -%}
+                </product-form>                
 
-                <!--                 <div class="gallery-img current" id="mainimg01">
-<img src="{{ image | product_img_url: 'original' }}" alt="">
-</div>
-<div class="gallery-img" id="mainimg02">
-<img src="{{ 'our-social-impact-main.png' | asset_url }}" alt="">
-</div>
-<div class="gallery-img" id="mainimg03">
-<img src="{{ 'in-the-cellar-main.png' | asset_url }}" alt="">
-</div> -->
-              </div>
-            </div>
-            {%- assign current_variant = product.selected_or_first_available_variant -%}
-            <div class="sku-no mobile-hide">SKU CODE:  {{ current_variant.sku }}</div> 
-          </div> 
-
-          <div class="product-detail">
-            <div class="product-detail-inner">
-              <div class="main-product-header main-product-header-desktop">
-                <div class="product-type">{{ product.type }}</div>
-                <h2>{{ product.title | escape }}</h2>
-              </div>                                        
-              <div class="product-desc">
-                <p>{{product.description}}</p>
-              </div>
-              {% if product.compare_at_price > product.price %}
-              <div class="product-price"><span class="compare-price">{{ product.selected_or_first_available_variant.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
-              {% else %}
-              <div class="product-price">{{ product.selected_or_first_available_variant.price | money | remove: '.00' | replace: ",", " " }}</div>
-              {% endif %}
-
-              {% assign price_v = product.selected_or_first_available_variant.price %}
-              <div class="product-btn-wrap">
-                <!--                 <div class="input-num-wrap">
-<button class="num-up"></button>
-<button class="num-down"></button>
-<input type="number" min="0" max="100" value="1" name="" id="" class="input-num">
-</div> -->
-
-                <!-- Quantity -->
-
-                <product-form class="product-form">
-                  <div class="product-form__error-message-wrapper" role="alert" hidden>
-                    <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-error" viewBox="0 0 13 13">
-                      <circle cx="6.5" cy="6.50049" r="5.5" stroke="white" stroke-width="2"/>
-                      <circle cx="6.5" cy="6.5" r="5.5" fill="#EB001B" stroke="#EB001B" stroke-width="0.7"/>
-                      <path d="M5.87413 3.52832L5.97439 7.57216H7.02713L7.12739 3.52832H5.87413ZM6.50076 9.66091C6.88091 9.66091 7.18169 9.37267 7.18169 9.00504C7.18169 8.63742 6.88091 8.34917 6.50076 8.34917C6.12061 8.34917 5.81982 8.63742 5.81982 9.00504C5.81982 9.37267 6.12061 9.66091 6.50076 9.66091Z" fill="white"/>
-                      <path d="M5.87413 3.17832H5.51535L5.52424 3.537L5.6245 7.58083L5.63296 7.92216H5.97439H7.02713H7.36856L7.37702 7.58083L7.47728 3.537L7.48617 3.17832H7.12739H5.87413ZM6.50076 10.0109C7.06121 10.0109 7.5317 9.57872 7.5317 9.00504C7.5317 8.43137 7.06121 7.99918 6.50076 7.99918C5.94031 7.99918 5.46982 8.43137 5.46982 9.00504C5.46982 9.57872 5.94031 10.0109 6.50076 10.0109Z" fill="white" stroke="#EB001B" stroke-width="0.7"></svg>
-                      <span class="product-form__error-message"></span>
-                      </div>
-                    {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                    <!--                   <input class="quantity__input" type="hidden" name="quantity" id="Quantity-template--15114413473959__main" min="1" value="1" form="product-form-template--15114413473959__main">                   -->
-                    <div class="input-num-wrap">
-                      <quantity-input class="">
-                        <button type="button" name="plus" class="num-up"></button>
-                        <button type="button" name="minus" class="num-down"></button>
-                        <input min="1" type="number" id="quantity" name="quantity" class="input-num" min="1" max="30"value="1" />
-                      </quantity-input>
-                    </div>
-
-                    <button
-                            type="submit"
-                            name="add"
-                            class="btn btn-overlay"
-                            {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
-                            >
-                      <span>
-                        {%- if product.selected_or_first_available_variant.available -%}
-                        BUY
-                        {%- else -%}
-                        {{ 'products.product.sold_out' | t }}
-                        {%- endif -%}
-                      </span>
-                      <b>{{ product_item.price | money }}</b>
-                      <div class="loading-overlay__spinner hidden">
-                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                        </svg>
-                      </div>
-                    </button>
-                    {%- endform -%}
-                    </product-form>                
-
-                  <div class="mobile-hide">                  
-                    <div class="pdt-b">                  
-                      <div class="prd-t"><a href="{{ product.metafields.my_fields.product_share_url }}">{{ product.metafields.my_fields.product_share }}</a></div>
-                    </div>
-                  </div> 
+              <div class="mobile-hide">                  
+                <div class="pdt-b">                  
+                  <div class="prd-t"><a href="{{ product.metafields.my_fields.product_share_url }}">{{ product.metafields.my_fields.product_share }}</a></div>
+                </div>
+              </div> 
 
 
                   <div class="product-extra-info">
@@ -477,20 +419,6 @@
               </div>
             </div>
           </div>
-          
-          <div class="mobile-show">                  
-                <div class="pdt-r">  
-                  {%- assign current_variant = product.selected_or_first_available_variant -%}
-
-                  <div class="sku-no">SKU CODE: {{current_variant.sku}}</div>
-                  <div class="pdt-b">                  
-                    <div class="prd-t"><a href="#">SHARE</a></div>
-                  </div>
-                </div>
-              </div>
-          
-        </div>
-      </div>
         </section>
         {% javascript %}
         class ProductModal extends ModalDialog {

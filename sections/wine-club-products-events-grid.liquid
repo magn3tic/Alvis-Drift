@@ -26,8 +26,6 @@
   {% assign show_section = true %}
 
 {% assign selected_collection = '' %}
-
-
 {% if section.settings.show == 'exclusive_collection' %}
   {% assign selected_collection = section.settings.collection_exclusive %}
 
@@ -57,7 +55,7 @@
      {% if section.settings.show == 'exclusive_collection' or section.settings.show == 'exclusive_wines'  %}
       <div class="awc-hero--content">
         {% if section.settings.show_title %}
-          <h2 class="h1">{{section.settings.title}}</h2>
+          <h1 class="h1">{{section.settings.title}}</h1>
           {% unless section.settings.no-subtitle %}     
 
           {% if section.settings.sub-title == blank  %}
@@ -127,10 +125,7 @@
                   
                   {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
                   {% comment %} End of Pricing and Discounts Logic {% endcomment %}
-                
-              {% if settings.member-discount == "enable" %}
-
-
+                     
                   {% if excluded_product_ids contains product.id %}
                   <div class="product-price" style="margin-bottom: 15px;text-align: center;">
 
@@ -140,38 +135,47 @@
                     {% assign discounted_price_15 = product.price | times: 0.85 | round %}
 
                     {% if has_discount_20 == true %}
-                      <div class = "product-price">
                       <span class="compare-price">{{ product.price| money | remove: '.00' | replace: ',', ' ' }}</span>
-                        <span class="product-price 20_discount">{{ discounted_price_20 | money | remove: '.00' | replace: ',', ' ' }}</span>
-                      </div>
+                        <span class="product-price 20_discount">
+                          {{ discounted_price_20 | money | remove: '.00' | replace: ',', ' ' }}
+                        </span>
                       
                       {% elsif has_discount_15 == true %}
-                        <div class = "product-price">
                       <span class="compare-price">
                           {{ product.price| money | remove: '.00' | replace: ',', ' ' }}
                         </span>
                         <span class="product-price 15_discount">
                           {{ discounted_price_15 | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
-                      </div>
                       {% else %}
                       
                       {% if compare_price != 0 %}
-                        <div class = "product-price">
                         <span class="compare-price">
                           {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
                         <span class="current-price">
                           {{ price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
-                      </div>
                       {% else %}
                         <span class="current-price">
                           {{ price | money | remove: '.00' | replace: ',', ' ' }}
                         </span>
                       {% endif %}
-                      
-                      
+                      {% assign promo = product.metafields.my_fields.promo_label %}
+
+                    {% if excluded_product_ids contains product.id %}
+                      {% if promo != blank %}
+                        {% if section.settings.promo_badge == true %}
+                          <div class="promo-badge">
+                              {{ promo }}
+                          </div>
+                          {% else %}
+                          <div class="promo-label">
+                              {{ promo }}
+                          </div>
+                          {% endif %}
+                        {% endif %}
+                      {% endif %}
                     
                     {% else %}
                       <span class="product-price">
@@ -181,42 +185,23 @@
 
                   </div>
                     {% else %}
-                      <div class = "product-price">
                     <div class="product-price" style="margin-bottom: 15px">
                       <span class="compare-price">
                         {{ price | money | remove: '.00' | replace: ',', ' ' }}
                       </span>
                       <span class="discounted-price-v2">
                         {{ discounted_price | money | remove: '.00' | replace: ',', ' ' }}
-                      </span>     
-                      </div>         
+                      </span>              
                   </div>
                     {% endif %}
-
-                  {% else %}
-                    {% if compare_price != 0 %}
-                      <div class = "product-price">
-                        <span class="compare-price">
-                          {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                        <span class="current-price">
-                          {{ price | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                        </div>
-                      {% else %}
-                        <span class="current-price">
-                          {{ price | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                      {% endif %}
-                    {% endif %}
                   {% unless product.tags contains 'Gift' %}
-                    <div class="product-price-per">
-                      {% assign price_perUnit = price | divided_by: product.metafields.my_fields.cost_per_item | round: 2  %}
-                        {% if product.metafields.my_fields.cost_per_item != blank %}
-                          R{{ price_perUnit | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
-                        {% else %}
-                      Case of 6
-                    {% endif %}
+                  <div class="product-price-per">
+               {% assign price_perUnit = price | divided_by: product.metafields.my_fields.cost_per_item | round: 2  %}
+                {% if product.metafields.my_fields.cost_per_item != blank %}
+                    R{{ price_perUnit | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
+                {% else %}
+                  Per Case
+                {% endif %}
                   </div>
                   {% endunless %}
 
@@ -269,22 +254,8 @@
                       </div>
                     {%- endform -%}
                   </product-form>
-            {% assign promo = product.metafields.my_fields.promo_label %}
 
-                              
-                                  {% if promo != blank %}
-                                    {% if section.settings.promo_badge == true %}
-                                      <div class="promo-badge">
-                                          {{ promo }}
-                                      </div>
-                                      {% else %}
-                                      <div class="promo-label">
-                                          {{ promo }}
-                                      </div>
-                                      {% endif %}
-                                    {% endif %} 
-                </div>
-                
+                </div> 
               {% endfor %}
             </div> 
        
@@ -292,7 +263,6 @@
         <p>No products found in the assigned collection.</p>
       {% endif %}
     {% endif %}
-    
     {%  if  section.settings.show == 'exclusive_events' %}  
       <div class="awc-hero--content">
         {% if section.settings.show_title %}

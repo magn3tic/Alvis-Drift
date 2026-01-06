@@ -32,7 +32,7 @@
             "paragarh_p4": "",
             "paragarh_1": "Icon Range",
             "paragarh_2": "New Label Launch",
-            "side_btn_text": "",
+            "side_btn_text": "MORE",
             "side_btn_link": "https://alvisdrift.co.za/pages/icon-albertus-viljoen/"
           }
         }
@@ -46,8 +46,7 @@
         "overlay_opacity": 30,
         "blurb": "",
         "right_btn_text": "",
-        "right_btn_link": "",
-        "anchor_link": ""
+        "right_btn_link": ""
       }
     },
     "focus_text_text_only_JhezLt": {
@@ -71,7 +70,6 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
-            "collection_subheader": "",
             "collectionCarasoul": "launch"
           }
         }
@@ -81,10 +79,9 @@
       ],
       "settings": {
         "topheading": "",
-        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "launch",
-        "promo_badge": false
+        "promo_badge": true
       }
     }
   },

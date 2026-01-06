@@ -1,0 +1,104 @@
+<div class="ald-sale-banners">
+  <div class="alcontainer">
+    <div class="row">
+      {% for block in section.blocks %}
+        <div class="col-6">
+          <div class="sale-banner-item">
+            {% if block.settings.top_text != blank %}
+              <span>{{ block.settings.top_text }}</span>
+            {% endif %}
+            
+            {% if block.settings.heading != blank %}
+              <h3>{{ block.settings.heading }}</h3>
+            {% endif %}
+
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}">
+            {% endif %}
+              <div class="sale-banner-img">
+                {% if block.settings.image != blank %}
+                  <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.heading | escape }}">
+                {% endif %}
+
+                <div class="sale-banner-hover">
+                  <div>
+                    {% if block.settings.hover_title != blank %}
+                      <div class="sbh-title">{{ block.settings.hover_title }}</div>
+                    {% endif %}
+                    {% if block.settings.hover_subtext != blank %}
+                      <small>{{ block.settings.hover_subtext }}</small>
+                    {% endif %}
+                  </div>
+                </div>
+
+                <div class="link-btn"></div>
+              </div>
+            {% if block.settings.link != blank %}
+              </a>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "New Sale Banners",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "banner",
+      "name": "Banner Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "top_text",
+          "label": "Top Text (Date or Label)",
+          "default": "05 Aug — 16 Aug"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Main Heading",
+          "default": "Sale"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Banner Image"
+        },
+        {
+          "type": "text",
+          "id": "hover_title",
+          "label": "Hover Title",
+          "default": "SPRING SALE"
+        },
+        {
+          "type": "text",
+          "id": "hover_subtext",
+          "label": "Hover Subtext",
+          "default": "Save Up to R681"
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Banner Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "New Sale Banners",
+      "category": "Promotions",
+      "blocks": [
+        { "type": "banner" },
+        { "type": "banner" }
+      ]
+    }
+  ]
+}
+{% endschema %}

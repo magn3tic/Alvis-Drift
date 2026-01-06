@@ -1,0 +1,48 @@
+<section class="rewards-wrap">
+  <div class="rewards-carousel">
+    {% for block in section.blocks %}
+      <div>
+        {% if block.settings.image != blank %}
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.alt_text | escape }}">
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "New Rewards Logos",
+  "settings": [],
+  "blocks": [
+    {
+      "type": "logo",
+      "name": "Award Logo",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Logo image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt text"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 20,
+  "presets": [
+    {
+      "name": "New Rewards Logos",
+      "category": "Media",
+      "blocks": [
+        { "type": "logo" },
+        { "type": "logo" },
+        { "type": "logo" }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -31,10 +31,9 @@
       ],
       "settings": {
         "topheading": "OUR RED / WHITE BLENDS",
-        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "blends",
-        "promo_badge": false
+        "promo_badge": true
       }
     },
     "164210934350db4240": {

@@ -1,0 +1,110 @@
+<div class="ald-sale-slider">
+  <div class="sale-slider">
+    {% for block in section.blocks %}
+      <div class="slide">
+        {% if block.settings.video != blank %}
+          <video autoplay muted loop playsinline>
+            <source src="{{ block.settings.video }}" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        {% elsif block.settings.image != blank %}
+          <img src="{{ block.settings.image | img_url: 'master' }}" alt="{{ block.settings.heading | escape }}">
+        {% endif %}
+
+        <div class="alcontainer">
+          <div class="slide-content">
+            {% if block.settings.heading != blank %}
+              <h3>{{ block.settings.heading }}</h3>
+            {% endif %}
+            {% if block.settings.subtext != blank %}
+              <p>{{ block.settings.subtext }}</p>
+            {% endif %}
+            {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+              <a href="{{ block.settings.button_link }}" class="cta-btn">{{ block.settings.button_text }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if section.settings.show_nav %}
+    <div class="slide-nav">
+      <div class="slide-nav-prev">
+        <svg fill="none" height="46" viewBox="0 0 46 46" width="46" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="23" cy="23" fill="#0D0D0D" fill-opacity="0.68" r="21.5" stroke="white" stroke-width="3"/>
+          <path d="M29 15L16 22.5055L29 30.011" stroke="white" stroke-linecap="round" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="slide-nav-next">
+        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="23" cy="23" r="21.5" fill="#0D0D0D" fill-opacity="0.68" stroke="white" stroke-width="3"/>
+          <path d="M18 15L31 22.5055L18 30.011" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "New Slider",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_nav",
+      "label": "Show navigation arrows",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "url",
+          "id": "video",
+          "label": "Video (MP4 URL)",
+          "info": "Paste a direct MP4 video URL or leave blank to use image."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image (used if no video provided)"
+        },
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Sale goes live"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Subtext",
+          "default": "16 August — LIMITED STOCK"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "View Sale"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "New Slider",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}

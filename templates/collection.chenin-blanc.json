@@ -31,10 +31,9 @@
       ],
       "settings": {
         "topheading": "OUR CHENIN BLANC WINES",
-        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "chenin-blanc",
-        "promo_badge": false
+        "promo_badge": true
       }
     },
     "164210934350db4240": {

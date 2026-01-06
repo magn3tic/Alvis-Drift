@@ -1,0 +1,78 @@
+<section class="image-row-section">
+  <div class="alcontainer">
+    <div class="row">
+      <div class="col-4">
+          {% if section.settings.heading != blank %}
+            <h3 class="heading">{{ section.settings.heading }}</h3>
+          {% endif %}
+          
+          {% if section.settings.subheading != blank %}
+            <p class="subheading">{{ section.settings.subheading }}</p>
+          {% endif %}
+      </div>
+
+      <div class="col-8">
+      <ul>
+      {% for block in section.blocks %}
+          {% if block.settings.image != blank %}
+          <li>
+            <img 
+              src="{{ block.settings.image | img_url: '800x' }}" 
+              alt="{{ block.settings.alt_text | escape }}" 
+              loading="lazy">
+          </li>
+          {% endif %}
+      {% endfor %}
+      </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Serving Suggestion",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Our Gallery"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "Discover our collection below"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "image_block",
+      "name": "Image Block",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Upload Image"
+        },
+        {
+          "type": "text",
+          "id": "alt_text",
+          "label": "Alt Text"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Serving Suggestion",
+      "blocks": [
+        { "type": "image_block" },
+        { "type": "image_block" },
+        { "type": "image_block" }
+      ]
+    }
+  ]
+}
+{% endschema %}

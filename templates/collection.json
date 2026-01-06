@@ -123,10 +123,9 @@
       ],
       "settings": {
         "topheading": "",
-        "heading-tag": true,
         "subtitle-1": "",
         "active_collection": "signature-range",
-        "promo_badge": false
+        "promo_badge": true
       }
     }
   },

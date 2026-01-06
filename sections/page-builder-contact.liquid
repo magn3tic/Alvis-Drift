@@ -1,0 +1,127 @@
+<section class="home-contact">
+  <div class="alcontainer">
+    {% if section.settings.badge_image != blank %}
+      <img src="{{ section.settings.badge_image | img_url: 'master' }}" alt="{{ shop.name }}">
+    {% endif %}
+
+    <div class="head">
+      <div class="row">
+        <div class="col-6">
+          {% if section.settings.subheading != blank %}
+            <div class="heading-small">{{ section.settings.subheading }}</div>
+          {% endif %}
+          {% if section.settings.heading != blank %}
+            <h3 class="heading">{{ section.settings.heading }}</h3>
+          {% endif %}
+        </div>
+
+        <div class="col-6">
+          {% if section.settings.description != blank %}
+            <p>{{ section.settings.description }}</p>
+          {% endif %}
+        </div>
+      </div>
+    </div>
+
+    {% form 'create_customer' %}
+      {% if form.errors %}
+        <div class="form-errors">
+          {{ form.errors | default_errors }}
+        </div>
+      {% endif %}
+
+      {% if form.posted_successfully? %}
+        <p class="form-success">Your account has been created. Please check your email to activate it.</p>
+      {% else %}
+        <div class="row">
+          <div class="col-6">
+            <input type="text" name="customer[first_name]" placeholder="Name" value="{{ form.first_name }}" required>
+          </div>
+
+          <div class="col-6">
+            <input type="text" name="customer[last_name]" placeholder="Surname" value="{{ form.last_name }}" required>
+          </div>
+
+          <div class="col-6">
+            <input type="email" name="customer[email]" placeholder="E-Mail Address" value="{{ form.email }}" required>
+          </div>
+
+          <div class="col-6">
+            <input type="tel" name="customer[note][phone]" placeholder="Contact Number">
+          </div>
+
+          <div class="col-6">
+            <input type="password" name="customer[password]" placeholder="Password" required>
+          </div>
+
+          <div class="col-6">
+            <input type="password" name="customer[password_confirmation]" placeholder="Confirm Password" required>
+          </div>
+
+          <div class="col-12 form-actions">
+            {% if section.settings.join_text != blank %}
+              <button type="submit" class="cta-btn-lite">{{ section.settings.join_text }}</button>
+            {% endif %}
+            {% if section.settings.login_link != blank and section.settings.login_text != blank %}
+              <a href="{{ section.settings.login_link }}" class="cta-btn-border-lite">{{ section.settings.login_text }}</a>
+            {% endif %}
+          </div>
+        </div>
+      {% endif %}
+    {% endform %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "New Contact Section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "badge_image",
+      "label": "Top Seal / Badge Image"
+    },
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Small Heading",
+      "default": "SITEWIDE DISCOUNT"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "Join the Alvi’s Drift Wine Club"
+    },
+    {
+      "type": "textarea",
+      "id": "description",
+      "label": "Description",
+      "default": "Free to join. Earn points for discounts on every online purchase. Enjoy exclusive releases, special offers, and members-only events."
+    },
+    {
+      "type": "text",
+      "id": "join_text",
+      "label": "Join Button Text",
+      "default": "JOIN OUR PRIVATE WINE CLUB"
+    },
+    {
+      "type": "text",
+      "id": "login_text",
+      "label": "Login Button Text",
+      "default": "LOG IN"
+    },
+    {
+      "type": "url",
+      "id": "login_link",
+      "label": "Login Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Contact Section",
+      "category": "Forms"
+    }
+  ]
+}
+{% endschema %}

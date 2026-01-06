@@ -46,8 +46,7 @@
         "overlay_opacity": 30,
         "blurb": "",
         "right_btn_text": "",
-        "right_btn_link": "",
-        "anchor_link": ""
+        "right_btn_link": ""
       }
     },
     "164211201435c7bdbd": {
@@ -186,10 +185,9 @@
       ],
       "settings": {
         "topheading": "OUR WINES",
-        "heading-tag": false,
         "subtitle-1": "",
         "active_collection": "all-wines",
-        "promo_badge": false
+        "promo_badge": true
       }
     },
     "1642113859b1f1945f": {
@@ -207,8 +205,7 @@
         "16421138599e0a1534-0"
       ],
       "settings": {
-        "topheading": "GIFTING COLLECTION",
-        "heading-tag": false
+        "topheading": "GIFTING COLLECTION"
       }
     },
     "164210934350db4240": {

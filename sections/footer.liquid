@@ -1,482 +1,153 @@
-{% comment %}theme-check-disable UndefinedObject{% endcomment %}
-
-<footer class="footer color-{{ section.settings.color_scheme }} gradient">
-  {%- if section.blocks.size > 0 or section.settings.newsletter_enable or section.settings.show_social -%}
-  <div class="footer__content-top">
-    
-    <div class="container">
-      <div class="footer-top-content">
-       
-        {%- if section.blocks.size > 0 -%}
-        {%- liquid
-          if section.blocks.size == 9
-            assign footer_grid_class = 'grid--3-col-tablet'
-          elsif section.blocks.size > 6
-            assign footer_grid_class = 'grid--3-col-desktop'
-          elsif section.blocks.size == 4
-            assign footer_grid_class = 'grid--4-col-tablet'
-            elsif section.blocks.size == 3
-            assign footer_grid_class = 'grid--3-col-tablet'
-          endif
-        -%}
-        <div class="footer__blocks-wrapper grid grid--1-col grid--2-col {{ footer_grid_class }}">
-          {%- for block in section.blocks -%}
-          <div class="footer-block grid__item{% if block.type == 'link_list' and block.settings.heading != blank %} footer-block--menu{% endif %}" {{ block.shopify_attributes }}>
-            {%- if block.settings.heading != blank -%}
-            <h2 class="footer-block__heading">{{- block.settings.heading | escape -}}</h2>
-            {%- endif -%}
-
-            {%- case block.type -%}
-            {%- when 'text' -%}
-            <div class="footer-block__details-content rte">
-              {{ block.settings.subtext }}
-            </div>
-            {%- when 'link_list' -%}
-            {%- if block.settings.menu != blank and block.settings.heading != blank -%}
-            <ul class="footer-block__details-content list-unstyled">
-              {%- for link in block.settings.menu.links -%}
-              <li>
-                <a href="{{ link.url }}" class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}">
-                  {{ link.title }}
-                </a>
-              </li>
-              {%- endfor -%}
-            </ul>
-            {%- endif -%}
-            {%- when 'image' -%}
-            <div class="footer-block__details-content footer-block-image {{ block.settings.alignment }}">
-              {%- if block.settings.image != blank -%}
-              {%- assign image_size = block.settings.image_width | append: 'x' -%}
-              <img
-                   srcset= "{{ block.settings.image | img_url: image_size }}, {{ block.settings.image | img_url: image_size, scale: 2 }} 2x"
-                   src="{{ block.settings.image | img_url: '400x' }}"
-                   alt="{{ block.settings.image.alt | escape }}"
-                   loading="lazy"
-                   width="{{ block.settings.image.width }}"
-                   height="{{ block.settings.image.height }}"
-                   style="max-width: min(100%, {{ block.settings.image_width }}px);"
-                   >
-              {%- else -%}
-              <div class="f-logo-sc">
-                <div class="f-logo">
-                <a href="{{ routes.root_url }}"><img src="{{section.settings.footer_logo}}" alt="" loading="lazy"></a>
-              </div>
-              </div>
-              {%- endif -%}
-                {% if block.settings.social-icons == true %}
-                  <div class="f-social">   
-            {%- if section.settings.show_social -%}
-            <ul class="footer__list-social list-unstyled list-social" role="list">
-              {%- if settings.social_facebook_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_facebook_link }}" class="" target="_blank">
-                  {%- render 'icon-facebook' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.facebook' | t }}</span>
-                </a>
-              </li>
-              {%- endif -%}
-              {%- if settings.social_youtube_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_youtube_link }}" class="" target="_blank">
-                  {%- render 'icon-youtube' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.youtube' | t }}</span>
-                </a>
-              </li>
-              {%- endif -%}
-              {%- if settings.social_instagram_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_instagram_link }}" class="" target="_blank">
-                  {%- render 'icon-instagram' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.instagram' | t }}</span>
-                </a>
-              </li>
-                {%- if settings.social_linkedin_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_linkedin_link }}" class="" target="_blank">
-                  {%- render 'icon-linkedin' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.linkedin' | t }}</span>
-                </a>
-              </li>
-              {%- endif -%}
-              {%- if settings.social_twitter_link != blank -%}
-              <li class="list-social__item">
-                <a href="{{ settings.social_twitter_link }}" class="" target="_blank">
-                  {%- render 'icon-twitter' -%}
-                  <span class="visually-hidden">{{ 'general.social.links.twitter' | t }}</span>
-                </a>
-              </li>
-              {%- endif -%}
-              {%- endif -%}   
+<footer>
+  <div class="alcontainer">
+    <div class="row">
+      <div class="col-8">
+        <div class="row">
+          {% for block in section.blocks %}
+            <div class="col-4">
+              <h5>{{ block.settings.title }}</h5>
+              <ul>
+                {% for link in linklists[block.settings.menu].links %}
+                  <li><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
               </ul>
-            {%- endif -%}
-          </div>
-          {% endif %}
-          {% if settings.phone_number or settings.email_id !=blank %}
-            <div class="f-info-m">            
-              <div class="foot-c f-tel"><a href="tel:{{settings.phone_number}}">{{settings.phone_number}}</a></div>
-              <div class="foot-c f-email"><a href="mailto:{{settings.email_id}}">{{settings.email_id}}</a></div>
             </div>
-          {% endif %}
-            </div>
-            
-            {%- endcase -%}
-          </div>
-          {%- endfor -%}
+          {% endfor %}
         </div>
-        {%- endif -%}
-        <div class="footer-block--newsletter">
-          {%- if section.settings.newsletter_enable -%}
-          <div class="footer-block__newsletter">
-            {%- if section.settings.newsletter_heading != blank -%}
-            <h2 class="footer-block__heading">{{ section.settings.newsletter_heading | escape }}</h2>
-            {%- endif -%}
-            {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
-            <input type="hidden" name="contact[tags]" value="newsletter">
-            <div class="newsletter-form__field-wrapper">
-              <div class="field">
-                <input
-                       id="NewsletterForm--{{ section.id }}"
-                       type="email"
-                       name="contact[email]"
-                       class="field__input"
-                       value="{{ form.email }}"
-                       aria-required="true"
-                       autocorrect="off"
-                       autocapitalize="off"
-                       autocomplete="email"
-                       {% if form.errors %}
-                       autofocus
-                       aria-invalid="true"
-                       aria-describedby="ContactFooter-error"
-                       {% elsif form.posted_successfully? %}
-                       aria-describedby="ContactFooter-success"
-                       {% endif %}
-                       placeholder="{{ 'newsletter.label' | t }}"
-                       required
-                       >
-                <label class="field__label" for="NewsletterForm--{{ section.id }}">
-                  {{ 'newsletter.label' | t }}
-                </label>
-                <button type="submit" class="newsletter-form__button field__button" name="commit" id="Subscribe" aria-label="{{ 'newsletter.button_label' | t }}">
-                  {% render 'icon-arrow' %}
-                </button>
-              </div>
-              {%- if form.errors -%}
-              <small class="newsletter-form__message form__message" id="ContactFooter-error">{% render 'icon-error' %}{{ form.errors.translated_fields['email'] | capitalize }} {{ form.errors.messages['email'] }}</small>
-              {%- endif -%}
-            </div>
-            {%- if form.posted_successfully? -%}
-            <h3 class="newsletter-form__message newsletter-form__message--success form__message" id="ContactFooter-success" tabindex="-1" autofocus>{% render 'icon-success' %}{{ 'newsletter.success' | t }}</h3>
-            {%- endif -%}
-            {%- endform -%}
+      </div>
+
+      <div class="col-4">
+        <div class="footer-bottom">
+          {% if section.settings.logo %}
+            <a href="{{ routes.root_url }}" class="footer-logo">
+              <img src="{{ section.settings.logo | img_url: '300x' }}" alt="{{ shop.name }}">
+            </a>
+          {% endif %}
+
+          <div class="ald-social">
+            {% if section.settings.instagram_link != blank %}
+              <a href="{{ section.settings.instagram_link }}" target="_blank" aria-label="Instagram">
+                <!-- Instagram -->
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_514_7717)"><path fill-rule="evenodd" clip-rule="evenodd" d="M23.5213 5.29102C24.5219 5.29102 25.3322 6.09861 25.3322 7.09582C25.3322 8.09303 24.5219 8.89926 23.5213 8.89926C22.5207 8.89926 21.7104 8.09167 21.7104 7.09582C21.7104 6.09997 22.5207 5.29102 23.5213 5.29102Z" fill="#867065"/><path fill-rule="evenodd" clip-rule="evenodd" d="M23.3394 15.1236C23.3394 10.6655 19.7135 7.05176 15.2403 7.05176C10.7671 7.05176 7.14124 10.6655 7.14124 15.1236C7.14124 19.5817 10.7671 23.1954 15.2403 23.1954C19.7135 23.1954 23.3394 19.5817 23.3394 15.1236ZM14.3137 9.81285C16.0575 9.50182 17.585 10.0325 18.7033 10.986C19.5451 11.6872 20.1693 12.6367 20.4609 13.7226C20.4992 13.8576 20.5307 13.994 20.558 14.1318C21.1918 17.4031 18.8019 20.0237 16.1889 20.4943C12.9093 21.085 10.3086 18.7277 9.83911 16.0621C9.36824 13.3897 10.8698 11.222 12.9052 10.263C13.2227 10.1116 13.5567 9.99019 13.9058 9.90152C14.0399 9.86742 14.1768 9.8374 14.3137 9.81285Z" fill="#867065"/><path fill-rule="evenodd" clip-rule="evenodd" d="M15.862 0.000488281C14.9805 0.000488281 14.0826 0.000488281 13.2121 0.000488281C10.3431 0.00730916 7.79441 0.037321 7.2469 0.113715C3.31165 0.662113 0.162081 3.7738 0.0498408 8.00274C-0.00217297 9.95897 -0.0487116 21.8764 0.111436 23.1069C0.613779 26.973 3.8619 30.0178 8.05448 30.2033C8.77993 30.2361 11.059 30.2579 13.6418 30.2634H16.0249C19.3442 30.2565 22.5499 30.2183 23.1959 30.1338C27.123 29.6208 30.2274 26.4259 30.3711 22.2174C30.4012 21.343 30.4245 18.5287 30.4272 15.5521V14.7595C30.4245 11.2713 30.3903 7.77629 30.2972 7.09011C29.7771 3.30043 26.5194 0.142363 22.324 0.0509628C21.4412 0.0318643 18.7433 0.00867333 15.8606 0.00185246L15.862 0.000488281ZM10.9659 2.61698C12.3018 2.60606 13.828 2.60879 15.2515 2.61698H21.9914C22.9619 2.61698 23.8762 2.85844 24.6811 3.28542C24.8535 3.37273 25.0205 3.47231 25.1848 3.58554C25.2094 3.60191 25.2341 3.61965 25.2587 3.63738C25.4476 3.76698 25.6269 3.90749 25.798 4.05891C26.622 4.77101 27.3475 5.7614 27.624 7.14604C27.7102 7.53892 27.7554 7.94681 27.7554 8.36561V9.71478C27.7759 11.3804 27.7677 13.6272 27.7554 15.6053V21.8819C27.7554 22.579 27.6294 23.2488 27.3981 23.8695C27.2681 24.261 27.0888 24.6416 26.841 25.0126C26.3127 25.808 25.5242 26.5801 24.4703 27.0657C23.7175 27.4259 22.877 27.6278 21.9901 27.6278H18.9322C17.9795 27.6332 16.9611 27.6319 15.9688 27.6278H8.3912C5.21973 27.6278 2.62589 25.0427 2.62589 21.8819V19.3077C2.61631 18.0253 2.61905 16.5779 2.62589 15.2124V8.36561C2.62589 5.20482 5.2211 2.61971 8.3912 2.61971H10.9645L10.9659 2.61698Z" fill="#867065"/></g><defs><clipPath id="clip0_514_7717"><rect width="30.4253" height="30.2642" fill="white"/></clipPath></defs></svg>              </a>
+            {% endif %}
+
+            {% if section.settings.facebook_link != blank %}
+              <a href="{{ section.settings.facebook_link }}" target="_blank" aria-label="Facebook">
+                <!-- Facebook -->
+                <svg width="18" height="32" viewBox="0 0 18 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M17.8688 5.02364V0.000279739H13.4283C11.1028 -0.011506 9.09974 0.344687 7.56535 1.9122C4.99802 4.53519 5.46941 7.70687 5.44618 11.8777L0.0382572 11.9249L0 17.7012L5.39563 17.7065L5.45574 32L11.8925 31.9948L11.9349 17.7588L16.6692 17.6986L17.6584 11.9275L11.9431 11.917C11.9021 10.3128 11.5605 7.21056 12.4623 6.15639C13.2001 5.29341 14.1606 5.07079 15.2851 5.02233H17.8688V5.02364Z" fill="#867065"/></svg>
+              </a>
+            {% endif %}
+
+            {% if section.settings.youtube_link != blank %}
+              <a href="{{ section.settings.youtube_link }}" target="_blank" aria-label="YouTube">
+                <svg width="43" height="31" viewBox="0 0 43 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M42.5717 6.52559C42.5717 6.52559 42.1518 3.56094 40.8584 2.25918C39.2207 0.545899 37.3898 0.5375 36.55 0.436719C30.5367 -2.40281e-07 21.5084 0 21.5084 0H21.4916C21.4916 0 12.4633 -2.40281e-07 6.45 0.436719C5.61016 0.5375 3.7793 0.545899 2.1416 2.25918C0.848242 3.56094 0.436719 6.52559 0.436719 6.52559C0.436719 6.52559 0 10.0109 0 13.4879V16.7465C0 20.2234 0.42832 23.7088 0.42832 23.7088C0.42832 23.7088 0.848242 26.6734 2.1332 27.9752C3.7709 29.6885 5.9209 29.6297 6.87832 29.8145C10.3217 30.142 21.5 30.2428 21.5 30.2428C21.5 30.2428 30.5367 30.226 36.55 29.7977C37.3898 29.6969 39.2207 29.6885 40.8584 27.9752C42.1518 26.6734 42.5717 23.7088 42.5717 23.7088C42.5717 23.7088 43 20.2318 43 16.7465V13.4879C43 10.0109 42.5717 6.52559 42.5717 6.52559ZM17.0572 20.7021V8.6168L28.6723 14.6805L17.0572 20.7021Z" fill="#867065"/></svg>
+              </a>
+            {% endif %}
+
+            {% if section.settings.twitter_link != blank %}
+              <a href="{{ section.settings.twitter_link }}" target="_blank" aria-label="X / Twitter">
+                <svg width="27" height="30" viewBox="0 0 27 30" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M14.0655 19.1519C14.0873 24.8785 8.36533 24.8967 6.27579 22.7419C5.08683 21.5166 4.84494 19.1415 5.89177 17.5864C7.00692 15.9308 8.3134 15.6597 10.9086 15.8148L10.9318 10.8287C6.49171 9.80018 2.54904 13.0148 1.17559 15.326C-0.857926 18.7478 -0.121322 23.5971 2.37138 26.0152C8.98714 32.4326 19.3392 28.0266 19.3379 19.6004L19.3433 10.3333C20.6826 11.4531 22.4387 12.1323 24.3602 12.1323C25.0312 12.1323 25.6803 12.0501 26.3007 11.895L26.503 11.8872L26.5618 7.01577C22.5877 6.8802 19.3884 3.83899 19.2299 0.0521425L14.0723 0L14.0668 19.1545L14.0655 19.1519Z" fill="#867065"/></svg>
+              </a>
+            {% endif %}
+
+            {% if section.settings.linkedin_link != blank %}
+              <a href="{{ section.settings.linkedin_link }}" target="_blank" aria-label="LinkedIn">
+                <svg width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M28.7053 0H2.28867C1.02324 0 0 0.999024 0 2.23418V28.7598C0 29.9949 1.02324 31 2.28867 31H28.7053C29.9707 31 31 29.9949 31 28.7658V2.23418C31 0.999024 29.9707 0 28.7053 0ZM9.19707 26.4166H4.59551V11.6189H9.19707V26.4166ZM6.89629 9.60273C5.41895 9.60273 4.22617 8.40996 4.22617 6.93867C4.22617 5.46738 5.41895 4.27461 6.89629 4.27461C8.36758 4.27461 9.56035 5.46738 9.56035 6.93867C9.56035 8.40391 8.36758 9.60273 6.89629 9.60273ZM26.4166 26.4166H21.8211V19.2236C21.8211 17.5102 21.7908 15.3002 19.4295 15.3002C17.0379 15.3002 16.6746 17.1711 16.6746 19.1025V26.4166H12.0852V11.6189H16.493V13.6412H16.5535C17.165 12.4787 18.6666 11.2496 20.9008 11.2496C25.5568 11.2496 26.4166 14.3133 26.4166 18.2973V26.4166Z" fill="#867065"/></svg>
+              </a>
+            {% endif %}
           </div>
-          {%- endif -%}
-        </div></div></div></div>
-  {%- endif -%}
-  <div class = "top-footer-section-text">
-      <h3>{{ section.settings.top_footer_title }}</h3>
+        </div>
+      </div>
     </div>
-  <div class="footer__content-bottom">
-    <div class="container">    	
-        <div class="footer-bottom-content footer-desktop">
-          <div class="copyright-t">
-          	<small class="copyright">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}. {{section.settings.all_right_reserve}}</small>
-          </div>
-          <div class="footer-bd">
-            <div class="foot-c bt-link"><a href="{{section.settings.policy_url}}">{{section.settings.policy_text}}</a></div>
-            <div class="foot-c f-tel"><a href="tel:{{section.settings.phone_number}}">{{section.settings.phone_number}}</a></div>
-            <div class="foot-c f-email"><a href="mailto:{{section.settings.email_id}}">{{section.settings.email_id}}</a></div>
-          </div>
-        </div>              	
-        <div class="footer-bottom-content footer-mobile">
-          <div class="footer-bottom-r">
-            <div class="foot-c f-tel"><a href="tel:{{section.settings.phone_number}}">{{section.settings.phone_number}}</a></div>
-            <div class="foot-c f-email"><a href="mailto:{{section.settings.email_id}}">{{section.settings.email_id}}</a></div>
-          </div>
-          <div class="footer-bottom-r">
-            <div class="copyright-t">
-              <small class="copyright">&copy; {{ 'now' | date: "%Y" }}, {{ shop.name | link_to: routes.root_url }}. {{section.settings.all_right_reserve}}</small>
-            </div>
-            <div class="foot-c bt-link"><a href="{{section.settings.policy_url}}">{{section.settings.policy_text}}</a></div>
-          </div>
-        </div>      
-    </div>  
-  </div> 
+  </div>
+
+  <div class="disclaimer">
+    <p>{{ section.settings.disclaimer }}</p>
+  </div>
+
+  <div class="copyright">
+    <div class="alcontainer">
+      <div class="row">
+        <div class="col-6">
+          <p>
+            <a href="tel:{{ section.settings.phone }}">{{ section.settings.phone }}</a>
+            <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+          </p>
+        </div>
+
+        <div class="col-6 text-lg-end">
+          <p>
+            <a href="{{ section.settings.policy_link }}">POLICIES</a>
+            &copy; {{ "now" | date: "%Y" }}, {{ shop.name }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
-{% javascript %}
-  class LocalizationForm extends HTMLElement {
-    constructor() {
-      super();
-      this.elements = {
-        input: this.querySelector('input[name="locale_code"], input[name="country_code"]'),
-        button: this.querySelector('button'),
-        panel: this.querySelector('ul'),
-      };
-      this.elements.button.addEventListener('click', this.openSelector.bind(this));
-      this.elements.button.addEventListener('focusout', this.closeSelector.bind(this));
-      this.addEventListener('keyup', this.onContainerKeyUp.bind(this));
-
-      this.querySelectorAll('a').forEach(item => item.addEventListener('click', this.onItemClick.bind(this)));
-    }
-    hidePanel() {
-      this.elements.button.setAttribute('aria-expanded', 'false');
-      this.elements.panel.setAttribute('hidden', true);
-    }
-    onContainerKeyUp(event) {
-      if (event.code.toUpperCase() !== 'ESCAPE') return;
-
-      this.hidePanel();
-      this.elements.button.focus();
-    }
-    onItemClick(event) {
-      event.preventDefault();
-      const form = this.querySelector('form');
-      this.elements.input.value = event.currentTarget.dataset.value;
-      if (form) form.submit();
-    }
-    openSelector() {
-      this.elements.button.focus();
-      this.elements.panel.toggleAttribute('hidden');
-      this.elements.button.setAttribute('aria-expanded', (this.elements.button.getAttribute('aria-expanded') === 'false').toString());
-    }
-    closeSelector(event) {
-      const shouldClose = event.relatedTarget && event.relatedTarget.nodeName === 'BUTTON';
-      if (event.relatedTarget === null || shouldClose) {
-        this.hidePanel();
-      }
-    }
-  }
-  customElements.define('localization-form', LocalizationForm);
-{% endjavascript %}
 
 {% schema %}
 {
-  "name": "t:sections.footer.name",
-  "blocks": [
+  "name": "Footer",
+  "settings": [
     {
-      "type": "link_list",
-      "name": "t:sections.footer.blocks.link_list.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Quick links",
-          "label": "t:sections.footer.blocks.link_list.settings.heading.label",
-          "info": "t:sections.footer.blocks.link_list.settings.heading.info"
-        },
-        {
-          "type": "link_list",
-          "id": "menu",
-          "default": "footer",
-          "label": "t:sections.footer.blocks.link_list.settings.menu.label",
-          "info": "t:sections.footer.blocks.link_list.settings.menu.info"
-        }
-      ]
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Footer Logo"
     },
     {
       "type": "text",
-      "name": "t:sections.footer.blocks.text.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "heading",
-          "default": "Heading",
-          "label": "t:sections.footer.blocks.text.settings.heading.label"
-        },
-        {
-          "type": "richtext",
-          "id": "subtext",
-          "default": "<p>Share store details, promotions, or brand content with your customers.</p>",
-          "label": "t:sections.footer.blocks.text.settings.subtext.label"
-        }
-      ]
+      "id": "disclaimer",
+      "label": "Disclaimer Text",
+      "default": "Alvi’s Drift wines contain up to 13,5% ABV. Not for sale to under 18s. Drink responsibly."
     },
     {
-      "type": "image",
-      "name": "Image",
+      "type": "text",
+      "id": "phone",
+      "label": "Phone Number",
+      "default": "021 905 0653"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email Address",
+      "default": "wine@alvisdrift.co.za"
+    },
+    {
+      "type": "url",
+      "id": "policy_link",
+      "label": "Policies Link"
+    },
+    {
+      "type": "header",
+      "content": "Social Media Links"
+    },
+    { "type": "url", "id": "facebook_link", "label": "Facebook" },
+    { "type": "url", "id": "instagram_link", "label": "Instagram" },
+    { "type": "url", "id": "youtube_link", "label": "YouTube" },
+    { "type": "url", "id": "twitter_link", "label": "X / Twitter" },
+    { "type": "url", "id": "linkedin_link", "label": "LinkedIn" }
+  ],
+  "blocks": [
+    {
+      "type": "menu_column",
+      "name": "Menu Column",
       "settings": [
-        {
-          "type": "image_picker",
-          "id": "image",
-          "label": "Image"
-        },
-        {
-          "type": "range",
-          "id": "image_width",
-          "min": 50,
-          "max": 200,
-          "step": 5,
-          "unit": "px",
-          "label": "Image width",
-          "default": 100
-        },
-        {
-          "type": "select",
-          "id": "alignment",
-          "label": "Image alignment on large screen",
-          "options": [
-            {
-              "value": "",
-              "label": "Left"
-            },
-            {
-              "value": "center",
-              "label": "Center"
-            },
-            {
-              "value": "right",
-              "label": "Right"
-            }
-          ],
-          "default": "center"
-        },
-        {
-          "type": "checkbox",
-          "default":true,
-          "id": "social-icons",
-          "label": "Enable Social Icons"
-        }
+        { "type": "text", "id": "title", "label": "Heading", "default": "Menu" },
+        { "type": "link_list", "id": "menu", "label": "Select Menu" }
       ]
     }
   ],
-  "settings": [
+  "presets": [
     {
-      "type": "select",
-      "id": "color_scheme",
-      "options": [
-        {
-          "value": "accent-1",
-          "label": "t:sections.footer.settings.color_scheme.options__1.label"
-        },
-        {
-          "value": "accent-2",
-          "label": "t:sections.footer.settings.color_scheme.options__2.label"
-        },
-        {
-          "value": "background-1",
-          "label": "t:sections.footer.settings.color_scheme.options__3.label"
-        },
-        {
-          "value": "background-2",
-          "label": "t:sections.footer.settings.color_scheme.options__4.label"
-        },
-        {
-          "value": "inverse",
-          "label": "t:sections.footer.settings.color_scheme.options__5.label"
-        }
-      ],
-      "default": "background-1",
-      "label": "t:sections.footer.settings.color_scheme.label"
-    },
-    {
-      "type":"text",
-      "id":"top_footer_title",
-      "label":"Enter top footer title"
-    },
- 	{
-	 "type":"url",
-	 "id":"footer_logo",
-	 "label":"Enter SVG Image logo"
-	},
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__1.content",
-      "info": "t:sections.footer.settings.header__1.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "newsletter_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.newsletter_enable.label"
-    },
-    {
-      "type": "text",
-      "id": "newsletter_heading",
-      "default": "Subscribe to our emails",
-      "label": "t:sections.footer.settings.newsletter_heading.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__2.content",
-      "info": "t:sections.footer.settings.header__2.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "show_social",
-      "default": false,
-      "label": "t:sections.footer.settings.show_social.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__3.content",
-      "info": "t:sections.footer.settings.header__4.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_country_selector",
-      "default": true,
-      "label": "t:sections.footer.settings.enable_country_selector.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__5.content",
-      "info": "t:sections.footer.settings.header__6.info"
-    },
-    {
-      "type": "checkbox",
-      "id": "enable_language_selector",
-      "default": true,
-      "label": "t:sections.footer.settings.enable_language_selector.label"
-    },
-    {
-      "type": "header",
-      "content": "t:sections.footer.settings.header__7.content"
-    },
-    {
-      "type": "checkbox",
-      "id": "payment_enable",
-      "default": true,
-      "label": "t:sections.footer.settings.payment_enable.label"
-    },
-    {
-      "type": "header",
-      "content": "Footer Bottom Line"
-    },
-	{
-	"type":"text",
-	"id":"all_right_reserve",
-	"label":"Enter all right reserve text"
-	},
-	{
-	"type":"text",
-	"id":"policy_text",
-	"label":"Enter Policy text"
-	},
-	{
-	"type":"url",
-	"id":"policy_url",
-	"label":"Enter Policies"
-	},
-	{
-	"type":"text",
-	"id":"phone_number",
-	"label":"Enter Contact Number"
-	},
-	{
-	"type":"text",
-	"id":"email_id",
-	"label":"Enter Email ID"
-	}
-  ],
-  "default": {
-    "blocks": [
-      {
-        "type": "link_list"
-      },
-      {
-        "type": "text"
-      }
-    ]
-  }
+      "name": "Footer",
+      "category": "Footer",
+      "blocks": [
+        { "type": "menu_column", "settings": { "title": "Our Wines" } },
+        { "type": "menu_column", "settings": { "title": "Our Ranges" } },
+        { "type": "menu_column", "settings": { "title": "Everything Alvi’s" } }
+      ]
+    }
+  ]
 }
 {% endschema %}

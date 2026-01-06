@@ -31,7 +31,7 @@
             {%- endif -%}
               {%- endif -%}
             </div>
-            <p class = "article-met-desctription">{{ article.excerpt | strip_html | truncatewords: 30 }}</p>
+            <h3 class = "article-met-desctription">{{ article.excerpt | strip_html | truncatewords: 30 }}</h3>
           </header>
         {%- when 'content'-%}
       <span itemprop="author" itemscope itemtype="https://schema.org/Person"> <p itemprop= "name"><a href = "https://magneticcreative.com/" style = "color:#00000000" itemprop= "url"  >{{ article.author}}</a></p>

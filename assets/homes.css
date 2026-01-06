@@ -732,9 +732,7 @@ p.sub-title {
     display: inline-block;
     padding: 0 25px
 }
-.announcement-bar__message,.badge,.button,.button-label,.caption,.caption-large,.caption-with-letter-spacing,.customer .field input,.customer .field input:-webkit-autofill~label,.customer .field input:focus~label,.customer .field input:not(:placeholder-shown)~label,.customer .field label,.customer button,.customer select,.field__input,.field__input:-webkit-autofill~.field__label,.field__input:focus~.field__label,.field__input:not(:placeholder-shown)~.field__label,.field__label,.form__label,.h0,.h1,.h2,.h3,.h4,.h5,.link-with-icon,.select__select,.shopify-challenge__button,.subtitle,.text-body,h1,h2,h3,h4,h5 {
-    letter-spacing: 0
-}
+
 
 .top-footer-section-text {
     background-color: #fff;
@@ -758,9 +756,10 @@ p.sub-title {
     text-align: left
 }
 
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 500px) {
     .footer-top-content {
         display:flex;
+        margin-right: 10px;
         text-align: center
     }
 }
@@ -776,8 +775,7 @@ p.sub-title {
 .footer__blocks-wrapper.grid {
     margin: 0!important;
     row-gap: 0!important;
-    width: 67%;
-    align-items:center
+    width: 67%
 }
 .list-social__item {
     display: inline-block;
@@ -807,6 +805,10 @@ p.sub-title {
 .f-logo,.f-social {
     width: 385px;
     text-align: center
+}
+
+.f-social {
+    margin-top: 55px
 }
 
 .footer__content-top .grid__item {
@@ -843,8 +845,8 @@ p.sub-title {
 }
 
 .footer__content-top .grid--4-col-tablet .grid__item {
-    max-width: 23%;
-    width: auto !important
+    max-width: 278px!important;
+    width: auto!important
 }
 
 .footer-block__details-content list-unstyled li {
@@ -1491,6 +1493,7 @@ input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-
 }
 
 .f-logo-sc {
+    margin: 50px auto 0;
     width: auto;
     text-align: center
 }
@@ -2019,25 +2022,11 @@ p.sub-title {
     margin-top: 130px
 }
 
-.h0,.h1,.h2,.h3,.h4,.h5,h1,h2,h3,h4,h5 {
-    letter-spacing: 3px!important
-}
-
 @media only screen and (max-width: 500px) {
-    .h0,.h1,.h2,.h3,.h4,.h5,h1,h2,h3,h4,h5 {
-        letter-spacing:0!important
-    }
 
     .product-bx .product-img {
         max-height: 200px
     }
-}
-button {
-    letter-spacing: 3px!important
-}
-
-.btn {
-    letter-spacing: 2px!important
 }
 
 .product-bx .product-title {
@@ -2076,9 +2065,9 @@ p.sub-title {
     font-weight: 600
 }
 
-.tabs-content .product-price, .product-price, .current-price {
+.tabs-content .product-price, .product-price {
     font-size: 28px;
-    text-align:center;
+    width: 100%
 }
 
 .hero-content {
@@ -2179,7 +2168,7 @@ summary.list-menu__item {
     align-items: end
 }
 .blp-container {
-    display: none!important
+    display: flex!important
 }
 .age-header {
     font-size: 30px;
@@ -2313,6 +2302,7 @@ summary.list-menu__item {
     }
 }
 .product-detail-inner {
+    margin-right: 40px;
     text-align: right;
     max-width: 815px
 }
@@ -2702,23 +2692,8 @@ summary.list-menu__item {
     text-align:center
 
 }
-.promo-single-product{
-    position: absolute;
-    top: 22%;
-    left: 32%;
-    background-color: #c05140;
-    width: 150px;
-    height: 150px;
-    padding: 40px 10px;
-    border-radius: 100%;
-    line-height: 1em;
-    font-size: 32px;
-    font-weight: 600;
-    text-align: center;
-}
-
 @media only screen and (max-width: 1200px){
-.promo-badge{
+    .promo-badge{
     position:absolute;
     top:10%;
     width:70px;
@@ -2727,16 +2702,6 @@ summary.list-menu__item {
     line-height:18px;
     font-size:15px;
     font-weight:500
-}
-.promo-single-product{
-    top: 10%;
-    width: 100px;
-    height: 100px;
-    padding: 32px 15px;
-    line-height: 1em;
-    font-size: 20px;
-    font-weight: 500;
-    left: 17%;
 }
 }
 

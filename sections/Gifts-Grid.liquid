@@ -1,72 +1,54 @@
-<section class="home-product-items product-items-sec bg-darkPurple">
+<section class="home-product-items gift-grid-wrap product-items-sec bg-darkPurple">
   <div class="sec-inner">
     <div class="container">
-      {% if section.settings.topheader != Blank %}
-      <{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>{{ section.settings.topheading }}</{% if section.settings.heading-tag == true %}h1{% else %}h2{% endif %}>
-      {% endif %}
-      <div class="tabs-content">
-        {%- for block in section.blocks -%}
-        {%- assign c_i = block.settings -%}
-        <div id="gif-tab-{{ forloop.index }}" class="product-items">
-          <div class="product-bx-outer">
-            {% assign colName = c_i.collectionCarasoul %} 
-            {% for product in collections[colName].products %}
-            <div class="product-bx position-relative">
-              <div class="product-img">
-                <a href="{{ product.url }}">
-              {{ product.featured_image | image_url: width: 400, format: 'webp' | image_tag: loading: 'lazy' }}
-              </a>
-              </div>
-              <div class="product-title" style= "color: #E36653;">
-                <div class="sp-t"><a href="{{ product.url }}">{{ product.title }}</a></div>
-              </div>
-              {% if product.compare_at_price > product.price %}
-              <div class="product-price"><span class="compare-price">{{ product.compare_at_price | money | remove: '.00' | replace: ",", " " }}</span> {{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
-              {% else %}
-              <div class="product-price">{{ product.price | money | remove: '.00' | replace: ",", " " }}</div>
-              {% endif %}        
-              <!-- Start Add to cart button -->
-               <div class = "gridCleanUp">
-              <product-form class="product-form">
-                <div class="product-form__error-message-wrapper" role="alert" hidden>
-                  <span class="product-form__error-message"></span>
-                </div>
-                  {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                  <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-                  <div class="qty__wrapper">
-                    QTY: <input class="quantity__input" type="number" name="quantity" id="quantity" min="1" value="1" {%- if product.selected_or_first_available_variant.available -%}{%- else -%}disabled{%- endif -%}>                  
-                  </div>         
-                  <div class="product-form__buttons">
-                    <button type="submit" name="add" class="btn btn-overlay" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}  >
-                      <span>
-                        {%- if product.selected_or_first_available_variant.available -%}
-                        BUY
-                        {%- else -%}
-                        {{ 'products.product.sold_out' | t }}
-                        {%- endif -%}
-                      </span>
-                      <b>{{ product_item.price | money | remove: '.00'  }}</b>
-                      <div class="loading-overlay__spinner hidden">
-                        <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                          <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                        </svg>
-                      </div>
-                    </button>
-                  </div>
-                  {%- endform -%}
-                  </product-form>
-               </div>
-                <!-- End Add to cart button -->
-                </div>
-              {% endfor %}
-            </div>
-            </div>
-            {%- endfor -%}
 
-          </div>
-        </div>
+      {% if section.settings.topheading != blank %}
+        <h2 class="h1">{{ section.settings.topheading }}</h2>
+      {% endif %}
+
+      <div class="row">
+        {% for block in section.blocks %}
+          {% assign colName = block.settings.collectionCarasoul %}
+          {% assign col = collections[colName] %}
+
+          {% for product in col.products %}
+            <div class="col-3">
+              <div class="shop-item">
+
+                <!-- Product Image -->
+                <div class="product-thumb">
+                  <a href="{{ product.url }}">
+                    {{ product.featured_image | image_url: width: 325, format: 'webp' | image_tag: loading: 'lazy' }}
+                  </a>
+                </div>
+
+                <!-- Product Title -->
+                <div class="product-cat">
+                  <a href="{{ product.url }}">{{ product.title }}</a>
+                </div>
+
+                <!-- Price -->
+                {% if product.compare_at_price > product.price %}
+                  <div class="product-price">
+                    {{ product.price | money_without_trailing_zeros }}
+                    <span>WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span>
+                  </div>
+                {% else %}
+                  <div class="product-price">
+                    {{ product.price | money_without_trailing_zeros }}
+                  </div>
+                {% endif %}
+
+              </div>
+            </div>
+          {% endfor %}
+        {% endfor %}
       </div>
-      </section>
+
+    </div>
+  </div>
+</section>
+
     {% schema %}
     {
     "name": "Gifts Grid",
@@ -75,13 +57,7 @@
     "type": "text",
     "id": "topheading",
     "label": "Heading"
-    },
-    {
-      "type": "checkbox",
-      "default":true,
-      "id": "heading-tag",
-      "label": "Header Tag (H1)"
-    },
+    }
 
     ],
     "blocks": [
