@@ -239,8 +239,8 @@
         "faq_cta_label": "My question is not here.",
         "faq_cta_text": "Connect",
         "faq_cta_link": "https://alvisdrift.co.za/pages/contact",
-        "blog_handle": "",
-        "blog_limit": 2
+        "blog_handle": "faq",
+        "blog_limit": 4
       }
     },
     "16421090351c47438f": {
