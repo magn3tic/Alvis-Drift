@@ -235,6 +235,7 @@
         "faq_GTG9mf",
         "faq_nYWahR"
       ],
+      "disabled": true,
       "name": "FAQ",
       "settings": {
         "background_color": "rgba(0,0,0,0)",
