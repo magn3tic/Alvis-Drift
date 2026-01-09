@@ -77,6 +77,7 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
+            "collection_subheader": "",
             "collectionCarasoul": "signature-range"
           }
         }
@@ -90,6 +91,161 @@
         "subtitle-1": "",
         "active_collection": "signature-range",
         "promo_badge": false
+      }
+    },
+    "faq_WTaJMR": {
+      "type": "Faq",
+      "blocks": {
+        "faq_34Ayxg": {
+          "type": "faq",
+          "settings": {
+            "title": "What makes the Signature Selection wines “exceptional value”?",
+            "content": "<p>The Signature Selection joins award-winning craftsmanship and everyday accessibility. Each bottle captures the quality of Alvi’s Drift’s vineyards – expressive fruit, balanced structure, and regional character – at a price for everyday enjoyment. It’s proof that premium winemaking doesn’t have to come with a premium price tag.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/quality-wine-under-r100-south-africa\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/quality-wine-under-r100-south-africa\">READ MORE</a></p>"
+          }
+        },
+        "faq_BmxCGK": {
+          "type": "faq",
+          "settings": {
+            "title": "Why is the Signature Selection priced under R100 per bottle?",
+            "content": "<p>Alvi’s Drift keeps the Signature Selection under R100 per bottle by managing every stage of production in-house, from vine to bottle. Owning the vineyards, cellar, and bottling facilities allows for quality control and efficiency without the middleman markup. The result? Wines that overdeliver on flavour, finesse, and value.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/how-we-deliver-award-winning-wines-under-r100\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/how-we-deliver-award-winning-wines-under-r100\">READ MORE</a></p>"
+          }
+        },
+        "faq_GCCqdr": {
+          "type": "faq",
+          "settings": {
+            "title": "How does the Signature Selection differ from Alvi’s Drift’s other ranges (221, Reserve, Icon, Flagship)?",
+            "content": "<p>The Signature Selection is made for everyday enjoyment: approachable, fruit-driven, and ready to drink. Other, higher-tier ranges showcase greater structure, oak integration, and ageability. Think of the Signature Selection as the purest expression of Alvi’s Drift’s fruit: crafted for quality without pretence.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/which-alvis-drift-range-for-you\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/which-alvis-drift-range-for-you\">READ MORE</a></p>"
+          }
+        },
+        "faq_TQQewp": {
+          "type": "faq",
+          "settings": {
+            "title": "Which occasions is the Signature Selection best suited for?",
+            "content": "<p>These wines were created for life’s spontaneous, shared moments: from mid-week dinners to relaxed weekend braais. With their bright flavours and easy drinkability, our Signature wines are your go-to for casual meals, celebrations, and simple pleasures where good wine meets good company.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/everyday-wine-for-spontaneous-moments\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/everyday-wine-for-spontaneous-moments\">READ MORE</a></p>"
+          }
+        },
+        "faq_KgKCQK": {
+          "type": "faq",
+          "settings": {
+            "title": "Are the Signature Selection wines ready to drink straight away, or should I cellar them?",
+            "content": "<p>The Signature Selection is made to be enjoyed young, capturing its vibrant fruit and freshness right from release. However, with proper storage, most wines in this range can gracefully develop for two to three years, softening their structure and deepening their flavour – a pleasant surprise for an affordable price.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/should-you-cellar-value-wines\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/should-you-cellar-value-wines\">READ MORE</a></p>"
+          }
+        },
+        "faq_6ALKax": {
+          "type": "faq",
+          "settings": {
+            "title": "What varietals are included in the Signature Selection and how do I pick one I’ll like?",
+            "content": "<p>The Signature Selection includes a full spectrum of South Africa’s most popular varietals: from crisp Chenin Blanc and Sauvignon Blanc, to smooth Merlot, bold Shiraz, and proudly South African Pinotage. Each wine is crafted to be approachable and expressive of its grape’s natural character. Start by considering what you usually enjoy: white wines such as Chenin or Sauvignon offer freshness and fruit, while reds, including Merlot or Shiraz, bring warmth, spice, and depth.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/guide-to-choosing-your-favourite-varietal\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/guide-to-choosing-your-favourite-varietal\">READ MORE</a></p>"
+          }
+        },
+        "faq_kAbdky": {
+          "type": "faq",
+          "settings": {
+            "title": "What does ‘fruit-driven’ mean in the context of the Signature Selection?",
+            "content": "<p>When we say our wines are ‘fruit-driven,’ we mean they highlight the pure, natural flavours of the grape – juicy stone fruit, citrus, or red berries – rather than heavy oak or tannin. The Signature Selection is crafted to be immediately enjoyable, with balanced acidity and a smooth texture that makes every sip fresh and approachable.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/fruit-driven-wines-explained\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/fruit-driven-wines-explained\">READ MORE</a></p>"
+          }
+        },
+        "faq_b4EdkC": {
+          "type": "faq",
+          "settings": {
+            "title": "How does Alvi’s Drift ensure high quality at this price point?",
+            "content": "<p>Every Signature Selection wine begins in our estate-owned vineyards, where careful canopy management and hand selection ensure ripe, healthy fruit. In the cellar, modern winemaking techniques preserve that freshness, while decades of expertise guide the blend. By handling every step ourselves, from grape to bottle, we deliver premium quality without passing on premium costs.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/how-we-make-value-wine-without-compromise\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/how-we-make-value-wine-without-compromise\">READ MORE</a></p>"
+          }
+        },
+        "faq_QzMBeP": {
+          "type": "faq",
+          "settings": {
+            "title": "Are the Signature Selection wines award-winning?",
+            "content": "<p>Yes, several wines in the Signature Selection have received top recognition in both local and international competitions, including the Veritas and Michelangelo International Wine & Spirits Awards. These accolades prove that exceptional quality and affordability can coexist, reinforcing Alvi’s Drift’s commitment to making world-class wines accessible to everyone.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/award-winning-wines-under-r100\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/award-winning-wines-under-r100\">READ MORE</a></p>"
+          }
+        },
+        "faq_GjX3Ac": {
+          "type": "faq",
+          "settings": {
+            "title": "Where can I buy the Signature Selection wines – online, retail & export?",
+            "content": "<p>You can shop the full Signature Selection directly from our<a href=\"https://alvisdrift.co.za\"> <span style=\"text-decoration:underline\">online store</span></a>, or find them in leading retailers and select independent wine shops across South Africa. For international fans, Alvi’s Drift wines are also exported to over 30 countries, bringing a taste of the Western Cape’s value and quality to the world.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/where-to-buy-signature-range-south-africa\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/where-to-buy-signature-range-south-africa\">READ MORE</a></p>"
+          }
+        },
+        "faq_qNnTrU": {
+          "type": "faq",
+          "settings": {
+            "title": "What makes the Alvi’s Drift Signature Chenin Blanc such great value for money?",
+            "content": "<p>The Signature Chenin Blanc offers premium vineyard quality at an everyday price. Grown in the heart of the Western Cape and crafted with the same care as our Reserve Range wines, it delivers vibrant fruit, refreshing balance, and remarkable consistency – vintage after vintage. Proof that truly great wine doesn’t need a premium price tag.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/why-chenin-blanc-best-affordable-white-wine\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/why-chenin-blanc-best-affordable-white-wine\">READ MORE</a></p>"
+          }
+        },
+        "faq_eQTWGj": {
+          "type": "faq",
+          "settings": {
+            "title": "Is our Signature Chenin Blanc dry or slightly off-dry?",
+            "content": "<p>Our Signature Chenin Blanc sits beautifully between dry and off-dry – lively and crisp with just a touch of natural fruit sweetness. Expect aromas of ripe pear, melon, and citrus, with a clean, refreshing finish. It’s balanced enough to please both fans of drier whites and those who enjoy a hint of softness.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/dry-vs-off-dry-chenin-blanc-style\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/dry-vs-off-dry-chenin-blanc-style\">READ MORE</a></p>"
+          }
+        },
+        "faq_wqxr74": {
+          "type": "faq",
+          "settings": {
+            "title": "What foods pair best with our Signature Chenin Blanc?",
+            "content": "<p>Thanks to its fresh acidity and rounded fruit character, our Signature Chenin Blanc is wonderfully versatile at the table. It pairs beautifully with seafood, creamy chicken dishes, light curries, and summer salads. Its brightness also makes it a natural match for picnics and relaxed alfresco dining.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/chenin-blanc-food-pairing-guide\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/chenin-blanc-food-pairing-guide\">READ MORE</a></p>"
+          }
+        },
+        "faq_YVaH7J": {
+          "type": "faq",
+          "settings": {
+            "title": "Why is Chenin Blanc often called South Africa’s most versatile white wine?",
+            "content": "<p>Chenin Blanc is South Africa’s signature grape for a reason. It thrives across regions and can be made in a range of styles, from crisp and fresh to rich and barrel-aged. Our Signature Chenin Blanc captures this versatility in its purest form: approachable, expressive, and perfect for both casual and celebratory occasions.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/the-story-of-chenin-blanc-south-african-winemaking\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/the-story-of-chenin-blanc-south-african-winemaking\">READ MORE</a></p>"
+          }
+        },
+        "faq_7Dhbmn": {
+          "type": "faq",
+          "settings": {
+            "title": "How does Alvi’s Drift’s terroir influence the flavour of the Signature Chenin Blanc?",
+            "content": "<p>Our vineyards in the Breede River Valley benefit from warm days, cool nights, and limestone-rich soils: conditions that bring out Chenin Blanc’s best qualities. This terroir gives our Signature Chenin Blanc its balance of ripe tropical fruit, crisp acidity, and subtle minerality that reflects the character of the Scherpenheuvel wine ward.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/the-story-of-chenin-blanc-south-african-winemaking\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/the-story-of-chenin-blanc-south-african-winemaking\">READ MORE</a></p>"
+          }
+        },
+        "faq_GTG9mf": {
+          "type": "faq",
+          "settings": {
+            "title": "What makes Alvi’s Drift’s Signature Sauvignon Blanc so crisp and refreshing?",
+            "content": "<p>Our Signature Sauvignon Blanc owes its vibrant freshness to cool fermentation and careful temperature control in the cellar. These methods preserve the grape’s natural tropical and citrus aromas, resulting in a wine that’s zesty, lively, and wonderfully balanced. Each sip captures the bright, breezy spirit of the Western Cape.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/how-cool-fermentation-creates-fresh-zesty-sauvignon\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/how-cool-fermentation-creates-fresh-zesty-sauvignon\">READ MORE</a></p>"
+          }
+        },
+        "faq_nYWahR": {
+          "type": "faq",
+          "settings": {
+            "title": "How does the Signature Sauvignon Blanc compare to premium Sauvignon Blanc wines?",
+            "content": "<p>While many premium Sauvignon Blancs focus on oak or complexity, our Signature Sauvignon Blanc stands out for its purity and freshness. It offers the same expressive fruit and clean acidity you’d expect from higher-priced bottles, yet remains accessible and affordable – proof that true quality doesn’t depend on cost.</p><p><a href=\"https://alvisdrift.co.za/blogs/alvis-drift/sauvignon-blanc-without-the-price-tag-under-r100\" target=\"_blank\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/sauvignon-blanc-without-the-price-tag-under-r100\">READ MORE</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "faq_34Ayxg",
+        "faq_BmxCGK",
+        "faq_GCCqdr",
+        "faq_TQQewp",
+        "faq_KgKCQK",
+        "faq_6ALKax",
+        "faq_kAbdky",
+        "faq_b4EdkC",
+        "faq_QzMBeP",
+        "faq_GjX3Ac",
+        "faq_qNnTrU",
+        "faq_eQTWGj",
+        "faq_wqxr74",
+        "faq_YVaH7J",
+        "faq_7Dhbmn",
+        "faq_GTG9mf",
+        "faq_nYWahR"
+      ],
+      "name": "FAQ",
+      "settings": {
+        "background_color": "",
+        "title_color": "",
+        "question_color": "",
+        "Answer_color": "",
+        "title": "Got questions?",
+        "content": "<p>Have a look in our useful FAQ section to find the answers to often-asked questions that may help you too.</p>",
+        "color": "foreground-accent-2",
+        "btn_text": "More",
+        "btn_link": ""
       }
     },
     "16421090351c47438f": {
@@ -218,6 +374,7 @@
     "spacer_7xDzBx",
     "focus_text_text_only_3qzFnW",
     "product-grid",
+    "faq_WTaJMR",
     "16421090351c47438f",
     "1639247728bb3b5028"
   ]
