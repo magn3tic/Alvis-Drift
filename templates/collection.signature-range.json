@@ -96,13 +96,6 @@
     "faq_WTaJMR": {
       "type": "Faq",
       "blocks": {
-        "faq_qxEcWg": {
-          "type": "faq",
-          "settings": {
-            "title": "Question?",
-            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
-          }
-        },
         "faq_34Ayxg": {
           "type": "faq",
           "settings": {
@@ -224,7 +217,6 @@
         }
       },
       "block_order": [
-        "faq_qxEcWg",
         "faq_34Ayxg",
         "faq_BmxCGK",
         "faq_GCCqdr",
