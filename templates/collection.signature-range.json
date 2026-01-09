@@ -245,7 +245,7 @@
       ],
       "name": "FAQ",
       "settings": {
-        "background_color": "#16486e",
+        "background_color": "rgba(0,0,0,0)",
         "title_color": "#ffffff",
         "question_color": "#ffffff",
         "Answer_color": "",
