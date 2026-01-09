@@ -96,6 +96,13 @@
     "faq_WTaJMR": {
       "type": "Faq",
       "blocks": {
+        "faq_qxEcWg": {
+          "type": "faq",
+          "settings": {
+            "title": "Question?",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>"
+          }
+        },
         "faq_34Ayxg": {
           "type": "faq",
           "settings": {
@@ -217,6 +224,7 @@
         }
       },
       "block_order": [
+        "faq_qxEcWg",
         "faq_34Ayxg",
         "faq_BmxCGK",
         "faq_GCCqdr",
@@ -237,13 +245,13 @@
       ],
       "name": "FAQ",
       "settings": {
-        "background_color": "",
-        "title_color": "",
-        "question_color": "",
+        "background_color": "#16486e",
+        "title_color": "#ffffff",
+        "question_color": "#ffffff",
         "Answer_color": "",
         "title": "Got questions?",
         "content": "<p>Have a look in our useful FAQ section to find the answers to often-asked questions that may help you too.</p>",
-        "color": "foreground-accent-2",
+        "color": "foreground-accent-3",
         "btn_text": "More",
         "btn_link": ""
       }
