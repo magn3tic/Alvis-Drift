@@ -51,7 +51,8 @@
         "overlay_opacity": 30,
         "blurb": "",
         "right_btn_text": "",
-        "right_btn_link": ""
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
     "spacer_MA8JaR": {
@@ -66,7 +67,8 @@
         "164180981014fd1b1e-0": {
           "type": "heading",
           "settings": {
-            "heading": "Terms & Conditions"
+            "heading": "Terms & Conditions",
+            "heading_size": true
           }
         },
         "164180981014fd1b1e-1": {
@@ -90,134 +92,6 @@
       "type": "Spacer",
       "settings": {
         "spacer_size": "100px"
-      }
-    },
-    "1641810879ba071c79": {
-      "type": "Text-Only",
-      "blocks": {
-        "1641810879229302fa-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Privacy Policy"
-          }
-        },
-        "1641810879229302fa-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Alvi's Drift respects (and is committed to protecting) your privacy. Alvi's Drift thus takes extraordinary steps to handle any personal information collected on this website only in ways compatible with this Privacy Policy.</p><p>This website may collect certain information about your visit – such as the name of the internet service provider and the internet protocol (IP) address through which you access the internet, the date and time you access the site, the page(s) that you visit while on the site, and the internet address of the website from which you linked directly to this site.</p><p>Alvi's Drift is the sole owner of the information collected on this website. Alvi's Drift does not (or will never) sell, share or rent this information to others in ways different from what is disclosed in the privacy statement below. This information is used only to administer this website, analyse trends and to generally help improve this site, and will never result in your receiving spam e-mails.</p><p><br/><strong>Log Files</strong></p><p>Alvi's Drift keeps log files on broad fields to track user movements, analyse trends and gather demographic data. This is not linked to a visitor’s personal identification in any way.</p><p><br/><strong>Cookies / Tracking Technology</strong></p><p>A cookie is a piece of data stored on the visitor’s hard drive containing information about the visitor. Cookies and tracking technologies are useful for gathering information, such as browser types and operating systems, tracking the number of visitors to a website and understanding how visitors use the websites they browse. This information can help customise a website for specific users. Advertisers connected to Alvi's Drift might at times require cookies to track statistics about products and locations, but they will not be supplied with any personal identification details of users. However, Alvi's Drift generally uses cookies for login convenience only.</p><p><br/><strong>Links</strong></p><p>This Privacy Policy applies solely to Alvi's Drift. Alvi's Drift is not necessarily aware of, nor is responsible for, differences in privacy statements of external websites linked to or from ours.</p><p><br/><strong>Shopify</strong></p><p>We use Shopify to power our online store. You can read more about how Shopify uses your Personal Information here:  <a href=\"/policies/privacy-policy\" target=\"_blank\" title=\"Privacy Policy\">https://www.shopify.com/legal/privacy</a>. When you place an order through our site, we will retain your personal information for our records, unless and until you ask us to erase this information.</p><p><br/><strong>Google Analytics</strong></p><p>We use Google Analytics to help us understand how our customers use the Site. You can read more about how Google uses your Personal Information here:  <a href=\"https://policies.google.com/privacy?hl=en\" target=\"_blank\" title=\"https://policies.google.com/privacy?hl=en\">https://policies.google.com/privacy?hl=en</a>.You can also opt-out of Google Analytics here:  <a href=\"https://tools.google.com/dlpage/gaoptout\" target=\"_blank\" title=\"https://tools.google.com/dlpage/gaoptout\">https://tools.google.com/dlpage/gaoptout</a>.</p><p><br/><strong>Newsletter Registration</strong></p><p>Visitors who registered to receive the Alvi's Drift newsletter can unsubscribe from this service at any time. Any personal information stored in the Alvi's Drift database related to the newsletter subscription will be treated as confidential and will never be shared or sold to any third party.<br/><br/><br/><strong>WhatsApp Communication Policy</strong></p><p>By opting in via our account registration form, you agree to receive occasional WhatsApp messages from Alvi’s Drift regarding your Private club membership and exclusive member benefits. These messages may include service updates, member-specific offers, and important information about your club account.We do not sell alcohol to anyone under the age of 18. By registering, you confirm that you are of legal drinking age.You may opt out of WhatsApp communication at any time by replying “STOP” to any message or by contacting us directly at <a href=\"mailto:marketing@alvisdrift.co.za\" target=\"_blank\">marketing@alvisdrift.co.za</a>.<br/><br/><br/></p><p><br/><strong>Wine Club Registration</strong></p><p>Customers who registered to become members of the Alvi's Drift Wine Club can unsubscribe from this service at any time. Any personal information stored in the Alvi's Drift database related to the membership will be treated as confidential and will never be shared or sold to any third party.</p><p><br/><strong>Sharing</strong></p><p>Alvi's Drift does not harvest the information of third parties when visitors share a page of this website in social circles.</p><p><br/><strong>Changes To This Policy</strong></p><p>Alvi's Drift may need to update this policy from time to time, in order to address new issues and reflect changes on this website. Please refer back to this policy regularly.</p><p><br/><em><strong>Continued use of this website signifies your acceptance of this Privacy Policy.</strong></em></p>",
-            "size": "large"
-          }
-        }
-      },
-      "block_order": [
-        "1641810879229302fa-0",
-        "1641810879229302fa-1"
-      ],
-      "settings": {
-        "color_scheme": "none",
-        "text_alignment": "left"
-      }
-    },
-    "16418129255e71e858": {
-      "type": "Spacer",
-      "settings": {
-        "spacer_size": "100px"
-      }
-    },
-    "1641811067ea154967": {
-      "type": "Text-Only",
-      "blocks": {
-        "164181106792ce7685-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Shipping & Returns Policy"
-          }
-        },
-        "164181106792ce7685-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p><strong>Alvi's Drift endeavours to deliver all products timeously and accurately. We will keep you updated throughout the shipping process and communicate any possible delays on our part.</strong></p><p><strong><br/>Returns</strong></p><p>We have a 10-day return policy, which means you have 10 days after receiving your item to request a return.</p><p>To be eligible for a return, your item(s) must be in the same condition that you received it, unused / unopened, with tags / labels / stickers, and in its original packaging. You’ll also need the receipt or proof of purchase.</p><p>To start a return, you can contact us at <a href=\"mailto:sales@alvisdrift.co.za\" target=\"_blank\" title=\"mailto:sales@alvisdrift.co.za\">sales@alvisdrift.co.za</a>. If your return is accepted, we’ll send you a return shipping label, as well as instructions on how and where to send your package. Items sent back to us without first requesting a return will not be accepted.</p><p>You can always contact us for any return questions at <a href=\"mailto:sales@alvisdrift.co.za\" target=\"_blank\" title=\"mailto:sales@alvisdrift.co.za\">sales@alvisdrift.co.za</a>.</p><p><br/><strong>Damages & Issues</strong></p><p>Please inspect your order upon receipt and contact us immediately if the item is defective, damaged, or if you received the wrong item, so that we can evaluate the issue and correct it.</p><p><br/><strong>Exchanges</strong></p><p>The fastest way to ensure you get what you need, is to return the product you have. Once the return is accepted, make a separate purchase for the new item. We’ll help you with this process.</p><p><br/><strong>Refunds</strong></p><p>We will notify you once we’ve received and inspected your return, and let you know if the refund was approved or not. If approved, you’ll be automatically refunded on your original payment method. Please remember it can take some time for your bank or credit card company to process and post the refund too.</p>",
-            "size": "large"
-          }
-        }
-      },
-      "block_order": [
-        "164181106792ce7685-0",
-        "164181106792ce7685-1"
-      ],
-      "settings": {
-        "color_scheme": "none",
-        "text_alignment": "left"
-      }
-    },
-    "1641812942c8252d3f": {
-      "type": "Spacer",
-      "settings": {
-        "spacer_size": "100px"
-      }
-    },
-    "16418118718d446ec7": {
-      "type": "Text-Only",
-      "blocks": {
-        "16418118715a46a85d-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Disclaimer"
-          }
-        },
-        "16418118715a46a85d-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>While Alvi's Drift endeavors to keep the content up to date and the website running smoothly, Alvi's Drift is not responsible or liable for the accuracy, completeness, legality, reliability, operability or availability of information or material displayed on this site, nor for access to the website or parts thereof.</p><p>All information, materials, products and services (whether displayed as text or graphics) included on this website are provided “as is”, with no warranties – except where expressly otherwise stated. Alvi's Drift also disclaims any warranties for products or services advertised on this site by third parties.</p><p>Alvi's Drift cannot assume any liability, obligation or responsibility for any direct, indirect, general, special, incidental or consequential damages (including, without limitation, lost data, revenues or profit) which may result from the inability to use, the correct / incorrect use, downloading, abuse or misuse of the website and / or its content – even if Alvi's Drift has been informed of the possibilities of such damages.</p><p>Some of the articles published under the Blog section of this website may be sourced from outside the company and the content does not necessarily reflect the views of Alvi's Drift. Alvi's Drift is not responsible for any of these articles, comments or reviews, as the posters thereof assume full responsibility for their views.</p><p><br/>In order to provide increased value to site users, Alvi's Drift may refer you to other resources – including providing links to external website or contact details of related companies / organisations / individuals.</p><p>However, this is for the convenience of visitors only and do not serve as endorsements or approvals by Alvi's Drift of any information, products or services on such sites, unless otherwise stated. These websites may also contain opinions and viewpoints of third parties that do not necessarily coincide with those of Alvi's Drift.</p><p>Alvi's Drift is also not responsible for the availability of these websites (including their individual pages or information linked to) or other resources referred to. Nor is Alvi's Drift liable (directly or indirectly) for the content (including misrepresentative or defamatory content) or any damage, loss or offence caused in connection with any advertising, products, services or other materials offered by these external websites or resources.</p>",
-            "size": "large"
-          }
-        }
-      },
-      "block_order": [
-        "16418118715a46a85d-0",
-        "16418118715a46a85d-1"
-      ],
-      "settings": {
-        "color_scheme": "none",
-        "text_alignment": "left"
-      }
-    },
-    "164181295886cf6e75": {
-      "type": "Spacer",
-      "settings": {
-        "spacer_size": "100px"
-      }
-    },
-    "164181238215dd1c43": {
-      "type": "Text-Only",
-      "blocks": {
-        "16418123825f81f4b7-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Copyright Notice"
-          }
-        },
-        "16418123825f81f4b7-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>This website (HTML, database and content) is copyright of © Alvi's Drift Wines (Pty) ltd. (2022). All logos, images, graphic designs and text used on this website, whether of Alvi's Drift or another company, are property of their respectful owners.</p><p>Any distribution, reproduction or manipulation of the content, or parts thereof, for commercial use is strictly prohibited. Downloading, storage or distribution of the content exclusively for personal use is allowed, if clearly acknowledging the website as the source of the material, or otherwise with written permission from Alvi's Drift.</p>",
-            "size": "large"
-          }
-        }
-      },
-      "block_order": [
-        "16418123825f81f4b7-0",
-        "16418123825f81f4b7-1"
-      ],
-      "settings": {
-        "color_scheme": "none",
-        "text_alignment": "left"
-      }
-    },
-    "spacer_EzQxp8": {
-      "type": "Spacer",
-      "settings": {
-        "spacer_size": "25px"
       }
     },
     "171197087302e92832": {
@@ -256,14 +130,6 @@
     "spacer_MA8JaR",
     "1641809810cf24e0dc",
     "1641812886a27d5a61",
-    "1641810879ba071c79",
-    "16418129255e71e858",
-    "1641811067ea154967",
-    "1641812942c8252d3f",
-    "16418118718d446ec7",
-    "164181295886cf6e75",
-    "164181238215dd1c43",
-    "spacer_EzQxp8",
     "171197087302e92832"
   ]
 }
