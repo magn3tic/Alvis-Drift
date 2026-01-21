@@ -29,7 +29,6 @@
             "background_image": "shopify://shop_images/Drinking-Wine-16.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 60,
-            "Heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "FLAGSHIP",
             "paragarh_p2": "RANGE",
@@ -48,18 +47,7 @@
       "settings": {
         "background_image": "shopify://shop_images/Alvi_s_Drink_Wine_Enjoyment_06.png",
         "image_overlay": "",
-        "overlay_opacity": 30,
-        "Heading_color": "#f8f2e6",
-        "video_banner": "",
-        "paragarh_p1": "FLAGSHIP",
-        "paragarh_p2": "RANGE",
-        "paragarh_p3": "AWARDS",
-        "paragarh_p4": "",
-        "paragarh_1": "Alvi’s Drift winery is home to several multi award-winning wines.",
-        "paragarh_2": "View the awards for our Flagship Range wines below.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-wines",
-        "btn_main_link": ""
+        "overlay_opacity": 30
       }
     },
     "7087cec6-45b6-4fa9-8430-c4a0091fb26e": {
@@ -1030,7 +1018,7 @@
         "column_alignment": "left",
         "background_style": "primary",
         "button_label": "BUY OUR AWARD-WINNING FLAGSHIP VERREAUX PINOTAGE",
-        "button_link": "shopify://products/flagship-verreaux-pinotage",
+        "button_link": "shopify://products/flagship-black-eagle-verreaux-pinotage",
         "swipe_on_mobile": false
       }
     },
@@ -1041,7 +1029,6 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "WINE CLUB",
-        "detail-box-txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
         "btn-txt": "FIND OUT MORE",
         "btn-url": "shopify://pages/club"
       }
