@@ -125,7 +125,7 @@
           "settings": {
             "collection_heading": "",
             "collection_subheader": "",
-            "collectionCarasoul": "welcome-2026-sale"
+            "collectionCarasoul": "sale"
           }
         },
         "e1da377c-7a1d-4c54-80f0-ee4eb138fcb4": {
@@ -199,7 +199,7 @@
         "topheading": "",
         "heading-tag": true,
         "subtitle-1": "",
-        "active_collection": "welcome-2026-sale",
+        "active_collection": "sale",
         "promo_badge": false
       }
     },
