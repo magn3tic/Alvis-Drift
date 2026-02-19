@@ -1,0 +1,7 @@
+{% assign start_value = start | default: 500 %}
+{% assign text_value = text | default: 'Stock Quantity' %}
+
+<div class="awc-counter" data-start="{{ start_value }}">
+  <span id="counter-number">{{ start_value }}</span>
+  <span class="awc-counter-text">{{ text_value }}</span>
+</div>

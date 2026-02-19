@@ -1,0 +1,21 @@
+<!--[if lte IE 8]>
+<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/v2-legacy.js"></script>
+<![endif]-->
+<script charset="utf-8" type="text/javascript" src="//js-eu1.hsforms.net/forms/v2.js"></script>
+<script>
+hbspt.forms.create({
+	region: "eu1",
+	portalId: "{{ portal_id }}",
+	formId: "{{ id }}"
+});
+</script>
+
+{% comment %}
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "{{ portal_id }}",
+    formId: "{{ id }}"
+  });
+</script>
+{% endcomment %}

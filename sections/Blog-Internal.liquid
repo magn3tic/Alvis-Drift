@@ -1,0 +1,269 @@
+
+<section class="alvis-drift-awarded video-sec bg-olive blog_internal_section">
+  <div class="sec-inner">
+      <div class="container">
+          <div class="video-sec-inner">
+              <div class="video-sec-vid">
+                  <div class="story-vid-block">
+                  {%- for block in section.blocks -%}
+<!--                       <img src="{{ section.settings.article_image_1 | img_url:"master" }};" class="video-sec-vid-img br-cut" alt="" > -->
+                                <img class="video-sec-vid-img br-cut{% unless forloop.index == 1 %} hidden{% endunless %}" data-article-bg-img="article-{{ forloop.index }}" src="{{ block.settings.article_image_1 | img_url:"master" }}" alt="{{ block.settings.article_image_1.alt }}" loading="lazy">
+        
+                    {%- endfor -%}
+  
+                </div>
+              </div>
+              <div class="video-sec-content alvis-drift-awarded-content">
+                          {%- for block in section.blocks -%}
+
+                  <h2 class="desktop-show tablet-hide {% unless forloop.index == 1 %} hidden{% endunless %}">{{block.settings.article_text_1 | escape }}</h2>
+                  <div class="video-sec-content-txt {% unless forloop.index == 1 %} hidden{% endunless %}">                        
+                      <p>{{block.settings.article_content | replace: '<p>', '<p>'}}</p>
+                  </div>
+                  <a href="{{block.settings.artilce_link}}" class="btn btn-overlay{% unless forloop.index == 1 %} hidden{% endunless %}">View all</a>
+                                              {%- endfor -%}
+
+                  <div class="nd-bx-wrap">
+                    <div class="nd-bx-s">                      
+                      <div class="nd-bx">
+                                          {%- for block in section.blocks -%}
+                        {% if forloop.index == 2 %}
+                        <img src="{{ block.settings.article_image_1 | img_url:"master" }};" class="video-sec-vid-img br-cut2" alt=""loading="lazy">
+                        {% endif %}
+
+                        <div class="nd-bx-no">                        {% if forloop.index == 2 %}
+02                        {% endif %}</div>
+                                                {%- endfor -%}
+
+                      </div>
+                      <div class="nd-bx desktop-hide tablet-show">
+                        <img src="{{ section.settings.article_image_1 | img_url:"master" }};" class="video-sec-vid-img br-cut2" alt="" loading="lazy">
+                        <div class="nd-bx-no">{{section.settings.article_text_1}}</div>
+                      </div>
+                    </div> 
+                    <div class="nd-bx-btn-wrap">
+                      {%- for block in section.blocks -%}
+                         {% if forloop.index == 2 %}
+						
+                      <div class="cotnetn_sectiona">
+                      	
+                        <h3>{{ block.settings.article_text_1}}</h3>
+                      
+                         {{ block.settings.article_content }}
+                        
+                         <a href="{{section.settings.artilce_link}}" class="btn btn-overlay">View All</a></div>
+                        
+                      </div>
+                      
+                      
+                         {% endif %}
+                      {% endfor %} 
+                      </div>
+
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+
+{% comment %}
+<section class="our-story video-sec bg-darkPurple">
+    <div class="sec-inner">
+        <div class="container">
+            <div class="video-sec-inner">
+              
+
+              {%- for block in section.blocks -%}
+			
+               {% if forloop.first == true %}
+				
+              	<div class="video-sec-vid">
+
+                  <div class="story-vid-block">
+                  <img src="{{ block.settings.article_image_1 | img_url: 'master'}}" class="video-sec-vid-img br-cut" alt="" loading="lazy">
+                  </div>
+                 
+                </div>
+                            
+               {% endif %}
+              				
+			 {%- endfor -%}	
+            
+              
+                <!---<div class="video-sec-content">
+                  
+                  
+                  	
+                     <h2 style="color:{{ section.settings.Heading_color }}">{{ section.settings.title}} </h2>
+                  
+                   
+                    <div class="video-sec-content-txt">                        
+                        <p>{{ section.settings.video-sec-content-txt-1}}</p>
+                        <p>{{ section.settings.video-sec-content-txt-2}}</p>
+                        <p>{{ section.settings.video-sec-content-txt-3}}</p>
+                      	
+                      	{% if section.settings.button-txt != blank %}
+                      		<p><a href="{{ section.settings.button_link }}"><button  class="t-link">{{ section.settings.button-txt }}</button></a></p>
+                     
+                        {% endif %}
+                      
+                       
+                    </div>
+                </div>--->
+              
+               {%- for block in section.blocks -%}
+			
+               {% if forloop.first == true %}
+				
+              	
+              	<div class="video-sec-content">
+                  
+                  
+                  	
+                     <h2 style="color:#fff;">{{ block.settings.article_text_1}}</h2>
+                  
+                   
+                    <div class="video-sec-content-txt">                       
+                         {{ block.settings.article_content}}
+                      	
+                      	
+                      		<p><a href="{{ block.settings.artilce_link}}"><button  class="t-link">View All</button></a></p>
+                     
+                        
+                      
+                       
+                    </div>
+                </div>
+              
+                            
+               {% endif %}
+              				
+			 {%- endfor -%}	
+              
+              
+              
+               {%- for block in section.blocks -%}
+			
+               {% if forloop.last == true %}
+				
+              	
+              	
+              
+               <div class="video-second-blog">
+              	
+                <div class="video-internaal-blog-2">
+                	
+                  <div class="blog_2_image">
+                  
+                    	 <img src="{{ block.settings.article_image_1 | img_url: 'master'}}" class="video-sec-vid-img br-cut" alt="">
+             
+                    <div class="cou_2">02</div>
+                  </div>
+                	
+                  <div class="video-sec-content-txt">                       
+                        		<p><a href="{{ block.settings.artilce_link}}"><button  class="t-link">View All</button></a></p>
+                     
+                      
+                    </div>
+                  
+                </div>
+              
+              </div>
+              
+                            
+               {% endif %}
+              				
+			 {%- endfor -%}	
+              
+             
+               
+              
+              
+            </div>
+        </div>
+    </div>
+</section>
+{% endcomment %}
+
+<style>
+  
+  button.t-link {
+    background: transparent;
+    height: 52px;
+    border: 1px solid #8b5548;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-weight: 400 !important;
+    margin-top: 10px;
+    font-size: 18px;
+    display: inline-block;
+}
+  
+</style>
+
+
+
+{% schema %}
+  {
+    "name": "Blog Internal",
+    "settings": [
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button text"
+        },
+		 {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button link"
+        }
+		
+	],
+    "blocks": [
+      {
+        "type": "item",
+		"limit": 2,
+        "name": "content",
+        "settings": [
+		  {
+            "type": "image_picker",
+            "id": "article_image_1",
+            "label": "Image",
+            "info": "Perfect size to fit :- 260X242"
+			
+          },
+          {
+            "type": "text",
+            "id": "article_text_1",
+            "label": "Heading"
+			
+          },
+		  {	
+            "type": "richtext",
+            "id": "article_content",
+            "label": "Content"
+          },
+		  {	
+            "type": "url",
+            "id": "artilce_link",
+            "label": "Link"
+          }
+		]
+	  }
+      
+	],
+    "presets": [
+      {
+        "name": "Blog Internal",
+      	"category": "Blog",
+        "blocks": [
+          {
+            "type": "item"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+

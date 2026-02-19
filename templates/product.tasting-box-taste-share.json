@@ -1,0 +1,76 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#712f1f"
+      }
+    },
+    "main": {
+      "type": "gift-information",
+      "blocks": {
+        "a60788bd-60b4-4d3f-968d-0581ee91855b": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/awards\" target=\"_blank\" title=\"Wine Awards\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "check_mark",
+            "border": false
+          }
+        },
+        "42458232-d991-48a5-ba37-37b307fc3a80": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        }
+      },
+      "block_order": [
+        "a60788bd-60b4-4d3f-968d-0581ee91855b",
+        "42458232-d991-48a5-ba37-37b307fc3a80"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "163949428877599353": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "163949428839bac508-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "gifts"
+          }
+        }
+      },
+      "block_order": [
+        "163949428839bac508-0"
+      ],
+      "settings": {
+        "topheading": "OUR GIFTING COLLECTION"
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "163949428877599353"
+  ]
+}

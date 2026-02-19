@@ -1,0 +1,95 @@
+<div class="ald-hero-wrapper">
+  {% if section.settings.bg_image != blank %}
+    <div class="ald-hero-bg">
+      <img src="{{ section.settings.bg_image | img_url: 'master' }}" alt="Hero Background" class="img-full">
+    </div>
+  {% endif %}
+
+  <div class="alcontainer">
+    <div class="row">
+      <div class="col-6">
+        {% if section.settings.heading != blank %}
+          <h1 class="font-alt">{{ section.settings.heading | newline_to_br }}</h1>
+        {% endif %}
+        {% if section.settings.subheading != blank %}
+          <div class="heading-small font-alt hero-sub">{{ section.settings.subheading }}</div>
+        {% endif %}
+
+      </div>
+
+      <div class="col-6">
+        <div class="ald-hero-content">
+          {% if section.settings.text != blank %}
+            <p>{{ section.settings.text }}</p>
+          {% endif %}
+
+          {%- if section.settings.button_text_mobile != blank -%}
+          <a href="{{ section.settings.button_link }}" class="cta-btn show-mobile">{{ section.settings.button_text_mobile }}</a>
+        {%- endif -%}
+
+        {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+          <a href="{{ section.settings.button_link }}" class="cta-btn show-desktop">{{ section.settings.button_text }}</a>
+        {%- endif -%}
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<style>
+  .show-mobile { display: none; }
+.show-desktop { display: inline-block; }
+
+@media (max-width: 749px) {
+  .show-mobile { display: inline-block; }
+  .show-desktop { display: none; }
+}
+  </style>
+{% schema %}
+{
+  "name": "New Hero",
+  "class": "ald-hero-section",
+  "settings": [
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Explore <br>Award-Winning <br>South African Wines"
+    },
+    {
+      "type": "textarea",
+      "id": "subheading",
+      "label": "Sub Heading",
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Description",
+      "default": "From the 1928 “Drift” bridge to global awards, our fruit-driven wines celebrate family roots, cool-climate terroir, and bold sustainability."
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button Text",
+      "default": "Explore Wines"
+    },
+    {
+      "type": "text",
+      "id": "button_text_mobile",
+      "label": "Button Text on Mobile Only",
+      "default": "EXPLORE Wines"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "New Hero Section",
+      "category": "Banner"
+    }
+  ]
+}
+{% endschema %}

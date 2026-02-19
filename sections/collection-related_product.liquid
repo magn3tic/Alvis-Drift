@@ -1,0 +1,85 @@
+<!-- Bold: Memberships (collection) -->
+{% include 'bold_mem_helper' with 'collection' %}
+<!-- end Bold code -->
+<section class="related-products product-items-sec product-slider-sec">
+  <div class="sec-inner">
+    <div class="container">
+      <h4>{{ section.settings.title_text }}</h4>
+      <div class="slider product-list-slider">
+		{% for block in section.blocks %}
+      {% assign product = all_products[block.settings.product_name] %}
+        <div class="product-bx">
+          <div class="product-img">
+              <a href="#">
+                  <img src="{{ product.featured_image | img_url:"master" }};" alt=""loading="lazy">
+              </a>
+          </div>
+          <div class="product-title"><div class="sp-t">{{product.title}}</div></div>
+          <div class="product-price">{{product.price | money}}</div>
+          <div class="product-size">6 x 750 ml</div>
+            <!-- Start Add to cart button -->
+            <product-form class="product-form">
+              <div class="product-form__error-message-wrapper" role="alert" hidden>
+                <span class="product-form__error-message"></span>
+              </div>
+              {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+              <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+              <input class="quantity__input" type="hidden" name="quantity" id="Quantity-template--15114413473959__main" min="1" value="1" form="product-form-template--15114413473959__main">                  
+              <div class="product-form__buttons">
+                <button type="submit" name="add" class="btn btn-overlay" {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+                  <span>
+                    {%- if product.selected_or_first_available_variant.available -%}
+                    ADD TO CART
+                    {%- else -%}
+                    {{ 'products.product.sold_out' | t }}
+                    {%- endif -%}
+                  </span>
+                  <b>{{ product_item.price | money }}</b>
+                  <div class="loading-overlay__spinner hidden">
+                    <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                      <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                    </svg>
+                  </div>
+                </button>
+              </div>
+              {%- endform -%}
+            </product-form>
+            <!-- End Add to cart button -->
+        </div> 
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section> 
+
+{% schema %}
+  {
+    "name": "Related Product",
+    "settings": [
+	{
+	"type":"text",
+	"id":"title_text",
+	"label":"Enter Title"
+	}
+	],
+	"blocks":[
+	{
+	"type":"products",
+	"name":"product",
+	"settings":[
+	{
+	"type":"product",
+	"id":"product_name",
+	"label":"Choose Product"
+	}
+	]
+}
+]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

@@ -1,0 +1,180 @@
+<section class="our-story video-sec bg-darkPurple focusTextImageSection">
+  <div class="sec-inner" style = "background-color:{{ section.settings.background_colour }}; padding:20px 0">
+    <div class="container focusTextImageSection__wrapper focusTextImageSection__wrapper--left" {% if section.settings.image_size == "150" %} style = "gap:0px"{% endif %} >
+        <div class="focusTextImageSection__image">
+          {% if section.settings.video_url != blank %}
+            <a class="hero-video-btn-link focusTextImageSection__imageInner" data-autoplay="true" data-vbtype="video" href="https://youtu.be/{{ section.settings.video_url.id }}?modestbranding=0&autohide=1&showinfo=0&autoplay=0&playsinline=1&autohide=0&disablekb=1&showinfo=0&loop=0&fs=0&rel=0">
+            {% render 'icon-video-btn' %}
+          {% else %}
+            <div class="focusTextImageSection__imageInner">
+          {% endif %}
+            <img src="{{ section.settings.our-story-vid | img_url: 'large'}}" loading="lazy" width = "{{ section.settings.image_size }}" height = "{{ section.settings.image_size }}" class=" br-cut" alt="Alvis Drift Winery">
+          {% if section.settings.video_url != blank %}
+            </a>
+          {% else %}
+            </div>
+          {% endif %}
+        </div>
+        <div class="focusTextImageSection__content">
+          <{{ section.settings.Heading_size }} style="color:{{ section.settings.Heading_color }}">{{ section.settings.title}}</{{ section.settings.Heading_size }}> 
+          <p>{{ section.settings.video-sec-content-txt-1 }}</p>
+          <p>{{ section.settings.video-sec-content-txt-2 }}</p>
+          <p>{{ section.settings.video-sec-content-txt-3 }}</p>
+          {% if section.settings.button-txt != blank %}
+            <a href="{{ section.settings.button_link }}" class="{{section.settings.button_type}}">{{ section.settings.button-txt }}</a>
+          {% endif %}
+        </div>
+    </div>
+  </div>
+</section>
+{% schema %}
+  {
+    "name": "Focus Text (Image Left)",
+    "settings": [
+       {
+        "type": "color_background",
+        "id": "background_colour",
+        "label": "Background Colour",
+         "default":"#00000000"
+      },
+	  {
+        "type": "image_picker",
+        "id": "our-story-vid",
+        "label": "Image"
+      },
+      {
+        "type": "select",
+            "id": "image_size",
+            "label": "Image Size",
+            "options": [
+          {
+            "value": "150",
+            "label": "Small"
+          },
+            {
+            "value": "300",
+            "label": "Medium"
+          },
+              {
+            "value": "100%",
+            "label": "Medium"
+          }
+        ],
+        "default":"100%"
+      },
+	  {
+          "type": "video_url",
+          "accept": ["youtube"],
+          "id": "video_url",
+          "label": "Video URL"
+      },
+		 {
+        "type": "header",
+        "content": "Heading"
+      },
+		{
+            "type": "select",
+            "id": "Heading_size",
+            "label": "Heading Size",
+            "options": [
+				{
+                "value": "h1",
+                "label": "H1"
+              }, 
+              {
+                "value": "h2",
+                "label": "H2"
+              }			 
+            ],
+            "default": "h2"
+          },
+		{
+            "type": "select",
+            "id": "Heading_color",
+            "label": "Heading Colour",
+            "options": [
+				{
+                "value": "#f8f2e6",
+                "label": "Light Beige"
+              }, 
+              {
+                "value": "#ffffff",
+                "label": "White"
+              },
+			  {
+                "value": "#c0ccbe",
+                "label": "Light Olive"
+              },
+              {
+                "value": "#aac4d3",
+                "label": "Light Blue"
+              },
+              {
+                "value": "#16486E",
+                "label": "Dark Blue"
+              },
+              {
+                "value": "#fedcc6",
+                "label": "Light Orange"
+              }
+            ],
+            "default": "#f8f2e6"
+          },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Heading"
+      },
+	  {
+        "type": "richtext",
+        "id": "video-sec-content-txt-1",
+        "label": "Text"
+
+      },
+	  {
+        "type": "header",
+        "content": "Button"
+      },
+	  {
+        "type": "text",
+        "id": "button-txt",
+        "label": "Button Text"
+
+      },
+	  {
+        "type": "url",
+        "id": "button_link",
+        "label": "Button Link"
+      },
+      {
+        "type": "select",
+         "id": "button_type",
+         "label": "Button Style",
+          "options": [
+				{
+                "value": "alvisBtn",
+                "label": "Button Style 1"
+              }, 
+              {
+                "value": "alvisBtnOpposite",
+                "label": "Button Style 2"
+              }
+            ],
+            "default": "alvisBtn"
+          
+            }
+],
+    
+  "presets": [
+    {
+      "name": "Focus Text (Image Left)"
+    }
+  ]
+  }
+{% endschema %}
+
+{% stylesheet %}
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

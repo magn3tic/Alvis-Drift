@@ -1,0 +1,46 @@
+.totals {
+  display: flex;
+  justify-content: space-between;
+
+
+}
+
+.totals > * {
+  font-size: 1.6rem;
+  margin: 0;
+}
+
+.totals > h3 {
+    text-transform: uppercase;
+  font-size: 19px;
+      margin-bottom: 20px;
+      font-weight:400;
+}
+#revy-cart-subtotal-price, .totals h3{
+  font-size: 18px;
+  
+}
+
+.totals * {
+  line-height: 1;
+}
+
+.totals > * + * {
+  margin-left: 2rem;
+}
+
+.totals__subtotal-value {
+  font-size: 1.8rem;
+  font-weight:bold;
+}
+
+.cart__ctas + .totals {
+  margin-top: 2rem;
+}
+
+@media all and (min-width: 750px) {
+  .totals {
+    justify-content: space-evenly;
+    padding-left: 30px;
+  }
+}

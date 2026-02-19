@@ -1,0 +1,46 @@
+<div class="spacer" style="height:{{ section.settings.spacer_size }}"></div>
+
+<style>
+  
+  .spacer {
+    float: left;
+    width: 100%;
+    display: block !important;
+}
+</style>
+
+{% schema %}
+  {
+    "name": "Spacer",
+    "settings": [
+    {
+            "type": "select",
+            "id": "spacer_size",
+            "label": "Spacer Size Options",
+            "options": [
+				{
+                "value": "25px",
+                "label": "25px"
+              }, 
+              {
+                "value": "50px",
+                "label": "50px"
+              }, {
+                "value": "100px",
+                "label": "100px"
+              }, {
+                "value": "200px",
+                "label": "200px"
+              }
+			],
+            "default": "25px"
+          }
+
+],
+  "presets": [
+    {
+      "name": "Spacer"
+    }
+  ]
+  }
+{% endschema %}

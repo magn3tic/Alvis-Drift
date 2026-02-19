@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Moriarty';
+    src: url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Moriarty.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Moriarty.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-Bold.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-Light.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-Medium.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis';
+    src: url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-Regular.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Metropolis Extra';
+    src: url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Metropolis-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+

@@ -1,0 +1,153 @@
+<section class="faq-blog">
+  <div class="alcontainer">
+    <div class="head">
+      {% if section.settings.subheading != blank %}
+        <div class="heading-small">{{ section.settings.subheading }}</div>
+      {% endif %}
+      {% if section.settings.heading != blank %}
+        <h3 class="heading">{{ section.settings.heading }}</h3>
+      {% endif %}
+    </div>
+
+    <div class="row">
+      <!-- FAQ COLUMN -->
+      <div class="col-6">
+        <div class="ald-faq-section">
+          {% for block in section.blocks %}
+            {% if block.type == 'faq' %}
+              <div class="acc-wrap {% if forloop.first %}act{% endif %}">
+                <div class="acc-head">{{ block.settings.question }}</div>
+                <div class="acc-content">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+
+          {% if section.settings.faq_cta_text != blank %}
+            <div class="faq-actions">
+              {% if section.settings.faq_cta_label != blank %}
+                <span>{{ section.settings.faq_cta_label }}</span>
+              {% endif %}
+              <a href="{{ section.settings.faq_cta_link }}">
+                {{ section.settings.faq_cta_text }}
+                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M0.75 9.08333L9.08333 0.75M9.08333 0.75H0.75M9.08333 0.75V9.08333" stroke="#1B242C" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+
+      <!-- BLOG COLUMN -->
+      <div class="col-6">
+        {% assign blog = blogs[section.settings.blog_handle] %}
+        {% if blog != blank and blog.articles_count > 0 %}
+          <div class="ald-blog">
+            {% for article in blog.articles limit: section.settings.blog_limit %}
+              <a href="{{ article.url }}" class="blog-card">
+                {% if article.image %}
+                <div class="blog-card-thumb">
+                  <img src="{{ article.image | img_url: '600x' }}" alt="{{ article.title }}">
+                  <div class="link-btn"></div>
+                </div>
+                {% endif %}
+                <h3>{{ article.title }}</h3>
+                {% if article.excerpt != blank %}
+                  <p>{{ article.excerpt | strip_html | truncate: 150 }}</p>
+                {% else %}
+                  <p>{{ article.content | strip_html | truncate: 150 }}</p>
+                {% endif %}
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "New FAQ + Blog Section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "subheading",
+      "label": "Small Heading",
+      "default": "Frequently Asked Questions"
+    },
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Main Heading",
+      "default": "More About Us"
+    },
+    {
+      "type": "header",
+      "content": "FAQ Bottom CTA"
+    },
+    {
+      "type": "text",
+      "id": "faq_cta_label",
+      "label": "CTA Label",
+      "default": "My question is not here."
+    },
+    {
+      "type": "text",
+      "id": "faq_cta_text",
+      "label": "CTA Link Text",
+      "default": "Connect"
+    },
+    {
+      "type": "url",
+      "id": "faq_cta_link",
+      "label": "CTA Link URL"
+    },
+    {
+      "type": "header",
+      "content": "Blog Settings"
+    },
+    {
+      "type": "blog",
+      "id": "blog_handle",
+      "label": "Select Blog"
+    },
+    {
+      "type": "range",
+      "id": "blog_limit",
+      "label": "Number of posts to show",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 2
+    }
+  ],
+  "blocks": [
+    {
+      "type": "faq",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Sample Question?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "New FAQ + Blog Section",
+      "category": "Content"
+    }
+  ]
+}
+{% endschema %}

@@ -1,0 +1,344 @@
+<link
+  rel="preload"
+  href="{{ 'component-list-menu.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+>
+<noscript><link rel="stylesheet" href="{{ 'component-list-menu.css' | asset_url }}"></noscript>
+<link
+  rel="preload"
+  href="{{ 'component-search.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+>
+<noscript><link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}"></noscript>
+<link
+  rel="preload"
+  href="{{ 'component-menu-drawer.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+>
+<noscript><link rel="stylesheet" href="{{ 'component-menu-drawer.css' | asset_url }}"></noscript>
+<link
+  rel="preload"
+  href="{{ 'component-cart-notification.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+>
+<noscript><link rel="stylesheet" href="{{ 'component-cart-notification.css' | asset_url }}"></noscript>
+<link
+  rel="preload"
+  href="{{ 'component-cart-items.css' | asset_url }}"
+  as="style"
+  onload="this.onload=null;this.rel='stylesheet'"
+>
+<noscript><link rel="stylesheet" href="{{ 'component-cart-items.css' | asset_url }}"></noscript>
+
+{%- if settings.predictive_search_enabled -%}
+  <link
+    rel="preload"
+    href="{{ 'component-price.css' | asset_url }}"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  >
+  <noscript><link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}"></noscript>
+
+  <link
+    rel="preload"
+    href="{{ 'component-loading-overlay.css' | asset_url }}"
+    as="style"
+    onload="this.onload=null;this.rel='stylesheet'"
+  >
+  <noscript><link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}"></noscript>
+{%- endif -%}
+
+<script src="{{ 'details-disclosure.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'details-modal.js' | asset_url }}" defer="defer"></script>
+<script src="{{ 'cart-notification.js' | asset_url }}" defer="defer"></script>
+
+<header class="ald-header-wrapper">
+  <!-- MAIN HEADER -->
+  <div class="ald-header">
+    <div class="alcontainer">
+      <div class="row align-center">
+        {% assign main_menu = linklists[section.settings.main_menu].links %}
+        {% assign total_links = main_menu | size %}
+        {% assign split_index = 4 %}
+        {% assign left_links = main_menu | slice: 0, split_index %}
+        {% assign right_links = main_menu | slice: split_index, total_links %}
+
+        <!-- LEFT MENU -->
+        <div class="col-5 aldh-left">
+          <ul class="menu">
+            {% for link in left_links %}
+              <li class="{% if link.links != blank %}has-dropdown{% endif %}">
+                <a href="{{ link.url }}">{{ link.title }}</a>
+                {% if link.links != blank %}
+                  <ul class="sub-menu">
+                    {% for sublink in link.links %}
+                      <li>
+                        <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <!-- LOGO -->
+        <div class="col-2 text-center">
+          <a href="{{ routes.root_url }}" class="logo">
+            {% if section.settings.logo != blank %}
+              <img src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ shop.name }}">
+            {% else %}
+              {{ shop.name }}
+            {% endif %}
+          </a>
+        </div>
+
+        <!-- RIGHT MENU -->
+        <div class="col-5 aldh-right">
+          <ul class="menu">
+            {% for link in right_links %}
+              <li class="{% if link.links != blank %}has-dropdown{% endif %}">
+                <a href="{{ link.url }}">{{ link.title }}</a>
+                {% if link.links != blank %}
+                  <ul class="sub-menu">
+                    {% for sublink in link.links %}
+                      <li>
+                        <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+
+          {% if section.settings.cta_text != blank and section.settings.cta_link != blank %}
+            <a href="{{ section.settings.cta_link }}" class="cta-btn-border">{{ section.settings.cta_text }}</a>
+          {% else %}
+            {% if customer %}
+              <a href="https://alvisdrift.co.za/account" class="cta-btn-border">MY ACCOUNT</a>
+            {% else %}
+              <a href="https://alvisdrift.co.za/account/login" class="cta-btn-border">LOGIN</a>
+            {% endif %}
+          {% endif %}
+
+          <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
+            {%- liquid
+              if cart == empty
+                render 'icon-cart-empty'
+              else
+                render 'icon-cart'
+              endif
+            -%}
+            <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+
+            <div class="cart-count-bubble">
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+              <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+            </div>
+          </a>
+        </div>
+
+        <!-- HAMBURGER -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FIXED HEADER -->
+  <div class="ald-header ald-header-fixed">
+    <div class="alcontainer">
+      <div class="row align-center">
+        {% assign main_menu = linklists[section.settings.main_menu].links %}
+        {% assign total_links = main_menu | size %}
+        {% assign split_index = 4 %}
+        {% assign left_links = main_menu | slice: 0, split_index %}
+        {% assign right_links = main_menu | slice: split_index, total_links %}
+
+        <!-- LEFT MENU -->
+        <div class="col-5 aldh-left">
+          <ul class="menu">
+            {% for link in left_links %}
+              <li class="{% if link.links != blank %}has-dropdown{% endif %}">
+                <a href="{{ link.url }}">{{ link.title }}</a>
+                {% if link.links != blank %}
+                  <ul class="sub-menu">
+                    {% for sublink in link.links %}
+                      <li>
+                        <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        <!-- LOGO -->
+        <div class="col-2 text-center">
+          <a href="{{ routes.root_url }}" class="logo">
+            {% if section.settings.logo != blank %}
+              <img src="{{ section.settings.logo | img_url: 'master' }}" alt="{{ shop.name }}">
+            {% else %}
+              {{ shop.name }}
+            {% endif %}
+          </a>
+        </div>
+
+        <!-- RIGHT MENU -->
+        <div class="col-5 aldh-right">
+          <ul class="menu">
+            {% for link in right_links %}
+              <li class="{% if link.links != blank %}has-dropdown{% endif %}">
+                <a href="{{ link.url }}">{{ link.title }}</a>
+                {% if link.links != blank %}
+                  <ul class="sub-menu">
+                    {% for sublink in link.links %}
+                      <li>
+                        <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                      </li>
+                    {% endfor %}
+                  </ul>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+           {% if customer %}
+              <a href="https://alvisdrift.co.za/account" class="cta-btn-border my-account-btn">MY ACCOUNT</a>
+            {% else %}
+              <a href="https://alvisdrift.co.za/account/login" class="cta-btn-border my-account-btn">LOGIN</a>
+            {% endif %}
+          <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
+            {%- liquid
+              if cart == empty
+                render 'icon-cart-empty'
+              else
+                render 'icon-cart'
+              endif
+            -%}
+            <span class="visually-hidden">{{ 'templates.cart.cart' | t }}</span>
+
+            <div class="cart-count-bubble">
+              <span aria-hidden="true">{{ cart.item_count }}</span>
+              <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
+            </div>
+          </a>
+
+          {% if section.settings.cta_text != blank and section.settings.cta_link != blank %}
+            <a href="{{ section.settings.cta_link }}" class="cta-btn">{{ section.settings.cta_text }}</a>
+          {% endif %}
+        </div>
+        <div class="hamburger hamburger-2">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- MOBILE MENU (uses the same main menu) -->
+  <div class="mobile-menu-wrap">
+    <div>
+      <ul>
+        <li>
+          {% if customer %}
+            <a href="https://alvisdrift.co.za/account">MY ACCOUNT</a>
+
+          {% else %}
+            <a href="https://alvisdrift.co.za/account/login">LOGIN</a>
+          {% endif %}
+        </li>
+        {% if template != 'index' %}
+          <li><a href="/">HOMEPAGE</a></li>
+        {% endif %}
+        {% for link in linklists[section.settings.mobile_menu].links %}
+          <li class="{% if link.links != blank %}drop-menu{% endif %}">
+            {% if link.links != blank %}<span></span>{% endif %}
+            <a href="{{ link.url }}">{{ link.title }}</a>
+            {% if link.links != blank %}
+              <ul>
+                {% for sublink in link.links %}
+                  <li>
+                    <a href="{{ sublink.url }}">{{ sublink.title }}</a>
+                  </li>
+                {% endfor %}
+              </ul>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+</header>
+
+{%- if request.page_type == 'index' -%}
+  {% assign potential_action_target = shop.url | append: routes.search_url | append: '?q={search_term_string}' %}
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "WebSite",
+      "name": {{ shop.name | json }},
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {{ potential_action_target | json }},
+        "query-input": "required name=search_term_string"
+      },
+      "url": {{ shop.url | append: page.url | json }}
+    }
+  </script>
+{%- endif -%}
+
+{% schema %}
+{
+  "name": "Header",
+  "tag": "header",
+  "limit": 1,
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo image"
+    },
+    {
+      "type": "link_list",
+      "id": "main_menu",
+      "label": "Select Menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "link_list",
+      "id": "mobile_menu",
+      "label": "Select Mobile Menu",
+      "default": "main-menu"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "Explore Wines"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Button Link"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Header",
+      "category": "Header"
+    }
+  ]
+}
+{% endschema %}

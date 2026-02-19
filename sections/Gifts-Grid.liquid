@@ -1,0 +1,111 @@
+<section class="home-product-items gift-grid-wrap product-items-sec bg-darkPurple">
+  <div class="sec-inner">
+    <div class="container">
+      <div class = "head">
+        {% if section.settings.subheading != blank %}
+        <div class = "heading-small">{{ section.settings.subheading }}</div>
+        {% endif %}
+        {% if section.settings.topheading != blank %}
+        <h3 class="heading">{{ section.settings.topheading }}</h3>
+      {% endif %}
+    </div>
+      <div class="row">
+        {% for block in section.blocks %}
+          {% assign colName = block.settings.collectionCarasoul %}
+          {% assign col = collections[colName] %}
+
+          {% for product in col.products %}
+            <div class="col-3">
+              <div class="shop-item">
+              <a href="{{ product.url }}">
+                <!-- Product Image -->
+                <div class="product-thumb">
+                  
+                    {{ product.featured_image | image_url: width: 325, format: 'webp' | image_tag: loading: 'lazy' }}
+                         
+                </div>
+                <div class="product-add-to-cart">
+                      Add to cart
+                      <svg fill="none" height="21" viewBox="0 0 22 21" width="22" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 0C5.225 0 0.5 4.725 0.5 10.5C0.5 16.275 5.225 21 11 21C16.775 21 21.5 16.275 21.5 10.5C21.5 4.725 16.775 0 11 0ZM11 19.725C5.9 19.725 1.775 15.6 1.775 10.5C1.775 5.4 5.9 1.275 11 1.275C16.1 1.275 20.225 5.4 20.225 10.5C20.225 15.6 16.1 19.725 11 19.725Z" fill="white"></path><path d="M11.6 6.82495H10.4V9.89995H7.625V11.1H10.4V14.325H11.6V11.1H14.45V9.89995H11.6V6.82495Z" fill="white"></path>
+                      </svg>
+                  </div>  
+                
+                <!-- Product Title -->
+                <div class="product-cat">
+                  {{ product.title }}
+                </div>
+
+                <!-- Price -->
+                {% if product.compare_at_price > product.price %}
+                  <div class="product-price">
+                    {{ product.price | money_without_trailing_zeros }}
+                    <span>WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span>
+                  </div>
+                {% else %}
+                  <div class="product-price">
+                    {{ product.price | money_without_trailing_zeros }}
+                  </div>
+                {% endif %}
+                  </a>
+              </div>
+            </div>
+          {% endfor %}
+        {% endfor %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    {% schema %}
+    {
+    "name": "Gifts Grid",
+    "settings": [
+      {
+    "type": "text",
+    "id": "subheading",
+    "label": "Sub Heading"
+    },
+    {
+    "type": "text",
+    "id": "topheading",
+    "label": "Heading"
+    }
+
+    ],
+    "blocks": [
+    {
+    "type": "item",
+    "limit": 12,
+    "name": "Choose Collection",
+    "settings": [
+    {	
+    "type": "text",
+    "id": "collection_heading",
+    "label": "Collection Name"
+    },
+    {
+    "type": "collection",
+    "id": "collectionCarasoul",
+    "label": "Choose Collection"
+    }
+    ]
+    }
+    ],
+    "presets": [
+    {
+    "name": "Gifts Grid",
+    "category": "Collection",
+    "blocks": [
+    {
+    "type": "item"
+    }
+    ]
+    }
+    ]
+    }
+    {% endschema %}
+    {% stylesheet %}
+
+    {% endstylesheet %}

@@ -1,0 +1,112 @@
+{% comment %}
+    Renders a product card
+
+    Accepts:
+    - product_card_product: {Object} Product Liquid object (optional)
+    - media_size: {String} Size of the product image card. Values are "square" and "portrait". Default is "square" (optional)
+    - show_secondary_image: {Boolean} Show the secondary image on hover. Default: false (optional)
+    - add_image_padding: {Boolean} Enables padding on the image to space out the grid
+    - show_vendor: {Boolean} Show the product vendor. Default: false
+    - show_image_outline: {Boolean} Show card outline. Default: true (optional)
+    - show_rating: {Boolean} Show the product rating. Default: false
+
+    Usage:
+    {% render 'product-card', show_vendor: section.settings.show_vendor %}
+{% endcomment %}
+{% if customer.has_account %}
+  {% assign lowertags = customer.tags | downcase %}
+  {% if lowertags contains 'silver' %}
+    {% assign discount = 0.90 %}
+  {% elsif lowertags contains 'gold' %}
+    {% assign discount = 0.85 %}
+  {% else %}
+    {% assign discount = 0.95 %}
+  {% endif %}
+ {% endif %}
+          {% assign exclude_product_discount = false %}
+              {% if product_card_product.tags contains 'no-discount-product' %}
+                {% assign exclude_product_discount = true %}
+          {% endif %}
+
+<div class="shop-item">
+     <a href="{{ product_card_product.url }}">
+        <div class="product-thumb"> 
+          <div class="meta-tag" data-heading="{{ product_card_product.metafields.my_fields.wine_range | handleize }}">
+            {{ product_card_product.metafields.my_fields.wine_range }}
+            </div>
+            {{ product_card_product.featured_image | image_url: width: 325 | image_tag: loading: 'lazy' }}
+                        
+              {% assign member_discount = product_card_product.price | times: discount %}
+              {% assign discount_amount = member_discount | minus: product_card_product.price %}
+                          
+                {%- if product_card_product.compare_at_price > product_card_product.price -%}
+                  {% assign discount_amount = product_card_product.compare_at_price | minus: product_card_product.price %}
+                <div class="product-discount">
+                SAVE<br>
+                {{ discount_amount | money_without_trailing_zeros }}
+                 </div>
+                 {%- endif -%}
+                      
+        </div>
+        <div class="product-add-to-cart">
+                      <span>Add case to cart</span>
+                      <svg fill="none" height="21" viewBox="0 0 22 21" width="22" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M11 0C5.225 0 0.5 4.725 0.5 10.5C0.5 16.275 5.225 21 11 21C16.775 21 21.5 16.275 21.5 10.5C21.5 4.725 16.775 0 11 0ZM11 19.725C5.9 19.725 1.775 15.6 1.775 10.5C1.775 5.4 5.9 1.275 11 1.275C16.1 1.275 20.225 5.4 20.225 10.5C20.225 15.6 16.1 19.725 11 19.725Z" fill="white"></path><path d="M11.6 6.82495H10.4V9.89995H7.625V11.1H10.4V14.325H11.6V11.1H14.45V9.89995H11.6V6.82495Z" fill="white"></path>
+                      </svg>
+          </div>
+                <div class="product-cat">{{ product_card_product.title }}</div>
+                    {% unless product_card_product.tags contains 'Gift' %}
+                    <div class = "product-price-per">Case of 6</div>
+                    {% endunless %}
+
+                     {% if customer %}
+                      {% if exclude_product_discount %}
+                        {% if product_card_product.compare_at_price > product_card_product.price %}
+                          <div class="product-price">
+                            {{ product_card_product.price | money_without_trailing_zeros }}
+                            <span
+                              >WAS <del>{{ product_card_product.compare_at_price | money_without_trailing_zeros }}</del></span
+                            >
+                          </div>
+                        {% else %}
+                          <div class="product-price">
+                            {{ product_card_product.price | money_without_trailing_zeros }}
+                          
+                          </div>
+                        {% endif %}
+                      {% else %}
+                        {% if product_card_product.compare_at_price > product_card_product.price %}
+                        <div class="product-price">
+                            {{ product_card_product.price | times: discount | money_without_trailing_zeros }}
+                            <span
+                              >WAS <del>{{ product_card_product.compare_at_price | money_without_trailing_zeros }}</del></span
+                            >
+                          </div>
+                        {% else %}
+                          <div class="product-price">
+                            {{product_card_product.price | times: discount | money_without_trailing_zeros }}
+                            <span
+                              >WAS <del>{{ product_card_product.price | money_without_trailing_zeros }}</del></span
+                            >
+                          </div>
+                        {% endif %}
+                      {% endif %}
+                    {% else %}
+                      {% if product_card_product.compare_at_price > product_card_product.price %}
+                        <div class="product-price">
+                          {{ product_card_product.price | money_without_trailing_zeros }}
+                          <span
+                            >WAS <del>{{ product_card_product.compare_at_price | money_without_trailing_zeros }}</del></span
+                          >
+                        </div>
+                      {% else %}
+                        <div class="product-price rr">
+                          {{ product_card_product.price | money_without_trailing_zeros }}
+                        </div>
+                      {% endif %}
+                    {% endif %}        
+                </a> 
+     </div>
+
+
+   

@@ -1,0 +1,465 @@
+{{ 'section-multicolumn.css' | asset_url | stylesheet_tag }}
+<link rel="stylesheet" href="{{ 'component-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+<noscript>{{ 'component-slider.css' | asset_url | stylesheet_tag }}</noscript>
+<div class="multicolumn background-{{ section.settings.background_style }}{% if section.settings.title == blank %} no-heading{% endif %}">
+  <div class="page-width">
+    <div class="title-wrapper-with-link title-wrapper--self-padded-mobile{% if section.settings.title == blank %} title-wrapper-with-link--no-heading{% endif %}">
+      <h2 class="title" style="color:{{ section.settings.Heading_color }}">
+        {{ section.settings.title | escape }}
+      </h2>
+      {%- if section.settings.button_label != blank and section.settings.swipe_on_mobile -%}
+        <a href="{{ section.settings.button_link }}" class="link underlined-link large-up-hide">{{ section.settings.button_label | escape }}</a>
+      {%- endif -%}
+    </div>
+    <slider-component class="slider-mobile-gutter">
+      <ul class="multicolumn-list grid grid--1-col{% if section.blocks.size > 3 and section.settings.image_width != 'full' %} grid--2-col-tablet grid--4-col-desktop{% elsif section.blocks.size > 3 and section.settings.image_width == 'full' %} grid--2-col-tablet{% else %} grid--3-col-tablet{% endif %}{% if section.settings.swipe_on_mobile and section.blocks.size > 1 %} slider slider--mobile grid--peek{% endif %}"
+        id="Slider-{{ section.id }}"
+        role="list"
+      >
+        {%- liquid
+          assign highest_ratio = 0
+          for block in section.blocks
+            if block.settings.image.aspect_ratio > highest_ratio
+              assign highest_ratio = block.settings.image.aspect_ratio
+            endif
+          endfor
+        -%}
+        {%- for block in section.blocks -%}
+          <li class="multicolumn-list__item grid__item{% if section.settings.swipe_on_mobile %} slider__slide{% endif %}{% if section.settings.column_alignment == 'center' %} center{% endif %}" {{ block.shopify_attributes }}>
+            <div class="multicolumn-card" style="background:{{ section.settings.Background_Colour }}">
+              {%- if block.settings.image != blank -%}
+                {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
+                  {% assign spaced_image = true %}
+                {% endif %}
+                <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
+                  <div class="media media--transparent media--{{ section.settings.image_ratio }}"
+                    {% if section.settings.image_ratio == 'adapt' %}
+                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
+                    {% endif %}>
+                    <img
+                      srcset="{%- if block.settings.image.width >= 275 -%}{{ block.settings.image | img_url: '275x' }} 275w,{%- endif -%}
+                        {%- if block.settings.image.width >= 550 -%}{{ block.settings.image | img_url: '550x' }} 550w,{%- endif -%}
+                        {%- if block.settings.image.width >= 710 -%}{{ block.settings.image | img_url: '710x' }} 710w,{%- endif -%}
+                        {%- if block.settings.image.width >= 1420 -%}{{ block.settings.image | img_url: '1420x' }} 1420w,{%- endif -%}
+                        {{ block.settings.image | img_url: 'master' }} {{ block.settings.image.width }}w"
+                      src="{{ block.settings.image | img_url: '550x' }}"
+                      sizes="(min-width: 990px) {% if section.blocks.size <= 2 %}710px{% else %}550px{% endif %},
+                        (min-width: 750px) {% if section.blocks.size == 1 %}710px{% else %}550px{% endif %},
+                        calc(100vw - 30px)"  alt="{{ block.settings.image.alt }}" height="{{ block.settings.image.height }}" width="{{ block.settings.image.width }}" loading="lazy"
+                    >
+                  </div>
+                </div>
+              {%- endif -%}
+              <div class="multicolumn-card__info">
+                {%- if block.settings.title != blank -%}
+                  <h3 style="color:{{ block.settings.Title_color }}">{{ block.settings.title | escape }}</h3>
+                {%- endif -%}
+                {%- if block.settings.text != blank -%}
+                  <div class="rte" style="color:{{ block.settings.Text_color }}">{{ block.settings.text }}</div>
+                {%- endif -%}
+              </div>
+            </div>
+          </li>
+        {%- endfor -%}
+      </ul>
+      {%- if section.settings.swipe_on_mobile -%}
+        <div class="slider-buttons no-js-hidden medium-hide{% if section.blocks.size < 2 %} small-hide{% endif %}">
+          <button type="button" class="slider-button slider-button--prev" name="previous" aria-label="{{ 'accessibility.previous_slide' | t }}">{% render 'icon-caret' %}</button>
+          <div class="slider-counter caption">
+            <span class="slider-counter--current">1</span>
+            <span aria-hidden="true"> / </span>
+            <span class="visually-hidden">{{ 'accessibility.of' | t }}</span>
+            <span class="slider-counter--total">{{ section.blocks.size }}</span>
+          </div>
+          <button type="button" class="slider-button slider-button--next" name="next" aria-label="{{ 'accessibility.next_slide' | t }}">{% render 'icon-caret' %}</button>
+        </div>
+      {%- endif -%}
+    </slider-component>
+    <div class="center{% if section.settings.swipe_on_mobile %} small-hide medium-hide{% endif %}">
+      {%- if section.settings.button_label != blank -%}
+        <a class="button button--primary"{% if section.settings.button_link == blank %} aria-disabled="true" role="link"{% else %} href="{{ section.settings.button_link }}"{% endif %}>
+          {{ section.settings.button_label | escape }}
+        </a>
+      {%- endif-%}
+    </div>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Multi-Column Content",
+  "class": "spaced-section spaced-section--full-width",
+  "tag": "section",
+  "settings": [
+	{
+            "type": "select",
+            "id": "Background_Colour",
+            "label": "Background Colour",
+            "options": [
+				{
+                "value": "#ffffff",
+                "label": "White"
+              },
+				{
+                "value": "#c0ccbe",
+                "label": "Light Olive"
+              },
+              {
+                "value": "#aac4d3",
+                "label": "Light Blue"
+              },
+              {
+                "value": "#fedcc6",
+                "label": "Light Orange"
+              },				
+			{
+                "value": "#f8f2e6",
+                "label": "Light Beige"
+              }, 
+              {
+                "value": "#2e112d",
+                "label": "Dark Plum"
+              },
+			  {
+                "value": "#2d5980",
+                "label": "Dark Navy"
+              },
+              {
+                "value": "#6287e0",
+                "label": "Dark Blue"
+              },
+              {
+                "value": "#867065",
+                "label": "Dark Tan"
+              },
+              {
+                "value": "#c65336",
+                "label": "Dark Orange"
+              }
+            ],
+            "default": "#f8f2e6"
+          },
+    {
+      "type": "text",
+      "id": "title",
+      "default": "Multicolumn",
+      "label": "t:sections.multicolumn.settings.title.label"
+    },
+	{
+            "type": "select",
+            "id": "Heading_color",
+            "label": "Heading Colour",
+            "options": [
+							{
+                "value": "#ffffff",
+                "label": "White"
+              },
+				{
+                "value": "#c0ccbe",
+                "label": "Light Olive"
+              },
+              {
+                "value": "#aac4d3",
+                "label": "Light Blue"
+              },
+              {
+                "value": "#fedcc6",
+                "label": "Light Orange"
+              },				
+			{
+                "value": "#f8f2e6",
+                "label": "Light Beige"
+              },
+				{
+                "value": "#2e112d",
+                "label": "Dark Plum"
+              }, 
+              {
+                "value": "#480115",
+                "label": "Dark Maroon"
+              },
+			  {
+                "value": "#721326",
+                "label": "Dark Red"
+              },
+              {
+                "value": "#5c6e67",
+                "label": "Dark Olive"
+              },
+              {
+                "value": "#6b7231",
+                "label": "Dark Green"
+              },
+              {
+                "value": "#2d5980",
+                "label": "Dark Navy"
+              },
+              {
+                "value": "#6287e0",
+                "label": "Dark Blue"
+              },
+              {
+                "value": "#867065",
+                "label": "Dark Tan"
+              },
+              {
+                "value": "#c65336",
+                "label": "Dark Orange"
+              }
+            ],
+            "default": "#ffffff"
+          },
+    {
+      "type": "select",
+      "id": "image_width",
+      "options": [
+        {
+          "value": "third",
+          "label": "Third"
+        },
+        {
+          "value": "half",
+          "label": "Half"
+        },
+        {
+          "value": "full",
+          "label": "Full"
+        }
+      ],
+      "default": "full",
+      "label": "Image Width"
+    },
+    {
+      "type": "select",
+      "id": "image_ratio",
+      "options": [
+        {
+          "value": "adapt",
+          "label": "Adapt"
+        },
+        {
+          "value": "portrait",
+          "label": "Portrait"
+        },
+        {
+          "value": "square",
+          "label": "Square"
+        },
+        {
+          "value": "circle",
+          "label": "Circle"
+        }
+      ],
+      "default": "adapt",
+      "label": "Image Ratio"
+    },
+    {
+      "type": "select",
+      "id": "column_alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        }
+      ],
+      "default": "left",
+      "label": "Column Alignment"
+    },
+    {
+      "type": "select",
+      "id": "background_style",
+      "options": [
+        {
+          "value": "none",
+          "label": "None"
+        },
+        {
+          "value": "primary",
+          "label": "Primary"
+        },
+        {
+          "value": "secondary",
+          "label": "Secondary"
+        }
+      ],
+      "default": "primary",
+      "label": "Background Colour"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "default": "Read More",
+      "label": "Button Text"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Link URL"
+    },
+    {
+      "type": "checkbox",
+      "id": "swipe_on_mobile",
+      "default": false,
+      "label": "Enable Swipe On Mobile"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "column",
+      "name": "t:sections.multicolumn.blocks.column.name",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image Picker"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "default": "Column",
+          "label": "Heading"
+        },
+{
+            "type": "select",
+            "id": "Title_color",
+            "label": "Heading Colour",
+            "options": [
+				{
+                "value": "#ffffff",
+                "label": "White"
+              },
+				{
+                "value": "#c0ccbe",
+                "label": "Light Olive"
+              },
+              {
+                "value": "#aac4d3",
+                "label": "Light Blue"
+              },
+              {
+                "value": "#fedcc6",
+                "label": "Light Orange"
+              },				
+			{
+                "value": "#f8f2e6",
+                "label": "Light Beige"
+              },
+				{
+                "value": "#2e112d",
+                "label": "Dark Plum"
+              }, 
+              {
+                "value": "#480115",
+                "label": "Dark Maroon"
+              },
+			  {
+                "value": "#721326",
+                "label": "Dark Red"
+              },
+              {
+                "value": "#5c6e67",
+                "label": "Dark Olive"
+              },
+              {
+                "value": "#6b7231",
+                "label": "Dark Green"
+              },
+              {
+                "value": "#2d5980",
+                "label": "Dark Navy"
+              },
+              {
+                "value": "#6287e0",
+                "label": "Dark Blue"
+              },
+              {
+                "value": "#867065",
+                "label": "Dark Tan"
+              },
+              {
+                "value": "#c65336",
+                "label": "Dark Orange"
+              }
+            ],
+            "default": "#ffffff"
+          },
+
+        {
+          "type": "richtext",
+          "id": "text",
+"default": "<p>Add Paragraph</p>",
+          "label": "Text"
+        },
+{
+            "type": "select",
+            "id": "Text_color",
+            "label": "Text Colour",
+            "options": [
+				{
+                "value": "#ffffff",
+                "label": "White"
+              },
+				{
+                "value": "#2e112d",
+                "label": "Dark Plum"
+              }, 
+              {
+                "value": "#480115",
+                "label": "Dark Maroon"
+              },
+			  {
+                "value": "#721326",
+                "label": "Dark Red"
+              },
+              {
+                "value": "#5c6e67",
+                "label": "Dark Olive"
+              },
+              {
+                "value": "#6b7231",
+                "label": "Dark Green"
+              },
+              {
+                "value": "#2d5980",
+                "label": "Dark Navy"
+              },
+              {
+                "value": "#6287e0",
+                "label": "Dark Blue"
+              },
+              {
+                "value": "#867065",
+                "label": "Dark Tan"
+              },
+              {
+                "value": "#c65336",
+                "label": "Dark Orange"
+              }
+            ],
+            "default": "#ffffff"
+          }
+
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Multi-Column Content",
+      "blocks": [
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        },
+        {
+          "type": "column"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
