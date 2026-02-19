@@ -42,11 +42,11 @@
     {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}
 <meta property="og:image:secure_url" content="https:{{ page_image | img_url: '1200x628' }}">{% endif -%}
 {% if page_image %}
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="628">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="628">
 {% else %}
-  <meta property="og:image:width" content="{{ page_image.width }}">
-  <meta property="og:image:height" content="{{ page_image.height }}">
+<meta property="og:image:width" content="{{ page_image.width }}">
+ <meta property="og:image:height" content="{{ page_image.height }}">
 {% endif %}
 {%- endif -%}
 {%- if request.page_type == 'product' -%}
@@ -54,7 +54,7 @@
     {%- capture var %}{% render 'locksmith-variables', variable: 'access_granted' %}{% endcapture %}{% if var == 'true' %}<meta property="og:price:currency" content="{{ cart.currency.iso_code }}">{% endif -%}
 {%- endif -%}
 {%- if settings.social_twitter_link != blank -%}
-  <meta name="twitter:site" content="{{ settings.social_twitter_link | split: 'twitter.com/' | last | prepend: '@' }}">
+<meta name="twitter:site" content="{{ settings.social_twitter_link | split: 'twitter.com/' | last | prepend: '@' }}">
 {%- endif -%}
 <meta name="twitter:card" content="summary_large_image">
   {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}<meta name="twitter:title" content="{{ og_title | escape }}">{% endif -%}
