@@ -31,7 +31,7 @@
 <meta property="og:site_name" content="{{ shop.name }}">
 <meta property="og:url" content="{{ og_url }}">
   {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}
-<meta property="og:title" content="{{ og_title | escape }}">{% endif -%}
+<meta property="og:title" content="{{ og_title | escape }} | Alvi's Drift">{% endif -%}
   {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}
 <meta property="og:type" content="{{ og_type }}">{% endif -%}
   {%- capture var %}{% render 'locksmith-variables', variable: 'transparent', hiding_scope: 'resource' %}{% endcapture %}{% if var == 'true' %}
