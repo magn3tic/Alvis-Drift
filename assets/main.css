@@ -1374,7 +1374,7 @@ color:#ffffff;
 	text-align:left;
 }
 
-.acc-wrap:hover .tab-head{
+.acc-wrap::hover .tab-head{
 	color #C65336;
 }
 .acc-wrap .acc-head::after {
