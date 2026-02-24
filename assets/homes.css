@@ -618,7 +618,6 @@ p.sub-title {
 
 .bg-overlay-content-wrapper {
     height: 900px;
-    margin-top: -50px;
     overflow: hidden;
     position: relative
 }
