@@ -1282,7 +1282,9 @@ summary::-webkit-details-marker {
 }
 
 .video-grid {
-    display: flex
+    display: flex;
+    max-width:1280px;
+    margin: 0 auto
 }
 
 .col-8 {
