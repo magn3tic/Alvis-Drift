@@ -1375,7 +1375,7 @@ color:#ffffff;
 }
 
 .acc-wrap:hover .tab-head{
-	color: #C65336;
+	color #C65336;
 }
 .acc-wrap .acc-head::after {
 	content: "";
@@ -3498,4 +3498,9 @@ textarea::placeholder {
 	.popup-content{
 	padding:60px 30px!important
 }
+}
+.video-grid-inner-3 {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    gap: 60px 30px;
 }
