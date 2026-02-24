@@ -11,15 +11,17 @@
   <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<div class="collage-wrapper page-width" style ="background-color:{{ section.settings.background-colour }};">
-<div class="video-grid"  >
+<div class="collage-wrapper" style ="background-color:{{ section.settings.background-colour }};">
+<div class="video-grid">
+  {% if section.settings.heading != blank  %}
   <div class= "col-4">
     <div class ="video-header">
       <h1>{{ section.settings.heading }}</h1>
     </div>
   </div>
-  <div class = "col-8">
-    <div class="video-grid-inner ">
+{% endif %}
+ <div class = "{% if section.settings.heading != blank  %}col-8{% else %}col-12{% endif %}">
+    <div class="{% if section.settings.heading != blank  %}video-grid-inner{% else %}video-grid-inner-3{% endif %}">
       {%- for block in section.blocks -%}
     	{%- assign b_i = block.settings -%}
   <div class = "video-columns ">
