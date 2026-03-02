@@ -128,6 +128,7 @@
     },
     "wine_club_products_events_grid_eDmcgT": {
       "type": "wine-club-products-events-grid",
+      "disabled": true,
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
@@ -152,7 +153,6 @@
     },
     "wine_club_products_events_grid_zDj4fc": {
       "type": "wine-club-products-events-grid",
-      "disabled": true,
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
