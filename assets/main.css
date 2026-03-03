@@ -1375,7 +1375,7 @@ color:#ffffff;
 }
 
 .acc-wrap:hover .tab-head{
-	color #C65336;
+	color: #C65336;
 }
 .acc-wrap .acc-head::after {
 	content: "";
