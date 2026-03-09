@@ -757,7 +757,6 @@
     },
     "page_builder_contact_PME8f8": {
       "type": "page-builder-contact",
-      "disabled": true,
       "name": "New Contact Section",
       "settings": {
         "badge_image": "shopify://shop_images/ald-seal.png",
