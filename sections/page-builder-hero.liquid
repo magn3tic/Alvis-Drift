@@ -25,21 +25,17 @@
 
           {%- if section.settings.button_text_mobile != blank -%}
           <a href="{{ section.settings.button_link }}" class="cta-btn show-mobile">{{ section.settings.button_text_mobile }}</a>
-          {% else %}
+          {%- endif -%}
           {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
           <a href="{{ section.settings.button_link }}" class="cta-btn show-desktop">{{ section.settings.button_text }}</a>
           {%- endif -%}
-          {%- endif -%}
-
-        
-          
         </div>
       </div>
     </div>
   </div>
 </div>
 <style>
-  .show-mobile { display: none; }
+.show-mobile { display: none; }
 .show-desktop { display: inline-block; }
 
 @media (max-width: 749px) {
