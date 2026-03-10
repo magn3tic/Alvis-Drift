@@ -25,11 +25,13 @@
 
           {%- if section.settings.button_text_mobile != blank -%}
           <a href="{{ section.settings.button_link }}" class="cta-btn show-mobile">{{ section.settings.button_text_mobile }}</a>
-        {%- endif -%}
-
-        {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
+          {% else %}
+          {%- if section.settings.button_text != blank and section.settings.button_link != blank -%}
           <a href="{{ section.settings.button_link }}" class="cta-btn show-desktop">{{ section.settings.button_text }}</a>
-        {%- endif -%}
+          {%- endif -%}
+          {%- endif -%}
+
+        
           
         </div>
       </div>
