@@ -398,7 +398,7 @@ text-transform:uppercase
 }
 @media (min-width:2000px){
 	.ald-sale-slider .slide {
-	height: 800px;
+	height: 100%;
 	width:100% !important
 
 }
