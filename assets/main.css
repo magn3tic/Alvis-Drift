@@ -373,7 +373,7 @@ text-transform:uppercase
 
 .ald-sale-slider .slide img {
 	height: 444px;
-	width: 100%;
+	width: 100% !important;
 	object-fit: cover;
 }
 @media (min-width:1439px){
