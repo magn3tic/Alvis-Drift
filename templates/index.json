@@ -372,13 +372,14 @@
         "item_wU3X69": {
           "type": "item",
           "settings": {
-            "collection_heading": "Best Sellers",
-            "collectionCarasoul": "best-sellers",
-            "product_amount": 4
+            "collection_heading": "Sale",
+            "collectionCarasoul": "harvest-sale",
+            "product_amount": 30
           }
         },
         "item_FTp3fb": {
           "type": "item",
+          "disabled": true,
           "settings": {
             "collection_heading": "All Ranges",
             "collectionCarasoul": "all-ranges",
