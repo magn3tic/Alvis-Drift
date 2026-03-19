@@ -13,11 +13,11 @@
       "type": "page-builder-hero",
       "name": "New Hero Section",
       "settings": {
-        "heading": "Explore\nAward-Winning\nSouth African Wines",
+        "heading": "HARVEST SALE\nSTARTS 23 MARCH",
         "subheading": "",
-        "text": "From the 1982 \"Drift\" bridge to global awards, our fruit-driven wines celebrate family roots, cool-climate terroir, and bold sustainability.",
-        "button_text": "EXPLORE WINES",
-        "button_text_mobile": "EXPLORE WINES",
+        "text": "Join us in celebrating another fruitful season with our annual Harvest Sale. Enjoy sitewide savings across all 6-bottle cases of our acclaimed wines; it’s the perfect opportunity to plan and restock for your Easter menu.",
+        "button_text": "SHOP NOW",
+        "button_text_mobile": "SHOW NOW",
         "button_link": "shopify://collections/all-ranges"
       }
     },
@@ -40,6 +40,7 @@
         },
         "slide_4iE3fb": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "video": "",
             "image": "shopify://shop_images/Alvis_drift_Hero_Banner.png",
@@ -64,12 +65,26 @@
             "button_text": "",
             "button_link": "#sale"
           }
+        },
+        "slide_PtnLrn": {
+          "type": "slide",
+          "settings": {
+            "video": "",
+            "image": "shopify://shop_images/Alvis_Drift_Harvest_Sale_Hero_Banner.png",
+            "object_pos_x": "center",
+            "object_pos_y": "center",
+            "heading": "Sale goes live",
+            "subtext": "23 MARCH — LIMITED STOCK",
+            "button_text": "View Sale",
+            "button_link": ""
+          }
         }
       },
       "block_order": [
         "slide_WqnXMT",
         "slide_4iE3fb",
-        "slide_QjEzFW"
+        "slide_QjEzFW",
+        "slide_PtnLrn"
       ],
       "name": "New Slider",
       "settings": {
@@ -297,13 +312,12 @@
       "blocks": {
         "banner_HYabhr": {
           "type": "banner",
-          "disabled": true,
           "settings": {
-            "top_text": "Now on until 1 March",
-            "heading": "Welcome to 2026 sale",
-            "image": "shopify://shop_images/Alvis_Drift_Welcome_2026_Sale_banner.png",
-            "hover_title": "WELCOME 2026 SALE",
-            "hover_subtext": "Save Up to R1200",
+            "top_text": "Starts 23 march",
+            "heading": "Harvest Sale",
+            "image": "shopify://shop_images/Alvis_Drift_Harvest_Sales_Banner.png",
+            "hover_title": "Harvest Sale",
+            "hover_subtext": "Save Up to R......",
             "link": "https://alvisdrift.co.za/collections/sale"
           }
         },
@@ -321,6 +335,7 @@
         },
         "banner_ThE4CE": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "top_text": "CUSTOMER FAVOURITES",
             "heading": "Best Sellers",
