@@ -22,6 +22,7 @@
           "type": "slider",
           "settings": {
             "background_image": "shopify://shop_images/Alvis_Drift_Harvest_Sale_Hero_Banner.png",
+            "mobile_background_image": "shopify://shop_images/Private_Club_Banner_-_Mobile_1.png",
             "image_overlay": "",
             "overlay_opacity": 5,
             "heading_color": "#2e112d",
