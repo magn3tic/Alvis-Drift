@@ -18,7 +18,7 @@
         "text": "Join us in celebrating another fruitful season with our annual Harvest Sale. Enjoy sitewide savings across all 6-bottle cases of our acclaimed wines; it’s the perfect opportunity to plan and restock for your Easter menu.",
         "button_text": "SHOP NOW",
         "button_text_mobile": "SHOW NOW",
-        "button_link": ""
+        "button_link": "shopify://collections/harvest-sale"
       }
     },
     "page_builder_slider_9Xe86H": {
@@ -318,7 +318,7 @@
             "image": "shopify://shop_images/Alvis_Drift_Harvest_Sales_Banner.png",
             "hover_title": "Harvest Sale",
             "hover_subtext": "Save Up to R......",
-            "link": "https://alvisdrift.co.za/collections/sale"
+            "link": "shopify://collections/harvest-sale"
           }
         },
         "banner_Kejhqg": {
