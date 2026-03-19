@@ -2616,7 +2616,7 @@ body .blp-container__bottomRight {
 	}
 
 	.ald-sale-slider .slide img {
-		height: 160px;
+		height: 100%;
 	}
 
 	.ald-testimonials .head a {
