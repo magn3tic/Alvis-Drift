@@ -74,7 +74,7 @@
       "name": "Wine Club Hero V2",
       "settings": {
         "subtitle_connected": "Alvi's Drift Wine Club",
-        "title_connected": "Harvest<br>\nSale",
+        "title_connected": "Harvest\nSale",
         "blurb_connected": "<p>NOW ON UNTIL 17 APRIL</p>",
         "image_connected_desktop": "shopify://shop_images/Alvis_Drift_Harvest_Sale_Hero_Banner.png",
         "show_button_connected": false,
@@ -126,20 +126,19 @@
     },
     "wine_club_products_events_grid_eDmcgT": {
       "type": "wine-club-products-events-grid",
-      "disabled": true,
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
         "promo_badge": true,
         "show_title": true,
         "title": "Products on Sale",
-        "sub-title": "Save up to R1200",
+        "sub-title": "Save up to R1800",
         "no-subtitle": false,
-        "bronze_collection": "sale",
-        "silver_collection": "sale",
-        "gold_collection": "sale",
+        "bronze_collection": "harvest-sale",
+        "silver_collection": "harvest-sale",
+        "gold_collection": "harvest-sale",
         "platinum_collection": "",
-        "collection_exclusive": "sale",
+        "collection_exclusive": "harvest-sale",
         "show_exclusive_collection_bronze": true,
         "show_exclusive_collection_silver": true,
         "show_exclusive_collection_gold": true,
@@ -151,6 +150,7 @@
     },
     "wine_club_products_events_grid_zDj4fc": {
       "type": "wine-club-products-events-grid",
+      "disabled": true,
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
