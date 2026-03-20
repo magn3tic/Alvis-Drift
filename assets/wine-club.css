@@ -457,13 +457,12 @@ margin-right: 20px;
       object-position: center;
       object-fit: cover;
     }
-  .awc-hero--content-v2{
-    color:#c65336
-  }
+ 
     @media (max-width: 1023px) {
       .awc-hero--content-v2 h1 {
         width: 100%;
         margin: 0 auto !important;
+        color:#c65336
       }
       
       .awc-hero-content-v2--text{
