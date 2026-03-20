@@ -477,8 +477,8 @@ margin-right: 20px;
     @media (min-width: 1023px) {
 
       .awc-hero--content-v2 h1 {
-        font-size: 8rem;
-        line-height: 1em;
+        font-size: 8.5rem;
+        line-height: 1.1em;
       }
       .awc-hero-content-v2--text {
         text-align: left;
