@@ -553,7 +553,7 @@ button#checkout {
   line-height: 1.2em;
 }
 .the-blurb{
-  font-size:20px
+  font-size:20px !important
 }
 .laptop-bg{
   height:60vh
