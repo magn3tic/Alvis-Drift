@@ -161,7 +161,7 @@
 .awc-hero-v2{
   position: relative;
   z-index: 2;
-  height: 800px;
+  height: 600px;
 
   @media (min-width: 767px) {
     height: 650px;
