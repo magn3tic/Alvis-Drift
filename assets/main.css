@@ -984,7 +984,11 @@ color:#ffffff;
 	bottom: 29px;
 	right: 0;
 }
-
+.the-blurb{
+     width:80%;
+     display:block;
+     font-size:32px;
+}
 .ts-item {
 	position: relative;
 	padding-left: 165px;
