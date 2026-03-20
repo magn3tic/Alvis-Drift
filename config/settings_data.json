@@ -31,7 +31,7 @@
         "type": "header",
         "settings": {
           "logo": "shopify://shop_images/logo.svg",
-          "main_menu": "secondary-menu-top",
+          "main_menu": "main-menu-new-top",
           "mobile_menu": "main-menu",
           "cta_text": "Explore Wines",
           "cta_link": ""
