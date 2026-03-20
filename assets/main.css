@@ -986,9 +986,9 @@ color:#ffffff;
 }
 .the-blurb{
      width:80%;
-     display:block;
      font-size:32px;
-	 color:#fff
+	 color:#fff;
+	 line-height:1.5em
 }
 .ts-item {
 	position: relative;
