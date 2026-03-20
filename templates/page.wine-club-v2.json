@@ -90,8 +90,8 @@
         "image_disconnected_desktop": "shopify://shop_images/Alvis_Drift_Private_Club_Banner_52ffba04-fbc5-4a37-ad8f-bf3233c5688a.png",
         "image_disconnected_mobile": "shopify://shop_images/Private_Club_Banner_-_Mobile_1.png",
         "show_button_disconnected": true,
-        "button_text_disconnected": "JOIN NOW",
-        "url_disconnected": "https://alvisdrift.co.za/account/register/",
+        "button_text_disconnected": "SHOP NOW",
+        "url_disconnected": "shopify://collections/harvest-sale",
         "show_button_disconnected_2": false,
         "button_text_disconnected_2": "Login",
         "url_disconnected_2": "/account/login"
