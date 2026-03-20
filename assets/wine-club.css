@@ -482,8 +482,7 @@ margin-right: 20px;
       .awc-hero-content-v2--text {
         text-align: left;
       }
-      .awc-bg-picture img {
-        opacity: 0.8;
+      .awc-bg-picture img{
         object-position: bottom right;
       }
       .awc-header{
