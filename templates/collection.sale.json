@@ -124,6 +124,7 @@
         "stat_LaXWWG",
         "stat_LbTihb"
       ],
+      "disabled": true,
       "name": "New Stats Homepage",
       "settings": {
         "heading": "Private club",
