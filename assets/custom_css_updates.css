@@ -549,8 +549,11 @@ button#checkout {
 }
   @media (min-width:250px) and (max-width:900px) {
  .animate-reveal {
-  font-size: 26px !important;
+  font-size: 35px !important;
   line-height: 1.2em;
+}
+.the-blurb{
+  font-size:20px
 }
 .laptop-bg{
   height:60vh
