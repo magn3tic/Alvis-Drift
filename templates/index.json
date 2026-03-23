@@ -13,7 +13,7 @@
       "type": "page-builder-hero",
       "name": "New Hero Section",
       "settings": {
-        "heading": "HARVEST SALE\nSTARTS 23 MARCH",
+        "heading": "HARVEST \nSALE",
         "subheading": "",
         "text": "Join us in celebrating another fruitful season with our annual Harvest Sale. \n<br>Enjoy sitewide savings across all 6-bottle cases of our acclaimed wines; it’s the perfect opportunity to plan and restock for your Easter menu.",
         "button_text": "SHOP NOW",
@@ -74,7 +74,7 @@
             "object_pos_x": "center",
             "object_pos_y": "center",
             "heading": "Sale live now",
-            "subtext": "23 MARCH — 17 APRIL",
+            "subtext": "UNTIL 17 APRIL",
             "button_text": "View Sale",
             "button_link": ""
           }
