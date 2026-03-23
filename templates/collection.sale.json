@@ -198,6 +198,7 @@
       "block_order": [
         "item_jQeYra"
       ],
+      "disabled": true,
       "name": "Collection Grid Single",
       "settings": {
         "topheading": "Our Gift Collections",
