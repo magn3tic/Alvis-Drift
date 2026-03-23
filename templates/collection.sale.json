@@ -183,6 +183,29 @@
         "hide_meta_tags": false
       }
     },
+    "collections_grid_individual_rc4BLr": {
+      "type": "Collections-Grid-individual",
+      "blocks": {
+        "item_jQeYra": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "gifts",
+            "product_amount": 30
+          }
+        }
+      },
+      "block_order": [
+        "item_jQeYra"
+      ],
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Our Gift Collections",
+        "subtitle_1": "",
+        "hide_filter": true,
+        "hide_meta_tags": true
+      }
+    },
     "784f5bd9-5299-43a5-9cb0-0b71daea0b68": {
       "type": "Focus-Text-Text-Only",
       "disabled": true,
@@ -218,6 +241,7 @@
     "076540c7-5ddf-4c76-98f7-931bb9661ebf",
     "focus_text_text_only_WnNKBW",
     "collections_grid_individual_3RnYqp",
+    "collections_grid_individual_rc4BLr",
     "784f5bd9-5299-43a5-9cb0-0b71daea0b68",
     "e75c739c-1801-4437-953b-56e12f611ac2"
   ]
