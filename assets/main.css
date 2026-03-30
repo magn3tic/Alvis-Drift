@@ -3014,6 +3014,9 @@ body .video-sec {
 	font-size: 32px;
 	padding-bottom:20px
 }
+.article-template__content a {
+	color:#e26552
+}
 
 
 body .pagnite-articles {
