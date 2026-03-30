@@ -8,7 +8,7 @@ Line 7:39436 Unexpected "("
     max-width: 100% !important
 }
 
-.color-accent-1 .button--secondary,.color-accent-1 .button--tertiary,.color-accent-2 .button--secondary,.color-accent-2 .button--tertiary,.color-background-2 .button--secondary,.color-background-2 .button--tertiary,.color-inverse .button--secondary,.color-inverse .button--tertiary {
+.color-accent-1 .button--secondary, .color-accent-1 .button--tertiary, .color-accent-2 .button--secondary, .color-accent-2 .button--tertiary, .color-background-2 .button--secondary, .color-background-2 .button--tertiary, .color-inverse .button--secondary, .color-inverse .button--tertiary {
     --color-button-text: var(--color-foreground);
     --color-button: var(--color-foreground)
 }
