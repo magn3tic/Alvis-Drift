@@ -9,6 +9,7 @@
  */
 {
   "current": {
+    "colors_accent_2": "#2d112d",
     "favicon": "shopify://shop_images/Alvisdrift_icon_d9de1b13-591d-4d82-b2f5-cf94c56a7141.png",
     "sections": {
       "announcement-bar": {
