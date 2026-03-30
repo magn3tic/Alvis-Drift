@@ -2473,7 +2473,7 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
 }
 
 .main_btn {
-    padding-top:20px
+    padding-top:20px;
     animation: reveal 4s ease 1 normal forwards;
     animation-delay: .10s;
 }
