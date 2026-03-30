@@ -3018,6 +3018,9 @@ body .video-sec {
 	color:#e26552
 }
 
+.article-template__content ul{
+	list-style: inherit
+}
 
 body .pagnite-articles {
     margin: 100px auto;
