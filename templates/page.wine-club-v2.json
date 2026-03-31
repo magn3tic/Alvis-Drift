@@ -250,7 +250,7 @@
         "silver_benefit_4wY7YJ": {
           "type": "silver_benefit",
           "settings": {
-            "text": "Invitation to A Virtual Wine Tasting"
+            "text": "Win Tickets to Events & Festivals"
           }
         },
         "gold_benefit_VQK6p7": {
@@ -275,12 +275,6 @@
           "type": "gold_benefit",
           "settings": {
             "text": "Early Access to New Releases"
-          }
-        },
-        "gold_benefit_Xd3qEG": {
-          "type": "gold_benefit",
-          "settings": {
-            "text": "Invitation to A Virtual Wine Tasting"
           }
         },
         "gold_benefit_KW7aqX": {
@@ -395,7 +389,6 @@
         "gold_benefit_Tb4A6G",
         "gold_benefit_dkjbbU",
         "gold_benefit_LGcLgA",
-        "gold_benefit_Xd3qEG",
         "gold_benefit_KW7aqX",
         "gold_benefit_RMT6pE",
         "gold_benefit_YKRaat",
