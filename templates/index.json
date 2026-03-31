@@ -655,6 +655,14 @@
     "page_builder_reviews_PyNHzY": {
       "type": "page-builder-reviews",
       "blocks": {
+        "testimonial_w7K67B": {
+          "type": "testimonial",
+          "settings": {
+            "product_handle": "221-special-cuvee",
+            "review_text": "It is a wine of immense character and elegance that punches well above its weight. It was a true pleasure to drink, and it’s wonderful to see such world-class quality coming from our neighbors in the Breede River Valley.",
+            "author": "Dennis Higgs"
+          }
+        },
         "testimonial_CTTrgK": {
           "type": "testimonial",
           "settings": {
@@ -689,6 +697,7 @@
         }
       },
       "block_order": [
+        "testimonial_w7K67B",
         "testimonial_CTTrgK",
         "testimonial_pCWxda",
         "testimonial_3LgnXN",
