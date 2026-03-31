@@ -51,7 +51,7 @@
           "menu_column_GpTfnn": {
             "type": "menu_column",
             "settings": {
-              "title": "OUR RANGERS",
+              "title": "OUR RANGES",
               "menu": "footer-menu-range"
             }
           },
