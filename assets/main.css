@@ -28,6 +28,9 @@ a {
 	font-size: 16px;
 	transition: 0.3s all;
 }
+.article-template__content a {
+    color: #e26552;
+}
 
 ul,
 li {
