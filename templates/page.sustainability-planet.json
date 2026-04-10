@@ -12,7 +12,9 @@
     "main": {
       "type": "main-page",
       "disabled": true,
-      "settings": {}
+      "settings": {
+        "enable_header": true
+      }
     },
     "1639603079ac59d760": {
       "type": "Page-Background-Colour",
@@ -29,7 +31,7 @@
             "background_image": "shopify://shop_images/Sustainability.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "DARE",
             "paragarh_p2": "TO DO",
@@ -49,17 +51,10 @@
         "background_image": "shopify://shop_images/Vineyards-10.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#f8f2e6",
-        "video_banner": "https://youtu.be/NHaK24QOLow",
-        "paragarh_p1": "ABOUT",
-        "paragarh_p2": "US",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "Learn more about our family, our farm, the Alvi’s Drift vineyards, our cellar, and our wine region.",
-        "paragarh_2": "Nestled in South Africa’s fertile Breede River Valley region, Alvi’s Drift winery boasts a long and storied history. Meet our family and get to know our farm, our vineyards, our cellar, and our award-winning wines.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-products",
-        "btn_main_link": "https://alvisdrift.co.za/"
+        "hide_on_mobile": true,
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
     "focus_text_image_left_8yMENh": {
@@ -73,7 +68,7 @@
         "Heading_color": "#f8f2e6",
         "title": "Planet",
         "video-sec-content-txt-1": "<p>We are also exploring the restoration of traditional waterways to support local wildlife and mitigate localised flooding.</p><p>We've implemented solar power on the farm and are actively exploring the use of biogas digesters for sustainable cooling solutions. To maintain ecological balance, we've introduced the appropriate animals and herd sizes, collaborating with specialized tertiary institutions to manage these efforts effectively. Concurrently, we’re working with other dedicated institutions to identify and protect endangered (red-listed) plants in and around Alvi’s Drift.</p><p>In our vineyards, we've deployed a <a href=\"https://alvisdrift.co.za/blogs/alvis-drift/alvis-drift-leading-ways-in-underground-irrigation \" title=\"https://alvisdrift.co.za/blogs/alvis-drift/alvis-drift-leading-ways-in-underground-irrigation \">revolutionary underground irrigation system</a> on two blocks of vines, with plans to expand this system further to enhance water efficiency and sustainability.</p><p>Our sustainability efforts extend beyond the vineyards. As of 2024, we have begun using lightweight glass for bottling our <a href=\"https://alvisdrift.co.za/collections/signature-range\" title=\"https://alvisdrift.co.za/collections/signature-range\">Signature range wines</a> and plan to expand this practice across our other tiers, significantly reducing the carbon footprint associated with glass production.</p><p>We believe that our commitment to<a href=\"https://alvisdrift.co.za/blogs/alvis-drift/sustainability-at-alvis-drift\" title=\"https://alvisdrift.co.za/blogs/alvis-drift/sustainability-at-alvis-drift\"> true sustainability</a> is embodied in each step we take to protect and preserve our environment for future generations.</p>",
-        "button-txt": "MORE",
+        "button-txt": "ABOUT SUSTAINABILITY",
         "button_link": "https://blog.alvisdrift.co.za/alvis-drift-empowerment-sustainability",
         "button_type": "alvisBtnOpposite"
       }
@@ -84,7 +79,8 @@
         "template--16777506914560__33f3a2d5-5355-46f5-8ab8-dc2f0a55375b-16855156568148a6c6-0": {
           "type": "heading",
           "settings": {
-            "heading": "We’re more than just winemakers."
+            "heading": "We’re more than just winemakers.",
+            "heading_size": true
           }
         },
         "template--16777506914560__33f3a2d5-5355-46f5-8ab8-dc2f0a55375b-16855156568148a6c6-1": {
