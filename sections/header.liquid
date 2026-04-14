@@ -312,7 +312,6 @@
 <script>
 document.addEventListener("DOMContentLoaded", function () {
 
-  // ✅ Force click (works even if element loads later)
   document.addEventListener("click", function (e) {
     const trigger = e.target.closest(".ald-cart-trigger");
     if (!trigger) return;
@@ -326,6 +325,38 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
 });
+</script>
+
+<script>
+function updateCartPriceBubble() {
+
+  fetch("/cart.js")
+    .then(res => res.json())
+    .then(cart => {
+
+      let moneyFormat = (window.theme && theme.moneyFormat) 
+        ? theme.moneyFormat 
+        : "${{amount}}";
+
+      let formatted;
+
+      if (window.Shopify && Shopify.formatMoney) {
+        formatted = Shopify.formatMoney(cart.total_price, moneyFormat);
+      } else {
+        formatted = (cart.total_price / 100).toFixed(2);
+      }
+
+      document.querySelectorAll(".ald-cart-price").forEach(el => {
+        el.textContent = formatted;
+      });
+
+    })
+    .catch(err => console.error("Cart fetch error:", err));
+}
+
+document.addEventListener("DOMContentLoaded", updateCartPriceBubble);
+
+document.addEventListener("ajaxComplete", updateCartPriceBubble);
 </script>
 
 {%- if request.page_type == 'index' -%}
