@@ -141,10 +141,6 @@
               <span aria-hidden="true">{{ cart.item_count }}</span>
               <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
             </div>
-
-            <div class="cart-price-bubble">
-              <span>{{ cart.total_price | money }}</span>
-            </div>            
           </a>
         </div>
 
@@ -236,10 +232,6 @@
               <span aria-hidden="true">{{ cart.item_count }}</span>
               <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
             </div>
-
-            <div class="cart-price-bubble">
-              <span>{{ cart.total_price | money }}</span>
-            </div>            
           </a>
 
           {% if section.settings.cta_text != blank and section.settings.cta_link != blank %}
@@ -289,25 +281,6 @@
     </div>
   </div>
 </header>
-
-<script>
-function updateCartPriceBubble() {
-  fetch("/cart.js")
-    .then((res) => res.json())
-    .then((cart) => {
-      const formatted = Shopify.formatMoney(cart.total_price, theme.moneyFormat);
-      $(".cart-price-bubble span").text(formatted);
-    })
-    .catch((err) => console.error("Cart fetch error:", err));
-}
-
-updateCartPriceBubble();
-
-$(document).on("click", ".add-to-cart-form [type='submit']", function () {
-  setTimeout(updateCartPriceBubble, 800);
-});
-
-</script>
 
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = shop.url | append: routes.search_url | append: '?q={search_term_string}' %}
