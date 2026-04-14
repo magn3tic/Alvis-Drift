@@ -3136,7 +3136,3 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
 .mini-cart-close svg line {
     stroke: #fff !important;
 }
-
-.cart-count-bubble {
-    display: none !important;
-}
