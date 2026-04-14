@@ -141,6 +141,10 @@
               <span aria-hidden="true">{{ cart.item_count }}</span>
               <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
             </div>
+
+            <div class="cart-price-bubble">
+              <span>{{ cart.total_price | money }}</span>
+            </div>            
           </a>
         </div>
 
@@ -232,6 +236,10 @@
               <span aria-hidden="true">{{ cart.item_count }}</span>
               <span class="visually-hidden">{{ 'sections.header.cart_count' | t: count: cart.item_count }}</span>
             </div>
+
+            <div class="cart-price-bubble">
+              <span>{{ cart.total_price | money }}</span>
+            </div>            
           </a>
 
           {% if section.settings.cta_text != blank and section.settings.cta_link != blank %}
