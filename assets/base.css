@@ -3147,3 +3147,7 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
   gap: 6px;
   cursor: pointer;
 }
+
+.ald-cart-icon svg path {
+ fill: #000;
+}
