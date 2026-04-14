@@ -310,23 +310,22 @@
 </header>
 
 <script>
-$(document).on("click", ".ald-cart-trigger", function (e) {
-  e.preventDefault();
-  $(".cart-mini").addClass("open");
+document.addEventListener("DOMContentLoaded", function () {
+
+  // ✅ Force click (works even if element loads later)
+  document.addEventListener("click", function (e) {
+    const trigger = e.target.closest(".ald-cart-trigger");
+    if (!trigger) return;
+
+    e.preventDefault();
+
+    const cart = document.querySelector(".cart-mini");
+    if (cart) {
+      cart.classList.add("open");
+    }
+  });
+
 });
-
-// Update price
-function updateCartPriceBubble() {
-  fetch("/cart.js")
-    .then((res) => res.json())
-    .then((cart) => {
-      const formatted = Shopify.formatMoney(cart.total_price, theme.moneyFormat);
-      $(".ald-cart-price").text(formatted);
-    })
-    .catch((err) => console.error("Cart fetch error:", err));
-}
-
-updateCartPriceBubble();
 </script>
 
 {%- if request.page_type == 'index' -%}
