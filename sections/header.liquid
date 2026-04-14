@@ -282,6 +282,33 @@
   </div>
 </header>
 
+<script>
+function updateCartPriceBubble() {
+  fetch("/cart.js")
+    .then((res) => res.json())
+    .then((cart) => {
+      const formatted = Shopify.formatMoney(cart.total_price, theme.moneyFormat);
+      $(".cart-price-bubble span").text(formatted);
+    })
+    .catch((err) => console.error("Cart fetch error:", err));
+}
+
+updateCartPriceBubble();
+
+$(document).on("submit", "form[action='/cart/add']", function () {
+  setTimeout(updateCartPriceBubble, 800);
+});
+
+$(document).on("click", ".change_item_qty", function () {
+  setTimeout(updateCartPriceBubble, 800);
+});
+
+$(document).on("click", ".remove_item", function () {
+  setTimeout(updateCartPriceBubble, 800);
+});
+
+</script>
+
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = shop.url | append: routes.search_url | append: '?q={search_term_string}' %}
   <script type="application/ld+json">
