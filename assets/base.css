@@ -3142,10 +3142,16 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
 }
 
 .ald-cart-trigger {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.ald-cart-trigger svg {
+    position: relative;
+    top: 3px;
 }
 
 .ald-cart-icon svg path {
