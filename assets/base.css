@@ -3157,3 +3157,7 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
 .ald-cart-icon svg path {
  fill: #000;
 }
+
+.ald-cart-price.d-none {
+    display: none;
+}
