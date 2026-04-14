@@ -127,6 +127,19 @@
             {% endif %}
           {% endif %}
 
+          <div class="ald-cart-trigger">
+            <span class="ald-cart-icon">
+              {%- liquid
+                if cart == empty
+                  render 'icon-cart-empty'
+                else
+                  render 'icon-cart'
+                endif
+              -%}
+            </span>
+            <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+          </div>
+
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
             {%- liquid
               if cart == empty
@@ -218,6 +231,20 @@
             {% else %}
               <a href="https://alvisdrift.co.za/account/login" class="cta-btn-border my-account-btn">LOGIN</a>
             {% endif %}
+
+            <div class="ald-cart-trigger">
+              <span class="ald-cart-icon">
+                {%- liquid
+                  if cart == empty
+                    render 'icon-cart-empty'
+                  else
+                    render 'icon-cart'
+                  endif
+                -%}
+              </span>
+              <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+            </div>
+
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
             {%- liquid
               if cart == empty
