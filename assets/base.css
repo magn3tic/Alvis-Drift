@@ -3161,3 +3161,12 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
 .ald-cart-price.d-none {
     display: none;
 }
+
+@media(max-width: 991px) {
+
+.ald-cart-trigger {
+    position: relative;
+    right: 45px;
+}
+
+}
