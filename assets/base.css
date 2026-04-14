@@ -3132,3 +3132,7 @@ details:not([open])>.header__icon--menu .icon-close,details[open]>.header__icon-
     text-decoration: line-through;
     opacity: .6;
 }
+
+.mini-cart-close svg line {
+    stroke: #fff !important;
+}
