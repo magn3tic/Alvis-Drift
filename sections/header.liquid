@@ -137,7 +137,9 @@
                 endif
               -%}
             </span>
-            <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+            {% if cart.total_price > 0 %}
+              <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+            {% endif %}            
           </div>
 
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
@@ -242,7 +244,9 @@
                   endif
                 -%}
               </span>
-              <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+              {% if cart.total_price > 0 %}
+                <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+              {% endif %}  
             </div>
 
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
@@ -328,17 +332,11 @@ document.addEventListener("DOMContentLoaded", function () {
 </script>
 
 <script>
-/* =========================
-   FORMAT: R15 638
-========================= */
 function formatZAR(cents) {
   const amount = Math.round(cents / 100);
   return "R" + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
 }
 
-/* =========================
-   UPDATE CART TOTAL
-========================= */
 function updateCartPriceBubble() {
   fetch("/cart.js")
     .then(res => res.json())
@@ -352,9 +350,6 @@ function updateCartPriceBubble() {
     .catch(err => console.error("Cart fetch error:", err));
 }
 
-/* =========================
-   OPEN MINI CART
-========================= */
 document.addEventListener("click", function (e) {
   const trigger = e.target.closest(".ald-cart-trigger");
   if (!trigger) return;
@@ -367,17 +362,10 @@ document.addEventListener("click", function (e) {
   }
 });
 
-/* =========================
-   INIT
-========================= */
 document.addEventListener("DOMContentLoaded", function () {
 
-  // Initial load
   updateCartPriceBubble();
 
-  /* =========================
-     MUTATION OBSERVER (AUTO UPDATE)
-  ========================= */
   const observer = new MutationObserver(function (mutations) {
 
     let shouldUpdate = false;
@@ -404,9 +392,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
-/* =========================
-   FORCE UPDATE AFTER ADD TO CART
-========================= */
 document.addEventListener("submit", function(e){
   if(e.target.matches('form[action="/cart/add"]')){
     setTimeout(updateCartPriceBubble, 500);
