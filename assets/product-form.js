@@ -37,8 +37,6 @@ customElements.get("product-form") ||
             $("#mini-cart_popup").load(location.href + " #mini-cart_popup_load");
             $(".cart-mini").addClass("open");
             this.cartNotification.renderContents(t);
-
-            // ✅ Re-inject price bubble after renderContents wipes the header
             setTimeout(updateCartPriceBubble, 300);
           })
           .catch((t) => {
@@ -64,12 +62,17 @@ customElements.get("product-form") ||
     }
   );
 
+// ✅ Prevent cart icon from ever navigating to /cart after re-render
+$(document).on("click", ".mini-cart-btn", function (t) {
+  t.preventDefault();
+  $(".cart-mini").addClass("open");
+});
+
 function updateCartPriceBubble() {
   fetch("/cart.js")
     .then((res) => res.json())
     .then((cart) => {
       const formatted = Shopify.formatMoney(cart.total_price, theme.moneyFormat);
-      // ✅ If bubble was wiped, re-inject it before updating
       if ($(".cart-price-bubble").length === 0) {
         $("#cart-icon-bubble").append('<div class="cart-price-bubble"><span></span></div>');
       }
@@ -117,4 +120,5 @@ $(document).on("click", ".change_item_qty", function (t) {
   t.preventDefault();
   var e = $(this).data("index");
   var r = $(this).data("pid");
-  updateQty($("#Min
+  updateQty($("#MiniQuantity-" + e).val(), r);
+});
