@@ -137,7 +137,7 @@
                 endif
               -%}
             </span>
-            <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+            <span class="ald-cart-price d-none">{{ cart.total_price | money }}</span>
           </div>
 
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
@@ -242,7 +242,7 @@
                   endif
                 -%}
               </span>
-              <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+              <span class="ald-cart-price d-none">{{ cart.total_price | money }}</span>
             </div>
 
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
