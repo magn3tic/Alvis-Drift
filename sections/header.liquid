@@ -137,9 +137,7 @@
                 endif
               -%}
             </span>
-            {% if cart.total_price > 0 %}
               <span class="ald-cart-price">{{ cart.total_price | money }}</span>
-            {% endif %}            
           </div>
 
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
@@ -244,9 +242,7 @@
                   endif
                 -%}
               </span>
-              {% if cart.total_price > 0 %}
                 <span class="ald-cart-price">{{ cart.total_price | money }}</span>
-              {% endif %}  
             </div>
 
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
