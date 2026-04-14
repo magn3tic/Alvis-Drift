@@ -137,7 +137,7 @@
                 endif
               -%}
             </span>
-              <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+            <span class="ald-cart-price">{{ cart.total_price | money }}</span>
           </div>
 
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
@@ -242,7 +242,7 @@
                   endif
                 -%}
               </span>
-                <span class="ald-cart-price">{{ cart.total_price | money }}</span>
+              <span class="ald-cart-price">{{ cart.total_price | money }}</span>
             </div>
 
           <a href="#" class="header__icon header__icon--cart link focus-inset mini-cart-btn" id="cart-icon-bubble">
@@ -337,18 +337,11 @@ function updateCartPriceBubble() {
   fetch("/cart.js")
     .then(res => res.json())
     .then(cart => {
+      const formatted = formatZAR(cart.total_price);
 
       document.querySelectorAll(".ald-cart-price").forEach(el => {
-
-        if (cart.total_price > 0) {
-          el.textContent = formatZAR(cart.total_price);
-          el.style.display = "inline-block"; 
-        } else {
-          el.style.display = "none"; 
-        }
-
+        el.textContent = formatted;
       });
-
     })
     .catch(err => console.error("Cart fetch error:", err));
 }
