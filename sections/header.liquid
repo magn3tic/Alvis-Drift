@@ -337,15 +337,25 @@ function updateCartPriceBubble() {
   fetch("/cart.js")
     .then(res => res.json())
     .then(cart => {
-      const formatted = formatZAR(cart.total_price);
 
       document.querySelectorAll(".ald-cart-price").forEach(el => {
-        el.textContent = formatted;
+
+        if (cart.total_price > 0) {
+          el.classList.remove("d-none"); // ✅ show
+          el.textContent = formatZAR(cart.total_price);
+        } else {
+          el.classList.add("d-none"); // ✅ hide
+        }
+
       });
+
     })
     .catch(err => console.error("Cart fetch error:", err));
 }
 
+/* =========================
+   OPEN MINI CART
+========================= */
 document.addEventListener("click", function (e) {
   const trigger = e.target.closest(".ald-cart-trigger");
   if (!trigger) return;
@@ -358,27 +368,19 @@ document.addEventListener("click", function (e) {
   }
 });
 
+/* =========================
+   INIT + OBSERVER
+========================= */
 document.addEventListener("DOMContentLoaded", function () {
 
+  // Initial run
   updateCartPriceBubble();
 
-  const observer = new MutationObserver(function (mutations) {
+  const observer = new MutationObserver(function () {
 
-    let shouldUpdate = false;
+    clearTimeout(window.cartUpdateTimer);
+    window.cartUpdateTimer = setTimeout(updateCartPriceBubble, 300);
 
-    mutations.forEach(mutation => {
-      if (
-        mutation.addedNodes.length ||
-        mutation.removedNodes.length
-      ) {
-        shouldUpdate = true;
-      }
-    });
-
-    if (shouldUpdate) {
-      clearTimeout(window.cartUpdateTimer);
-      window.cartUpdateTimer = setTimeout(updateCartPriceBubble, 300);
-    }
   });
 
   observer.observe(document.body, {
@@ -388,6 +390,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
+/* =========================
+   AFTER ADD TO CART
+========================= */
 document.addEventListener("submit", function(e){
   if(e.target.matches('form[action="/cart/add"]')){
     setTimeout(updateCartPriceBubble, 500);
