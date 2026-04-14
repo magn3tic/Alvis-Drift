@@ -341,11 +341,18 @@ function updateCartPriceBubble() {
   fetch("/cart.js")
     .then(res => res.json())
     .then(cart => {
-      const formatted = formatZAR(cart.total_price);
 
       document.querySelectorAll(".ald-cart-price").forEach(el => {
-        el.textContent = formatted;
+
+        if (cart.total_price > 0) {
+          el.textContent = formatZAR(cart.total_price);
+          el.style.display = "inline-block"; 
+        } else {
+          el.style.display = "none"; 
+        }
+
       });
+
     })
     .catch(err => console.error("Cart fetch error:", err));
 }
