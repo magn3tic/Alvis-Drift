@@ -309,6 +309,26 @@
   </div>
 </header>
 
+<script>
+$(document).on("click", ".ald-cart-trigger", function (e) {
+  e.preventDefault();
+  $(".cart-mini").addClass("open");
+});
+
+// Update price
+function updateCartPriceBubble() {
+  fetch("/cart.js")
+    .then((res) => res.json())
+    .then((cart) => {
+      const formatted = Shopify.formatMoney(cart.total_price, theme.moneyFormat);
+      $(".ald-cart-price").text(formatted);
+    })
+    .catch((err) => console.error("Cart fetch error:", err));
+}
+
+updateCartPriceBubble();
+</script>
+
 {%- if request.page_type == 'index' -%}
   {% assign potential_action_target = shop.url | append: routes.search_url | append: '?q={search_term_string}' %}
   <script type="application/ld+json">
