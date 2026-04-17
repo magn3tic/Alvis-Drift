@@ -74,7 +74,7 @@
             "object_pos_x": "center",
             "object_pos_y": "center",
             "heading": "Sale live now",
-            "subtext": "UNTIL 17 APRIL",
+            "subtext": "UNTIL 20 APRIL",
             "button_text": "View Sale",
             "button_link": ""
           }
@@ -313,7 +313,7 @@
         "banner_HYabhr": {
           "type": "banner",
           "settings": {
-            "top_text": "NOW UNTIL 17 APRIL",
+            "top_text": "NOW UNTIL 20 APRIL",
             "heading": "Harvest Sale",
             "image": "shopify://shop_images/Alvis_Drift_Harvest_Sales_Banner.png",
             "hover_title": "Harvest Sale",
