@@ -152,11 +152,12 @@
         "eyebrow": "The Grand Prize",
         "heading": "Greatest Rivalry Watch Party with Percy.",
         "body": "The All Blacks series. Percy Tau. The ultimate 221 experience for the ultimate fan. One grand prize winner joins Percy for a Watch Party in New Zealand — full details announced late June.",
-        "entry_callout": "Every weekly submission is an automatic entry into the grand prize draw. <strong>The more you share, the better your chances.</strong>",
-        "show_countdown": false,
+        "entry_callout": "Every weekly submission is an automatic entry into the grand prize draw. The more you share, the better your chances.",
+        "show_countdown": true,
         "countdown_date": "2026-08-07T18:00:00+02:00",
         "cta_text": "Submit Your Moment to Enter",
-        "cta_link": ""
+        "cta_link": "",
+        "image": "shopify://shop_images/Alvis_Drift_Icon_White_Gift_Box_3dc69bf9-f3d9-4ef8-b7bd-038258a12535.png"
       }
     },
     "playbook_winners": {
@@ -183,6 +184,7 @@
         "card_1": {
           "type": "article_card",
           "settings": {
+            "image": "shopify://shop_images/Alvis_Drift_Reserve_Viognier_8670b2cf-0cbb-49d7-9e02-4ce87e9bfebe.png",
             "category": "Rugby Stories",
             "title": "The Try That Changed Everything",
             "excerpt": "In 1928, a young flanker stepped onto Ellis Park and wrote himself into rugby history — and the story of a family's wine.",
@@ -192,6 +194,7 @@
         "card_2": {
           "type": "article_card",
           "settings": {
+            "image": "shopify://shop_images/Alvis_Drift_Maturation_Cellar.jpg",
             "category": "Armchair Coach",
             "title": "Armchair Coach: The SA vs All Blacks Breakdown",
             "excerpt": "You had the remote, the braai, and an opinion. Now put it to the test — what would you have done differently?",
@@ -201,6 +204,7 @@
         "card_3": {
           "type": "article_card",
           "settings": {
+            "image": "shopify://shop_images/South_African_wine_harvest_2026.jpg",
             "category": "Percy's Take",
             "title": "Percy's Take: Why This Series Means Everything",
             "excerpt": "Percy Tau shares why the 221 Game and the upcoming All Blacks series are deeply personal.",
@@ -233,6 +237,7 @@
         "wine_1": {
           "type": "wine_card",
           "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Chenin-Blanc.png",
             "occasion": "The Pre-Match Build-Up",
             "varietal": "221 Chenin Blanc",
             "tasting_note": "Crisp and refreshing with stone fruit and citrus. Light enough for the tension of a pre-match. Ready when you are.",
@@ -243,6 +248,7 @@
         "wine_2": {
           "type": "wine_card",
           "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Sauvignon-Blanc.png",
             "occasion": "The Opening Whistle",
             "varietal": "221 Sauvignon Blanc",
             "tasting_note": "Zesty tropical notes with a clean finish. For the moment the referee raises the whistle and the crowd holds its breath.",
@@ -253,6 +259,7 @@
         "wine_3": {
           "type": "wine_card",
           "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Pinotage.png",
             "occasion": "The Post-Match Braai",
             "varietal": "221 Pinotage",
             "tasting_note": "Rich, smoky and full-bodied. Made for the fire, the meat, and the retelling of a classic try.",
@@ -263,6 +270,7 @@
         "wine_4": {
           "type": "wine_card",
           "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Special-Cuvee.png",
             "occasion": "The Big Occasion",
             "varietal": "221 Special Cuvée Red",
             "tasting_note": "Deep and complex — a blend worthy of the most contested rivalry in world rugby. Open when the stakes are highest.",
