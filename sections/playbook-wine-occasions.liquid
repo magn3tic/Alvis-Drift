@@ -56,21 +56,27 @@
   }
   .playbook-wine__card:hover { transform: translateY(-4px); }
   .playbook-wine__card-image {
-    aspect-ratio: 2/3;
     position: relative;
-    background: {{ section.settings.heading_color }};
+    width: 100%;
+    aspect-ratio: 3/4;
+    overflow: hidden;
+    background: #ffffff;
+    flex-shrink: 0;
   }
   .playbook-wine__card-image img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: contain;
-    display: block;
-    padding: 20px;
+    object-position: center bottom;
+    padding: 20px 16px 0;
     box-sizing: border-box;
+    display: block;
   }
   .playbook-wine__card-image-placeholder {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    inset: 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,11 +174,12 @@
     background: {{ section.settings.heading_color }};
     color: {{ section.settings.background_color }} !important;
   }
-  @media (max-width: 999px) {
-    .playbook-wine__grid { grid-template-columns: 1fr 1fr; }
+  @media (max-width: 1099px) {
+    .playbook-wine__grid { grid-template-columns: 1fr 1fr; gap: 16px; }
   }
-  @media (max-width: 599px) {
-    .playbook-wine__grid { grid-template-columns: 1fr; }
+  @media (max-width: 499px) {
+    .playbook-wine__grid { grid-template-columns: 1fr 1fr; gap: 12px; }
+    .playbook-wine__card-image img { padding: 12px 10px 0; }
   }
 </style>
 
