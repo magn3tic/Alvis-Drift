@@ -126,17 +126,13 @@
   <div class="playbook-sticky-nav__inner">
 
     <div class="playbook-sticky-nav__logo">
-      {%- if section.settings.logo != blank -%}
-        <a href="{{ routes.root_url }}">
-          <img
-            src="{{ section.settings.logo | img_url: '300x' }}"
-            alt="{{ shop.name }}"
-            loading="eager"
-          >
-        </a>
-      {%- else -%}
-        <a href="{{ routes.root_url }}" class="playbook-sticky-nav__logo-placeholder">{{ shop.name }}</a>
-      {%- endif -%}
+      <a href="{{ routes.root_url }}">
+        <img
+          src="{{ 'Navbar_logo.svg' | asset_url }}"
+          alt="{{ shop.name }}"
+          loading="eager"
+        >
+      </a>
     </div>
 
     <ul class="playbook-sticky-nav__links">
@@ -173,25 +169,6 @@
 {
   "name": "Playbook — Sticky Nav",
   "settings": [
-    {
-      "type": "header",
-      "content": "Logo"
-    },
-    {
-      "type": "image_picker",
-      "id": "logo",
-      "label": "Logo Image"
-    },
-    {
-      "type": "range",
-      "id": "logo_height",
-      "label": "Logo Height",
-      "min": 20,
-      "max": 50,
-      "step": 2,
-      "default": 32,
-      "unit": "px"
-    },
     {
       "type": "header",
       "content": "Colours"
