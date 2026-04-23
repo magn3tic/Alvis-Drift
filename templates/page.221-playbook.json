@@ -12,8 +12,8 @@
     "playbook_sticky_nav": {
       "type": "playbook-sticky-nav",
       "settings": {
-        "nav_background": "#2e112d",
-        "link_color": "#f8f2e6",
+        "nav_background": "#f8f2e6",
+        "link_color": "#121212",
         "link1_label": "The Story",
         "link2_label": "The Game",
         "link3_label": "The Grand Prize",
