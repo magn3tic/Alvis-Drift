@@ -1,0 +1,461 @@
+<style>
+  .playbook-conversations {
+    background: {{ section.settings.background_color }};
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+  .playbook-conversations__inner {
+    max-width: 1294px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .playbook-conversations__header {
+    margin-bottom: 40px;
+  }
+  .playbook-conversations__eyebrow {
+    font-family: Metropolis, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c65336;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .playbook-conversations__heading {
+    font-family: Moriarty, Metropolis, sans-serif;
+    font-size: clamp(32px, 4vw, 56px);
+    color: {{ section.settings.heading_color }};
+    line-height: 1.05;
+    margin: 0 0 28px;
+    font-weight: 400;
+  }
+  /* Filter tabs */
+  .playbook-conversations__filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+  }
+  .playbook-conversations__filter {
+    font-family: Metropolis, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    padding: 8px 18px;
+    border-radius: 20px;
+    border: 1px solid {{ section.settings.heading_color }};
+    background: transparent;
+    color: {{ section.settings.heading_color }};
+    cursor: pointer;
+    transition: all 0.2s;
+    opacity: 0.5;
+  }
+  .playbook-conversations__filter.is-active,
+  .playbook-conversations__filter:hover {
+    background: {{ section.settings.heading_color }};
+    color: {{ section.settings.background_color }};
+    opacity: 1;
+  }
+  /* Cards grid */
+  .playbook-conversations__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+    margin-bottom: 48px;
+  }
+  .playbook-conversations__card {
+    background: {{ section.settings.card_bg }};
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s;
+  }
+  .playbook-conversations__card:hover { transform: translateY(-3px); }
+  .playbook-conversations__card[data-hidden="true"] { display: none; }
+  .playbook-conversations__card-image {
+    aspect-ratio: 16/9;
+    overflow: hidden;
+    position: relative;
+    background: {{ section.settings.heading_color }};
+    opacity: 0.9;
+  }
+  .playbook-conversations__card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+  }
+  .playbook-conversations__card:hover .playbook-conversations__card-image img {
+    transform: scale(1.03);
+  }
+  .playbook-conversations__card-image-placeholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #2e112d, #480135);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .playbook-conversations__card-image-placeholder span {
+    font-family: Metropolis, sans-serif;
+    font-size: 11px;
+    color: rgba(248,242,230,0.3);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  .playbook-conversations__card-body {
+    padding: 22px 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+  .playbook-conversations__card-tag {
+    font-family: Metropolis, sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #c65336;
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+  }
+  .playbook-conversations__card-title {
+    font-family: Metropolis, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: {{ section.settings.heading_color }};
+    margin: 0 0 10px;
+    line-height: 1.3;
+  }
+  .playbook-conversations__card-excerpt {
+    font-family: Metropolis, sans-serif;
+    font-size: 14px;
+    color: {{ section.settings.text_color }};
+    line-height: 1.65;
+    margin: 0 0 18px;
+    flex: 1;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  .playbook-conversations__card-link {
+    font-family: Metropolis, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #c65336;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+    align-self: flex-start;
+  }
+  .playbook-conversations__card-link:hover { border-color: #c65336; }
+  /* Load more */
+  .playbook-conversations__load-more-wrap {
+    text-align: center;
+  }
+  .playbook-conversations__load-more {
+    background: transparent;
+    color: {{ section.settings.heading_color }};
+    padding: 14px 36px;
+    border-radius: 25px;
+    border: 1px solid {{ section.settings.heading_color }};
+    font-family: Metropolis, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    cursor: pointer;
+    transition: all 0.2s;
+    display: none;
+  }
+  .playbook-conversations__load-more.is-visible { display: inline-block; }
+  .playbook-conversations__load-more:hover {
+    background: {{ section.settings.heading_color }};
+    color: {{ section.settings.background_color }};
+  }
+
+  @media (max-width: 899px) {
+    .playbook-conversations__grid { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 599px) {
+    .playbook-conversations__grid { grid-template-columns: 1fr; }
+  }
+</style>
+
+<section id="playbook-conversations" class="playbook-conversations">
+  <div class="playbook-conversations__inner">
+    <div class="playbook-conversations__header">
+      {%- if section.settings.eyebrow != blank -%}
+        <span class="playbook-conversations__eyebrow">{{ section.settings.eyebrow }}</span>
+      {%- endif -%}
+      <h2 class="playbook-conversations__heading">{{ section.settings.heading }}</h2>
+    </div>
+
+    {%- assign categories = "All,Rugby Stories,Armchair Coach,Percy's Take,Fan Moments" | split: "," -%}
+    <div class="playbook-conversations__filters">
+      {%- for cat in categories -%}
+        <button
+          class="playbook-conversations__filter{% if forloop.first %} is-active{% endif %}"
+          data-filter="{{ cat | downcase | replace: "'", "" | replace: " ", "-" }}"
+          onclick="pbFilterConversations(this)"
+        >{{ cat }}</button>
+      {%- endfor -%}
+    </div>
+
+    <div class="playbook-conversations__grid" id="pb-conversations-grid">
+      {%- for block in section.blocks -%}
+        {%- if block.type == 'article_card' -%}
+          {%- assign card_cat = block.settings.category | downcase | replace: "'", "" | replace: " ", "-" -%}
+          <div
+            class="playbook-conversations__card"
+            data-category="{{ card_cat }}"
+            {{ block.shopify_attributes }}
+          >
+            <div class="playbook-conversations__card-image">
+              {%- if block.settings.image != blank -%}
+                <img
+                  src="{{ block.settings.image | img_url: '800x' }}"
+                  alt="{{ block.settings.title }}"
+                  loading="lazy"
+                  width="800"
+                >
+              {%- else -%}
+                <div class="playbook-conversations__card-image-placeholder">
+                  <span>Article image</span>
+                </div>
+              {%- endif -%}
+            </div>
+            <div class="playbook-conversations__card-body">
+              {%- if block.settings.category != blank -%}
+                <span class="playbook-conversations__card-tag">{{ block.settings.category }}</span>
+              {%- endif -%}
+              <h3 class="playbook-conversations__card-title">{{ block.settings.title }}</h3>
+              {%- if block.settings.excerpt != blank -%}
+                <p class="playbook-conversations__card-excerpt">{{ block.settings.excerpt }}</p>
+              {%- endif -%}
+              {%- if block.settings.link != blank -%}
+                <a href="{{ block.settings.link }}" class="playbook-conversations__card-link">
+                  {{ section.settings.read_more_label | default: 'Read More' }}
+                </a>
+              {%- endif -%}
+            </div>
+          </div>
+        {%- endif -%}
+      {%- endfor -%}
+    </div>
+
+    <div class="playbook-conversations__load-more-wrap">
+      <button class="playbook-conversations__load-more" id="pb-load-more" onclick="pbLoadMore()">
+        {{ section.settings.load_more_label | default: 'Load More' }}
+      </button>
+    </div>
+  </div>
+</section>
+
+<script>
+  (function() {
+    var INITIAL = {{ section.settings.initial_count | default: 6 }};
+    var cards = Array.from(document.querySelectorAll('#pb-conversations-grid .playbook-conversations__card'));
+    var loadMoreBtn = document.getElementById('pb-load-more');
+    var shown = 0;
+
+    function showCards(filter) {
+      filter = filter || 'all';
+      shown = 0;
+      cards.forEach(function(card) {
+        var cat = card.getAttribute('data-category');
+        var match = (filter === 'all' || cat === filter);
+        card.style.display = 'none';
+        card.setAttribute('data-visible', match ? 'true' : 'false');
+      });
+      var visible = cards.filter(function(c) { return c.getAttribute('data-visible') === 'true'; });
+      visible.slice(0, INITIAL).forEach(function(c) { c.style.display = ''; shown = shown + 1; });
+      if (loadMoreBtn) {
+        loadMoreBtn.classList.toggle('is-visible', visible.length > INITIAL);
+      }
+    }
+
+    window.pbFilterConversations = function(btn) {
+      document.querySelectorAll('.playbook-conversations__filter').forEach(function(b) { b.classList.remove('is-active'); });
+      btn.classList.add('is-active');
+      showCards(btn.getAttribute('data-filter'));
+    };
+
+    window.pbLoadMore = function() {
+      var visible = cards.filter(function(c) { return c.getAttribute('data-visible') === 'true' && c.style.display === 'none'; });
+      visible.slice(0, INITIAL).forEach(function(c) { c.style.display = ''; });
+      var remaining = cards.filter(function(c) { return c.getAttribute('data-visible') === 'true' && c.style.display === 'none'; });
+      if (loadMoreBtn && remaining.length === 0) { loadMoreBtn.classList.remove('is-visible'); }
+    };
+
+    showCards('all');
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Playbook — Conversations",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "default": 80,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "default": 80,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Colours"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#2e112d"
+    },
+    {
+      "type": "color",
+      "id": "card_bg",
+      "label": "Card Background",
+      "default": "#480135"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading & UI Colour",
+      "default": "#f8f2e6"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Body Text",
+      "default": "#f8f2e6"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Editorial"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "The Playbook."
+    },
+    {
+      "type": "text",
+      "id": "read_more_label",
+      "label": "Read More Label",
+      "default": "Read More"
+    },
+    {
+      "type": "text",
+      "id": "load_more_label",
+      "label": "Load More Button Label",
+      "default": "Load More"
+    },
+    {
+      "type": "range",
+      "id": "initial_count",
+      "label": "Cards Shown Initially",
+      "min": 3,
+      "max": 12,
+      "step": 3,
+      "default": 6
+    }
+  ],
+  "blocks": [
+    {
+      "type": "article_card",
+      "name": "Article Card",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Featured Image"
+        },
+        {
+          "type": "select",
+          "id": "category",
+          "label": "Category",
+          "options": [
+            { "value": "Rugby Stories", "label": "Rugby Stories" },
+            { "value": "Armchair Coach", "label": "Armchair Coach" },
+            { "value": "Percy's Take", "label": "Percy's Take" },
+            { "value": "Fan Moments", "label": "Fan Moments" }
+          ],
+          "default": "Rugby Stories"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Article Title",
+          "default": "The Try That Changed Everything"
+        },
+        {
+          "type": "textarea",
+          "id": "excerpt",
+          "label": "Short Excerpt",
+          "default": "In 1928, a young flanker stepped onto Ellis Park and wrote himself into rugby history — and the story of a family's wine."
+        },
+        {
+          "type": "url",
+          "id": "link",
+          "label": "Article Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Playbook — Conversations",
+      "blocks": [
+        {
+          "type": "article_card",
+          "settings": {
+            "category": "Rugby Stories",
+            "title": "The Try That Changed Everything",
+            "excerpt": "In 1928, a young flanker stepped onto Ellis Park and wrote himself into rugby history — and the story of a family's wine."
+          }
+        },
+        {
+          "type": "article_card",
+          "settings": {
+            "category": "Armchair Coach",
+            "title": "Armchair Coach: The SA vs All Blacks Breakdown",
+            "excerpt": "You had the remote, the braai, and an opinion. Now put it to the test — what would you have done differently?"
+          }
+        },
+        {
+          "type": "article_card",
+          "settings": {
+            "category": "Percy's Take",
+            "title": "Percy's Take: Why This Series Means Everything",
+            "excerpt": "Percy Tau shares why the 221 Game and the upcoming All Blacks series are personal."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

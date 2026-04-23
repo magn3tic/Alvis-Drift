@@ -1,0 +1,289 @@
+<style>
+  .playbook-hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: #2e112d;
+  }
+  .playbook-hero__bg {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+  }
+  .playbook-hero__bg img,
+  .playbook-hero__bg video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  .playbook-hero__overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    background: {{ section.settings.overlay_color }};
+    opacity: {{ section.settings.overlay_opacity | divided_by: 100.0 }};
+  }
+  .playbook-hero__content {
+    position: relative;
+    z-index: 2;
+    text-align: {{ section.settings.text_align }};
+    padding: 80px 20px 60px;
+    max-width: 920px;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .playbook-hero__hashtag {
+    font-family: Metropolis, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c65336;
+    margin-bottom: 20px;
+    display: block;
+  }
+  .playbook-hero__heading {
+    font-family: Moriarty, Metropolis, sans-serif;
+    font-size: clamp(44px, 8vw, 96px);
+    color: {{ section.settings.heading_color }};
+    line-height: 1.0;
+    margin: 0 0 24px;
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    font-weight: 400;
+  }
+  .playbook-hero__intro {
+    font-family: Metropolis, sans-serif;
+    font-size: clamp(15px, 1.8vw, 20px);
+    color: {{ section.settings.heading_color }};
+    line-height: 1.65;
+    margin: 0 auto 44px;
+    opacity: 0.88;
+    max-width: 620px;
+  }
+  .playbook-hero__content--left .playbook-hero__intro { margin-left: 0; margin-right: auto; }
+  .playbook-hero__ctas {
+    display: flex;
+    gap: 14px;
+    justify-content: {{ section.settings.text_align }};
+    flex-wrap: wrap;
+  }
+  .playbook-hero__cta-primary {
+    background: #c65336;
+    color: #fff !important;
+    padding: 16px 38px;
+    border-radius: 25px;
+    font-family: Metropolis, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .playbook-hero__cta-primary:hover { opacity: 0.85; }
+  .playbook-hero__cta-secondary {
+    background: transparent;
+    color: {{ section.settings.heading_color }} !important;
+    padding: 15px 37px;
+    border-radius: 25px;
+    border: 1px solid {{ section.settings.heading_color }};
+    font-family: Metropolis, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    transition: all 0.2s;
+    display: inline-block;
+    white-space: nowrap;
+  }
+  .playbook-hero__cta-secondary:hover { background: rgba(248,242,230,0.12); }
+  @media (max-width: 749px) {
+    .playbook-hero { min-height: 100svh; }
+    .playbook-hero__content { padding: 60px 20px 50px; text-align: center; }
+    .playbook-hero__ctas { justify-content: center; flex-direction: column; align-items: center; }
+    .playbook-hero__intro { margin-left: auto; margin-right: auto; }
+  }
+</style>
+
+<section id="playbook-hero" class="playbook-hero">
+  <div class="playbook-hero__bg">
+    {%- if section.settings.video_url != blank -%}
+      <video
+        autoplay muted loop playsinline
+        {% if section.settings.background_image != blank %}
+          poster="{{ section.settings.background_image | img_url: 'master' }}"
+        {% endif %}
+      >
+        <source src="{{ section.settings.video_url }}" type="video/mp4">
+      </video>
+      {%- if section.settings.background_image != blank -%}
+        <noscript>
+          <img src="{{ section.settings.background_image | img_url: 'master' }}" alt="{{ section.settings.heading }}">
+        </noscript>
+      {%- endif -%}
+    {%- elsif section.settings.background_image != blank -%}
+      <picture>
+        {%- if section.settings.mobile_image != blank -%}
+          <source media="(max-width: 749px)" srcset="{{ section.settings.mobile_image | img_url: '750x' }}">
+        {%- endif -%}
+        <img
+          src="{{ section.settings.background_image | img_url: 'master' }}"
+          alt="{{ section.settings.heading }}"
+          loading="eager"
+          fetchpriority="high"
+        >
+      </picture>
+    {%- else -%}
+      <div style="width:100%;height:100%;background:linear-gradient(135deg,#2e112d 0%,#480135 60%,#1a0a1a 100%);"></div>
+    {%- endif -%}
+  </div>
+
+  <div class="playbook-hero__overlay"></div>
+
+  <div class="playbook-hero__content playbook-hero__content--{{ section.settings.text_align }}">
+    {%- if section.settings.hashtag != blank -%}
+      <span class="playbook-hero__hashtag">{{ section.settings.hashtag }}</span>
+    {%- endif -%}
+
+    <h1 class="playbook-hero__heading">{{ section.settings.heading }}</h1>
+
+    {%- if section.settings.intro != blank -%}
+      <p class="playbook-hero__intro">{{ section.settings.intro }}</p>
+    {%- endif -%}
+
+    <div class="playbook-hero__ctas">
+      {%- if section.settings.cta1_text != blank -%}
+        <a href="{{ section.settings.cta1_link | default: '#playbook-form' }}" class="playbook-hero__cta-primary">
+          {{ section.settings.cta1_text }}
+        </a>
+      {%- endif -%}
+      {%- if section.settings.cta2_text != blank -%}
+        <a href="{{ section.settings.cta2_link | default: '#playbook-mechanics' }}" class="playbook-hero__cta-secondary">
+          {{ section.settings.cta2_text }}
+        </a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Playbook — Hero",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Background"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image (desktop / video fallback)"
+    },
+    {
+      "type": "image_picker",
+      "id": "mobile_image",
+      "label": "Background Image (mobile)"
+    },
+    {
+      "type": "text",
+      "id": "video_url",
+      "label": "Background Video URL (.mp4)",
+      "info": "Autoplay muted video. Overrides image when set."
+    },
+    {
+      "type": "color",
+      "id": "overlay_color",
+      "label": "Overlay Colour",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "overlay_opacity",
+      "label": "Overlay Opacity",
+      "min": 0,
+      "max": 90,
+      "step": 5,
+      "default": 50,
+      "unit": "%"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "select",
+      "id": "text_align",
+      "label": "Text Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "right", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading & Text Colour",
+      "default": "#f8f2e6"
+    },
+    {
+      "type": "text",
+      "id": "hashtag",
+      "label": "Campaign Hashtag",
+      "default": "#The221Game"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Headline (H1)",
+      "default": "The 221 Game is On."
+    },
+    {
+      "type": "textarea",
+      "id": "intro",
+      "label": "Intro Line",
+      "default": "Share your greatest rugby moment. Win a box of 221. Play The Game."
+    },
+    {
+      "type": "header",
+      "content": "Primary CTA"
+    },
+    {
+      "type": "text",
+      "id": "cta1_text",
+      "label": "Button Text",
+      "default": "Submit Your 221 Moment"
+    },
+    {
+      "type": "url",
+      "id": "cta1_link",
+      "label": "Button Link"
+    },
+    {
+      "type": "header",
+      "content": "Secondary CTA"
+    },
+    {
+      "type": "text",
+      "id": "cta2_text",
+      "label": "Button Text",
+      "default": "How It Works"
+    },
+    {
+      "type": "url",
+      "id": "cta2_link",
+      "label": "Button Link"
+    }
+  ],
+  "presets": [
+    { "name": "Playbook — Hero" }
+  ]
+}
+{% endschema %}

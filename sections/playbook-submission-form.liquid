@@ -1,0 +1,418 @@
+<style>
+  .playbook-form {
+    background: {{ section.settings.background_color }};
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+  .playbook-form__inner {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .playbook-form__header {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .playbook-form__eyebrow {
+    font-family: Metropolis, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c65336;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .playbook-form__heading {
+    font-family: Moriarty, Metropolis, sans-serif;
+    font-size: clamp(30px, 4vw, 50px);
+    color: {{ section.settings.heading_color }};
+    line-height: 1.05;
+    margin: 0 0 16px;
+    font-weight: 400;
+  }
+  .playbook-form__prompt {
+    font-family: Metropolis, sans-serif;
+    font-size: 16px;
+    color: {{ section.settings.text_color }};
+    line-height: 1.65;
+    margin: 0;
+    opacity: 0.8;
+  }
+  .playbook-form__form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .playbook-form__row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+  .playbook-form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .playbook-form__field label {
+    font-family: Metropolis, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: {{ section.settings.heading_color }};
+    font-weight: 600;
+  }
+  .playbook-form__field input[type="text"],
+  .playbook-form__field input[type="email"],
+  .playbook-form__field textarea {
+    background: {{ section.settings.input_bg }};
+    border: 1px solid {{ section.settings.input_border }};
+    border-radius: 4px;
+    padding: 14px 16px;
+    font-family: Metropolis, sans-serif;
+    font-size: 15px;
+    color: {{ section.settings.heading_color }};
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+    appearance: none;
+  }
+  .playbook-form__field input::placeholder,
+  .playbook-form__field textarea::placeholder {
+    color: {{ section.settings.heading_color }};
+    opacity: 0.35;
+  }
+  .playbook-form__field input:focus,
+  .playbook-form__field textarea:focus {
+    outline: none;
+    border-color: #c65336;
+  }
+  .playbook-form__field textarea {
+    resize: vertical;
+    min-height: 120px;
+  }
+  .playbook-form__char-count {
+    font-family: Metropolis, sans-serif;
+    font-size: 11px;
+    color: {{ section.settings.text_color }};
+    opacity: 0.5;
+    text-align: right;
+    margin-top: 4px;
+  }
+  .playbook-form__upload-note {
+    font-family: Metropolis, sans-serif;
+    font-size: 13px;
+    color: {{ section.settings.text_color }};
+    opacity: 0.6;
+    line-height: 1.5;
+  }
+  .playbook-form__field input[type="file"] {
+    font-family: Metropolis, sans-serif;
+    font-size: 13px;
+    color: {{ section.settings.text_color }};
+    padding: 10px 0;
+  }
+  .playbook-form__checkbox-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+  }
+  .playbook-form__checkbox-row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 2px;
+    flex-shrink: 0;
+    accent-color: #c65336;
+  }
+  .playbook-form__checkbox-row label {
+    font-family: Metropolis, sans-serif;
+    font-size: 13px;
+    color: {{ section.settings.text_color }};
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+  .playbook-form__checkbox-row a {
+    color: #c65336;
+    text-decoration: underline;
+  }
+  .playbook-form__submit {
+    background: #c65336;
+    color: #fff;
+    border: none;
+    padding: 16px 48px;
+    border-radius: 25px;
+    font-family: Metropolis, sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    cursor: pointer;
+    transition: opacity 0.2s;
+    width: 100%;
+  }
+  .playbook-form__submit:hover { opacity: 0.85; }
+  .playbook-form__social-alt {
+    text-align: center;
+    margin-top: 24px;
+    font-family: Metropolis, sans-serif;
+    font-size: 14px;
+    color: {{ section.settings.text_color }};
+    opacity: 0.7;
+  }
+  .playbook-form__social-alt strong {
+    color: #c65336;
+    opacity: 1;
+  }
+  .playbook-form__confirmation {
+    display: none;
+    background: {{ section.settings.callout_bg }};
+    border-radius: 8px;
+    padding: 40px 32px;
+    text-align: center;
+  }
+  .playbook-form__confirmation h3 {
+    font-family: Moriarty, Metropolis, sans-serif;
+    font-size: 32px;
+    color: {{ section.settings.heading_color }};
+    margin: 0 0 12px;
+    font-weight: 400;
+  }
+  .playbook-form__confirmation p {
+    font-family: Metropolis, sans-serif;
+    font-size: 16px;
+    color: {{ section.settings.text_color }};
+    margin: 0;
+    opacity: 0.8;
+  }
+  @media (max-width: 599px) {
+    .playbook-form__row { grid-template-columns: 1fr; }
+    .playbook-form__submit { padding: 16px 32px; }
+  }
+</style>
+
+<section id="playbook-form" class="playbook-form">
+  <div class="playbook-form__inner">
+    <div class="playbook-form__header">
+      {%- if section.settings.eyebrow != blank -%}
+        <span class="playbook-form__eyebrow">{{ section.settings.eyebrow }}</span>
+      {%- endif -%}
+      <h2 class="playbook-form__heading">{{ section.settings.heading }}</h2>
+      {%- if section.settings.prompt != blank -%}
+        <p class="playbook-form__prompt">{{ section.settings.prompt }}</p>
+      {%- endif -%}
+    </div>
+
+    <div class="playbook-form__confirmation" id="playbook-form-confirmation">
+      <h3>{{ section.settings.confirmation_heading }}</h3>
+      <p>{{ section.settings.confirmation_body }}</p>
+    </div>
+
+    {% form 'contact', id: 'playbook-221-form', class: 'playbook-form__form' %}
+      {{ form.errors | default_errors }}
+
+      <input type="hidden" name="contact[tags]" value="221-game-submission">
+
+      <div class="playbook-form__row">
+        <div class="playbook-form__field">
+          <label for="pb-first-name">First Name</label>
+          <input type="text" name="contact[first_name]" id="pb-first-name" placeholder="Your first name" required>
+        </div>
+        <div class="playbook-form__field">
+          <label for="pb-handle">Social Handle (Instagram / X)</label>
+          <input type="text" name="contact[social_handle]" id="pb-handle" placeholder="@yourhandle">
+        </div>
+      </div>
+
+      <div class="playbook-form__field">
+        <label for="pb-email">Email Address</label>
+        <input type="email" name="contact[email]" id="pb-email" placeholder="your@email.com" required>
+      </div>
+
+      <div class="playbook-form__field">
+        <label for="pb-moment">Your 221 Moment</label>
+        <textarea
+          name="contact[body]"
+          id="pb-moment"
+          maxlength="300"
+          placeholder="Tell us your greatest rugby story — a braai, a watch party, a match, a memory…"
+          oninput="document.getElementById('pb-char-count').textContent = (300 - this.value.length) + ' characters remaining'"
+          required
+        ></textarea>
+        <span class="playbook-form__char-count" id="pb-char-count">300 characters remaining</span>
+      </div>
+
+      <div class="playbook-form__field">
+        <label>Optional Photo or Video</label>
+        <p class="playbook-form__upload-note">
+          Prefer to upload media? Tag <strong>#The221Game</strong> on Instagram or X and we'll find you.
+        </p>
+      </div>
+
+      <div class="playbook-form__checkbox-row">
+        <input type="checkbox" id="pb-tcs" name="contact[tcs_accepted]" value="yes" required>
+        <label for="pb-tcs">
+          I accept the
+          {%- if section.settings.tcs_link != blank -%}
+            <a href="{{ section.settings.tcs_link }}" target="_blank" rel="noopener">terms and conditions</a>
+          {%- else -%}
+            terms and conditions
+          {%- endif -%}
+          and confirm I am 18 years or older.
+        </label>
+      </div>
+
+      <button type="submit" class="playbook-form__submit">{{ section.settings.submit_label }}</button>
+    {% endform %}
+
+    {%- if section.settings.social_alt_text != blank -%}
+      <p class="playbook-form__social-alt">
+        {{ section.settings.social_alt_text }}
+        <strong>#The221Game</strong>
+      </p>
+    {%- endif -%}
+  </div>
+</section>
+
+<script>
+  (function() {
+    var form = document.getElementById('playbook-221-form');
+    var confirmation = document.getElementById('playbook-form-confirmation');
+    if (!form || !confirmation) return;
+    form.addEventListener('submit', function(e) {
+      // Let Shopify handle the actual submit; show confirmation on success via URL param
+    });
+    if (window.location.search.indexOf('contact_posted=true') > -1) {
+      form.style.display = 'none';
+      confirmation.style.display = 'block';
+      confirmation.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Playbook — Submit Form",
+  "settings": [
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "default": 80,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "default": 80,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Colours"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section Background",
+      "default": "#f8f2e6"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Colour",
+      "default": "#2e112d"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Body Text",
+      "default": "#3d3d3d"
+    },
+    {
+      "type": "color",
+      "id": "input_bg",
+      "label": "Input Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "input_border",
+      "label": "Input Border",
+      "default": "#d0c5b8"
+    },
+    {
+      "type": "color",
+      "id": "callout_bg",
+      "label": "Confirmation Box Background",
+      "default": "#2e112d"
+    },
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "Join The Game"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Your 221 Moment Starts Here."
+    },
+    {
+      "type": "text",
+      "id": "prompt",
+      "label": "Prompt Text",
+      "default": "Tell us your greatest rugby story — a braai, a watch party, a match, a memory. The best story each week wins a box of 221."
+    },
+    {
+      "type": "text",
+      "id": "submit_label",
+      "label": "Submit Button Label",
+      "default": "Submit My 221 Moment"
+    },
+    {
+      "type": "text",
+      "id": "social_alt_text",
+      "label": "Social Alternative Text",
+      "default": "Prefer to share on social? Tag"
+    },
+    {
+      "type": "header",
+      "content": "Confirmation Message"
+    },
+    {
+      "type": "text",
+      "id": "confirmation_heading",
+      "label": "Confirmation Heading",
+      "default": "Now That's a 221 Story."
+    },
+    {
+      "type": "text",
+      "id": "confirmation_body",
+      "label": "Confirmation Body",
+      "default": "We've got yours — winners announced every Sunday."
+    },
+    {
+      "type": "header",
+      "content": "T&Cs"
+    },
+    {
+      "type": "url",
+      "id": "tcs_link",
+      "label": "T&Cs Page Link"
+    }
+  ],
+  "presets": [
+    { "name": "Playbook — Submission Form" }
+  ]
+}
+{% endschema %}

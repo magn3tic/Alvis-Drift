@@ -1,0 +1,175 @@
+<style>
+  .playbook-sticky-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    background: {{ section.settings.nav_background }};
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .playbook-sticky-nav__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    max-width: 1294px;
+    margin: 0 auto;
+    height: 58px;
+    gap: 16px;
+  }
+  .playbook-sticky-nav__links {
+    display: flex;
+    gap: 28px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+  }
+  .playbook-sticky-nav__links a {
+    color: {{ section.settings.link_color }};
+    text-decoration: none;
+    font-family: Metropolis, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: 0.85;
+    transition: opacity 0.2s;
+  }
+  .playbook-sticky-nav__links a:hover { opacity: 1; }
+  .playbook-sticky-nav__cta {
+    background: #c65336;
+    color: #fff !important;
+    padding: 10px 22px;
+    border-radius: 25px;
+    font-family: Metropolis, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+    flex-shrink: 0;
+  }
+  .playbook-sticky-nav__cta:hover { opacity: 0.85; }
+  .playbook-sticky-nav__hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .playbook-sticky-nav__hamburger span {
+    display: block;
+    width: 22px;
+    height: 2px;
+    background: {{ section.settings.link_color }};
+    border-radius: 1px;
+    transition: all 0.25s;
+  }
+  .playbook-sticky-nav__mobile-menu {
+    display: none;
+    background: {{ section.settings.nav_background }};
+    padding: 8px 20px 16px;
+    border-top: 1px solid rgba(255,255,255,0.08);
+  }
+  .playbook-sticky-nav__mobile-menu.is-open { display: block; }
+  .playbook-sticky-nav__mobile-menu a {
+    display: block;
+    color: {{ section.settings.link_color }};
+    font-family: Metropolis, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    text-decoration: none;
+    padding: 11px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+    opacity: 0.85;
+  }
+  .playbook-sticky-nav__mobile-menu a:last-child { border-bottom: none; }
+  @media (max-width: 900px) {
+    .playbook-sticky-nav__links { display: none; }
+    .playbook-sticky-nav__hamburger { display: flex; }
+  }
+  /* Body offset so hero content isn't hidden under the fixed nav */
+  .template-page-221-playbook body,
+  body:has(.playbook-sticky-nav) {
+    padding-top: 58px;
+  }
+</style>
+
+<nav class="playbook-sticky-nav" aria-label="221 Playbook navigation">
+  <div class="playbook-sticky-nav__inner">
+    <ul class="playbook-sticky-nav__links">
+      <li><a href="#playbook-story">{{ section.settings.link1_label }}</a></li>
+      <li><a href="#playbook-mechanics">{{ section.settings.link2_label }}</a></li>
+      <li><a href="#playbook-prize">{{ section.settings.link3_label }}</a></li>
+      <li><a href="#playbook-winners">{{ section.settings.link4_label }}</a></li>
+      <li><a href="#playbook-conversations">{{ section.settings.link5_label }}</a></li>
+      <li><a href="#playbook-wine">{{ section.settings.link6_label }}</a></li>
+    </ul>
+    <button
+      class="playbook-sticky-nav__hamburger"
+      aria-label="Open menu"
+      onclick="this.closest('.playbook-sticky-nav').querySelector('.playbook-sticky-nav__mobile-menu').classList.toggle('is-open')"
+    >
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#playbook-form" class="playbook-sticky-nav__cta">{{ section.settings.cta_label }}</a>
+  </div>
+  <div class="playbook-sticky-nav__mobile-menu">
+    <a href="#playbook-story">{{ section.settings.link1_label }}</a>
+    <a href="#playbook-mechanics">{{ section.settings.link2_label }}</a>
+    <a href="#playbook-prize">{{ section.settings.link3_label }}</a>
+    <a href="#playbook-winners">{{ section.settings.link4_label }}</a>
+    <a href="#playbook-conversations">{{ section.settings.link5_label }}</a>
+    <a href="#playbook-wine">{{ section.settings.link6_label }}</a>
+  </div>
+</nav>
+
+{% schema %}
+{
+  "name": "Playbook — Sticky Nav",
+  "settings": [
+    {
+      "type": "color",
+      "id": "nav_background",
+      "label": "Nav Background",
+      "default": "#2e112d"
+    },
+    {
+      "type": "color",
+      "id": "link_color",
+      "label": "Link Colour",
+      "default": "#f8f2e6"
+    },
+    {
+      "type": "header",
+      "content": "Nav Links"
+    },
+    { "type": "text", "id": "link1_label", "label": "Link 1 Label", "default": "The Story" },
+    { "type": "text", "id": "link2_label", "label": "Link 2 Label", "default": "The Game" },
+    { "type": "text", "id": "link3_label", "label": "Link 3 Label", "default": "The Grand Prize" },
+    { "type": "text", "id": "link4_label", "label": "Link 4 Label", "default": "Winners" },
+    { "type": "text", "id": "link5_label", "label": "Link 5 Label", "default": "Conversations" },
+    { "type": "text", "id": "link6_label", "label": "Link 6 Label", "default": "Wine" },
+    {
+      "type": "header",
+      "content": "CTA Button"
+    },
+    {
+      "type": "text",
+      "id": "cta_label",
+      "label": "CTA Label",
+      "default": "Submit Your 221 Moment"
+    }
+  ],
+  "presets": [
+    { "name": "Playbook — Sticky Nav" }
+  ]
+}
+{% endschema %}
