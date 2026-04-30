@@ -1,378 +1,322 @@
-<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'section-main-page.css' | asset_url }}" media="print" onload="this.media='all'">
+{{ 'component-rte.css' | asset_url | stylesheet_tag }}
+{{ 'section-main-page.css' | asset_url | stylesheet_tag }}
+
+{%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+  {{ 'component-facets.css' | asset_url | stylesheet_tag }}
+  <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
+{%- endif -%}
 
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 
-<script type="text/javascript">
+<div class="page-width page-width--narrow price-overview-page">
+  <h2 class="page-title price-overview-title">
+    ALVI'S DRIFT PRICE OVERVIEW
+  </h2>
 
-  function printDiv() 
-{
+  {%- paginate collection.products by section.settings.products_per_page -%}
+    {%- if section.settings.enable_filtering or section.settings.enable_sorting -%}
+      <aside
+        aria-labelledby="verticalTitle"
+        class="facets-wrapper page-width{% unless section.settings.enable_filtering %} facets-wrapper--no-filters{% endunless %}"
+        id="main-collection-filters"
+        data-id="{{ section.id }}"
+      >
+        {% render 'facets',
+          results: collection,
+          enable_filtering: section.settings.enable_filtering,
+          enable_sorting: section.settings.enable_sorting,
+          filter_type: section.settings.filter_type,
+          collapse_on_larger_devices: section.settings.collapse_on_larger_devices,
+          paginate: paginate
+        %}
+      </aside>
+    {%- endif -%}
 
-  var divToPrint=document.getElementById('DivIdToPrint');
-  var newWin=window.open('','Print-Window');
-  newWin.document.open();
-  newWin.document.close();
-  newWin.document.write('<html><body onload="window.print()">'+ divToPrint.innerHTML +'</body></html>');
-
-};
-
-</script>
-
-<div class="page-width page-width--narrow">
-  <h2 class="page-title">
-	ALVI'S DRIFT PRICE OVERVIEW
-  </h2> 
-
-  <div class="Product-default-sort">
-                  
-   <select name="sort_by" id="sort-by" aria-describedby="a11y-refresh-page-message" class="collection-sort__input sort-by">
-    {% for option in collection.sort_options %}
-        <option value="{{ option.value }}"{% if sort_by == option.value %} selected="selected"{% endif %}>{{ option.name }}</option>
-    {% endfor %}
-  </select>
-
-  </div>
-
-<div id="ProductGridContainer_notcollection">
-  {%- paginate collection.products by 100 -%}
-    {%- if collection.products.size == 0 -%}
-      <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
-        <div class="loading-overlay gradient"></div>
-        <div class="title-wrapper center">
-          <h2 class="title title--primary">
-            {{ 'sections.collection_template.empty' | t }}<br>
-            {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: "underlined-link link" }}
-          </h2>
+    <div id="ProductGridContainer" class="product-grid-container">
+      {%- if collection.products.size == 0 -%}
+        <div class="collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
+          <div class="loading-overlay gradient"></div>
+          <div class="title-wrapper center">
+            <h2 class="title title--primary">
+              {{ 'sections.collection_template.empty' | t }}<br>
+              {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: 'underlined-link link' }}
+            </h2>
+          </div>
         </div>
-      </div>
-    {%- else -%}
-        <div class="container-price-list wrap">
-        
-        
-          {%- for product in collection.products -%}
-          	
-          <div class="price-list box">
-    
-      <div class="product-image">
-      	
-        <a target="_blank" href="{{ product.url }}"> <img src="{{ product.featured_image | img_url:'master' }}" alt ="" loading="lazy" width ="{{ product.featured_image.width }}" height ="{{ product.featured_image.height }}"></a>
-        
-      </div>
-                      
-      <div class="product-name">
-      	
-        <a target="_blank" href="{{ product.url }}">  <h3>{{ product.title }}</h3></a>
-      
-      </div>
-      
-      <div class="product-price">
-      	
-        <a target="_blank" href="{{ product.url }}"><h3>{{ product.price | money | remove:'.00' | replace: ",", " "  }}</h3>
-        
-           <h2 style="display:none;">{{ product.price }}</h2>
-        
-        </a>
-        
-      </div>
-    
+      {%- else -%}
+        <div class="collection price-list-collection-wrapper">
+          <div class="loading-overlay gradient"></div>
+
+          <div class="container-price-list wrap" id="product-grid" data-id="{{ section.id }}">
+            {%- for product in collection.products -%}
+              <div class="price-list box">
+                <div class="product-image">
+                  <a target="_blank" rel="noopener" href="{{ product.url | within: collection }}">
+                    {%- if product.featured_image -%}
+                      <img
+                        src="{{ product.featured_image | image_url: width: 600 }}"
+                        alt="{{ product.featured_image.alt | default: product.title | escape }}"
+                        loading="lazy"
+                        width="{{ product.featured_image.width }}"
+                        height="{{ product.featured_image.height }}"
+                      >
+                    {%- else -%}
+                      {{ 'product-1' | placeholder_svg_tag: 'placeholder-svg product-placeholder' }}
+                    {%- endif -%}
+                  </a>
+                </div>
+
+                <div class="product-name">
+                  <a target="_blank" rel="noopener" href="{{ product.url | within: collection }}">
+                    <div class="product-title">{{ product.title }}</div>
+                    {% unless product.tags contains 'Gift' %}
+                      <h4>Case of 6</h4>
+                    {% endunless %}
+                  </a>
+                </div>
+
+                <div class="product-pr">
+                  <a target="_blank" rel="noopener" href="{{ product.url | within: collection }}">
+                    <p>{{ product.price | money | remove: '.00' | replace: ',', ' ' }}</p>
+                    <span class="visually-hidden">{{ product.price }}</span>
+                    <div class="list-btn">BUY</div>
+                  </a>
+                </div>
+              </div>
+            {%- endfor -%}
+          </div>
+
+          {%- if paginate.pages > 1 -%}
+            {% render 'pagination', paginate: paginate, anchor: '' %}
+          {%- endif -%}
+        </div>
+      {%- endif -%}
     </div>
 
-          
+    <div id="DivIdToPrint" class="print-price-list" style="display: none;">
+      <table class="price-table-list" border="0" style="width: 100%;">
+        <tbody>
+          {%- for product in collection.products -%}
+            <tr style="margin-bottom: 35px;">
+              <td>
+                {%- if product.featured_image -%}
+                  <img
+                    style="height: 100px; width: auto;"
+                    src="{{ product.featured_image | image_url: width: 200 }}"
+                    alt="{{ product.featured_image.alt | default: product.title | escape }}"
+                    width="{{ product.featured_image.width }}"
+                    height="{{ product.featured_image.height }}"
+                  >
+                {%- endif -%}
+              </td>
+              <td><h3>{{ product.title }}</h3></td>
+              <td><h2>{{ product.price | money | remove: '.00' | replace: ',', ' ' }}</h2></td>
+            </tr>
           {%- endfor -%}
-     
-
-        {%- if paginate.pages > 1 -%}
-          {% render 'pagination', paginate: paginate, anchor: '' %}
-        {%- endif -%}
-      </div>
-    {%- endif -%}
+        </tbody>
+      </table>
+    </div>
   {%- endpaginate -%}
-</div>
-  
-  
-    <div  id="DivIdToPrint" style="display:none;">  
-        <table class="price-table-list" border="0" style="width: 100%;">
-   
-        
-  {%- for product in collection.products -%}
-        
 
-     <tr style="margin-bottom:35px;">  	
-      <td> <img style="height:100px;" src="{{ product.featured_image | img_url:'master' }}" width ="{{ product.featured_image.width }}" height ="{{ product.featured_image.height }}" ></td>
-      <td><h3>{{ product.title }}</h3></td>
-      <td><h2>{{ product.price | money | remove:'.00' }}</h2></td>
-      
-     </tr>
-          
-{% endfor %} 
-          
-       </table>
-</div>     
-  <div class="product-print-btn">
-  	
-    <button  id='btn'  onclick='printDiv();'>Print This Page</button>
-    
-  </div>
+  {% comment %}
+    <div class="product-print-btn">
+      <button id="btn" type="button">Print This Page</button>
+    </div>
+  {% endcomment %}
 </div>
+
 <style>
-  
-  .price-list {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-  
-.product-image img {
-    height: 250px;
-    width:auto
-}
-
-  .price-list {
-    margin-bottom: 20px;
-}
-  
- 
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .price-list {
-    margin: 20px;
-    font-size: 10;
-}
-}  
-  
- button#btn {
-      cursor: pointer;
-    color: var(--headingColor);
-    font: bold 14px/100% var(--metropolis);
-    letter-spacing: .7px;
-    text-align: center;
-    padding: 12px 40px;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-transition: all 50ms linear;
-    background-color: transparent;
-    border: 1px solid var(--headingColor);
-    padding: 11px 32px;
-      }
-  
-  
-  .product-print-btn {
-    text-align: center;
-    margin-bottom: 50px;
-}
-  
-  .price-list .product-image {
-    width: 12%;
-}
-  
-  .price-list .product-name {
-    width: 63%;
-    padding-left: 30px;
-}
-  
-  .page-width--narrow {
-    max-width: 100rem !important;
-    padding: 0;
-}
-  
-  .product-price {
-    width: 11%;
-    text-align: right;
-}
-  
-  .Product-default-sort {
-    text-align: left;
-    padding: 50px 5px;
-}
-  
-  @media only screen and (max-width:500px) {
-  /* For mobile phones: */
-  .Product-default-sort {
-    text-align: center;
-    padding: 50px 5px;
-}
-}
-  
-  select#sort-by option {
-    background: #210e21 !important;
-}
-  
-  select#sort-by {
-    cursor: pointer;
-    color: var(--headingColor);
-    font: bold 14px/100% var(--metropolis);
-    letter-spacing: .7px;
-    text-align: left;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-transition: all 50ms linear;
-    background-color: transparent;
-    border: 1px solid var(--headingColor);
-    padding: 11px 32px;
-}
-  
-  @media only screen and (max-width:850px) {
-  /* For tablets: */
-   select#sort-by option {
-    background: #210e21 !important;
-}
-  
-  select#sort-by {
-    cursor: pointer;
-    color: var(--headingColor);
-    font: bold 14px/100% var(--metropolis);
-    letter-spacing: .7px;
-    text-align: left;
-    display: inline-block;
-    text-decoration: none;
-    text-transform: uppercase;
-    -webkit-transition: all 50ms linear;
-    background-color: transparent;
-    border: 1px solid var(--headingColor);
-    padding: 11px 32px;
-    margin-left: 275px;
-}
-}
-  @media only screen and (max-width:500px) {
-    /* For mobile phones: */
-    select#sort-by option {
-    background: #210e21 !important;
-}
-  
-    select#sort-by {
-      cursor: pointer;
-      color: var(--headingColor);
-      font: bold 14px/100% var(--metropolis);
-      letter-spacing: .7px;
-      text-align: left;
-      display: inline-block;
-      text-decoration: none;
-      text-transform: uppercase;
-      -webkit-transition: all 50ms linear;
-      background-color: transparent;
-      border: 1px solid var(--headingColor);
-      padding: 11px 32px;
-      margin-left: 0px;
-}
-}
-  
-@media only screen and (max-width: 500px) {
-  
-    
-      
-  .price-list .product-image {
-    width: auto;
-}
-  
-  .price-list .product-name {
-    width: auto;
-}
-    
-@media only screen and (max-width:850px) {
-  /* For tablets: */
-  .price-list .product-name {
-    width: 50%;
-}
-}
-    
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-   .price-list .product-name {
-    width: 50%;
-}
-}
-  
-  
-  .product-price {
-    width: auto;
-    text-align: left;
-}
-  
-@media only screen and (max-width:850px) {
-  /* For tablets: */
-  .product-price {
-    width: auto;
-    text-align: center;
-}
-}
-  
-@media only screen and (max-width:500px) {
-  /* For mobile phones: */
-   .product-price {
-    width: auto;
-    text-align: center;
-}
-}
-  
-    
-}
   body {
     background-color: #480115;
-}
-  
-</style>
+  }
 
+  .price-overview-page.page-width--narrow {
+    max-width: 100rem !important;
+    padding: 0;
+  }
 
+  .price-overview-title {
+    text-align: center;
+    padding-bottom: 50px;
+  }
 
-<script type="text/javascript">
-  // Save existing sort parameters
-  Shopify.queryParams = {};
-  if(location.search.length) {
-    for(var aKeyValue, i = 0, aCouples = location.search.substr(1).split('&'); i < aCouples.length; i++) {
-      aKeyValue = aCouples[i].split('=');
-      if (aKeyValue.length > 1) {
-        Shopify.queryParams[decodeURIComponent(aKeyValue[0])] = decodeURIComponent(aKeyValue[1]);
-      }
+  .facets-wrapper {
+    padding-top: 35px;
+    padding-bottom: 35px;
+  }
+
+  /* Keep Shopify facet dropdown text visible on this custom page background */
+  .facets__display,
+  .facets__header,
+  .facets-wrap,
+  .facets__list,
+  .facets__item,
+  .facet-checkbox,
+  .facet-checkbox__text,
+  .facet-checkbox__text-label,
+  .facets__price,
+  .facets__price .field,
+  .facets__price .field__input,
+  .facets__price .field__label {
+    color: #404040 !important;
+  }
+
+  .facets__display {
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+  }
+
+  .facets__item,
+  .facets__item label,
+  .facet-checkbox {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .facets__price .field__input {
+    background: #fff !important;
+    border: 1px solid rgba(0, 0, 0, 0.25) !important;
+  }
+
+  .price-list {
+    display: flex;
+    gap: 20px;
+    background-color: #e4decd;
+    border-radius: 3px;
+    padding: 20px;
+    margin: 30px;
+    align-items: center;
+  }
+
+  .price-list a {
+    text-decoration: none;
+  }
+
+  .price-list .product-image {
+    width: 15%;
+  }
+
+  .product-image img,
+  .product-placeholder {
+    height: 110px;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+
+  .product-name {
+    width: 68%;
+    padding-left: 0;
+  }
+
+  .product-title {
+    color: #404040;
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    line-height: 23px;
+  }
+
+  .product-name h4 {
+    color: #000;
+    margin: 0;
+  }
+
+  .product-pr {
+    width: 17%;
+    text-align: center;
+  }
+
+  .product-pr p {
+    color: #000;
+    margin: 0 0 20px;
+  }
+
+  .list-btn {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #c65336;
+    background: #c65336;
+    color: #fff;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 28px;
+    display: inline-block;
+  }
+
+  .product-print-btn {
+    text-align: center;
+    margin: 30px 0 50px;
+  }
+
+  button#btn {
+    cursor: pointer;
+    color: var(--headingColor);
+    font: bold 14px/100% var(--metropolis);
+    letter-spacing: 0.7px;
+    text-align: center;
+    padding: 11px 32px;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 50ms linear;
+    background-color: transparent;
+    border: 1px solid var(--headingColor);
+  }
+
+  @media only screen and (max-width: 850px) {
+    .price-list .product-name {
+      width: 55%;
+    }
+
+    .product-pr {
+      width: 30%;
+      text-align: center;
     }
   }
 
-  // Add existing sort parameters to current URL
-  document.querySelector('.sort-by').addEventListener('change', function(e) {
-    var value = e.currentTarget.value;
-   
-    Shopify.queryParams.sort_by = value;
-    location.search = new URLSearchParams(Shopify.queryParams).toString();
-  });
+  @media only screen and (max-width: 500px) {
+    .price-list {
+      margin: 20px;
+      gap: 12px;
+      font-size: 10px;
+    }
 
+    .price-list .product-image {
+      width: auto;
+    }
 
-$(document).ready(function(){
-  
-    
-    var currLoc = window.location.href;
-  
-  var str = currLoc.split("=");
-  
-  var se_value = str[1];
-    
-    console.log(str[1]);
-  
-  $("#sort-by option[value="+ se_value+"]").attr('selected', 'selected');
-  
-});
+    .product-image img,
+    .product-placeholder {
+      height: 120px;
+    }
 
-  
-</script>
+    .product-pr {
+      width: 30%;
+      text-align: center;
+    }
+  }
+</style>
 
 {% schema %}
 {
-  "name": "t:sections.main-collection-product-grid.name",
+  "name": "Price product list",
   "class": "spaced-section collection-grid-section",
   "settings": [
     {
       "type": "range",
       "id": "products_per_page",
       "min": 8,
-      "max": 64,
+      "max": 100,
       "step": 4,
-      "default": 16,
-      "label": "t:sections.main-collection-product-grid.settings.products_per_page.label"
+      "default": 100,
+      "label": "Products per page"
     },
     {
       "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__3.content"
+      "content": "Product cards"
     },
     {
       "type": "select",
@@ -380,73 +324,92 @@ $(document).ready(function(){
       "options": [
         {
           "value": "adapt",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__1.label"
+          "label": "Adapt to image"
         },
         {
           "value": "portrait",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__2.label"
+          "label": "Portrait"
         },
         {
           "value": "square",
-          "label": "t:sections.main-collection-product-grid.settings.image_ratio.options__3.label"
+          "label": "Square"
         }
       ],
       "default": "adapt",
-      "label": "t:sections.main-collection-product-grid.settings.image_ratio.label"
+      "label": "Image ratio"
     },
     {
       "type": "checkbox",
       "id": "show_secondary_image",
       "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_secondary_image.label"
+      "label": "Show second image on hover"
     },
     {
       "type": "checkbox",
       "id": "add_image_padding",
       "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.add_image_padding.label"
+      "label": "Add image padding"
     },
     {
       "type": "checkbox",
       "id": "show_image_outline",
       "default": true,
-      "label": "t:sections.main-collection-product-grid.settings.show_image_outline.label"
+      "label": "Show image outline"
     },
     {
       "type": "checkbox",
       "id": "show_vendor",
       "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_vendor.label"
+      "label": "Show vendor"
     },
     {
       "type": "checkbox",
       "id": "show_rating",
       "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.show_rating.label",
-      "info": "t:sections.main-collection-product-grid.settings.show_rating.info"
+      "label": "Show product rating",
+      "info": "To display a rating, add a product rating app."
     },
     {
       "type": "header",
-      "content": "t:sections.main-collection-product-grid.settings.header__1.content"
+      "content": "Filtering and sorting"
     },
     {
       "type": "checkbox",
       "id": "enable_filtering",
       "default": true,
-      "label": "t:sections.main-collection-product-grid.settings.enable_filtering.label",
-      "info": "t:sections.main-collection-product-grid.settings.enable_filtering.info"
+      "label": "Enable filtering"
     },
     {
       "type": "checkbox",
       "id": "enable_sorting",
       "default": true,
-      "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+      "label": "Enable sorting"
+    },
+    {
+      "type": "select",
+      "id": "filter_type",
+      "options": [
+        {
+          "value": "horizontal",
+          "label": "Horizontal"
+        },
+        {
+          "value": "vertical",
+          "label": "Vertical"
+        },
+        {
+          "value": "drawer",
+          "label": "Drawer"
+        }
+      ],
+      "default": "horizontal",
+      "label": "Desktop filter layout"
     },
     {
       "type": "checkbox",
       "id": "collapse_on_larger_devices",
       "default": false,
-      "label": "t:sections.main-collection-product-grid.settings.collapse_on_larger_devices.label"
+      "label": "Collapse filters on larger screens"
     }
   ]
 }
