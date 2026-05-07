@@ -195,8 +195,7 @@ h2, .h2 {
 	letter-spacing: -1px;
 }
 
-h3,
-.h3 {
+h3, .h3 {
 	font-size: 37px;
 	line-height:1.3em
 }
@@ -3258,8 +3257,8 @@ body:not(.template-index) .shop-tabs {
 		margin-top:
 	}
 h2{
-font-size: 27px;
-line-height:1.2em
+font-size: 18px;
+line-height:1em
 
 }
 .title-wrapper-with-link.title-wrapper--self-padded-mobile{
