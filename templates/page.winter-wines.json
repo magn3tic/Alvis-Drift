@@ -88,7 +88,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Pinotage.png",
+        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Pinotage_large_6e49747f-9e0c-4af0-b7db-6e474ad673d0.webp",
         "image_size": "100%",
         "video_url": "",
         "Heading_size": "h2",
@@ -103,7 +103,7 @@
     "1641827019a861ede0": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Shiraz.png",
+        "our-story-vid": "shopify://shop_images/Winter_warmer_Sig_Shiraz.png",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
@@ -118,7 +118,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Merlot.png",
+        "our-story-vid": "shopify://shop_images/Winter_warmer_Sig_Merlot.png",
         "image_size": "100%",
         "video_url": "",
         "Heading_size": "h2",
@@ -147,7 +147,7 @@
     "1641827535f50b1fac": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-Signature-Range-Cabernet-Sauvignon.png",
+        "our-story-vid": "shopify://shop_images/Winter_warmer_cab_Sauv.png",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
@@ -162,7 +162,7 @@
       "type": "Focus-Text-Image-Left",
       "settings": {
         "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-221-Range-Pinotage.png",
+        "our-story-vid": "shopify://shop_images/Winter_warm_221_Pinotage.png",
         "image_size": "100%",
         "video_url": "",
         "Heading_size": "h2",
@@ -177,7 +177,7 @@
     "1641828055146d3909": {
       "type": "Focus-Text-Image-Right",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Alvis-Drift-221-Range-Special-Cuvee.png",
+        "our-story-vid": "shopify://shop_images/Winter_warmer_221_Cuvee_Red.png",
         "right_video_url": "",
         "Heading_size": "h2",
         "Heading_color": "#ffffff",
