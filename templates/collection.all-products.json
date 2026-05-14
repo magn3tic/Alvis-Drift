@@ -199,8 +199,6 @@
       "disabled": true,
       "settings": {
         "topheading": "Our wines",
-        "header-tag": false,
-        "subtitle-1": "",
         "hide_filter": false
       }
     },

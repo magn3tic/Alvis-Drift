@@ -395,8 +395,6 @@
       "disabled": true,
       "settings": {
         "topheading": "OUR WHITE WINES",
-        "header-tag": false,
-        "subtitle-1": "",
         "hide_filter": false
       }
     }

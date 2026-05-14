@@ -254,8 +254,6 @@
       ],
       "settings": {
         "topheading": "OUR RED WINES",
-        "header-tag": false,
-        "subtitle-1": "",
         "hide_filter": false
       }
     }
