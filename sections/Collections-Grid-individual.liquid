@@ -1,8 +1,5 @@
 {%- comment -%}
   Section: collections-grid-individual.liquid
-  - ONLY individual collection tabs (no "All Ranges")
-  - First tab active by default
-  - Each block/collection has its own product_amount range to limit products shown
 {%- endcomment -%}
 
 <script src="{{ 'product-form.js' | asset_url }}" defer></script>
@@ -19,204 +16,811 @@
   {% endif %}
 {% endif %}
 
-<section class="shop-tabs" id="collections-grid-individual">
+{% assign selected_collection = section.settings.product_collection %}
+{% assign product_limit = section.settings.product_amount | default: 30 %}
+
+<section class="shop-tabs collection-grid-filtered" id="collections-grid-individual-{{ section.id }}">
   <div class="alcontainer">
+
     {% if section.settings.subtitle_1 != blank or section.settings.topheading != blank %}
       <div class="head">
         {% if section.settings.subtitle_1 != blank %}
           <div class="heading-small">{{ section.settings.subtitle_1 }}</div>
         {% endif %}
         {% if section.settings.topheading != blank %}
-          <h3 class="heading">{{ section.settings.topheading }}</h3>
+          <h2 class="heading">{{ section.settings.topheading }}</h2>
         {% endif %}
       </div>
     {% endif %}
 
-    {%- comment -%} Tabs Nav {%- endcomment -%}
-    {% unless section.settings.hide_filter %}
-      {% if section.blocks.size > 1 %}
-        <div class="stabs">
-          <ul>
-            {% for block in section.blocks %}
-              <li>
-                <button
-                  type="button"
-                  class="tabs-btn {% if forloop.first %}active{% endif %}"
-                  data-tab="tab{{ forloop.index }}"
-                >
-                  {{ block.settings.collection_heading | default: 'Collection' }}
-                </button>
-              </li>
-            {% endfor %}
-          </ul>
+    {% unless section.settings.hide_product_filters %}
+      <!-- Mobile filter toggle bar -->
+      <div class="cpf-mobile-bar">
+        <button type="button" class="cpf-mobile-toggle" data-cpf-mobile-toggle>
+          <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 1H18M3 7H15M6 13H12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+          Filter &amp; Sort
+        </button>
+        <span class="cpf-product-count" data-cpf-count></span>
+      </div>
+
+      <!-- Overlay backdrop (mobile) -->
+      <div class="cpf-overlay" data-cpf-overlay></div>
+
+      <!-- Filter drawer / desktop bar -->
+      <div class="cpf-drawer" data-cpf-drawer>
+        <div class="cpf-drawer-header">
+          <span>Filter &amp; Sort</span>
+          <button type="button" class="cpf-drawer-close" data-cpf-drawer-close>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 1L15 15M15 1L1 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+            </svg>
+          </button>
         </div>
-      {% endif %}
+
+        <div class="cpf-filters-wrap">
+          <!-- Filter dropdowns -->
+          <div class="cpf-filters-left">
+            <div class="cpf-custom-select" data-product-filter="wineRange" data-default-label="Wine Range">
+              <button type="button" class="cpf-select-btn" data-cpf-select-btn>
+                <span class="cpf-select-label">Wine Range</span>
+                <svg class="cpf-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+              <ul class="cpf-select-list" data-cpf-select-list hidden></ul>
+            </div>
+            <div class="cpf-custom-select" data-product-filter="wineType" data-default-label="Wine Type">
+              <button type="button" class="cpf-select-btn" data-cpf-select-btn>
+                <span class="cpf-select-label">Wine Type</span>
+                <svg class="cpf-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+              <ul class="cpf-select-list" data-cpf-select-list hidden></ul>
+            </div>
+            <div class="cpf-custom-select" data-product-filter="cultivar" data-default-label="Cultivar">
+              <button type="button" class="cpf-select-btn" data-cpf-select-btn>
+                <span class="cpf-select-label">Cultivar</span>
+                <svg class="cpf-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+              <ul class="cpf-select-list" data-cpf-select-list hidden></ul>
+            </div>
+            <button type="button" class="collection-product-filter-reset" data-reset-product-filters hidden>
+              Clear filters
+            </button>
+          </div>
+
+          <!-- Sort -->
+          <div class="cpf-sort-wrap">
+            <div class="cpf-custom-select cpf-custom-select--sort" data-product-sort data-default-label="Sort by: Featured">
+              <button type="button" class="cpf-select-btn" data-cpf-select-btn>
+                <span class="cpf-select-label">Sort by: Featured</span>
+                <svg class="cpf-chevron" width="12" height="8" viewBox="0 0 12 8" fill="none"><path d="M1 1L6 6L11 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              </button>
+              <ul class="cpf-select-list" data-cpf-select-list hidden>
+                <li class="cpf-select-option cpf-selected" data-value="default">Sort by: Featured</li>
+                <li class="cpf-select-option" data-value="title-asc">Alphabetically, A–Z</li>
+                <li class="cpf-select-option" data-value="title-desc">Alphabetically, Z–A</li>
+                <li class="cpf-select-option" data-value="price-asc">Price, low to high</li>
+                <li class="cpf-select-option" data-value="price-desc">Price, high to low</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile apply button -->
+        <div class="cpf-drawer-footer">
+          <button type="button" class="cpf-apply-btn" data-cpf-drawer-close>Apply</button>
+        </div>
+      </div>
     {% endunless %}
 
-    {%- comment -%} Tabs Content (first active by default) {%- endcomment -%}
-    <div class="stabs-content">
-      {% for block in section.blocks %}
-        {% assign col = collections[block.settings.collectionCarasoul] %}
-        {% assign per_collection_limit = block.settings.product_amount | default: 4 %}
+    <!-- Product count (desktop) -->
+    <div class="cpf-desktop-count">
+      <span data-cpf-count></span>
+    </div>
 
-        <div data-tab="tab{{ forloop.index }}" class="{% if forloop.first %}active{% endif %}">
-          <div class="row">
-            {% if col != blank %}
-              {% for product in col.products limit: per_collection_limit %}
-                {% assign exclude_product_discount = false %}
-                {% if product.tags contains 'no-discount-product' %}
-                  {% assign exclude_product_discount = true %}
-                {% endif %}
+    <div class="stabs-content collection-product-list" data-product-list>
+      <div class="active">
+        <div class="row" data-product-grid>
 
-                <div class="col-3">
-                  <div class="shop-item">
-                    <a href="{{ product.url }}">
-                      <div class="product-thumb">
-                        
-                        {% if section.settings.hide_meta_tags == false %}
-                         <div class="meta-tag" data-heading="{{ product.metafields.my_fields.wine_range | handleize }}">
-                        {{ product.metafields.my_fields.wine_range }}
-                      </div>
-                      {% endif %}
-                        {{ product.featured_image | image_url: width: 325 | image_tag: loading: 'lazy' }}
+          {% if selected_collection != blank %}
+            {% for product in selected_collection.products limit: product_limit %}
+              {% assign exclude_product_discount = false %}
+              {% if product.tags contains 'no-discount-product' %}
+                {% assign exclude_product_discount = true %}
+              {% endif %}
 
-                            {% assign member_discount = product.price | times: discount %}
-                            {% assign discount_amount = product.price | minus: member_discount | times: -1 %}
-                            
-                            {% if product.compare_at_price > product.price %}
-                              {% assign discount_amount = product.compare_at_price | minus: product.price %}
-                              <div class="product-discount">
-                                SAVE<br>
-                                {{ discount_amount | money_without_trailing_zeros }}
-                              </div>
-                            {% endif %}
+              {% assign wine_range_metafield = product.metafields.my_fields.wine_range | default: product.metafields.custom.wine_range %}
+              {% assign wine_type_metafield = product.metafields.my_fields.wine_type | default: product.metafields.custom.wine_type %}
+              {% assign cultivar_metafield = product.metafields.my_fields.cultivar | default: product.metafields.custom.cultivar %}
 
-                      </div>
-                    </a>
+              {% capture wine_range_value %}{{ wine_range_metafield.value | default: wine_range_metafield }}{% endcapture %}
+              {% capture wine_type_value %}{{ wine_type_metafield.value | default: wine_type_metafield }}{% endcapture %}
+              {% capture cultivar_value %}{{ cultivar_metafield.value | default: cultivar_metafield }}{% endcapture %}
 
-                    <div class="product-add-to-cart">
-                      <span>Add to cart</span>
-                      <svg fill="none" height="21" viewBox="0 0 22 21" width="22" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M11 0C5.225 0 0.5 4.725 0.5 10.5C0.5 16.275 5.225 21 11 21C16.775 21 21.5 16.275 21.5 10.5C21.5 4.725 16.775 0 11 0ZM11 19.725C5.9 19.725 1.775 15.6 1.775 10.5C1.775 5.4 5.9 1.275 11 1.275C16.1 1.275 20.225 5.4 20.225 10.5C20.225 15.6 16.1 19.725 11 19.725Z" fill="white"></path>
-                        <path d="M11.6 6.82495H10.4V9.89995H7.625V11.1H10.4V14.325H11.6V11.1H14.45V9.89995H11.6V6.82495Z" fill="white"></path>
-                      </svg>
+              {% assign price_cents = product.price %}
 
-                      <product-form class="product-form">
-                        <div class="product-form__error-message-wrapper" role="alert" hidden>
-                          <span class="product-form__error-message"></span>
+              <div class="col-3" data-product-card-wrapper
+                data-price="{{ price_cents }}"
+                data-title="{{ product.title | escape }}"
+              >
+                <div
+                  class="shop-item"
+                  data-product-card
+                  data-wine-range="{{ wine_range_value | strip | escape }}"
+                  data-wine-type="{{ wine_type_value | strip | escape }}"
+                  data-cultivar="{{ cultivar_value | strip | escape }}"
+                >
+                  <a href="{{ product.url }}">
+                    <div class="product-thumb">
+                      {% if section.settings.hide_meta_tags == false and wine_range_value != blank %}
+                        <div class="meta-tag" data-heading="{{ wine_range_value | strip | handleize }}">
+                          {{ wine_range_value | strip }}
                         </div>
+                      {% endif %}
 
-                        {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                          <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                      {{ product.featured_image | image_url: width: 325 | image_tag: loading: 'lazy' }}
 
-                          <div class="input-num-wrap">
-                            <quantity-input class="">
-                              <button type="button" name="plus" class="num-up"></button>
-                              <button type="button" name="minus" class="num-down"></button>
-                              <input min="1" type="number" id="quantity" name="quantity" class="input-num" max="30" value="1" />
-                            </quantity-input>
-                          </div>
-
-                          <button
-                            type="submit"
-                            name="add"
-                            class="btn btn-overlay"
-                            {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
-                          >
-                            <span>
-                              {% if product.selected_or_first_available_variant.available %}
-                                BUY
-                              {% else %}
-                                {{ 'products.product.sold_out' | t }}
-                              {% endif %}
-                            </span>
-
-                            <div class="loading-overlay__spinner hidden">
-                              <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                                <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                              </svg>
-                            </div>
-                          </button>
-                        {%- endform -%}
-                      </product-form>
+                      {% if product.compare_at_price > product.price %}
+                        {% assign discount_amount = product.compare_at_price | minus: product.price %}
+                        <div class="product-discount">
+                          SAVE<br>
+                          {{ discount_amount | money_without_trailing_zeros }}
+                        </div>
+                      {% endif %}
                     </div>
+                  </a>
 
-                    <a href="{{ product.url }}">
-                      <div class="product-cat">{{ product.title }}</div>
-                      {% unless product.tags contains 'Gift' %}
+                  <div class="product-add-to-cart">
+                    <span>Add to cart</span>
+                    <svg fill="none" height="21" viewBox="0 0 22 21" width="22" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M11 0C5.225 0 0.5 4.725 0.5 10.5C0.5 16.275 5.225 21 11 21C16.775 21 21.5 16.275 21.5 10.5C21.5 4.725 16.775 0 11 0ZM11 19.725C5.9 19.725 1.775 15.6 1.775 10.5C1.775 5.4 5.9 1.275 11 1.275C16.1 1.275 20.225 5.4 20.225 10.5C20.225 15.6 16.1 19.725 11 19.725Z" fill="white"></path>
+                      <path d="M11.6 6.82495H10.4V9.89995H7.625V11.1H10.4V14.325H11.6V11.1H14.45V9.89995H11.6V6.82495Z" fill="white"></path>
+                    </svg>
+
+                    <product-form class="product-form">
+                      <div class="product-form__error-message-wrapper" role="alert" hidden>
+                        <span class="product-form__error-message"></span>
+                      </div>
+                      {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                        <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                        <div class="input-num-wrap">
+                          <quantity-input class="">
+                            <button type="button" name="plus" class="num-up"></button>
+                            <button type="button" name="minus" class="num-down"></button>
+                            <input min="1" type="number" id="quantity" name="quantity" class="input-num" max="30" value="1" />
+                          </quantity-input>
+                        </div>
+                        <button
+                          type="submit"
+                          name="add"
+                          class="btn btn-overlay"
+                          {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                        >
+                          <span>
+                            {% if product.selected_or_first_available_variant.available %}
+                              BUY
+                            {% else %}
+                              {{ 'products.product.sold_out' | t }}
+                            {% endif %}
+                          </span>
+                          <div class="loading-overlay__spinner hidden">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                            </svg>
+                          </div>
+                        </button>
+                      {%- endform -%}
+                    </product-form>
+                  </div>
+
+                  <a href="{{ product.url }}">
+                    <div class="product-cat">{{ product.title }}</div>
+                    {% unless product.tags contains 'Gift' %}
                       <div class="product-price-per">Case of 6</div>
-                      {% endunless %}
+                    {% endunless %}
 
-                      {% if customer %}
-                        {% if exclude_product_discount %}
-                          {% if product.compare_at_price > product.price %}
-                            <div class="product-price">
-                              {{ product.price | money_without_trailing_zeros }}
-                              <span>WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span>
-                            </div>
-                          {% else %}
-                            <div class="product-price">{{ product.price | money_without_trailing_zeros }}</div>
-                          {% endif %}
-                        {% else %}
-                          {% if product.compare_at_price > product.price %}
-                            <div class="product-price">
-                              {{ product.price | times: discount | money_without_trailing_zeros }}
-                              <span>WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span>
-                            </div>
-                          {% else %}
-                            <div class="product-price">
-                              {{ product.price | times: discount | money_without_trailing_zeros }}
-                              <span>WAS <del>{{ product.price | money_without_trailing_zeros }}</del></span>
-                            </div>
-                          {% endif %}
-                        {% endif %}
-                      {% else %}
+                    {% if customer %}
+                      {% if exclude_product_discount %}
                         {% if product.compare_at_price > product.price %}
                           <div class="product-price">
                             {{ product.price | money_without_trailing_zeros }}
                             <span>WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span>
                           </div>
                         {% else %}
-                          <div class="product-price rr">{{ product.price | money_without_trailing_zeros }}</div>
+                          <div class="product-price">{{ product.price | money_without_trailing_zeros }}</div>
+                        {% endif %}
+                      {% else %}
+                        {% if product.compare_at_price > product.price %}
+                          <div class="product-price">
+                            {{ product.price | times: discount | money_without_trailing_zeros }}
+                            <span>WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span>
+                          </div>
+                        {% else %}
+                          <div class="product-price">
+                            {{ product.price | times: discount | money_without_trailing_zeros }}
+                            <span>WAS <del>{{ product.price | money_without_trailing_zeros }}</del></span>
+                          </div>
                         {% endif %}
                       {% endif %}
-                    </a>
-                  </div>
+                    {% else %}
+                      {% if product.compare_at_price > product.price %}
+                        <div class="product-price">
+                          {{ product.price | money_without_trailing_zeros }}
+                          <span>WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span>
+                        </div>
+                      {% else %}
+                        <div class="product-price rr">{{ product.price | money_without_trailing_zeros }}</div>
+                      {% endif %}
+                    {% endif %}
+                  </a>
                 </div>
-              {% endfor %}
-            {% else %}
-              <p>No collection selected for this tab.</p>
-            {% endif %}
-          </div>
+              </div>
+            {% endfor %}
+          {% else %}
+            <p>Please select a product collection in the section settings.</p>
+          {% endif %}
         </div>
-      {% endfor %}
+
+        <p class="product-filter-empty" data-product-filter-empty hidden>
+          No products match the selected filters.
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const section = document.getElementById('collections-grid-individual');
-    if (!section) return;
+<style>
+  /* ── Layout fixes ── */
+  #collections-grid-individual-{{ section.id }} .stabs-content,
+  #collections-grid-individual-{{ section.id }} .stabs-content .active,
+  #collections-grid-individual-{{ section.id }} .row {
+    display: flex;
+    flex-wrap: wrap;
+    visibility: visible !important;
+    opacity: 1 !important;
+    height: auto !important;
+    overflow: visible !important;
+    width: 100%;
+  }
+  #collections-grid-individual-{{ section.id }} [data-product-card-wrapper] {
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+  #collections-grid-individual-{{ section.id }} [data-product-card-wrapper][hidden] {
+    display: none !important;
+  }
 
-    const buttons = Array.from(section.querySelectorAll('.tabs-btn'));
-    const panes = Array.from(section.querySelectorAll('.stabs-content [data-tab]'));
+  /* ── Desktop count ── */
+  .cpf-desktop-count {
+    font-size: 13px;
+    opacity: 0.6;
+    margin-bottom: 8px;
+    text-align: right;
+  }
+  .cpf-desktop-count:empty { display: none; }
 
-    if (!buttons.length || !panes.length) return;
+  /* ── Mobile toggle bar ── */
+  .cpf-mobile-bar {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin-bottom: 8px;
+    border-top: 1px solid rgba(0,0,0,0.12);
+    border-bottom: 1px solid rgba(0,0,0,0.12);
+  }
+  .cpf-mobile-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: inherit;
+    padding: 0;
+  }
+  .cpf-product-count {
+    font-size: 13px;
+    opacity: 0.6;
+  }
 
-    function setActive(tabId) {
-      buttons.forEach(btn => btn.classList.toggle('active', btn.dataset.tab === tabId));
-      panes.forEach(p => p.classList.toggle('active', p.getAttribute('data-tab') === tabId));
+  /* ── Overlay ── */
+  .cpf-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    z-index: 999;
+  }
+  .cpf-overlay.is-open { display: block; }
+
+  /* ── Drawer (mobile = slide-in panel, desktop = inline bar) ── */
+  .cpf-drawer {
+    margin-bottom: 24px;
+  }
+  .cpf-drawer-header,
+  .cpf-drawer-footer {
+    display: none;
+  }
+
+  /* ── Filters wrap: filters left, sort right ── */
+  .cpf-filters-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .cpf-filters-left {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .cpf-sort-wrap {
+    margin-left: auto;
+  }
+
+  /* ── Custom dropdowns ── */
+  .cpf-custom-select {
+    position: relative;
+    min-width: 160px;
+  }
+  .cpf-select-btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+    min-height: 40px;
+    padding: 8px 4px 8px 0;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+    color: inherit;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    text-align: left;
+  }
+  .cpf-select-btn:focus { outline: none; border-bottom-color: currentColor; }
+  .cpf-select-btn[aria-expanded="true"] .cpf-chevron {
+    transform: rotate(180deg);
+  }
+  .cpf-chevron { flex-shrink: 0; transition: transform 0.2s; }
+  .cpf-select-label { flex: 1; }
+
+  /* Dropdown list — desktop: absolute, mobile: inline */
+  .cpf-select-list {
+    list-style: none;
+    margin: 0;
+    padding: 4px 0;
+    background: #fff;
+    color: #000;
+    border: 1px solid rgba(0,0,0,0.12);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    min-width: 200px;
+    z-index: 200;
+    /* desktop: absolute below button */
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+  }
+  .cpf-select-list[hidden] { display: none !important; }
+
+  .cpf-select-option {
+    padding: 10px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .cpf-select-option:hover { background: rgba(0,0,0,0.05); }
+  .cpf-select-option.cpf-selected { font-weight: 600; }
+  .cpf-select-option.cpf-disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+    pointer-events: none;
+  }
+
+  /* ── Clear filters ── */
+  .collection-product-filter-reset {
+    min-height: 40px;
+    padding: 8px 16px;
+    border: 1px solid currentColor;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    font-size: 12px;
+    font-family: inherit;
+    align-self: flex-end;
+  }
+  .collection-product-filter-reset:hover {
+    background: #fff;
+    color: #c05140;
+  }
+
+  /* ── Empty message ── */
+  .product-filter-empty {
+    margin: 24px;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* ── MOBILE (≤749px) ── */
+  @media only screen and (max-width: 749px) {
+    .cpf-mobile-bar { display: flex; }
+    .cpf-desktop-count { display: none; }
+
+    /* Drawer becomes a right-side panel */
+    .cpf-drawer {
+      position: fixed;
+      top: 0;
+      right: -100%;
+      width: min(360px, 90vw);
+      height: 100%;
+      background: #fff;
+      color: #000;
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      transition: right 0.3s ease;
+      margin-bottom: 0;
+      overflow-y: auto;
+    }
+    .cpf-drawer.is-open {
+      right: 0;
+    }
+    .cpf-drawer-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 20px 16px;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+      font-size: 16px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      flex-shrink: 0;
+    }
+    .cpf-drawer-close {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+      color: inherit;
+    }
+    .cpf-drawer-footer {
+      display: flex;
+      padding: 16px 20px;
+      border-top: 1px solid rgba(0,0,0,0.1);
+      flex-shrink: 0;
+      margin-top: auto;
+    }
+    .cpf-apply-btn {
+      width: 100%;
+      padding: 14px;
+      background: #000;
+      color: #fff;
+      border: none;
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      cursor: pointer;
+      font-family: inherit;
     }
 
-    setActive(buttons[0].dataset.tab);
+    .cpf-filters-wrap {
+      flex-direction: column;
+      align-items: stretch;
+      padding: 20px;
+      gap: 24px;
+    }
+    .cpf-filters-left {
+      flex-direction: column;
+      gap: 24px;
+    }
+    .cpf-sort-wrap {
+      margin-left: 0;
+    }
+    .collection-product-filter {
+      min-width: unset;
+      width: 100%;
+    }
+    .collection-product-filter select {
+      width: 100%;
+    }
+    .collection-product-filter-reset {
+      width: 100%;
+      text-align: center;
+    }
+    /* Mobile: dropdowns expand inline, full width */
+    .cpf-custom-select {
+      width: 100%;
+      min-width: unset;
+    }
+    .cpf-select-btn {
+      width: 100%;
+    }
+    .cpf-select-list {
+      position: static;
+      box-shadow: none;
+      border: none;
+      border-top: 1px solid rgba(0,0,0,0.08);
+      min-width: unset;
+      width: 100%;
+      background: rgba(0,0,0,0.03);
+    }
+  }
+</style>
 
-    buttons.forEach(btn => {
-      btn.addEventListener('click', function () {
-        setActive(this.dataset.tab);
+<script>
+(function() {
+  var SECTION_ID = '{{ section.id }}';
+
+  function initCollectionGrid() {
+    var section = document.getElementById('collections-grid-individual-' + SECTION_ID);
+    if (!section) return;
+
+    var filterDropdowns = Array.from(section.querySelectorAll('[data-product-filter]'));
+    var sortDropdown    = section.querySelector('[data-product-sort]');
+    var resetButton     = section.querySelector('[data-reset-product-filters]');
+    var cards           = Array.from(section.querySelectorAll('[data-product-card-wrapper]'));
+    var grid            = section.querySelector('[data-product-grid]');
+    var emptyMessage    = section.querySelector('[data-product-filter-empty]');
+    var countEls        = Array.from(section.querySelectorAll('[data-cpf-count]'));
+    var originalOrder   = cards.slice();
+
+    // Mobile drawer
+    var mobileToggle = section.querySelector('[data-cpf-mobile-toggle]');
+    var drawer       = section.querySelector('[data-cpf-drawer]');
+    var overlay      = section.querySelector('[data-cpf-overlay]');
+    var drawerCloses = Array.from(section.querySelectorAll('[data-cpf-drawer-close]'));
+
+    // Active filter state: { wineRange: '', wineType: '', cultivar: '' }
+    var activeFilters = {};
+    filterDropdowns.forEach(function(dd) { activeFilters[dd.dataset.productFilter] = ''; });
+    var activeSort = 'default';
+
+    // Show all cards on init
+    cards.forEach(function(w) { w.hidden = false; w.style.display = ''; });
+
+    /* ── Helpers ── */
+    function norm(v) { return String(v || '').trim().replace(/\s{2,}/g, ' '); }
+    function cardVal(wrapper, key) {
+      var card = wrapper.querySelector('[data-product-card]');
+      return norm(card ? card.dataset[key] : '');
+    }
+
+    /* ── Count how many cards match all current filters,
+       but treat `excludeKey` as having `testValue` ── */
+    function countForOption(excludeKey, testValue) {
+      var count = 0;
+      cards.forEach(function(wrapper) {
+        var matches = true;
+        Object.keys(activeFilters).forEach(function(key) {
+          var sel = (key === excludeKey) ? testValue : activeFilters[key];
+          if (sel && cardVal(wrapper, key) !== sel) matches = false;
+        });
+        if (matches) count++;
+      });
+      return count;
+    }
+
+    /* ── Build options for a filter dropdown ── */
+    function buildDropdown(dd) {
+      var key          = dd.dataset.productFilter;
+      var defaultLabel = dd.dataset.defaultLabel || 'Filter';
+      var list         = dd.querySelector('[data-cpf-select-list]');
+      var btnLabel     = dd.querySelector('.cpf-select-label');
+      var currentVal   = activeFilters[key];
+
+      // Collect all unique values
+      var allValues = new Set();
+      cards.forEach(function(w) { var v = cardVal(w, key); if (v) allValues.add(v); });
+
+      list.innerHTML = '';
+
+      // "All" / reset option
+      var liAll = document.createElement('li');
+      liAll.className = 'cpf-select-option' + (currentVal === '' ? ' cpf-selected' : '');
+      liAll.dataset.value = '';
+      liAll.textContent = defaultLabel;
+      list.appendChild(liAll);
+
+      Array.from(allValues).sort(function(a, b) { return a.localeCompare(b); }).forEach(function(value) {
+        var count = countForOption(key, value);
+        var li    = document.createElement('li');
+        li.dataset.value = value;
+        li.textContent   = value + ' (' + count + ')';
+        li.className = 'cpf-select-option';
+        if (value === currentVal) li.classList.add('cpf-selected');
+        if (count === 0) {
+          li.classList.add('cpf-disabled');
+          // auto-deselect if this option now has 0
+          if (currentVal === value) { activeFilters[key] = ''; currentVal = ''; }
+        }
+        list.appendChild(li);
+      });
+
+      // Update button label
+      if (btnLabel) btnLabel.textContent = currentVal ? currentVal : defaultLabel;
+    }
+
+    function buildAllDropdowns() {
+      filterDropdowns.forEach(buildDropdown);
+    }
+
+    /* ── Apply filters ── */
+    function applyFilters() {
+      var hasActive    = Object.keys(activeFilters).some(function(k) { return activeFilters[k] !== ''; });
+      var visibleCount = 0;
+
+      cards.forEach(function(wrapper) {
+        var matches = true;
+        Object.keys(activeFilters).forEach(function(key) {
+          var sel = activeFilters[key];
+          if (sel && cardVal(wrapper, key) !== sel) matches = false;
+        });
+        wrapper.hidden        = !matches;
+        wrapper.style.display = matches ? '' : 'none';
+        if (matches) visibleCount++;
+      });
+
+      countEls.forEach(function(el) {
+        el.textContent = visibleCount + ' Product' + (visibleCount !== 1 ? 's' : '');
+      });
+
+      if (resetButton) resetButton.hidden = !hasActive;
+      if (emptyMessage) emptyMessage.hidden = visibleCount > 0;
+
+      buildAllDropdowns();
+      applySort();
+    }
+
+    /* ── Sort ── */
+    function applySort() {
+      if (!grid) return;
+      var sorted = originalOrder.slice();
+      if (activeSort === 'title-asc') {
+        sorted.sort(function(a, b) { return (a.dataset.title||'').localeCompare(b.dataset.title||''); });
+      } else if (activeSort === 'title-desc') {
+        sorted.sort(function(a, b) { return (b.dataset.title||'').localeCompare(a.dataset.title||''); });
+      } else if (activeSort === 'price-asc') {
+        sorted.sort(function(a, b) { return parseInt(a.dataset.price||0) - parseInt(b.dataset.price||0); });
+      } else if (activeSort === 'price-desc') {
+        sorted.sort(function(a, b) { return parseInt(b.dataset.price||0) - parseInt(a.dataset.price||0); });
+      }
+      sorted.forEach(function(el) { grid.appendChild(el); });
+    }
+
+    /* ── Custom dropdown open/close ── */
+    function closeAllDropdowns(except) {
+      var allDDs = Array.from(section.querySelectorAll('.cpf-custom-select'));
+      allDDs.forEach(function(dd) {
+        if (dd === except) return;
+        var list = dd.querySelector('[data-cpf-select-list]');
+        var btn  = dd.querySelector('[data-cpf-select-btn]');
+        if (list) list.hidden = true;
+        if (btn)  btn.setAttribute('aria-expanded', 'false');
+      });
+    }
+
+    function toggleDropdown(dd) {
+      var list = dd.querySelector('[data-cpf-select-list]');
+      var btn  = dd.querySelector('[data-cpf-select-btn]');
+      var isOpen = !list.hidden;
+      closeAllDropdowns(dd);
+      list.hidden = isOpen;
+      btn.setAttribute('aria-expanded', String(!isOpen));
+    }
+
+    /* ── Bind filter dropdowns ── */
+    filterDropdowns.forEach(function(dd) {
+      var btn  = dd.querySelector('[data-cpf-select-btn]');
+      var list = dd.querySelector('[data-cpf-select-list]');
+      var key  = dd.dataset.productFilter;
+
+      if (btn) btn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleDropdown(dd);
+      });
+
+      if (list) list.addEventListener('click', function(e) {
+        var option = e.target.closest('.cpf-select-option');
+        if (!option || option.classList.contains('cpf-disabled')) return;
+        activeFilters[key] = option.dataset.value;
+        list.hidden = true;
+        if (btn) btn.setAttribute('aria-expanded', 'false');
+        applyFilters();
       });
     });
+
+    /* ── Bind sort dropdown ── */
+    if (sortDropdown) {
+      var sortBtn  = sortDropdown.querySelector('[data-cpf-select-btn]');
+      var sortList = sortDropdown.querySelector('[data-cpf-select-list]');
+      var sortLabel = sortDropdown.querySelector('.cpf-select-label');
+
+      if (sortBtn) sortBtn.addEventListener('click', function(e) {
+        e.stopPropagation();
+        toggleDropdown(sortDropdown);
+      });
+
+      if (sortList) sortList.addEventListener('click', function(e) {
+        var option = e.target.closest('.cpf-select-option');
+        if (!option) return;
+        activeSort = option.dataset.value;
+        // Update selected state
+        Array.from(sortList.querySelectorAll('.cpf-select-option')).forEach(function(o) {
+          o.classList.toggle('cpf-selected', o === option);
+        });
+        if (sortLabel) sortLabel.textContent = option.textContent;
+        sortList.hidden = true;
+        if (sortBtn) sortBtn.setAttribute('aria-expanded', 'false');
+        applySort();
+      });
+    }
+
+    /* ── Close dropdowns on outside click ── */
+    document.addEventListener('click', function() { closeAllDropdowns(null); });
+
+    /* ── Reset ── */
+    if (resetButton) resetButton.addEventListener('click', function() {
+      Object.keys(activeFilters).forEach(function(k) { activeFilters[k] = ''; });
+      activeSort = 'default';
+      // Reset sort label
+      if (sortDropdown) {
+        var sortLabel = sortDropdown.querySelector('.cpf-select-label');
+        var sortDef   = sortDropdown.dataset.defaultLabel || 'Sort by: Featured';
+        if (sortLabel) sortLabel.textContent = sortDef;
+        var sortList  = sortDropdown.querySelector('[data-cpf-select-list]');
+        if (sortList) {
+          Array.from(sortList.querySelectorAll('.cpf-select-option')).forEach(function(o) {
+            o.classList.toggle('cpf-selected', o.dataset.value === 'default');
+          });
+        }
+      }
+      applyFilters();
+    });
+
+    /* ── Mobile drawer ── */
+    function openDrawer() {
+      if (drawer)  drawer.classList.add('is-open');
+      if (overlay) overlay.classList.add('is-open');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeDrawer() {
+      if (drawer)  drawer.classList.remove('is-open');
+      if (overlay) overlay.classList.remove('is-open');
+      document.body.style.overflow = '';
+      closeAllDropdowns(null);
+    }
+
+    if (mobileToggle) mobileToggle.addEventListener('click', openDrawer);
+    if (overlay)      overlay.addEventListener('click', closeDrawer);
+    drawerCloses.forEach(function(btn) { btn.addEventListener('click', closeDrawer); });
+
+    /* ── Init ── */
+    buildAllDropdowns();
+    applyFilters();
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initCollectionGrid);
+  } else {
+    initCollectionGrid();
+  }
+  document.addEventListener('shopify:section:load', function(e) {
+    if (e.detail && e.detail.sectionId === SECTION_ID) initCollectionGrid();
   });
+})();
 </script>
 
 {% schema %}
@@ -234,9 +838,23 @@
       "label": "Sub Heading"
     },
     {
+      "type": "collection",
+      "id": "product_collection",
+      "label": "Product collection to filter"
+    },
+    {
+      "type": "range",
+      "id": "product_amount",
+      "min": 4,
+      "max": 50,
+      "step": 1,
+      "label": "Products to show",
+      "default": 30
+    },
+    {
       "type": "checkbox",
-      "id": "hide_filter",
-      "label": "Hide Filter Tabs",
+      "id": "hide_product_filters",
+      "label": "Hide Product Filters",
       "default": false
     },
     {
@@ -246,41 +864,10 @@
       "default": false
     }
   ],
-  "blocks": [
-    {
-      "type": "item",
-      "limit": 16,
-      "name": "Choose Collection",
-      "settings": [
-        {
-          "type": "text",
-          "id": "collection_heading",
-          "label": "Collection Name"
-        },
-        {
-          "type": "collection",
-          "id": "collectionCarasoul",
-          "label": "Choose Collection"
-        },
-        {
-          "type": "range",
-          "id": "product_amount",
-          "min": 4,
-          "max": 30,
-          "step": 1,
-          "label": "Products to show",
-          "default": 30
-        }
-      ]
-    }
-  ],
   "presets": [
     {
       "name": "Collection Grid Single",
-      "category": "Collection",
-      "blocks": [
-        { "type": "item" }
-      ]
+      "category": "Collection"
     }
   ]
 }

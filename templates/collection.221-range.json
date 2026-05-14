@@ -70,25 +70,16 @@
         "new_tab": true
       }
     },
-    "product-grid": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "221-range"
-          }
-        }
-      },
-      "block_order": [
-        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
-      ],
+    "collections_grid_individual_rnpeiA": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
       "settings": {
         "topheading": "",
-        "header-tag": false,
-        "subtitle-1": "",
-        "hide_filter": false
+        "subtitle_1": "",
+        "product_collection": "221-range",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
       }
     },
     "16421155221c48519d": {
@@ -194,7 +185,7 @@
     "3cedd762-10d3-4783-a12a-a7755f238c56",
     "spacer_69k7yi",
     "focus_text_text_only_fPPLfN",
-    "product-grid",
+    "collections_grid_individual_rnpeiA",
     "16421155221c48519d",
     "1639247728bb3b5028"
   ]

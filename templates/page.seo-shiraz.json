@@ -49,7 +49,6 @@
         "background_image": "shopify://shop_images/Shiraz_Header.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "blurb": "",
         "right_btn_text": "",
         "right_btn_link": ""
       }
@@ -190,7 +189,7 @@
       }
     },
     "1642076916b7cca7d2": {
-     "type": "Call-To-Action",
+      "type": "Call-To-Action",
       "settings": {
         "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
         "image_overlay": false,

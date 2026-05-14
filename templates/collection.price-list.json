@@ -38,7 +38,6 @@
         "background_image": "shopify://shop_images/Cellar-14_3773dad7-b9bf-4ab0-accf-b9de761ff2e3.jpg",
         "image_overlay": "",
         "overlay_opacity": 0,
-        "blurb": "",
         "right_btn_text": "",
         "right_btn_link": "",
         "anchor_link": ""
@@ -80,7 +79,7 @@
       }
     },
     "1642755010578ddd9f": {
-     "type": "Call-To-Action",
+      "type": "Call-To-Action",
       "settings": {
         "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
         "image_overlay": false,

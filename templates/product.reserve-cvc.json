@@ -54,7 +54,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Wine Fact Sheets",
-            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "content": "<p>View all vintage <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets / tasting notes here</a>.<br/>Availability of vintages depends on current stock.</p>",
             "page": "",
             "icon": "none",
             "border": false
@@ -278,6 +278,7 @@
       ],
       "settings": {
         "topheading": "OUR WHITE WINES",
+        "header-tag": false,
         "subtitle-1": "",
         "hide_filter": false
       }

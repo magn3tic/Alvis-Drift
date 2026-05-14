@@ -24,7 +24,6 @@
             "background_image": "shopify://shop_images/Website_banner_mixed_box_sale.png",
             "image_overlay": "",
             "overlay_opacity": 50,
-            "Heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "BEST OF",
             "paragarh_p2": "2024",
@@ -43,7 +42,6 @@
             "background_image": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
             "image_overlay": "",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "LIMITED",
             "paragarh_p2": "OFFERS",
@@ -62,7 +60,6 @@
             "background_image": "shopify://shop_images/Alvi_s-Drift-Wine-Club-Members.jpg",
             "image_overlay": "",
             "overlay_opacity": 30,
-            "Heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "WINTER",
             "paragarh_p2": "WARMER",
@@ -83,18 +80,7 @@
       "settings": {
         "background_image": "shopify://shop_images/Pairing-Boxes.jpg",
         "image_overlay": "",
-        "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "LIMITED",
-        "paragarh_p2": "OFFERS",
-        "paragarh_p3": "",
-        "paragarh_p4": "",
-        "paragarh_1": "",
-        "paragarh_2": "Enjoy our limited offers – while stocks last.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/gifts",
-        "btn_main_link": ""
+        "overlay_opacity": 30
       }
     },
     "1655375092a9531a0d": {

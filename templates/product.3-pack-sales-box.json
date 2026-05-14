@@ -32,7 +32,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Wine Fact Sheets",
-            "content": "<p>View all vintage fact sheets / tasting notes <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "content": "<p>View all vintage <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets / tasting notes here</a>.<br/>Availability of vintages depends on current stock.</p>",
             "page": "",
             "icon": "none",
             "border": false
@@ -65,7 +65,9 @@
       ],
       "settings": {
         "topheading": "SPRING SALE",
-        "subtitle-1": "10 September - 4 October 2024"
+        "header-tag": false,
+        "subtitle-1": "10 September - 4 October 2024",
+        "hide_filter": false
       }
     },
     "163949428877599353": {
@@ -84,6 +86,7 @@
       ],
       "disabled": true,
       "settings": {
+        "subheading": "",
         "topheading": "OUR GIFTING COLLECTION"
       }
     }
