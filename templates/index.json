@@ -399,6 +399,14 @@
             "product_amount": 30
           }
         },
+        "item_pBTz8y": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Reserve Range",
+            "collectionCarasoul": "reserve-range",
+            "product_amount": 30
+          }
+        },
         "1639717880a3dfd1a1-0": {
           "type": "item",
           "settings": {
@@ -429,6 +437,7 @@
         "e1da377c-7a1d-4c54-80f0-ee4eb138fcb4",
         "da410b66-55b5-41bc-b50a-82a109d7f826",
         "91df3ff6-2007-4e78-bc2d-f3aef4a1fe16",
+        "item_pBTz8y",
         "1639717880a3dfd1a1-0",
         "9d3f4820-036b-4a4d-9be4-267751c949d7",
         "item_7WjGR7"
