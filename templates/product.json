@@ -192,6 +192,7 @@
     },
     "1639224403b97d22e1": {
       "type": "Call-To-Action",
+      "disabled": true,
       "settings": {
         "wine-club-bg": "shopify://shop_images/Red_Meat_Pairing_01.jpg",
         "image_overlay": false,
@@ -295,24 +296,13 @@
     },
     "collections_grid_individual_n4iykh": {
       "type": "Collections-Grid-individual",
-      "blocks": {
-        "item_ePN9By": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "gifts",
-            "product_amount": 24
-          }
-        }
-      },
-      "block_order": [
-        "item_ePN9By"
-      ],
       "name": "Collection Grid Single",
       "settings": {
-        "topheading": "Gift Collections",
+        "topheading": "Red Wines",
         "subtitle_1": "",
-        "hide_filter": false,
+        "product_collection": "red-wines",
+        "product_amount": 30,
+        "hide_product_filters": false,
         "hide_meta_tags": true
       }
     }
