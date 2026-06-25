@@ -72,10 +72,12 @@
     @media screen and (min-width: 750px) { body { font-size: 1.6rem; } }
     {% endstyle %}
 
-    <!-- ── BLOCKING CSS -->   
+    <!-- ── BLOCKING CSS -->
+  {%- unless page.handle == 'the-221-game' -%}
   {{ 'font.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'homes.css' | asset_url | stylesheet_tag: preload: true }}
+  {%- endunless -%}
   {{ 'main.css' | asset_url | stylesheet_tag: preload: true }}
 
   <link rel="preload" href="{{ 'styles.css' | asset_url }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
