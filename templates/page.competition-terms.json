@@ -1,1 +1,102 @@
-{"sections":{"main":{"type":"main-page","disabled":true,"settings":{"enable_header":true}},"164180973518aeb3e4":{"type":"Page-Background-Colour","settings":{"page_bg":"#C2AB9B"}},"1641810268044d5f52":{"type":"Hero-Main","blocks":{"b1167618-d551-4ec0-b99e-6b4138c0181c":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/DJI_0009.jpg","image_overlay":"#000000","overlay_opacity":50,"heading_color":"#ffffff","video_banner":"","paragarh_p1":"TERMS & CONDITIONS","paragarh_p2":"","paragarh_p3":"","paragarh_p4":"","paragarh_1":"The technical details","paragarh_2":"Around our online sales and website usage","side_btn_text":"","side_btn_link":""}}},"block_order":["b1167618-d551-4ec0-b99e-6b4138c0181c"],"disabled":true,"settings":{"background_image":"shopify:\/\/shop_images\/DJI_0009.jpg","image_overlay":"","overlay_opacity":30,"hide_on_mobile":true,"right_btn_text":"","right_btn_link":"","anchor_link":""}},"spacer_MA8JaR":{"type":"Spacer","settings":{"spacer_size":"100px"}},"1641809810cf24e0dc":{"type":"Text-Only","blocks":{"164180981014fd1b1e-1":{"type":"text","settings":{"text":"<p><\/p>{{ page.content }}","size":"normal"}}},"block_order":["164180981014fd1b1e-1"],"settings":{"color_scheme":"none","text_alignment":"left"}},"spacer_4x6Yzr":{"type":"Spacer","name":"Spacer","settings":{"spacer_size":"100px"}}},"order":["main","164180973518aeb3e4","1641810268044d5f52","spacer_MA8JaR","1641809810cf24e0dc","spacer_4x6Yzr"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "enable_header": true
+      }
+    },
+    "164180973518aeb3e4": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    },
+    "1641810268044d5f52": {
+      "type": "Hero-Main",
+      "blocks": {
+        "b1167618-d551-4ec0-b99e-6b4138c0181c": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/DJI_0009.jpg",
+            "image_overlay": "#000000",
+            "overlay_opacity": 50,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "TERMS & CONDITIONS",
+            "paragarh_p2": "",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "The technical details",
+            "paragarh_2": "Around our online sales and website usage",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "b1167618-d551-4ec0-b99e-6b4138c0181c"
+      ],
+      "disabled": true,
+      "settings": {
+        "background_image": "shopify://shop_images/DJI_0009.jpg",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "hide_on_mobile": true,
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "spacer_MA8JaR": {
+      "type": "Spacer",
+      "settings": {
+        "spacer_size": "100px"
+      }
+    },
+    "1641809810cf24e0dc": {
+      "type": "Text-Only",
+      "blocks": {
+        "164180981014fd1b1e-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p>{{ page.content }}",
+            "size": "normal"
+          }
+        }
+      },
+      "block_order": [
+        "164180981014fd1b1e-1"
+      ],
+      "settings": {
+        "color_scheme": "none",
+        "text_alignment": "left"
+      }
+    },
+    "spacer_4x6Yzr": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "100px"
+      }
+    }
+  },
+  "order": [
+    "main",
+    "164180973518aeb3e4",
+    "1641810268044d5f52",
+    "spacer_MA8JaR",
+    "1641809810cf24e0dc",
+    "spacer_4x6Yzr"
+  ]
+}

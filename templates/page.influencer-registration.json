@@ -1,1 +1,82 @@
-{"sections":{"hero_main_gR4eEV":{"type":"Hero-Main","blocks":{"slider_BGgzqc":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/Alvis_Drift_Influencer_Banner_1058052a-6d48-4d22-a5c8-580a4cceb05c.png","mobile_background_image":"shopify:\/\/shop_images\/Alvis_Drift_Influencer_banner_aaf4f7ef-e2bd-43d3-9b51-7ab46041a87a.png","image_overlay":"","overlay_opacity":30,"heading_color":"#ffffff","video_banner":"","paragarh_p1":"Exceptional Wine for Exceptional feeds.","paragarh_p2":"","paragarh_p3":"","paragarh_p4":"","paragarh_1":"","paragarh_2":"","side_btn_text":"","side_btn_link":""}}},"block_order":["slider_BGgzqc"],"name":"Page Header (Hero)","settings":{"background_image":"shopify:\/\/shop_images\/Alvis_Drift_Influencer_Banner.png","image_overlay":"","overlay_opacity":30,"hide_on_mobile":true,"right_btn_text":"","right_btn_link":"","anchor_link":""}},"spacer_ymRRrV":{"type":"Spacer","name":"Spacer","settings":{"spacer_size":"200px"}},"main":{"type":"main-page","settings":{"enable_header":false,"badge_image":"shopify:\/\/shop_images\/ald-seal.png"}},"page_contact_section_influencer_iM9tdg":{"type":"page-contact-influencer","name":"Influencer Contact Form","settings":{"subheading":"","heading":"","description":"","join_text":"JOIN OUR PRIVATE WINE CLUB","login_text":"LOG IN","login_link":"https:\/\/alvisdrift.co.za\/account\/login"}}},"order":["hero_main_gR4eEV","spacer_ymRRrV","main","page_contact_section_influencer_iM9tdg"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "hero_main_gR4eEV": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_BGgzqc": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/Alvis_Drift_Influencer_Banner_1058052a-6d48-4d22-a5c8-580a4cceb05c.png",
+            "mobile_background_image": "shopify://shop_images/Alvis_Drift_Influencer_banner_aaf4f7ef-e2bd-43d3-9b51-7ab46041a87a.png",
+            "image_overlay": "",
+            "overlay_opacity": 30,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "Exceptional Wine for Exceptional feeds.",
+            "paragarh_p2": "",
+            "paragarh_p3": "",
+            "paragarh_p4": "",
+            "paragarh_1": "",
+            "paragarh_2": "",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_BGgzqc"
+      ],
+      "name": "Page Header (Hero)",
+      "settings": {
+        "background_image": "shopify://shop_images/Alvis_Drift_Influencer_Banner.png",
+        "image_overlay": "",
+        "overlay_opacity": 30,
+        "hide_on_mobile": true,
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "spacer_ymRRrV": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "200px"
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "enable_header": false,
+        "badge_image": "shopify://shop_images/ald-seal.png"
+      }
+    },
+    "page_contact_section_influencer_iM9tdg": {
+      "type": "page-contact-influencer",
+      "name": "Influencer Contact Form",
+      "settings": {
+        "subheading": "",
+        "heading": "",
+        "description": "",
+        "join_text": "JOIN OUR PRIVATE WINE CLUB",
+        "login_text": "LOG IN",
+        "login_link": "https://alvisdrift.co.za/account/login"
+      }
+    }
+  },
+  "order": [
+    "hero_main_gR4eEV",
+    "spacer_ymRRrV",
+    "main",
+    "page_contact_section_influencer_iM9tdg"
+  ]
+}

@@ -1,1 +1,363 @@
-{"sections":{"pv3-nav":{"type":"pv3-nav","settings":{"cta_label":"","cta_link":""}},"pv3-hero":{"type":"pv3-hero","settings":{"hero_h1":"The 221\nGame\nis on.","hero_sub":"Share your greatest rugby moment and stand to win a case of 221 wine. Every week, the best story wins.","cta_secondary_label":"How to play","cta_secondary_link":"","show_badge":false,"video_url":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/107f857ad6424806bb4ee65c2f4a9139.mp4","video_url_mobile":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/c5e9858f43cd4c82ae64d98829f0fab9.mp4"}},"pv3-story":{"type":"pv3-story","settings":{"heading":"Before it was a wine, it was a moment","body_1":"It’s 1928. Alvi van der Merwe, representing Western Province Country, becomes the first player to score a try against the touring All Blacks on African soil; a defining moment in South African rugby history.\n\nHe goes on to earn Springbok cap number 221 during the 1931–32 tour of Britain and Ireland.\n\nIt was his moment of greatness. And the number continues to carry his legacy forward.","body_2":"","percy_quote":"Today, it lives on in every glass of 221: wines inspired by rugby, made for every story worth sharing.","cta_label":"Discover the 221 Range →","cta_link":"shopify:\/\/collections\/221-range","archival_image":"shopify:\/\/shop_images\/Alvis_drift_221_sticker.png","show_bottle_image":false,"show_badge":false,"apply_image_filter":false}},"pv3-mechanics":{"type":"pv3-mechanics","settings":{"heading":"How to Play","intro":"It’s simple. Share your story, submit your moment, and you could win weekly. Qualifying for the grand prize is even easier.","step_1_title":"Share","step_1_body":"Send us your greatest rugby memory. Whether you played it, watched it, or got stuck in a debate about it, we want to know.","step_1_bg_image":"shopify:\/\/shop_images\/Article-1.png","step_2_title":"Submit","step_2_body":"Use #The221Game on social media, or fill in the form below.","step_2_bg_image":"shopify:\/\/shop_images\/Article2.png","step_3_title":"Win Weekly","step_3_body":"Every week, the best story wins a mixed case of 221 Range wine. Winners are announced on Sundays.","step_3_bg_image":"shopify:\/\/shop_images\/Article3.png","step_4_title":"Win Big","step_4_body":"The grand prize, worth R50k, includes 2 tickets to the Springboks vs All Blacks match on 5 September. Qualify by joining the Alvi’s Drift Private Club and buying any case of wine, either online or in stores nationwide.","step_4_bg_image":"shopify:\/\/shop_images\/Article4.png","callout_title":"Weekly Prize","callout_body":"A Mixed Case Of 221 Range Wine, Delivered To Your Door","callout_video_url":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/7bf3ba8aa45f46209807a8978b7e4282.mp4","callout_bg_image":"shopify:\/\/shop_images\/clean-bckg.png","callout_product_image":"shopify:\/\/shop_images\/SAWIS_Sticker_approval_221_Special_Cuvee_Red_1_copy_2_1_2.png","submit_cta_label":"Submit Your 221 Moment","submit_cta_link":"","layout":"horizontal","tcs_link":"shopify:\/\/pages\/weekly-competition-terms-conditions"}},"pv3-form":{"type":"pv3-form","blocks":{"forms_inline_WxCAMr":{"type":"shopify:\/\/apps\/forms\/blocks\/inline\/8744a304-fcb1-4347-b211-bb6b4759a76a","settings":{"form_id":"1001880","text_color":"#202020","button_background_color":"#202020","button_label_color":"#ffffff","links_color":"#1878b9","errors_color":"#e02229","text_alignment":"center","form_alignment":"center","padding_top":0,"padding_bottom":24,"padding_right":0,"padding_left":0}}},"block_order":["forms_inline_WxCAMr"],"settings":{"bg_image":"shopify:\/\/shop_images\/Formbck-o.png","heading":"221 Moments\nStart Here","body_text":"Whether it’s from a braai, a watch party, or primary school, tell us your greatest rugby memory. The best story each week wins a mixed case of 221.","badge_image":"shopify:\/\/shop_images\/Group_9.png","instagram_url":"https:\/\/www.instagram.com\/alvisdriftwine\/","twitter_url":"https:\/\/x.com\/alvisdrift","facebook_url":"https:\/\/www.facebook.com\/AlvisDriftWines","tiktok_url":"https:\/\/www.tiktok.com\/@alvis_drift"}},"pv3-grand-prize":{"type":"pv3-grand-prize","settings":{"heading":"Win Big\nMake a purchase","callout_heading":"One champion | One prize valued up to R50 000  | Don't miss","body_text":"You could see the Springboks vs All Blacks clash on 5 September 2026 in Johannesburg. Flights, accommodation, transportation – all covered. You’ll also receive 3 cases of Alvi’s Drift Brut Nature Vintage Cap Classique and a year’s worth of 221 Range wines to celebrate in style.","callout_title":"Make It Happen","callout_body":"Stand to win by joining the Alvi’s Drift Private Club and buy any of your favourite wine. Both online and in-store purchases qualify between 18 June 2026 and 23 August 2026. When shopping at your favourite, major grocery store, WhatsApp a photo of your till slip to 068 616 8717, along with your name, surname, email address, and date of birth. Additional purchases mean more entries. If your retailer don't stock it - ask them to  - Spread the word.","submit_cta_label":"JOIN THE CLUB","submit_cta_link":"shopify:\/\/pages\/club","countdown_enabled":true,"countdown_target":"2026-09-05T10:00:00","percy_image":"shopify:\/\/shop_images\/221-GrandPrize-O.png"}},"pv3-winners":{"type":"pv3-winners","blocks":{"past_winner_EbKtAE":{"type":"past_winner","settings":{"avatar_image":"shopify:\/\/shop_images\/Alvis-Drift-Icon-Catherine-Constantinides.jpg","name":"Winner  June 18","handle":"@winnerthree","quote":"I love Alvi's wine!","read_more_url":""}},"past_winner_L6fj9i":{"type":"past_winner","settings":{"name":"Winner","handle":"@winnertwo","quote":"Amazing wine!","read_more_url":""}},"past_winner_99eTmx":{"type":"past_winner","settings":{"name":"Winner","handle":"@winnerone","quote":"I won the prize","read_more_url":""}}},"block_order":["past_winner_EbKtAE","past_winner_L6fj9i","past_winner_99eTmx"],"disabled":true,"settings":{"bg_image":"shopify:\/\/shop_images\/221-Winners-bcko.png","section_heading":"Now That's a 221 Story","phase":"full","placeholder_week_label":"First Winner · Week of 18 June 2026","placeholder_winner_name":"First winner announced 18 June.","placeholder_message":"Submissions are open now. Winners drawn every Sunday from launch week.","featured_photo":"shopify:\/\/shop_images\/Alvis_Drift_Junels_pasta_with_Viognier_pairing.png","winner_badge":"shopify:\/\/shop_images\/winner-badge-o.png","featured_name":"Hennie de Waal","featured_handle":"@hennie_dw · Stellenbosch","featured_quote":"\"Your winner quote goes here.\"","featured_date":"Week of 16 June 2026"}},"pv3-social-wall":{"type":"pv3-social-wall","blocks":{"instafeed_studio_instst_feed_block_94kHDw":{"type":"shopify:\/\/apps\/instafeed-studio\/blocks\/instst-feed-block\/5b70ee8b-b29d-49b4-b61c-bcce1d2977c7","settings":{"layout":"grid","columns":5,"gap":8,"corner_radius":5,"vertical_padding":40,"horizontal_padding":0,"max_width":1800,"aspect_ratio":"3 \/ 4","columns_mobile":2,"vertical_padding_mobile":40,"horizontal_padding_mobile":0,"breakpoint":750,"feed_source":"","custom_style":""}}},"block_order":["instafeed_studio_instst_feed_block_94kHDw"],"settings":{"heading":"The 221 Game Is On.\nAre You Playing?","subtext":"Real fans. Real stories. Tagged across social media and pulled in live.","cta_label":"Join #The221Game Conversation","embed_code":"","hashtag_link":""}},"pv3-playbook":{"type":"pv3-playbook","blocks":{"article_card_HWfY6B":{"type":"article_card","settings":{"category":"stories","card_image":"shopify:\/\/shop_images\/Springbok-Carpaccio-with-Alvi_s-Drift-221-Sauvignon-Blanc.jpg","title":"Springbok carpaccio recipe with Alvi’s Drift 221 Sauvignon Blanc","excerpt":"Tender Springbok carpaccio with blanched greens and caprino cheese, paired with 221 Sauvignon Blanc for easy weekend entertaining.","link":"shopify:\/\/blogs\/alvis-drift\/springbok-carpaccio-recipe-with-alvi-s-drift-221-sauvignon-blanc"}},"card-1":{"type":"article_card","settings":{"category":"percy","card_image":"shopify:\/\/shop_images\/Alvid_DRift_221_Chenin_Blanc_Top_wines.png","title":"Alvi’s Drift 221 Chenin Blanc","excerpt":"Alvi’s Drift 221 Chenin Blanc features ripe peach, lemon, and honeysuckle notes with a rich palate. Perfect with spicy dishes, creamy sauces, or seafood.","link":"shopify:\/\/blogs\/alvis-drift\/alvi-s-drift-221-chenin-blanc"}},"card-2":{"type":"article_card","disabled":true,"settings":{"category":"percy","card_image":"shopify:\/\/shop_images\/Alvis_Drift_Top_wines_Chenin_Blanc_2022.png","title":"Alvi’s Drift 221 Range","excerpt":"The 221 Collection Introduces a new style of wine and honours the founder of the family farm, Alvi van der Merwe.","link":"shopify:\/\/blogs\/alvis-drift\/221-range-launch"}},"card-3":{"type":"article_card","settings":{"category":"stories","card_image":"shopify:\/\/shop_images\/2_ContentImage_6888f387-7bbc-471b-af68-cd8b7535d359.webp","title":"Junel’s Bulgarian Feta Pie with Sauvignon Blanc Pairing","excerpt":"Get the recipe for this delicious baked Bulgarian Feta Cheese Pie, perfect for savouring with our new Alvi's Drift 221 Sauvignon Blanc in summertime.","link":"shopify:\/\/blogs\/alvis-drift\/recipe-feta-pie"}}},"block_order":["article_card_HWfY6B","card-1","card-2","card-3"],"settings":{"heading":"Sideline Banter","intro":"Rugby stories. Armchair takes. 221 picks. Fan moments. Your source of top-quality banter, updated weekly."}},"pv3-wine":{"type":"pv3-wine","blocks":{"wine-1":{"type":"wine_card","settings":{"bottle_image":"shopify:\/\/shop_images\/Alvis_Drift_221_Chenin_Blanc.png","occasion":"FOR THE PRE-MATCH BUILD-UP","wine_name":"221 Chenin Blanc","tasting_note":"","is_percy_pick":false,"shop_link":"shopify:\/\/products\/221-chenin-blanc"}},"wine-2":{"type":"wine_card","settings":{"bottle_image":"shopify:\/\/shop_images\/221-Range-Sauvignon-Blanc.png","occasion":"FOR KICK-OFF & BEYOND","wine_name":"221 Sauvignon Blanc","tasting_note":"","is_percy_pick":false,"shop_link":"shopify:\/\/products\/221-sauvignon-blanc"}},"wine-3":{"type":"wine_card","settings":{"bottle_image":"shopify:\/\/shop_images\/221Range_PinotageNV_2.png","occasion":"FOR THE POST-MATCH BRAAI","wine_name":"221 Pinotage","tasting_note":"","is_percy_pick":false,"shop_link":"shopify:\/\/products\/221-pinotage"}},"wine-4":{"type":"wine_card","settings":{"bottle_image":"shopify:\/\/shop_images\/221-Special-Cuvee.png","occasion":"FOR THE BIG OCCASION","wine_name":"221 Special Cuvée Red","tasting_note":"","is_percy_pick":false,"shop_link":"shopify:\/\/products\/221-special-cuvee"}}},"block_order":["wine-1","wine-2","wine-3","wine-4"],"settings":{"heading_line1":"SHARING","heading_line2":"OUR STORIES","subhead":"Crisp and generous for the anticipation. Fresh and lively when things get going. Bold and warm for the fire that keeps burning. Deep and complex for the moments that deserve something special.\n\nWhatever the moment, there’s a 221 Range wine for it. Born from a legendary number in Springbok rugby and made for every story that follows.","shop_cta_label":"Shop Now","range_cta_text":"SHOP NOW →","range_link":"shopify:\/\/collections\/221-range"}},"pv3-footer-strip":{"type":"pv3-footer-strip","settings":{"shop_heading":"Shop","shop_body":"Bring home the wines that inspired #The221Game.","shop_cta_label":"DISCOVER THE 221 RANGE","shop_link":"shopify:\/\/collections\/221-range","badge_image":"shopify:\/\/shop_images\/Group_9.png","follow_heading":"Follow","follow_handle":"The game never really stops. Follow along for debates, winners, and more.","instagram_url":"https:\/\/www.instagram.com\/alvisdriftwine\/","facebook_url":"https:\/\/www.facebook.com\/AlvisDriftWines","twitter_url":"https:\/\/x.com\/alvisdrift","tiktok_url":"https:\/\/www.tiktok.com\/@alvis_drift","copyright_text":"© Alvi's Drift Wines · alvisdrift.co.za","legal_text":"Alvi's Drift wines contain up to 13,5% ABV. Not for sale to under 18s. Drink responsibly.","tcs_link":"shopify:\/\/pages\/weekly-competition-terms-conditions"}}},"order":["pv3-nav","pv3-hero","pv3-story","pv3-mechanics","pv3-form","pv3-grand-prize","pv3-winners","pv3-social-wall","pv3-playbook","pv3-wine","pv3-footer-strip"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pv3-nav": {
+      "type": "pv3-nav",
+      "settings": {
+        "cta_label": "",
+        "cta_link": ""
+      }
+    },
+    "pv3-hero": {
+      "type": "pv3-hero",
+      "settings": {
+        "hero_h1": "The 221\nGame\nis on.",
+        "hero_sub": "Share your greatest rugby moment and stand to win a case of 221 wine. Every week, the best story wins.",
+        "cta_secondary_label": "How to play",
+        "cta_secondary_link": "",
+        "show_badge": false,
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/107f857ad6424806bb4ee65c2f4a9139.mp4",
+        "video_url_mobile": "https://cdn.shopify.com/videos/c/o/v/c5e9858f43cd4c82ae64d98829f0fab9.mp4"
+      }
+    },
+    "pv3-story": {
+      "type": "pv3-story",
+      "settings": {
+        "heading": "Before it was a wine, it was a moment",
+        "body_1": "It’s 1928. Alvi van der Merwe, representing Western Province Country, becomes the first player to score a try against the touring All Blacks on African soil; a defining moment in South African rugby history.\n\nHe goes on to earn Springbok cap number 221 during the 1931–32 tour of Britain and Ireland.\n\nIt was his moment of greatness. And the number continues to carry his legacy forward.",
+        "body_2": "",
+        "percy_quote": "Today, it lives on in every glass of 221: wines inspired by rugby, made for every story worth sharing.",
+        "cta_label": "Discover the 221 Range →",
+        "cta_link": "shopify://collections/221-range",
+        "archival_image": "shopify://shop_images/Alvis_drift_221_sticker.png",
+        "show_bottle_image": false,
+        "show_badge": false,
+        "apply_image_filter": false
+      }
+    },
+    "pv3-mechanics": {
+      "type": "pv3-mechanics",
+      "settings": {
+        "heading": "How to Play",
+        "intro": "It’s simple. Share your story, submit your moment, and you could win weekly. Qualifying for the grand prize is even easier.",
+        "step_1_title": "Share",
+        "step_1_body": "Send us your greatest rugby memory. Whether you played it, watched it, or got stuck in a debate about it, we want to know.",
+        "step_1_bg_image": "shopify://shop_images/Article-1.png",
+        "step_2_title": "Submit",
+        "step_2_body": "Use #The221Game on social media, or fill in the form below.",
+        "step_2_bg_image": "shopify://shop_images/Article2.png",
+        "step_3_title": "Win Weekly",
+        "step_3_body": "Every week, the best story wins a mixed case of 221 Range wine. Winners are announced on Sundays.",
+        "step_3_bg_image": "shopify://shop_images/Article3.png",
+        "step_4_title": "Win Big",
+        "step_4_body": "The grand prize, worth R50k, includes 2 tickets to the Springboks vs All Blacks match on 5 September. Qualify by joining the Alvi’s Drift Private Club and buying any case of wine, either online or in stores nationwide.",
+        "step_4_bg_image": "shopify://shop_images/Article4.png",
+        "callout_title": "Weekly Prize",
+        "callout_body": "A Mixed Case Of 221 Range Wine, Delivered To Your Door",
+        "callout_video_url": "https://cdn.shopify.com/videos/c/o/v/7bf3ba8aa45f46209807a8978b7e4282.mp4",
+        "callout_bg_image": "shopify://shop_images/clean-bckg.png",
+        "callout_product_image": "shopify://shop_images/SAWIS_Sticker_approval_221_Special_Cuvee_Red_1_copy_2_1_2.png",
+        "submit_cta_label": "Submit Your 221 Moment",
+        "submit_cta_link": "",
+        "layout": "horizontal",
+        "tcs_link": "shopify://pages/weekly-competition-terms-conditions"
+      }
+    },
+    "pv3-form": {
+      "type": "pv3-form",
+      "blocks": {
+        "forms_inline_WxCAMr": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "1001880",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_WxCAMr"
+      ],
+      "settings": {
+        "bg_image": "shopify://shop_images/Formbck-o.png",
+        "heading": "221 Moments\nStart Here",
+        "body_text": "Whether it’s from a braai, a watch party, or primary school, tell us your greatest rugby memory. The best story each week wins a mixed case of 221.",
+        "badge_image": "shopify://shop_images/Group_9.png",
+        "instagram_url": "https://www.instagram.com/alvisdriftwine/",
+        "twitter_url": "https://x.com/alvisdrift",
+        "facebook_url": "https://www.facebook.com/AlvisDriftWines",
+        "tiktok_url": "https://www.tiktok.com/@alvis_drift"
+      }
+    },
+    "pv3-grand-prize": {
+      "type": "pv3-grand-prize",
+      "settings": {
+        "heading": "Win Big\nMake a purchase",
+        "callout_heading": "One champion | One prize valued up to R50 000  | Don't miss",
+        "body_text": "You could see the Springboks vs All Blacks clash on 5 September 2026 in Johannesburg. Flights, accommodation, transportation – all covered. You’ll also receive 3 cases of Alvi’s Drift Brut Nature Vintage Cap Classique and a year’s worth of 221 Range wines to celebrate in style.",
+        "callout_title": "Make It Happen",
+        "callout_body": "Stand to win by joining the Alvi’s Drift Private Club and buy any of your favourite wine. Both online and in-store purchases qualify between 18 June 2026 and 23 August 2026. When shopping at your favourite, major grocery store, WhatsApp a photo of your till slip to 068 616 8717, along with your name, surname, email address, and date of birth. Additional purchases mean more entries. If your retailer don't stock it - ask them to  - Spread the word.",
+        "submit_cta_label": "JOIN THE CLUB",
+        "submit_cta_link": "shopify://pages/club",
+        "countdown_enabled": true,
+        "countdown_target": "2026-09-05T10:00:00",
+        "percy_image": "shopify://shop_images/221-GrandPrize-O.png"
+      }
+    },
+    "pv3-winners": {
+      "type": "pv3-winners",
+      "blocks": {
+        "past_winner_EbKtAE": {
+          "type": "past_winner",
+          "settings": {
+            "avatar_image": "shopify://shop_images/Alvis-Drift-Icon-Catherine-Constantinides.jpg",
+            "name": "Winner  June 18",
+            "handle": "@winnerthree",
+            "quote": "I love Alvi's wine!",
+            "read_more_url": ""
+          }
+        },
+        "past_winner_L6fj9i": {
+          "type": "past_winner",
+          "settings": {
+            "name": "Winner",
+            "handle": "@winnertwo",
+            "quote": "Amazing wine!",
+            "read_more_url": ""
+          }
+        },
+        "past_winner_99eTmx": {
+          "type": "past_winner",
+          "settings": {
+            "name": "Winner",
+            "handle": "@winnerone",
+            "quote": "I won the prize",
+            "read_more_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "past_winner_EbKtAE",
+        "past_winner_L6fj9i",
+        "past_winner_99eTmx"
+      ],
+      "disabled": true,
+      "settings": {
+        "bg_image": "shopify://shop_images/221-Winners-bcko.png",
+        "section_heading": "Now That's a 221 Story",
+        "phase": "full",
+        "placeholder_week_label": "First Winner · Week of 18 June 2026",
+        "placeholder_winner_name": "First winner announced 18 June.",
+        "placeholder_message": "Submissions are open now. Winners drawn every Sunday from launch week.",
+        "featured_photo": "shopify://shop_images/Alvis_Drift_Junels_pasta_with_Viognier_pairing.png",
+        "winner_badge": "shopify://shop_images/winner-badge-o.png",
+        "featured_name": "Hennie de Waal",
+        "featured_handle": "@hennie_dw · Stellenbosch",
+        "featured_quote": "\"Your winner quote goes here.\"",
+        "featured_date": "Week of 16 June 2026"
+      }
+    },
+    "pv3-social-wall": {
+      "type": "pv3-social-wall",
+      "blocks": {
+        "instafeed_studio_instst_feed_block_94kHDw": {
+          "type": "shopify://apps/instafeed-studio/blocks/instst-feed-block/5b70ee8b-b29d-49b4-b61c-bcce1d2977c7",
+          "settings": {
+            "layout": "grid",
+            "columns": 5,
+            "gap": 8,
+            "corner_radius": 5,
+            "vertical_padding": 40,
+            "horizontal_padding": 0,
+            "max_width": 1800,
+            "aspect_ratio": "3 / 4",
+            "columns_mobile": 2,
+            "vertical_padding_mobile": 40,
+            "horizontal_padding_mobile": 0,
+            "breakpoint": 750,
+            "feed_source": "",
+            "custom_style": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_studio_instst_feed_block_94kHDw"
+      ],
+      "settings": {
+        "heading": "The 221 Game Is On.\nAre You Playing?",
+        "subtext": "Real fans. Real stories. Tagged across social media and pulled in live.",
+        "cta_label": "Join #The221Game Conversation",
+        "embed_code": "",
+        "hashtag_link": ""
+      }
+    },
+    "pv3-playbook": {
+      "type": "pv3-playbook",
+      "blocks": {
+        "article_card_HWfY6B": {
+          "type": "article_card",
+          "settings": {
+            "category": "stories",
+            "card_image": "shopify://shop_images/Springbok-Carpaccio-with-Alvi_s-Drift-221-Sauvignon-Blanc.jpg",
+            "title": "Springbok carpaccio recipe with Alvi’s Drift 221 Sauvignon Blanc",
+            "excerpt": "Tender Springbok carpaccio with blanched greens and caprino cheese, paired with 221 Sauvignon Blanc for easy weekend entertaining.",
+            "link": "shopify://blogs/alvis-drift/springbok-carpaccio-recipe-with-alvi-s-drift-221-sauvignon-blanc"
+          }
+        },
+        "card-1": {
+          "type": "article_card",
+          "settings": {
+            "category": "percy",
+            "card_image": "shopify://shop_images/Alvid_DRift_221_Chenin_Blanc_Top_wines.png",
+            "title": "Alvi’s Drift 221 Chenin Blanc",
+            "excerpt": "Alvi’s Drift 221 Chenin Blanc features ripe peach, lemon, and honeysuckle notes with a rich palate. Perfect with spicy dishes, creamy sauces, or seafood.",
+            "link": "shopify://blogs/alvis-drift/alvi-s-drift-221-chenin-blanc"
+          }
+        },
+        "card-2": {
+          "type": "article_card",
+          "disabled": true,
+          "settings": {
+            "category": "percy",
+            "card_image": "shopify://shop_images/Alvis_Drift_Top_wines_Chenin_Blanc_2022.png",
+            "title": "Alvi’s Drift 221 Range",
+            "excerpt": "The 221 Collection Introduces a new style of wine and honours the founder of the family farm, Alvi van der Merwe.",
+            "link": "shopify://blogs/alvis-drift/221-range-launch"
+          }
+        },
+        "card-3": {
+          "type": "article_card",
+          "settings": {
+            "category": "stories",
+            "card_image": "shopify://shop_images/2_ContentImage_6888f387-7bbc-471b-af68-cd8b7535d359.webp",
+            "title": "Junel’s Bulgarian Feta Pie with Sauvignon Blanc Pairing",
+            "excerpt": "Get the recipe for this delicious baked Bulgarian Feta Cheese Pie, perfect for savouring with our new Alvi's Drift 221 Sauvignon Blanc in summertime.",
+            "link": "shopify://blogs/alvis-drift/recipe-feta-pie"
+          }
+        }
+      },
+      "block_order": [
+        "article_card_HWfY6B",
+        "card-1",
+        "card-2",
+        "card-3"
+      ],
+      "settings": {
+        "heading": "Sideline Banter",
+        "intro": "Rugby stories. Armchair takes. 221 picks. Fan moments. Your source of top-quality banter, updated weekly."
+      }
+    },
+    "pv3-wine": {
+      "type": "pv3-wine",
+      "blocks": {
+        "wine-1": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/Alvis_Drift_221_Chenin_Blanc.png",
+            "occasion": "FOR THE PRE-MATCH BUILD-UP",
+            "wine_name": "221 Chenin Blanc",
+            "tasting_note": "",
+            "is_percy_pick": false,
+            "shop_link": "shopify://products/221-chenin-blanc"
+          }
+        },
+        "wine-2": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Sauvignon-Blanc.png",
+            "occasion": "FOR KICK-OFF & BEYOND",
+            "wine_name": "221 Sauvignon Blanc",
+            "tasting_note": "",
+            "is_percy_pick": false,
+            "shop_link": "shopify://products/221-sauvignon-blanc"
+          }
+        },
+        "wine-3": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/221Range_PinotageNV_2.png",
+            "occasion": "FOR THE POST-MATCH BRAAI",
+            "wine_name": "221 Pinotage",
+            "tasting_note": "",
+            "is_percy_pick": false,
+            "shop_link": "shopify://products/221-pinotage"
+          }
+        },
+        "wine-4": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/221-Special-Cuvee.png",
+            "occasion": "FOR THE BIG OCCASION",
+            "wine_name": "221 Special Cuvée Red",
+            "tasting_note": "",
+            "is_percy_pick": false,
+            "shop_link": "shopify://products/221-special-cuvee"
+          }
+        }
+      },
+      "block_order": [
+        "wine-1",
+        "wine-2",
+        "wine-3",
+        "wine-4"
+      ],
+      "settings": {
+        "heading_line1": "SHARING",
+        "heading_line2": "OUR STORIES",
+        "subhead": "Crisp and generous for the anticipation. Fresh and lively when things get going. Bold and warm for the fire that keeps burning. Deep and complex for the moments that deserve something special.\n\nWhatever the moment, there’s a 221 Range wine for it. Born from a legendary number in Springbok rugby and made for every story that follows.",
+        "shop_cta_label": "Shop Now",
+        "range_cta_text": "SHOP NOW →",
+        "range_link": "shopify://collections/221-range"
+      }
+    },
+    "pv3-footer-strip": {
+      "type": "pv3-footer-strip",
+      "settings": {
+        "shop_heading": "Shop",
+        "shop_body": "Bring home the wines that inspired #The221Game.",
+        "shop_cta_label": "DISCOVER THE 221 RANGE",
+        "shop_link": "shopify://collections/221-range",
+        "badge_image": "shopify://shop_images/Group_9.png",
+        "follow_heading": "Follow",
+        "follow_handle": "The game never really stops. Follow along for debates, winners, and more.",
+        "instagram_url": "https://www.instagram.com/alvisdriftwine/",
+        "facebook_url": "https://www.facebook.com/AlvisDriftWines",
+        "twitter_url": "https://x.com/alvisdrift",
+        "tiktok_url": "https://www.tiktok.com/@alvis_drift",
+        "copyright_text": "© Alvi's Drift Wines · alvisdrift.co.za",
+        "legal_text": "Alvi's Drift wines contain up to 13,5% ABV. Not for sale to under 18s. Drink responsibly.",
+        "tcs_link": "shopify://pages/weekly-competition-terms-conditions"
+      }
+    }
+  },
+  "order": [
+    "pv3-nav",
+    "pv3-hero",
+    "pv3-story",
+    "pv3-mechanics",
+    "pv3-form",
+    "pv3-grand-prize",
+    "pv3-winners",
+    "pv3-social-wall",
+    "pv3-playbook",
+    "pv3-wine",
+    "pv3-footer-strip"
+  ]
+}

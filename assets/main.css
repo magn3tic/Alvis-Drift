@@ -888,7 +888,8 @@ color:#ffffff;
     display: table;
     margin: 0 auto;
     max-height: 326px;
-    width: auto;
+    width: 100%;
+    object-fit: contain;
 }
 
 .product-discount {

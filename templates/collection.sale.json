@@ -1,1 +1,127 @@
-{"sections":{"1639248035a16a435a":{"type":"Page-Background-Colour","settings":{"page_bg":"#4A5B52"}},"16581829761a48d9f8":{"type":"Hero-Main","blocks":{"slider_NMGxGK":{"type":"slider","settings":{"background_image":"shopify:\/\/shop_images\/AD_Sale_Live_Banner.jpg","mobile_background_image":"shopify:\/\/shop_images\/AD_Mobile_Sale_Live_Banner.jpg","image_overlay":"#e5dbdb","overlay_opacity":85,"heading_color":"#ffffff","video_banner":"","paragarh_p1":"WINTER","paragarh_p2":"WARMER","paragarh_p3":"SALE","paragarh_p4":"","paragarh_1":"","paragarh_2":"","side_btn_text":"","side_btn_link":""}}},"block_order":["slider_NMGxGK"],"custom_css":[".the_blurb p {color: #fff;}"],"settings":{"image_overlay":"#f3f3f3","overlay_opacity":50,"hide_on_mobile":true,"right_btn_text":"","right_btn_link":"","anchor_link":""}},"page_builder_stats_v2_73qaqF":{"type":"page-builder-stats-v2","blocks":{"stat_e4QRTF":{"type":"stat","settings":{"number":"223","label":"Local & International <br>Medals in 2025"}},"stat_LaXWWG":{"type":"stat","settings":{"number":"#1","label":"Best Value Wine\nin South Africa"}},"stat_LbTihb":{"type":"stat","settings":{"number":"31+","label":"Countries <br>\nWorldwide"}}},"block_order":["stat_e4QRTF","stat_LaXWWG","stat_LbTihb"],"name":"New Stats Homepage","settings":{"heading":"Private club","text":"Join the Alvi’s Drift Wine Club and <br>receive free shipping for first-time buyers.","hide_on_mobile":true}},"collections_grid_individual_3RnYqp":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"Products on Sale","h1_enabled":false,"subtitle_1":"Choose any 6 cases of Reserve Range wine and only pay for 5 – you get the lowest-priced case free.","product_collection":"winter-warmer-sale","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}},"e75c739c-1801-4437-953b-56e12f611ac2":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/wine-club-bg.png","image_overlay":false,"Heading_color":"#c65336","title":"PRIVATE CLUB","detail_box_txt":"Join the Alvi’s Drift private club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.","btn-txt":"FIND OUT MORE","btn-url":"shopify:\/\/pages\/club","hide_margin":true}}},"order":["1639248035a16a435a","16581829761a48d9f8","page_builder_stats_v2_73qaqF","collections_grid_individual_3RnYqp","e75c739c-1801-4437-953b-56e12f611ac2"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248035a16a435a": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#4A5B52"
+      }
+    },
+    "16581829761a48d9f8": {
+      "type": "Hero-Main",
+      "blocks": {
+        "slider_NMGxGK": {
+          "type": "slider",
+          "settings": {
+            "background_image": "shopify://shop_images/AD_Sale_Live_Banner.jpg",
+            "mobile_background_image": "shopify://shop_images/AD_Mobile_Sale_Live_Banner.jpg",
+            "image_overlay": "#e5dbdb",
+            "overlay_opacity": 85,
+            "heading_color": "#ffffff",
+            "video_banner": "",
+            "paragarh_p1": "WINTER",
+            "paragarh_p2": "WARMER",
+            "paragarh_p3": "SALE",
+            "paragarh_p4": "",
+            "paragarh_1": "",
+            "paragarh_2": "",
+            "side_btn_text": "",
+            "side_btn_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slider_NMGxGK"
+      ],
+      "custom_css": [
+        ".the_blurb p {color: #fff;}"
+      ],
+      "settings": {
+        "image_overlay": "#f3f3f3",
+        "overlay_opacity": 50,
+        "hide_on_mobile": true,
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
+      }
+    },
+    "page_builder_stats_v2_73qaqF": {
+      "type": "page-builder-stats-v2",
+      "blocks": {
+        "stat_e4QRTF": {
+          "type": "stat",
+          "settings": {
+            "number": "223",
+            "label": "Local & International <br>Medals in 2025"
+          }
+        },
+        "stat_LaXWWG": {
+          "type": "stat",
+          "settings": {
+            "number": "#1",
+            "label": "Best Value Wine\nin South Africa"
+          }
+        },
+        "stat_LbTihb": {
+          "type": "stat",
+          "settings": {
+            "number": "31+",
+            "label": "Countries <br>\nWorldwide"
+          }
+        }
+      },
+      "block_order": [
+        "stat_e4QRTF",
+        "stat_LaXWWG",
+        "stat_LbTihb"
+      ],
+      "name": "New Stats Homepage",
+      "settings": {
+        "heading": "Private club",
+        "text": "Join the Alvi’s Drift Wine Club and <br>receive free shipping for first-time buyers.",
+        "hide_on_mobile": true
+      }
+    },
+    "collections_grid_individual_3RnYqp": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Products on Sale",
+        "h1_enabled": false,
+        "subtitle_1": "Choose any 6 cases of Reserve Range wine and only pay for 5 – you get the lowest-priced case free.",
+        "product_collection": "winter-warmer-sale",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    },
+    "e75c739c-1801-4437-953b-56e12f611ac2": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
+        "image_overlay": false,
+        "Heading_color": "#c65336",
+        "title": "PRIVATE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift private club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "btn-txt": "FIND OUT MORE",
+        "btn-url": "shopify://pages/club",
+        "hide_margin": true
+      }
+    }
+  },
+  "order": [
+    "1639248035a16a435a",
+    "16581829761a48d9f8",
+    "page_builder_stats_v2_73qaqF",
+    "collections_grid_individual_3RnYqp",
+    "e75c739c-1801-4437-953b-56e12f611ac2"
+  ]
+}

@@ -1,1 +1,354 @@
-{"sections":{"playbook_sticky_nav":{"type":"playbook-sticky-nav","settings":{"nav_background":"#2e112d","link_color":"#f8f2e6","link1_label":"The Story","link2_label":"The Game","link3_label":"The Grand Prize","link4_label":"Winners","link5_label":"Conversations","link6_label":"Wine","cta_label":"Submit Your 221 Moment"}},"playbook_hero":{"type":"playbook-hero","settings":{"video_url":"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/e46869a617cc4c079f35f842dbfbb16a.mp4","overlay_color":"#000000","overlay_opacity":50,"text_align":"center","heading_color":"#f8f2e6","hashtag":"#The221Game","heading":"The 221 Game is On.","intro":"Share your greatest rugby moment. Win a box of 221. Play The Game.","cta1_text":"Submit Your 221 Moment","cta1_link":"","cta2_text":"How It Works","cta2_link":""}},"playbook_story":{"type":"playbook-221-story","settings":{"image_position":"image-right","padding_top":80,"padding_bottom":80,"background_color":"#f8f2e6","heading_color":"#2e112d","text_color":"#3d3d3d","eyebrow":"The Heritage","heading":"Before it was a wine, it was a moment.","body_1":"<p>In 1928, Oupa Alvi van der Merwe became Springbok #221 — the first Bok to score a try against the All Blacks on African soil. The number that carried that moment became the name of a wine range.<\/p>","body_2":"<p>The 221 range is a tribute to that legacy. Every bottle carries the weight of a try scored in history, and the quiet pride of a family that never forgot where they came from.<\/p>","body_3":"","quote":"The 221 is more than a number. It's a reminder of what's possible when you dare to be true.","quote_attr":"Percy Tau","cta_text":"Discover the 221 Range","cta_link":"","image":"shopify:\/\/shop_images\/Alvis_Drift_221_Range_Banner_Mobile.png"}},"playbook_mechanics":{"type":"playbook-game-mechanics","blocks":{"step_1":{"type":"step","settings":{"title":"Share Your Moment","body":"Tell us your greatest rugby memory — a braai, a watch party, a match, a moment."}},"step_2":{"type":"step","settings":{"title":"Tag #The221Game","body":"Post on social and tag #The221Game, or submit your story directly below."}},"step_3":{"type":"step","settings":{"title":"Win a Box of 221","body":"Every week, the best story wins a box of Alvi's Drift 221 delivered to your door."}},"step_4":{"type":"step","settings":{"title":"Enter the Grand Prize","body":"Every submission automatically enters you into the Grand Prize draw — a Watch Party with Percy in New Zealand."}}},"block_order":["step_1","step_2","step_3","step_4"],"settings":{"header_align":"center","padding_top":80,"padding_bottom":80,"background_color":"#2e112d","heading_color":"#f8f2e6","text_color":"#f8f2e6","callout_bg":"#480135","eyebrow":"How to Play","heading":"Here's How You Play.","subhead":"","weekly_prize_label":"Weekly Prize","weekly_prize_text":"A box of Alvi's Drift 221 delivered to your door — every week, one winner.","cta_text":"Submit Your 221 Moment","cta_link":"","tcs_text":"Full terms and conditions apply","tcs_link":""}},"playbook_form":{"type":"playbook-submission-form","settings":{"padding_top":80,"padding_bottom":80,"background_color":"#f8f2e6","heading_color":"#2e112d","text_color":"#3d3d3d","input_bg":"#ffffff","input_border":"#d0c5b8","callout_bg":"#2e112d","eyebrow":"Join The Game","heading":"Your 221 Moment Starts Here.","prompt":"Tell us your greatest rugby story — a braai, a watch party, a match, a memory. The best story each week wins a box of 221.","submit_label":"Submit My 221 Moment","social_alt_text":"Prefer to share on social? Tag","confirmation_heading":"Now That's a 221 Story.","confirmation_body":"We've got yours — winners announced every Sunday.","tcs_link":""}},"playbook_prize":{"type":"playbook-grand-prize","settings":{"padding_top":80,"padding_bottom":80,"background_color":"#2e112d","overlay_color":"#000000","overlay_opacity":60,"heading_color":"#f8f2e6","text_color":"#f8f2e6","eyebrow":"The Grand Prize","heading":"Greatest Rivalry Watch Party with Percy.","body":"The All Blacks series. Percy Tau. The ultimate 221 experience for the ultimate fan. One grand prize winner joins Percy for a Watch Party in New Zealand — full details announced late June.","entry_callout":"Every weekly submission is an automatic entry into the grand prize draw. The more you share, the better your chances.","show_countdown":true,"countdown_date":"2026-08-07T18:00:00+02:00","cta_text":"Submit Your Moment to Enter","cta_link":"","image":"shopify:\/\/shop_images\/Alvis_Drift_Icon_White_Gift_Box_3dc69bf9-f3d9-4ef8-b7bd-038258a12535.png"}},"playbook_winners":{"type":"playbook-weekly-winners","settings":{"padding_top":80,"padding_bottom":80,"background_color":"#f8f2e6","card_bg":"#ffffff","heading_color":"#2e112d","text_color":"#3d3d3d","eyebrow":"Community","heading":"This Week's 221 Moment.","this_week_label":"This Week's Winner","source_label":"Winner submitted via #The221Game","placeholder_text":"First winner announced 18 June. Check back soon.","cta_text":"Think you can top that? Submit Your Moment.","cta_link":""}},"playbook_conversations":{"type":"playbook-conversations","blocks":{"card_1":{"type":"article_card","settings":{"image":"shopify:\/\/shop_images\/Alvis_Drift_Reserve_Viognier_8670b2cf-0cbb-49d7-9e02-4ce87e9bfebe.png","category":"Rugby Stories","title":"The Try That Changed Everything","excerpt":"In 1928, a young flanker stepped onto Ellis Park and wrote himself into rugby history — and the story of a family's wine.","link":""}},"card_2":{"type":"article_card","settings":{"image":"shopify:\/\/shop_images\/Alvis_Drift_Maturation_Cellar.jpg","category":"Armchair Coach","title":"Armchair Coach: The SA vs All Blacks Breakdown","excerpt":"You had the remote, the braai, and an opinion. Now put it to the test — what would you have done differently?","link":""}},"card_3":{"type":"article_card","settings":{"image":"shopify:\/\/shop_images\/South_African_wine_harvest_2026.jpg","category":"Percy's Take","title":"Percy's Take: Why This Series Means Everything","excerpt":"Percy Tau shares why the 221 Game and the upcoming All Blacks series are deeply personal.","link":""}}},"block_order":["card_1","card_2","card_3"],"settings":{"padding_top":80,"padding_bottom":80,"background_color":"#2e112d","card_bg":"#480135","heading_color":"#f8f2e6","text_color":"#f8f2e6","eyebrow":"Editorial","heading":"The Playbook.","read_more_label":"Read More","load_more_label":"Load More","initial_count":6}},"playbook_wine":{"type":"playbook-wine-occasions","blocks":{"wine_1":{"type":"wine_card","settings":{"bottle_image":"shopify:\/\/shop_images\/221-Range-Chenin-Blanc.png","occasion":"The Pre-Match Build-Up","varietal":"221 Chenin Blanc","tasting_note":"Crisp and refreshing with stone fruit and citrus. Light enough for the tension of a pre-match. Ready when you are.","percys_pick":false,"shop_link":""}},"wine_2":{"type":"wine_card","settings":{"bottle_image":"shopify:\/\/shop_images\/221-Range-Sauvignon-Blanc.png","occasion":"The Opening Whistle","varietal":"221 Sauvignon Blanc","tasting_note":"Zesty tropical notes with a clean finish. For the moment the referee raises the whistle and the crowd holds its breath.","percys_pick":true,"shop_link":""}},"wine_3":{"type":"wine_card","settings":{"bottle_image":"shopify:\/\/shop_images\/221-Range-Pinotage.png","occasion":"The Post-Match Braai","varietal":"221 Pinotage","tasting_note":"Rich, smoky and full-bodied. Made for the fire, the meat, and the retelling of a classic try.","percys_pick":false,"shop_link":""}},"wine_4":{"type":"wine_card","settings":{"bottle_image":"shopify:\/\/shop_images\/221-Range-Special-Cuvee.png","occasion":"The Big Occasion","varietal":"221 Special Cuvée Red","tasting_note":"Deep and complex — a blend worthy of the most contested rivalry in world rugby. Open when the stakes are highest.","percys_pick":false,"shop_link":""}}},"block_order":["wine_1","wine_2","wine_3","wine_4"],"settings":{"padding_top":80,"padding_bottom":80,"background_color":"#f8f2e6","card_bg":"#ffffff","heading_color":"#2e112d","text_color":"#3d3d3d","eyebrow":"Shop The Range","heading":"The 221 Range — A Wine for Every Moment of the Game.","subhead":"From the opening whistle to the post-match braai — there's a 221 for that.","shop_cta_label":"Shop Now","range_cta_text":"Shop the Full 221 Range","range_link":""}},"playbook_social_wall":{"type":"playbook-social-wall","settings":{"padding_top":80,"padding_bottom":80,"background_color":"#2e112d","card_bg":"#480135","heading_color":"#f8f2e6","text_color":"#f8f2e6","eyebrow":"The Community","heading":"The Game is Already Being Played.","subhead":"Real moments. Real people. Real 221.","placeholder_text":"Social wall activates 5 June once #The221Game gets going. Check back soon.","embed_code":"","cta_text":"Join the conversation — tag #The221Game","cta_link":""}},"playbook_footer_strip":{"type":"playbook-footer-cta-strip","settings":{"padding_top":48,"padding_bottom":48,"background_color":"#2e112d","heading_color":"#f8f2e6","text_color":"#f8f2e6","shop_label":"The 221 Range","shop_cta_text":"Shop the 221 Range","shop_link":"","hashtag":"#The221Game","socials_label":"Follow @AlvisDrift","instagram_url":"","facebook_url":"","x_url":"","tiktok_url":""}}},"order":["playbook_sticky_nav","playbook_hero","playbook_story","playbook_mechanics","playbook_form","playbook_prize","playbook_winners","playbook_conversations","playbook_wine","playbook_social_wall","playbook_footer_strip"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "playbook_sticky_nav": {
+      "type": "playbook-sticky-nav",
+      "settings": {
+        "nav_background": "#2e112d",
+        "link_color": "#f8f2e6",
+        "link1_label": "The Story",
+        "link2_label": "The Game",
+        "link3_label": "The Grand Prize",
+        "link4_label": "Winners",
+        "link5_label": "Conversations",
+        "link6_label": "Wine",
+        "cta_label": "Submit Your 221 Moment"
+      }
+    },
+    "playbook_hero": {
+      "type": "playbook-hero",
+      "settings": {
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/e46869a617cc4c079f35f842dbfbb16a.mp4",
+        "overlay_color": "#000000",
+        "overlay_opacity": 50,
+        "text_align": "center",
+        "heading_color": "#f8f2e6",
+        "hashtag": "#The221Game",
+        "heading": "The 221 Game is On.",
+        "intro": "Share your greatest rugby moment. Win a box of 221. Play The Game.",
+        "cta1_text": "Submit Your 221 Moment",
+        "cta1_link": "",
+        "cta2_text": "How It Works",
+        "cta2_link": ""
+      }
+    },
+    "playbook_story": {
+      "type": "playbook-221-story",
+      "settings": {
+        "image_position": "image-right",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "background_color": "#f8f2e6",
+        "heading_color": "#2e112d",
+        "text_color": "#3d3d3d",
+        "eyebrow": "The Heritage",
+        "heading": "Before it was a wine, it was a moment.",
+        "body_1": "<p>In 1928, Oupa Alvi van der Merwe became Springbok #221 — the first Bok to score a try against the All Blacks on African soil. The number that carried that moment became the name of a wine range.</p>",
+        "body_2": "<p>The 221 range is a tribute to that legacy. Every bottle carries the weight of a try scored in history, and the quiet pride of a family that never forgot where they came from.</p>",
+        "body_3": "",
+        "quote": "The 221 is more than a number. It's a reminder of what's possible when you dare to be true.",
+        "quote_attr": "Percy Tau",
+        "cta_text": "Discover the 221 Range",
+        "cta_link": "",
+        "image": "shopify://shop_images/Alvis_Drift_221_Range_Banner_Mobile.png"
+      }
+    },
+    "playbook_mechanics": {
+      "type": "playbook-game-mechanics",
+      "blocks": {
+        "step_1": {
+          "type": "step",
+          "settings": {
+            "title": "Share Your Moment",
+            "body": "Tell us your greatest rugby memory — a braai, a watch party, a match, a moment."
+          }
+        },
+        "step_2": {
+          "type": "step",
+          "settings": {
+            "title": "Tag #The221Game",
+            "body": "Post on social and tag #The221Game, or submit your story directly below."
+          }
+        },
+        "step_3": {
+          "type": "step",
+          "settings": {
+            "title": "Win a Box of 221",
+            "body": "Every week, the best story wins a box of Alvi's Drift 221 delivered to your door."
+          }
+        },
+        "step_4": {
+          "type": "step",
+          "settings": {
+            "title": "Enter the Grand Prize",
+            "body": "Every submission automatically enters you into the Grand Prize draw — a Watch Party with Percy in New Zealand."
+          }
+        }
+      },
+      "block_order": [
+        "step_1",
+        "step_2",
+        "step_3",
+        "step_4"
+      ],
+      "settings": {
+        "header_align": "center",
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "background_color": "#2e112d",
+        "heading_color": "#f8f2e6",
+        "text_color": "#f8f2e6",
+        "callout_bg": "#480135",
+        "eyebrow": "How to Play",
+        "heading": "Here's How You Play.",
+        "subhead": "",
+        "weekly_prize_label": "Weekly Prize",
+        "weekly_prize_text": "A box of Alvi's Drift 221 delivered to your door — every week, one winner.",
+        "cta_text": "Submit Your 221 Moment",
+        "cta_link": "",
+        "tcs_text": "Full terms and conditions apply",
+        "tcs_link": ""
+      }
+    },
+    "playbook_form": {
+      "type": "playbook-submission-form",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "background_color": "#f8f2e6",
+        "heading_color": "#2e112d",
+        "text_color": "#3d3d3d",
+        "input_bg": "#ffffff",
+        "input_border": "#d0c5b8",
+        "callout_bg": "#2e112d",
+        "eyebrow": "Join The Game",
+        "heading": "Your 221 Moment Starts Here.",
+        "prompt": "Tell us your greatest rugby story — a braai, a watch party, a match, a memory. The best story each week wins a box of 221.",
+        "submit_label": "Submit My 221 Moment",
+        "social_alt_text": "Prefer to share on social? Tag",
+        "confirmation_heading": "Now That's a 221 Story.",
+        "confirmation_body": "We've got yours — winners announced every Sunday.",
+        "tcs_link": ""
+      }
+    },
+    "playbook_prize": {
+      "type": "playbook-grand-prize",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "background_color": "#2e112d",
+        "overlay_color": "#000000",
+        "overlay_opacity": 60,
+        "heading_color": "#f8f2e6",
+        "text_color": "#f8f2e6",
+        "eyebrow": "The Grand Prize",
+        "heading": "Greatest Rivalry Watch Party with Percy.",
+        "body": "The All Blacks series. Percy Tau. The ultimate 221 experience for the ultimate fan. One grand prize winner joins Percy for a Watch Party in New Zealand — full details announced late June.",
+        "entry_callout": "Every weekly submission is an automatic entry into the grand prize draw. The more you share, the better your chances.",
+        "show_countdown": true,
+        "countdown_date": "2026-08-07T18:00:00+02:00",
+        "cta_text": "Submit Your Moment to Enter",
+        "cta_link": "",
+        "image": "shopify://shop_images/Alvis_Drift_Icon_White_Gift_Box_3dc69bf9-f3d9-4ef8-b7bd-038258a12535.png"
+      }
+    },
+    "playbook_winners": {
+      "type": "playbook-weekly-winners",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "background_color": "#f8f2e6",
+        "card_bg": "#ffffff",
+        "heading_color": "#2e112d",
+        "text_color": "#3d3d3d",
+        "eyebrow": "Community",
+        "heading": "This Week's 221 Moment.",
+        "this_week_label": "This Week's Winner",
+        "source_label": "Winner submitted via #The221Game",
+        "placeholder_text": "First winner announced 18 June. Check back soon.",
+        "cta_text": "Think you can top that? Submit Your Moment.",
+        "cta_link": ""
+      }
+    },
+    "playbook_conversations": {
+      "type": "playbook-conversations",
+      "blocks": {
+        "card_1": {
+          "type": "article_card",
+          "settings": {
+            "image": "shopify://shop_images/Alvis_Drift_Reserve_Viognier_8670b2cf-0cbb-49d7-9e02-4ce87e9bfebe.png",
+            "category": "Rugby Stories",
+            "title": "The Try That Changed Everything",
+            "excerpt": "In 1928, a young flanker stepped onto Ellis Park and wrote himself into rugby history — and the story of a family's wine.",
+            "link": ""
+          }
+        },
+        "card_2": {
+          "type": "article_card",
+          "settings": {
+            "image": "shopify://shop_images/Alvis_Drift_Maturation_Cellar.jpg",
+            "category": "Armchair Coach",
+            "title": "Armchair Coach: The SA vs All Blacks Breakdown",
+            "excerpt": "You had the remote, the braai, and an opinion. Now put it to the test — what would you have done differently?",
+            "link": ""
+          }
+        },
+        "card_3": {
+          "type": "article_card",
+          "settings": {
+            "image": "shopify://shop_images/South_African_wine_harvest_2026.jpg",
+            "category": "Percy's Take",
+            "title": "Percy's Take: Why This Series Means Everything",
+            "excerpt": "Percy Tau shares why the 221 Game and the upcoming All Blacks series are deeply personal.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card_1",
+        "card_2",
+        "card_3"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "background_color": "#2e112d",
+        "card_bg": "#480135",
+        "heading_color": "#f8f2e6",
+        "text_color": "#f8f2e6",
+        "eyebrow": "Editorial",
+        "heading": "The Playbook.",
+        "read_more_label": "Read More",
+        "load_more_label": "Load More",
+        "initial_count": 6
+      }
+    },
+    "playbook_wine": {
+      "type": "playbook-wine-occasions",
+      "blocks": {
+        "wine_1": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Chenin-Blanc.png",
+            "occasion": "The Pre-Match Build-Up",
+            "varietal": "221 Chenin Blanc",
+            "tasting_note": "Crisp and refreshing with stone fruit and citrus. Light enough for the tension of a pre-match. Ready when you are.",
+            "percys_pick": false,
+            "shop_link": ""
+          }
+        },
+        "wine_2": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Sauvignon-Blanc.png",
+            "occasion": "The Opening Whistle",
+            "varietal": "221 Sauvignon Blanc",
+            "tasting_note": "Zesty tropical notes with a clean finish. For the moment the referee raises the whistle and the crowd holds its breath.",
+            "percys_pick": true,
+            "shop_link": ""
+          }
+        },
+        "wine_3": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Pinotage.png",
+            "occasion": "The Post-Match Braai",
+            "varietal": "221 Pinotage",
+            "tasting_note": "Rich, smoky and full-bodied. Made for the fire, the meat, and the retelling of a classic try.",
+            "percys_pick": false,
+            "shop_link": ""
+          }
+        },
+        "wine_4": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Special-Cuvee.png",
+            "occasion": "The Big Occasion",
+            "varietal": "221 Special Cuvée Red",
+            "tasting_note": "Deep and complex — a blend worthy of the most contested rivalry in world rugby. Open when the stakes are highest.",
+            "percys_pick": false,
+            "shop_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "wine_1",
+        "wine_2",
+        "wine_3",
+        "wine_4"
+      ],
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "background_color": "#f8f2e6",
+        "card_bg": "#ffffff",
+        "heading_color": "#2e112d",
+        "text_color": "#3d3d3d",
+        "eyebrow": "Shop The Range",
+        "heading": "The 221 Range — A Wine for Every Moment of the Game.",
+        "subhead": "From the opening whistle to the post-match braai — there's a 221 for that.",
+        "shop_cta_label": "Shop Now",
+        "range_cta_text": "Shop the Full 221 Range",
+        "range_link": ""
+      }
+    },
+    "playbook_social_wall": {
+      "type": "playbook-social-wall",
+      "settings": {
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "background_color": "#2e112d",
+        "card_bg": "#480135",
+        "heading_color": "#f8f2e6",
+        "text_color": "#f8f2e6",
+        "eyebrow": "The Community",
+        "heading": "The Game is Already Being Played.",
+        "subhead": "Real moments. Real people. Real 221.",
+        "placeholder_text": "Social wall activates 5 June once #The221Game gets going. Check back soon.",
+        "embed_code": "",
+        "cta_text": "Join the conversation — tag #The221Game",
+        "cta_link": ""
+      }
+    },
+    "playbook_footer_strip": {
+      "type": "playbook-footer-cta-strip",
+      "settings": {
+        "padding_top": 48,
+        "padding_bottom": 48,
+        "background_color": "#2e112d",
+        "heading_color": "#f8f2e6",
+        "text_color": "#f8f2e6",
+        "shop_label": "The 221 Range",
+        "shop_cta_text": "Shop the 221 Range",
+        "shop_link": "",
+        "hashtag": "#The221Game",
+        "socials_label": "Follow @AlvisDrift",
+        "instagram_url": "",
+        "facebook_url": "",
+        "x_url": "",
+        "tiktok_url": ""
+      }
+    }
+  },
+  "order": [
+    "playbook_sticky_nav",
+    "playbook_hero",
+    "playbook_story",
+    "playbook_mechanics",
+    "playbook_form",
+    "playbook_prize",
+    "playbook_winners",
+    "playbook_conversations",
+    "playbook_wine",
+    "playbook_social_wall",
+    "playbook_footer_strip"
+  ]
+}
