@@ -13,7 +13,7 @@
             {%- assign poster_url = section.settings.video_post | image_url: width: 800 -%}
           {%- endif -%}
           <video
-            autoplay muted loop playsinline
+            autoplay muted loop playsinline preload="metadata"
             {% if poster_url != '' %}poster="{{ poster_url }}"{% endif %}
             style="width:100%;height:auto;display:block;">
             <source src="{{ section.settings.video_url }}" type="video/mp4">
@@ -22,9 +22,6 @@
           <img src="{{ section.settings.video_post | image_url: width: 1800 }}" alt="{{ section.settings.heading | escape }}" width="800" loading="lazy">
         {% endif %}
       </div>
-
-   
-
       <div class="col-8">
         {% if section.settings.heading != blank %}
           <h4>{{ section.settings.heading }}</h4>
