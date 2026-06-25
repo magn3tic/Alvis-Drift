@@ -4,12 +4,20 @@
 <noscript>{{ 'section-main-page.css' | asset_url | stylesheet_tag }}</noscript>
 <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
 
-<div class="page-width page-width--narrow">
+<div class="page-width page-width--narrow position-relative">
+  {% if section.settings.enable_header == true %}
   <h1 class="main-page-title page-title h0">
     {{ page.title | escape }}
   </h1>
+  {% endif %}
   <div class="rte">
+     
     {{ page.content }}
+  </div>
+  <div class = "bg-badge">
+  {% if section.settings.badge_image != blank %}
+      <img src="{{ section.settings.badge_image | img_url: 'master' }}" alt="{{ shop.name }}">
+  {% endif %}
   </div>
 </div>
 
@@ -17,6 +25,19 @@
 {
   "name": "t:sections.main-page.name",
   "tag": "section",
-  "class": "spaced-section"
+  "class": "spaced-section",
+  "settings": [
+    {
+      "type": "checkbox",
+      "default":true,
+      "id": "enable_header",
+      "label": "Enable Header"
+    },
+    {
+      "type": "image_picker",
+      "id": "badge_image",
+      "label": "Top Seal / Badge Image"
+    }
+  ]
 }
 {% endschema %}

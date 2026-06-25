@@ -1,0 +1,156 @@
+{% comment %} PV2 Nav — loads CSS, fonts, hides theme header/announcement bar {% endcomment %}
+
+{{ 'pv2-styles.css' | asset_url | stylesheet_tag }}
+
+<style>
+  /* Font-face declarations using Shopify asset_url */
+  @font-face { font-family:"D-DIN"; src:url("{{ 'D-DIN.otf' | asset_url }}") format("opentype"); font-weight:400; font-style:normal; font-display:swap; }
+  @font-face { font-family:"D-DIN"; src:url("{{ 'D-DIN-Bold.otf' | asset_url }}") format("opentype"); font-weight:700; font-style:normal; font-display:swap; }
+  @font-face { font-family:"D-DIN"; src:url("{{ 'D-DIN-Italic.otf' | asset_url }}") format("opentype"); font-weight:400; font-style:italic; font-display:swap; }
+  @font-face { font-family:"D-DIN Condensed"; src:url("{{ 'D-DINCondensed.otf' | asset_url }}") format("opentype"); font-weight:400; font-style:normal; font-display:swap; }
+  @font-face { font-family:"D-DIN Condensed"; src:url("{{ 'D-DINCondensed-Bold.otf' | asset_url }}") format("opentype"); font-weight:700; font-style:normal; font-display:swap; }
+  @font-face { font-family:"Industry Inc"; src:url("{{ 'IndustryInc-Base.ttf' | asset_url }}") format("truetype"); font-weight:400; font-style:normal; font-display:swap; }
+  @font-face { font-family:"Industry Inc Inline"; src:url("{{ 'IndustryInc-Inline.ttf' | asset_url }}") format("truetype"); font-weight:400; font-style:normal; font-display:swap; }
+  /* Hide Shopify default header, announcement bar, and site footer on this page */
+  #shopify-section-header, #shopify-section-announcement-bar, #shopify-section-footer { display: none !important; }
+  /* Ensure page body has no top padding from hidden header */
+  body { padding-top: 0 !important; margin-top: 0 !important; }
+</style>
+
+<header class="pv2-lp pv2-nav" id="pv2-nav" role="banner">
+  <div class="nav-inner">
+    <a href="#pv2-top" class="brand" aria-label="Alvi's Drift">
+      <img src="{{ 'alvis-drift-logo.svg' | asset_url }}" class="brand-logo" alt="Alvi's Drift" />
+    </a>
+    <nav class="nav-links" aria-label="221 Playbook">
+      <a href="#pv2-story"    class="nav-link">The Story</a>
+      <a href="#pv2-game"     class="nav-link">The Game</a>
+      <a href="#pv2-prize"    class="nav-link">The Grand Prize</a>
+      <a href="#pv2-winners"  class="nav-link">Winners</a>
+      <a href="#pv2-playbook" class="nav-link">Conversations</a>
+      <a href="#pv2-shop"     class="nav-link">Wine</a>
+    </nav>
+    <a href="{{ section.settings.cta_link | default: '#pv2-submit' }}" class="nav-cta" aria-label="{{ section.settings.cta_label | default: 'Submit Your 221 Moment' }}">
+      <span class="nav-cta-end" aria-hidden="true"></span>
+      <span class="nav-cta-body">{% if section.settings.cta_label != blank %}{{ section.settings.cta_label }}{% else %}Submit Your 221 Moment{% endif %}</span>
+      <span class="nav-cta-end right" aria-hidden="true"></span>
+    </a>
+    <button class="nav-burger" id="pv2MobileMenuOpen" aria-label="Open menu" aria-expanded="false" aria-controls="pv2MobileMenu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+    </button>
+  </div>
+</header>
+
+<!-- Mobile full-screen menu -->
+<div class="pv2-mobile-menu" id="pv2MobileMenu" aria-hidden="true" role="dialog" aria-label="Navigation menu">
+  <div class="pv2-mobile-menu-head">
+    <img src="{{ 'alvis-drift-logo.svg' | asset_url }}" alt="Alvi's Drift" style="height:18px;" />
+    <button class="pv2-lp pv2-nav nav-burger" id="pv2MobileMenuClose" aria-label="Close menu">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 5l14 14M19 5L5 19"/></svg>
+    </button>
+  </div>
+  <nav class="pv2-mobile-menu-links" aria-label="Mobile navigation">
+    <a href="#pv2-story"    class="pv2-mobile-menu-link" data-mobile-link>The Story</a>
+    <a href="#pv2-game"     class="pv2-mobile-menu-link" data-mobile-link>The Game</a>
+    <a href="#pv2-prize"    class="pv2-mobile-menu-link" data-mobile-link>The Grand Prize</a>
+    <a href="#pv2-winners"  class="pv2-mobile-menu-link" data-mobile-link>Winners</a>
+    <a href="#pv2-playbook" class="pv2-mobile-menu-link" data-mobile-link>Conversations</a>
+    <a href="#pv2-shop"     class="pv2-mobile-menu-link" data-mobile-link>Wine</a>
+  </nav>
+  <a href="{{ section.settings.cta_link | default: '#pv2-submit' }}" class="pv2-lp btn-primary pv2-mobile-menu-cta" data-mobile-link style="margin:24px 0 0; width:100%; justify-content:center; display:flex;">{% if section.settings.cta_label != blank %}{{ section.settings.cta_label }}{% else %}Submit Your 221 Moment{% endif %}</a>
+</div>
+
+<script>
+(function() {
+  /* --- Nav scroll behaviour (safe to init immediately — nav is in DOM) --- */
+  var nav = document.getElementById('pv2-nav');
+  function onScroll() { nav.classList.toggle('scrolled', window.scrollY > 80); }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+
+  /* --- Mobile menu (also safe — menu markup is in pv2-nav section) --- */
+  var menu = document.getElementById('pv2MobileMenu');
+  var openBtn = document.getElementById('pv2MobileMenuOpen');
+  var closeBtn = document.getElementById('pv2MobileMenuClose');
+  function openMenu() { menu.classList.add('open'); menu.setAttribute('aria-hidden','false'); openBtn.setAttribute('aria-expanded','true'); }
+  function closeMenu() { menu.classList.remove('open'); menu.setAttribute('aria-hidden','true'); openBtn.setAttribute('aria-expanded','false'); }
+  if (openBtn) openBtn.addEventListener('click', openMenu);
+  if (closeBtn) closeBtn.addEventListener('click', closeMenu);
+  document.querySelectorAll('[data-mobile-link]').forEach(function(l) { l.addEventListener('click', closeMenu); });
+
+  /* --- Everything else waits for full DOM so all section elements exist --- */
+  document.addEventListener('DOMContentLoaded', function() {
+
+    /* Smooth scroll + active nav */
+    var anchors = document.querySelectorAll('a[href^="#pv2-"]');
+    anchors.forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var id = a.getAttribute('href').slice(1);
+        var tgt = document.getElementById(id);
+        if (tgt) {
+          e.preventDefault();
+          window.scrollTo({ top: tgt.getBoundingClientRect().top + window.scrollY - 70, behavior: 'smooth' });
+        }
+      });
+    });
+
+    var navLinks = Array.from(document.querySelectorAll('.pv2-lp.pv2-nav .nav-link'));
+    var pageSections = navLinks.map(function(l) {
+      return { link: l, target: document.getElementById(l.getAttribute('href').slice(1)) };
+    }).filter(function(p) { return p.target; });
+    function updateActive() {
+      var y = window.scrollY + 100;
+      var active = null;
+      pageSections.forEach(function(p) { if (p.target.offsetTop <= y) active = p; });
+      navLinks.forEach(function(l) { l.classList.remove('active'); });
+      if (active) active.link.classList.add('active');
+    }
+    window.addEventListener('scroll', updateActive, { passive: true });
+    updateActive();
+
+    /* Scroll-reveal IntersectionObserver (page-wide) */
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    document.querySelectorAll('.pv2-lp .reveal').forEach(function(el) { io.observe(el); });
+
+    /* Story loading sheen */
+    var storyEl = document.getElementById('pv2-story');
+    if (storyEl) {
+      var sio = new IntersectionObserver(function(entries) {
+        entries.forEach(function(e) {
+          if (e.isIntersecting) {
+            storyEl.classList.add('is-loading');
+            setTimeout(function() { storyEl.classList.remove('is-loading'); }, 2000);
+            sio.unobserve(storyEl);
+          }
+        });
+      }, { threshold: 0.18 });
+      sio.observe(storyEl);
+    }
+
+    /* Mech-card mouse-tracking glow */
+    document.querySelectorAll('.pv2-lp .mech-card').forEach(function(card) {
+      card.addEventListener('mousemove', function(e) {
+        var r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', ((e.clientX - r.left) / r.width * 100) + '%');
+        card.style.setProperty('--my', ((e.clientY - r.top) / r.height * 100) + '%');
+      });
+    });
+
+  });
+})();
+</script>
+
+{% schema %}
+{
+  "name": "PV2 — Nav",
+  "settings": [
+    { "type": "text", "id": "cta_label", "label": "CTA Button Label", "default": "Submit Your 221 Moment" },
+    { "type": "url",  "id": "cta_link",  "label": "CTA Button Link",  "info": "Default: #pv2-submit (scroll to form)" }
+  ],
+  "presets": [{ "name": "PV2 Nav" }]
+}
+{% endschema %}

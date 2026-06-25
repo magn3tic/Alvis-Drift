@@ -1,0 +1,232 @@
+{% comment %} PV3 Submission Form — 04 Your 221 Moment {% endcomment %}
+
+<section class="pv3-lp section bg-alt grain" id="pv3-submit" aria-labelledby="pv3-form-heading"{% if section.settings.bg_image %} style="background-image: url('{{ section.settings.bg_image | image_url: width: 1440 }}'); background-size: 100% auto; background-position: top center; background-repeat: no-repeat;"{% endif %}>
+  <div class="container form-container">
+
+    <div class="reveal" style="margin-bottom:90px;text-align:center;">
+      <h2 class="h2" id="pv3-form-heading">Win Weekly<span class="pv3-sep"> | </span><span class="pv3-heading-sub" style="font-family:var(--font-display);color:#C65336;">Share your story</span></h2>
+    </div>
+
+    <div class="form-grid">
+
+      <div class="form-left reveal">
+        <span class="eyebrow">03 / Your Moment</span>
+        <h2 class="h2" style="color:var(--white);margin-top:24px;">221 MOMENTS<br><span style="font-family:var(--font-display-inline);color:var(--gold);">Start Here</span></h2>
+        <p class="body">{% if section.settings.body_text != blank %}{{ section.settings.body_text }}{% else %}Tell us your greatest rugby story — a braai, a watch party, a match, a memory. The best story each week wins a box of 221.{% endif %}</p>
+        {% if section.settings.badge_image %}
+          <img class="form-badge" src="{{ section.settings.badge_image | image_url: width: 400 }}" alt="The 221 Game badge" loading="lazy" />
+        {% else %}
+          <img class="form-badge" src="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Group_11.png?v=1779493585" alt="The 221 Game badge" loading="lazy" />
+        {% endif %}
+      </div>
+
+      <div class="form-card reveal" id="pv3FormCardWrap">
+
+        <!-- Shopify Forms app block renders here via theme editor -->
+        <div class="pv3-sf-embed">
+          {% for block in section.blocks %}
+            {% render block %}
+          {% endfor %}
+          {% if section.blocks.size == 0 %}
+            <p style="color:var(--white-50);text-align:center;padding:40px 0;font-size:14px;">Add the <strong style="color:var(--gold);">Forms</strong> block in the theme editor and set Form ID <strong style="color:var(--gold);">1001880</strong>.</p>
+          {% endif %}
+        </div>
+
+        <div class="social-tag-row" style="margin-top:28px;flex-direction:column;align-items:flex-start;gap:12px;">
+          <div>
+            <span>Prefer social?</span>
+            <span>Tag <strong style="color:var(--gold);">#The221Game</strong> and we'll find you.</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:12px;">
+            <a class="social-icon" href="{{ section.settings.instagram_url | default: '#' }}" aria-label="Instagram" {% if section.settings.instagram_url != blank %}target="_blank" rel="noopener"{% endif %}>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+            </a>
+            <a class="social-icon" href="{{ section.settings.twitter_url | default: '#' }}" aria-label="X / Twitter" {% if section.settings.twitter_url != blank %}target="_blank" rel="noopener"{% endif %}>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l7 8.5L4.5 20H7l5-6 5 6h4l-7.5-9L19 4h-2.5L12 9.5 8 4z"/></svg>
+            </a>
+            <a class="social-icon" href="{{ section.settings.facebook_url | default: '#' }}" aria-label="Facebook" {% if section.settings.facebook_url != blank %}target="_blank" rel="noopener"{% endif %}>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+            <a class="social-icon" href="{{ section.settings.tiktok_url | default: '#' }}" aria-label="TikTok" {% if section.settings.tiktok_url != blank %}target="_blank" rel="noopener"{% endif %}>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V9.03a8.16 8.16 0 0 0 4.77 1.52V7.12a4.85 4.85 0 0 1-1-.43z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  /*
+   * The Shopify Forms app renders inside a Shadow DOM (<shopify-forms-embed>).
+   * Regular CSS selectors cannot penetrate it, but CSS custom properties DO
+   * inherit through shadow boundaries. We override the app's :host {} tokens
+   * by setting them on the shadow host element from the light DOM.
+   */
+  .pv3-lp .pv3-sf-embed shopify-forms-embed {
+    /* Full width — remove app's max-width constraints */
+    --inline-container-max-width: 100% !important;
+    --container-max-w: 100% !important;
+    --inline-form-alignment: stretch !important;
+    --app-embed-padding-x: 0px !important;
+    --app-embed-padding-y: 0px !important;
+    --spacing-size-x: 0px !important;
+
+    /* Left-align text */
+    --container-text-alignment: left !important;
+
+    /* Input field background */
+    --form-background-color: #0A1E1A !important;
+    --container-background-color: transparent !important;
+
+    /* Text */
+    --body-text-color: #FFFFFF !important;
+    --heading-text-color: #D4A64A !important;
+    --form-text-color: #FFFFFF !important;
+    --form-placeholder-color: rgba(255,255,255,0.38) !important;
+    --link-text-color: #D4A64A !important;
+    --forms-accent-color: #D4A64A !important;
+    --forms-accent-color-hovered-modifier: rgba(212,166,74,0.12) !important;
+    --forms-discount-code-color: #D4A64A !important;
+
+    /* Borders */
+    --form-field-border: 0 0 0 1px rgba(255,255,255,0.12) !important;
+    --form-field-border-focused: 0 0 0 2px #D4A64A !important;
+
+    /* No border radius on anything */
+    --form-field-border-radius: 0px !important;
+    --button-border-radius: 0px !important;
+    --container-border-radius: 0px !important;
+
+    /* Strip app padding */
+    --forms-padding-top: 0px !important;
+    --forms-padding-bottom: 0px !important;
+
+    /* Button — red to match pv3 CTA */
+    --button-background-color: #C65336 !important;
+    --button-text-color: #FFFFFF !important;
+    --button-padding: 20px !important;
+
+    /* Font */
+    --forms-body-font: normal 400 15px 'D-DIN', Arial, sans-serif !important;
+    --forms-heading-font: normal 700 11px 'D-DIN', Arial, sans-serif !important;
+    --forms-base-font-size: 15px !important;
+  }
+
+  /* Outer Shopify block wrapper — strip any background it might carry */
+  .pv3-lp .pv3-sf-embed .shopify-app-block { background: transparent !important; padding: 0 !important; }
+  .pv3-lp .pv3-sf-embed [data-form-root] { background: transparent !important; }
+
+  /* Override "body #app-embed" light-DOM rule that sets #f8f2e6 on the host */
+  .pv3-lp .pv3-sf-embed shopify-forms-embed#app-embed {
+    background: transparent !important;
+    background-color: transparent !important;
+  }
+</style>
+
+<script>
+(function() {
+  function pv3SFInject() {
+    var host = document.querySelector('.pv3-sf-embed shopify-forms-embed');
+    if (!host || !host.shadowRoot) return;
+    if (host.shadowRoot.getElementById('pv3-sf-override')) return;
+
+    var s = document.createElement('style');
+    s.id = 'pv3-sf-override';
+    s.textContent = [
+      /* Kill the beige background on every wrapper inside shadow */
+      '#app-embed,[class*="appEmbed"],[class*="appEmbedRoot"],[class*="container"],[class*="formContainer"],[class*="inline"],[class*="grid"],[class*="gridItem"]',
+        '{background:transparent!important;background-color:transparent!important;}',
+
+      /* Hide empty image-slot placeholder */
+      '[class*="imageLoading"]{display:none!important;height:0!important;}',
+
+      /* Remove extra padding */
+      '[class*="formContainer"]{padding-top:0!important;padding-bottom:0!important;}',
+      '[class*="gridItem"]{padding:0!important;}',
+
+      /* Submit button — standard style, no SVG curves */
+      '[data-testid="btn-form-submit"]{',
+        'min-height:60px!important;',
+        'padding:18px 36px!important;',
+        'margin:0!important;',
+        'width:100%!important;',
+        'background:#C65336!important;',
+        'color:#ffffff!important;',
+        'font-family:"Industry Inc","Arial Narrow",Impact,sans-serif!important;',
+        'font-weight:400!important;',
+        'font-size:16px!important;',
+        'letter-spacing:0.1em!important;',
+        'text-transform:uppercase!important;',
+        'border:none!important;',
+        'border-radius:0!important;',
+        'white-space:nowrap!important;',
+        'cursor:pointer!important;',
+        'transition:background .2s ease,transform .2s ease!important;',
+      '}',
+      '[data-testid="btn-form-submit"]:hover{background:#b84b2f!important;transform:translateY(-2px)!important;}',
+
+      /* Mobile: fixed 56px flex-centered button — auto height leaves dead
+         space from the app's hidden loader slot */
+      '@media (max-width:768px){',
+        '[data-testid="btn-form-submit"]{',
+          'display:flex!important;',
+          'align-items:center!important;',
+          'justify-content:center!important;',
+          'white-space:normal!important;',
+          'text-align:center!important;',
+          'font-size:15px!important;',
+          'line-height:1.2!important;',
+          'height:56px!important;',
+          'min-height:0!important;',
+          'max-height:56px!important;',
+          'padding:0 20px!important;',
+          'overflow:hidden!important;',
+        '}',
+      '}',
+
+      /* Disclaimer — dim, small */
+      '[class*="formDisclaimer"]{opacity:0.35!important;font-size:11px!important;margin-top:12px!important;}',
+      '[class*="formDisclaimer"] a{color:#D4A64A!important;}',
+
+      /* Left-align form content */
+      '[class*="gridItemContent"]{text-align:left!important;}',
+    ].join('');
+
+    host.shadowRoot.appendChild(s);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() { pv3SFInject(); setTimeout(pv3SFInject, 800); });
+  } else {
+    pv3SFInject();
+    setTimeout(pv3SFInject, 800);
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "PV3 — Submit Form",
+  "max_blocks": 1,
+  "blocks": [
+    { "type": "@app" }
+  ],
+  "settings": [
+    { "type": "header",       "content": "Background" },
+    { "type": "image_picker", "id": "bg_image", "label": "Section Background Image", "info": "Covers the full section. Recommended: 1440 × any px." },
+    { "type": "header",   "content": "Left Column" },
+    { "type": "textarea", "id": "heading",      "label": "Heading",     "default": "Your 221 moment\nstarts here.", "info": "Line breaks become heading line breaks" },
+    { "type": "textarea", "id": "body_text",    "label": "Body Text",   "default": "Tell us your greatest rugby story — a braai, a watch party, a match, a memory. The best story each week wins a box of 221." },
+    { "type": "image_picker", "id": "badge_image", "label": "Badge Image", "info": "Defaults to CDN badge if left empty" },
+    { "type": "header",   "content": "Links" },
+    { "type": "url",      "id": "instagram_url",  "label": "Instagram URL" },
+    { "type": "url",      "id": "twitter_url",    "label": "X / Twitter URL" },
+    { "type": "url",      "id": "facebook_url",   "label": "Facebook URL" },
+    { "type": "url",      "id": "tiktok_url",     "label": "TikTok URL" }
+  ],
+  "presets": [{ "name": "PV3 Submit Form" }]
+}
+{% endschema %}

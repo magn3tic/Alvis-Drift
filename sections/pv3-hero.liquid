@@ -1,0 +1,53 @@
+{% comment %} PV3 Hero — video background, badge, CTAs {% endcomment %}
+<!-- PUSH-TEST-001 -->
+<section class="pv3-lp pv3-hero{% if section.settings.video_url_mobile != blank %} has-mobile-video{% endif %}" id="pv3-top" aria-label="Hero">
+  <video class="hero-video hero-video--desktop" autoplay muted loop playsinline poster="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Frame_1.png?v=1779495610">
+    <source src="{{ section.settings.video_url | default: 'https://cdn.shopify.com/videos/c/o/v/dec4b47f76134f8689ed4d57d20876d1.mp4' }}" type="video/mp4" />
+  </video>
+  {% if section.settings.video_url_mobile != blank %}
+    <video class="hero-video hero-video--mobile" autoplay muted loop playsinline poster="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Frame_1.png?v=1779495610">
+      <source src="{{ section.settings.video_url_mobile }}" type="video/mp4" />
+    </video>
+  {% endif %}
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-text">
+      <span class="hero-eyebrow">
+        <img src="{{ 'eyebrow-the221game.svg' | asset_url }}" width="186" height="48" alt="#The221Game" aria-hidden="true" />
+      </span>
+      <h1 class="hero-h1">THE <br>GAME <br><span class="hero-h1-inline">IS ON</span></h1>
+      <p class="hero-sub">{% if section.settings.hero_sub != blank %}{{ section.settings.hero_sub | newline_to_br }}{% else %}Share your greatest rugby moment and stand to win a case of 221 wine. Every week, the best story wins. Each entry qualifies for the grand prize.{% endif %}</p>
+      <div class="hero-ctas">
+        <a href="{{ section.settings.cta_secondary_link | default: '#pv3-game' }}" class="btn-link">{% if section.settings.cta_secondary_label != blank %}{{ section.settings.cta_secondary_label }}{% else %}How It Works{% endif %}</a>
+      </div>
+    </div>
+    {% if section.settings.show_badge != false %}
+      {% if section.settings.badge_image %}
+        <img class="hero-big-badge" src="{{ section.settings.badge_image | image_url: width: 520 }}" alt="The 221 Game badge" />
+      {% else %}
+        <img class="hero-big-badge" src="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Group_9.png?v=1779494749" alt="The 221 Game — Sharing Our Stories — Est. 1928" />
+      {% endif %}
+    {% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PV3 — Hero",
+  "settings": [
+    { "type": "header", "content": "Heading & Copy" },
+    { "type": "textarea", "id": "hero_h1",  "label": "Hero Heading",    "default": "The 221\nGame\nis on.",                                           "info": "Each line = one heading line" },
+    { "type": "textarea", "id": "hero_sub", "label": "Hero Subheading", "default": "Share your greatest rugby moment.\nWin a box of 221. Play The Game." },
+    { "type": "header", "content": "Secondary Link" },
+    { "type": "text", "id": "cta_secondary_label", "label": "Link Label",  "default": "How It Works" },
+    { "type": "url",  "id": "cta_secondary_link",  "label": "Link Target", "info": "Default scrolls to mechanics section" },
+    { "type": "header", "content": "Badge" },
+    { "type": "checkbox",    "id": "show_badge",   "label": "Show Badge Image", "default": true },
+    { "type": "image_picker", "id": "badge_image", "label": "Badge Image",      "info": "Leave empty to use the default CDN badge" },
+    { "type": "header", "content": "Media" },
+    { "type": "text", "id": "video_url", "label": "Hero Video URL (Desktop)", "default": "https://cdn.shopify.com/videos/c/o/v/dec4b47f76134f8689ed4d57d20876d1.mp4", "info": "Direct MP4 URL — shown on all screens unless a mobile URL is set below" },
+    { "type": "text", "id": "video_url_mobile", "label": "Hero Video URL (Mobile)", "info": "Direct MP4 URL — shown on screens ≤768px. Leave empty to use the desktop video on mobile." }
+  ],
+  "presets": [{ "name": "PV3 Hero" }]
+}
+{% endschema %}

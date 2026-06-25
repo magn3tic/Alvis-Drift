@@ -9,7 +9,6 @@
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
@@ -136,11 +135,8 @@
                 <p>
                   {% if product.metafields.my_fields.product_info != blank %}
                     {{ product.metafields.my_fields.product_info }}
-                  {% else %}
-                  
-                    {% endif %}
-                  </a> 
-                    </p>
+                  {% endif %}
+                </p>
                 </div>
               
               
@@ -465,8 +461,9 @@
       </div>
     </div>
   </div>
+  </div>
 </section>
-<section class="rewards-marquee-sec h-marquee tablet-show">
+
     <div class="marquee-imgs-wrap">
       <div class="marquee-imgs">
           <img src="{{ 'rewards-01.png' | asset_url }};" alt="">
@@ -639,7 +636,7 @@
                 </div>
               </details>
             </share-button>
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -780,7 +777,7 @@
               </pickup-availability>
             </div>
 
-            <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+            
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid

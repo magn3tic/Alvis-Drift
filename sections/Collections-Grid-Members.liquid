@@ -4,7 +4,7 @@
   {% if lowertags contains 'gold' %}
       {% assign collection_handle = 'club-gold' %}
       {% assign headline = 'TO GOLD CLUB MEMBERS' %}
-  {% elsif lowertags contains 'silver' %}
+  {% elsif lowertags contains 'silver' or lowertags contains 'influencer-silver' %}
       {% assign collection_handle = 'club-silver' %}
       {% assign headline = 'TO SILVER CLUB MEMBERS' %}
   {% elsif lowertags contains 'bronze' %}
@@ -25,7 +25,7 @@
   <div class="sec-inner">
     <div class="container">
       
-      <h2 class="h1">EXCLUSIVE WINES</h2>
+      <h1 class="h1">EXCLUSIVE WINES</h1>
       <p class="sub-title">{{ headline }}</p>
       <div class="tabs-content">
         <div id="tab-1" class="product-items-wrap current">

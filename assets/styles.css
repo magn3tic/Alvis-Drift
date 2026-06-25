@@ -256,7 +256,6 @@
 .hero-section {
     position: relative;
     width: 100%;
-    margin-top: -131px;
     overflow: hidden;
     min-height:500px
 }
@@ -305,9 +304,14 @@
 }
 
 .hero-txt p.sub-title {
-    padding-top: 19px
+    padding-top: 19px;
+    letter-spacing:2px;
+    line-height:1.3em
 }
 
+.hero-txt-c p{
+    line-height:1.3em;
+}
 .scrl-sec {
     position: relative;
     width: 66px
@@ -1009,6 +1013,11 @@
 
 .footer .list-social__item a svg path {
     fill: var(--footerHeading)
+}
+
+.footer__content-top .grid--4-col-tablet .grid__item {
+    max-width: 278px!important;
+    width: auto!important
 }
 
 .footer-block__details-content list-unstyled li {
@@ -3317,7 +3326,6 @@ input::-ms-input-placeholder {
 }
 
 .video-sec-vid-img {
-    width: 80%;
     height: auto;
     margin-bottom: 25px;
     margin-left: 84px
@@ -4485,7 +4493,7 @@ button.t-link:hover {
 #age-gate button {
     padding: 10px 20px;
     font-size: 16px;
-    margin: 10px;
+    margin-bottom: 10px;
     cursor: pointer
 }
 
@@ -4506,12 +4514,7 @@ button.t-link:hover {
 }
 
 @media only screen and (max-width: 970px) {
-    #age-gate {
-        width:75%!important;
-    }
-    .age-header{
-        padding:0
-    }
+   
     .front-img-icon {
         width: 45px;
         height: auto
@@ -4519,13 +4522,6 @@ button.t-link:hover {
 
     .right-hero-icon {
         top: 15%!important
-    }
-}
-
-@media only screen and (max-width: 1200px) {
-    #age-gate {
-        width:40%;
-        height: 35%
     }
 }
 

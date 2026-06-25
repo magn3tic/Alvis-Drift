@@ -1,0 +1,179 @@
+{% comment %} PV3 Game Mechanics — 03 How You Play {% endcomment %}
+
+<section class="pv3-lp section bg-primary grain mechanics" id="pv3-game" aria-labelledby="pv3-game-heading">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow eyebrow-center" style="display:inline-flex;">02 / The Game</span>
+      <h2 class="h2 mechanics-h2" id="pv3-game-heading">HOW <span style="font-family:var(--font-display-inline);color:var(--gold);">TO PLAY</span></h2>
+      <p class="body mechanics-intro">{% if section.settings.intro != blank %}{{ section.settings.intro }}{% else %}It's simple. Share your story, submit your moment, and you could win — weekly or big.{% endif %}</p>
+    </div>
+
+    {% if section.settings.layout == 'vertical' %}
+    <!-- Vertical steps layout -->
+    <div class="mech-vertical reveal">
+      <div class="mech-row">
+        <span class="mech-num">01</span>
+        <div>
+          <h3 class="mech-h3" style="margin-bottom:8px;">{% if section.settings.step_1_title != blank %}{{ section.settings.step_1_title }}{% else %}Share Your Moment{% endif %}</h3>
+          <p class="mech-body" style="font-size:16px;">{% if section.settings.step_1_body != blank %}{{ section.settings.step_1_body }}{% else %}Tell us your greatest rugby memory — the match, the braai, the watch party. A paragraph is plenty.{% endif %}</p>
+        </div>
+      </div>
+      <div class="mech-row">
+        <span class="mech-num">02</span>
+        <div>
+          <h3 class="mech-h3" style="margin-bottom:8px;">{% if section.settings.step_2_title != blank %}{{ section.settings.step_2_title }}{% else %}Tag or Submit{% endif %}</h3>
+          <p class="mech-body" style="font-size:16px;">{% if section.settings.step_2_body != blank %}{{ section.settings.step_2_body }}{% else %}Tag <strong style="color:var(--gold);">#The221Game</strong> on Instagram or X, or submit the form below.{% endif %}</p>
+        </div>
+      </div>
+      <div class="mech-row">
+        <span class="mech-num">03</span>
+        <div>
+          <h3 class="mech-h3" style="margin-bottom:8px;">{% if section.settings.step_3_title != blank %}{{ section.settings.step_3_title }}{% else %}Win Weekly{% endif %}</h3>
+          <p class="mech-body" style="font-size:16px;">{% if section.settings.step_3_body != blank %}{{ section.settings.step_3_body }}{% else %}Best story each week wins a box of Alvi's Drift 221. Winners announced every Sunday.{% endif %}</p>
+          <a href="#pv3-submit" class="pb-card-more" style="display:inline-block;margin-top:16px;">How to win weekly →</a>
+        </div>
+      </div>
+      <div class="mech-row">
+        <span class="mech-num">04</span>
+        <div>
+          <h3 class="mech-h3" style="margin-bottom:8px;">{% if section.settings.step_4_title != blank %}{{ section.settings.step_4_title }}{% else %}The Grand Prize{% endif %}</h3>
+          <p class="mech-body" style="font-size:16px;">{% if section.settings.step_4_body != blank %}{{ section.settings.step_4_body }}{% else %}Watch the All Blacks series in New Zealand with Percy Montgomery. Every weekly entry is automatically in the draw.{% endif %}</p>
+          <a href="#pv3-prize" class="pb-card-more" style="display:inline-block;margin-top:16px;">How to win big →</a>
+        </div>
+      </div>
+    </div>
+
+    {% elsif section.settings.layout == 'tunnel' %}
+    <!-- Stadium tunnel layout -->
+    <div class="mech-tunnel reveal">
+      <div class="mech-tunnel-inner">
+        <article class="mech-card">
+          <span class="mech-num">01</span>
+          <h3 class="mech-h3">{% if section.settings.step_1_title != blank %}{{ section.settings.step_1_title }}{% else %}Share Your Moment{% endif %}</h3>
+          <p class="mech-body">{% if section.settings.step_1_body != blank %}{{ section.settings.step_1_body }}{% else %}Tell us your greatest rugby memory — the match, the braai, the watch party.{% endif %}</p>
+        </article>
+        <article class="mech-card">
+          <span class="mech-num">02</span>
+          <h3 class="mech-h3">{% if section.settings.step_2_title != blank %}{{ section.settings.step_2_title }}{% else %}Tag or Submit{% endif %}</h3>
+          <p class="mech-body">{% if section.settings.step_2_body != blank %}{{ section.settings.step_2_body }}{% else %}Tag #The221Game or submit the form below.{% endif %}</p>
+        </article>
+        <article class="mech-card">
+          <span class="mech-num">03</span>
+          <h3 class="mech-h3">{% if section.settings.step_3_title != blank %}{{ section.settings.step_3_title }}{% else %}Win Weekly{% endif %}</h3>
+          <p class="mech-body">{% if section.settings.step_3_body != blank %}{{ section.settings.step_3_body }}{% else %}Best story each week wins a box of 221.{% endif %}</p>
+          <a href="#pv3-submit" class="pb-card-more" style="margin-top:auto;">How to win weekly →</a>
+        </article>
+        <article class="mech-card">
+          <span class="mech-num">04</span>
+          <h3 class="mech-h3">{% if section.settings.step_4_title != blank %}{{ section.settings.step_4_title }}{% else %}The Grand Prize{% endif %}</h3>
+          <p class="mech-body">{% if section.settings.step_4_body != blank %}{{ section.settings.step_4_body }}{% else %}Watch the All Blacks series with Percy in New Zealand.{% endif %}</p>
+          <a href="#pv3-prize" class="pb-card-more" style="margin-top:auto;">How to win big →</a>
+        </article>
+      </div>
+    </div>
+
+    {% else %}
+    <!-- Horizontal cards (default) -->
+    <div class="mech-grid reveal reveal-stagger">
+      <article class="mech-card{% if section.settings.step_1_bg_image %} mech-card-has-bg{% endif %}"{% if section.settings.step_1_bg_image %} style="background-image: url('{{ section.settings.step_1_bg_image | image_url: width: 600 }}')"{% endif %}>
+        <span class="mech-num">01</span>
+        <h3 class="mech-h3">{% if section.settings.step_1_title != blank %}{{ section.settings.step_1_title }}{% else %}Share{% endif %}</h3>
+        <p class="mech-body">{% if section.settings.step_1_body != blank %}{{ section.settings.step_1_body }}{% else %}Send us your greatest rugby memory. Whether you played it, watched it, or got stuck in a debate about it, we want to know.{% endif %}</p>
+      </article>
+      <article class="mech-card{% if section.settings.step_2_bg_image %} mech-card-has-bg{% endif %}"{% if section.settings.step_2_bg_image %} style="background-image: url('{{ section.settings.step_2_bg_image | image_url: width: 600 }}')"{% endif %}>
+        <span class="mech-num">02</span>
+        <h3 class="mech-h3">{% if section.settings.step_2_title != blank %}{{ section.settings.step_2_title }}{% else %}Submit{% endif %}</h3>
+        <p class="mech-body">{% if section.settings.step_2_body != blank %}{{ section.settings.step_2_body }}{% else %}Use #The221Game on social media, or fill in the form below.{% endif %}</p>
+      </article>
+      <article class="mech-card{% if section.settings.step_3_bg_image %} mech-card-has-bg{% endif %}"{% if section.settings.step_3_bg_image %} style="background-image: url('{{ section.settings.step_3_bg_image | image_url: width: 600 }}')"{% endif %}>
+        <span class="mech-num">03</span>
+        <h3 class="mech-h3">{% if section.settings.step_3_title != blank %}{{ section.settings.step_3_title }}{% else %}Win Weekly{% endif %}</h3>
+        <p class="mech-body">{% if section.settings.step_3_body != blank %}{{ section.settings.step_3_body }}{% else %}Every week, the best story wins a mixed case of 221 Range wine. Winners are announced on Sundays.{% endif %}</p>
+        <a href="#pv3-submit" class="pb-card-more" style="margin-top:auto;">How to win weekly →</a>
+      </article>
+      <article class="mech-card{% if section.settings.step_4_bg_image %} mech-card-has-bg{% endif %}"{% if section.settings.step_4_bg_image %} style="background-image: url('{{ section.settings.step_4_bg_image | image_url: width: 600 }}')"{% endif %}>
+        <span class="mech-num">04</span>
+        <h3 class="mech-h3">{% if section.settings.step_4_title != blank %}{{ section.settings.step_4_title }}{% else %}Win Big{% endif %}</h3>
+        <p class="mech-body">{% if section.settings.step_4_body != blank %}{{ section.settings.step_4_body }}{% else %}Weekly winners are automatically entered into the grand prize draw, worth R50k, which includes 2 tickets to the Springboks vs All Blacks match.{% endif %}</p>
+        <a href="#pv3-prize" class="pb-card-more" style="margin-top:auto;">How to win big →</a>
+      </article>
+    </div>
+    {% endif %}
+
+    <!-- Callout bar -->
+    <div class="callout reveal">
+      {% if section.settings.callout_bg_image and section.settings.callout_video_url == blank %}
+        <img class="callout-bg-img" src="{{ section.settings.callout_bg_image | image_url: width: 1440 }}" alt="" loading="eager" />
+      {% else %}
+        <video class="callout-bg-img" autoplay muted loop playsinline aria-hidden="true">
+          <source src="{{ section.settings.callout_video_url | default: 'https://cdn.shopify.com/videos/c/o/v/e3203e15ccc64223a8c6b66e1fb10dae.mp4' }}" type="video/mp4" />
+        </video>
+      {% endif %}
+      {% if section.settings.callout_product_image %}
+        <img class="callout-product-img" src="{{ section.settings.callout_product_image | image_url: width: 900 }}" alt="" loading="eager" />
+      {% endif %}
+      <div class="callout-content">
+        <div class="callout-text">
+          <strong>{% if section.settings.callout_title != blank %}{{ section.settings.callout_title }}{% else %}Weekly Prize{% endif %}</strong>
+          A Mixed Case <br>Of 221 Range Wine,<br><span class="callout-line2">DELIVERED TO<br>YOUR DOOR</span>
+        </div>
+        <a href="{{ section.settings.submit_cta_link | default: '#pv3-submit' }}" class="callout-submit">{% if section.settings.submit_cta_label != blank %}{{ section.settings.submit_cta_label }}{% else %}Submit Your 221 Moment{% endif %}</a>
+        {% if section.settings.tcs_link != blank %}
+          <a href="{{ section.settings.tcs_link }}" class="tcs callout-tcs" target="_blank" rel="noopener">Terms and conditions apply.</a>
+        {% else %}
+          <span class="tcs callout-tcs">Terms and conditions apply.</span>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PV3 — Mechanics",
+  "settings": [
+    { "type": "header",   "content": "Section Heading" },
+    { "type": "text",     "id": "heading", "label": "Heading", "default": "Here's how you play." },
+    { "type": "textarea", "id": "intro",   "label": "Intro",   "default": "Four steps. Tag, submit, win. Every Sunday a new winner. The grand prize ships in late July." },
+    { "type": "header",       "content": "Step 1" },
+    { "type": "text",         "id": "step_1_title",    "label": "Title",            "default": "Share" },
+    { "type": "textarea",     "id": "step_1_body",     "label": "Body" },
+    { "type": "image_picker", "id": "step_1_bg_image", "label": "Card Background Image" },
+    { "type": "header",       "content": "Step 2" },
+    { "type": "text",         "id": "step_2_title",    "label": "Title",            "default": "Submit" },
+    { "type": "textarea",     "id": "step_2_body",     "label": "Body" },
+    { "type": "image_picker", "id": "step_2_bg_image", "label": "Card Background Image" },
+    { "type": "header",       "content": "Step 3" },
+    { "type": "text",         "id": "step_3_title",    "label": "Title",            "default": "Win Weekly" },
+    { "type": "textarea",     "id": "step_3_body",     "label": "Body" },
+    { "type": "image_picker", "id": "step_3_bg_image", "label": "Card Background Image" },
+    { "type": "header",       "content": "Step 4" },
+    { "type": "text",         "id": "step_4_title",    "label": "Title",            "default": "Win Big" },
+    { "type": "textarea",     "id": "step_4_body",     "label": "Body" },
+    { "type": "image_picker", "id": "step_4_bg_image", "label": "Card Background Image" },
+    { "type": "header",   "content": "Callout Bar" },
+    { "type": "text",     "id": "callout_title", "label": "Prize Label",       "default": "Weekly Prize" },
+    { "type": "text",     "id": "callout_body",  "label": "Prize Description", "default": "A Mixed Case Of 221 Range Wine, Delivered To Your Door." },
+    { "type": "text",         "id": "callout_video_url",     "label": "Callout Bar Video URL",     "info": "Direct MP4 URL. Background animation only — no products." },
+    { "type": "image_picker", "id": "callout_bg_image",    "label": "Callout Bar Fallback Image", "info": "Shown if no video URL is set." },
+    { "type": "image_picker", "id": "callout_product_image", "label": "Product Image",            "info": "PNG of the wine bottles. Positioned on the left side of the callout." },
+    { "type": "header",   "content": "Submit CTA" },
+    { "type": "text",     "id": "submit_cta_label", "label": "Button Label", "default": "Submit Your 221 Moment" },
+    { "type": "url",      "id": "submit_cta_link",  "label": "Button Link",  "info": "Default: #pv3-submit" },
+    { "type": "header",   "content": "Layout & T&Cs" },
+    {
+      "type": "select",
+      "id": "layout",
+      "label": "Cards Layout",
+      "options": [
+        { "value": "horizontal", "label": "4 Horizontal Cards (default)" },
+        { "value": "vertical",   "label": "Stacked Steps" },
+        { "value": "tunnel",     "label": "Stadium Tunnel" }
+      ],
+      "default": "horizontal"
+    },
+    { "type": "url", "id": "tcs_link", "label": "T&Cs Page Link" }
+  ],
+  "presets": [{ "name": "PV3 Mechanics" }]
+}
+{% endschema %}

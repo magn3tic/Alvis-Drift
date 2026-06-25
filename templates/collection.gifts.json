@@ -45,33 +45,28 @@
         "background_image": "shopify://shop_images/DSC_4399.jpg",
         "image_overlay": "",
         "overlay_opacity": 30,
-        "blurb": "",
+        "hide_on_mobile": true,
         "right_btn_text": "",
-        "right_btn_link": ""
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
-    "16394887186124ed9d": {
-      "type": "Gifts-Grid",
-      "blocks": {
-        "1639488718813dca96-0": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "gifts"
-          }
-        }
-      },
-      "block_order": [
-        "1639488718813dca96-0"
-      ],
+    "collections_grid_individual_8zgizh": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
       "settings": {
-        "topheading": ""
+        "topheading": "",
+        "subtitle_1": "",
+        "product_collection": "gifts",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": true
       }
     }
   },
   "order": [
     "1639248035a16a435a",
     "16396708752d4c299f",
-    "16394887186124ed9d"
+    "collections_grid_individual_8zgizh"
   ]
 }

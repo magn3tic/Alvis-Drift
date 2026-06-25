@@ -1,4 +1,3 @@
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 {%- if request.design_mode -%}
   {%- comment %}
@@ -7,19 +6,21 @@
   {% endcomment -%}
   {{ 'collage.css' | asset_url | stylesheet_tag }}
   {{ 'component-card.css' | asset_url | stylesheet_tag }}
-  {{ 'component-emoyo-modal.css' | asset_url | stylesheet_tag }}
+
   <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-<div class="collage-wrapper page-width" style ="background-color:{{ section.settings.background-colour }};">
-<div class="video-grid"  >
+<div class="collage-wrapper" style ="background-color:{{ section.settings.background-colour }};">
+<div class="video-grid">
+  {% if section.settings.heading != blank  %}
   <div class= "col-4">
     <div class ="video-header">
-      <h1>{{ section.settings.heading }}</h1>
+      <h2>{{ section.settings.heading }}</h2>
     </div>
   </div>
-  <div class = "col-8">
-    <div class="video-grid-inner ">
+{% endif %}
+ <div class = "{% if section.settings.heading != blank  %}col-8{% else %}col-12{% endif %}">
+    <div class="{% if section.settings.heading != blank  %}video-grid-inner{% else %}video-grid-inner-3{% endif %}">
       {%- for block in section.blocks -%}
     	{%- assign b_i = block.settings -%}
   <div class = "video-columns ">
@@ -55,9 +56,9 @@
 
 </div>
 
+</div>
+
 <script>
-  
-$(document).ready(function(){
   
   $(".myBtn").click(function(){
     

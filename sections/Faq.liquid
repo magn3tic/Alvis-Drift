@@ -27,7 +27,17 @@
         {%- for block in section.blocks -%}
           <div class="accordion">
             <details>
-              <summary><h4 class="accordion__title">{{ block.settings.title | escape }}</h4>{% render 'emoyo-icons', icon: 'plus', color: 'var(--color-3)' %}</summary>
+              <summary>
+                <h4 class="accordion__title">{{ block.settings.title | escape }}</h4>
+                <span class="accordion__icon accordion__icon--plus">
+                  {% render 'emoyo-icons', icon: 'plus', color: 'var(--color-3)' %}
+                </span>
+
+                <span class="accordion__icon accordion__icon--minus">
+                  {% render 'emoyo-icons', icon: 'minus', color: 'var(--color-3)' %}
+                </span>
+              </summary>
+
               <div class="answer">
                 {{ block.settings.content }}
               </div>
@@ -47,13 +57,16 @@
 
 {% javascript %}
   var faqEl = document.querySelectorAll(".accordion details");
-  for (var i=0; i < faqEl.length; i++) {
-    faqEl[i].addEventListener("click", function(event) {
-      for (var i=0; i < faqEl.length; i++) {
-        faqEl[i].removeAttribute('open');
+
+  faqEl.forEach(function(details) {
+    details.addEventListener("toggle", function() {
+      if (details.open) {
+        faqEl.forEach(function(other) {
+          if (other !== details) other.removeAttribute("open");
+        });
       }
     });
-  }
+  });
 {% endjavascript %}
 
 <script type="application/ld+json">
@@ -76,7 +89,23 @@
 </script>
 
 <style>
-  
+  /* default: show plus, hide minus */
+.accordion summary .accordion__icon--minus { display: none; }
+.accordion summary .accordion__icon--plus  { display: inline-flex; }
+
+/* when open: show minus, hide plus */
+.accordion details[open] summary .accordion__icon--minus { display: inline-flex; }
+.accordion details[open] summary .accordion__icon--plus  { display: none; }
+
+/* optional: align title + icon nicely */
+.accordion summary{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+.accordion summary::-webkit-details-marker { display: none; }
+
   svg line {
     stroke: #fff;
 }
@@ -117,11 +146,6 @@ summary {
 summary {
     padding-right: 50px;
 }
-  
-  .grid__item.faq-accordions {
-    padding-left: 6rem;
-}
-  
   
 .accordion:hover h3.accordion__title {
     color: #e26552 !important;
@@ -267,15 +291,10 @@ summary {
     line-height: 28px;
 }
   
-  
 .form-01-faq {
     padding: 50px 0 0 0;
 }
   
-  @media only screen and (max-width: 767px) {
-  .grid__item.faq-accordions {
-	padding-left: 0rem;
-}
     summary svg {
 	width: 25px;
 }

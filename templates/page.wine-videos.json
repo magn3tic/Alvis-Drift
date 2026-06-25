@@ -29,16 +29,13 @@
             "background_image": "shopify://shop_images/Red_wine_website_header.jpg",
             "image_overlay": "#000000",
             "overlay_opacity": 30,
-            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "TASTE",
             "paragarh_p2": "WHAT'S POSSIBLE",
             "paragarh_p3": "VIDEO SERIES",
             "paragarh_p4": "",
             "paragarh_1": "Welcome to our Wine Education Series",
-            "paragarh_2": "Presented by wine maker, Alvi van der Merwe, and renowned local wine expert, Junel van der Merwe",
-            "side_btn_text": "",
-            "side_btn_link": ""
+            "paragarh_2": "Presented by wine maker, Alvi van der Merwe, and renowned local wine expert, Junel van der Merwe"
           }
         }
       },
@@ -47,18 +44,7 @@
       ],
       "settings": {
         "image_overlay": "",
-        "overlay_opacity": 30,
-        "blurb": "",
-        "right_btn_text": "",
-        "right_btn_link": "",
-        "anchor_link": ""
-      }
-    },
-    "spacer_pMLBaT": {
-      "type": "Spacer",
-      "name": "Spacer",
-      "settings": {
-        "spacer_size": "50px"
+        "overlay_opacity": 30
       }
     },
     "focus_text_text_only_hMBB4K": {
@@ -66,8 +52,8 @@
       "settings": {
         "text_transform": "uppercase",
         "Heading_color": "#ffffff",
-        "title": "",
-        "subtitle-1": "Alvi’s Drift Wine Education Video Series",
+        "title": "Alvi’s Drift Wine Education Video Series",
+        "subtitle-1": "",
         "subtitle-2": "<p>In this series, you will find the answers to some of the most commonly asked questions about everything wine – from how to open a bottle of wine and how to hold a wine glass to tips for storing wines at home and pairing wines with food. We’ll even show you how to sabrage a bottle of bubbly!</p>",
         "button_text": "",
         "button_link": "",
@@ -273,7 +259,6 @@
     "page_background_colour_M9n94j",
     "main",
     "hero_main_fcb6qK",
-    "spacer_pMLBaT",
     "focus_text_text_only_hMBB4K",
     "video_grid_fPDe6n",
     "video_grid_aPTtyc",

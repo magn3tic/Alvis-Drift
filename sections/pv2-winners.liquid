@@ -1,0 +1,117 @@
+{% comment %} PV2 Weekly Winners — 05 This Week's 221 Moment {% endcomment %}
+
+<section class="pv2-lp section bg-alt grain" id="pv2-winners" aria-labelledby="pv2-winners-heading">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">05 / Winners</span>
+      <h2 class="h2" id="pv2-winners-heading" style="margin-top:24px;">{% if section.settings.section_heading != blank %}{{ section.settings.section_heading }}{% else %}This week's 221 moment.{% endif %}</h2>
+    </div>
+
+    {% if section.settings.phase == 'phase1' %}
+    <!-- Phase 1: pre-launch placeholder card -->
+    <div class="winners-placeholder-card reveal">
+      <div class="winner-avatar">
+        <img src="{{ 'badge-gold.png' | asset_url }}" alt="" style="width:80px;height:80px;object-fit:contain;opacity:0.5;border-radius:0;" loading="lazy" />
+      </div>
+      <div class="winner-body">
+        <span class="winner-source">{% if section.settings.placeholder_week_label != blank %}{{ section.settings.placeholder_week_label }}{% else %}First Winner · Week of 18 June 2026{% endif %}</span>
+        <div class="winner-name" style="color:var(--gold);">{% if section.settings.placeholder_winner_name != blank %}{{ section.settings.placeholder_winner_name }}{% else %}First winner announced 18 June.{% endif %}</div>
+        <p class="winner-quote" style="color:var(--white-50);font-size:16px;font-family:var(--font-body);font-style:normal;margin-top:8px;">{% if section.settings.placeholder_message != blank %}{{ section.settings.placeholder_message }}{% else %}Submissions are open now. Winners drawn every Sunday from launch week.{% endif %}</p>
+        <a href="#pv2-submit" class="btn-primary" style="margin-top:28px;display:inline-flex;">Submit Your 221 Moment</a>
+      </div>
+    </div>
+
+    {% else %}
+    <!-- Full state: featured winner -->
+    <article class="winner-featured-card reveal">
+      <div class="winner-avatar">
+        {% if section.settings.featured_photo %}
+          <img src="{{ section.settings.featured_photo | image_url: width: 360 }}" alt="{{ section.settings.featured_name | escape }}" loading="lazy" />
+        {% else %}
+          <div class="winner-avatar-initials">
+            {{- section.settings.featured_name | slice: 0 | upcase -}}{{- section.settings.featured_name | split: ' ' | last | slice: 0 | upcase -}}
+          </div>
+        {% endif %}
+      </div>
+      <div class="winner-body">
+        <span class="winner-source">Submitted via #The221Game · {{ section.settings.featured_date | default: 'Week of XX June 2026' }}</span>
+        <div class="winner-name">{{ section.settings.featured_name | default: 'Winner Name' }}</div>
+        <div class="winner-handle">{{ section.settings.featured_handle | default: '@handle · Location' }}</div>
+        <p class="winner-quote">{{ section.settings.featured_quote | default: '"Your winner quote goes here."' | escape }}</p>
+        <a href="#pv2-submit" class="btn-gold-link" style="color:var(--gold);">Think you can top that? →</a>
+      </div>
+      <div class="winner-badge-col">
+        <div class="winner-win-badge">Winner</div>
+        <p class="winner-badge-sub">A box of 221 is on its way.</p>
+      </div>
+    </article>
+
+    <!-- Past winners grid -->
+    {% if section.blocks.size > 0 %}
+    <div class="winners-past reveal reveal-stagger">
+      {% for block in section.blocks %}
+      <article class="winner-past-card" {{ block.shopify_attributes }}>
+        <div class="winner-past-head">
+          <div class="avatar" aria-hidden="true">{{ block.settings.name | slice: 0 | upcase }}{{ block.settings.name | split: ' ' | last | slice: 0 | upcase }}</div>
+          <div>
+            <div class="winner-past-name">{{ block.settings.name | default: 'Winner Name' }}</div>
+            <div class="winner-past-handle">{{ block.settings.handle | default: '@handle · City' }}</div>
+          </div>
+        </div>
+        <p class="winner-past-quote">{{ block.settings.quote | default: '"Winner quote goes here."' | escape }}</p>
+        {% if block.settings.read_more_url != blank %}
+          <a href="{{ block.settings.read_more_url }}" class="btn-gold-link" style="font-size:11px;">Read More →</a>
+        {% endif %}
+      </article>
+      {% endfor %}
+    </div>
+    {% endif %}
+    {% endif %}
+
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PV2 — Winners",
+  "settings": [
+    { "type": "header",   "content": "Section" },
+    { "type": "text",     "id": "section_heading", "label": "Section Heading", "default": "This week's 221 moment." },
+    { "type": "header",   "content": "Phase" },
+    {
+      "type": "select",
+      "id": "phase",
+      "label": "Phase",
+      "options": [
+        { "value": "phase1", "label": "Phase 1 — Pre-launch placeholder" },
+        { "value": "full",   "label": "Full — Show winners" }
+      ],
+      "default": "phase1"
+    },
+    { "type": "header",   "content": "Phase 1 Placeholder" },
+    { "type": "text",     "id": "placeholder_week_label",  "label": "Week Label",       "default": "First Winner · Week of 18 June 2026" },
+    { "type": "text",     "id": "placeholder_winner_name", "label": "Placeholder Name", "default": "First winner announced 18 June." },
+    { "type": "textarea", "id": "placeholder_message",     "label": "Placeholder Text", "default": "Submissions are open now. Winners drawn every Sunday from launch week." },
+    { "type": "header",   "content": "Featured Winner" },
+    { "type": "image_picker", "id": "featured_photo",  "label": "Winner Photo" },
+    { "type": "text",         "id": "featured_name",   "label": "Winner Name",       "default": "Hennie de Waal" },
+    { "type": "text",         "id": "featured_handle", "label": "Handle · Location", "default": "@hennie_dw · Stellenbosch" },
+    { "type": "textarea",     "id": "featured_quote",  "label": "Winner Quote" },
+    { "type": "text",         "id": "featured_date",   "label": "Week Label",        "default": "Week of 16 June 2026" }
+  ],
+  "blocks": [
+    {
+      "type": "past_winner",
+      "name": "Past Winner",
+      "settings": [
+        { "type": "text",     "id": "name",          "label": "Name" },
+        { "type": "text",     "id": "handle",        "label": "Handle · Location" },
+        { "type": "textarea", "id": "quote",         "label": "Quote" },
+        { "type": "url",      "id": "read_more_url", "label": "Read More Link (optional)" }
+      ]
+    }
+  ],
+  "max_blocks": 6,
+  "presets": [{ "name": "PV2 Winners" }]
+}
+{% endschema %}

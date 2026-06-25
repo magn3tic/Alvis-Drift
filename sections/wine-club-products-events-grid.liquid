@@ -1,7 +1,18 @@
 {% if customer %}
   {% assign excluded_product_ids = settings.product_list | map: "id" %}
+  {% if customer.has_account %}
+  {% assign lowertags = customer.tags | downcase %}
+  {% if lowertags contains 'silver' %}
+    {% assign discount = 0.90 %}
+  {% elsif lowertags contains 'gold' %}
+    {% assign discount = 0.85 %}
+  {% else %}
+    {% assign discount = 0.95 %}
+  {% endif %}
+ {% endif %}
 
-<section class="awc-products-events-grid container {%  if  section.settings.show == 'exclusive_events' %}  awc-events-grid {% endif %}">
+<section class=" shop-tabs awc-products-events-grid {%  if  section.settings.show == 'exclusive_events' %}  awc-events-grid {% endif %}">
+  <div class = "alcontainer">
     {% comment %} Check if the customer is logged in {% endcomment %}
     {% assign lowertags = customer.tags | downcase %}
     {% assign customer_tier = '' %}
@@ -26,8 +37,6 @@
   {% assign show_section = true %}
 
 {% assign selected_collection = '' %}
-
-
 {% if section.settings.show == 'exclusive_collection' %}
   {% assign selected_collection = section.settings.collection_exclusive %}
 
@@ -55,17 +64,16 @@
     {% if show_section != false %}
 
      {% if section.settings.show == 'exclusive_collection' or section.settings.show == 'exclusive_wines'  %}
-      <div class="awc-hero--content">
-        {% if section.settings.show_title %}
-          <h2 class="h1">{{section.settings.title}}</h2>
-          {% unless section.settings.no-subtitle %}     
-
+      <div class="head">
+        {% unless section.settings.no-subtitle %}     
           {% if section.settings.sub-title == blank  %}
-          <p class="sub-title">FOR {{customer_tier}} CLUB MEMBERS</p>
+          <div class="heading-small">FOR {{customer_tier}} CLUB MEMBERS</div>
             {% else %}
-            <p class="sub-title">{{ section.settings.sub-title }}</p>
+            <div class="heading-small">{{ section.settings.sub-title }}</div>
             {% endif %}
           {% endunless %}
+        {% if section.settings.show_title %}
+          <h3 class="heading">{{section.settings.title}}</h3>
         {% endif %}
         {% if section.settings.show_counter %}
           {% render 'counter', start: section.settings.start_point text: section.settings.counter_text %}
@@ -75,25 +83,141 @@
       {% assign collection_object = collections[selected_collection] %}
 
       {% if collection_object != blank and collection_object.products_count > 0 %}
-        <div class="awc-collection-grid">
+        <div class="row">
               {% for product in collection_object.products %}
-                <div class="product-bx-v2 position-relative">
-                  <div class="product-img product-img-v2">
-                    <a href="{{ product.url }}">
-                      <img
-                        src="{{ product.featured_image | img_url: 'master' }}"
-                        loading="lazy"
-                        width="133"
-                        height="399"
-                        alt="{{ product.title }}">
-                    </a>
-                  </div>
+                {% if product.tags contains 'no-discount-product' %}
+                  {% assign exclude_product_discount = true %}
+                {% endif %}
 
-                  <div class="product-title-v2">
-                    <div class="sp-t-v2">
-                      <a href="{{ product.url }}">{{ product.title }}</a>
-                    </div>
+
+
+
+                <div class = "col-3">
+<a href="{{ product.url }}">
+                <div class="shop-item ">
+                  
+                  <div class="product-thumb">
+                    <div class="meta-tag" data-heading="{{ product.metafields.my_fields.wine_range | handleize }}">
+                     {{ product.metafields.my_fields.wine_range }}
+                      </div>
+
+                      {{ product.featured_image | image_url: width: 325 | image_tag: loading: 'lazy' }}
+                    
+                       {% assign member_discount = product.price | times: discount %}
+                        {% assign discount_amount = member_discount | minus: product.price %}
+
+                        {%- if product.compare_at_price > product.price -%}
+                          {% assign discount_amount = product.compare_at_price | minus: product.price %}
+                          <div class="product-discount">
+                            SAVE<br>
+                            {{ discount_amount | money_without_trailing_zeros }}
+                          </div>
+                        {%- endif -%}
                   </div>
+               
+                      <div class="product-add-to-cart">
+                        {% if product.tags contains 'Gift' %}
+                          <span>Add to cart</span>
+                        {% else %}
+                        <span>Add case to cart</span>
+                        {% endif %}
+                          <svg fill="none" height="21" viewBox="0 0 22 21" width="22" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M11 0C5.225 0 0.5 4.725 0.5 10.5C0.5 16.275 5.225 21 11 21C16.775 21 21.5 16.275 21.5 10.5C21.5 4.725 16.775 0 11 0ZM11 19.725C5.9 19.725 1.775 15.6 1.775 10.5C1.775 5.4 5.9 1.275 11 1.275C16.1 1.275 20.225 5.4 20.225 10.5C20.225 15.6 16.1 19.725 11 19.725Z" fill="white"></path><path d="M11.6 6.82495H10.4V9.89995H7.625V11.1H10.4V14.325H11.6V11.1H14.45V9.89995H11.6V6.82495Z" fill="white"></path>
+                          </svg>
+                            {% comment %}
+                        <product-form class="product-form">
+                          <div class="product-form__error-message-wrapper" role="alert" hidden>
+                              <span class="product-form__error-message"></span>
+                              </div>
+                            {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
+                            <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                            <!--                   <input class="quantity__input" type="hidden" name="quantity" id="Quantity-template--15114413473959__main" min="1" value="1" form="product-form-template--15114413473959__main">                   -->
+                            <div class="input-num-wrap">
+                              <quantity-input class="">
+                                <button type="button" name="plus" class="num-up"></button>
+                                <button type="button" name="minus" class="num-down"></button>
+                                <input min="1" type="number" id="quantity" name="quantity" class="input-num" min="1" max="30"value="1" />
+                              </quantity-input>
+                            </div>
+
+                        <button
+                            type="submit"
+                            name="add"
+                            class="btn btn-overlay"
+                            {% if product.selected_or_first_available_variant.available == false %}disabled{% endif %}
+                            >
+                            <span>
+                              {%- if product.selected_or_first_available_variant.available -%}
+                              BUY
+                              {%- else -%}
+                              {{ 'products.product.sold_out' | t }}
+                              {%- endif -%}
+                            </span>
+                          <b>{{ product_item.price | money }}</b>
+                          <div class="loading-overlay__spinner hidden">
+                            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
+                            </svg>
+                          </div>
+                      </button>
+                    {%- endform -%}
+                    </product-form>   
+                  {% endcomment %}
+                </div>
+
+                  <a href="{{ product.url }}">
+                    <div class="product-cat">{{ product.title }}</div>
+                    
+                     {% if customer %}
+                      {% if exclude_product_discount %}
+                        {% if product.compare_at_price > product.price %}
+                          <div class="product-price">
+                            {{ product.price | money_without_trailing_zeros }}
+                            <span
+                              >WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span
+                            >
+                          </div>
+                        {% else %}
+                          <div class="product-price wine-club-price">
+                            {{ product.price | money_without_trailing_zeros }}
+                          
+                          </div>
+                        {% endif %}
+                      {% else %}
+                        {% if product.compare_at_price > product.price %}
+                        <div class="product-price">
+                            {{ product.price | times: discount | money_without_trailing_zeros }}
+                            <span
+                              >WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span
+                            >
+                          </div>
+                        {% else %}
+                          <div class="product-price">
+                            {{ product.price | times: discount | money_without_trailing_zeros }}
+                            <span
+                              >WAS <del>{{ product.price | money_without_trailing_zeros }}</del></span
+                            >
+                          </div>
+                        {% endif %}
+                      {% endif %}
+                    {% else %}
+                      {% if product.compare_at_price > product.price %}
+                        <div class="product-price">
+                          {{ product.price | money_without_trailing_zeros }}
+                          <span
+                            >WAS <del>{{ product.compare_at_price | money_without_trailing_zeros }}</del></span
+                          >
+                        </div>
+                      {% else %}
+                        <div class="product-price rr">
+                          {{ product.price | money_without_trailing_zeros }}
+                        </div>
+                      {% endif %}
+                    {% endif %}
+                       </a>
+
+
+
                   {% comment %} Pricing and Discounts Logic {% endcomment %}
                  
                   {% assign price = product.price %}
@@ -127,164 +251,21 @@
                   
                   {% assign assigned_price = price_v | divided_by: product.metafields.my_fields.cost_per_item %}
                   {% comment %} End of Pricing and Discounts Logic {% endcomment %}
+                     
                 
-              {% if settings.member-discount == "enable" %}
-
-
-                  {% if excluded_product_ids contains product.id %}
-                  <div class="product-price" style="margin-bottom: 15px;text-align: center;">
-
-                    {% assign has_discount_20 = product.metafields.custom.product_discount_20 %}
-                    {% assign discounted_price_20 = product.price | times: 0.8 | round %}
-                      {% assign has_discount_15 = product.metafields.custom.product_discount_15 %}
-                    {% assign discounted_price_15 = product.price | times: 0.85 | round %}
-
-                    {% if has_discount_20 == true %}
-                      <div class = "product-price">
-                      <span class="compare-price">{{ product.price| money | remove: '.00' | replace: ',', ' ' }}</span>
-                        <span class="product-price 20_discount">{{ discounted_price_20 | money | remove: '.00' | replace: ',', ' ' }}</span>
-                      </div>
-                      
-                      {% elsif has_discount_15 == true %}
-                        <div class = "product-price">
-                      <span class="compare-price">
-                          {{ product.price| money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                        <span class="product-price 15_discount">
-                          {{ discounted_price_15 | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                      </div>
-                      {% else %}
-                      
-                      {% if compare_price != 0 %}
-                        <div class = "product-price">
-                        <span class="compare-price">
-                          {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                        <span class="current-price">
-                          {{ price | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                      </div>
-                      {% else %}
-                        <span class="current-price">
-                          {{ price | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                      {% endif %}
-                      
-                      
-                    
-                    {% else %}
-                      <span class="product-price">
-                        {{ price | money | remove: '.00' | replace: ',', ' ' }}
-                      </span>
-                    {% endif %}
-
-                  </div>
-                    {% else %}
-                      <div class = "product-price">
-                    <div class="product-price" style="margin-bottom: 15px">
-                      <span class="compare-price">
-                        {{ price | money | remove: '.00' | replace: ',', ' ' }}
-                      </span>
-                      <span class="discounted-price-v2">
-                        {{ discounted_price | money | remove: '.00' | replace: ',', ' ' }}
-                      </span>     
-                      </div>         
-                  </div>
-                    {% endif %}
-
-                  {% else %}
-                    {% if compare_price != 0 %}
-                      <div class = "product-price">
-                        <span class="compare-price">
-                          {{ compare_price | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                        <span class="current-price">
-                          {{ price | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                        </div>
-                      {% else %}
-                        <span class="current-price">
-                          {{ price | money | remove: '.00' | replace: ',', ' ' }}
-                        </span>
-                      {% endif %}
-                    {% endif %}
-                  {% unless product.tags contains 'Gift' %}
+                  {% if product.tags contains 'Gift' %}
                     <div class="product-price-per">
-                      {% assign price_perUnit = price | divided_by: product.metafields.my_fields.cost_per_item | round: 2  %}
-                        {% if product.metafields.my_fields.cost_per_item != blank %}
-                          R{{ price_perUnit | divided_by: 100 }} per Bottle x {{ product.metafields.my_fields.cost_per_item }}
-                        {% else %}
-                      Case of 6
-                    {% endif %}
+                    Per Case
                   </div>
-                  {% endunless %}
-
-                  {% comment %} Add to Cart Button {% endcomment %}
-                  <product-form class="product-form">
-                    <div class="product-form__error-message-wrapper" role="alert" hidden>
-                      <span class="product-form__error-message"></span>
-                    </div>
-                    {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                      <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
-
-                      <div class="qty__wrapper">
-                        QTY:
-                        <input
-                          class="quantity__input"
-                          type="number"
-                          name="quantity"
-                          id="quantity"
-                          min="1"
-                          value="1"
-                          aria-label="quantity"
-                          {%- if product.selected_or_first_available_variant.available == false -%}
-                            disabled
-                          {%- endif -%}
-                        >
-                      </div>
-
-                      <div class="product-form__buttons">
-                        <button
-                          type="submit"
-                          name="add"
-                          class="btn btn-overlay"
-                          {% if product.selected_or_first_available_variant.available == false %}
-                            disabled
-                          {% endif %}
-                        >
-                          <span>
-                            {%- if product.selected_or_first_available_variant.available -%}
-                              BUY
-                            {%- else -%}
-                              {{ 'products.product.sold_out' | t }}
-                            {%- endif -%}
-                          </span>
-                          <div class="loading-overlay__spinner hidden">
-                            <svg aria-hidden="true" focusable="false" role="presentation" class="spinner" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
-                              <circle class="path" fill="none" stroke-width="6" cx="33" cy="33" r="30"></circle>
-                            </svg>
-                          </div>
-                        </button>
-                      </div>
-                    {%- endform -%}
-                  </product-form>
-            {% assign promo = product.metafields.my_fields.promo_label %}
-
-                              
-                                  {% if promo != blank %}
-                                    {% if section.settings.promo_badge == true %}
-                                      <div class="promo-badge">
-                                          {{ promo }}
-                                      </div>
-                                      {% else %}
-                                      <div class="promo-label">
-                                          {{ promo }}
-                                      </div>
-                                      {% endif %}
-                                    {% endif %} 
-                </div>
-                
+                {% else %}
+                  <div class="product-price-per">
+                    6 Per Case
+                  </div>
+                {% endif %}
+                </div> 
+                 </a>
+                  </div> 
+                  
               {% endfor %}
             </div> 
        
@@ -292,11 +273,10 @@
         <p>No products found in the assigned collection.</p>
       {% endif %}
     {% endif %}
-    
     {%  if  section.settings.show == 'exclusive_events' %}  
-      <div class="awc-hero--content">
+      <div class="head">
         {% if section.settings.show_title %}
-          <h1 class="h1">{{section.settings.title}}</h1> 
+          <h3 class="heading">{{section.settings.title}}</h3> 
           {% endif %}
         {% unless section.settings.no-subtitle %}
           {% if section.settings.sub-title == blank  %}
@@ -352,10 +332,11 @@
         
      {% endif %}
  {% endif %}
-
+</div>
 </section>
 
 {% endif %}
+
 
 {% schema %}
   {

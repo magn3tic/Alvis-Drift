@@ -1,0 +1,82 @@
+{% comment %} PV2 Grand Prize — 05 The Prize + countdown {% endcomment %}
+
+<section class="pv2-lp section bg-cream" id="pv2-prize" aria-labelledby="pv2-prize-heading">
+  <div class="container">
+    <div class="prize-grid">
+
+      <div class="reveal">
+        <span class="eyebrow">04 / The Prize</span>
+        <h2 class="h2" id="pv2-prize-heading" style="margin-top:24px;">{% if section.settings.heading != blank %}{{ section.settings.heading | newline_to_br }}{% else %}The Grand Prize —<br/>Greatest Rivalry Watch Party with Percy.{% endif %}</h2>
+        <hr class="rule-gold-short" style="margin: 28px 0 24px;" />
+        <p class="body">{% if section.settings.body_text != blank %}{{ section.settings.body_text }}{% else %}One winner. Two return flights to New Zealand. A box at the All Blacks series. Watched alongside Percy Montgomery — the most-capped Springbok and the voice of the 221 campaign. The ultimate 221 experience.{% endif %}</p>
+
+        <div class="prize-callout-box">
+          <h4 class="h4">{% if section.settings.callout_title != blank %}{{ section.settings.callout_title }}{% else %}How to Enter{% endif %}</h4>
+          <p class="body">{% if section.settings.callout_body != blank %}{{ section.settings.callout_body }}{% else %}Every weekly submission is an automatic entry into the Grand Prize draw. The more you engage, the better your chances.{% endif %}</p>
+        </div>
+
+        {% if section.settings.countdown_enabled %}
+        <div class="countdown" id="pv2Countdown" aria-label="Countdown to grand prize draw">
+          <div class="cd-unit"><span class="cd-num" data-cd="d">--</span><span class="cd-label">Days</span></div>
+          <div class="cd-unit"><span class="cd-num" data-cd="h">--</span><span class="cd-label">Hours</span></div>
+          <div class="cd-unit"><span class="cd-num" data-cd="m">--</span><span class="cd-label">Minutes</span></div>
+          <div class="cd-unit"><span class="cd-num" data-cd="s">--</span><span class="cd-label">Seconds</span></div>
+        </div>
+        <script>
+        (function() {
+          var target = new Date({{ section.settings.countdown_target | default: '2026-07-31T18:00:00' | json }}).getTime();
+          function tick() {
+            var diff = Math.max(0, target - Date.now());
+            var d = Math.floor(diff / 86400000); diff -= d * 86400000;
+            var h = Math.floor(diff / 3600000);  diff -= h * 3600000;
+            var m = Math.floor(diff / 60000);    diff -= m * 60000;
+            var s = Math.floor(diff / 1000);
+            function set(k,v) { var el = document.querySelector('#pv2Countdown .cd-num[data-cd="' + k + '"]'); if (el) el.textContent = String(v).padStart(2,'0'); }
+            set('d',d); set('h',h); set('m',m); set('s',s);
+          }
+          tick();
+          setInterval(tick, 1000);
+        })();
+        </script>
+        {% endif %}
+
+        <a href="{{ section.settings.submit_cta_link | default: '#pv2-submit' }}" class="btn-primary" style="margin-top:{% if section.settings.countdown_enabled %}0{% else %}32px{% endif %};">{% if section.settings.submit_cta_label != blank %}{{ section.settings.submit_cta_label }}{% else %}Submit Your Moment to Enter{% endif %}</a>
+      </div>
+
+      <div class="prize-img reveal" aria-hidden="true">
+        {% if section.settings.percy_image %}
+          <img src="{{ section.settings.percy_image | image_url: width: 900 }}" alt="Percy Montgomery" />
+        {% else %}
+          <div class="prize-img-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span style="opacity:0.5;">Percy Montgomery portrait<br/>Add in Customizer</span>
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PV2 — Grand Prize",
+  "settings": [
+    { "type": "header",   "content": "Heading & Copy" },
+    { "type": "textarea", "id": "heading",      "label": "Section Heading", "default": "The Grand Prize —\nGreatest Rivalry Watch Party with Percy.", "info": "Line breaks become heading line breaks" },
+    { "type": "textarea", "id": "body_text",    "label": "Body Text",       "default": "One winner. Two return flights to New Zealand. A box at the All Blacks series. Watched alongside Percy Montgomery — the most-capped Springbok and the voice of the 221 campaign. The ultimate 221 experience." },
+    { "type": "header",   "content": "How to Enter Box" },
+    { "type": "text",     "id": "callout_title", "label": "Box Heading", "default": "How to Enter" },
+    { "type": "textarea", "id": "callout_body",  "label": "Box Body",    "default": "Every weekly submission is an automatic entry into the Grand Prize draw. The more you engage, the better your chances." },
+    { "type": "header",   "content": "CTA" },
+    { "type": "text",     "id": "submit_cta_label", "label": "Button Label", "default": "Submit Your Moment to Enter" },
+    { "type": "url",      "id": "submit_cta_link",  "label": "Button Link",  "info": "Default: #pv2-submit" },
+    { "type": "header",   "content": "Countdown Timer" },
+    { "type": "checkbox", "id": "countdown_enabled",  "label": "Show Countdown Timer",  "default": true },
+    { "type": "text",     "id": "countdown_target",   "label": "Countdown Target Date", "default": "2026-07-31T18:00:00", "info": "ISO 8601 format: 2026-07-31T18:00:00" },
+    { "type": "header",   "content": "Portrait" },
+    { "type": "image_picker", "id": "percy_image", "label": "Percy Montgomery Portrait" }
+  ],
+  "presets": [{ "name": "PV2 Grand Prize" }]
+}
+{% endschema %}

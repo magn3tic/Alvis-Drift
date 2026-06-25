@@ -9,7 +9,6 @@
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
-<script src="{{ 'product-form.js' | asset_url }}" defer="defer"></script>
 
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 {%- if first_3d_model -%}
@@ -152,13 +151,42 @@
                       <span class="product-form__error-message"></span>
                       </div>
                     {%- form 'product', product, id: product.id, class: 'form', novalidate: 'novalidate', data-type: 'add-to-cart-form' -%}
-                    <input type="hidden" name="id" value="{{ product.selected_or_first_available_variant.id }}">
+                    <input
+                      type="hidden"
+                      name="id"
+                      id="ProductVariantId"
+                      value="{{ product.selected_or_first_available_variant.id }}"
+                    >
                     <!--                   <input class="quantity__input" type="hidden" name="quantity" id="Quantity-template--15114413473959__main" min="1" value="1" form="product-form-template--15114413473959__main">                   -->
+                  <!-- QUANTITY -->
                     <div class="input-num-wrap">
-                      <quantity-input class="">
-                      <button type="button" name="plus" class="num-up"></button>
-                      <button type="button" name="minus" class="num-down"></button>
-                      <input min="1" type="number" id="quantity" name="quantity" class="input-num" min="1" max="30"value="1" />
+                      <quantity-input class="quantity">
+                        <button
+                          class="quantity__button no-js-hidden"
+                          name="minus"
+                          type="button"
+                          aria-label="Decrease quantity">
+                          −
+                        </button>
+
+                        <input
+                          class="quantity__input"
+                          type="number"
+                          name="quantity"
+                          id="MiniQuantity-{{ product.selected_or_first_available_variant.id }}"
+                          min="1"
+                          max="30"
+                          value="1"
+                          form="{{ product.id }}"
+                        >
+
+                        <button
+                          class="quantity__button no-js-hidden"
+                          name="plus"
+                          type="button"
+                          aria-label="Increase quantity">
+                          +
+                        </button>
                       </quantity-input>
                     </div>
                                         
@@ -725,7 +753,7 @@
                 </div>
               </details>
             </share-button>-->
-            <script src="{{ 'share.js' | asset_url }}" defer="defer"></script>
+            
           {%- when 'variant_picker' -%}
             {%- unless product.has_only_default_variant -%}
               {%- if block.settings.picker_type == 'button' -%}
@@ -866,7 +894,7 @@
               </pickup-availability>
             </div>
 
-            <script src="{{ 'pickup-availability.js' | asset_url }}" defer="defer"></script>
+            
           {%- when 'rating' -%}
             {%- if product.metafields.reviews.rating.value != blank -%}
               {% liquid

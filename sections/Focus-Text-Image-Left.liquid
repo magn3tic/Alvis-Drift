@@ -8,7 +8,18 @@
           {% else %}
             <div class="focusTextImageSection__imageInner">
           {% endif %}
-            <img src="{{ section.settings.our-story-vid | img_url: 'large'}}" loading="lazy" width = "{{ section.settings.image_size }}" height = "{{ section.settings.image_size }}" class=" br-cut" alt="Alvis Drift Winery">
+            {% assign story_image = section.settings['our-story-vid'] %}
+            {% assign image_size = section.settings.image_size | default: 600 %}
+
+            {% if story_image != blank %}
+              {{
+                story_image
+                | image_url: width: 600
+                | image_tag:
+                  alt: 'Alvis Drift Winery',
+                  class: 'br-cut'
+              }}
+            {% endif %}
           {% if section.settings.video_url != blank %}
             </a>
           {% else %}

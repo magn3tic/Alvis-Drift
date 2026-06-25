@@ -1,0 +1,132 @@
+{% comment %} PV2 Playbook / Conversations — 07 {% endcomment %}
+
+<section class="pv2-lp section bg-primary" id="pv2-playbook" aria-labelledby="pv2-playbook-heading">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow">06 / The Playbook</span>
+      <div class="playbook-head" style="margin-top:24px;">
+        <h2 class="h2" id="pv2-playbook-heading">{% if section.settings.heading != blank %}{{ section.settings.heading }}{% else %}The Playbook.{% endif %}</h2>
+        <p class="body playbook-intro">{% if section.settings.intro != blank %}{{ section.settings.intro }}{% else %}Rugby stories. Armchair Coach. Percy's Take. Fan Moments. Updated weekly — the editorial home of #The221Game.{% endif %}</p>
+      </div>
+    </div>
+
+    <div class="tabs reveal" id="pv2PlaybookTabs" role="tablist" aria-label="Playbook categories">
+      <button class="tab active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="tab" data-filter="stories" role="tab" aria-selected="false">Rugby Stories</button>
+      <button class="tab" data-filter="coach" role="tab" aria-selected="false">Armchair Coach</button>
+      <button class="tab" data-filter="percy" role="tab" aria-selected="false">Percy's Take</button>
+      <button class="tab" data-filter="fan" role="tab" aria-selected="false">Fan Moments</button>
+    </div>
+
+    <div class="playbook-grid reveal reveal-stagger" id="pv2PlaybookGrid">
+      {% for block in section.blocks %}
+        {% assign cat = block.settings.category | default: 'stories' %}
+        <article class="pb-card" data-cat="{{ cat }}" {{ block.shopify_attributes }}>
+          <div class="pb-card-img">
+            {% if block.settings.card_image %}
+              <img src="{{ block.settings.card_image | image_url: width: 640 }}" alt="{{ block.settings.title | escape }}" loading="lazy" />
+            {% elsif cat == 'stories' and forloop.index == 1 %}
+              <img src="{{ 'heritage-3-stadium-goalposts.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy" />
+            {% elsif cat == 'stories' and forloop.index > 1 %}
+              <img src="{{ 'heritage-4-springbok-cap.jpg' | asset_url }}" alt="{{ block.settings.title | escape }}" loading="lazy" />
+            {% else %}
+              <div style="width:100%;height:100%;background:var(--bg-primary);display:grid;place-items:center;">
+                <span style="font-family:var(--font-display);color:var(--gold);font-size:11px;letter-spacing:0.18em;text-transform:uppercase;opacity:0.5;">Add Image</span>
+              </div>
+            {% endif %}
+          </div>
+          <div class="pb-card-body">
+            <span class="pb-card-cat">
+              {% case cat %}
+                {% when 'percy' %}Percy's Take
+                {% when 'coach' %}Armchair Coach
+                {% when 'fan' %}Fan Moments
+                {% else %}Rugby Stories
+              {% endcase %}
+            </span>
+            <h3 class="pb-card-title">{{ block.settings.title | default: 'Article Title' }}</h3>
+            <p class="pb-card-excerpt">{{ block.settings.excerpt | default: 'Article excerpt goes here.' }}</p>
+            {% if block.settings.link != blank %}
+              <a href="{{ block.settings.link }}" class="pb-card-more">Read More →</a>
+            {% else %}
+              <span class="pb-card-more" style="opacity:0.4;">Read More →</span>
+            {% endif %}
+          </div>
+        </article>
+      {% else %}
+        <p class="body" style="opacity:0.5; grid-column:1/-1;">Add article cards in the Customizer.</p>
+      {% endfor %}
+    </div>
+
+    <div class="center-row reveal">
+      <button class="btn-ghost" id="pv2LoadMore">Load More</button>
+    </div>
+  </div>
+</section>
+
+<script>
+(function() {
+  /* Tabs filter */
+  var tabs = document.querySelectorAll('#pv2PlaybookTabs .tab');
+  var cards = document.querySelectorAll('#pv2PlaybookGrid .pb-card');
+  tabs.forEach(function(t) {
+    t.addEventListener('click', function() {
+      tabs.forEach(function(x) { x.classList.remove('active'); x.setAttribute('aria-selected','false'); });
+      t.classList.add('active'); t.setAttribute('aria-selected','true');
+      var filter = t.dataset.filter;
+      cards.forEach(function(c) {
+        c.style.display = (filter === 'all' || c.dataset.cat === filter) ? '' : 'none';
+      });
+    });
+  });
+
+  /* Load more (shows all cards on click) */
+  var grid = document.getElementById('pv2PlaybookGrid');
+  var loadMore = document.getElementById('pv2LoadMore');
+  var perPage = 6;
+  var allCards = Array.from(cards);
+  if (allCards.length <= perPage) { if (loadMore) loadMore.style.display = 'none'; return; }
+  allCards.slice(perPage).forEach(function(c) { c.style.display = 'none'; });
+  if (loadMore) {
+    loadMore.addEventListener('click', function() {
+      allCards.forEach(function(c) { c.style.display = ''; });
+      loadMore.style.display = 'none';
+    });
+  }
+})();
+</script>
+
+{% schema %}
+{
+  "name": "PV2 — Playbook",
+  "settings": [
+    { "type": "text",     "id": "heading", "label": "Section Heading", "default": "The Playbook." },
+    { "type": "textarea", "id": "intro",   "label": "Intro Text",      "default": "Rugby stories. Armchair Coach. Percy's Take. Fan Moments. Updated weekly — the editorial home of #The221Game." }
+  ],
+  "blocks": [
+    {
+      "type": "article_card",
+      "name": "Article Card",
+      "settings": [
+        {
+          "type": "select",
+          "id": "category",
+          "label": "Category",
+          "options": [
+            { "value": "stories", "label": "Rugby Stories" },
+            { "value": "coach",   "label": "Armchair Coach" },
+            { "value": "percy",   "label": "Percy's Take" },
+            { "value": "fan",     "label": "Fan Moments" }
+          ],
+          "default": "stories"
+        },
+        { "type": "image_picker", "id": "card_image", "label": "Card Image" },
+        { "type": "text",         "id": "title",      "label": "Title" },
+        { "type": "textarea",     "id": "excerpt",    "label": "Excerpt" },
+        { "type": "url",          "id": "link",       "label": "Read More Link" }
+      ]
+    }
+  ],
+  "presets": [{ "name": "PV2 Playbook" }]
+}
+{% endschema %}

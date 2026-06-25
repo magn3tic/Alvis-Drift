@@ -1,7 +1,8 @@
 .totals {
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: column;
+  justify-content: space-between;
+
+
 }
 
 .totals > * {
@@ -10,8 +11,14 @@
 }
 
 .totals > h3 {
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
+    text-transform: uppercase;
+  font-size: 19px;
       margin-bottom: 20px;
+      font-weight:400;
+}
+#revy-cart-subtotal-price, .totals h3{
+  font-size: 18px;
+  
 }
 
 .totals * {
@@ -24,6 +31,7 @@
 
 .totals__subtotal-value {
   font-size: 1.8rem;
+  font-weight:bold;
 }
 
 .cart__ctas + .totals {

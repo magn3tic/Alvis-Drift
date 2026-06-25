@@ -1,0 +1,78 @@
+{% comment %} PV3 Footer Strip — badge + social + legal {% endcomment %}
+
+<section class="pv3-lp pv3-footer-strip" id="pv3-footer">
+  <div class="container">
+    <div class="footer-grid reveal">
+      <div class="footer-col">
+        <h4 class="h4">{% if section.settings.shop_heading != blank %}{{ section.settings.shop_heading }}{% else %}Shop{% endif %}</h4>
+        <p class="body" style="font-size:14px; margin-bottom:18px;">{% if section.settings.shop_body != blank %}{{ section.settings.shop_body }}{% else %}Take home the range that started the game.{% endif %}</p>
+        <a href="{{ section.settings.shop_link | default: '/collections/221-range' }}" class="btn-primary">{% if section.settings.shop_cta_label != blank %}{{ section.settings.shop_cta_label }}{% else %}Shop the 221 Range{% endif %}</a>
+      </div>
+      <div class="footer-col">
+        {% if section.settings.badge_image %}
+          <img src="{{ section.settings.badge_image | image_url: width: 320 }}" alt="The 221 Game" class="footer-badge" loading="lazy" />
+        {% else %}
+          <img src="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Group_11.png?v=1779493585" alt="The 221 Game" class="footer-badge" loading="lazy" />
+        {% endif %}
+      </div>
+      <div class="footer-col">
+        <h4 class="h4">{% if section.settings.follow_heading != blank %}{{ section.settings.follow_heading }}{% else %}Follow{% endif %}</h4>
+        <p class="body" style="font-size:14px; margin-bottom:8px;">{% if section.settings.follow_handle != blank %}{{ section.settings.follow_handle }}{% else %}The game never really stops. Follow along for debates, winners, and more.{% endif %}</p>
+        <div class="footer-socials">
+          <a class="social-icon" href="{{ section.settings.instagram_url | default: '#' }}" aria-label="Instagram" {% if section.settings.instagram_url != blank %}target="_blank" rel="noopener"{% endif %}>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="4"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+          </a>
+          <a class="social-icon" href="{{ section.settings.facebook_url | default: '#' }}" aria-label="Facebook" {% if section.settings.facebook_url != blank %}target="_blank" rel="noopener"{% endif %}>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 9V7c0-1 1-2 2-2h2V2h-3c-3 0-4 2-4 4v3H8v3h3v9h3v-9h3l1-3z"/></svg>
+          </a>
+          <a class="social-icon" href="{{ section.settings.twitter_url | default: '#' }}" aria-label="X / Twitter" {% if section.settings.twitter_url != blank %}target="_blank" rel="noopener"{% endif %}>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4 4l7 8.5L4.5 20H7l5-6 5 6h4l-7.5-9L19 4h-2.5L12 9.5 8 4z"/></svg>
+          </a>
+          <a class="social-icon" href="{{ section.settings.tiktok_url | default: '#' }}" aria-label="TikTok" {% if section.settings.tiktok_url != blank %}target="_blank" rel="noopener"{% endif %}>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 3v10.5a2.5 2.5 0 1 1-2.5-2.5V8a5.5 5.5 0 1 0 5.5 5.5V8.5c1 .8 2.4 1.5 4 1.5V7c-1.5 0-3-1-3.5-2.4-.4-1-.5-1.6-.5-1.6z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="lp-footer-bar">
+    <div class="container lp-footer-row">
+      <span>{% if section.settings.copyright_text != blank %}{{ section.settings.copyright_text }}{% else %}© Alvi's Drift Wines · alvisdrift.co.za{% endif %}</span>
+      <span>{% if section.settings.legal_text != blank %}{{ section.settings.legal_text }}{% else %}Alvi's Drift wines contain up to 13,5% ABV. Not for sale to under 18s. Drink responsibly.{% endif %}</span>
+      <span>
+        <a href="/policies/privacy-policy">Privacy</a> ·
+        <a href="/policies/terms-of-service">Terms of Service</a>
+        {% if section.settings.tcs_link != blank %} · <a href="{{ section.settings.tcs_link }}">Terms and conditions apply</a>{% endif %}
+      </span>
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PV3 — Footer Strip",
+  "settings": [
+    { "type": "header", "content": "Shop Column" },
+    { "type": "text",   "id": "shop_heading",   "label": "Heading",      "default": "Shop" },
+    { "type": "text",   "id": "shop_body",       "label": "Body Text",    "default": "Take home the range that started the game." },
+    { "type": "text",   "id": "shop_cta_label", "label": "Button Label", "default": "Shop the 221 Range" },
+    { "type": "url",    "id": "shop_link",       "label": "Shop Link",    "info": "Default: /collections/221-range" },
+    { "type": "header", "content": "Centre Badge" },
+    { "type": "image_picker", "id": "badge_image", "label": "Footer Badge Image", "info": "Defaults to the CDN 221-badge-white if empty" },
+    { "type": "header", "content": "Follow Column" },
+    { "type": "text",   "id": "follow_heading", "label": "Heading",        "default": "Follow" },
+    { "type": "text",   "id": "follow_handle",  "label": "Handle Display", "default": "@AlvisDrift" },
+    { "type": "header", "content": "Social Links" },
+    { "type": "url",    "id": "instagram_url",  "label": "Instagram" },
+    { "type": "url",    "id": "facebook_url",   "label": "Facebook" },
+    { "type": "url",    "id": "twitter_url",    "label": "X / Twitter" },
+    { "type": "url",    "id": "tiktok_url",     "label": "TikTok" },
+    { "type": "header", "content": "Legal Bar" },
+    { "type": "text",   "id": "copyright_text", "label": "Copyright",    "default": "© Alvi's Drift Wines · alvisdrift.co.za" },
+    { "type": "text",   "id": "legal_text",     "label": "Legal Notice", "default": "Alvi's Drift wines contain up to 13,5% ABV. Not for sale to under 18s. Drink responsibly." },
+    { "type": "url",    "id": "tcs_link",       "label": "Competition T&Cs Link" }
+  ],
+  "presets": [{ "name": "PV3 Footer Strip" }]
+}
+{% endschema %}

@@ -1,14 +1,16 @@
-<div class="wine-club bg-overlay bg-overlay-bg"  data-bg = "{{ section.settings.wine-club-bg | img_url: 'master'}}" >  
+<div class="wine-club bg-overlay-wc bg-overlay bg-overlay-bg"  data-bg = "{{ section.settings.wine-club-bg | image_url: width:'1920'}}" >  
     {% if section.settings.image_overlay %}
     <div class="bg-overlay-fliter"></div>
     {% endif %}
-    <div class="sec-inner">
+    <div class="sec-inner {% if section.settings.hide_margin %} hide-margin {% endif %}">
         <div class="bg-overlay-content-wrapper">
             <div class="container">
                 <div class="bg-overlay-content br-cut">
                     <h2 style="color:{{ section.settings.Heading_color }};">{{ section.settings.title }}</h2>
+                    {% if section.settings.detail_box_txt != blank %}
                     <div class = "detail-box-text" >{{ section.settings.detail_box_txt }}</div>
                   <br>
+                    {% endif %}
                   {% if section.settings.btn-txt != blank%}
                     <a href="{{ section.settings.btn-url }}" class="alvisBtn alvisBtn--orange">{{ section.settings.btn-txt }}</a>
                   {% endif %}
@@ -102,6 +104,12 @@
         "type": "url",
         "id": "btn-url",
         "label": "Button URL"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_margin",
+        "label": "Hide Margin",
+        "default": true
       }
 ],
   "presets": [

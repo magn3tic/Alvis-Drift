@@ -38,7 +38,6 @@
         "background_image": "shopify://shop_images/Cellar-14_3773dad7-b9bf-4ab0-accf-b9de761ff2e3.jpg",
         "image_overlay": "",
         "overlay_opacity": 0,
-        "blurb": "",
         "right_btn_text": "",
         "right_btn_link": "",
         "anchor_link": ""
@@ -82,13 +81,14 @@
     "1642755010578ddd9f": {
       "type": "Call-To-Action",
       "settings": {
-        "wine-club-bg": "shopify://shop_images/wine-club-bg_772fa787-b0e0-4ca6-a229-45c5423aba51.png",
+        "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
         "image_overlay": false,
         "Heading_color": "#c65336",
-        "title": "WINE CLUB",
-        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "title": "PRIVATE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift private club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
         "btn-txt": "FIND OUT MORE",
-        "btn-url": "shopify://pages/club-1"
+        "btn-url": "shopify://pages/club",
+        "hide_margin": true
       }
     },
     "16427563776be0838a": {

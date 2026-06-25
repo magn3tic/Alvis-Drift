@@ -358,43 +358,8 @@
       {
         "type": "product_list",
         "id": "product_list",
-        "label": "Excluded Product Discount"
-      },
-      {
-        "type": "select",
-        "id": "member-included-discount",
-        "label": "Enable/Disable Included Discount",
-        "default":"enable",
-        "options": [
-          {
-            "label": "Enable",
-            "value": "enable"
-          },
-          {
-            "label": "Disable",
-            "value": "disable"
-          }
-        ]
-      },
-      {
-        "type": "select",
-        "id": "discount-badge",
-        "label": "Discount Badge",
-        "default":"tier-icon",
-        "options": [
-          {
-            "label": "Icon",
-            "value": "tier-icon"
-          },
-          {
-            "label": "Text",
-            "value": "tier-text"
-          },
-          {
-            "label": "Badge",
-            "value": "tier-badge"
-          }
-        ]
+        "label": "Excluded Product Discount",
+        "limit": 50
       }
     ]
   },

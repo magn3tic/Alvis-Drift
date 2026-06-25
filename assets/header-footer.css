@@ -468,6 +468,7 @@ summary.list-menu__item{
 
 .rte ul {
   padding-left: 2rem;
+  list-style:inherit
 }
 
 .rte li {

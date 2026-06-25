@@ -1,0 +1,88 @@
+{% comment %} PV3 Grand Prize — 05 The Prize + countdown {% endcomment %}
+
+<section class="pv3-lp section bg-cream" id="pv3-prize" aria-labelledby="pv3-prize-heading">
+  <div class="container">
+
+    <div class="reveal" style="margin-bottom:60px;text-align:center;">
+      <h2 class="h2" id="pv3-prize-heading">Win Big<span class="pv3-sep"> | </span><span class="pv3-heading-sub" style="font-family:var(--font-display);color:#C65336;">JOIN THE CLUB & MAKE A PURCHASE</span></h2>
+      {% if section.settings.callout_heading != blank %}<p style="font-family:var(--font-body);font-size:20px;font-weight:700;line-height:1.4;color:rgba(42,45,52,0.80);margin:16px 0 0;">{{ section.settings.callout_heading }} | <a href = "/pages/win-big-terms-and-condition">Terms and conditions apply</a></p>{% endif %}<br><br>
+      <a href="{{ section.settings.submit_cta_link | default: '#pv3-submit' }}" class="btn-primary" style="margin-top:{% if section.settings.countdown_enabled %}0{% else %}32px{% endif %};">{% if section.settings.submit_cta_label != blank %}{{ section.settings.submit_cta_label }}{% else %}Submit Your Moment to Enter{% endif %}</a>
+    </div>
+
+    <div class="prize-grid">
+
+      <div class="reveal">
+        <span class="eyebrow">04 / The Grand Prize</span>
+        <h2 class="h2" style="color:#123C35;margin-top:24px;font-size:clamp(32px,3.5vw,45px);">Watch The Greatest Rivals<br><span style="font-family:var(--font-display-inline);color:var(--gold);">Lock Horns Live</span></h2>
+        {% if section.settings.body_text != blank %}<p style="font-family:var(--font-body);font-size:20px;font-weight:400;line-height:27.20px;color:rgba(42,45,52,0.80);word-wrap:break-word;margin:24px 0 28px;">{{ section.settings.body_text }}</p>{% endif %}
+
+        <div style="margin-top:28px;">
+          <h4 style="font-family:var(--font-display);font-size:32px;font-weight:400;text-transform:uppercase;line-height:1.15;color:#123C35;word-wrap:break-word;margin:0 0 4px;">{% if section.settings.callout_title != blank %}{{ section.settings.callout_title }}{% else %}Increase Your Odds{% endif %}</h4>
+          <p style="font-family:var(--font-body);font-size:20px;font-weight:400;line-height:27.20px;color:rgba(42,45,52,0.80);word-wrap:break-word;margin:0;">{% if section.settings.callout_body != blank %}{{ section.settings.callout_body }}{% else %}Each weekly winner gains automatic entry into the grand prize draw. The more you submit, the better your chances.{% endif %}</p>
+        </div>
+
+        {% if section.settings.countdown_enabled %}
+        <div class="countdown" id="pv3Countdown" aria-label="Countdown to grand prize draw">
+          <div class="cd-unit"><span class="cd-num" data-cd="d">--</span><span class="cd-label">Days</span></div>
+          <div class="cd-unit"><span class="cd-num" data-cd="h">--</span><span class="cd-label">Hours</span></div>
+          <div class="cd-unit"><span class="cd-num" data-cd="m">--</span><span class="cd-label">Minutes</span></div>
+          <div class="cd-unit"><span class="cd-num" data-cd="s">--</span><span class="cd-label">Seconds</span></div>
+        </div>
+        <script>
+        (function() {
+          var target = new Date({{ section.settings.countdown_target | default: '2026-07-31T18:00:00' | json }}).getTime();
+          function tick() {
+            var diff = Math.max(0, target - Date.now());
+            var d = Math.floor(diff / 86400000); diff -= d * 86400000;
+            var h = Math.floor(diff / 3600000);  diff -= h * 3600000;
+            var m = Math.floor(diff / 60000);    diff -= m * 60000;
+            var s = Math.floor(diff / 1000);
+            function set(k,v) { var el = document.querySelector('#pv3Countdown .cd-num[data-cd="' + k + '"]'); if (el) el.textContent = String(v).padStart(2,'0'); }
+            set('d',d); set('h',h); set('m',m); set('s',s);
+          }
+          tick();
+          setInterval(tick, 1000);
+        })();
+        </script>
+        {% endif %}
+
+      </div>
+
+      <div class="prize-img reveal" aria-hidden="true">
+        {% if section.settings.percy_image %}
+          <img src="{{ section.settings.percy_image | image_url: width: 900 }}" alt="Percy Montgomery" />
+        {% else %}
+          <div class="prize-img-placeholder">
+            <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" opacity="0.4"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg>
+            <span style="opacity:0.5;">Percy Montgomery portrait<br/>Add in Customizer</span>
+          </div>
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PV3 — Grand Prize",
+  "settings": [
+    { "type": "header",   "content": "Heading & Copy" },
+    { "type": "textarea", "id": "heading",         "label": "Section Heading",  "default": "The Grand Prize —\nGreatest Rivalry Watch Party with Percy.", "info": "Line breaks become heading line breaks" },
+    { "type": "text",     "id": "callout_heading", "label": "Callout Heading",  "default": "One champion | R50k in prizes | Don't miss out | Terms and conditions apply" },
+    { "type": "textarea", "id": "body_text",       "label": "Body Text" },
+    { "type": "header",   "content": "How to Enter Box" },
+    { "type": "text",     "id": "callout_title", "label": "Callout Heading", "default": "Increase Your Odds" },
+    { "type": "textarea", "id": "callout_body",  "label": "Box Body",    "default": "Every weekly submission is an automatic entry into the Grand Prize draw. The more you engage, the better your chances." },
+    { "type": "header",   "content": "CTA" },
+    { "type": "text",     "id": "submit_cta_label", "label": "Button Label", "default": "Submit Your Moment to Enter" },
+    { "type": "url",      "id": "submit_cta_link",  "label": "Button Link",  "info": "Default: #pv3-submit" },
+    { "type": "header",   "content": "Countdown Timer" },
+    { "type": "checkbox", "id": "countdown_enabled",  "label": "Show Countdown Timer",  "default": true },
+    { "type": "text",     "id": "countdown_target",   "label": "Countdown Target Date", "default": "2026-07-31T18:00:00", "info": "ISO 8601 format: 2026-07-31T18:00:00" },
+    { "type": "header",   "content": "Portrait" },
+    { "type": "image_picker", "id": "percy_image", "label": "Percy Montgomery Portrait" }
+  ],
+  "presets": [{ "name": "PV3 Grand Prize" }]
+}
+{% endschema %}

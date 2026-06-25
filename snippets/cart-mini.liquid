@@ -16,11 +16,13 @@
       <div class="cart-mini-content">
         {% if cart.item_count > 0 %}
         {%- for item in cart.items -%}
-
+            {% if item.product.tags contains 'no-discount-product' %}
+                {% assign exclude_product_discount = true %}
+              {% endif %}
         <div class="cart-mini-item" data-qty="{{ item.quantity }}" data-price="{{ item.price }}">
           <div class="cart-item-img">
             <div class="cart-item-img-wrap">
-              <img src="{{ item.product.featured_image | img_url:'master' }}" loading = "lazy" >
+              {{ item.product.featured_image | image_url: width: 150 | image_tag:alt: page_title.alt, loading:lazy  }}
             </div>
           </div>
           <div class="cart-item-dt">
@@ -64,7 +66,7 @@
               {% if settings.member-discount == "enable" %}
                 {% if lowertags contains 'bronze' %}
                   
-              {% if excluded_product_ids contains item.product.id %}
+              {% if exclude_product_discount %}
                     {{ item.original_line_price | money | replace: ",", " " }}
               {% else %}
           {% if compare_price %}
@@ -96,9 +98,9 @@
     {% endif %}
 
 
-      {% elsif lowertags contains 'silver' %}
+      {% elsif lowertags contains 'silver' or lowertags contains 'influencer-silver' %}
                   
-              {% if excluded_product_ids contains item.product.id %}
+              {% if exclude_product_discount %}
                     {{ item.original_line_price | money | replace: ",", " " }}
               {% else %}
           {% if compare_price %}
@@ -130,7 +132,7 @@
     {% endif %}
       
     {% elsif lowertags contains 'gold' %}
-      {% if excluded_product_ids contains item.product.id %}
+      {% if exclude_product_discount %}
                     {{ item.original_line_price | money | replace: ",", " " }}
               {% else %}
           {% if compare_price %}
@@ -211,4 +213,3 @@
     </div>
   </div>
 </section>
-

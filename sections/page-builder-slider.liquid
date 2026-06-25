@@ -1,0 +1,225 @@
+<div class="ald-sale-slider">
+  <div class="sale-slider">
+    {% for block in section.blocks %}
+      {% if block.disabled %}
+        {% continue %}
+      {% endif %}
+      <div class="slide">
+        {% if block.settings.video != blank %}
+          <video autoplay muted loop playsinline
+            {%- if block.settings.image != blank %} poster="{{ block.settings.image | image_url: width: 1600 }}"{% endif %}>
+            <source src="{{ block.settings.video }}" type="video/mp4">
+          </video>
+        {% elsif block.settings.image != blank %}
+          {% if block.settings.image != blank %}
+          {%- assign image_position = 'object-position: '
+            | append: block.settings.object_pos_x
+            | append: ' '
+            | append: block.settings.object_pos_y
+            | append: ';'
+          -%}
+          {%- liquid
+            if forloop.first
+              assign slide_loading       = 'eager'
+              assign slide_fetchpriority = 'high'
+              assign slide_decoding      = 'sync'
+            else
+              assign slide_loading       = 'lazy'
+              assign slide_fetchpriority = 'auto'
+              assign slide_decoding      = 'async'
+            endif
+
+            assign slide_alt = block.settings.heading | default: block.settings.image.alt | escape
+
+            if block.settings.mobile_image != blank
+              assign mobile_img = block.settings.mobile_image
+            else
+              assign mobile_img = block.settings.image
+            endif
+          -%}
+
+          {%- if forloop.first -%}
+            <link rel="preload" as="image"
+              href="{{ mobile_img | image_url: width: 480, format: 'webp' }}"
+              imagesrcset="
+                {{ mobile_img | image_url: width: 375, format: 'webp' }} 375w,
+                {{ mobile_img | image_url: width: 550, format: 'webp' }} 550w,
+                {{ mobile_img | image_url: width: 700, format: 'webp' }} 700w"
+              imagesizes="100vw"
+              media="(max-width: 695px)"
+              fetchpriority="high">
+            <link rel="preload" as="image"
+              href="{{ block.settings.image | image_url: width: 1600, format: 'webp' }}"
+              imagesrcset="
+                {{ block.settings.image | image_url: width: 700, format: 'webp' }} 700w,
+                {{ block.settings.image | image_url: width: 1100, format: 'webp' }} 1100w,
+                {{ block.settings.image | image_url: width: 1600, format: 'webp' }} 1600w"
+              imagesizes="100vw"
+              media="(min-width: 696px)"
+              fetchpriority="high">
+          {%- endif -%}
+
+          <picture>
+            <source
+              media="(max-width: 695px)"
+              srcset="
+                {{ mobile_img | image_url: width: 375, format: 'webp' }} 375w,
+                {{ mobile_img | image_url: width: 550, format: 'webp' }} 550w,
+                {{ mobile_img | image_url: width: 700, format: 'webp' }} 700w
+              "
+              sizes="100vw">
+
+            <source
+              media="(min-width: 696px)"
+              srcset="
+                {{ block.settings.image | image_url: width: 700,  format: 'webp' }} 700w,
+                {{ block.settings.image | image_url: width: 1100, format: 'webp' }} 1100w,
+                {{ block.settings.image | image_url: width: 1300, format: 'webp' }} 1300w,
+                {{ block.settings.image | image_url: width: 1600, format: 'webp' }} 1600w,
+                {{ block.settings.image | image_url: width: 1800, format: 'webp' }} 1800w,
+                {{ block.settings.image | image_url: width: 2000, format: 'webp' }} 2000w
+              "
+              sizes="100vw">
+
+            {{
+              mobile_img
+              | image_url: width: 750, format: 'webp'
+              | image_tag:
+                alt: slide_alt,
+                loading: slide_loading,
+                fetchpriority: slide_fetchpriority,
+                decoding: slide_decoding,
+                widths: '375, 550, 750',
+                sizes: '100vw',
+                style: image_position
+            }}
+          </picture>
+        {% endif %}
+        {% endif %}
+
+        <div class="alcontainer">
+          <div class="slide-content">
+            {% if block.settings.heading != blank %}
+              <h2 class = "h3">{{ block.settings.heading }}</h2>
+            {% endif %}
+            {% if block.settings.subtext != blank %}
+              <p>{{ block.settings.subtext }}</p>
+            {% endif %}
+            {% if block.settings.button_text != blank and block.settings.button_link != blank %}
+              <a href="{{ block.settings.button_link }}" class="cta-btn">{{ block.settings.button_text }}</a>
+            {% endif %}
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+  {% if section.settings.show_nav %}
+    <div class="slide-nav">
+      <div class="slide-nav-prev">
+        <svg fill="none" height="46" viewBox="0 0 46 46" width="46" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="23" cy="23" fill="#0D0D0D" fill-opacity="0" r="21.5" stroke="white" stroke-width="3"/>
+          <path d="M29 15L16 22.5055L29 30.011" stroke="white" stroke-linecap="round" stroke-width="3"/>
+        </svg>
+      </div>
+      <div class="slide-nav-next">
+        <svg width="46" height="46" viewBox="0 0 46 46" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="23" cy="23" r="21.5" fill="#0D0D0D" fill-opacity="0" stroke="white" stroke-width="3"/>
+          <path d="M18 15L31 22.5055L18 30.011" stroke="white" stroke-width="3" stroke-linecap="round"/>
+        </svg>
+      </div>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "New Slider",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_nav",
+      "label": "Show navigation arrows",
+      "default": true
+    }
+  ],
+  "blocks": [
+    {
+      "type": "slide",
+      "name": "Slide",
+      "settings": [
+        {
+          "type": "url",
+          "id": "video",
+          "label": "Video (MP4 URL)",
+          "info": "Paste a direct MP4 video URL or leave blank to use image."
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Desktop Image (used if no video)"
+        },
+        {
+          "type": "image_picker",
+          "id": "mobile_image",
+          "label": "Mobile Image (optional)",
+          "info": "Shows on screens under 696px. Falls back to desktop image if blank."
+        },
+        {
+          "type": "select",
+          "id": "object_pos_x",
+          "label": "Image position (Horizontal)",
+          "default": "center",
+          "options": [
+            { "value": "left", "label": "Left" },
+            { "value": "center", "label": "Center" },
+            { "value": "right", "label": "Right" }
+          ]
+        },
+        {
+          "type": "select",
+          "id": "object_pos_y",
+          "label": "Image position (Vertical)",
+          "default": "center",
+          "options": [
+            { "value": "top", "label": "Top" },
+            { "value": "center", "label": "Center" },
+            { "value": "bottom", "label": "Bottom" }
+          ]
+        },
+
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Sale goes live"
+        },
+        {
+          "type": "text",
+          "id": "subtext",
+          "label": "Subtext",
+          "default": "16 August — LIMITED STOCK"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text",
+          "default": "View Sale"
+        },
+        {
+          "type": "url",
+          "id": "button_link",
+          "label": "Button Link"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 8,
+  "presets": [
+    {
+      "name": "New Slider",
+      "category": "Media"
+    }
+  ]
+}
+{% endschema %}

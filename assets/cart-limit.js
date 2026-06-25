@@ -1,4 +1,3 @@
-
 $(document).ready(function(){
   //loop through all .quy-item divs and calculate teh tola items from teh data properties
   var total_items = 0;

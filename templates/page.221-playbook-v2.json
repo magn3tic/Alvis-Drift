@@ -1,0 +1,341 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "pv2-nav": {
+      "type": "pv2-nav",
+      "settings": {
+        "cta_label": "Submit Your 221 Moment",
+        "cta_link": ""
+      }
+    },
+    "pv2-hero": {
+      "type": "pv2-hero",
+      "settings": {
+        "hero_h1": "The 221\nGame\nis on.",
+        "hero_sub": "Share your greatest rugby moment.\nWin a box of 221. Play The Game.",
+        "cta_primary_label": "Submit Your 221 Moment",
+        "cta_primary_link": "",
+        "cta_secondary_label": "How It Works",
+        "cta_secondary_link": "",
+        "video_url": "https://cdn.shopify.com/videos/c/o/v/dec4b47f76134f8689ed4d57d20876d1.mp4"
+      }
+    },
+    "pv2-story": {
+      "type": "pv2-story",
+      "settings": {
+        "heading": "Before it was a wine, it was a moment.",
+        "body_1": "In 1928, on the touring test against the All Blacks, a young flanker named Alvi van der Merwe scored a historic try on African soil. He earned Springbok cap number 221 — a number that has carried his legacy ever since.",
+        "body_2": "Today, it lives on in your glass. The 221 range carries the name of that moment — a wine for the rugby it inspired, and for the stories shared around it.",
+        "percy_quote": "\"Before it was a wine, it was a moment. The 221 Game is how we keep telling that story — and how we make room for yours.\"",
+        "cta_label": "Discover the 221 Range →",
+        "cta_link": "",
+        "archival_image": "shopify://shop_images/Slide_16_9_-_3.png",
+        "show_bottle_image": false,
+        "show_badge": false,
+        "apply_image_filter": false
+      }
+    },
+    "pv2-mechanics": {
+      "type": "pv2-mechanics",
+      "settings": {
+        "heading": "Here's how you play.",
+        "intro": "Four steps. Tag, submit, win. Every Sunday a new winner. The grand prize ships in late July.",
+        "step_1_title": "Share Your Moment",
+        "step_1_body": "Tell us your greatest rugby memory — the match, the braai, the watch party. A paragraph is plenty.",
+        "step_2_title": "Tag or Submit",
+        "step_2_body": "Tag #The221Game on Instagram or X, or submit the form below.",
+        "step_3_title": "Win Weekly",
+        "step_3_body": "Best story each week wins a box of Alvi's Drift 221. Winners announced every Sunday.",
+        "step_4_title": "The Grand Prize",
+        "step_4_body": "Watch the All Blacks series in New Zealand with Percy Montgomery. Every weekly entry is automatically in the draw.",
+        "callout_title": "Weekly Prize",
+        "callout_body": "A box of Alvi's Drift 221 delivered to your door.",
+        "box_image": "shopify://shop_images/Alvis_Drift_Top_wines_Chenin_Blanc_2022.png",
+        "show_box_image": true,
+        "submit_cta_label": "Submit Your 221 Moment",
+        "submit_cta_link": "",
+        "layout": "horizontal",
+        "tcs_link": ""
+      }
+    },
+    "pv2-form": {
+      "type": "pv2-form",
+      "blocks": {
+        "forms_inline_WxCAMr": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "1001880",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_WxCAMr"
+      ],
+      "settings": {
+        "heading": "Your 221 moment\nstarts here.",
+        "body_text": "Tell us your greatest rugby story — a braai, a watch party, a match, a memory. The best story each week wins a box of 221.",
+        "instagram_url": "",
+        "twitter_url": ""
+      }
+    },
+    "pv2-grand-prize": {
+      "type": "pv2-grand-prize",
+      "settings": {
+        "heading": "The Grand Prize —\nGreatest Rivalry Watch Party with Percy.",
+        "body_text": "One winner. Two return flights to New Zealand. A box at the All Blacks series. Watched alongside Percy Montgomery — the most-capped Springbok and the voice of the 221 campaign. The ultimate 221 experience.",
+        "callout_title": "How to Enter",
+        "callout_body": "Every weekly submission is an automatic entry into the Grand Prize draw. The more you engage, the better your chances.",
+        "submit_cta_label": "Submit Your Moment to Enter",
+        "submit_cta_link": "",
+        "countdown_enabled": true,
+        "countdown_target": "2026-07-31T18:00:00",
+        "percy_image": "shopify://shop_images/Alvis_Drift_221_Range_Banner_Mobile.png"
+      }
+    },
+    "pv2-winners": {
+      "type": "pv2-winners",
+      "blocks": {
+        "past_winner_EbKtAE": {
+          "type": "past_winner",
+          "settings": {
+            "name": "Winner three",
+            "handle": "@winnerthree",
+            "quote": "I love Alvi's wine!",
+            "read_more_url": ""
+          }
+        },
+        "past_winner_L6fj9i": {
+          "type": "past_winner",
+          "settings": {
+            "name": "Winner Two",
+            "handle": "@winnertwo",
+            "quote": "Amazing wine!",
+            "read_more_url": ""
+          }
+        },
+        "past_winner_99eTmx": {
+          "type": "past_winner",
+          "settings": {
+            "name": "WInner one",
+            "handle": "@winnerone",
+            "quote": "I won the price",
+            "read_more_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "past_winner_EbKtAE",
+        "past_winner_L6fj9i",
+        "past_winner_99eTmx"
+      ],
+      "settings": {
+        "section_heading": "This week's 221 moment.",
+        "phase": "full",
+        "placeholder_week_label": "First Winner · Week of 18 June 2026",
+        "placeholder_winner_name": "First winner announced 18 June.",
+        "placeholder_message": "Submissions are open now. Winners drawn every Sunday from launch week.",
+        "featured_photo": "shopify://shop_images/Alvis_Drift_Junels_pasta_with_Viognier_pairing.png",
+        "featured_name": "Hennie de Waal",
+        "featured_handle": "@hennie_dw · Stellenbosch",
+        "featured_quote": "",
+        "featured_date": "Week of 16 June 2026"
+      }
+    },
+    "pv2-playbook": {
+      "type": "pv2-playbook",
+      "blocks": {
+        "card-1": {
+          "type": "article_card",
+          "settings": {
+            "category": "percy",
+            "card_image": "shopify://shop_images/Alvid_DRift_221_Chenin_Blanc_Top_wines.png",
+            "title": "The Two Minutes That Made 221.",
+            "excerpt": "Percy walks through the closing minutes of the 1928 match — the try, the silence, the roar.",
+            "link": ""
+          }
+        },
+        "card-2": {
+          "type": "article_card",
+          "settings": {
+            "category": "stories",
+            "card_image": "shopify://shop_images/Alvis_Drift_Top_wines_Chenin_Blanc_2022.png",
+            "title": "Newlands, 1928: A Crowd Holds Its Breath.",
+            "excerpt": "Archive notes on the day a flanker from the Western Cape rewrote the script.",
+            "link": ""
+          }
+        },
+        "card-3": {
+          "type": "article_card",
+          "settings": {
+            "category": "coach",
+            "card_image": "shopify://shop_images/3_Content_221SavBlanc.webp",
+            "title": "Read the Game in Three Phases.",
+            "excerpt": "How to watch a test match like you mean it — breakdown, back-line shape, and the kick.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "card-1",
+        "card-2",
+        "card-3"
+      ],
+      "settings": {
+        "heading": "The Playbook.",
+        "intro": "Rugby stories. Armchair Coach. Percy's Take. Fan Moments. Updated weekly — the editorial home of #The221Game."
+      }
+    },
+    "pv2-wine": {
+      "type": "pv2-wine",
+      "blocks": {
+        "wine-1": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/Alvis_Drift_221_Chenin_Blanc.png",
+            "occasion": "The Pre-Match Build-Up",
+            "wine_name": "221 Chenin Blanc",
+            "tasting_note": "",
+            "is_percy_pick": false,
+            "shop_link": ""
+          }
+        },
+        "wine-2": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/221-Range-Sauvignon-Blanc.png",
+            "occasion": "The Opening Whistle",
+            "wine_name": "221 Sauvignon Blanc",
+            "tasting_note": "",
+            "is_percy_pick": true,
+            "shop_link": ""
+          }
+        },
+        "wine-3": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/Alvis_Drift_221_Pinotage.png",
+            "occasion": "The Post-Match Braai",
+            "wine_name": "221 Pinotage",
+            "tasting_note": "",
+            "is_percy_pick": false,
+            "shop_link": ""
+          }
+        },
+        "wine-4": {
+          "type": "wine_card",
+          "settings": {
+            "bottle_image": "shopify://shop_images/221-Special-Cuvee.png",
+            "occasion": "The Moments Worth Remembering",
+            "wine_name": "221 Special Cuvée Red",
+            "tasting_note": "",
+            "is_percy_pick": false,
+            "shop_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "wine-1",
+        "wine-2",
+        "wine-3",
+        "wine-4"
+      ],
+      "settings": {
+        "heading": "The 221 Range.",
+        "subhead": "Crafted for food pairing, our multi-award-winning 221 wines include beautifully smooth single varietals and an impressive blend of various red cultivars.",
+        "shop_cta_label": "Shop Now",
+        "range_cta_text": "Shop the Full 221 Range →",
+        "range_link": ""
+      }
+    },
+    "pv2-social-wall": {
+      "type": "pv2-social-wall",
+      "settings": {
+        "heading": "The game is already\nbeing played.",
+        "subtext": "Real fans. Real stories. Tagged across Instagram and X — pulled in live as they post.",
+        "cta_label": "Join the Conversation — Tag #The221Game",
+        "embed_code": "",
+        "hashtag_link": ""
+      }
+    },
+    "pv2-footer-strip": {
+      "type": "pv2-footer-strip",
+      "settings": {
+        "shop_heading": "Shop",
+        "shop_body": "Take home the range that started the game.",
+        "shop_cta_label": "Shop the 221 Range",
+        "shop_link": "",
+        "follow_heading": "Follow",
+        "follow_handle": "@AlvisDrift",
+        "instagram_url": "",
+        "facebook_url": "",
+        "twitter_url": "",
+        "tiktok_url": "",
+        "copyright_text": "© Alvi's Drift Wines · alvisdrift.co.za",
+        "legal_text": "Alvi's Drift wines contain up to 13,5% ABV. Not for sale to under 18s. Drink responsibly.",
+        "tcs_link": ""
+      }
+    },
+    "1779546805b0009048": {
+      "type": "apps",
+      "blocks": {
+        "forms_inline_TUyky4": {
+          "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+          "settings": {
+            "form_id": "1001880",
+            "text_color": "#202020",
+            "button_background_color": "#202020",
+            "button_label_color": "#ffffff",
+            "links_color": "#1878b9",
+            "errors_color": "#e02229",
+            "text_alignment": "center",
+            "form_alignment": "center",
+            "padding_top": 0,
+            "padding_bottom": 24,
+            "padding_right": 0,
+            "padding_left": 0
+          }
+        }
+      },
+      "block_order": [
+        "forms_inline_TUyky4"
+      ],
+      "disabled": true,
+      "settings": {
+        "include_margins": true
+      }
+    }
+  },
+  "order": [
+    "pv2-nav",
+    "pv2-hero",
+    "pv2-story",
+    "pv2-mechanics",
+    "pv2-form",
+    "pv2-grand-prize",
+    "pv2-winners",
+    "pv2-playbook",
+    "pv2-wine",
+    "pv2-social-wall",
+    "pv2-footer-strip",
+    "1779546805b0009048"
+  ]
+}

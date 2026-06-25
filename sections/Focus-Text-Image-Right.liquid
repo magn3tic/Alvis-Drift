@@ -17,7 +17,17 @@
           {% else %}
             <div class="focusTextImageSection__imageInner">
           {% endif %}
-            <img src="{{ section.settings.our-story-vid | img_url: 'large'}}" loading="lazy" width = "500" height = "300" class="video-sec-vid-img br-cut" alt="Alvis Drift Winery">
+            {% assign video_image = section.settings['our-story-vid'] %}
+
+          {% if video_image != blank %}
+            {{
+              video_image
+              | image_url: width: 600
+              | image_tag:
+                alt: 'Alvis Drift Winery',
+                class: 'video-sec-vid-img br-cut'
+            }}
+          {% endif %}
           {% if section.settings.right_video_url != blank %}
             </a>
           {% else %}
@@ -126,7 +136,7 @@
                 "label": "Button Style 1"
               }, 
               {
-                "value": "alvisBtnOpposite",
+                "value": "btn",
                 "label": "Button Style 2"
               }
             ],

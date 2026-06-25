@@ -1,5 +1,62 @@
 {{ 'wine-club.css' | asset_url | stylesheet_tag }}
 
+<style>
+.awc-btn-pv3 {
+  position: absolute;
+  top:30%;
+  right:0;
+  text-align:center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 60px;
+  padding: 18px 36px;
+  margin: 0 22px;
+  background: #C65336;
+  color: #fff;
+  font-family: "Industry Inc", "Arial Narrow", Impact, sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .2s ease, transform .2s ease;
+}
+@media (max-width:900px){
+  .awc-btn-pv3{
+    right:auto;
+    top:30%;
+    position:relative
+
+  }
+}
+.awc-btn-pv3::before,
+.awc-btn-pv3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 23px;
+  height: 100%;
+  background-color: #C65336;
+  -webkit-mask: url("{{ 'cta-curve-left.svg' | asset_url }}") no-repeat center / 100% 100%;
+          mask: url("{{ 'cta-curve-left.svg' | asset_url }}") no-repeat center / 100% 100%;
+  transition: background-color .2s ease;
+}
+.awc-btn-pv3::before { right: calc(100% - 2px); }
+.awc-btn-pv3::after {
+  left: calc(100% - 2px);
+  -webkit-mask-image: url("{{ 'cta-curve-right.svg' | asset_url }}");
+          mask-image: url("{{ 'cta-curve-right.svg' | asset_url }}");
+}
+.awc-btn-pv3:hover { background: #b04a30; transform: translateY(-2px); color: #fff; }
+.awc-btn-pv3:hover::before,
+.awc-btn-pv3::after { background-color: #C65336; }
+.awc-btn-pv3:hover::before,
+.awc-btn-pv3:hover::after { background-color: #b04a30; }
+</style>
+
 <section class="awc-hero-v2">
   {% if customer %}
     {%- comment -%} View for logged users {%- endcomment -%}
@@ -17,7 +74,7 @@
     {% endcapture %}
     {% assign customer_tier = customer_tier_name | strip %}
 
-    <div class="awc-hero--content-v2">
+    <div class="awc-hero--content-v2 container">
       <div class="awc-hero-content-v2--text awc-hero-content-v2--text--connected">
         <span class="awc-subtitle">{{ section.settings.subtitle_connected }}</span>
         <h1 class="h1 awc-header">{{ section.settings.title_connected }}</h1>
@@ -34,10 +91,19 @@
           {% assign url_connected = '/collections/club-{{ customer_tier }}' %}
         {% endif %}
         <div class="awc-promo--btn">
-          <a class="btn" href="{{url_connected}}">{{ section.settings.button_text_connected }}</a>
+          <a class="awc-btn-pv3 " href="{{url_connected}}">{{ section.settings.button_text_connected }}</a>
         </div>
       {% endif %}
-
+      {% if section.settings.show_button_connected_2 %}
+        {% if section.settings.url_connected_2 %}
+          {% assign url_connected_2 = section.settings.url_connected_2 %}
+        {% else %}
+          {% assign url_connected_2 = '/collections/club-{{ customer_tier }}' %}
+        {% endif %}
+        <div class="awc-promo--btn awc-promo--btn-2">
+          <a class="btn" href="{{url_connected_2}}">{{ section.settings.button_text_connected_2 }}</a>
+        </div>
+      {% endif %}
     </div>
     <div class="awc-bg awc-bg-picture">
       <picture>
@@ -48,7 +114,7 @@
 
   {% else %}
     {%- comment -%} User not logged {%- endcomment -%}
-    <div class="awc-hero--content-v2">
+    <div class="awc-hero--content-v2 container">
       <div class="awc-hero-content-v2--text awc-hero-content-v2--text--disconnected">
 
 
@@ -57,17 +123,27 @@
         {% if section.settings.blurb_disconnected != blank %}
           <span class="awc-blurb">{{ section.settings.blurb_disconnected }}</span>
         {% else %}
-          <p>{{ customer_tier }} Tier Members Portal</p>
+
+        {% endif %}
+        {% if section.settings.show_button_disconnected %}
+          {% if section.settings.url_disconnected %}
+            {% assign url_disconnected = section.settings.url_disconnected %}
+          {% else %}
+            {% assign url_disconnected = '/account/register/' %}
+          {% endif %}
+          <div class="awc-promo--btn">
+            <a class="awc-btn-pv3" href="{{url_disconnected}}">{{ section.settings.button_text_disconnected }}</a>
+          </div>
         {% endif %}
       </div>
-      {% if section.settings.show_button_disconnected %}
-        {% if section.settings.url_disconnected %}
-          {% assign url_disconnected = section.settings.url_disconnected %}
+       {% if section.settings.show_button_disconnected_2 %}
+        {% if section.settings.url_disconnected_2 %}
+          {% assign url_disconnected_2 = section.settings.url_disconnected_2 %}
         {% else %}
-          {% assign url_disconnected = '/account/register/' %}
+          {% assign url_disconnected_2 = '/account/register/' %}
         {% endif %}
-        <div class="awc-promo--btn">
-          <a class="btn" href="{{url_disconnected}}">{{ section.settings.button_text_disconnected }}</a>
+        <div class="awc-promo--btn awc-promo--btn-2">
+          <a class="btn" href="{{url_disconnected_2}}">{{ section.settings.button_text_disconnected_2 }}</a>
         </div>
       {% endif %}
     </div>
@@ -129,7 +205,21 @@
         "id": "url_connected",
         "label": "URL (Logged-in)",
         "info": "By default goes to '/collections/club-{{ customer_tier }} '"
+      },    {
+        "type": "checkbox",
+        "id": "show_button_connected_2",
+        "label": "Show Button 2 (Logged-in)"
       }, {
+        "type": "text",
+        "id": "button_text_connected_2",
+        "label": "Button Text 2 (Logged-in)",
+        "default": "SHOP NOW"
+      }, {
+        "type": "url",
+        "id": "url_connected_2",
+        "label": "URL 2 (Logged-in)",
+        "info": "By default goes to '/collections/club-{{ customer_tier }} '"
+      },{
         "type": "header",
         "content": "🚫 Logged-out User Images"
       }, {
@@ -169,6 +259,20 @@
         "type": "url",
         "id": "url_disconnected",
         "label": "URL (Logged-out)",
+        "info": "By default goes to '/account/register/'"
+      }, {
+        "type": "checkbox",
+        "id": "show_button_disconnected_2",
+        "label": "Show Button 2 (Logged-out)"
+      }, {
+        "type": "text",
+        "id": "button_text_disconnected_2",
+        "label": "Button Text 2 (Logged-out)",
+        "default": "JOIN NOW"
+      }, {
+        "type": "url",
+        "id": "url_disconnected_2",
+        "label": "URL 2 (Logged-out)",
         "info": "By default goes to '/account/register/'"
       }
 

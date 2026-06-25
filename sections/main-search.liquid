@@ -1,7 +1,7 @@
 {{ 'template-collection.css' | asset_url | stylesheet_tag }}
 {{ 'component-card.css' | asset_url | stylesheet_tag }}
-{{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-product-grid.css' | asset_url | stylesheet_tag }}
+
+
 
 <link rel="stylesheet" href="{{ 'component-search.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -12,43 +12,6 @@
   <script src="{{ 'facets.js' | asset_url }}" defer="defer"></script>
 {%- endif -%}
 
-<style>
-  .template-search__header {
-    margin-bottom: 3rem;
-  }
-
-  .template-search__search {
-    margin: 0 auto 3.5rem;
-    max-width: 47.8rem;
-  }
-
-  .template-search__search .search {
-    margin-top: 3rem;
-  }
-
-  .template-search--empty {
-    padding-bottom: 18rem;
-  }
-
-  .template-search .grid__item--small:not(:last-child) {
-    padding-bottom: 0.5rem;
-  }
-
-  @media screen and (min-width: 750px) {
-    .template-search__header {
-      margin-bottom: 5rem;
-    }
-
-    .template-search .grid__item--small:not(:last-child) {
-      padding-bottom: 1rem;
-    }
-  }
-
-  .search__button .icon {
-    height: 1.8rem;
-  }
-</style>
-
 {%- liquid
   assign sort_by = search.sort_by | default: search.default_sort_by
   assign terms = search.terms | escape
@@ -56,11 +19,9 @@
 -%}
 
 <div class="template-search spaced-section{% unless search.performed and search.results_count > 0 %} template-search--empty{% endunless %}">
-  <div class="template-search__header page-width center">
+  <div class="template-search__header page-width">
     {%- if search.performed -%}
-      <h1 class="h2">{{ 'templates.search.title' | t }}</h1>
-    {%- else -%}
-      <h1 class="h2">{{ 'general.search.search' | t }}</h1>
+      <h3>for “{{ search.terms | escape }}”</h3>
     {%- endif -%}
     <div class="template-search__search">
       {%- if settings.predictive_search_enabled -%}
@@ -135,10 +96,10 @@
         </div>
       {%- endif -%}
     {%- endif -%}
-    <div id="ProductGridContainer">
+    <div id="ProductGridContainer" class = "alcontainer">
       {%- if search.results.size == 0 and search.filters != empty -%}
         <div class="template-search__results collection collection--empty page-width" id="product-grid" data-id="{{ section.id }}">
-          <div class="loading-overlay gradient"></div>
+         
           <div class="title-wrapper center">
             <h2 class="title title--primary">
               {{ 'sections.collection_template.empty' | t }}<br>
@@ -149,10 +110,10 @@
       {%- else -%}
         {% paginate search.results by 24 %}
           <div class="template-search__results collection page-width" id="product-grid" data-id="{{ section.id }}">
-            <div class="loading-overlay gradient"></div>
-            <ul class="grid grid--4-col-desktop grid--3-col-tablet grid--2-col grid--one-third-max grid--quarter-max negative-margin product-grid" role="list">
+          
+            <div class="row" role="list">
               {%- for item in search.results -%}
-                <li class="grid__item{% unless item.object_type == 'product' %} grid__item--small{% endunless %}">
+                <div class=" col-3{% unless item.object_type == 'product' %} col-article{% endunless %}">
                   {%- case item.object_type -%}
                     {%- when 'product' -%}
                       {%- capture product_settings -%}{%- if section.settings.product_show_vendor -%}vendor,{%- endif -%}title,price{%- endcapture -%}
@@ -166,31 +127,26 @@
                         show_rating: section.settings.show_rating
                       %}
                     {%- when 'article' -%}
-                      <a href="{{ item.url }}" class="card-wrapper">
+                      <a href="{{ item.url }}" class="shop-item">
                         <div class="card card--search card--soft{% unless item.image %} card--text-only{% endunless %}">
-                          <div class="card__inner">
+                          
                             {%- if item.image -%}
-                              <div class="media media--cropped">
+                              <div class="article-img">
                                 <img
-                                  srcset="{%- if item.image.src.width >= 165 -%}{{ item.image.src | img_url: '165x' }} 165w,{%- endif -%}
-                                    {%- if item.image.src.width >= 360 -%}{{ item.image.src | img_url: '360x' }} 360w,{%- endif -%}
-                                    {%- if item.image.src.width >= 533 -%}{{ item.image.src | img_url: '533x' }} 533w,{%- endif -%}
-                                    {%- if item.image.src.width >= 720 -%}{{ item.image.src | img_url: '720x' }} 720w,{%- endif -%}
-                                    {%- if item.image.src.width >= 940 -%}{{ item.image.src | img_url: '940x' }} 940w,{%- endif -%}
-                                    {%- if item.image.src.width >= 1065 -%}{{ item.image.src | img_url: '1065x' }} 1065w,{%- endif -%}
-                                    {{ item.image.src | img_url: 'master' }} {{ item.image.src.width }}w"
                                   src="{{ item.image.src | img_url: '940x' }}"
                                   loading="lazy"
-                                  sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
                                   width="{{ item.image.src.width }}"
                                   height="{{ item.image.src.height }}"
                                   alt="{{ item.image.src.alt | escape }}"
                               >
                               </div>
                             {%- endif -%}
-                            <div class="card__content">
-                              <h2 class="card__text h3">{{ item.title | truncate: 50 | escape }}</h2>
-                              <div class="card-article-info caption-with-letter-spacing h5">
+                            
+                         
+                        </div>
+                        <div class="card__content">
+                              <div class="product-cat">{{ item.title | truncate: 50 | escape }}</div>
+                              <div class="">
                                 {%- if section.settings.article_show_date -%}
                                   <span class="circle-divider">{{ item.published_at | time_tag: format: 'date' }}</span>
                                 {%- endif -%}
@@ -202,24 +158,43 @@
                             <div class="card__badge">
                               <span class="badge color-background-1">{{ 'blogs.article.blog' | t }}</span>
                             </div>
-                          </div>
-                        </div>
                       </a>
                     {%- when 'page' -%}
-                      <a href="{{ item.url }}" class="card-wrapper">
-                        <div class="card card--search card--soft card--text-only">
-                          <div class="card__inner">
-                            <div class="card__content"><h2 class="card__text h3">{{ item.title | truncate: 50 | escape }}</h2></div>
+                      <a href="{{ item.url }}" class="shop-item">
+                        <div class="card card--search card--soft">
+                          
+
+                          <div class = "article-img">
+                            {% if article.image != blank %}
+                           <img
+                            src="{{ article.image | image_url: width: 1600 }}"
+                            alt="{{ article.image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ article.image.width }}"
+                            height="{{ article.height }}"
+                          >
+                          {% else %}
+                            <img
+                            src="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvi_s_Drink_Wine_Enjoyment_Adjusted.png?v=1658745849"
+                            alt="{{ article.image.alt | escape }}"
+                            loading="lazy"
+                            width="{{ article.image.width }}"
+                            height="{{ article.height }}"
+                          >
+                            {% endif %}
+                          </div>  
+                        </div>
+                        <div class="card__content">
+                          <div class="product-cat">{{ item.title | truncate: 50 | escape }}</div></div>
                             <div class="card__badge">
                               <span class="badge color-background-1">{{ 'templates.search.page' | t }}</span>
-                            </div>
+                            
                           </div>
-                        </div>
                       </a>
                   {%- endcase -%}
-                </li>
+                </div>
               {%- endfor -%}
-            </ul>
+            </div>
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate %}
             {%- endif -%}

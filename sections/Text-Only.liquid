@@ -8,8 +8,8 @@
   <noscript>{{ 'component-rte.css' | asset_url | stylesheet_tag }}</noscript>
   <noscript>{{ 'section-rich-text.css' | asset_url | stylesheet_tag }}</noscript>
 {%- endif -%}
-
-<div class="rich-text {{ section.settings.text_alignment }} color-{{ section.settings.color_scheme }}">
+<section class = "focus-text-container">
+<div class="alcontainer {{ section.settings.text_alignment }} color-{{ section.settings.color_scheme }}">
   <div class="rich-text__blocks">
     {%- for block in section.blocks -%}
       {%- case block.type -%}
@@ -31,7 +31,7 @@
     {%- endfor -%}
   </div>
 </div>
-
+</section>
 <style>
 	.rich-text.left {
 	text-align: left;

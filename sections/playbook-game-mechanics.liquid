@@ -1,0 +1,404 @@
+<style>
+  .playbook-mechanics {
+    background: {{ section.settings.background_color }};
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+  }
+  .playbook-mechanics__inner {
+    max-width: 1294px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  .playbook-mechanics__header {
+    text-align: {{ section.settings.header_align }};
+    margin-bottom: 60px;
+  }
+  .playbook-mechanics__eyebrow {
+    font-family: Metropolis, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #c65336;
+    margin-bottom: 14px;
+    display: block;
+  }
+  .playbook-mechanics__heading {
+    font-family: Moriarty, Metropolis, sans-serif;
+    font-size: clamp(32px, 4vw, 56px);
+    color: {{ section.settings.heading_color }};
+    line-height: 1.05;
+    margin: 0 0 16px;
+    font-weight: 400;
+  }
+  .playbook-mechanics__subhead {
+    font-family: Metropolis, sans-serif;
+    font-size: 16px;
+    color: {{ section.settings.text_color }};
+    line-height: 1.6;
+    max-width: 560px;
+    margin: 0 auto;
+    opacity: 0.8;
+  }
+  .playbook-mechanics__header--left .playbook-mechanics__subhead { margin-left: 0; }
+  .playbook-mechanics__steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+    margin-bottom: 48px;
+  }
+  .playbook-mechanics__step {
+    position: relative;
+  }
+  .playbook-mechanics__step-number {
+    font-family: Moriarty, Metropolis, sans-serif;
+    font-size: 72px;
+    font-weight: 400;
+    color: {{ section.settings.heading_color }};
+    opacity: 0.08;
+    line-height: 1;
+    margin-bottom: -20px;
+    display: block;
+    letter-spacing: -0.02em;
+  }
+  .playbook-mechanics__step-icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    display: block;
+  }
+  .playbook-mechanics__step-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .playbook-mechanics__step-icon-placeholder {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #c65336;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    flex-shrink: 0;
+  }
+  .playbook-mechanics__step-title {
+    font-family: Metropolis, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: {{ section.settings.heading_color }};
+    margin: 0 0 10px;
+    letter-spacing: 0.01em;
+  }
+  .playbook-mechanics__step-body {
+    font-family: Metropolis, sans-serif;
+    font-size: 15px;
+    color: {{ section.settings.text_color }};
+    line-height: 1.65;
+    margin: 0;
+  }
+  .playbook-mechanics__weekly-prize {
+    background: {{ section.settings.callout_bg }};
+    border-left: 4px solid #c65336;
+    padding: 20px 24px;
+    margin: 0 0 48px;
+    border-radius: 0 4px 4px 0;
+  }
+  .playbook-mechanics__weekly-prize strong {
+    font-family: Metropolis, sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c65336;
+    display: block;
+    margin-bottom: 6px;
+  }
+  .playbook-mechanics__weekly-prize p {
+    font-family: Metropolis, sans-serif;
+    font-size: 16px;
+    color: {{ section.settings.heading_color }};
+    margin: 0;
+    line-height: 1.5;
+  }
+  .playbook-mechanics__footer {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: {{ section.settings.header_align }};
+  }
+  .playbook-mechanics__cta {
+    background: #c65336;
+    color: #fff !important;
+    padding: 16px 38px;
+    border-radius: 25px;
+    font-family: Metropolis, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    text-decoration: none;
+    transition: opacity 0.2s;
+    display: inline-block;
+  }
+  .playbook-mechanics__cta:hover { opacity: 0.85; }
+  .playbook-mechanics__tcs {
+    font-family: Metropolis, sans-serif;
+    font-size: 12px;
+    color: {{ section.settings.text_color }};
+    opacity: 0.6;
+    text-decoration: underline;
+  }
+  @media (max-width: 749px) {
+    .playbook-mechanics__steps { grid-template-columns: 1fr; gap: 32px; }
+    .playbook-mechanics__footer { flex-direction: column; align-items: flex-start; }
+  }
+</style>
+
+<section id="playbook-mechanics" class="playbook-mechanics">
+  <div class="playbook-mechanics__inner">
+    <div class="playbook-mechanics__header playbook-mechanics__header--{{ section.settings.header_align }}">
+      {%- if section.settings.eyebrow != blank -%}
+        <span class="playbook-mechanics__eyebrow">{{ section.settings.eyebrow }}</span>
+      {%- endif -%}
+      <h2 class="playbook-mechanics__heading">{{ section.settings.heading }}</h2>
+      {%- if section.settings.subhead != blank -%}
+        <p class="playbook-mechanics__subhead">{{ section.settings.subhead }}</p>
+      {%- endif -%}
+    </div>
+
+    {%- if section.blocks.size > 0 -%}
+      <div class="playbook-mechanics__steps">
+        {%- for block in section.blocks -%}
+          {%- if block.type == 'step' -%}
+            <div class="playbook-mechanics__step" {{ block.shopify_attributes }}>
+              <span class="playbook-mechanics__step-number">0{{ forloop.index }}</span>
+              {%- if block.settings.icon != blank -%}
+                <div class="playbook-mechanics__step-icon">
+                  <img src="{{ block.settings.icon | img_url: '96x' }}" alt="{{ block.settings.title }}" loading="lazy">
+                </div>
+              {%- else -%}
+                <div class="playbook-mechanics__step-icon-placeholder">
+                  <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="10" cy="10" r="8" stroke="#fff" stroke-width="1.5"/>
+                    <path d="M7 10l2 2 4-4" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </div>
+              {%- endif -%}
+              <h3 class="playbook-mechanics__step-title">{{ block.settings.title }}</h3>
+              <p class="playbook-mechanics__step-body">{{ block.settings.body }}</p>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.weekly_prize_text != blank -%}
+      <div class="playbook-mechanics__weekly-prize">
+        <strong>{{ section.settings.weekly_prize_label }}</strong>
+        <p>{{ section.settings.weekly_prize_text }}</p>
+      </div>
+    {%- endif -%}
+
+    <div class="playbook-mechanics__footer">
+      {%- if section.settings.cta_text != blank -%}
+        <a href="{{ section.settings.cta_link | default: '#playbook-form' }}" class="playbook-mechanics__cta">{{ section.settings.cta_text }}</a>
+      {%- endif -%}
+      {%- if section.settings.tcs_text != blank -%}
+        <a href="{{ section.settings.tcs_link }}" class="playbook-mechanics__tcs" target="_blank" rel="noopener">{{ section.settings.tcs_text }}</a>
+      {%- endif -%}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Playbook — Game Mechanics",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "header_align",
+      "label": "Header Alignment",
+      "options": [
+        { "value": "left", "label": "Left" },
+        { "value": "center", "label": "Center" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Padding Top",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "default": 80,
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Padding Bottom",
+      "min": 0,
+      "max": 120,
+      "step": 8,
+      "default": 80,
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Colours"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background",
+      "default": "#2e112d"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading Colour",
+      "default": "#f8f2e6"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Body Text Colour",
+      "default": "#f8f2e6"
+    },
+    {
+      "type": "color",
+      "id": "callout_bg",
+      "label": "Weekly Prize Callout Background",
+      "default": "#480135"
+    },
+    {
+      "type": "header",
+      "content": "Section Header"
+    },
+    {
+      "type": "text",
+      "id": "eyebrow",
+      "label": "Eyebrow",
+      "default": "How to Play"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Here's How You Play."
+    },
+    {
+      "type": "text",
+      "id": "subhead",
+      "label": "Subheading (optional)"
+    },
+    {
+      "type": "header",
+      "content": "Weekly Prize Callout"
+    },
+    {
+      "type": "text",
+      "id": "weekly_prize_label",
+      "label": "Callout Label",
+      "default": "Weekly Prize"
+    },
+    {
+      "type": "text",
+      "id": "weekly_prize_text",
+      "label": "Prize Text",
+      "default": "A box of Alvi's Drift 221 delivered to your door — every week, one winner."
+    },
+    {
+      "type": "header",
+      "content": "CTA & T&Cs"
+    },
+    {
+      "type": "text",
+      "id": "cta_text",
+      "label": "CTA Button Text",
+      "default": "Submit Your 221 Moment"
+    },
+    {
+      "type": "url",
+      "id": "cta_link",
+      "label": "CTA Button Link"
+    },
+    {
+      "type": "text",
+      "id": "tcs_text",
+      "label": "T&Cs Link Text",
+      "default": "Full terms and conditions apply"
+    },
+    {
+      "type": "url",
+      "id": "tcs_link",
+      "label": "T&Cs Link URL"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "name": "Game Step",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "icon",
+          "label": "Step Icon (optional)"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Step Title",
+          "default": "Share Your Moment"
+        },
+        {
+          "type": "textarea",
+          "id": "body",
+          "label": "Step Description",
+          "default": "Tell us your greatest rugby memory — a braai, a watch party, a match, a moment."
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Playbook — Game Mechanics",
+      "blocks": [
+        {
+          "type": "step",
+          "settings": {
+            "title": "Share Your Moment",
+            "body": "Tell us your greatest rugby memory — a braai, a watch party, a match, a moment."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "Tag #The221Game",
+            "body": "Post on social and tag #The221Game, or submit your story directly below."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "Win a Box of 221",
+            "body": "Every week, the best story wins a box of Alvi's Drift 221 delivered to your door."
+          }
+        },
+        {
+          "type": "step",
+          "settings": {
+            "title": "Enter the Grand Prize",
+            "body": "Every submission automatically enters you into the Grand Prize draw — a Watch Party with Percy in New Zealand."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

@@ -7,7 +7,7 @@
 }
 .awc-heading-xs {
   text-transform: uppercase;
-  font-size: 1.1rem;
+  font-size: 1.8rem;
 }
 .awc-bg {
   display: block !important;
@@ -78,6 +78,9 @@
 }
 .awc-promo--content h5 {
   color: var(--awc-color-light);
+}
+.awc-promo--btn-2{
+  padding-top:15px;
 }
 .awc-tiers {
   padding: 5rem 0;
@@ -159,7 +162,7 @@
   position: relative;
   z-index: 2;
   height: 800px;
-  margin-top:-131px;
+  margin-top:-5px;
   @media (min-width: 767px) {
     height: 600px;
   }
@@ -167,7 +170,7 @@
 .awc-products-events-grid{
   position: relative;
   z-index: 2;
-  margin: 75px 0;
+  margin: 75px auto;
 }
 .awc-hero--content-v2{
   position: relative;
@@ -314,11 +317,7 @@
 .awc-content-CTA{
   margin: 10px auto 0;
 }
-.product-img img {
-  filter: drop-shadow(0px 5px 50px #E36653);
-  animation: floatY 4s ease-in-out infinite;
-  transition: filter 0.3s ease;
-}
+
 .discounted-price-v2{
   margin-left: 3px;
 }
@@ -341,7 +340,7 @@
 
 /* Start of Join Club */
 .awc-join-club{
-  background-color: #F8F5F3;
+
   padding-bottom: 20px;
   position: relative;
   @media (min-width: 767px) {
@@ -353,8 +352,7 @@
 .awc-join-club-not-logged-in, .awc-join-club-logged{
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
   gap: 20px;
   @media (min-width: 767px) {
     flex-direction: row;
@@ -399,6 +397,11 @@ margin-right: 20px;
 .awc-points{
   display: inline-flex;
   gap: 2px;
+  font-size: 2rem;
+  line-height: 2.5em;
+}
+.awc-join-club-logout{
+  padding-top:0;
 }
 /* End of Join Club */
 
@@ -408,7 +411,7 @@ margin-right: 20px;
   background: var(--awc-color-darkest);
   .container{
     padding-bottom: 60px;
-    padding-top: 60px;
+    padding-top: 10px;
     max-width: 1600px !important;
   }
 }
@@ -421,8 +424,9 @@ margin-right: 20px;
   justify-items: center;
   justify-content: center;
   gap: 20px;
+  padding-top:50px;
       @media (min-width: 1439px) {
-        grid-template-columns: repeat(auto-fill, 450px);
+        grid-template-columns: repeat(auto-fill, 400px);
       }
       @media (min-width: 1800px) {
         grid-template-columns: repeat(auto-fill, 330px);
@@ -437,7 +441,7 @@ margin-right: 20px;
   }
 }
 .awc-subtitle{
-  color:#210e21;
+  color:#c65336;
   font-weight: 600;
   font-size:18px;
 }
@@ -455,10 +459,11 @@ margin-right: 20px;
         width: 100%;
         margin: 0 auto !important;
       }
-      .awc-hero--content-v2 {
-        padding: 20px 45px 0 45px;
-
+      .awc-hero--content-v2{
+        align-content: start;
+        padding:50px
       }
+      
       .awc-hero-content-v2--text{
         width:100% !important
       }
@@ -467,10 +472,15 @@ margin-right: 20px;
         padding-bottom:15px;
         padding-top:10px
       }
+      .awc-hero-v2{
+        height:450px !important
+      }
     }
+    
    .awc-header{
      font-family: var(--metropolis) !important;
      font-weight:600;
+     text-transform:uppercase
    }
     @media (min-width: 1023px) {
 
@@ -481,12 +491,8 @@ margin-right: 20px;
         text-align: left;
       }
       .awc-bg-picture img {
-        opacity: 0.8;
+        opacity: 1;
         object-position: bottom right;
-      }
-      .awc-hero--content-v2 {
-        justify-items: start;
-        padding-left: 5%;
       }
       .awc-header{
       width:100%;
@@ -496,15 +502,21 @@ margin-right: 20px;
      display:block
    }
     }
-    @media (min-width: 1300px) {
-      .awc-hero--content-v2 {
-        padding-left: 5%;
-      }
-    }
+    
   }
-@media (max-width: 900px){
-  .awc-hero--content-v2{
-    align-content: flex-start;
-    padding-top:80px !important
+
+.product-price-wc{
+      color: #c65336;
+    font-size: 35px;
+    font-weight: 600;
+    text-transform: uppercase;
+        position: relative;
+    justify-content: center;
+}
+
+/* Force disconnected hero image to anchor right so bottles stay visible on desktop */
+@media (min-width: 1023px) {
+  .awc-hero-v2 .awc-bg-picture--disconnected img {
+    object-position: right center !important;
   }
 }

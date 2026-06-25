@@ -10,21 +10,12 @@
                 </div>  
             </div>        
             <div class="dare-to-be-true-bx about_background">
-                <img src="{{ section.settings.dare-to-be-true-bx | img_url: 'large'}}" alt="" loading="lazy">
+                {{ section.settings.dare-to-be-true-bx | image_url: width:'large'| image_tag:alt:'Dare to be true', loading:'lazy' }}
             </div>           
         </div>
     </div>
 </div>
-
 <style>
-
-.dare-to-be-true-bx {
-	width: 432px;
-	height: 503px;
-	position: absolute;
-	top: 175px;
-	right: 528px;
-}
 </style>
 {% schema %}
   {

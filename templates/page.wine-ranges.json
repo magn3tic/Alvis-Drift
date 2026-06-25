@@ -29,7 +29,7 @@
             "background_image": "shopify://shop_images/Our_Wine_Ranges.png",
             "image_overlay": "#000000",
             "overlay_opacity": 40,
-            "Heading_color": "#ffffff",
+            "heading_color": "#ffffff",
             "video_banner": "",
             "paragarh_p1": "OUR",
             "paragarh_p2": "WINE",
@@ -48,17 +48,9 @@
       "settings": {
         "image_overlay": "",
         "overlay_opacity": 30,
-        "Heading_color": "#ffffff",
-        "video_banner": "",
-        "paragarh_p1": "OUR",
-        "paragarh_p2": "WINE",
-        "paragarh_p3": "RANGES",
-        "paragarh_p4": "",
-        "paragarh_1": "FRUIT DRIVEN & DELIGHTFULLY COMPLEX",
-        "paragarh_2": "Our award-winning wines are internationally known for their distinctive, fruit-driven character and delightful complexity. Our wines include red, white, rosé, dessert, and outstanding Cap Classique and Brut sparkling wines.",
-        "btn_text": "",
-        "btn_link": "shopify://collections/all-products",
-        "btn_main_link": ""
+        "right_btn_text": "",
+        "right_btn_link": "",
+        "anchor_link": ""
       }
     },
     "1641826680091d5999": {
@@ -191,9 +183,10 @@
         "image_overlay": false,
         "Heading_color": "#c65336",
         "title": "DARE TO BE TRUE",
-        "detail-box-txt": "As winemakers, we are driven by the pursuit of excellence, of quality and honest flavour, while remaining true to our grapes’ fruit characteristics above all. If this means allowing a certain wine to ferment longer, cooler or challenging a few treasured, long-held winemaking beliefs in the process, so be it. At Alvi’s Drift, you’ll never find us doing only what’s expected. We’re too busy doing what we love.",
+        "detail_box_txt": "",
         "btn-txt": "DOWNLOAD PROFILE",
-        "btn-url": "https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Corporate-Profile.pdf?v=1732523089"
+        "btn-url": "https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis-Drift-Corporate-Profile.pdf?v=1732523089",
+        "hide_margin": true
       }
     }
   },

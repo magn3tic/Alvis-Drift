@@ -43,144 +43,22 @@
       "settings": {
         "image_overlay": "",
         "overlay_opacity": 30,
-        "blurb": "",
+        "hide_on_mobile": true,
         "right_btn_text": "",
         "right_btn_link": "",
         "anchor_link": ""
       }
     },
-    "product-grid": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "787afe37-3bca-450e-9715-65d85b66d29c": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "ALL WINES",
-            "collectionCarasoul": "all-wines"
-          }
-        },
-        "038d36fe-bf30-407b-8cea-86b3592a4a30": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "SIGNATURE RANGE",
-            "collectionCarasoul": "signature-range"
-          }
-        },
-        "3efe8910-e5e9-44c1-9238-51e47da14fb7": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "221 RANGE",
-            "collectionCarasoul": "221-range"
-          }
-        },
-        "8f222f17-212b-444f-b12c-d6a8e422d1e4": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "RESERVE RANGE",
-            "collectionCarasoul": "reserve-range"
-          }
-        },
-        "15012f91-8753-4824-9bc3-6d131d4ac5c0": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "ICON RANGE",
-            "collectionCarasoul": "icon-range"
-          }
-        },
-        "17e7bb4b-860e-4aad-a5d7-06c3758efcbc": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "FLAGSHIP RANGE",
-            "collectionCarasoul": "flagship-range"
-          }
-        },
-        "2436d8c6-67e1-434a-850d-a1840be647c2": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "SPARKLING RANGE",
-            "collectionCarasoul": "sparkling-range"
-          }
-        },
-        "2ced8eae-0c34-4816-94cf-1aa43ec76592": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "Cap Classique Range",
-            "collectionCarasoul": "cap-classique-range"
-          }
-        },
-        "8c4325a8-9bd5-4ba3-ab2f-1dc4719d9935": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "RED WINES",
-            "collectionCarasoul": "red-wines"
-          }
-        },
-        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "WHITE WINES",
-            "collectionCarasoul": "white-wines"
-          }
-        },
-        "11ec4a22-f83b-4423-8ae8-9bb628f39caf": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "BLENDS",
-            "collectionCarasoul": "blends"
-          }
-        },
-        "eb1927c9-8973-48f5-a362-8ace5aef6280": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "ROSÉ WINES",
-            "collectionCarasoul": "rose-wines"
-          }
-        },
-        "f541cc57-0822-4ea1-8eb3-207ba2616755": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "DESSERT WINES",
-            "collectionCarasoul": "dessert-wines"
-          }
-        },
-        "aeef4678-3b19-4ab2-9a41-0e52a7f4425b": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "PREMIUM WINES",
-            "collectionCarasoul": "premium-wines"
-          }
-        },
-        "c70102e4-ea33-42df-af97-5b4bec7dcb90": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "BEST SELLERS",
-            "collectionCarasoul": "best-sellers"
-          }
-        }
-      },
-      "block_order": [
-        "787afe37-3bca-450e-9715-65d85b66d29c",
-        "038d36fe-bf30-407b-8cea-86b3592a4a30",
-        "3efe8910-e5e9-44c1-9238-51e47da14fb7",
-        "8f222f17-212b-444f-b12c-d6a8e422d1e4",
-        "15012f91-8753-4824-9bc3-6d131d4ac5c0",
-        "17e7bb4b-860e-4aad-a5d7-06c3758efcbc",
-        "2436d8c6-67e1-434a-850d-a1840be647c2",
-        "2ced8eae-0c34-4816-94cf-1aa43ec76592",
-        "8c4325a8-9bd5-4ba3-ab2f-1dc4719d9935",
-        "82a8bb92-17dd-44c1-9572-5db0f1c097ec",
-        "11ec4a22-f83b-4423-8ae8-9bb628f39caf",
-        "eb1927c9-8973-48f5-a362-8ace5aef6280",
-        "f541cc57-0822-4ea1-8eb3-207ba2616755",
-        "aeef4678-3b19-4ab2-9a41-0e52a7f4425b",
-        "c70102e4-ea33-42df-af97-5b4bec7dcb90"
-      ],
+    "collections_grid_individual_BeV3wy": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
       "settings": {
-        "topheading": "OUR WINES",
-        "heading-tag": false,
-        "subtitle-1": "",
-        "active_collection": "all-wines",
-        "promo_badge": false
+        "topheading": "Our Wines",
+        "subtitle_1": "",
+        "product_collection": "all-wines",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
       }
     },
     "164210934350db4240": {
@@ -189,10 +67,11 @@
         "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
         "image_overlay": false,
         "Heading_color": "#c65336",
-        "title": "WINE CLUB",
-        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "title": "PRIVATE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift private club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
         "btn-txt": "FIND OUT MORE",
-        "btn-url": "shopify://pages/club"
+        "btn-url": "shopify://pages/club",
+        "hide_margin": true
       }
     },
     "1639247728bb3b5028": {
@@ -329,6 +208,7 @@
         "be152d49-89c4-498d-834b-908ce5bad5e7",
         "2df5b13b-5928-458a-b86b-5a7aa38925ac"
       ],
+      "disabled": true,
       "settings": {
         "title_text": "",
         "Heading_color": "#f8f2e6"
@@ -338,7 +218,7 @@
   "order": [
     "1639248035a16a435a",
     "16421087169fe104d9",
-    "product-grid",
+    "collections_grid_individual_BeV3wy",
     "164210934350db4240",
     "1639247728bb3b5028"
   ]

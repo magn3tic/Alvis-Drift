@@ -1,14 +1,13 @@
 <section class="awc-how-it-works">
   <div class="container">
     <div class="how-it-works-title">
-      <h2 class="h1">{{ section.settings.how_it_works_title }}</h2>
+      <h2 class="head">{{ section.settings.how_it_works_title }}</h2>
       <p>{{ section.settings.how_it_works_text }}</p>
     </div>
     <div class="awc-how-it-works-benefits">
       <div class="benefits bronze-tier">
         <span class="awc-heading-xs">WINE CLUB</span>
-
-        <h5 class="h1 whiteTitle">Bronze</h5>
+        <h2 class="head">BRONZE</h2>
         <figure>
           <img
             src="{{ section.settings.bronze_image | image_url }}"
@@ -17,8 +16,8 @@
             height="200"
             class="awc-tier-badge" />
         </figure>
-        <h5 class="h2 whiteTitle">5% Off</h5>
-        <span>{{ section.settings.bronze_text }} Points</span>
+        <h3 class = "tier-percentage">5% OFF</h3>
+        <h4 class = "tier-points">{{ section.settings.bronze_text }} Points</h4>
         <ul>
           {% for block in section.blocks %}
             {% if block.type == 'bronze_benefit' %}
@@ -29,8 +28,7 @@
       </div>
       <div class="benefits silver-tier">
         <span class="awc-heading-xs">WINE CLUB</span>
-    
-        <h5 class="h1 whiteTitle">SILVER</h5>
+        <h2 class="head">SILVER</h2>
         <figure>
           <img
             src="{{ section.settings.silver_image | image_url }}"
@@ -39,8 +37,8 @@
             height="200"
             class="awc-tier-badge" />
         </figure>
-        <h5 class="h2 whiteTitle">10% Off</h5>
-        <span>{{ section.settings.silver_text }} Points</span>
+        <h3 class = "tier-percentage">10% OFF</h3>
+        <h4 class = "tier-points">{{ section.settings.silver_text }} Points</h4>
         <ul>
           {% for block in section.blocks %}
             {% if block.type == 'silver_benefit' %}
@@ -51,8 +49,7 @@
       </div>
       <div class="benefits gold-tier">
         <span class="awc-heading-xs">WINE CLUB</span>
-  
-        <h5 class="h1 whiteTitle">GOLD</h5>
+        <h2 class="head">GOLD</h2>
         <figure>
           <img
             src="{{ section.settings.gold_image | image_url }}"
@@ -61,8 +58,8 @@
             height="200"
             class="awc-tier-badge" />
         </figure>
-        <h5 class="h2 whiteTitle">15% Off</h5>
-        <span>{{ section.settings.gold_text }} Points</span>
+        <h3 class = "tier-percentage">15% OFF</h3>
+        <h4 class = "tier-points">{{ section.settings.gold_text }} Points</h4>
         <ul>
           {% for block in section.blocks %}
             {% if block.type == 'gold_benefit' %}

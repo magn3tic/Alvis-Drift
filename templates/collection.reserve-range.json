@@ -43,7 +43,7 @@
       "settings": {
         "image_overlay": "",
         "overlay_opacity": 30,
-        "blurb": "",
+        "hide_on_mobile": true,
         "right_btn_text": "",
         "right_btn_link": "",
         "anchor_link": ""
@@ -69,26 +69,16 @@
         "new_tab": true
       }
     },
-    "product-grid": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "82a8bb92-17dd-44c1-9572-5db0f1c097ec": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": "reserve-range"
-          }
-        }
-      },
-      "block_order": [
-        "82a8bb92-17dd-44c1-9572-5db0f1c097ec"
-      ],
+    "collections_grid_individual_tGbymU": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
       "settings": {
         "topheading": "",
-        "heading-tag": true,
-        "subtitle-1": "",
-        "active_collection": "reserve-range",
-        "promo_badge": false
+        "subtitle_1": "",
+        "product_collection": "reserve-range",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
       }
     },
     "1642115387ee485822": {
@@ -97,10 +87,11 @@
         "wine-club-bg": "shopify://shop_images/wine-club-bg.png",
         "image_overlay": false,
         "Heading_color": "#c65336",
-        "title": "WINE CLUB",
-        "detail_box_txt": "Join the Alvi’s Drift wine club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
+        "title": "PRIVATE CLUB",
+        "detail_box_txt": "Join the Alvi’s Drift private club and become part of our community of wine enthusiasts from all around the world. Members receive exclusive offers, content, invitations to special events, access to members-only competitions and promotions, rewards and more.",
         "btn-txt": "FIND OUT MORE",
-        "btn-url": "shopify://pages/club"
+        "btn-url": "shopify://pages/club",
+        "hide_margin": true
       }
     },
     "1639247728bb3b5028": {
@@ -197,6 +188,7 @@
         "f1f6bc09-bee6-4618-a8ff-49d7e6fa5f61",
         "1639247728c24078eb-0"
       ],
+      "disabled": true,
       "settings": {
         "title_text": "",
         "Heading_color": "#f8f2e6"
@@ -208,7 +200,7 @@
     "hero_main_UDbebD",
     "spacer_YNTDqY",
     "focus_text_text_only_3eEJrE",
-    "product-grid",
+    "collections_grid_individual_tGbymU",
     "1642115387ee485822",
     "1639247728bb3b5028"
   ]

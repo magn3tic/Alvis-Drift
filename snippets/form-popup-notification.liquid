@@ -1,0 +1,56 @@
+{% comment %} 1) On influencer registration page: mark the submit {% endcomment %}
+{% if request.path == '/pages/influencer-registration' %}
+  <script>
+    (function () {
+      // Click fallback (covers cases where submitter isn't supported)
+      document.addEventListener('click', function (e) {
+        const btn = e.target.closest('button[data-influencer-submit="1"]');
+        if (btn) sessionStorage.setItem('influencerRegSubmitted', '1');
+      }, true);
+
+      // More accurate when supported
+      document.addEventListener('submit', function (e) {
+        const submitter = e.submitter;
+        if (submitter && submitter.matches('button[data-influencer-submit="1"]')) {
+          sessionStorage.setItem('influencerRegSubmitted', '1');
+        }
+      }, true);
+    })();
+  </script>
+{% endif %}
+
+{% comment %} 2) On home page: show popup once (only if logged in) {% endcomment %}
+{% if request.path == '/' %}
+  <dialog id="welcomePopup" class = "popup" style="">
+    <div class = "row">
+      <div class = "col-5">
+        <img src = "https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis_Drift_Influencer_banner_aaf4f7ef-e2bd-43d3-9b51-7ab46041a87a.png?v=1769760534" alt = "Alvis Drift Influencer Banner">
+      </div>
+      <div class = "col-7 ">
+    <button class = "btn-popup" type="button" onclick="document.getElementById('welcomePopup').close()"> 
+      {% render 'icon-close' %}
+    </button>
+    <div class = "popup-content">
+    <h3>Welcome to the Club {% if customer %}{{ customer.first_name }}{% endif %}!</h3><br>
+    <p>As a sliver member you now qualify for 10% off your favourite wines.</p>
+    <b><a href = "/pages/terms-and-condition">Ts & Cs apply</a></b>
+    </div>
+    </div>
+    </div>
+  </dialog>
+
+  <script>
+    (function () {
+      const wasInfluencerSubmit = sessionStorage.getItem('influencerRegSubmitted') === '1';
+      if (!wasInfluencerSubmit) return;
+
+      const isLoggedIn = {{ customer != blank | json }};
+      if (!isLoggedIn) return;
+
+      const popup = document.getElementById('welcomePopup');
+      if (popup && typeof popup.showModal === 'function') popup.showModal();
+
+      sessionStorage.removeItem('influencerRegSubmitted');
+    })();
+  </script>
+{% endif %}

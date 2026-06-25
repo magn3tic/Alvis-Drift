@@ -1,0 +1,67 @@
+{% comment %} PV3 Story — 02 The 221 Story {% endcomment %}
+
+<section class="pv3-lp section bg-alt" id="pv3-story" aria-labelledby="pv3-story-heading">
+  <div class="container">
+    <div class="story-grid story-load reveal">
+
+      <div class="story-left">
+        <span class="eyebrow">01 / The Story</span>
+        <h2 class="h2" id="pv3-story-heading" style="margin-top:24px;">
+          BEFORE IT WAS<br>A WINE,<br><span style="font-family:var(--font-display-inline);color:var(--gold);">IT WAS<br>A MOMENT</span>
+        </h2>
+        <hr class="rule-gold-short" style="margin: 28px 0 24px;" />
+        <p class="body" style="font-size:20px;">{{ section.settings.body_1 | default: 'In 1928, on the touring tour against the All Blacks, a young flanker named Alvi van der Merwe scored the first try by a Springbok against the All Blacks on African soil. He earned Springbok cap number 221. A number that has carried his legacy forward ever since.' | newline_to_br }}</p>
+
+        {% if section.settings.percy_quote != blank %}
+        <blockquote class="percy-quote" style="font-family:var(--font-display-inline);font-size:24px;font-style:normal;text-transform:uppercase;color:var(--white);border-left-color:var(--white);">{{ section.settings.percy_quote }}</blockquote>
+        {% endif %}
+
+        <a href="{{ section.settings.cta_link | default: '#pv3-shop' }}" class="btn-gold-link">{{ section.settings.cta_label | default: 'Discover the 221 Range →' }}</a>
+      </div>
+
+      <div class="story-right" aria-hidden="true">
+        <div class="story-img-archival">
+          {% if section.settings.archival_image %}
+            <img src="{{ section.settings.archival_image | image_url: width: 800 }}" alt="1928 Springbok team archival photo" loading="lazy" {% if section.settings.apply_image_filter != false %}style="filter:grayscale(0.7) sepia(0.3) hue-rotate(60deg)"{% endif %} />
+          {% else %}
+            <img src="{{ 'heritage-1-before-it-was-a-wine.jpg' | asset_url }}" alt="1928 Springbok team archival photo" loading="lazy" {% if section.settings.apply_image_filter != false %}style="filter:grayscale(0.7) sepia(0.3) hue-rotate(60deg)"{% endif %} />
+          {% endif %}
+        </div>
+        {% if section.settings.show_bottle_image != false %}
+        <div class="story-img-bottle">
+          {% if section.settings.bottle_image %}
+            <img src="{{ section.settings.bottle_image | image_url: width: 600 }}" alt="Alvi's Drift 221 bottle and glass" loading="lazy" />
+          {% else %}
+            <img src="{{ 'heritage-5-bottle-in-glass.jpg' | asset_url }}" alt="Alvi's Drift 221 bottle and glass" loading="lazy" />
+          {% endif %}
+        </div>
+        {% endif %}
+        {% if section.settings.show_badge != false %}
+        <img class="story-badge-overlay" src="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/221-badge-white.png?v=1779492120" alt="" loading="lazy" />
+        {% endif %}
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "PV3 — Story",
+  "settings": [
+    { "type": "text",     "id": "heading",      "label": "Heading",        "default": "Before it was a wine, it was a moment." },
+    { "type": "textarea", "id": "body_1",        "label": "Body paragraph 1" },
+    { "type": "textarea", "id": "body_2",        "label": "Body paragraph 2" },
+    { "type": "textarea", "id": "percy_quote",   "label": "Percy Quote" },
+    { "type": "text",     "id": "cta_label",     "label": "CTA Label",      "default": "Discover the 221 Range →" },
+    { "type": "url",      "id": "cta_link",      "label": "CTA Link",       "info": "Default: #pv3-shop (scroll to wine section)" },
+    { "type": "header",   "content": "Images (optional — defaults to handoff assets)" },
+    { "type": "image_picker", "id": "archival_image",    "label": "Archival / Heritage Photo" },
+    { "type": "image_picker", "id": "bottle_image",      "label": "Bottle in Glass Photo" },
+    { "type": "checkbox",     "id": "show_bottle_image",    "label": "Show Bottle in Glass Photo",         "default": true },
+    { "type": "checkbox",     "id": "show_badge",           "label": "Show 221 Badge Overlay",             "default": true },
+    { "type": "checkbox",     "id": "apply_image_filter",   "label": "Apply vintage film filter to photo", "default": true }
+  ],
+  "presets": [{ "name": "PV3 Story" }]
+}
+{% endschema %}

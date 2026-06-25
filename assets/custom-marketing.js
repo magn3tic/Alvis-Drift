@@ -89,23 +89,16 @@
     setTimeout(function(){ initAll(root); }, 1500);
   }
 
-  // Venobox + Modals (unchanged)
-  $(document).on('click', '.hero-video-btn-link', function () {
-    if ($.fn.venobox) $(this).venobox();
+  function initVeno() {
+  if (!$.fn.venobox) return;
+
+  $('.hero-video-btn-link').venobox({
+    autoplay: true
   });
-  $(document).on('click', '.modal-link', function () {
-    var id = '#' + $(this).attr('data-modal');
-    if ($(id).length) $(id).fadeIn(200).addClass('modal-active');
-  });
-  $(document).on('click', '.modal-wrap .modal-bg, .modal-wrap .modal-close', function () {
-    $('.modal-wrap').fadeOut(200).removeClass('modal-active');
-  });
-  $(document).on('click', '.our-story .modal-link', function () {
-    $('.our-story').addClass('animateModal');
-  });
-  $(document).on('click', '.our-story .modal-wrap .modal-close', function () {
-    $('.our-story').removeClass('animateModal');
-  });
+}
+
+$(document).ready(initVeno);
+document.addEventListener('shopify:section:load', initVeno);
 
   // Kickoff + reinit on section load / resize
   window.addEventListener('load', function(){ initWhenVisible(document); }, { passive:true });
