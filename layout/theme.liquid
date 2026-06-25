@@ -73,7 +73,7 @@
     {% endstyle %}
 
     <!-- ── BLOCKING CSS -->
-  {%- unless page.handle == 'the-221-game' -%}
+  {%- unless page.handle == 'the-221-game' or request.path contains 'the-221-game' -%}
   {{ 'font.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'homes.css' | asset_url | stylesheet_tag: preload: true }}
