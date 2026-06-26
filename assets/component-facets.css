@@ -179,7 +179,7 @@
   color: rgba(var(--color-foreground), 0.75);
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
-  padding: 0 1.75rem 0 0;
+  padding: 0.7rem 1.75rem 0.7rem 0;;
 }
 
 .facets__disclosure[open] .facets__summary,
@@ -193,7 +193,7 @@
 
 .facets__summary span {
   transition: text-decoration var(--duration-short) ease;
-  padding-right:5px
+  padding-right:10px
 }
 
 .facets__summary:hover span {
