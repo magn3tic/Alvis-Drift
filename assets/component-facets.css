@@ -193,7 +193,7 @@
 
 .facets__summary span {
   transition: text-decoration var(--duration-short) ease;
-  padding-right:10px
+  padding-right:5px
 }
 
 .facets__summary:hover span {
