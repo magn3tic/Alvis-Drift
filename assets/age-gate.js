@@ -5,23 +5,33 @@ document.addEventListener('DOMContentLoaded', () => {
   const AGE_KEY = 'ageVerified';
   const REDIRECT_URL = 'https://www.gov.za/sites/default/files/gcis_document/201503/act-27-1989.pdf';
 
+  // Pages where the age gate should be skipped
+  const EXEMPT_PATHS = [
+    '/pages/the-221-game'
+  ];
+
+  const isExemptPage = EXEMPT_PATHS.some(path =>
+    window.location.pathname === path ||
+    window.location.pathname.startsWith(path + '/')
+  );
+
   function showGate() {
     if (!gate) return;
-    gate.removeAttribute('hidden');         // <-- THIS is the key
-    // gate.style.removeProperty('display');   // clean up any inline 'display' - commented out 22/09/25
-    gate.style.display = 'block'; // Added to show Age-Gate 22/09/25
+    gate.removeAttribute('hidden');
+    gate.style.display = 'block';
     document.documentElement.style.overflow = 'hidden';
   }
 
   function hideGate() {
     if (!gate) return;
-    gate.setAttribute('hidden', '');        // hide by putting the attribute back
+    gate.setAttribute('hidden', '');
     document.documentElement.style.overflow = '';
   }
 
   const shouldShow = (() => {
+    if (isExemptPage) return false; // Skip gate on exempt pages
     try { return localStorage.getItem(AGE_KEY) !== 'true'; }
-    catch { return true; } // if storage blocked, show gate
+    catch { return true; }
   })();
 
   if (shouldShow) showGate();
@@ -40,8 +50,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // If your theme re-renders sections, re-run the logic:
 document.addEventListener('shopify:section:load', () => {
+  const EXEMPT_PATHS = ['/pages/the-221-game'];
+  const isExemptPage = EXEMPT_PATHS.some(path =>
+    window.location.pathname === path ||
+    window.location.pathname.startsWith(path + '/')
+  );
+
   const gate = document.getElementById('age-gate');
-  if (gate && localStorage.getItem('ageVerified') !== 'true') {
+  if (gate && !isExemptPage && localStorage.getItem('ageVerified') !== 'true') {
     gate.removeAttribute('hidden');
     gate.style.removeProperty('display');
   }
