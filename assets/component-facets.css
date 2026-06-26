@@ -134,10 +134,6 @@
   box-shadow: none;
 }
 
-.facet-filters__sort + .icon-caret {
-  right: 0;
-}
-
 .facets {
   display: block;
   grid-column-start: span 2;
