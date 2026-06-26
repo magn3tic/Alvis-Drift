@@ -3932,5 +3932,6 @@ summary.list-menu__item {
     color: #000 !important;
 }
 .icon-caret{
-    width: 15px
+    width: 12px;
+    padding-right:5px
 }
