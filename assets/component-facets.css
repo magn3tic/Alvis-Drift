@@ -865,3 +865,6 @@ input.mobile-facets__checkbox {
 .product-count__text.loading + .loading-overlay__spinner {
   display: block;
 }
+.icon-caret{
+    width: 14px;
+}
