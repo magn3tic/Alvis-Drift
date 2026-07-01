@@ -221,6 +221,16 @@
             "link": "shopify://blogs/alvis-drift/springbok-carpaccio-recipe-with-alvi-s-drift-221-sauvignon-blanc"
           }
         },
+        "article_card_dReRY9": {
+          "type": "article_card",
+          "settings": {
+            "category": "stories",
+            "card_image": "shopify://shop_images/Springbok-medallions-with-mustard-sauce-and-Alvi_s-Drift-221-Special-Cuvee-Red.jpg",
+            "title": "Springbok medallions with mustard sauce and Alvi’s Drift 221 Special Cuvée Red",
+            "excerpt": "A quick yet impressive seared Springbok loin recipe with warm spices, fresh greens and Alvi’s Drift 221 Special Cuvée Red.",
+            "link": "shopify://blogs/alvis-drift/springbok-medallions-with-mustard-sauce-and-alvi-s-drift-221-special-cuvee-red"
+          }
+        },
         "article_card_e38pFp": {
           "type": "article_card",
           "settings": {
@@ -275,6 +285,7 @@
       },
       "block_order": [
         "article_card_HWfY6B",
+        "article_card_dReRY9",
         "article_card_e38pFp",
         "article_card_kg8Npp",
         "card-1",
