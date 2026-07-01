@@ -221,6 +221,16 @@
             "link": "shopify://blogs/alvis-drift/springbok-carpaccio-recipe-with-alvi-s-drift-221-sauvignon-blanc"
           }
         },
+        "article_card_e38pFp": {
+          "type": "article_card",
+          "settings": {
+            "category": "stories",
+            "card_image": "shopify://shop_images/Springbok-skewers-with-apricot-marinade-and-Alvi_s-Drift-221-Chenin-Blanc_16d7f511-9a8a-433c-abd1-9e45de7d07d9.jpg",
+            "title": "Springbok skewers with apricot marinade and Alvi’s Drift 221 Chenin Blanc",
+            "excerpt": "Quick Springbok skewers with apricot and wild herbs, made for summer fires and a bottle of 221 Chenin Blanc.",
+            "link": "shopify://blogs/alvis-drift/springbok-skewers-with-apricot-marinade-and-alvi-s-drift-221-chenin-blanc"
+          }
+        },
         "card-1": {
           "type": "article_card",
           "settings": {
@@ -255,6 +265,7 @@
       },
       "block_order": [
         "article_card_HWfY6B",
+        "article_card_e38pFp",
         "card-1",
         "card-2",
         "card-3"
