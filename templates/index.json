@@ -14,6 +14,7 @@
       "blocks": {
         "slide_QjEzFW": {
           "type": "slide",
+          "disabled": true,
           "settings": {
             "video": "",
             "image": "shopify://shop_images/Alvis_DRift_Winter_warmer_sale.jpg",
@@ -39,11 +40,26 @@
             "button_text": "LEARN MORE",
             "button_link": "shopify://pages/the-221-game"
           }
+        },
+        "slide_7gLipa": {
+          "type": "slide",
+          "settings": {
+            "video": "",
+            "image": "shopify://shop_images/Alvis_Drift_Home_Banner.jpg",
+            "mobile_image": "shopify://shop_images/Alvis_Drift_siganture_banner_mobile.jpg",
+            "object_pos_x": "center",
+            "object_pos_y": "center",
+            "heading": "SIGNATURE SELECTION",
+            "subtext": "YES! in the world of No",
+            "button_text": "SHOP NOW",
+            "button_link": "https://alvisdrift.co.za/collections/signature-range"
+          }
         }
       },
       "block_order": [
         "slide_QjEzFW",
-        "slide_EmXrrh"
+        "slide_EmXrrh",
+        "slide_7gLipa"
       ],
       "name": "New Slider",
       "settings": {
@@ -90,8 +106,20 @@
     "page_builder_sale_banners_QAwCXM": {
       "type": "page-builder-sale-banners",
       "blocks": {
+        "banner_8MfAMT": {
+          "type": "banner",
+          "settings": {
+            "top_text": "CUSTOMER FAVOURITES",
+            "heading": "Best Sellers",
+            "image": "shopify://shop_images/Alvis_Drift_Best_Sellers.png",
+            "hover_title": "Best Sellers",
+            "hover_subtext": "Top 10",
+            "link": "shopify://collections/best-sellers"
+          }
+        },
         "banner_HYabhr": {
           "type": "banner",
+          "disabled": true,
           "settings": {
             "top_text": "Now until 30 June",
             "heading": "Winter Warmer Sale",
@@ -114,6 +142,7 @@
         }
       },
       "block_order": [
+        "banner_8MfAMT",
         "banner_HYabhr",
         "banner_aUJTfJ"
       ],
