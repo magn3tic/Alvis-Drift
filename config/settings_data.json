@@ -32,7 +32,7 @@
         "type": "header",
         "settings": {
           "logo": "shopify://shop_images/logo.svg",
-          "main_menu": "main-menu-new-top",
+          "main_menu": "secondary-menu-top",
           "mobile_menu": "main-menu",
           "cta_text": "Explore Wines",
           "cta_link": ""
