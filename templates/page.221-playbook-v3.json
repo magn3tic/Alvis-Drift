@@ -231,6 +231,16 @@
             "link": "shopify://blogs/alvis-drift/springbok-skewers-with-apricot-marinade-and-alvi-s-drift-221-chenin-blanc"
           }
         },
+        "article_card_kg8Npp": {
+          "type": "article_card",
+          "settings": {
+            "category": "stories",
+            "card_image": "shopify://shop_images/Slow-braised-Springbok-shanks-with-Alvi_s-Drift-221-Pinotage.jpg",
+            "title": "Slow-braised Springbok shanks with Alvi’s Drift 221 Pinotage",
+            "excerpt": "Tender Springbok shanks braised in red wine and citrus, served with herb dressing and 221 Pinotage for the ultimate winter comfort food.",
+            "link": "shopify://blogs/alvis-drift/slow-braised-springbok-shanks-with-alvi-s-drift-221-pinotage"
+          }
+        },
         "card-1": {
           "type": "article_card",
           "settings": {
@@ -266,6 +276,7 @@
       "block_order": [
         "article_card_HWfY6B",
         "article_card_e38pFp",
+        "article_card_kg8Npp",
         "card-1",
         "card-2",
         "card-3"
