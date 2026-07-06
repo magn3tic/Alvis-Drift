@@ -52,7 +52,7 @@
           "type": "product_info_group",
           "settings": {
             "info_title": "Alcohol",
-            "info_value": "13.1%"
+            "info_value": "13.4%"
           }
         },
         "product_info_group_FXw3ix": {
@@ -66,14 +66,14 @@
           "type": "product_info_group",
           "settings": {
             "info_title": "Acidity",
-            "info_value": "6.0 g/L"
+            "info_value": "6.8 g/L"
           }
         },
         "product_info_group_4L4hqf": {
           "type": "product_info_group",
           "settings": {
             "info_title": "pH",
-            "info_value": "3.4"
+            "info_value": "3.2"
           }
         }
       },
@@ -231,7 +231,8 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
-            "collectionCarasoul": "red-wines"
+            "collectionCarasoul": "red-wines",
+            "product_amount": 30
           }
         }
       },
@@ -240,7 +241,9 @@
       ],
       "settings": {
         "topheading": "OUR RED WINES",
-        "hide_filter": false
+        "subtitle_1": "",
+        "hide_filter": false,
+        "hide_meta_tags": false
       }
     }
   },
