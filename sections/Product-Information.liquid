@@ -70,15 +70,11 @@
                     <div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
                       {% if image != blank %}
                       {{
-                      image
-                      | image_url: width: 462, format: 'webp', quality: 75
-                      | image_tag:
-                        widths: '154, 308, 462',
-                        sizes: '154px',
-                        alt: image.alt,
-                        loading: 'eager',
-                        fetchpriority: 'high'
-                    }}
+                        image
+                        | image_url: width: 145
+                        | image_tag:
+                          alt: image.alt
+                      }}
                     {% endif %}
                     </div>
                     {% assign member_discount = product.price | times: discount %}
