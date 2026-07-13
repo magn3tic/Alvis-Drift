@@ -163,10 +163,11 @@
       "settings": {
         "bg_image": "shopify://shop_images/221-Winners-bcko.png",
         "section_heading": "Now That's a 221 Story",
-        "phase": "phase1",
+        "phase": "full",
         "placeholder_week_label": "First Winner · Week of 30 June 2026",
         "placeholder_winner_name": "First winner announced 30 June.",
         "placeholder_message": "Submissions are open now. Winners drawn every Sunday from launch week.",
+        "feature_hide": false,
         "winner_badge": "shopify://shop_images/winner-badge-o.png",
         "featured_name": "",
         "featured_handle": "",
