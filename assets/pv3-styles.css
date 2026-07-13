@@ -53,7 +53,7 @@
 }
 .display-none{
   display:none !important;
-  padding-bottom:50px !important
+
 }
 /* Explicit color on headings so theme h2/h3/h4 rules can't override */
 .pv3-lp .h2, .pv3-lp .h3, .pv3-lp .h4 { color: inherit; }
@@ -1219,7 +1219,7 @@
   .pv3-lp .winner-source { font-size:13px; }
   .pv3-lp .winner-quote { font-size:18px; }
   .pv3-lp .winner-badge-col { width:100%; }
-  .pv3-lp .winners-past { grid-template-columns:1fr; gap:14px; }
+  .pv3-lp .winners-past { grid-template-columns:1fr; gap:14px; padding-top:50px }
   .pv3-lp .winners-placeholder-card { grid-template-columns:1fr; padding:28px 22px; gap:24px; }
 
   /* -- Centered section headers: winners, playbook, community (cards untouched) -- */
