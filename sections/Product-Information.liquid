@@ -19,11 +19,10 @@
 {% endif %}
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 
-{% comment %}theme-check-disable TemplateLength{% endcomment %}
-{%- comment -%} Critical – render-blocking on purpose {%- endcomment -%}
+
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
+{%- comment -%}{{ 'component-slider.css' | asset_url | stylesheet_tag }} {%- endcomment -%}
 
 {%- comment -%} Non-critical – load without blocking render {%- endcomment -%}
 <link rel="stylesheet" href="{{ 'component-accordion.css' | asset_url }}" media="print" onload="this.media='all'">
