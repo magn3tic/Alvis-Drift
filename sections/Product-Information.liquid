@@ -27,7 +27,7 @@
 {%- comment -%} Non-critical – load without blocking render {%- endcomment -%}
 <link rel="stylesheet" href="{{ 'component-accordion.css' | asset_url }}" media="print" onload="this.media='all'">
 <link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">
-<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- comment -%}<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">{%- endcomment -%}
 <link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>
   {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
