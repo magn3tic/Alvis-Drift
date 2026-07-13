@@ -136,7 +136,6 @@
         },
         "past_winner_L6fj9i": {
           "type": "past_winner",
-          "disabled": true,
           "settings": {
             "avatar_image": "shopify://shop_images/walter_sandler.jpg",
             "name": "Walter Stander",
