@@ -76,12 +76,12 @@
                     {% for image in product.images %}
                     <div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
                       {% if image != blank %}
-                      {{
+                     {{
                         image
-                        | image_url: width: 462, format: 'webp', quality: 75
+                        | image_url: width: 423, format: 'webp', quality: 75
                         | image_tag:
-                          widths: '154, 308, 462',
-                          sizes: '154px',
+                          widths: '141, 212, 282, 423',
+                          sizes: '141px',
                           alt: image.alt,
                           loading: 'eager',
                           fetchpriority: 'high'
