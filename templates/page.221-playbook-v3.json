@@ -126,12 +126,11 @@
       "blocks": {
         "past_winner_EbKtAE": {
           "type": "past_winner",
-          "disabled": true,
           "settings": {
-            "avatar_image": "shopify://shop_images/Alvis-Drift-Icon-Catherine-Constantinides.jpg",
-            "name": "Winner  June 18",
-            "handle": "@winnerthree",
-            "quote": "I love Alvi's wine!",
+            "avatar_image": "shopify://shop_images/Jacqueline_du_plessis.jpg",
+            "name": "Jacqueline du Plessis",
+            "handle": "jaxelinescat",
+            "quote": "After winning the rugby lottery by being eligible to purchase match day tickets, one of my most memorable Springbok rugby memories happened on the 7th of September 2024, when our boys defeated New Zealand 18-12 in a nail bitting battle. The atmosphere and gees in the stadium was electric and once the final whistle blew the stadium erupted with cheer and celebrations.",
             "read_more_url": ""
           }
         },
@@ -139,9 +138,10 @@
           "type": "past_winner",
           "disabled": true,
           "settings": {
-            "name": "Winner",
-            "handle": "@winnertwo",
-            "quote": "Amazing wine!",
+            "avatar_image": "shopify://shop_images/walter_sandler.jpg",
+            "name": "Walter Stander",
+            "handle": "Facebook",
+            "quote": "Most definitely my son's first ever live game at Newlands. He was only 3 years old. It was really special. He is 11years old now and we go to many matches together. He is a very passionate Stormers and Springbok supporter. I enlarged this pic, framed it and it's up in my braai area",
             "read_more_url": ""
           }
         },
@@ -164,7 +164,7 @@
       "settings": {
         "bg_image": "shopify://shop_images/221-Winners-bcko.png",
         "section_heading": "Now That's a 221 Story",
-        "phase": "full",
+        "phase": "phase1",
         "placeholder_week_label": "First Winner · Week of 30 June 2026",
         "placeholder_winner_name": "First winner announced 30 June.",
         "placeholder_message": "Submissions are open now. Winners drawn every Sunday from launch week.",
