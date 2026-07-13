@@ -51,6 +51,9 @@
 #age-gate:before{
   opacity:1
 }
+.display-none{
+  display:none
+}
 /* Explicit color on headings so theme h2/h3/h4 rules can't override */
 .pv3-lp .h2, .pv3-lp .h3, .pv3-lp .h4 { color: inherit; }
 .pv3-lp img { display: block; max-width: 100%; }
@@ -354,9 +357,7 @@
   margin-right: 0;
   margin-left: -2px;
 }
-.display-none{
-  display:none
-}
+
 .pv3-lp.pv3-nav .nav-cta-body {
   background: var(--cta-red);
   color: var(--white);
