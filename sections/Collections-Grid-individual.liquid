@@ -156,16 +156,22 @@
                           {{ wine_range_value | strip }}
                         </div>
                       {% endif %}
+                     {% liquid
+                      if section.settings.lazy_loader
+                        assign load_mode = 'lazy'
+                      else
+                        assign load_mode = 'eager'
+                      endif
+                    %}
 
                       {{ product.featured_image
-                      | image_url: width: 500
-                      | image_tag:
-                        loading: img_loading,
-                        fetchpriority: img_fetchpriority,
-                        width: product.featured_image.width,
-                        height: product.featured_image.height,
-                        sizes: '(max-width: 585px) 44vw, (max-width: 991px) 45vw, 280px',
-                        widths: '200, 325, 500, 650' }}
+                    | image_url: width: 500
+                    | image_tag:
+                      loading: load_mode,
+                      width: product.featured_image.width,
+                      height: product.featured_image.height,
+                      sizes: '(max-width: 585px) 44vw, (max-width: 991px) 45vw, 280px',
+                      widths: '200, 325, 500, 650' }}
 
                       {% if product.compare_at_price > product.price %}
                         {% assign discount_amount = product.compare_at_price | minus: product.price %}
