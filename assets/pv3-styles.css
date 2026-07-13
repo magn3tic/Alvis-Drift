@@ -52,7 +52,7 @@
   opacity:1
 }
 .display-none{
-  display:none
+  display:none !important
 }
 /* Explicit color on headings so theme h2/h3/h4 rules can't override */
 .pv3-lp .h2, .pv3-lp .h3, .pv3-lp .h4 { color: inherit; }
