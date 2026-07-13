@@ -1727,6 +1727,7 @@ body.no-scroll {
 .new-product-single .gallery-imgs-wrap img {
     max-height: 400px;
     margin: 0;
+	object-fit:contain
 }
 
 .new-product-single .gallery-imgs-wrap {
