@@ -121,6 +121,7 @@
       "name": "Collection Grid Single",
       "settings": {
         "topheading": "OUR Sparkling  & Cap Classic Wines",
+        "lazy_loader": true,
         "h1_enabled": false,
         "subtitle_1": "",
         "product_collection": "sparkling-range",
