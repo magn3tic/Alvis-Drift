@@ -3228,6 +3228,13 @@ p.sub-title {
 #age-gate::before {
   content: ""; position: absolute; inset: 0;
 }
+#age-gate {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
 #age-gate .age-container {
   position: relative;
    z-index: 1;
@@ -3934,3 +3941,4 @@ summary.list-menu__item {
 .icon-caret{
     width: 14px;
 }
+#age-gate
