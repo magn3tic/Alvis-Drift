@@ -3918,9 +3918,7 @@ summary.list-menu__item {
         font-size:23px !important;
         font-weight:800
     }
-    #age-gate:before{
-        background:none
-    }
+
     #age-gate .age-container{
         padding:30px 20px;
         width:85%
