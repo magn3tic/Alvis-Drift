@@ -21,7 +21,14 @@
               {% if product %}
                 <div class="ts-product">
                 <a href="{{ product.url }}">
-                  {{ product.featured_image | image_url: width: 400 | image_tag: alt: product.title }}
+                  {{ product.featured_image
+                  | image_url: width: 361, format: 'webp', quality: 75
+                  | image_tag:
+                    widths: '100, 150, 200, 240, 300, 361',
+                    sizes: '(min-width: 576px) 119px, 100px',
+                    width: 361,
+                    height: 1024,
+                    alt: product.title }}
                 </a>
                 </div>
               {% endif %}              
