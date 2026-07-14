@@ -5,7 +5,7 @@
         <div class="row">
           {% for block in section.blocks %}
             <div class="col-4">
-              <h3 class = "h4">{{ block.settings.title }}</h3>
+              <h3 class = "h5">{{ block.settings.title }}</h3>
               <ul>
                 {% for link in linklists[block.settings.menu].links %}
                   <li><a href="{{ link.url }}">{{ link.title }}</a></li>
