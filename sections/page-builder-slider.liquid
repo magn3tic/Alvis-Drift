@@ -39,61 +39,66 @@
           -%}
 
           {%- if forloop.first -%}
-            <link rel="preload" as="image"
-              href="{{ mobile_img | image_url: width: 480, format: 'webp' }}"
-              imagesrcset="
-                {{ mobile_img | image_url: width: 375, format: 'webp' }} 375w,
-                {{ mobile_img | image_url: width: 550, format: 'webp' }} 550w,
-                {{ mobile_img | image_url: width: 700, format: 'webp' }} 700w"
-              imagesizes="100vw"
-              media="(max-width: 695px)"
-              fetchpriority="high">
-            <link rel="preload" as="image"
-              href="{{ block.settings.image | image_url: width: 1600, format: 'webp' }}"
-              imagesrcset="
-                {{ block.settings.image | image_url: width: 700, format: 'webp' }} 700w,
-                {{ block.settings.image | image_url: width: 1100, format: 'webp' }} 1100w,
-                {{ block.settings.image | image_url: width: 1600, format: 'webp' }} 1600w"
-              imagesizes="100vw"
-              media="(min-width: 696px)"
-              fetchpriority="high">
-          {%- endif -%}
+          <link rel="preload" as="image"
+            href="{{ mobile_img | image_url: width: 550, format: 'webp', quality: 75 }}"
+            imagesrcset="
+              {{ mobile_img | image_url: width: 375, format: 'webp', quality: 75 }} 375w,
+              {{ mobile_img | image_url: width: 550, format: 'webp', quality: 75 }} 550w,
+              {{ mobile_img | image_url: width: 700, format: 'webp', quality: 75 }} 700w,
+              {{ mobile_img | image_url: width: 850, format: 'webp', quality: 75 }} 850w"
+            imagesizes="100vw"
+            media="(max-width: 695px)"
+            fetchpriority="high">
+          <link rel="preload" as="image"
+            href="{{ block.settings.image | image_url: width: 1350, format: 'webp', quality: 75 }}"
+            imagesrcset="
+              {{ block.settings.image | image_url: width: 900, format: 'webp', quality: 75 }} 900w,
+              {{ block.settings.image | image_url: width: 1100, format: 'webp', quality: 75 }} 1100w,
+              {{ block.settings.image | image_url: width: 1350, format: 'webp', quality: 75 }} 1350w,
+              {{ block.settings.image | image_url: width: 1600, format: 'webp', quality: 75 }} 1600w,
+              {{ block.settings.image | image_url: width: 1900, format: 'webp', quality: 75 }} 1900w,
+              {{ block.settings.image | image_url: width: 2200, format: 'webp', quality: 75 }} 2200w"
+            imagesizes="100vw"
+            media="(min-width: 696px)"
+            fetchpriority="high">
+        {%- endif -%}
 
-          <picture>
-            <source
-              media="(max-width: 695px)"
-              srcset="
-                {{ mobile_img | image_url: width: 375, format: 'webp' }} 375w,
-                {{ mobile_img | image_url: width: 550, format: 'webp' }} 550w,
-                {{ mobile_img | image_url: width: 700, format: 'webp' }} 700w
-              "
-              sizes="100vw">
+        <picture>
+          <source
+            media="(max-width: 695px)"
+            srcset="
+              {{ mobile_img | image_url: width: 375, format: 'webp', quality: 75 }} 375w,
+              {{ mobile_img | image_url: width: 550, format: 'webp', quality: 75 }} 550w,
+              {{ mobile_img | image_url: width: 700, format: 'webp', quality: 75 }} 700w,
+              {{ mobile_img | image_url: width: 850, format: 'webp', quality: 75 }} 850w
+            "
+            sizes="100vw">
 
-            <source
-              media="(min-width: 696px)"
-              srcset="
-                {{ block.settings.image | image_url: width: 700,  format: 'webp' }} 700w,
-                {{ block.settings.image | image_url: width: 1100, format: 'webp' }} 1100w,
-                {{ block.settings.image | image_url: width: 1300, format: 'webp' }} 1300w,
-                {{ block.settings.image | image_url: width: 1600, format: 'webp' }} 1600w,
-                {{ block.settings.image | image_url: width: 1800, format: 'webp' }} 1800w,
-                {{ block.settings.image | image_url: width: 2000, format: 'webp' }} 2000w
-              "
-              sizes="100vw">
+          <source
+            media="(min-width: 696px)"
+            srcset="
+              {{ block.settings.image | image_url: width: 900, format: 'webp', quality: 75 }} 900w,
+              {{ block.settings.image | image_url: width: 1100, format: 'webp', quality: 75 }} 1100w,
+              {{ block.settings.image | image_url: width: 1350, format: 'webp', quality: 75 }} 1350w,
+              {{ block.settings.image | image_url: width: 1600, format: 'webp', quality: 75 }} 1600w,
+              {{ block.settings.image | image_url: width: 1900, format: 'webp', quality: 75 }} 1900w,
+              {{ block.settings.image | image_url: width: 2200, format: 'webp', quality: 75 }} 2200w
+            "
+            sizes="100vw">
 
-            {{
-              mobile_img
-              | image_url: width: 750, format: 'webp'
-              | image_tag:
-                alt: slide_alt,
-                loading: slide_loading,
-                fetchpriority: slide_fetchpriority,
-                decoding: slide_decoding,
-                widths: '375, 550, 750',
-                sizes: '100vw',
-                style: image_position
-            }}
-          </picture>
+          {{
+            mobile_img
+            | image_url: width: 550, format: 'webp', quality: 75
+            | image_tag:
+              alt: slide_alt,
+              loading: slide_loading,
+              fetchpriority: slide_fetchpriority,
+              decoding: slide_decoding,
+              widths: '375, 550, 700, 850',
+              sizes: '100vw',
+              style: image_position
+          }}
+        </picture>
         {% endif %}
         {% endif %}
 
