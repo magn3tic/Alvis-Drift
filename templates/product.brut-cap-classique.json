@@ -103,78 +103,6 @@
         "enable_video_looping": false
       }
     },
-    "1639223856bcb87c3a": {
-      "type": "Logos",
-      "blocks": {
-        "163922385675455466-0": {
-          "type": "item",
-          "settings": {
-            "logo_link": ""
-          }
-        },
-        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0": {
-          "type": "item",
-          "settings": {
-            "logo_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "163922385675455466-0",
-        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"
-      ],
-      "disabled": true,
-      "settings": {
-        "title_text": "",
-        "Heading_color": "#f8f2e6"
-      }
-    },
-    "image_with_overlay_text_FgMNYw": {
-      "type": "Image-With-Overlay-Text",
-      "blocks": {
-        "heading_VQ8Nqa": {
-          "type": "heading",
-          "settings": {
-            "heading": "future-forward wines",
-            "heading_size": "medium"
-          }
-        },
-        "text_fyjJez": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        },
-        "buttons_zWj7eF": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "discover more",
-            "button_link_1": "shopify://pages/sustainability",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_VQ8Nqa",
-        "text_fyjJez",
-        "buttons_zWj7eF"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Website_banner_sustainability_00c60d8b-a6d1-4a64-8a6f-3b534904e9c1.jpg",
-        "image_height": "small",
-        "adapt_height_first_image": true,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "accent-2",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "1639224403b97d22e1": {
       "type": "Call-To-Action",
       "settings": {
@@ -188,98 +116,25 @@
         "hide_margin": true
       }
     },
-    "1639224916778fd50c": {
-      "type": "Focus-Text-Image-Right",
-      "disabled": true,
+    "collections_grid_individual_BBxBAx": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
       "settings": {
-        "our-story-vid": "shopify://shop_images/Vineyards-04.jpg",
-        "right_video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#f8f2e6",
-        "title": "HERITAGE",
-        "video-sec-content-txt-1": "<p>Alvi's Drift winery takes its name from the low-water bridge over the Breede River which cuts through the family farm. Our family patriarch, Albertus Viljoen \"Oupa Alvi\" van der Merwe was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines.</p>",
-        "button-txt": "SPARKLING RANGE",
-        "button_link": "shopify://collections/sparkling-range",
-        "button_type": "alvisBtn"
-      }
-    },
-    "164389167233af3082": {
-      "type": "Focus-Text-Image-Left",
-      "disabled": true,
-      "settings": {
-        "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/DJI_0001.jpg",
-        "image_size": "100%",
-        "video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#f8f2e6",
-        "title": "ON THE VINES",
-        "video-sec-content-txt-1": "<p>Growing in the ancient limestone soils so characteristic of the Breede River Valley region, our mature Chardonnay vineyards are ideally situated for yielding grapes of the quality, character and complexity required for an outstanding Cap Classique sparkling wine. Our Pinot Noir vineyards are situated on north-facing slopes, with many vines grown in black slate soil.</p><p>The Chardonnay and Pinot Noir grapes for this wine are selectively hand-harvested early in the season in the cool, morning hours to ensure the crisp, fresh acidity so crucial to producing a superb Cap Classique wine.</p>",
-        "button-txt": "",
-        "button_link": "",
-        "button_type": "alvisBtn"
-      }
-    },
-    "1643891681b50e1638": {
-      "type": "Focus-Text-Image-Right",
-      "disabled": true,
-      "settings": {
-        "our-story-vid": "shopify://shop_images/Cellar-17.jpg",
-        "right_video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#f8f2e6",
-        "title": "IN THE CELLAR",
-        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Once delivered to our cellar, cool Chardonnay and Pinot Noir grapes are whole-bunch pressed to ensure a soft, elegant base wine before dry fermentation commences.</p><p>For its secondary fermentation, this Cap Classique sparkling wine is bottle-fermented according to the traditional method, then aged on lees for 24 months before disgorgement and dosage.</p>",
-        "button-txt": "",
-        "button_link": "",
-        "button_type": "alvisBtn"
-      }
-    },
-    "16392534101a01b24e": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "16392534108f7600fd-0": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "CAP CLASSIQUE WINES",
-            "collectionCarasoul": "cap-classique-range"
-          }
-        },
-        "item_EtEJc8": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "SPARKLING WINES",
-            "collectionCarasoul": "sparkling-range"
-          }
-        },
-        "item_h9Xtkj": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "",
-            "collectionCarasoul": ""
-          }
-        }
-      },
-      "block_order": [
-        "16392534108f7600fd-0",
-        "item_EtEJc8",
-        "item_h9Xtkj"
-      ],
-      "settings": {
-        "topheading": "OUR CAP CLASSIQUE & SPARKLING WINES",
-        "hide_filter": false
+        "topheading": "Our Cap Classique & Sparkling Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "sparkling-cap-classique",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
       }
     }
   },
   "order": [
     "1639248182bc55fb26",
     "main",
-    "1639223856bcb87c3a",
-    "image_with_overlay_text_FgMNYw",
     "1639224403b97d22e1",
-    "1639224916778fd50c",
-    "164389167233af3082",
-    "1643891681b50e1638",
-    "16392534101a01b24e"
+    "collections_grid_individual_BBxBAx"
   ]
 }
