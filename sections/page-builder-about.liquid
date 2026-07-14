@@ -16,7 +16,7 @@
             autoplay muted loop playsinline preload="none" aria-hidden="true"
             {% if poster_url != '' %}poster="{{ poster_url }}"{% endif %}
             style="width:100%;height:auto;display:block;">
-            <source src="{{ section.settings.video_url }}" type="video/mp4">
+            <source data-src="{{ section.settings.video_url }}" type="video/mp4">
           </video>
         {% elsif section.settings.video_post != blank %}
           <img src="{{ section.settings.video_post | image_url: width: 1800 }}" alt="{{ section.settings.heading | escape }}" width="800" loading="lazy">
