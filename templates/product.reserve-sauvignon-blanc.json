@@ -92,78 +92,6 @@
         "enable_video_looping": false
       }
     },
-    "1639223856bcb87c3a": {
-      "type": "Logos",
-      "blocks": {
-        "163922385675455466-0": {
-          "type": "item",
-          "settings": {
-            "logo_link": ""
-          }
-        },
-        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0": {
-          "type": "item",
-          "settings": {
-            "logo_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "163922385675455466-0",
-        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"
-      ],
-      "disabled": true,
-      "settings": {
-        "title_text": "",
-        "Heading_color": "#f8f2e6"
-      }
-    },
-    "image_with_overlay_text_VMiG9z": {
-      "type": "Image-With-Overlay-Text",
-      "blocks": {
-        "heading_iex6Na": {
-          "type": "heading",
-          "settings": {
-            "heading": "future-forward wines",
-            "heading_size": "medium"
-          }
-        },
-        "text_KW8jLc": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        },
-        "buttons_apxkJP": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "discover more",
-            "button_link_1": "shopify://pages/sustainability",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_iex6Na",
-        "text_KW8jLc",
-        "buttons_apxkJP"
-      ],
-      "disabled": true,
-      "settings": {
-        "image": "shopify://shop_images/Website_banner_sustainability_00c60d8b-a6d1-4a64-8a6f-3b534904e9c1.jpg",
-        "image_height": "medium",
-        "adapt_height_first_image": true,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "accent-2",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
-      }
-    },
     "1639224403b97d22e1": {
       "type": "Call-To-Action",
       "settings": {
@@ -177,61 +105,15 @@
         "hide_margin": true
       }
     },
-    "1639224916778fd50c": {
-      "type": "Focus-Text-Image-Right",
-      "disabled": true,
-      "settings": {
-        "our-story-vid": "shopify://shop_images/DSC_5742.jpg",
-        "right_video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#aac4d3",
-        "title": "HERITAGE",
-        "video-sec-content-txt-1": "<p>The wine labels on bottles from our Reserve range feature an illustration of Alvi’s Drift, the low-water bridge over the Breede River cutting through the family farm. Our patriarch, Albertus Viljoen “Oupa Alvi” van der Merwe, was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p><p>Our Alvi’s Drift Reserve range is the culmination of our pursuit of excellence in producing outstanding wines of unrivalled complexity.</p>",
-        "button-txt": "RESERVE RANGE",
-        "button_link": "shopify://collections/reserve-range",
-        "button_type": "alvisBtn"
-      }
-    },
-    "16438973046b12caf0": {
-      "type": "Focus-Text-Image-Left",
-      "disabled": true,
-      "settings": {
-        "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/DSC_5267.jpg",
-        "image_size": "100%",
-        "video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#aac4d3",
-        "title": "ON THE VINES",
-        "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity. </p><p>Our vineyards are sustainably fertilised with natural compost produced on our farm. Come harvest time, our grapes are selectively hand harvested in the cool, early morning hours to ensure optimal quality and flavour.</p>",
-        "button-txt": "",
-        "button_link": "",
-        "button_type": "alvisBtn"
-      }
-    },
-    "1643897314ca40fa3b": {
-      "type": "Focus-Text-Image-Right",
-      "disabled": true,
-      "settings": {
-        "our-story-vid": "shopify://shop_images/Cellar-02.jpg",
-        "right_video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#aac4d3",
-        "title": "IN THE CELLAR",
-        "video-sec-content-txt-1": "<p>In the Alvi’s Drift cellar, our winemaking team strongly focuses on preserving the fruit-driven expression of the grapes that go into our award-winning South African wines.</p><p>Created entirely from estate-grown grapes; once inside the cellar, each variety in this blended wine is vinified separately, showcasing the distinct character of each grape varietal. Only the highest-quality oak barrels are used to mature this elegant, memorable wine.</p>",
-        "button-txt": "",
-        "button_link": "",
-        "button_type": "alvisBtn"
-      }
-    },
     "collections_grid_individual_8Vkw6B": {
       "type": "Collections-Grid-individual",
       "name": "Collection Grid Single",
       "settings": {
-        "topheading": "OUR RED WINES",
+        "topheading": "Our White Wines",
+        "lazy_loader": true,
         "h1_enabled": false,
         "subtitle_1": "",
-        "product_collection": "red-wines",
+        "product_collection": "white-wines",
         "product_amount": 30,
         "hide_product_filters": false,
         "hide_meta_tags": false
@@ -241,12 +123,7 @@
   "order": [
     "1639248182bc55fb26",
     "main",
-    "1639223856bcb87c3a",
-    "image_with_overlay_text_VMiG9z",
     "1639224403b97d22e1",
-    "1639224916778fd50c",
-    "16438973046b12caf0",
-    "1643897314ca40fa3b",
     "collections_grid_individual_8Vkw6B"
   ]
 }
