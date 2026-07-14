@@ -2100,6 +2100,9 @@ body .new-product-single .product-form {
 		text-align:center;
 		margin-bottom:10px
 	}
+	.ald-sale-slider .slide-content{
+		border-radius:1.5rem
+	}
 	.cta-btn{
 		font-size:12px;
 		padding:5px 25px
