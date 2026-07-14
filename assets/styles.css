@@ -4481,34 +4481,8 @@ button.t-link:hover {
     }
 }
 
-#age-gate div {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%)
-}
 
-#age-gate button {
-    padding: 10px 20px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    cursor: pointer
-}
 
-.age-container h1 {
-    color: #d5c7be
-}
-
-#age-gate {
-    width: 100%;
-    height: auto;
-    margin: auto;
-    color: #fff;
-    text-align: center; 
-}
-
-.age-container p {
-    margin-top: -10px
-}
 
 @media only screen and (max-width: 970px) {
    
