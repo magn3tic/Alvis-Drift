@@ -3277,6 +3277,12 @@ body #age-gate button {
     border: none;
 	font-weight: 600;
 }
+#age-gate:before {
+    background: #fff;
+    height: 100%;
+    filter: blur(1px);
+    opacity: 0.9;
+}
 
 .list-menu {
     list-style: none;

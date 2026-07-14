@@ -3122,12 +3122,7 @@ body:not(.template-index) .shop-tabs {
 	max-height: 60px;
 }
 
-#age-gate:before {
-    background: #fff;
-    height: 100%;
-    filter: blur(1px);
-    opacity: 0.9;
-}
+
 
 @media (min-width: 768px) {
 
