@@ -46,7 +46,7 @@
           "settings": {
             "video": "",
             "image": "shopify://shop_images/Alvis_Drift_Home_Banner.jpg",
-            "mobile_image": "shopify://shop_images/Alvis_Drift_siganture_banner_mobile.jpg",
+            "mobile_image": "shopify://shop_images/Alvis_drift_Hero_Banner.png",
             "object_pos_x": "center",
             "object_pos_y": "center",
             "heading": "SIGNATURE SELECTION",
