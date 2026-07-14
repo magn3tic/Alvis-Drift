@@ -105,12 +105,6 @@
             "icon": "none",
             "border": false
           }
-        },
-        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share This Page"
-          }
         }
       },
       "block_order": [
@@ -121,144 +115,12 @@
         "14ee16e7-ff0d-4ff3-baac-e6f7e0b711b2",
         "1497de47-2190-477f-afa3-65b8c212896b",
         "e066d202-0fad-4199-8b6e-c0b24b95b7e8",
-        "4d607bca-df22-4c60-9735-3c95167212f7",
-        "a9428cd9-b80c-40ea-88e5-2c83bc1e8990"
+        "4d607bca-df22-4c60-9735-3c95167212f7"
       ],
       "settings": {
         "enable_sticky_info": true,
         "hide_variants": false,
         "enable_video_looping": false
-      }
-    },
-    "1639223856bcb87c3a": {
-      "type": "Logos",
-      "blocks": {
-        "163922385675455466-0": {
-          "type": "item",
-          "settings": {
-            "logo_link": ""
-          }
-        },
-        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0": {
-          "type": "item",
-          "settings": {
-            "logo_link": ""
-          }
-        }
-      },
-      "block_order": [
-        "163922385675455466-0",
-        "90f8b20d-c3b2-41e9-b8d6-be8d8e5dfef0"
-      ],
-      "disabled": true,
-      "settings": {
-        "title_text": "",
-        "Heading_color": "#f8f2e6"
-      }
-    },
-    "16392371564aec5ac1": {
-      "type": "Multi-Column-Content",
-      "blocks": {
-        "163923715616dacea7-0": {
-          "type": "column",
-          "settings": {
-            "title": "ALCOHOL",
-            "Title_color": "#5c6e67",
-            "text": "<p>13,6%</p>",
-            "Text_color": "#2e112d"
-          }
-        },
-        "163923715616dacea7-1": {
-          "type": "column",
-          "settings": {
-            "title": "RESIDUAL SUGAR",
-            "Title_color": "#5c6e67",
-            "text": "<p>4,7 g/l</p>",
-            "Text_color": "#2e112d"
-          }
-        },
-        "163923715616dacea7-2": {
-          "type": "column",
-          "settings": {
-            "title": "ACIDITY",
-            "Title_color": "#5c6e67",
-            "text": "<p>5,9 g/l</p>",
-            "Text_color": "#2e112d"
-          }
-        },
-        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79": {
-          "type": "column",
-          "settings": {
-            "title": "pH",
-            "Title_color": "#5c6e67",
-            "text": "<p>3,3</p>",
-            "Text_color": "#2e112d"
-          }
-        }
-      },
-      "block_order": [
-        "163923715616dacea7-0",
-        "163923715616dacea7-1",
-        "163923715616dacea7-2",
-        "aea1e924-be0e-4fad-bc4e-1959cf2c7e79"
-      ],
-      "disabled": true,
-      "settings": {
-        "Background_Colour": "#f8f2e6",
-        "title": "ANALYSIS",
-        "Heading_color": "#c0ccbe",
-        "image_width": "third",
-        "image_ratio": "adapt",
-        "column_alignment": "left",
-        "background_style": "none",
-        "button_label": "",
-        "button_link": "",
-        "swipe_on_mobile": false
-      }
-    },
-    "image_with_overlay_text_DRCTEG": {
-      "type": "Image-With-Overlay-Text",
-      "blocks": {
-        "heading_RHpftY": {
-          "type": "heading",
-          "settings": {
-            "heading": "future-forward wines",
-            "heading_size": "medium"
-          }
-        },
-        "text_76UCP6": {
-          "type": "text",
-          "settings": {
-            "text": ""
-          }
-        },
-        "buttons_RqWriB": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "discover more",
-            "button_link_1": "shopify://pages/sustainability",
-            "button_style_secondary_1": false,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_RHpftY",
-        "text_76UCP6",
-        "buttons_RqWriB"
-      ],
-      "settings": {
-        "image": "shopify://shop_images/Website_banner_sustainability_00c60d8b-a6d1-4a64-8a6f-3b534904e9c1.jpg",
-        "image_height": "medium",
-        "adapt_height_first_image": true,
-        "desktop_text_box_position": "center",
-        "show_text_box": true,
-        "image_overlay_opacity": 0,
-        "color_scheme": "accent-2",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
       }
     },
     "1639224403b97d22e1": {
@@ -270,7 +132,8 @@
         "title": "SERVING SUGGESTION",
         "detail_box_txt": "<p>Serve with hearty oxtail, game pie or peri-peri chicken</p>",
         "btn-txt": "",
-        "btn-url": ""
+        "btn-url": "",
+        "hide_margin": true
       }
     },
     "1639224916778fd50c": {
@@ -324,7 +187,8 @@
           "type": "item",
           "settings": {
             "collection_heading": "",
-            "collectionCarasoul": "red-wines"
+            "collectionCarasoul": "red-wines",
+            "product_amount": 30
           }
         }
       },
@@ -333,17 +197,15 @@
       ],
       "settings": {
         "topheading": "OUR RED WINES",
-        "subtitle-1": "",
-        "active_collection": "red-wines"
+        "subtitle_1": "",
+        "hide_filter": false,
+        "hide_meta_tags": false
       }
     }
   },
   "order": [
     "1639248182bc55fb26",
     "main",
-    "1639223856bcb87c3a",
-    "16392371564aec5ac1",
-    "image_with_overlay_text_DRCTEG",
     "1639224403b97d22e1",
     "1639224916778fd50c",
     "164389850991edefab",
