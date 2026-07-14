@@ -13,7 +13,7 @@
             {%- assign poster_url = section.settings.video_post | image_url: width: 800 -%}
           {%- endif -%}
           <video id = "hero-video"
-            autoplay muted loop playsinline preload="none"
+            autoplay muted loop playsinline preload="none" aria-hidden="true"
             {% if poster_url != '' %}poster="{{ poster_url }}"{% endif %}
             style="width:100%;height:auto;display:block;">
             <source src="{{ section.settings.video_url }}" type="video/mp4">
