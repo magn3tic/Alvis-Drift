@@ -2,17 +2,18 @@
 {% if request.path == '/pages/influencer-registration' %}
   <script>
     (function () {
-      // Click fallback (covers cases where submitter isn't supported)
-      document.addEventListener('click', function (e) {
-        const btn = e.target.closest('button[data-influencer-submit="1"]');
-        if (btn) sessionStorage.setItem('influencerRegSubmitted', '1');
-      }, true);
-
-      // More accurate when supported
       document.addEventListener('submit', function (e) {
-        const submitter = e.submitter;
+        var submitter = e.submitter;
         if (submitter && submitter.matches('button[data-influencer-submit="1"]')) {
           sessionStorage.setItem('influencerRegSubmitted', '1');
+        }
+      }, true);
+
+      // Fallback for browsers without e.submitter
+      document.addEventListener('click', function (e) {
+        if (!('submitter' in SubmitEvent.prototype)) {
+          var btn = e.target.closest('button[data-influencer-submit="1"]');
+          if (btn) sessionStorage.setItem('influencerRegSubmitted', '1');
         }
       }, true);
     })();
@@ -20,37 +21,41 @@
 {% endif %}
 
 {% comment %} 2) On home page: show popup once (only if logged in) {% endcomment %}
-{% if request.path == '/' %}
-  <dialog id="welcomePopup" class = "popup" style="">
-    <div class = "row">
-      <div class = "col-5">
-        <img src = "https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis_Drift_Influencer_banner_aaf4f7ef-e2bd-43d3-9b51-7ab46041a87a.png?v=1769760534" alt = "Alvis Drift Influencer Banner">
+{% if request.path == '/' and customer %}
+  <dialog id="welcomePopup" class="popup" aria-labelledby="welcomePopupTitle">
+    <div class="row">
+      <div class="col-5">
+        <img
+          data-src="https://cdn.shopify.com/s/files/1/0608/0505/4720/files/Alvis_Drift_Influencer_banner_aaf4f7ef-e2bd-43d3-9b51-7ab46041a87a.png?v=1769760534&width=500&format=webp&quality=75"
+          alt="Alvis Drift Influencer Banner"
+          width="500" height="500">
       </div>
-      <div class = "col-7 ">
-    <button class = "btn-popup" type="button" onclick="document.getElementById('welcomePopup').close()"> 
-      {% render 'icon-close' %}
-    </button>
-    <div class = "popup-content">
-    <h3>Welcome to the Club {% if customer %}{{ customer.first_name }}{% endif %}!</h3><br>
-    <p>As a sliver member you now qualify for 10% off your favourite wines.</p>
-    <b><a href = "/pages/terms-and-condition">Ts & Cs apply</a></b>
-    </div>
-    </div>
+      <div class="col-7">
+        <button class="btn-popup" type="button" onclick="document.getElementById('welcomePopup').close()">
+          {% render 'icon-close' %}
+        </button>
+        <div class="popup-content">
+          <h3 id="welcomePopupTitle">Welcome to the Club {{ customer.first_name }}!</h3><br>
+          <p>As a Silver member you now qualify for 10% off your favourite wines.</p>
+          <b><a href="/pages/terms-and-condition">Ts &amp; Cs apply</a></b>
+        </div>
+      </div>
     </div>
   </dialog>
 
   <script>
     (function () {
-      const wasInfluencerSubmit = sessionStorage.getItem('influencerRegSubmitted') === '1';
-      if (!wasInfluencerSubmit) return;
-
-      const isLoggedIn = {{ customer != blank | json }};
-      if (!isLoggedIn) return;
-
-      const popup = document.getElementById('welcomePopup');
-      if (popup && typeof popup.showModal === 'function') popup.showModal();
-
+      if (sessionStorage.getItem('influencerRegSubmitted') !== '1') return;
       sessionStorage.removeItem('influencerRegSubmitted');
+
+      var popup = document.getElementById('welcomePopup');
+      if (!popup || typeof popup.showModal !== 'function') return;
+
+      // Load the image only now, at the moment the popup will actually show
+      var img = popup.querySelector('img[data-src]');
+      if (img) { img.src = img.dataset.src; img.removeAttribute('data-src'); }
+
+      popup.showModal();
     })();
   </script>
 {% endif %}
