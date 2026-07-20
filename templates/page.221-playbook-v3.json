@@ -143,22 +143,11 @@
             "quote": "Most definitely my son's first ever live game at Newlands. He was only 3 years old. It was really special. He is 11years old now and we go to many matches together. He is a very passionate Stormers and Springbok supporter. I enlarged this pic, framed it and it's up in my braai area",
             "read_more_url": ""
           }
-        },
-        "past_winner_99eTmx": {
-          "type": "past_winner",
-          "disabled": true,
-          "settings": {
-            "name": "Winner",
-            "handle": "@winnerone",
-            "quote": "I won the prize",
-            "read_more_url": ""
-          }
         }
       },
       "block_order": [
         "past_winner_EbKtAE",
-        "past_winner_L6fj9i",
-        "past_winner_99eTmx"
+        "past_winner_L6fj9i"
       ],
       "settings": {
         "bg_image": "shopify://shop_images/221-Winners-bcko.png",
