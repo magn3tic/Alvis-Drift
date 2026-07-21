@@ -105,7 +105,11 @@
         <div class="alcontainer">
           <div class="slide-content">
             {% if block.settings.heading != blank %}
-              <h2 class = "h3">{{ block.settings.heading }}</h2>
+              {% if forloop.first %}
+                <h1 class="h3">{{ block.settings.heading }}</h1>
+              {% else %}
+                <h2 class="h3">{{ block.settings.heading }}</h2>
+              {% endif %}
             {% endif %}
             {% if block.settings.subtext != blank %}
               <p>{{ block.settings.subtext }}</p>
