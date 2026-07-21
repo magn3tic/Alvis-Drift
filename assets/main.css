@@ -438,7 +438,9 @@ text-transform:uppercase
     padding: 28px 30px;
     position: relative;
 }
-
+.video-grid{
+	padding:50px
+}
 .ald-sale-slider .slide-content h2, .ald-sale-slider .slide-content h1 {
 	color: #C65336;
 	text-align: center;
