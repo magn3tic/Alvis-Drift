@@ -99,11 +99,6 @@
         "disabled": false,
         "settings": {}
       },
-      "2200952712151285029": {
-        "type": "shopify://apps/microsoft-clarity/blocks/brandAgents_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
-        "disabled": true,
-        "settings": {}
-      },
       "17886228253295867988": {
         "type": "shopify://apps/instafeed-studio/blocks/instst-global-embed-block/5b70ee8b-b29d-49b4-b61c-bcce1d2977c7",
         "disabled": true,
@@ -111,6 +106,11 @@
           "global_custom_script": "",
           "global_custom_style": ""
         }
+      },
+      "2200952712151285029": {
+        "type": "shopify://apps/microsoft-clarity/blocks/brandAgents_js/31c3d126-8116-4b4a-8ba1-baeda7c4aeea",
+        "disabled": false,
+        "settings": {}
       }
     }
   }
