@@ -1,4 +1,4 @@
-<div id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title" hidden>
+<div id="age-gate" role="dialog" aria-modal="true" aria-labelledby="age-gate-title">
   <div style="position:relative; top:50%; transform:translateY(-50%);" class="age-container">
     <p><span class="age-header" id="age-gate-title">Are you over 18?</span></p>
     <p>SA legislation requires alcohol buyers<br>and consumers to be over 18 years old.</p>
@@ -6,3 +6,23 @@
     <button id="age-no" type="button" style="padding:10px 20px; font-size:16px;font-weight:700">Under 18</button>
   </div>
 </div>
+<script>
+  (function () {
+    var gate = document.getElementById('age-gate');
+    if (!gate) return;
+
+    var exempt = ['/pages/the-221-game'].some(function (p) {
+      return location.pathname === p || location.pathname.indexOf(p + '/') === 0;
+    });
+
+    var verified = false;
+    try { verified = localStorage.getItem('ageVerified') === 'true'; } catch (e) {}
+
+    if (exempt || verified) {
+      gate.setAttribute('hidden', '');
+    } else {
+      document.documentElement.style.overflow = 'hidden';
+      document.getElementById('age-yes').focus();
+    }
+  })();
+</script>

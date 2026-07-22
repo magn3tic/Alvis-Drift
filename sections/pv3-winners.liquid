@@ -4,7 +4,7 @@
   <div class="container">
     <div class="reveal">
       <span class="eyebrow">05 / Weekly Winners</span>
-      <h2 class="h2" id="pv3-winners-heading" style="margin-top:24px;">NOW THAT'S <span style="font-family:var(--font-display-inline);color:var(--gold);">A 221 STORY</span></h2>
+      <h2 class="h2" id="pv3-winners-heading" style="margin-top:24px;margin-bottom:50px">NOW THAT'S <span style="font-family:var(--font-display-inline);color:var(--gold);">A 221 STORY</span></h2>
     </div>
 
     {% if section.settings.phase == 'phase1' %}
@@ -23,7 +23,7 @@
 
     {% else %}
     <!-- Full state: featured winner -->
-    <article class="winner-featured-card reveal">
+    <article class="winner-featured-card reveal {% if section.settings.feature_hide != blank %}display-none{% endif %}">
       <div class="winner-avatar">
         {% if section.settings.featured_photo %}
           <img src="{{ section.settings.featured_photo | image_url: width: 360 }}" alt="{{ section.settings.featured_name | escape }}" loading="lazy" />
@@ -100,6 +100,7 @@
     { "type": "text",     "id": "placeholder_winner_name", "label": "Placeholder Name", "default": "First winner announced 18 June." },
     { "type": "textarea", "id": "placeholder_message",     "label": "Placeholder Text", "default": "Submissions are open now. Winners drawn every Sunday from launch week." },
     { "type": "header",       "content": "Featured Winner" },
+    { "type": "checkbox", "default":false, "id": "feature_hide", "label": "Hide Featured Winner"},
     { "type": "image_picker", "id": "featured_photo",  "label": "Winner Photo" },
     { "type": "image_picker", "id": "winner_badge",    "label": "Winner Badge Image", "info": "Replaces the 'Winner' text badge. Leave empty to hide the badge column." },
     { "type": "text",         "id": "featured_name",   "label": "Winner Name",       "default": "Hennie de Waal" },

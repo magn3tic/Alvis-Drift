@@ -111,149 +111,17 @@
         "hide_margin": true
       }
     },
-    "focus_text_image_right_fjeHqG": {
-      "type": "Focus-Text-Image-Right",
-      "disabled": true,
+    "collections_grid_individual_gJ6fAw": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
       "settings": {
-        "our-story-vid": "shopify://shop_images/DSC_5742.jpg",
-        "right_video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#aac4d3",
-        "title": "HERITAGE",
-        "video-sec-content-txt-1": "<p>The wine labels on bottles from our Reserve range feature an illustration of Alvi’s Drift, the low-water bridge over the Breede River cutting through the family farm. Our patriarch, Albertus Viljoen “Oupa Alvi” van der Merwe, was instrumental in having this bridge built back in 1930.</p><p>Oupa Alvi’s son Bertie started wine production on the family farm and today Bertie’s son, Alvi’s Drift winemaker Alvi van der Merwe produces the winery’s award-winning South African wines, enjoyed by wine lovers around the globe.</p><p>Our Alvi’s Drift Reserve range is the culmination of our pursuit of excellence in producing outstanding wines of unrivalled complexity.</p>",
-        "button-txt": "RESERVE RANGE",
-        "button_link": "shopify://collections/reserve-range",
-        "button_type": "alvisBtn"
-      }
-    },
-    "focus_text_image_left_JVGRdD": {
-      "type": "Focus-Text-Image-Left",
-      "disabled": true,
-      "settings": {
-        "background_colour": "#00000000",
-        "our-story-vid": "shopify://shop_images/DSC_5267.jpg",
-        "image_size": "100%",
-        "video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#aac4d3",
-        "title": "ON THE VINES",
-        "video-sec-content-txt-1": "<p>With an ideal Mediterranean microclimate, an abundance of soil diversity and water from the life-giving Breede River, the Alvi’s Drift vineyards are ideally positioned for producing remarkable South African wines of unique character and complexity.</p><p>Our Reserve range showcases the best of our harvest; a fusion of our trademark fresh, primary-fruit style – with just a hint of the luscious and opulent barrel-fermented style of our Albertus Viljoen Icon range.</p>",
-        "button-txt": "",
-        "button_link": "",
-        "button_type": "alvisBtn"
-      }
-    },
-    "focus_text_image_right_twammW": {
-      "type": "Focus-Text-Image-Right",
-      "disabled": true,
-      "settings": {
-        "our-story-vid": "shopify://shop_images/Cellar-02.jpg",
-        "right_video_url": "",
-        "Heading_size": "h2",
-        "Heading_color": "#aac4d3",
-        "title": "IN THE CELLAR",
-        "video-sec-content-txt-1": "<p>A true Cape blend led by Pinotage and backed by Cabernet Sauvignon, this wine is literally a fusion of old and new. Not only of grapes and styles of wine, but also of winemaking techniques, with each variety vinified separately to showcase specific characters of each varietal.</p><p>After juice is macerated on skins, each variety follows its own path through the cellar, enjoying pumping-over and open-tank fermentation in some cases, while other varieties enjoy partial tank fermentation, completing fermentation in barrel. The wine is matured for 18 months in a combination of French and American oak barrels, of which approximately a third are new. Thereafter, wines from individual barrels are carefully selected to make up the final blend.</p>",
-        "button-txt": "",
-        "button_link": "",
-        "button_type": "alvisBtn"
-      }
-    },
-    "page_builder_suggestion_UyqdUR": {
-      "type": "page-builder-suggestion",
-      "blocks": {
-        "image_block_iAzMj8": {
-          "type": "image_block",
-          "settings": {
-            "image": "shopify://shop_images/product-img-1.png",
-            "alt_text": ""
-          }
-        },
-        "image_block_MckfPz": {
-          "type": "image_block",
-          "settings": {
-            "image": "shopify://shop_images/product-img-2.png",
-            "alt_text": ""
-          }
-        },
-        "image_block_XMKAkh": {
-          "type": "image_block",
-          "settings": {
-            "image": "shopify://shop_images/product-img-3.png",
-            "alt_text": ""
-          }
-        }
-      },
-      "block_order": [
-        "image_block_iAzMj8",
-        "image_block_MckfPz",
-        "image_block_XMKAkh"
-      ],
-      "disabled": true,
-      "name": "Serving Suggestion",
-      "settings": {
-        "heading": "SERVING SUGGESTION",
-        "subheading": "Serve this wine with soft cheeses like chèvre, Brie or Camembert. It will also complement grilled fish, drizzled with lemon-butter sauce, grilled chicken or a fresh Caesar salad."
-      }
-    },
-    "page_builder_benefits_bjJjNg": {
-      "type": "page-builder-benefits",
-      "blocks": {
-        "benefit_jr8Q7W": {
-          "type": "benefit",
-          "settings": {
-            "heading": "People",
-            "text": "<p>Behind every bottle are the hands that made it. We support our farm community with fair wages, safe housing, healthcare, and opportunities for growth – because people are our foundation.</p>",
-            "link": ""
-          }
-        },
-        "benefit_YUNbFE": {
-          "type": "benefit",
-          "settings": {
-            "heading": "Planet",
-            "text": "<p>Our land gives us everything – so we farm it with care. From water-wise practices to low-intervention winemaking, sustainability guides every step in the vineyard and cellar.</p>",
-            "link": ""
-          }
-        },
-        "benefit_XGAKVT": {
-          "type": "benefit",
-          "settings": {
-            "heading": "Future",
-            "text": "<p>Through our partnership with the Indaba Institute, we invest in what’s next: early childhood education, nutrition programs, and youth development that empowers the next generation to thrive.</p>",
-            "link": ""
-          }
-        }
-      },
-      "block_order": [
-        "benefit_jr8Q7W",
-        "benefit_YUNbFE",
-        "benefit_XGAKVT"
-      ],
-      "disabled": true,
-      "name": "New Benefits Section",
-      "settings": {
-        "small_heading": "Benefits",
-        "banner_image": "shopify://shop_images/dare-to-do-right-banner.png"
-      }
-    },
-    "16392534101a01b24e": {
-      "type": "Collections-Grid",
-      "blocks": {
-        "16392534108f7600fd-0": {
-          "type": "item",
-          "settings": {
-            "collection_heading": "Red Wines",
-            "collectionCarasoul": "red-wines",
-            "product_amount": 30
-          }
-        }
-      },
-      "block_order": [
-        "16392534108f7600fd-0"
-      ],
-      "settings": {
-        "topheading": "OUR RED WINES",
+        "topheading": "Our Red Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
         "subtitle_1": "",
-        "hide_filter": true,
+        "product_collection": "red-wines",
+        "product_amount": 30,
+        "hide_product_filters": false,
         "hide_meta_tags": false
       }
     }
@@ -261,11 +129,6 @@
   "order": [
     "main",
     "call_to_action_AcpaQ4",
-    "focus_text_image_right_fjeHqG",
-    "focus_text_image_left_JVGRdD",
-    "focus_text_image_right_twammW",
-    "page_builder_suggestion_UyqdUR",
-    "page_builder_benefits_bjJjNg",
-    "16392534101a01b24e"
+    "collections_grid_individual_gJ6fAw"
   ]
 }

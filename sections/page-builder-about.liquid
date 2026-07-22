@@ -12,19 +12,23 @@
           {%- if section.settings.video_post != blank -%}
             {%- assign poster_url = section.settings.video_post | image_url: width: 800 -%}
           {%- endif -%}
-          <video
-            autoplay muted loop playsinline
-            {% if poster_url != '' %}poster="{{ poster_url }}"{% endif %}
+
+          <video id="hero-video"
+            muted loop playsinline preload="none" aria-hidden="true"
+            {% if poster_url != blank %}poster="{{ poster_url }}"{% endif %}
             style="width:100%;height:auto;display:block;">
-            <source src="{{ section.settings.video_url }}" type="video/mp4">
+            <source data-src="{{ section.settings.video_url }}" type="video/mp4">
           </video>
-        {% elsif section.settings.video_post != blank %}
-          <img src="{{ section.settings.video_post | image_url: width: 1800 }}" alt="{{ section.settings.heading | escape }}" width="800" loading="lazy">
-        {% endif %}
+
+          {% elsif section.settings.video_post != blank %}
+            <img src="{{ section.settings.video_post | image_url: width: 1800, format: 'webp', quality: 75 }}"
+              alt="{{ section.settings.heading | escape }}"
+              width="{{ section.settings.video_post.width }}"
+              height="{{ section.settings.video_post.height }}"
+              loading="lazy">
+          {% endif %}
+
       </div>
-
-   
-
       <div class="col-8">
         {% if section.settings.heading != blank %}
           <h4>{{ section.settings.heading }}</h4>
@@ -43,6 +47,34 @@
     </div>
   </div>
 </div>
+
+<script>
+  (function () {
+    var v = document.getElementById('hero-video');
+    if (!v) return;
+
+    if (matchMedia('(max-width: 767px)').matches) return;
+    if (navigator.connection && navigator.connection.saveData) return;
+    if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+    function loadVideo() {
+      var s = v.querySelector('source[data-src]');
+      if (!s) return;
+      s.src = s.dataset.src;
+      v.load();
+      v.play().catch(function(){});
+    }
+
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(function (entries, obs) {
+        if (entries[0].isIntersecting) { loadVideo(); obs.disconnect(); }
+      }, { rootMargin: '200px' }).observe(v);
+    } else {
+      window.addEventListener('load', loadVideo);
+    }
+  })();
+</script>
+
 
 {% schema %}
 {

@@ -3228,6 +3228,25 @@ p.sub-title {
 #age-gate::before {
   content: ""; position: absolute; inset: 0;
 }
+#age-gate {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    color: #fff;
+    text-align: center;
+}
+#age-gate div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+#age-gate button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    cursor: pointer
+}
 #age-gate .age-container {
   position: relative;
    z-index: 1;
@@ -3238,12 +3257,31 @@ p.sub-title {
    box-shadow: 0 10px 30px rgba(0,0,0,.25);
     text-align: center;
     background-color: #000c;
-
 }
 
+.age-container h1 {
+    color: #d5c7be
+}
 
 .age-container p {
     margin-top: -10px
+}
+
+.age-container p {
+    margin-top: -10px
+}
+body #age-gate button {
+    border-radius: 35px;
+    text-transform: uppercase;
+    font-family: Metropolis, sans-serif;
+    border: none;
+	font-weight: 600;
+}
+#age-gate:before {
+    background: #fff;
+    height: 100%;
+    filter: blur(1px);
+    opacity: 0.9;
 }
 
 .list-menu {
@@ -3880,9 +3918,7 @@ summary.list-menu__item {
         font-size:23px !important;
         font-weight:800
     }
-    #age-gate:before{
-        background:none
-    }
+
     #age-gate .age-container{
         padding:30px 20px;
         width:85%
@@ -3931,3 +3967,7 @@ summary.list-menu__item {
 .article-card__header h2, .article-template__content h2, .article-template__title {
     color: #000 !important;
 }
+.icon-caret{
+    width: 14px;
+}
+#age-gate

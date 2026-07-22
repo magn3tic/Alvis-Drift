@@ -19,14 +19,21 @@
 {% endif %}
 {%- assign first_3d_model = product.media | where: "media_type", "model" | first -%}
 
-{% comment %}theme-check-disable TemplateLength{% endcomment %}
+
 {{ 'section-main-product.css' | asset_url | stylesheet_tag }}
-{{ 'component-accordion.css' | asset_url | stylesheet_tag }}
 {{ 'component-price.css' | asset_url | stylesheet_tag }}
-{{ 'component-rte.css' | asset_url | stylesheet_tag }}
-{{ 'component-slider.css' | asset_url | stylesheet_tag }}
-{{ 'component-rating.css' | asset_url | stylesheet_tag }}
-{{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}
+{%- comment -%}{{ 'component-slider.css' | asset_url | stylesheet_tag }} {%- endcomment -%}
+
+{%- comment -%} Non-critical – load without blocking render {%- endcomment -%}
+<link rel="stylesheet" href="{{ 'component-accordion.css' | asset_url }}" media="print" onload="this.media='all'">
+{%- comment -%}<link rel="stylesheet" href="{{ 'component-rte.css' | asset_url }}" media="print" onload="this.media='all'">{%- endcomment -%}
+{%- comment -%}<link rel="stylesheet" href="{{ 'component-rating.css' | asset_url }}" media="print" onload="this.media='all'">{%- endcomment -%}
+{%- comment -%}<link rel="stylesheet" href="{{ 'component-loading-overlay.css' | asset_url }}" media="print" onload="this.media='all'">{%- endcomment -%}
+<noscript>
+  {{ 'component-accordion.css' | asset_url | stylesheet_tag }}
+  {%- comment -%}{{ 'component-rte.css' | asset_url | stylesheet_tag }}{%- endcomment -%}
+ {%- comment -%} {{ 'component-loading-overlay.css' | asset_url | stylesheet_tag }}{%- endcomment -%}
+</noscript>
 
 <link rel="stylesheet" href="{{ 'component-deferred-media.css' | asset_url }}" media="print" onload="this.media='all'">
 
@@ -69,11 +76,15 @@
                     {% for image in product.images %}
                     <div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
                       {% if image != blank %}
-                      {{
+                     {{
                         image
-                        | image_url: width: 145
+                        | image_url: width: 423, format: 'webp', quality: 75
                         | image_tag:
-                          alt: image.alt
+                          widths: '141, 212, 247, 282, 350, 423, 500',
+                          sizes: '141px',
+                          alt: image.alt,
+                          loading: 'eager',
+                          fetchpriority: 'high'
                       }}
                     {% endif %}
                     </div>

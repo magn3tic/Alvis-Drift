@@ -15,7 +15,6 @@
 
   .facets__form .product-count {
     grid-column-start: 3;
-    align-self: flex-start;
   }
 }
 
@@ -78,6 +77,10 @@
 .facet-filters button {
   margin-left: 2.5rem;
 }
+.facet-filters__sort+.icon-caret {
+ right: 0px;
+}
+   
 
 .facet-filters__sort {
   font-size: 1.4rem;
@@ -135,10 +138,6 @@
   box-shadow: none;
 }
 
-.facet-filters__sort + .icon-caret {
-  right: 0;
-}
-
 .facets {
   display: block;
   grid-column-start: span 2;
@@ -149,6 +148,7 @@
   gap: 0 3.5rem;
   grid-template-columns: 1fr max-content max-content;
   margin-bottom: 0.5rem;
+  justify-items:center;
 }
 
 .facets__wrapper {
@@ -172,14 +172,14 @@
 }
 
 .facets__disclosure {
-  margin-right: 3.5rem;
+  margin-right: 1rem;
 }
 
 .facets__summary {
   color: rgba(var(--color-foreground), 0.75);
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
-  padding: 0 1.75rem 0 0;
+  padding: 0.7rem 1.75rem 0.7rem 0;;
 }
 
 .facets__disclosure[open] .facets__summary,
@@ -193,6 +193,7 @@
 
 .facets__summary span {
   transition: text-decoration var(--duration-short) ease;
+  padding-right:10px
 }
 
 .facets__summary:hover span {
@@ -864,4 +865,7 @@ input.mobile-facets__checkbox {
 
 .product-count__text.loading + .loading-overlay__spinner {
   display: block;
+}
+.icon-caret{
+    width: 14px;
 }

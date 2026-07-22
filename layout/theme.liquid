@@ -72,7 +72,7 @@
     @media screen and (min-width: 750px) { body { font-size: 1.6rem; } }
     {% endstyle %}
 
-    <!-- ── BLOCKING CSS -->
+    <!-- ── BLOCKING CSS -->   
   {{ 'font.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'header-footer.css' | asset_url | stylesheet_tag: preload: true }}
   {{ 'homes.css' | asset_url | stylesheet_tag: preload: true }}
@@ -277,7 +277,8 @@
       document.addEventListener('DOMContentLoaded', initExternalLinks);
     }
     </script>
-
-    {% render 'form-popup-notification' %}
+    {% if template == 'index' %}
+      {% render 'form-popup-notification' %}
+    {% endif %}
   </body>
 </html>

@@ -438,8 +438,10 @@ text-transform:uppercase
     padding: 28px 30px;
     position: relative;
 }
-
-.ald-sale-slider .slide-content h2 {
+.video-grid{
+	padding:50px
+}
+.ald-sale-slider .slide-content h2, .ald-sale-slider .slide-content h1 {
 	color: #C65336;
 	text-align: center;
 	font-size: 37px;
@@ -1727,6 +1729,7 @@ body.no-scroll {
 .new-product-single .gallery-imgs-wrap img {
     max-height: 400px;
     margin: 0;
+	object-fit:contain
 }
 
 .new-product-single .gallery-imgs-wrap {
@@ -2095,9 +2098,12 @@ body .new-product-single .product-form {
 		font-weight:600
 	}
 	.ald-sale-slider .slide-content p{
-		font-size:15px;
+		font-size:13px;
 		text-align:center;
 		margin-bottom:10px
+	}
+	.ald-sale-slider .slide-content{
+		border-radius:1.5rem
 	}
 	.cta-btn{
 		font-size:12px;
@@ -2267,6 +2273,7 @@ body .new-product-single .product-form {
 	}
 
 	.ald-about video {
+		display:none !important;
 		width: 100%;
 		max-height: 676px;
 		object-fit: cover;
@@ -2910,13 +2917,7 @@ body .home-aboutus .h1 {
     }
 }
 
-body #age-gate button {
-    border-radius: 35px;
-    text-transform: uppercase;
-    font-family: Metropolis, sans-serif;
-    border: none;
-	font-weight: 600;
-}
+
 
 div.customer form .field,
 #registerForm .field,
@@ -3123,12 +3124,7 @@ body:not(.template-index) .shop-tabs {
 	max-height: 60px;
 }
 
-#age-gate:before {
-    background: #fff;
-    height: 100%;
-    filter: blur(1px);
-    opacity: 0.9;
-}
+
 
 @media (min-width: 768px) {
 
