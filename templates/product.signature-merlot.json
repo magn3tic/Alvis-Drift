@@ -1,1 +1,129 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#4A5B52"}},"main":{"type":"product-information","blocks":{"fa28463d-cdac-45e9-8a73-cf5758137463":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/signature-awards-merlot\" target=\"_blank\" title=\"Wine Awards Signature Merlot\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"4b3b1c5c-f2b2-47c5-b56b-b25faf300234":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p><a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">View all vintage fact sheets \/ tasting notes here.<\/a><br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"580226e2-b6c9-4684-8220-f786f8cdfee6":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"product_info_group_TMbU4L":{"type":"product_info_group","settings":{"info_title":"Alcohol","info_value":"13.7%"}},"product_info_group_FXw3ix":{"type":"product_info_group","settings":{"info_title":"Residual Sugar","info_value":"4.4 g\/L"}},"product_info_group_bE7pTm":{"type":"product_info_group","settings":{"info_title":"Acidity","info_value":"6.8 g\/L"}},"product_info_group_4L4hqf":{"type":"product_info_group","settings":{"info_title":"pH","info_value":"3.2"}}},"block_order":["fa28463d-cdac-45e9-8a73-cf5758137463","4b3b1c5c-f2b2-47c5-b56b-b25faf300234","580226e2-b6c9-4684-8220-f786f8cdfee6","product_info_group_TMbU4L","product_info_group_FXw3ix","product_info_group_bE7pTm","product_info_group_4L4hqf"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/Pasta_Pairing_04.jpg","image_overlay":true,"Heading_color":"#721326","title":"SERVING SUGGESTION","detail_box_txt":"Ideal for enjoying with a braai, this classic Bordeaux variety will complement a range of meat and pasta dishes, including duck. It is ready to be enjoyed immediately, but will benefit from two to three years of cellar maturation.","btn-txt":"","btn-url":"","hide_margin":true}},"collections_grid_individual_cUDxD4":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"Our Red Wines","lazy_loader":true,"h1_enabled":false,"subtitle_1":"","product_collection":"red-wines","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}}},"order":["1639248182bc55fb26","main","1639224403b97d22e1","collections_grid_individual_cUDxD4"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#4A5B52"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "fa28463d-cdac-45e9-8a73-cf5758137463": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/signature-awards-merlot\" target=\"_blank\" title=\"Wine Awards Signature Merlot\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "4b3b1c5c-f2b2-47c5-b56b-b25faf300234": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p><a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">View all vintage fact sheets / tasting notes here.</a><br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "580226e2-b6c9-4684-8220-f786f8cdfee6": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "product_info_group_TMbU4L": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Alcohol",
+            "info_value": "13.7%"
+          }
+        },
+        "product_info_group_FXw3ix": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Residual Sugar",
+            "info_value": "4.4 g/L"
+          }
+        },
+        "product_info_group_bE7pTm": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Acidity",
+            "info_value": "6.8 g/L"
+          }
+        },
+        "product_info_group_4L4hqf": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "pH",
+            "info_value": "3.2"
+          }
+        }
+      },
+      "block_order": [
+        "fa28463d-cdac-45e9-8a73-cf5758137463",
+        "4b3b1c5c-f2b2-47c5-b56b-b25faf300234",
+        "580226e2-b6c9-4684-8220-f786f8cdfee6",
+        "product_info_group_TMbU4L",
+        "product_info_group_FXw3ix",
+        "product_info_group_bE7pTm",
+        "product_info_group_4L4hqf"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Pasta_Pairing_04.jpg",
+        "image_overlay": true,
+        "Heading_color": "#721326",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "Ideal for enjoying with a braai, this classic Bordeaux variety will complement a range of meat and pasta dishes, including duck. It is ready to be enjoyed immediately, but will benefit from two to three years of cellar maturation.",
+        "btn-txt": "",
+        "btn-url": "",
+        "hide_margin": true
+      }
+    },
+    "collections_grid_individual_cUDxD4": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Our Red Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "red-wines",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639224403b97d22e1",
+    "collections_grid_individual_cUDxD4"
+  ]
+}

@@ -1,1 +1,129 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#867065"}},"main":{"type":"product-information","blocks":{"c0b52f8b-0407-4f34-a011-de93ce967ccd":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"25366be7-6354-4d54-b0cd-c712d5e1c136":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p>View all vintage fact sheets \/ <a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">tasting notes here<\/a>.<br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"4ac49e5c-2f1c-4f84-91f9-38c73dabc502":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"product_info_group_EjDhNk":{"type":"product_info_group","settings":{"info_title":"Alcohol","info_value":"15,4%"}},"product_info_group_Y7hfii":{"type":"product_info_group","settings":{"info_title":"Residual Sugar","info_value":"298,0 g\/L"}},"product_info_group_9HgtnB":{"type":"product_info_group","settings":{"info_title":"Acidity","info_value":"5,9 g\/L"}},"product_info_group_NwceTj":{"type":"product_info_group","settings":{"info_title":"pH","info_value":"3,5"}}},"block_order":["c0b52f8b-0407-4f34-a011-de93ce967ccd","25366be7-6354-4d54-b0cd-c712d5e1c136","4ac49e5c-2f1c-4f84-91f9-38c73dabc502","product_info_group_EjDhNk","product_info_group_Y7hfii","product_info_group_9HgtnB","product_info_group_NwceTj"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/Pudding_Pairing_01.jpg","image_overlay":true,"Heading_color":"#2d5980","title":"SERVING SUGGESTION","detail_box_txt":"<p>Served between 4-8 ˚C, this wine will complement any citrus-based dessert, as well as Crème brûlée, fresh fruit salad or rich cheeses such as Munster, Epoisses de Bourgogne or Reblochon.<\/p>","btn-txt":"","btn-url":"","hide_margin":true}},"collections_grid_individual_zUTNmg":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"Our Reserve Range Wines","lazy_loader":true,"h1_enabled":false,"subtitle_1":"","product_collection":"reserve-range","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}}},"order":["1639248182bc55fb26","main","1639224403b97d22e1","collections_grid_individual_zUTNmg"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#867065"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "c0b52f8b-0407-4f34-a011-de93ce967ccd": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/reserve-awards-muscat\" target=\"_blank\" title=\"Wine Awards Reserve Muscat Nectarinia & Muscat De Frontignan\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "25366be7-6354-4d54-b0cd-c712d5e1c136": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage fact sheets / <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">tasting notes here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "4ac49e5c-2f1c-4f84-91f9-38c73dabc502": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "product_info_group_EjDhNk": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Alcohol",
+            "info_value": "15,4%"
+          }
+        },
+        "product_info_group_Y7hfii": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Residual Sugar",
+            "info_value": "298,0 g/L"
+          }
+        },
+        "product_info_group_9HgtnB": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Acidity",
+            "info_value": "5,9 g/L"
+          }
+        },
+        "product_info_group_NwceTj": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "pH",
+            "info_value": "3,5"
+          }
+        }
+      },
+      "block_order": [
+        "c0b52f8b-0407-4f34-a011-de93ce967ccd",
+        "25366be7-6354-4d54-b0cd-c712d5e1c136",
+        "4ac49e5c-2f1c-4f84-91f9-38c73dabc502",
+        "product_info_group_EjDhNk",
+        "product_info_group_Y7hfii",
+        "product_info_group_9HgtnB",
+        "product_info_group_NwceTj"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Pudding_Pairing_01.jpg",
+        "image_overlay": true,
+        "Heading_color": "#2d5980",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "<p>Served between 4-8 ˚C, this wine will complement any citrus-based dessert, as well as Crème brûlée, fresh fruit salad or rich cheeses such as Munster, Epoisses de Bourgogne or Reblochon.</p>",
+        "btn-txt": "",
+        "btn-url": "",
+        "hide_margin": true
+      }
+    },
+    "collections_grid_individual_zUTNmg": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Our Reserve Range Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "reserve-range",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639224403b97d22e1",
+    "collections_grid_individual_zUTNmg"
+  ]
+}

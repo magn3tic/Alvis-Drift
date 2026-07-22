@@ -1,1 +1,129 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#721326"}},"main":{"type":"product-information","blocks":{"ed39b0f9-4423-4386-b21c-6753c3d26cf2":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"1425483d-d4d6-4d0d-98ac-b362d7e8c058":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p>View all vintage <a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets \/ tasting notes here.<\/a><br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"5aef4f09-3a14-4ef9-be8b-17ebc5ff7d8f":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"product_info_group_8FTJFx":{"type":"product_info_group","settings":{"info_title":"Alcohol","info_value":"13.3%"}},"product_info_group_NhmJDx":{"type":"product_info_group","settings":{"info_title":"Residual Sugar","info_value":"4.4 g\/L"}},"product_info_group_jHNWjC":{"type":"product_info_group","settings":{"info_title":"Acidity","info_value":"6.6 g\/L"}},"product_info_group_eAxwXA":{"type":"product_info_group","settings":{"info_title":"pH","info_value":"3.0"}}},"block_order":["ed39b0f9-4423-4386-b21c-6753c3d26cf2","1425483d-d4d6-4d0d-98ac-b362d7e8c058","5aef4f09-3a14-4ef9-be8b-17ebc5ff7d8f","product_info_group_8FTJFx","product_info_group_NhmJDx","product_info_group_jHNWjC","product_info_group_eAxwXA"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/White_Meat_Pairing_14.jpg","image_overlay":false,"Heading_color":"#2d5980","title":"SERVING SUGGESTION","detail_box_txt":"<p>The wines in our 221 range were specifically created with fun food pairing in mind. Serve this wine with freshly steamed asparagus, ceviche or goats’ cheese-and-tomato quiche. Ideally served between 7 ˚C and 12 ˚C, our 221 Sauvignon Blanc will mature well for another 3-5 years.<\/p>","btn-txt":"","btn-url":"","hide_margin":true}},"collections_grid_individual_HUfQB4":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"Our White Wine","lazy_loader":true,"h1_enabled":false,"subtitle_1":"","product_collection":"white-wines","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}}},"order":["1639248182bc55fb26","main","1639224403b97d22e1","collections_grid_individual_HUfQB4"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#721326"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "ed39b0f9-4423-4386-b21c-6753c3d26cf2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "1425483d-d4d6-4d0d-98ac-b362d7e8c058": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets / tasting notes here.</a><br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "5aef4f09-3a14-4ef9-be8b-17ebc5ff7d8f": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "product_info_group_8FTJFx": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Alcohol",
+            "info_value": "13.3%"
+          }
+        },
+        "product_info_group_NhmJDx": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Residual Sugar",
+            "info_value": "4.4 g/L"
+          }
+        },
+        "product_info_group_jHNWjC": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Acidity",
+            "info_value": "6.6 g/L"
+          }
+        },
+        "product_info_group_eAxwXA": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "pH",
+            "info_value": "3.0"
+          }
+        }
+      },
+      "block_order": [
+        "ed39b0f9-4423-4386-b21c-6753c3d26cf2",
+        "1425483d-d4d6-4d0d-98ac-b362d7e8c058",
+        "5aef4f09-3a14-4ef9-be8b-17ebc5ff7d8f",
+        "product_info_group_8FTJFx",
+        "product_info_group_NhmJDx",
+        "product_info_group_jHNWjC",
+        "product_info_group_eAxwXA"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/White_Meat_Pairing_14.jpg",
+        "image_overlay": false,
+        "Heading_color": "#2d5980",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "<p>The wines in our 221 range were specifically created with fun food pairing in mind. Serve this wine with freshly steamed asparagus, ceviche or goats’ cheese-and-tomato quiche. Ideally served between 7 ˚C and 12 ˚C, our 221 Sauvignon Blanc will mature well for another 3-5 years.</p>",
+        "btn-txt": "",
+        "btn-url": "",
+        "hide_margin": true
+      }
+    },
+    "collections_grid_individual_HUfQB4": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Our White Wine",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "white-wines",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639224403b97d22e1",
+    "collections_grid_individual_HUfQB4"
+  ]
+}

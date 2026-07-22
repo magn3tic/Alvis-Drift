@@ -1,1 +1,140 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#6287A0"}},"main":{"type":"product-information","blocks":{"01620f59-fe07-41a9-93cb-3c056a4852a2":{"type":"collapsible_tab","settings":{"heading":"Cultivars","content":"<p>70%  Chardonnay<br\/>30%  Pinot Noir<\/p>","page":"","icon":"none","border":false}},"b9ff1ded-cd67-449e-89a0-8762c7b9fa2a":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"ddb2e021-6cf2-49ae-9b6c-35530183d097":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p>View all vintage <a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets \/ tasting notes here<\/a>.<br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"b23c4e64-2ffb-49d0-9952-cbf5119ea6e5":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"product_info_group_gmzp97":{"type":"product_info_group","settings":{"info_title":"Alcohol","info_value":"11,6%"}},"product_info_group_rfNf4z":{"type":"product_info_group","settings":{"info_title":"Residual Sugar","info_value":"2021:  9,1 g\/L"}},"product_info_group_yRQfiU":{"type":"product_info_group","settings":{"info_title":"Acidity","info_value":"2021:  6,9 g\/L"}},"product_info_group_YTQnqU":{"type":"product_info_group","settings":{"info_title":"pH","info_value":"2021:  3,1"}}},"block_order":["01620f59-fe07-41a9-93cb-3c056a4852a2","b9ff1ded-cd67-449e-89a0-8762c7b9fa2a","ddb2e021-6cf2-49ae-9b6c-35530183d097","b23c4e64-2ffb-49d0-9952-cbf5119ea6e5","product_info_group_gmzp97","product_info_group_rfNf4z","product_info_group_yRQfiU","product_info_group_YTQnqU"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/White_Meat_Pairing_10.jpg","image_overlay":true,"Heading_color":"#5c6e67","title":"SERVING SUGGESTION","detail_box_txt":"<p>An excellent companion to grilled fish or chicken, this dry sparkling wine is best served as a welcoming drink alongside canapés filled with smoked salmon or raspberry-baked Brie.<\/p>","btn-txt":"","btn-url":"","hide_margin":true}},"collections_grid_individual_BBxBAx":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"Our Cap Classique & Sparkling Wines","lazy_loader":true,"h1_enabled":false,"subtitle_1":"","product_collection":"sparkling-cap-classique","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}}},"order":["1639248182bc55fb26","main","1639224403b97d22e1","collections_grid_individual_BBxBAx"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#6287A0"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "01620f59-fe07-41a9-93cb-3c056a4852a2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Cultivars",
+            "content": "<p>70%  Chardonnay<br/>30%  Pinot Noir</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "b9ff1ded-cd67-449e-89a0-8762c7b9fa2a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "ddb2e021-6cf2-49ae-9b6c-35530183d097": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets / tasting notes here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "b23c4e64-2ffb-49d0-9952-cbf5119ea6e5": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "product_info_group_gmzp97": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Alcohol",
+            "info_value": "11,6%"
+          }
+        },
+        "product_info_group_rfNf4z": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Residual Sugar",
+            "info_value": "2021:  9,1 g/L"
+          }
+        },
+        "product_info_group_yRQfiU": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Acidity",
+            "info_value": "2021:  6,9 g/L"
+          }
+        },
+        "product_info_group_YTQnqU": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "pH",
+            "info_value": "2021:  3,1"
+          }
+        }
+      },
+      "block_order": [
+        "01620f59-fe07-41a9-93cb-3c056a4852a2",
+        "b9ff1ded-cd67-449e-89a0-8762c7b9fa2a",
+        "ddb2e021-6cf2-49ae-9b6c-35530183d097",
+        "b23c4e64-2ffb-49d0-9952-cbf5119ea6e5",
+        "product_info_group_gmzp97",
+        "product_info_group_rfNf4z",
+        "product_info_group_yRQfiU",
+        "product_info_group_YTQnqU"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/White_Meat_Pairing_10.jpg",
+        "image_overlay": true,
+        "Heading_color": "#5c6e67",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "<p>An excellent companion to grilled fish or chicken, this dry sparkling wine is best served as a welcoming drink alongside canapés filled with smoked salmon or raspberry-baked Brie.</p>",
+        "btn-txt": "",
+        "btn-url": "",
+        "hide_margin": true
+      }
+    },
+    "collections_grid_individual_BBxBAx": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Our Cap Classique & Sparkling Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "sparkling-cap-classique",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639224403b97d22e1",
+    "collections_grid_individual_BBxBAx"
+  ]
+}

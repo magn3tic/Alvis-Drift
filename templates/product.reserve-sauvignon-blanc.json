@@ -1,1 +1,129 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#867065"}},"main":{"type":"product-information","blocks":{"2af0d11f-71e2-4542-a9ef-2dbf46b94bb1":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/reserve-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Reserve Sauvignon Blanc\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"b3799e7b-f2a0-4c45-934c-e8b17a594a6a":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p>View all vintage fact sheets \/ <a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">tasting notes here<\/a>.<br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"e4dfb9dd-63e2-46d7-911e-17e31b9fced9":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"product_info_group_AnwCHY":{"type":"product_info_group","settings":{"info_title":"Alcohol","info_value":"13.6%"}},"product_info_group_QA9nkV":{"type":"product_info_group","settings":{"info_title":"Residual Sugar","info_value":"5,2 g\/L"}},"product_info_group_qLi4aa":{"type":"product_info_group","settings":{"info_title":"Acidity","info_value":"6,6 g\/L"}},"product_info_group_8KTyVt":{"type":"product_info_group","settings":{"info_title":"pH","info_value":"3,0"}}},"block_order":["2af0d11f-71e2-4542-a9ef-2dbf46b94bb1","b3799e7b-f2a0-4c45-934c-e8b17a594a6a","e4dfb9dd-63e2-46d7-911e-17e31b9fced9","product_info_group_AnwCHY","product_info_group_QA9nkV","product_info_group_qLi4aa","product_info_group_8KTyVt"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/White_Meat_Pairing_07.jpg","image_overlay":true,"Heading_color":"#2d5980","title":"SERVING SUGGESTION","detail_box_txt":"<p>This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.<\/p>","btn-txt":"","btn-url":"","hide_margin":true}},"collections_grid_individual_8Vkw6B":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"Our White Wines","lazy_loader":true,"h1_enabled":false,"subtitle_1":"","product_collection":"white-wines","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}}},"order":["1639248182bc55fb26","main","1639224403b97d22e1","collections_grid_individual_8Vkw6B"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#867065"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "2af0d11f-71e2-4542-a9ef-2dbf46b94bb1": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/reserve-awards-sauvignon-blanc\" target=\"_blank\" title=\"Wine Awards Reserve Sauvignon Blanc\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "b3799e7b-f2a0-4c45-934c-e8b17a594a6a": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage fact sheets / <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">tasting notes here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "e4dfb9dd-63e2-46d7-911e-17e31b9fced9": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "product_info_group_AnwCHY": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Alcohol",
+            "info_value": "13.6%"
+          }
+        },
+        "product_info_group_QA9nkV": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Residual Sugar",
+            "info_value": "5,2 g/L"
+          }
+        },
+        "product_info_group_qLi4aa": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Acidity",
+            "info_value": "6,6 g/L"
+          }
+        },
+        "product_info_group_8KTyVt": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "pH",
+            "info_value": "3,0"
+          }
+        }
+      },
+      "block_order": [
+        "2af0d11f-71e2-4542-a9ef-2dbf46b94bb1",
+        "b3799e7b-f2a0-4c45-934c-e8b17a594a6a",
+        "e4dfb9dd-63e2-46d7-911e-17e31b9fced9",
+        "product_info_group_AnwCHY",
+        "product_info_group_QA9nkV",
+        "product_info_group_qLi4aa",
+        "product_info_group_8KTyVt"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/White_Meat_Pairing_07.jpg",
+        "image_overlay": true,
+        "Heading_color": "#2d5980",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "<p>This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.</p>",
+        "btn-txt": "",
+        "btn-url": "",
+        "hide_margin": true
+      }
+    },
+    "collections_grid_individual_8Vkw6B": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Our White Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "white-wines",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639224403b97d22e1",
+    "collections_grid_individual_8Vkw6B"
+  ]
+}

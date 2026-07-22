@@ -1,1 +1,129 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#4A5B52"}},"main":{"type":"product-information","blocks":{"7372dd77-2792-4081-899a-364c58269a24":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/signature-awards-chenin-blanc\" target=\"_blank\" title=\"Wine Awards Signature Chenin Blanc\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"d41b6749-925a-4c13-8be6-7228ec623e37":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p><a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">View all vintage fact sheets \/ tasting notes here.<\/a><br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"ade92b05-ad2a-4c64-bc60-523ac8458d04":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"product_info_group_jU6XaN":{"type":"product_info_group","settings":{"info_title":"Alcohol","info_value":"13,8%"}},"product_info_group_cFpDEA":{"type":"product_info_group","settings":{"info_title":"Residual Sugar","info_value":"4,3 g\/L"}},"product_info_group_xRYkeW":{"type":"product_info_group","settings":{"info_title":"Acidity","info_value":"6,7 g\/L"}},"product_info_group_RLwTtT":{"type":"product_info_group","settings":{"info_title":"pH","info_value":"3,2"}}},"block_order":["7372dd77-2792-4081-899a-364c58269a24","d41b6749-925a-4c13-8be6-7228ec623e37","ade92b05-ad2a-4c64-bc60-523ac8458d04","product_info_group_jU6XaN","product_info_group_cFpDEA","product_info_group_xRYkeW","product_info_group_RLwTtT"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/Seafood_Pairing_08.jpg","image_overlay":true,"Heading_color":"#721326","title":"SERVING SUGGESTION","detail_box_txt":"This wine is ideal for enjoying with fish terrines and fresh, young goats’ milk cheese at a light picnic lunch. It will also complement grilled white fish or prawns, and pairs well with mussels in a creamy garlic sauce.","btn-txt":"","btn-url":"","hide_margin":true}},"collections_grid_individual_7c4HhW":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"Our White Wines","lazy_loader":true,"h1_enabled":false,"subtitle_1":"","product_collection":"white-wines","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}}},"order":["1639248182bc55fb26","main","1639224403b97d22e1","collections_grid_individual_7c4HhW"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#4A5B52"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "7372dd77-2792-4081-899a-364c58269a24": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/signature-awards-chenin-blanc\" target=\"_blank\" title=\"Wine Awards Signature Chenin Blanc\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "d41b6749-925a-4c13-8be6-7228ec623e37": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p><a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">View all vintage fact sheets / tasting notes here.</a><br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "ade92b05-ad2a-4c64-bc60-523ac8458d04": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "product_info_group_jU6XaN": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Alcohol",
+            "info_value": "13,8%"
+          }
+        },
+        "product_info_group_cFpDEA": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Residual Sugar",
+            "info_value": "4,3 g/L"
+          }
+        },
+        "product_info_group_xRYkeW": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Acidity",
+            "info_value": "6,7 g/L"
+          }
+        },
+        "product_info_group_RLwTtT": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "pH",
+            "info_value": "3,2"
+          }
+        }
+      },
+      "block_order": [
+        "7372dd77-2792-4081-899a-364c58269a24",
+        "d41b6749-925a-4c13-8be6-7228ec623e37",
+        "ade92b05-ad2a-4c64-bc60-523ac8458d04",
+        "product_info_group_jU6XaN",
+        "product_info_group_cFpDEA",
+        "product_info_group_xRYkeW",
+        "product_info_group_RLwTtT"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Seafood_Pairing_08.jpg",
+        "image_overlay": true,
+        "Heading_color": "#721326",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "This wine is ideal for enjoying with fish terrines and fresh, young goats’ milk cheese at a light picnic lunch. It will also complement grilled white fish or prawns, and pairs well with mussels in a creamy garlic sauce.",
+        "btn-txt": "",
+        "btn-url": "",
+        "hide_margin": true
+      }
+    },
+    "collections_grid_individual_7c4HhW": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Our White Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "white-wines",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639224403b97d22e1",
+    "collections_grid_individual_7c4HhW"
+  ]
+}

@@ -1,1 +1,129 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#712f1f"}},"main":{"type":"product-information","blocks":{"33b03f61-5be1-4311-bb4a-d6512e3f1378":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/icon-awards\" title=\"Wine Awards Icon Range\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"362c7d00-b966-4ea2-8449-471fafc0841d":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p>View all vintage <a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets \/ tasting notes here<\/a>.<br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"90f206ce-1e97-4bee-a992-44e807656e1e":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"product_info_group_PP9iGp":{"type":"product_info_group","settings":{"info_title":"Alcohol","info_value":"13,6%"}},"product_info_group_hr8FtX":{"type":"product_info_group","settings":{"info_title":"Residual Sugar","info_value":"4,7 g\/L"}},"product_info_group_aU4HMw":{"type":"product_info_group","settings":{"info_title":"Acidity","info_value":"6,7 g\/L"}},"product_info_group_3CVjfA":{"type":"product_info_group","settings":{"info_title":"pH","info_value":"3,1"}}},"block_order":["33b03f61-5be1-4311-bb4a-d6512e3f1378","362c7d00-b966-4ea2-8449-471fafc0841d","90f206ce-1e97-4bee-a992-44e807656e1e","product_info_group_PP9iGp","product_info_group_hr8FtX","product_info_group_aU4HMw","product_info_group_3CVjfA"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/Seafood_Pairing_01.jpg","image_overlay":true,"Heading_color":"#2d5980","title":"SERVING SUGGESTION","detail_box_txt":"<p>This wine brilliantly complements grilled fish drizzled with lemon-butter sauce, grilled chicken or a fresh Caesar salad. Perfect to serve with soft cheeses like Brie, Camembert or Chevre.<\/p>","btn-txt":"","btn-url":"","hide_margin":true}},"collections_grid_individual_3jQkgY":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"Our White Wines","lazy_loader":true,"h1_enabled":false,"subtitle_1":"","product_collection":"white-wines","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}}},"order":["1639248182bc55fb26","main","1639224403b97d22e1","collections_grid_individual_3jQkgY"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#712f1f"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "33b03f61-5be1-4311-bb4a-d6512e3f1378": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/icon-awards\" title=\"Wine Awards Icon Range\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "362c7d00-b966-4ea2-8449-471fafc0841d": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets / tasting notes here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "90f206ce-1e97-4bee-a992-44e807656e1e": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "product_info_group_PP9iGp": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Alcohol",
+            "info_value": "13,6%"
+          }
+        },
+        "product_info_group_hr8FtX": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Residual Sugar",
+            "info_value": "4,7 g/L"
+          }
+        },
+        "product_info_group_aU4HMw": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Acidity",
+            "info_value": "6,7 g/L"
+          }
+        },
+        "product_info_group_3CVjfA": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "pH",
+            "info_value": "3,1"
+          }
+        }
+      },
+      "block_order": [
+        "33b03f61-5be1-4311-bb4a-d6512e3f1378",
+        "362c7d00-b966-4ea2-8449-471fafc0841d",
+        "90f206ce-1e97-4bee-a992-44e807656e1e",
+        "product_info_group_PP9iGp",
+        "product_info_group_hr8FtX",
+        "product_info_group_aU4HMw",
+        "product_info_group_3CVjfA"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Seafood_Pairing_01.jpg",
+        "image_overlay": true,
+        "Heading_color": "#2d5980",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "<p>This wine brilliantly complements grilled fish drizzled with lemon-butter sauce, grilled chicken or a fresh Caesar salad. Perfect to serve with soft cheeses like Brie, Camembert or Chevre.</p>",
+        "btn-txt": "",
+        "btn-url": "",
+        "hide_margin": true
+      }
+    },
+    "collections_grid_individual_3jQkgY": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Our White Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "white-wines",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639224403b97d22e1",
+    "collections_grid_individual_3jQkgY"
+  ]
+}

@@ -1,1 +1,140 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#6287A0"}},"main":{"type":"product-information","blocks":{"01620f59-fe07-41a9-93cb-3c056a4852a2":{"type":"collapsible_tab","settings":{"heading":"Cultivars","content":"<p>70%  Pinot Noir<br\/>30%  Chardonnay<\/p>","page":"","icon":"none","border":true}},"9e7dfceb-fed4-4c00-af6c-b8b9150ffab4":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"f5818cd4-4dd3-45d7-9664-74852b974e55":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p>View all vintage fact sheets \/ <a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">tasting notes here<\/a>.<br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"a6db44c8-d4f6-40e1-b779-74498c0ab1ef":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"product_info_group_bkzVGn":{"type":"product_info_group","settings":{"info_title":"Alcohol","info_value":"12,5%"}},"product_info_group_MNrDmK":{"type":"product_info_group","settings":{"info_title":"Residual Sugar","info_value":"8,4 g\/L"}},"product_info_group_zeHmza":{"type":"product_info_group","settings":{"info_title":"Acidity","info_value":"7,9 g\/L"}},"product_info_group_bTB7XA":{"type":"product_info_group","settings":{"info_title":"pH","info_value":"3,0"}}},"block_order":["01620f59-fe07-41a9-93cb-3c056a4852a2","9e7dfceb-fed4-4c00-af6c-b8b9150ffab4","f5818cd4-4dd3-45d7-9664-74852b974e55","a6db44c8-d4f6-40e1-b779-74498c0ab1ef","product_info_group_bkzVGn","product_info_group_MNrDmK","product_info_group_zeHmza","product_info_group_bTB7XA"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/Fruit_Pairing_08.jpg","image_overlay":true,"Heading_color":"#5c6e67","title":"SERVING SUGGESTION","detail_box_txt":"Serve chilled (4-8ºC) as an aperitif for any occasion. perfect for fresh, fun, unpretentious enjoyment wherever good friends meet.","btn-txt":"","btn-url":"","hide_margin":true}},"collections_grid_individual_NHWMtB":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"OUR Sparkling  & Cap Classic Wines","lazy_loader":true,"h1_enabled":false,"subtitle_1":"","product_collection":"sparkling-range","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}}},"order":["1639248182bc55fb26","main","1639224403b97d22e1","collections_grid_individual_NHWMtB"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#6287A0"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "01620f59-fe07-41a9-93cb-3c056a4852a2": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Cultivars",
+            "content": "<p>70%  Pinot Noir<br/>30%  Chardonnay</p>",
+            "page": "",
+            "icon": "none",
+            "border": true
+          }
+        },
+        "9e7dfceb-fed4-4c00-af6c-b8b9150ffab4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/sparkling-awards\" target=\"_blank\" title=\"Wine Awards Sparkling Range\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "f5818cd4-4dd3-45d7-9664-74852b974e55": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage fact sheets / <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">tasting notes here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "a6db44c8-d4f6-40e1-b779-74498c0ab1ef": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "product_info_group_bkzVGn": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Alcohol",
+            "info_value": "12,5%"
+          }
+        },
+        "product_info_group_MNrDmK": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Residual Sugar",
+            "info_value": "8,4 g/L"
+          }
+        },
+        "product_info_group_zeHmza": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Acidity",
+            "info_value": "7,9 g/L"
+          }
+        },
+        "product_info_group_bTB7XA": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "pH",
+            "info_value": "3,0"
+          }
+        }
+      },
+      "block_order": [
+        "01620f59-fe07-41a9-93cb-3c056a4852a2",
+        "9e7dfceb-fed4-4c00-af6c-b8b9150ffab4",
+        "f5818cd4-4dd3-45d7-9664-74852b974e55",
+        "a6db44c8-d4f6-40e1-b779-74498c0ab1ef",
+        "product_info_group_bkzVGn",
+        "product_info_group_MNrDmK",
+        "product_info_group_zeHmza",
+        "product_info_group_bTB7XA"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Fruit_Pairing_08.jpg",
+        "image_overlay": true,
+        "Heading_color": "#5c6e67",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "Serve chilled (4-8ºC) as an aperitif for any occasion. perfect for fresh, fun, unpretentious enjoyment wherever good friends meet.",
+        "btn-txt": "",
+        "btn-url": "",
+        "hide_margin": true
+      }
+    },
+    "collections_grid_individual_NHWMtB": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "OUR Sparkling  & Cap Classic Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "sparkling-range",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "1639224403b97d22e1",
+    "collections_grid_individual_NHWMtB"
+  ]
+}

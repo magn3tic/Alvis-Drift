@@ -1,1 +1,141 @@
-{"sections":{"1639248244b069f6d9":{"type":"Page-Background-Colour","settings":{"page_bg":"#721326"}},"main":{"type":"product-information","blocks":{"01620f59-fe07-41a9-93cb-3c056a4852a2":{"type":"collapsible_tab","disabled":true,"settings":{"heading":"Cultivar 2020","content":"<p>41%  Shiraz<br\/>28%  Cabernet Sauvignon<br\/>13%  Pinotage<br\/>5%  Petit Verdot<br\/>5%  Grenache<br\/>4% Viognier<br\/>4%  Durif<\/p>","page":"","icon":"none","border":true}},"ebc20850-f347-47ac-9f92-59684b49e2b4":{"type":"collapsible_tab","settings":{"heading":"Awards","content":"<p><a href=\"\/pages\/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">View our full list of awards here.<\/a><\/p>","page":"","icon":"none","border":false}},"0573fed7-c1be-4f13-80c0-f8566bff4f5c":{"type":"collapsible_tab","settings":{"heading":"Wine Fact Sheets","content":"<p>View all vintage <a href=\"\/pages\/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets \/ tasting notes here<\/a>.<br\/>Availability of vintages depends on current stock.<\/p>","page":"","icon":"none","border":false}},"fd4bbe3f-050b-49b9-8cfa-7819dbe147b7":{"type":"collapsible_tab","settings":{"heading":"Bulk Price Request","content":"<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br\/><a href=\"\/pages\/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.<\/strong><\/a><\/p>","page":"","icon":"none","border":false}},"product_info_group_pKUgiX":{"type":"product_info_group","settings":{"info_title":"Alcohol","info_value":"13,6%"}},"product_info_group_87JaQN":{"type":"product_info_group","settings":{"info_title":"Residual Sugar","info_value":"4,5 g\/L"}},"product_info_group_ijt7HH":{"type":"product_info_group","settings":{"info_title":"Acidity","info_value":"6,2 g\/L"}},"product_info_group_gPkyEh":{"type":"product_info_group","settings":{"info_title":"pH","info_value":"3,5"}}},"block_order":["01620f59-fe07-41a9-93cb-3c056a4852a2","ebc20850-f347-47ac-9f92-59684b49e2b4","0573fed7-c1be-4f13-80c0-f8566bff4f5c","fd4bbe3f-050b-49b9-8cfa-7819dbe147b7","product_info_group_pKUgiX","product_info_group_87JaQN","product_info_group_ijt7HH","product_info_group_gPkyEh"],"settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"1639224403b97d22e1":{"type":"Call-To-Action","settings":{"wine-club-bg":"shopify:\/\/shop_images\/Pasta_Pairing_06.jpg","image_overlay":true,"Heading_color":"#2d5980","title":"SERVING SUGGESTION","detail_box_txt":"<p>This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.<\/p>","btn-txt":"","btn-url":"","hide_margin":true}},"collections_grid_individual_xzwyPU":{"type":"Collections-Grid-individual","name":"Collection Grid Single","settings":{"topheading":"All Our Blends","lazy_loader":true,"h1_enabled":false,"subtitle_1":"","product_collection":"blends","product_amount":30,"hide_product_filters":false,"hide_meta_tags":false}}},"order":["1639248244b069f6d9","main","1639224403b97d22e1","collections_grid_individual_xzwyPU"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248244b069f6d9": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#721326"
+      }
+    },
+    "main": {
+      "type": "product-information",
+      "blocks": {
+        "01620f59-fe07-41a9-93cb-3c056a4852a2": {
+          "type": "collapsible_tab",
+          "disabled": true,
+          "settings": {
+            "heading": "Cultivar 2020",
+            "content": "<p>41%  Shiraz<br/>28%  Cabernet Sauvignon<br/>13%  Pinotage<br/>5%  Petit Verdot<br/>5%  Grenache<br/>4% Viognier<br/>4%  Durif</p>",
+            "page": "",
+            "icon": "none",
+            "border": true
+          }
+        },
+        "ebc20850-f347-47ac-9f92-59684b49e2b4": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Awards",
+            "content": "<p><a href=\"/pages/221-awards\" target=\"_blank\" title=\"Wine Awards 221 Range\">View our full list of awards here.</a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "0573fed7-c1be-4f13-80c0-f8566bff4f5c": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Wine Fact Sheets",
+            "content": "<p>View all vintage <a href=\"/pages/facts\" target=\"_blank\" title=\"Wine Fact Sheets\">fact sheets / tasting notes here</a>.<br/>Availability of vintages depends on current stock.</p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "fd4bbe3f-050b-49b9-8cfa-7819dbe147b7": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Bulk Price Request",
+            "content": "<p>Legal restrictions limit the sale quantity to 180 bottles (30 cases) per customer.<br/><a href=\"/pages/bulk\" target=\"_blank\" title=\"Bulk Purchase\"><strong>Please click here to request the purchasing of larger quantities.</strong></a></p>",
+            "page": "",
+            "icon": "none",
+            "border": false
+          }
+        },
+        "product_info_group_pKUgiX": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Alcohol",
+            "info_value": "13,6%"
+          }
+        },
+        "product_info_group_87JaQN": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Residual Sugar",
+            "info_value": "4,5 g/L"
+          }
+        },
+        "product_info_group_ijt7HH": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "Acidity",
+            "info_value": "6,2 g/L"
+          }
+        },
+        "product_info_group_gPkyEh": {
+          "type": "product_info_group",
+          "settings": {
+            "info_title": "pH",
+            "info_value": "3,5"
+          }
+        }
+      },
+      "block_order": [
+        "01620f59-fe07-41a9-93cb-3c056a4852a2",
+        "ebc20850-f347-47ac-9f92-59684b49e2b4",
+        "0573fed7-c1be-4f13-80c0-f8566bff4f5c",
+        "fd4bbe3f-050b-49b9-8cfa-7819dbe147b7",
+        "product_info_group_pKUgiX",
+        "product_info_group_87JaQN",
+        "product_info_group_ijt7HH",
+        "product_info_group_gPkyEh"
+      ],
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "1639224403b97d22e1": {
+      "type": "Call-To-Action",
+      "settings": {
+        "wine-club-bg": "shopify://shop_images/Pasta_Pairing_06.jpg",
+        "image_overlay": true,
+        "Heading_color": "#2d5980",
+        "title": "SERVING SUGGESTION",
+        "detail_box_txt": "<p>This wine will complement most red meat dishes. Enjoy with any pasta with a meaty sauce, or with spicy vegetable dishes. It also pairs well with creamy gorgonzola or well-matured cheddar cheese.</p>",
+        "btn-txt": "",
+        "btn-url": "",
+        "hide_margin": true
+      }
+    },
+    "collections_grid_individual_xzwyPU": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "All Our Blends",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "",
+        "product_collection": "blends",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
+      }
+    }
+  },
+  "order": [
+    "1639248244b069f6d9",
+    "main",
+    "1639224403b97d22e1",
+    "collections_grid_individual_xzwyPU"
+  ]
+}
