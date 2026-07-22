@@ -50,64 +50,6 @@
         "show_nav": true
       }
     },
-    "page_builder_slider_9Xe86H": {
-      "type": "page-builder-slider",
-      "blocks": {
-        "slide_QjEzFW": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "video": "",
-            "image": "shopify://shop_images/Alvis_DRift_Winter_warmer_sale.jpg",
-            "mobile_image": "shopify://shop_images/Alvis_DRift_Winter_warmer_sale_Mobile.jpg",
-            "object_pos_x": "right",
-            "object_pos_y": "center",
-            "heading": "Restock Your<br> Favourite Wines",
-            "subtext": "SAVE UP TO R675",
-            "button_text": "",
-            "button_link": "#sale"
-          }
-        },
-        "slide_7gLipa": {
-          "type": "slide",
-          "disabled": true,
-          "settings": {
-            "video": "",
-            "image": "shopify://shop_images/Home_Hero_Desktop.jpg",
-            "mobile_image": "shopify://shop_images/Home_Hero_Desktop.jpg",
-            "object_pos_x": "center",
-            "object_pos_y": "center",
-            "heading": "Rivalry Sale",
-            "subtext": "NOW UNTIL 30 AUGUST",
-            "button_text": "SHOP NOW",
-            "button_link": "shopify://collections/winter-red-wines"
-          }
-        },
-        "slide_EmXrrh": {
-          "type": "slide",
-          "settings": {
-            "video": "",
-            "image": "shopify://shop_images/AD_221_Launch_Banner_2_660efe97-9198-419a-8144-d6c364790793.jpg",
-            "mobile_image": "shopify://shop_images/AD_221_Launch_Banner_Mobile.jpg",
-            "object_pos_x": "center",
-            "object_pos_y": "center",
-            "heading": "THE 221 GAME IS ON",
-            "subtext": "WIN BIG",
-            "button_text": "LEARN MORE",
-            "button_link": "shopify://pages/the-221-game"
-          }
-        }
-      },
-      "block_order": [
-        "slide_QjEzFW",
-        "slide_7gLipa",
-        "slide_EmXrrh"
-      ],
-      "name": "New Slider",
-      "settings": {
-        "show_nav": true
-      }
-    },
     "page_builder_stats_v2_DUr7iJ": {
       "type": "page-builder-stats-v2",
       "blocks": {
@@ -452,7 +394,6 @@
   },
   "order": [
     "page_builder_slider_JRBEYT",
-    "page_builder_slider_9Xe86H",
     "page_builder_stats_v2_DUr7iJ",
     "page_builder_sale_banners_QAwCXM",
     "1639717880ecfddc97",
