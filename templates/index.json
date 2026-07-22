@@ -13,6 +13,7 @@
       "type": "page-builder-hero",
       "name": "New Hero Section",
       "settings": {
+        "bg_colour": "#FFFFFF",
         "heading": "Rivalry Sale",
         "subheading": "Now until 30 August",
         "text": "The Rivalry Sale is live, and with special offers spanning across various Alvi’s Drift ranges, there’s no better time than now to expand your wine selection. Available while stocks last, shop now to avoid disappointment.",
