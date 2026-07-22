@@ -9,6 +9,47 @@
  */
 {
   "sections": {
+    "page_builder_slider_RJDhwc": {
+      "type": "page-builder-slider",
+      "blocks": {
+        "slide_3AHeQb": {
+          "type": "slide",
+          "settings": {
+            "video": "",
+            "image": "shopify://shop_images/Home_Hero_Desktop.jpg",
+            "mobile_image": "shopify://shop_images/Home_Hero_Mobile.jpg",
+            "object_pos_x": "center",
+            "object_pos_y": "center",
+            "heading": "Rivalry sale",
+            "subtext": "NOW UNTIL 30 AUGUST",
+            "button_text": "View Sale",
+            "button_link": ""
+          }
+        },
+        "slide_Un8Tre": {
+          "type": "slide",
+          "settings": {
+            "video": "",
+            "image": "shopify://shop_images/AD_221_Launch_Banner_2_660efe97-9198-419a-8144-d6c364790793.jpg",
+            "mobile_image": "shopify://shop_images/AD_221_Launch_Banner_Mobile.jpg",
+            "object_pos_x": "center",
+            "object_pos_y": "center",
+            "heading": "Sale goes live",
+            "subtext": "16 August — LIMITED STOCK",
+            "button_text": "View Sale",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_3AHeQb",
+        "slide_Un8Tre"
+      ],
+      "name": "New Slider",
+      "settings": {
+        "show_nav": true
+      }
+    },
     "wine_club_hero_v2_7Lqp8e": {
       "type": "wine-club-hero-v2",
       "name": "Wine Club Hero V2",
@@ -362,6 +403,7 @@
     }
   },
   "order": [
+    "page_builder_slider_RJDhwc",
     "wine_club_hero_v2_7Lqp8e",
     "wine_club_products_events_grid_eDmcgT",
     "wine_club_products_events_grid_zDj4fc",
