@@ -31,12 +31,12 @@
           "type": "slide",
           "settings": {
             "video": "",
-            "image": "shopify://shop_images/Alvis_Drift_Home_Banner.jpg",
-            "mobile_image": "shopify://shop_images/Alvis_drift_Hero_Banner.png",
+            "image": "shopify://shop_images/Home_Hero_Desktop.jpg",
+            "mobile_image": "shopify://shop_images/Home_Hero_Desktop.jpg",
             "object_pos_x": "center",
             "object_pos_y": "center",
-            "heading": "Winter <br>Rivalry Sale",
-            "subtext": "SAVE UP TO R675",
+            "heading": "Rivalry Sale",
+            "subtext": "NOW UNTIL 30 AUGUST",
             "button_text": "SHOP NOW",
             "button_link": "shopify://collections/winter-red-wines"
           }
