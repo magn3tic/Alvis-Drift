@@ -9,6 +9,18 @@
  */
 {
   "sections": {
+    "page_builder_hero_gnRRmp": {
+      "type": "page-builder-hero",
+      "name": "New Hero Section",
+      "settings": {
+        "heading": "Rivalry Sale",
+        "subheading": "Now until 30 August",
+        "text": "The Rivalry Sale is live, and with special offers spanning across various Alvi’s Drift ranges, there’s no better time than now to expand your wine selection. Available while stocks last, shop now to avoid disappointment.",
+        "button_text": "Explore Wines",
+        "button_text_mobile": "EXPLORE WINES",
+        "button_link": ""
+      }
+    },
     "page_builder_slider_JRBEYT": {
       "type": "page-builder-slider",
       "blocks": {
@@ -22,8 +34,8 @@
             "object_pos_y": "center",
             "heading": "Rivalry sale",
             "subtext": "NOW UNTIL  AUGUST",
-            "button_text": "View Sale",
-            "button_link": ""
+            "button_text": "Shop now",
+            "button_link": "shopify://collections"
           }
         },
         "slide_yLbzfi": {
@@ -393,6 +405,7 @@
     }
   },
   "order": [
+    "page_builder_hero_gnRRmp",
     "page_builder_slider_JRBEYT",
     "page_builder_stats_v2_DUr7iJ",
     "page_builder_sale_banners_QAwCXM",
