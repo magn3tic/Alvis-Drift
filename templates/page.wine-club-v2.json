@@ -34,10 +34,10 @@
             "mobile_image": "shopify://shop_images/AD_221_Launch_Banner_Mobile.jpg",
             "object_pos_x": "center",
             "object_pos_y": "center",
-            "heading": "Sale goes live",
-            "subtext": "16 August — LIMITED STOCK",
-            "button_text": "View Sale",
-            "button_link": ""
+            "heading": "Win BIG",
+            "subtext": "Alvi's Drift Private Club",
+            "button_text": "JOIN THE CLUB",
+            "button_link": "https://alvisdrift.co.za/account/register"
           }
         }
       },
@@ -52,6 +52,7 @@
     },
     "wine_club_hero_v2_7Lqp8e": {
       "type": "wine-club-hero-v2",
+      "disabled": true,
       "name": "Wine Club Hero V2",
       "settings": {
         "subtitle_connected": "Alvi's Drift Wine Club",
