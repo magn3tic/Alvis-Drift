@@ -106,6 +106,7 @@
     },
     "wine_club_products_events_grid_zDj4fc": {
       "type": "wine-club-products-events-grid",
+      "disabled": true,
       "name": "Wine Club Products & Events Grid",
       "settings": {
         "show": "exclusive_wines",
@@ -141,6 +142,20 @@
         "gold_image": "shopify://shop_images/Gold.webp",
         "gold_to_platinum_text": "",
         "platinum_image": "shopify://shop_images/Platinum.png"
+      }
+    },
+    "collections_grid_individual_aGcAXF": {
+      "type": "Collections-Grid-individual",
+      "name": "Collection Grid Single",
+      "settings": {
+        "topheading": "Shop Our Wines",
+        "lazy_loader": true,
+        "h1_enabled": false,
+        "subtitle_1": "Choose any 6 cases of Reserve Range wine and only Pay for 5<br> You Get the lowest priced case Free.",
+        "product_collection": "rivalry-sale",
+        "product_amount": 30,
+        "hide_product_filters": false,
+        "hide_meta_tags": false
       }
     },
     "spacer_jEt9z9": {
@@ -415,6 +430,7 @@
     "wine_club_hero_v2_7Lqp8e",
     "wine_club_products_events_grid_eDmcgT",
     "wine_club_products_events_grid_zDj4fc",
+    "collections_grid_individual_aGcAXF",
     "wine_club_join_club_nkriVx",
     "spacer_jEt9z9",
     "wine_club_how_it_works_Pi4r66",
