@@ -3429,9 +3429,9 @@ summary.list-menu__item {
 }
 
 .product-gallery {
- 
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+    align-items:center
 }
 
 .gallery-imgs-wrap {
