@@ -144,33 +144,6 @@
             "product_amount": 30
           }
         },
-        "item_Gkaz9n": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "collection_heading": "Best Sellers",
-            "collectionCarasoul": "best-sellers",
-            "product_amount": 4
-          }
-        },
-        "item_aq66aU": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "collection_heading": "All Ranges",
-            "collectionCarasoul": "all-ranges",
-            "product_amount": 30
-          }
-        },
-        "e1da377c-7a1d-4c54-80f0-ee4eb138fcb4": {
-          "type": "item",
-          "disabled": true,
-          "settings": {
-            "collection_heading": "Signature Range",
-            "collectionCarasoul": "signature-range",
-            "product_amount": 30
-          }
-        },
         "da410b66-55b5-41bc-b50a-82a109d7f826": {
           "type": "item",
           "settings": {
@@ -222,9 +195,6 @@
       },
       "block_order": [
         "item_BUAg99",
-        "item_Gkaz9n",
-        "item_aq66aU",
-        "e1da377c-7a1d-4c54-80f0-ee4eb138fcb4",
         "da410b66-55b5-41bc-b50a-82a109d7f826",
         "item_pBTz8y",
         "91df3ff6-2007-4e78-bc2d-f3aef4a1fe16",
