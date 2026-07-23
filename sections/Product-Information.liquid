@@ -76,7 +76,6 @@
                     {% for image in product.images %}
                     <div class="gallery-img {% if forloop.first == true %} current {% endif %}" id="{{ image.id }}">
                       {% if image != blank %}
-                     
                       {{  image | image_url: width: 423 | image_tag: preload: true }}
                     {% endif %}
                     </div>
