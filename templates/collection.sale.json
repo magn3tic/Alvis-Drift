@@ -21,15 +21,15 @@
         "slider_NMGxGK": {
           "type": "slider",
           "settings": {
-            "background_image": "shopify://shop_images/AD_Sale_Live_Banner.jpg",
-            "mobile_background_image": "shopify://shop_images/AD_Mobile_Sale_Live_Banner.jpg",
+            "background_image": "shopify://shop_images/SaleCollection_Hero_Desktop.jpg",
+            "mobile_background_image": "shopify://shop_images/SaleCollection_Hero_Mobile.jpg",
             "image_overlay": "#e5dbdb",
             "overlay_opacity": 85,
             "heading_color": "#ffffff",
             "video_banner": "",
-            "paragarh_p1": "WINTER",
-            "paragarh_p2": "WARMER",
-            "paragarh_p3": "SALE",
+            "paragarh_p1": "Rivalry",
+            "paragarh_p2": "Sale",
+            "paragarh_p3": "",
             "paragarh_p4": "",
             "paragarh_1": "",
             "paragarh_2": "",
@@ -83,6 +83,7 @@
         "stat_LaXWWG",
         "stat_LbTihb"
       ],
+      "disabled": true,
       "name": "New Stats Homepage",
       "settings": {
         "heading": "Private club",
@@ -95,9 +96,10 @@
       "name": "Collection Grid Single",
       "settings": {
         "topheading": "Products on Sale",
+        "lazy_loader": false,
         "h1_enabled": false,
         "subtitle_1": "Choose any 6 cases of Reserve Range wine and only pay for 5 – you get the lowest-priced case free.",
-        "product_collection": "winter-warmer-sale",
+        "product_collection": "",
         "product_amount": 30,
         "hide_product_filters": false,
         "hide_meta_tags": false
