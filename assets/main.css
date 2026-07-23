@@ -1675,7 +1675,9 @@ body.no-scroll {
     background: #f8f2e6;
     padding: 50px 0;
 }
-
+new-product-single ul {
+    padding-bottom:40px;
+}
 .np-product-type {
     font-size: 25px;
     line-height: 25px;
