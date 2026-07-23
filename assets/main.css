@@ -1731,9 +1731,7 @@ body.no-scroll {
 .gallery-img  .current {
 display:block
 }
-.gallery-img > :not(.current) {
-  display: none;
-}
+
 
 .new-product-single .gallery-imgs-wrap img {
     max-height: 400px;
