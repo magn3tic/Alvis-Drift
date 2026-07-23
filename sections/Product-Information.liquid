@@ -71,9 +71,8 @@
 
       <div class="row row-two">
         <div class="col-4">
-            <div class="product-gallery">
-              
-                <div class="gallery-imgs-wrapx position-relative">
+            <div class="product-gallery position-relative">  
+                <div class="gallery-imgs-wrapx">
                    {% assign member_discount = product.price | times: discount %}
                             {% assign discount_amount_2 = member_discount | minus: product.price %}
                           
