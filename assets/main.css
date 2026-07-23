@@ -1728,7 +1728,7 @@ body.no-scroll {
     border-radius: 15px;
 }
 
-.gallery-img  .current {
+.gallery-img.current {
 display:block
 }
 
