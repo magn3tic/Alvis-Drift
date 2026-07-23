@@ -22,7 +22,7 @@
           "type": "slider",
           "settings": {
             "background_image": "shopify://shop_images/SaleCollection_Hero_Desktop.jpg",
-            "mobile_background_image": "shopify://shop_images/SaleCollection_Hero_Mobile.jpg",
+            "mobile_background_image": "shopify://shop_images/SaleCollection_Hero_Mobile2.jpg",
             "image_overlay": "#e5dbdb",
             "overlay_opacity": 85,
             "heading_color": "#ffffff",
