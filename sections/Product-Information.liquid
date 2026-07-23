@@ -81,6 +81,9 @@
                           <div class="product-discount">
                             SAVE<br>
                             {{ discount_amount_2 | money_without_trailing_zeros }}
+                            {% if product.metafields.my_fields.promo_label.value != blank %}
+                          <p class = "small-text">{{ product.metafields.my_fields.promo_label.value }}</p>
+                            {% endif %}
                           </div>
                         {%- endif -%}
                     {% for image in product.images %}
