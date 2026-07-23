@@ -143,6 +143,13 @@
         "platinum_image": "shopify://shop_images/Platinum.png"
       }
     },
+    "spacer_jEt9z9": {
+      "type": "Spacer",
+      "name": "Spacer",
+      "settings": {
+        "spacer_size": "50px"
+      }
+    },
     "wine_club_how_it_works_Pi4r66": {
       "type": "wine-club-how-it-works",
       "blocks": {
@@ -409,6 +416,7 @@
     "wine_club_products_events_grid_eDmcgT",
     "wine_club_products_events_grid_zDj4fc",
     "wine_club_join_club_nkriVx",
+    "spacer_jEt9z9",
     "wine_club_how_it_works_Pi4r66",
     "page_builder_contact_VjXiXC",
     "main"
