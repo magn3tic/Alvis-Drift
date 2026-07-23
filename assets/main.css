@@ -1735,7 +1735,7 @@ display:block
     display: none;
 }
 
-.new-product-single .gallery-imgs-wrap img {
+.new-product-single .gallery-imgs-wrap .gallery-img img {
     max-height: 400px;
     margin: 0;
 	object-fit:contain
