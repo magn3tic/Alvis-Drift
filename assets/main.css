@@ -1735,7 +1735,8 @@ body.no-scroll {
 }
 
 .new-product-single .gallery-imgs-wrap {
-    margin-top: 0;
+    margin-top: auto;
+	margin-bottom:auto
 }
 
 .new-product-single .gallery-imgs-wrap .gallery-img {
