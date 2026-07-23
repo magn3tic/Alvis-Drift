@@ -36,7 +36,7 @@
             "heading": "Rivalry sale",
             "subtext": "SAVE UP TO R675",
             "button_text": "Shop now",
-            "button_link": "shopify://collections"
+            "button_link": "shopify://collections/rivalry-sale"
           }
         },
         "slide_yLbzfi": {
@@ -108,10 +108,10 @@
           "settings": {
             "top_text": "NOW UNTIL 30 AUGUST",
             "heading": "Winter Rivalry Sale",
-            "image": "shopify://shop_images/Alvis_Drift_Best_Sellers.png",
+            "image": "shopify://shop_images/Home_page_small_sale_banner.jpg",
             "hover_title": "SHOP NOW",
             "hover_subtext": "And save up to R675",
-            "link": "shopify://collections/best-sellers"
+            "link": "shopify://collections/rivalry-sale"
           }
         },
         "banner_aUJTfJ": {
