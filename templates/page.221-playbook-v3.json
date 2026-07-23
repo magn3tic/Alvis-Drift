@@ -115,7 +115,7 @@
         "callout_title": "Make It Happen",
         "callout_body": "Stand to win by joining the Private Club and buying any of your favourite Alvi’s Drift wines. Both online and in-store purchases qualify between 18 June and 23 August 2026. \nWhen shopping at major retailers nationwide, WhatsApp a photo of your till slip to 068 616 8717, along with your name, surname, email address, and date of birth. Additional purchases mean more entries.\nCan’t find Alvi’s Drift at your local retailer? Ask them about it today.",
         "submit_cta_label": "JOIN THE CLUB",
-        "submit_cta_link": "shopify://pages/club",
+        "submit_cta_link": "https://alvisdrift.co.za/pages/club/#club-signup",
         "countdown_enabled": true,
         "countdown_target": "2026-09-05T10:00:00",
         "percy_image": "shopify://shop_images/221-GrandPrize-O.png"
