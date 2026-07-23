@@ -1728,7 +1728,12 @@ body.no-scroll {
     border-radius: 15px;
 }
 
-
+.gallery-img.current {
+display:block
+}
+.gallery-img {
+    display: none;
+}
 
 .new-product-single .gallery-imgs-wrap img {
     max-height: 400px;
