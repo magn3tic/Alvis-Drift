@@ -144,6 +144,14 @@
             "product_amount": 30
           }
         },
+        "item_RgGkbH": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "Signature Range",
+            "collectionCarasoul": "signature-range",
+            "product_amount": 30
+          }
+        },
         "da410b66-55b5-41bc-b50a-82a109d7f826": {
           "type": "item",
           "settings": {
@@ -195,6 +203,7 @@
       },
       "block_order": [
         "item_BUAg99",
+        "item_RgGkbH",
         "da410b66-55b5-41bc-b50a-82a109d7f826",
         "item_pBTz8y",
         "91df3ff6-2007-4e78-bc2d-f3aef4a1fe16",
