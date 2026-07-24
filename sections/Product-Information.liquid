@@ -200,7 +200,7 @@
                     >
 
                     <!-- QUANTITY -->
-                    {% if product.available == false %}
+                    {% unless product.available %}
                     <div class="input-num-wrap">
                       <quantity-input class="quantity">
                         <button
@@ -231,7 +231,7 @@
                         </button>
                       </quantity-input>
                     </div>
-                  {% endif %}
+                  {% endunless %}
                                         
                       <button
                               type="submit"
