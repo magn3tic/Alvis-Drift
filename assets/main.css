@@ -1675,7 +1675,9 @@ body.no-scroll {
     background: #f8f2e6;
     padding: 50px 0;
 }
-
+.new-product-single ul {
+    padding-bottom:40px;
+}
 .np-product-type {
     font-size: 25px;
     line-height: 25px;
@@ -1726,14 +1728,22 @@ body.no-scroll {
     border-radius: 15px;
 }
 
-.new-product-single .gallery-imgs-wrap img {
+.gallery-img.current {
+display:block
+}
+.gallery-img {
+    display: none;
+}
+
+.new-product-single .gallery-imgs-wrap  img, .gallery-img img {
     max-height: 400px;
     margin: 0;
 	object-fit:contain
 }
 
 .new-product-single .gallery-imgs-wrap {
-    margin-top: 0;
+    margin-top: auto;
+	margin-bottom:auto
 }
 
 .new-product-single .gallery-imgs-wrap .gallery-img {
