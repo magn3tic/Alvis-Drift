@@ -1,1 +1,50 @@
-{"sections":{"1639248182bc55fb26":{"type":"Page-Background-Colour","settings":{"page_bg":"#C2AB9B"}},"main":{"type":"gift-information","settings":{"enable_sticky_info":true,"hide_variants":false,"enable_video_looping":false}},"collections_grid_individual_Rk4CNW":{"type":"Collections-Grid-individual","blocks":{"item_9rbx8R":{"type":"item","settings":{"collection_heading":"","collectionCarasoul":"gifts","product_amount":24}}},"block_order":["item_9rbx8R"],"name":"Collection Grid Single","settings":{"topheading":"Our Gift Collections","subtitle_1":"","hide_filter":false,"hide_meta_tags":true}}},"order":["1639248182bc55fb26","main","collections_grid_individual_Rk4CNW"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "1639248182bc55fb26": {
+      "type": "Page-Background-Colour",
+      "settings": {
+        "page_bg": "#C2AB9B"
+      }
+    },
+    "main": {
+      "type": "gift-information",
+      "settings": {
+        "enable_sticky_info": true,
+        "hide_variants": false,
+        "enable_video_looping": false
+      }
+    },
+    "163949428877599353": {
+      "type": "Gifts-Grid",
+      "blocks": {
+        "163949428839bac508-0": {
+          "type": "item",
+          "settings": {
+            "collection_heading": "",
+            "collectionCarasoul": "gifts"
+          }
+        }
+      },
+      "block_order": [
+        "163949428839bac508-0"
+      ],
+      "settings": {
+        "topheading": "OUR GIFTING COLLECTION"
+      }
+    }
+  },
+  "order": [
+    "1639248182bc55fb26",
+    "main",
+    "163949428877599353"
+  ]
+}
